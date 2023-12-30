@@ -1,0 +1,203 @@
+\chapter{Mathematical Induction}
+Any reasoning involving passage from particular assertions to general assertions, which derive their validity from the validity of
+particular assertions is called {\it induction}. {\it Mathematical induction} is a mathematical proof technique which enables us to
+draw conclusions about a general law on the basis of particular cases. It is used to prove a statement $P(n)$ holds for every
+natural number $n = 0, 1, 2, 3, \ldots$; that is, the overall statement is a seuqnece of infinitely many cases $P(0), P(1), P(2),
+P(3), \ldots$ The earliest rigorous use of induction was by Gersonides (1288-1344). The first explicit formulation of the principle
+was given by Pascal in his {\it Trait\'e du triangle arithm\'etique} (1665).
+
+In boolean algebra, a statement which is either true and false is called a {\it proposition}. $P(n)$ will denote a proposition
+whose truth value depends on natural numbers. For example, we recall the sum of first $n$ natural numbers from arithmetic
+progression as $1 + 2 + \ldots + n = \frac{n(n + 1)}{2}$ is denoted by $P(n)$, then we can write
+$$P(n) = 1 + 2 + \ldots + n = \frac{n(n + 1)}{2}$$
+Here $P(2)$ is true means the sum of first two natural numbers is equal to $1 + 2 = \frac{2.3}{2} = 3$.
+
+Mathematical induction is used to prove propositions in many branches of algebra, geometry and analysis.
+
+\section{Principle of Finite Mathematical Induction}
+The proposition $P(n)$ is assumed to be true for all natural numbers if the following two conditions are satisfied:
+\startitemize[n]
+\item The proposition $P(n)$ is true for $n = 1$ i.e. $P(1)$ is true.
+\item $P(m)$ is true $\Rightarrow P(m + 1)$ is true where $m$ is an arbitrary natural number.
+\stopitemize
+
+\section{Extended Form of Mathematical Induction}
+\startitemize[n]
+\item If $P(n)$ is a proposition such that
+  \startitemize[n]
+  \item $P(1), P(2), \ldots, P(k)$ are true.
+  \item $P(m), P(m + 1), \ldots, P(m + k - 1)$ are true implies $P(m + k)$ is true.
+  \stopitemize
+\item If $P(n)$ is a proposition such that
+  \startitemize[n]
+  \item $P(r)$ is true.
+  \item $P(r), P(r + 1), \ldots, P(m)$ are true implies $P(m + 1) is true.$
+  \stopitemize
+\stopitemize
+
+\section{Problems}
+\startitemize[n, 1*broad]
+\item Show that $1^2 + 2^2 + \ldots + n^2 = \frac{n(n + 1)(2n + 1)}{6}$.
+\item Show that $\frac{1}{1.2} + \frac{1}{2.3} + \ldots + \frac{1}{n(n + 1)} = \frac{n}{n + 1}$.
+\item Show that $1^3 + 2^3 + \ldots + n^3 = \left[\frac{n(n + 1)}{2}\right]^2$.
+\item Show that $1.3 + 2.3^2 + \ldots + n.3^n = \frac{(2n - 1)3^{n + 1} + 3}{4}$.
+\item Show that $\cos\alpha + \cos2\alpha + \ldots + \cos n\alpha = \sin\frac{n\alpha}{2}\csc\frac{\alpha}{2}\cos\frac{(n + 1)\alpha}{2}$.
+\item Show that $\tan^{1}\frac{1}{3} + \tan^{-1}\frac{1}{7} + \ldots + \tan^{-1}\frac{1}{n^2 + n + 1} = \tan^{-1}\frac{n}{n + 2}$.
+\item Show that ${}^nC_1 + 2.{}^nC_2 + \ldots + n.{}^nCn = n.2^{n - 1}$.
+\item If $u_1 = 1, u_2 = 1$ and $u_{n + 2} = u_{n + 1} + u)n,\;n\geq 1. u_n = \frac{1}{\sqrt{5}}\left[\left(\frac{1 +
+    \sqrt{5}}{2}\right)^n - \left(\frac{1 - \sqrt{5}}{2}\right)^n\right]\;\forall\;n\geq 1$.
+\item Show that $11^{n + 2} + 12^{2n + 1}$, where $n\in\mathbb{N}$, is divisible by $133$.
+\item If $p\in\mathbb{N}$, show that $p^{n + 1} + p^{2n - 1}$ is divisible by $p^2 + p + 1$ for every positive integer $n$.
+\item Show that $2^n > 2n + 1\;\forall\;n > 2$.
+\item Show that $n^4 < 10^n\;\forall\;n\geq 2$.
+\item Show that $1^3 + 3^3 + \ldots + (2n - 1)^3 = n^2(2n^2 - 1)$.
+\item Show that $3.2^2 + 3^3.2^3 + \ldots + 3^n.2^{n + 1} = \frac{12}{5}(6^n - 1)$.
+\item Show that $\frac{1}{1.4} + \frac{1}{4.7} + \ldots + \frac{1}{(2n - 2)(3n + 1)} = \frac{n}{3n+ 1}$.
+\item Show that $(\cos\theta + i\sin\theta) = \cos n\theta + i\sin n\theta$.
+\item Show that $\cos\theta.\cos2\theta\ldots\cos2^{n - 1}\theta = \frac{\sin2^n\theta}{2^n\sin\theta}$.
+\item Show that $\sin\alpha + \sin2\alpha + \ldots + \sin n\alpha = \frac{\sin \frac{n\alpha}{2}}{\sin\frac{\alpha}{2}}\sin\frac{n +
+  1}{2}\alpha$.
+\item If $a_1 = 1$ and $a_{n + 1} = \frac{a_n}{n + 1},\;n\geq 1$, show that $a_{n + 1} = \frac{1}{(n + 1)!}$.
+\item If $a_1 = 1, a_2 = 5$ and $a_{n + 2} = 5a_{n + 1} - 6a_n,\;n\geq 1$, show that $a_n = 3^n - 2^n$.
+\item If $u_0 = 2, u_1 = 3$ and $u_{n + 1} = 3u_n - 2u_{n - 1}$, show that $u_n = 2^n - 1,\;n\in \mathbb{N}$.
+\item If $a_0 = 0, a_1 = 1$ and $a_{n + 1} = 3a_n - 2a_{n - 1}$, show that $a_n = 2^n - 1$.
+\item If $A_1 = \cos\theta, A_2 = \cos2\theta$ and for every natural number $m > 2, A_m = 2A_{m-1}\cos\theta - A_{m - 2}$, prove
+  that $A_n = \cos n\theta$.
+\item For any positive number $n$, show that $(2\cos\theta - 1)(2\cos2\theta - 1)\ldots(2\cos2^{n - 1}\theta - 1) =
+  \frac{2\cos2^n\theta + 1}{2\cos\theta + 1}$.
+\item Show that $\tan^{-1}\frac{x}{1.2 + x^2} + \tan^{-1}\frac{x}{2.3 + x^2} + \ldots + \tan^{-1}\frac{x}{n(n + 1) + x^2} =
+  \tan^{-1}x - \tan^{-1}\frac{x}{n + 1},\;x\in \mathbb{R}$.
+\item Prove that $3 + 33 + \ldots + \frac{33\ldots3}{n\text{~digits}} = \frac{10^{n + 1} - 9n - 10}{27}$.
+\item Show that $\displaystyle\int_{0}^\pi\frac{\sin(2n + 1)x}{\sin x}dx = \pi$.
+\item Show that $\displaystyle\int_{0}^\pi\frac{\sin^2nx}{\sin^2x}dx = n\pi$.
+\item Show that $\displaystyle\int_{0}^{\frac{\pi}{2}}\frac{\sin^2nx}{\sin^2x}dx = 1 + \frac{1}{3} + \ldots + \frac{1}{2n - 1}$.
+\item Show that if $n\in\mathbb{N}, n(n + 1)(n + 5)$ is divisible by $6$.
+\item Show that if $n\in\mathbb{N}, n^3 + (n + 1)^3 + (n + 2)^3$ is divisble by $9$.
+\item Show that if $n\in\mathbb{P}$, and $n$ is even then $n(n^2 + 20)$ is divisible by $48$.
+\item Show that if $n\in\mathbb{N}, 4^n - 3n - 1$ is divisible by $9$.
+\item Show that if $n\in\mathbb{N}, 3^{2n} - 1$ is divisible by $8$.
+\item Show that if $n\in\mathbb{N}, 5.2^{3n - 2} + 3^{3n - 1}$ is divisible by $19$.
+\item Show that if $n\in\mathbb{N}, 7^{2n} + 2^{3n - 3}.3^{n - 1}$ is divisible by $25$.
+\item Show that if $n\in\mathbb{N}, 10^n + 3.4^{n + 2} + 5$ is divisible by $9$.
+\item Show that if $n\in\mathbb{N}, 3^{4n + 2} + 5^{2n + 1}$ is divisible by $14$.
+\item Show that if $n\in\mathbb{N}, 3^{2n + 2} - 8n - 9$ is divisible by $64$.
+\item Show that if $n\in\mathbb{N}, n^7 - n$ is divisible by $7$.
+\item Show that if $n\in\mathbb{N}, \frac{n^3}{3} + n^2 + \frac{5}{3}n + 1$ is a natural number.
+\item Show that $x^n + y^n$ is divisible by $x + y$, where $n$ is any odd integer.
+\item Show that $x^n - y^n$ is divisible by $x - y$, where $n\in\mathbb{N}$.
+\item Prove that $x(x^{n - 1} - na^{n - 1}) + a^n(n - 1)$ is divisible by $(x - a)^2$ for all positive integers $n > 1$.
+\item Show that $\frac{n^5}{5} + \frac{n^3}{3} + \frac{7n}{15}$ is a natural number.
+\item Show that $\frac{n^7}{7} + \frac{n^5}{5} + \frac{2n^3}{3} - \frac{n}{105}$ is an integer.
+\item Show that $2^n > n^2,\;n\geq 5$.
+\item Show that $1 + 2 + \ldots + n\leq \frac{1}{8}(2n + 1)^2$.
+\item Show that $n^n < (n!)^2,\;n>2$.
+\item Show that $n! > 2^n,\;n>3$.
+\item Show that $\frac{1}{n + 1} + \frac{1}{n + 2} + \ldots + \frac{1}{2n} > \frac{13}{24},\;n>1$.
+\item Prove that $\frac{1}{2}.\frac{2}{3}.\cdots.\frac{2n - 1}{2n}\leq \frac{1}{\sqrt{3n + 1}}$, where $n\in\mathbb{N}$.
+\item Prove that $\frac{1}{n + 1} + \frac{1}{n + 2} + \cdots + \frac{1}{2n} < \frac{25}{36}$, where $n\geq 2, n\in\mathbb{N}$.
+\item Prove that $\sqrt{a + \sqrt{a + \sqrt{a + \cdots n\text{~terms~}}}}\leq \frac{1 + \sqrt{4a + 1}}{2}$, where $a\geq 0$.
+\item Prove that $\sqrt{2\sqrt{3\sqrt{4\ldots\sqrt{n}}}} < 3$, where $n\geq 2, n\in\mathbb{N}$.
+\item Prove that $x_1^2 + 3x_2^2 + 5x_3^2 + \cdots + (2n - 1)x_n^2\leq(x_1 + x_2 + \cdots + x_n)^2$, where $x_1\geq x_2\geq \cdots
+  \geq x_n\geq 0$.
+\item Prove that $|\sin(x_1 + x_2 + \cdots + x_n)|\leq |\sin x_1| + |\sin x_2| + \cdots + |\sin x_n|$, where $x_1, x_2, \ldots, x_n
+  \in [0, \pi]$.
+\item Prove that $\sin(x_1 + x_2 + \cdots + x_n)\leq \sin x_1 + \sin x_2 + \cdots + \sin x_n$, where $x_1, x_2, \ldots, x_n
+  \in [0, \pi]$.
+\item Prove that $|\cos x_1| + |\cos x_2| + |\cos x_3| + |\cos x_4| + |\cos x_5|\geq 1$, where $x_1 + x_2 + x_3 + x_4 + x_5 = 0$.
+\item {\it Bellman's inequality:} If a function $f(x)$ is defined in $[0, a)$ or $[0, \infty)$ and for arbitrary numbers $x\geq
+  y\geq z$ from that interval we have $f(x) - f(y) + f(z)\geq f(x - y + z)$ and $f(0)\leq 0$, then for all numbers $a > x_1 \geq
+  x_2\geq \cdots \geq x_n\geq 0$, prove that following inequality holds $f(x_1) -f(x_2) + f(x_3) - \cdots + (-1)^nf(x_n)\geq
+  f(x_1 - x_2 + \cdots + (-1)^nf(x_n))$.
+\item Prove that $\tan x_1 - \tan x_2 + \cdots + (-1)^n\tan x_n \geq \tan(x_1 - x_2 + \cdots + (-1)^nx_n)$, where $\frac{\pi}{2}>
+  x_1\geq x_2\geq \cdots \geq x_n\geq 0$.
+\item Prove that $a_1^r - a_2^r + \cdots +(-1)^na_n^r\geq (a_1 - a_2 + \cdots +(-1)^na_n)^r$, where $a_1\geq a_2\geq \cdots \geq
+  a_n \geq 0, r\geq 1$.
+\item Prove that $(x_1 + x_2 + \cdots + x_5)^2 \geq 4(x_1x_2 + x_2x_3 + x_3x_4 + x_4x_5 + x_5x_1)$, where $x_1, x_2, \ldots, x_5 >
+  0$.
+\item Prove that $x_1\sqrt{x_n^2 + x_2^2} + x_2^2\sqrt{x_1^2 + x_3^2} + \cdots + x_{n - 1}\sqrt{x_{n - 2}^2 + x_n^2} +
+  x_n\sqrt{x_{n -1}^2 + x_1^2}\leq \frac{1}{2}(x_1 + x_2 + \cdots + x_n)^2$, where $n\geq 3$, and $x_1, x_2, \ldots, x_n > 0$.
+\item Prove that $\frac{1}{2}(x_1 + x_2 + \cdots + x_n)^2\leq (x_1 + 2x_2 + \cdots + nx_n).max(x_1, x_2, \ldots, x_n)$, where $x_1,
+  x_2, \ldots, x_n \geq 0$.
+\item Prove that $a_1 + a_2^2 + \cdots + a_n^n\leq na_1a_2\ldots a_n$, where $a_1\geq a_2\geq \cdots \geq a_n \geq 1$.
+\item Prove that $a_1 + a_2^2 + \cdots + a_n^n\geq na_1a_2\ldots a_n$, where $0\leq a_1 \leq a_2 \leq \cdots \leq a_n\leq 1$.
+\item Prove that $\frac{a_2^2}{a_1} + \frac{a_3^2}{a_2} + \cdots + \frac{a_n^2}{a_{n - 1}}\geq 4(a_n - a_1)$, where $a_1, a_2,
+  \ldots, a_n > 0$.
+\item Prove that $\frac{a_1^3}{b_1c_1} + \frac{a_2^3}{b_2c_2} + \cdots + \frac{a_n^3}{b_nc_n}\geq \frac{(a_1 + a_2 + \cdots +
+  a_n)^3}{(b_1 + b_2 + \cdots + b_n)(c_1 + c_2 + \cdots + c_n)}$, where $a_i, b_i, c_i > 0, i = 1, 2, \ldots, n$.
+\item If $f(x)$ is defined in $I$ and is a convex function, then $(x_2 + x_1)[f(x_2) - f(x_1)] + (x_3 + x_2)[f(x_3) - f(x_2)] +
+  \cdots + (x_n + x_{n - 1})[f(x_{n}) - f(x_{n - 1})]\geq (x_n + x_1)[f(x_n) - f(x_{n - 1})]$, where $n\geq 2, x_1 < x_2 < cdots <
+  x_n, x_1, x_2, \ldots, x_n\in I$.
+\item Prove that $a\sqrt{b} + b\sqrt{c} + c\sqrt{a}\geq a\sqrt{c} + b\sqrt{a} + c\sqrt{b}$, where $a\geq b\geq c\geq 0$.
+\item Prove that $x_1^{x_2}.x_2^{x_3}.\cdots.x_n^{x_1}\geq x_2^{x_1}.x_3^{x_2}.\cdots.x_n^{x_{n - 1}}.x_1^{x_n}$, where $x_n\geq
+  x_{n - 1}\geq \cdots x_1 > 0, n\geq 3$.
+\item Prove that $\frac{a(c - b)}{(c + b)(2a + c + b)} + \frac{b(a - c)}{(a + c)(2b + a + c)} + \frac{c(b - a)}{(b + a)(2c + b +
+  a)}\leq 0$, where $a\geq b\geq c > 0$.
+\item Prove that $\frac{a_1 + a_2 + \cdots + a_{n - 1}}{n - 1} + \frac{a_1 + a_2 + \cdots + a_{n + 1}}{n + 1}\geq 2\frac{a_1 + a_2
+  + \cdots + a_n}{n}$, where $n\geq 2, \frac{a_k + a_{k + 2}}{2}\geq a_{k + 1}, k = 1, 2, \ldots, n - 1$.
+\item Prove that $\frac{a_1 + a_3 + \cdots + a_{2n - 1}}{n}\geq \frac{a_0 + a_2 + \cdots + a_{2n}}{n + 1}$, where $\frac{a_{k - 1}
+  + a_{k + 1}}{2}, k = 1, 2, \ldots, 2n - 1, n\in\mathbb{N}$.
+\item Prove that $\frac{a^0 + a^2 + \cdots + a^{2n}}{a + a^3 + \cdots + a^{2n - 1}}\geq \frac{n + 1}{n}$, where $a > 0,
+  n\in\mathbb{N}$.
+\item Prove that $1 + \frac{1}{2} + \cdots + \frac{1}{n} > \ln(n + 1)$, where $n\in\mathbb{N}$.
+\item Prove that $1 + \frac{1}{2\sqrt{2}} + \cdots + \frac{1}{n\sqrt{n}}\leq 3 - \frac{2}{\sqrt{n}}$, where $n\in\mathbb{N}$.
+\item Prove that $(1 + \alpha)^n \geq 1 + n\alpha + \frac{n(n - 1)}{2}\alpha^2$, where $\alpha\geq 0, n\in\mathbb{N}$.
+\item Prove that $k!\geq \left(\frac{k + 1}{e}\right)^k$, where $k\in\mathbb{N}$.
+\item Prove that $\displaystyle\sum_{i=0}^n\left|\sin(2^ix)\right|\leq 1 + \frac{\sqrt{3}}{2}n$, where $n = 0, 1, 2, \ldots$.
+\item Prove that $\cos\alpha + \frac{\cos2\alpha}{2} + \cdots + \frac{\cos n\alpha}{n}\geq -\frac{1}{2}$, where $n\in\mathbb{N},
+  0\leq \alpha\leq \frac{\pi}{2}$.
+\item Prove that $\frac{a_1}{a_2} + \frac{a_2}{a_3} + \cdots + \frac{a_{n - 1}}{a_n} + \frac{a_n}{a_1} < 2n - 1$, where $a_1, a_2,
+  \ldots, a_n >  1, n\geq 2$ and $|a_{k + 1} - ak| < 1,\;\forall k\in[1, n - 1]$.
+\item Prove that $\frac{\sqrt{x_1 - x_1}}{x_2} + \frac{\sqrt{x_3 - x_2}}{x_3} + \cdots + \frac{x_{n + 1} - x_n}{x_{n + 1}}\leq
+  \frac{\sqrt{4n - 3}}{2}$, where $n\in\mathbb{N}$ and $x_{n + 1} \geq x_n \geq \cdots x_2\geq x_1 = 1$.
+\item Prove that if $\alpha_1, \alpha_2, \ldots, \alpha_n > 0, \beta_1, \beta_2, \ldots, \beta_n > 0$ and $\alpha_1 + \alpha_2 +
+  \cdots + \alpha_n \leq \beta_1 + \beta_2 + \ldots + \beta_n\leq\pi$, then $\frac{\cos\beta_1}{\sin\alpha_1} +
+  \frac{\cos\beta_2}{\sin\alpha_2} + \cdots + \frac{\cos\beta_n}{\sin\alpha_1}\leq\frac{\cos\alpha_1}{\sin\alpha_1} +
+  \frac{\cos\alpha_2}{\sin\alpha_2} + \cdots + \frac{\cos\alpha_n}{\sin\alpha_n}$.
+\item Prove that $2(a^{2012} + 1)(b^{2012} + 1)(c^{2012} + 1)\geq (1 + abc)(a^{2011} + 1)(b^{2011} + 1)(c^{2011} + 1)$, where $a,
+  b, c > 0$.
+\item {\it Newton's inequality:} $b_k^2\geq b_{k - 1}b_{k + 1}$, for $k = 2, 3, \ldots, n -1$, where $n\geq 2, n\in\mathbb{N}, a_1,
+  a_2, \ldots, a_n > 0$, and $b_k = \frac{1}{C_n^{k}}(a_1a_2\cdots a_{k - 1}a_k + a_1a_2\cdots a_{k - 1}a_{k + 1} + \cdots +
+  a_1a_2\cdots a_{k - 1}a_n + \cdots + a_{n - k + 1}a_{n - k}\cdots a_{n - 1}a_n)$.
+\item Prove that $\left(\frac{a_2}{a_1} - \frac{a_1}{a_2}\right) + \left(\frac{a_3}{a_2} - \frac{a_2}{a_3}\right) + \cdots +
+  \left(\frac{a_n}{a_{n - 1}} - \frac{a_{n - 1}}{a_n}\right)\leq \frac{a_n}{a_1} - \frac{a_1}{a_n}$, where $a\geq 2, 0\leq a_1\leq
+  a_2\leq \cdots \leq a_n$.
+\item Prove that $(1 + a_1)(1 + a_2) \ldots (1 + a_n)\geq 1 + a_1 + a_2 + \cdots + a_n$, where $a_1, a_2, \ldots, a_n > -1$ and the
+  numbers have the same sign.
+\item Prove that $C\leq D\leq 2C$, where $C = (a_1 - b_1)^2 + (a_2 - b_2)^2 + \cdots + (a_n - b_n)^2, D = (a_1 - b_n)^2 + (a_2 -
+  b_n)^2 + \cdots + (a_n - b_n)^2, b_k = \frac{a_1 + a_2 + \cdots + a_k}{k}, k = 1, 2, \ldots, n$.
+\item Prove that $\sqrt[n]{n} > \sqrt[n + 1]{n +1}$, where $n\geq 3, n\in\mathbb{N}$.
+\item Prove that $\left(1 + \frac{1}{n}\right)^k < 1 + \frac{k}{n} + \frac{k^2}{n^2}$, where $k\leq n, n,k\in\mathbb{N}$.
+\item Prove that $\left(1 + \frac{m}{n}\right)^{\tfrac{n}{m}} < 3$, where $m, n\in\mathbb{N}$.
+\item Prove that $1 - x + \frac{x^2}{2!} - \frac{x^3}{3!} + \cdots + \frac{x^{2k}}{(2k)!} > 0$, where $k\in\mathbb{N}$.
+\item Prove that $\displaystyle\sum_{i=1}^n\frac{1}{a_i}\leq\frac{1}{a_1a_n}\left[n(a_1 + a_n) - \sum_{i=1}^na_i\right]$, where
+  $0<a_1\leq a_2\leq \cdots\leq a_n$.
+\item Prove that $\frac{a_1 + a_2 + \cdots + a_k}{k} < \frac{a_1 + a_2 + \cdots + a_n}{n} < \frac{a_{k + 1} + a_{k + 1} + \cdots +
+  a_n}{n - k}$, where $a_1 < a_2 < \cdots < a_n, n > k, n, k\in\mathbb{N}$.
+\item Prove that $a_1^2 - a_2^2 + a_3^2 - \cdots - a_{2n}^2 + a_{2n + 1}^2\geq (a_1 - a_2 + \cdots - a_{2n} + a_{2n + 1})^2$, where
+  $a_1\geq a_2\geq \cdots \geq a_{2n + 1}\geq 0$.
+\item Prove that $x_1 + x_1(x_2 - x_1) + \cdots + x_{n - 1}(x_n - x_{n - 1})\leq \frac{(n - 1)x_n^2 + 2x_n + n - 1}{2n}$, where
+  $n\geq 2$.
+\item Prove that $1^1.2^2.\ldots .n^n\geq (2n)!$, where $n\geq 5, n\in\mathbb{N}$.
+\item Prove that $\frac{(2m_1)!}{m_1!}.\frac{(2m_2)!}{m_2)!}.\cdots .\frac{(2m_n)!}{m_n!}\geq 2^S$, where $m_1, m_2, \cdots,
+  m_n\in\mathbb{Z}_0$ and $m_1 + m_2 + \cdots + m_n = S$.
+\item Prove that $\frac{1}{a + b} + \frac{1}{a + 2b} + \cdots + \frac{1}{a + nb} < \frac{n}{\sqrt{a(a + nb)}}$, where $a, b > 0$
+  and $n\in\mathbb{N}$.
+\item Prove that $\displaystyle\sum_{k=1}^{n - 1}\frac{n}{n - k}.\frac{1}{2^{k - 1}} < 4$, where $n\geq 2,\;n\in\mathbb{N}$.
+\item Prove that $\left(1 + \frac{1}{n}\right)^k < 1 + \frac{k}{n} + \frac{k^2}{2n^2}$, where $k, n\in\mathbb{N}$ and $(k - 1)^2<
+  n$.
+\item Prove that $\left(1 + \frac{1}{n}\right)^n\left(1 + \frac{1}{4n}\right) < \left(1 + \frac{1}{n + 1}\right)^{n + 1}\left(1 +
+  \frac{1}{4(n + 1)}\right)$, where $n\in\mathbb{N}$.
+\item Prove that $\displaystyle\sum_{i=0}^n\left|\cos 2^ix\right|\geq \frac{n}{2}$, where $n\in\mathbb{N}$.
+\item Prove that $\sin\alpha + \frac{\sin2\alpha}{2} + \cdots + \frac{\sin n\alpha}{n}\geq 0$, where $n\in\mathbb{N}$ and $0 \leq
+  \alpha\leq \pi$.
+\item Prove that $\cos\alpha + \frac{\cos2\alpha}{2} + \cdots + \frac{\cos n\alpha}{n}\geq -1$, where $n\in\mathbb{N}$.
+\item Prove that $(1 + a_1)(2 + a_2)\cdots(n + a_n)\leq 2.n!$, where $n\geq 2, a_1, a_2, \ldots, a_n > 0$ and $a_1 + a_2 + \cdots +
+  a_n = 1$.
+\item Prove that $(1 - a)(a^{k_1} + a^{k_2} + \cdots + a^{k_n})^2 < (1 + a)(a^{2k_1} + a^{2k_2} + \cdots + a^{2k_n})$, where $n\geq
+  2,\;n\in\mathbb{N}$.
+\item For arbitrary positive integer $n > 1$ find the smallest value $C$ if the inequality $\frac{a_1 - b_1}{a_1 + b_1} + \frac{a_2
+- b_2}{a_2 + b_2} + \cdots + \frac{a_n - b_n}{a_n + b_n} < C$ for all positive numbers $a_1, a_2, \ldots, a_n, b_1, b_2, \ldots,
+  b_n$ satisfying the equality $a_1 + a_2 + \cdots + a_n = b_1 + b_2 + \cdots + b_n$.
+\item Prove that for an arbitrary positive integer $n > 1$, one has $\frac{1 - x_1x_2\ldots x_n}{1 - y_1y_2\ldots y_n} < \frac{1 -
+  x_1}{1 - y_1} + \frac{1 - x_2}{1 - y_2} + \cdots + \frac{1 - x_n}{1 - y_n}$, where $0 < y_i\leq x_i < 1, i = 1, 2, \ldots, n$.
+\stopitemize

@@ -1,0 +1,5 @@
+*.tuc
+*.pgf
+*.log
+/info
+algebra.pdf

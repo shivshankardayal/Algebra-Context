@@ -1,0 +1,841 @@
+\chapter{Determinants}
+Let $a,b,c,d$ be any four numbers, real or complex, then the symbol \startformula\startdeterminant \NC a \NC b \NR\NC  c \NC d\NR \stopdeterminant\stopformula denotes $ad
+- bc$ and is called a {\it determinant} of second order. $a,b,c,d$ are called elements of the determinant and $ad - bc$ is
+called value of the determinant.
+
+As you can see, the elements of a determinant are positioned in the form of a square in its designation. The diagonal on which
+elements aa and dd lie is called the principal or primary diagonal of the determinant and the diagonal which is formed on the line
+of bb and cc is called the secondary diagonal. A row is constituted by elements lying in the same horizontal line and a column is
+constituted by elements lying in the same vertical line. Clearly, determinant of second order has two rows and two columns and its
+value is equal to the products of elements along primary diagonal minus the product of elements along the secondary diagonal. Thus,
+by definition
+
+\startformula \startdeterminant\NC 2 \NC 4\NR\NC 3 \NC 9\NR\stopdeterminant = 18 - 12 = 6\stopformula
+
+Let $a_1, a_2, a_3, b_1, b_2, b_3, c_1, c_2, c_3$ be any nine numbers, then the symbol
+
+\startformula \startdeterminant\NC a_1 \NC a_2 \NC a_3\NR\NC b_1 \NC b_2 \NC b_3\NR\NC c_1 \NC c_2 \NC c_3\NR\stopdeterminant\stopformula
+is another way of saying
+\startformula a_1\startdeterminant\NC b_2 \NC b_3\NR\NC c_2 \NC c_3\NR\stopdeterminant - a_2\startdeterminant\NC b_1 \NC b_3\NR\NC c_1 \NC c_3\NR\stopdeterminant + a_3\startdeterminant
+b_1 \NC b_2\NR c_1 \NC c_2\NR\stopdeterminant\stopformula
+i.e. $a_1(b_2c_3 - b_3c_2)-a_2(b_1c_3-b_3c_1) + a_3(b_1c_2-b_2c_1)$
+
+{\bf Rule to put + or - before any element:} Find the sum of number of rows and columns in which the considered element
+occus. If the sum is even put a $+$ sign before the element and if the sum is odd, put a $-$ sign before the element. Since $a_1$
+occurs in first row and first column whose sum is $1 + 1 = 2$ which is an even number, therefore $+$ sign occurs for it. Since
+$a_2$ occurs in first row and second column whose sum is $1+ 2 = 3$ which is an odd number, therefore $-$ sign occurs before it.
+
+We have expanded the determinant along first row in previous case. The value of determinant does not change no matter which row or
+column we expand it along. Expanding the determinant along second row, we get
+
+\startformula \startdeterminant\NC a_1 \NC a_2 \NC a_3\NR\NC b_1 \NC b_2 \NC b_3\NR\NC c_1 \NC c_2 \NC c_3\NR\stopdeterminant= -b_1\startdeterminant\NC a_2 \NC a_3\NR\NC c_2 \NC
+  c_3\NR\stopdeterminant + b_2\startdeterminant\NC a_1 \NC a_3\NR\NC c_1 \NC c_3\NR\stopdeterminant- b_3\startdeterminant\NC a_1 \NC a_2\NR\NC c_1 \NC c_2\NR\stopdeterminant\stopformula
+\startformula = -b_1(a_2c_3 - a_3c_2) + b_2(a_1c_3 - a_3c_1) - b_3(a_1c_2 - a_2c_1)\stopformula
+\startformula = a_1(b_2c_3 - b_3c_2)-a_2(b_1c_3-b_3c_1) + a_3(b_1c_2-b_2c_1)\stopformula
+
+Thus, we see that value of determinant remains unchanged irrespective of the change of row and column against which it is expanded.
+
+Usually, an element of a determinant is denoted by a letter with two suffices, first one indicating the row and second one
+indicating the column in which the element occcur. Thus, $a_{ij}$ element indicates that it has occurred in $i$th row and $j$th
+column. We also denote the rows by $R_1, R_2, R_3$ and so on. $R_i$ denotes the $i$th row of determinant while $R_j$ denotes $j$th
+row. Columns are denoted by $C_1, C_2, C_3$ and so on. $C_i$ and $C_j$ denote $i$th and $j$th column of determinant. $\Delta$ is the
+usual symbol for a determinant. Another way of denoting the determinant \startformula \startdeterminant\NC a_1\NC b_1\NC c_1\NR\NC a_2\NC b_2\NC c_2\NR\NC a_3\NC b_3\NC c_3
+\NR\stopdeterminant\stopformula is $(a_1b_2c_3)$. The expanded form of determinant has $n!$ terms where $n$ is the number of rows or columns.
+
+{\bf Ex 1.} Find the value of the determinant \startformula \Delta = \startdeterminant\NC 1 \NC 2 \NC 4\NR\NC 3 \NC 4 \NC 9\NR\NC 2 \NC 1 \NC 6\NR\stopdeterminant\stopformula
+
+\startformula \Delta = 1\startdeterminant\NC 4 \NC 9\NR\NC 1 \NC 6\NR\stopdeterminant -2\startdeterminant\NC 3 \NC 9\NR\NC 2 \NC 6\NR\stopdeterminant + 4\startdeterminant\NC 3 \NC 4\NR\NC 2 \NC
+  1\NR\stopdeterminant\stopformula
+
+Expanding the determinant along first row $= 1(24 -9) - 2(18 - 18) + 4(3 - 8) = -5$
+
+{\bf Ex 2.} Find the value of the determinant \startformula \Delta = \startdeterminant\NC 3 \NC 1 \NC 7\NR\NC 5 \NC 0 \NC 2\NR\NC 2 \NC 5 \NC 3\NR\stopdeterminant\stopformula
+
+Expanding the determinant along second row, \startformula \Delta = -5\startdeterminant\NC 1 \NC 7\NR\NC 5 \NC 3\NR\stopdeterminant + 0\startdeterminant\NC 3 \NC 7\NR 2 \NC 3\NR\stopdeterminant -2\startdeterminant\NC 3 \NC 1\NR\NC 2 \NC 5\NR\stopdeterminant\stopformula
+
+$= -5(3 - 35) -2(15 -2) = 134$
+
+\section{Minors}
+Consider the determinant \startformula \Delta = \startdeterminant\NC a_{11} \NC a_{12} \NC a_{13}\NR\NC a_{21} \NC a_{22} \NC a_{23}\NR\NC a_{31} \NC a_{31} \NC
+  a_{33}\NR\stopdeterminant\stopformula
+
+If we leave the elements belonging to row and column of a particular element $a_{ij}$ then we will obtain a second order
+determinant. The determinant thus obtained is called minor of $a_{ij}$ and it is denoted by $M_{ij},$ since there are $9$ elements
+in the above determinant we will have $9$ minors.
+
+For example, the minor of element \startformula a_{21}=\startdeterminant\NC a_{12} \NC a_{13}\NR\NC a_{32} \NC a_{33}\NR\stopdeterminant = M_{21}\stopformula
+
+The minor of element \startformula a_{32} = \startdeterminant\NC a_{11} \NC a_{13}\NR\NC a_{21} \NC a_{23}\NR\stopdeterminant = M_{32}\stopformula
+
+If we want to write the determinant in terms of minors then following is the expression obtained if we expand it along first row
+
+\startformula \Delta = (-1)^{1+1}a_{11}M_{11} + (-1)^{1 + 2}a_{12}M_{12} + (-1)^{1 + 3}a_{13}M_{13}\stopformula
+
+\startformula =a_{11}M_{11} - a_{12}M_{12} + a_{13}M_{13}\stopformula
+
+\section{Cofactors}
+The minor $M_{ij}$ multiplied with $(-1)^{i+j}$ is known as cofactor of the element $a_{ij}$ and is denoted like $A_{ij}$. Thus, we
+can say that, $\Delta = a_{11}A_{11} + a_{12}A_{12} + a_{13}A_{13}$
+
+\section{Theorems on Determinants}
+\starttheorem
+  The value of a determinant is not changed when rows are changed into corresponsing columns.
+\stoptheorem
+
+\startproof
+Let \startformula \Delta = \startdeterminant\NC a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2\NR\NC  a_3 \NC b_3 \NC c_3\NR\stopdeterminant\stopformula
+
+Expanding the determinant along first row, \startformula \Delta = a_1(b_2c_3 - b_3c_2) - b_1(a_2c_3 - a_3c_2) + c_1(a_2b_3 - a_3b_2)\stopformula
+
+If $\Delta^{\prime}$ be the value of the determinant when rows of determinant $\Delta$ are changed into corresponding columns then
+
+\startformula \Delta^{\prime} = \startdeterminant\NC a_1\NC a_2\NC a_3\NR\NC b_1\NC b_2 \NC b_3\NR\NC  c_1 \NC c_2 \NC c_3\NR\stopdeterminant\stopformula
+
+\startformula = a_1(b_2c_3 - b_3c_2) - a_2(b_1c_3 - b_3c_1) + a_3(b_1c_2 - b_2c_1)\stopformula
+
+\startformula = a_1(b_2c_3 - b_3c_2) - a_2b_1c_3 + a_2b_3c_1 + a_3b_1c_2 - a_3b_2c_1\stopformula
+
+\startformula = a_1(b_2c_3 - b_3c_2) - b_1(a_2c_3 - a_3c_2) + c_1(a_2b_3 - a_3b_2)\stopformula
+
+Thus, we see that $\Delta = \Delta^{\prime}$.
+\stopproof
+
+\starttheorem
+  If any two rows or columns of a determinant are interchanged, the sign of determinant is changed, but its value remains the same.
+\stoptheorem
+
+\startproof
+  Let \startformula \Delta = \startdeterminant\NC a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2\NR\NC  a_3 \NC b_3 \NC c_3\NR\stopdeterminant,\stopformula
+
+Expanding the determinant along first row, $\Delta = a_1(b_2c_3 - b_3c_2) - b_1(a_2c_3 - a_3c_2) + c_1(a_2b_3 - a_3b_2)$
+
+Now $\Delta^{\prime} = \startdeterminant\NC a_3 \NC b_3 \NC c_3\NR\NC a_2 \NC b_2 \NC c_2\NR\NC a_1 \NC b_1 \NC c_1\NR\stopdeterminant [R_1 \leftrightarrow R_3]$
+
+$= a_3(b_2c_1 - b_1c_2) - b_3(a_2c_1 - a_1c_2) + c_3(a_2b_1 - a_1b_2)$
+
+$= a_3b_2c_1 - a_3b_1c_2 - b_3a_2c_2 + b_3a_1c_2 + c_3a_2b_1 - c_3a_1b_2x$
+
+$= -a_1(b_2c_3 - b_3c_2) + b_1(a_2c_3 - a_3c_2) - c_1(a_2b_3 - a_3b_2)$
+
+$= -\Delta$
+\stopproof
+
+
+\starttheorem
+  The value of a determinant is zero if any two rows or columns are identical.
+\stoptheorem
+
+\startproof
+  Let \startformula \Delta = \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2\NR\NC  a_1 \NC b_1 \NC c_1\NR\stopdeterminant\stopformula
+
+\startformula \Delta = \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2 \NR\NC  a_1 \NC
+b_1 \NC c_1\NR\stopdeterminant = - \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2 \NR\NC
+a_1 \NC b_1 \NC c_1\NR\stopdeterminant = -\Delta [R_1\leftrightarrow R_3]\stopformula
+
+Thus, $\Delta = -\Delta \Rightarrow 2\Delta = 0 \Rightarrow \Delta = 0$.
+\stopproof
+
+\starttheorem
+  A common factor of all elements of any row(or of any column) may be taken outside the sign of the determinant. In other owrds, if
+  all the elements of the same row(or the same column) are multiplies by a constant, then the determinant becomes multiplied by
+  that number.
+\stoptheorem
+
+\startproof
+  \startformula \Delta = \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2\NR\NC  a_3 \NC b_3 \NC c_3\NR\stopdeterminant\stopformula
+
+Expanding the determinant along first row, $\Delta = a_1(b_2c_3 -
+b_3c_2) - b_1(a_2c_3 - a_3c_2) + c_1(a_2b_3 - a_3b_2)$
+
+and \startformula \Delta^{\prime} = \startdeterminant\NC  ma_1 \NC mb_1 \NC mc_1\NR\NC a_2 \NC b_2 \NC c_2
+\NR\NC  a_3 \NC b_3 \NC c_3\NR\stopdeterminant\stopformula
+
+$= ma_1(b_2c_3 - b_3c_2) - mb_1(a_2c_3 - a_3c_2) + mc_1(a_2b_3 - a_3b_2)$
+
+$= m\Delta$
+\stopproof
+
+\starttheorem
+  If every element of some row or column is the the sum of two terms, then the determinant is equal to the sum of two determinants;
+  one containing only the first term in place of each term, the other only the second term. The remaining elements of both the
+  determinants are the same as in the given determinant.
+\stoptheorem
+
+\startproof
+  We have to prove that
+
+\startformula \startdeterminant\NC  a_1 + \alpha_1 \NC b_1 \NC c_1\NR\NC a_2 + \alpha_2 \NC b_2 \NC c_2\NR\NC
+a_3 + \alpha_3 \NC b_3 \NC c_3\NR\stopdeterminant = \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC
+b_2 \NC c_2 \NR\NC  a_3 \NC b_3 \NC c_3\NR\stopdeterminant + \startdeterminant\NC \alpha_1 \NC b_1 \NC c_1\NR\NC \alpha_2 \NC
+b_2 \NC c_2 \NR\NC \alpha_3 \NC b_3 \NC c_3\NR\stopdeterminant\stopformula
+
+Let \startformula \Delta = \startdeterminant\NC  a_1 + \alpha_1 \NC b_1 \NC c_1\NR\NC a_2 + \alpha_2 \NC
+b_2 \NC c_2\NR\NC  a_3 + \alpha_3 \NC b_3 \NC c_3\NR\stopdeterminant\stopformula
+
+Then, \startformula \Delta = (a_1 + \alpha_1)\startdeterminant\NC  b_2 \NC c_2 \NR\NC  b_3 \NC
+c_3\NR\stopdeterminant - (a_2 + \alpha_2)\startdeterminant\NC  b_1 \NC c_1\NR\NC b_3 \NC
+c_3\NR\stopdeterminant + (a_3 + \alpha_3)\startdeterminant\NC  b_1 \NC c_1\NR\NC b_2 \NC
+c_2\NR\stopdeterminant\stopformula
+
+\startformula = a_1\startdeterminant\NC  b_2 \NC c_2 \NR\NC  b_3 \NC c_3\NR\stopdeterminant -
+a_2\startdeterminant\NC  b_1 \NC c_1\NR\NC b_3 \NC c_3\NR\stopdeterminant + a_3\startdeterminant\NC  b_1 \NC c_1\NR\NC b_2 \NC
+c_2\NR\stopdeterminant + \alpha_1\startdeterminant\NC  b_2 \NC c_2 \NR\NC  b_3 \NC c_3\NR\stopdeterminant -
+\alpha_2\startdeterminant\NC  b_1 \NC c_1\NR\NC b_3 \NC c_3\NR\stopdeterminant + \alpha_3\startdeterminant\NC  b_1 \NC c_1\NR\NC b_2 \NC
+c_2\NR\stopdeterminant\stopformula
+
+\startformula = \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2 \NR\NC  a_3 \NC b_3 \NC
+c_3\NR\stopdeterminant + \startdeterminant\NC \alpha_1 \NC b_1 \NC c_1\NR\NC \alpha_2 \NC
+b_2 \NC c_2 \NR\NC  \alpha_3 \NC b_3 \NC c_3\NR\stopdeterminant.\stopformula
+\stopproof
+
+\starttheorem
+  The value of a determinant does not change when any row or column is multiplied by a number or an expression and is then added to
+  or subtracted from any other row or column.
+\stoptheorem
+
+\startproof
+  We have to prove that
+
+\startformula \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2 \NR\NC  a_3 \NC b_3 \NC
+c_3\NR\stopdeterminant = \startdeterminant\NC  a_1 + mb_1 \NC b_1 \NC c_1\NR\NC a_2 + mb_2 \NC b_2 \NC c_2
+\NR\NC  a_3 + mb_3 \NC b_3 \NC c_3\NR\stopdeterminant\stopformula
+
+Let \startformula \Delta = \startdeterminant\NC  a_1 + mb_1 \NC b_1 \NC c_1\NR\NC a_2 + mb_2 \NC b_2 \NC c_2
+\NR\NC  a_3 + mb_3 \NC b_3 \NC c_3\NR\stopdeterminant\stopformula
+
+then \startformula \Delta = \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2 \NR\NC  a_3 \NC b_3 \NC
+c_3\NR\stopdeterminant + \startdeterminant\NC mb_1 \NC b_1 \NC c_1\NR\NC mb_2 \NC b_2 \NC c_2
+\NR\NC mb_3 \NC b_3 \NC c_3\NR\stopdeterminant\stopformula
+
+\startformula = \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2 \NR\NC  a_3 \NC b_3 \NC
+c_3\NR\stopdeterminant + m \startdeterminant\NC  b_1 \NC b_1 \NC c_1\NR\NC b_2 \NC b_2 \NC c_2 \NR\NC  b_3 \NC b_3 \NC
+c_3\NR\stopdeterminant\stopformula
+
+\startformula = \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2 \NR\NC  a_3 \NC b_3 \NC
+c_3\NR\stopdeterminant + m.0 = \Delta\stopformula
+\stopproof
+
+\section{Reciprocal Determinants}
+If \startformula \Delta = \startdeterminant\NC  a_1 \NC a_2 \NC a_3\NR\NC b_1 \NC b_2 \NC b_3\NR\NC c_1 \NC c_2 \NC c_3\NR\stopdeterminant\stopformula then \startformula \startdeterminant\NC  A_1 \NC A_2 \NC
+    A_3\NR\NC B_1 \NC B_2 \NC B_3\NR\NC C_1 \NC C_2 \NC C_3\NR\stopdeterminant = \Delta^2\stopformula
+
+where capital letters denote the cofactors of corresponding small letters in $\Delta$ i.e. $A_i =$ cofactor of $a_i, B_i =$
+cofactor of $b_i$ and $C_i =$ cofactor of $c_i$ in the determinant $\Delta$. Here, the cofactors are sometimes called
+{\it inverse} elements and determinant made from them is called {\it reciprocal} determinant.
+
+We know that,
+
+$a_1A_1 + a_2A_2 + a_3A_3 = \Delta, b_1B_1 + b_2B_2 + b_3C_3 =
+\Delta, c_1C_1 + c_2C_2 + c_3C_3 = \Delta, a_1B_1 + a_2B_2 +
+a_3B_3 = 0, b_1A_1 + b_2A_2 + b_3A_3 = 0, a_1C_1 + a_2C_2 +
+a_3C_3 = 0, c_1A_1 + c_2A_2 + c_3A_3 = 0, b_1C_1 + b_2C_2 +
+b_3C_3 = 0, c_1B_1 + c_2B_2 + c_3B_3 = 0$.
+Let \startformula \Delta_1 = \startdeterminant\NC  A_1 \NC A_2 \NC A_3\NR\NC B_1 \NC B_2 \NC
+B_3\NR\NC C_1 \NC C_2 \NC C_3\NR\stopdeterminant\stopformula
+Now, \startformula \Delta\Delta_1 = \startdeterminant\NC  a_1 \NC a_2 \NC a_3\NR\NC b_1 \NC b_2 \NC
+b_3\NR\NC c_1 \NC c_2 \NC c_3\NR\stopdeterminant\startdeterminant\NC  A_1 \NC A_2 \NC A_3\NR\NC B_1 \NC B_2 \NC
+B_3\NR\NC C_1 \NC C_2 \NC C_3\NR\stopdeterminant\stopformula
+\startformula = \startdeterminant\NC  a_1A_1 + a_2A_2 + a_3A_3 \NC a_1B_1 + a_2B_2 + a_3B_3 \NC
+a_1C_1 + a_2C_2 + a_3C_3\NR\NC b_1A_1 + b_2A_2 + b_3A_3 \NC b_1B_1 + b_2B_2 + b_3C_3 \NC
+b_1C_1 + b_2C_2 + b_3C_3\NR\NC c_1A_1 + c_2A_2 + c_3A_3 \NC c_1B_1 + c_2B_2 + c_3B_3 \NC
+c_1C_1 + c_2C_2 + c_3C_3\NR\stopdeterminant\stopformula
+\startformula = \startdeterminant\NC \Delta \NC 0 \NC 0\NR\NC 0 \NC \Delta \NC 0\NR\NC 0 \NC 0 \NC\Delta\NR\stopdeterminant\stopformula
+\startformula \Delta\Delta_1= \Delta^3\stopformula
+\startformula \Delta_1 = \Delta^2\stopformula
+
+Similarly, if $\Delta$ is a determinant of the $n$-th order and $\Delta'$ is the reciprocal determinant, then \startformula \Delta' = \Delta^{n
+  - 1}\stopformula which can be proven by induction.
+
+Any minor of $\Delta'$ of order $r$ is equla to the complement of the corresponding minor of $\Delta$ multiplied with $\Delta^{r -
+  1}$, provided that $\Delta \neq 0$. The proof of this is straightforward and has been left as an exercise to the reader.
+
+\section{Two Methods of Expansions}
+Let \startformula \Delta = \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2\NR\NC a_3 \NC b_3 \NC c_3\NR\stopdeterminant, \text{~and~} D= \startdeterminant\NC
+    a_1 \NC b_1 \NC c_1 \NC l\NR\NC a_2 \NC b_2 \NC c_2 \NC m\NR\NC a_3 \NC b_3 \NC c_3 \NC n\NR\NC  l' \NC m' \NC n' \NC r
+  \NR\stopdeterminant\stopformula
+
+Let $A_1, B_1, \ldots$ be the cofactors of $a_1, b_1, \ldots$ in $\Delta$.
+
+In the expansion of $D$, the sum of the terms containing $r$ is $r\Delta$: every other term contains one of the three $l, m, m$ and
+one of the three $l', m', n'$.
+
+Again, $\startdeterminant\NC  a_1 \NC l\NR\NC l' \NC r\NR\stopdeterminant$ and $\startdeterminant\NC  b_2 \NC c_2\NR\NC b_3 \NC c_3\NR\stopdeterminant$ are complementary
+minors of $\Delta$;
+
+hence, cofficients of $ll'$ in $D = -$ cofficient of $a_1r$ in $D = -$ coefficient of $a_1$ in $\Delta = -A_1$
+
+and similarly, coefficient of $mn'$ in $D = -$ coefficient of $c_2r$ in $D = -$ coefficient of $c_2$ in $\Delta = -C_2$
+
+Thus, we can show that \startformula D = r\Delta - [A_1ll' + B_2mm' + C_2nn' + C_2mn' + B_2m'n + A_2nl' + C_1n'l + B_1lm' + A_2l'm].\stopformula
+
+\section{Symmetric Determinants}
+A determinant of $n$th order is often wirtten in the form
+
+\startformula \startdeterminant\NC a_{11} \NC a_{12} \NC a_{13} \NC \dotfill \NC a_{1n}\NR
+  \NC a_{21} \NC a_{22} \NC a_{23} \NC \cdots \NC a_{2n}\NR
+  \NC a_{31} \NC a_{32} \NC a_{33} \NC \cdots \NC a_{3n}\NR
+  \multispan{9}{\dotfill}\NR
+  \NC a_{n1} \NC a_{n2} \NC a_{n3} \NC \cdots \NC a_{nn}
+\NR\stopdeterminant = (a_{11}a_{22} \ldots, a_{nn})\stopformula
+
+Denoting any element by $a_{ij}$, the determinant is said to be {\it symmetric} if $a_{ij} = a_{ji}$. If $a_{ij} = -a_{ji}$, the
+determinant is {\it skew-symmetric}: it is implied that all the elements in the leading diagonal are zero. For example, if
+\startformula \Delta_1 = \startdeterminant\NC  a \NC h \NC g \NC l\NR\NC h \NC b \NC f \NC m\NR\NC g \NC f \NC c \NC n\NR\NC l \NC m \NC n \NC 0\NR\stopdeterminant,
+  \Delta_2 = \startdeterminant\NC  0 \NC x \NC y\NR\NC -x \NC 0 \NC y\NR\NC -y \NC -x \NC 0\NR\stopdeterminant\stopformula
+the determinant $\Delta_1$ is symmetric and $\Delta_2$ is skew-symmetric. We also say that $\Delta_1$ is bordered by $l, m, n$.
+
+If $A_{ij}, A_{ji}$ are the cofactors of the elements $a_{ij}, a_{ji}$ of a symmetric determinant $\Delta$, then $A_{ij} = A{ji}$.
+
+For $A_{ij}$ is trandformed into $A_{ji}$, by changing rows into columns. Thus, if $\Delta = (a_{11}~a_{22}~a_{33})$
+\startformula A_{23} = -\startdeterminant\NC  a_{11} \NC a_{12}\NR\NC a_{31} \NC a_{32}\NR\stopdeterminant = -\startdeterminant\NC  a_{11} \NC a_{31}\NR\NC a_{12} \NC
+a_{32}\NR\stopdeterminant = -\startdeterminant\NC  a_{11} \NC a_{13}\NR\NC a_{21} \NC a_{23}\NR\stopdeterminant = A_{32}.\stopformula
+
+Similarly, for the skew-symmetric determinants $A_{ij} = (-)1^{n - 1}A_{ji}$, where $n$ is the order of the determinant. Also,
+every skew-symmetric determinant of odd order is equal to zero (follows from the definition of skew-symmetric determinants).
+
+\section{System of Linear Equations}
+
+\subsection{Consistent Linear Equations}
+A system of linear equations is said to be consistent if it has at least one
+solution.
+
+{\bf Example:} (i) System of equations $x + y = 2$ and $2x + 2y = 7$ is inconsistent because it has no solution i.e. no values
+of $x$ and $y$ exit which can satisfy the pair of equations. (ii) On the other hand equations $x + y = 2$ and $x - y = 0$ has a
+solution $x = 1, y = 1$ which satisfies the pair of equation making it a consistent system of linear equations.
+
+\section{Cramer's Rule}
+Cramer's rule is used to solve system of linear equations using determinants. Consider two equations $a_x + b_1y + c_1 = 0$ and
+$a_2x + b_2y + c_2 = 0$ where $\frac{a_1}{a_2}\neq \frac{b_1}{b_2}$
+
+Solving this by cross multiplication, we have,
+
+\startformula \frac{x}{b_1c_2 - b_2c_1} = \frac{-y}{a_1c_2 - a_2c_1} = \frac{1}{a_1b_2- a_2b_1}\stopformula
+
+\startformula \frac{x}{\startdeterminant\NC  b_1 \NC c_1\NR\NC b_2 \NC c_2\NR\stopdeterminant} = \frac{-y}{\startdeterminant\NC  a_1\NC c_1\NR\NC a_2 \NC c_2\NR\stopdeterminant} =
+\frac{1}{\startdeterminant\NC  a_1\NC b_1\NR\NC a_2 \NC b_2\NR\stopdeterminant}\stopformula
+
+\subsection{System of Linear Equations in Three Variables}
+Let the given system of linear equations given in $x, y$ and $z$ be $a_1x + b_1y + c_1z = d_1, a_2x + b_2y + c_2z = d_2$ and $a_3x
++ b_3y + c_3z = d_3$
+
+Let \startformula \Delta = \startdeterminant\NC  a_1\NC b_1\NC c_1\NR\NC a_2\NC b_2\NC c_2\NR\NC a_3\NC b_3\NC c_3\NR\stopdeterminant,
+\Delta_1 = \startdeterminant\NC  d_1\NC b_1\NC c_1\NR\NC d_2\NC b_2\NC c_2\NR\NC d_3\NC b_3\NC c_3\NR\stopdeterminant,
+\Delta_2 = \startdeterminant\NC  a_1\NC d_1\NC c_1\NR\NC a_2\NC d_2\NC c_2\NR\NC a_3\NC d_3\NC c_3\NR\stopdeterminant,
+\Delta_2 = \startdeterminant\NC  a_1\NC b_1\NC d_1\NR\NC a_2\NC b_2\NC d_2\NR\NC a_3\NC b_3\NC d_3\NR\stopdeterminant.\stopformula
+
+Let \startformula \Delta \neq 0\stopformula
+
+\startformula \Delta_1 = \startdeterminant\NC  d_1\NC b_1\NC c_1\NR\NC d_2\NC b_2\NC c_2\NR\NC d_3\NC b_3\NC c_3\NR\stopdeterminant = \startdeterminant\NC  a_1x + b_1y + c_1z\NC b_1 \NC c_1\NR\NC a_2x
+    + b_2y + c_2z \NC b_2 \NC c_2 \NR\NC a_3x + b_3y + c_3z \NC b_3 \NC c_3\NR\stopdeterminant
+= \startdeterminant\NC  a_1x \NC b_1 \NC c_1\NR\NC a_2x \NC b_2 \NC c_2 \NR\NC a_3x \NC b_3 \NC c_3\NR\stopdeterminant[C_1\rightarrow C_1 - yC_2 -zC_3]\stopformula
+
+\startformula = x\startdeterminant\NC  a_1\NC b_1\NC c_1\NR\NC a_2\NC b_2\NC c_2\NR\NC a_3\NC b_3\NC c_3\NR\stopdeterminant = x\Delta
+\Rightarrow x = \frac{\Delta_1}{\Delta}\stopformula
+
+Similalry, \startformula y = \frac{\Delta_2}{\Delta}, z = \frac{\Delta_3}{\Delta}\stopformula
+
+This rule which gives the values of $x, y$ and $z$ is known as Cramer's rule.
+
+\subsection{Nature of Solution of System of Linear Equations}
+From previous section we have arrived at the fact that $x\Delta = \Delta_1, y\Delta = \Delta_2, z\Delta = \Delta_3$
+
+{\bf Case I.} When $\Delta \neq 0$
+
+In this case unique values of $x, y, z$ will be obtained and the system of equations will have a unique solution.
+
+{\bf Case II.} When $\Delta = 0$
+
+{\bf Sub Case I.} When at least one of $\Delta_1, \Delta_2, \Delta_3$ is non-zero.
+
+Let $\Delta_1 \neq 0$ then $\Delta_1 = x\Delta$ will not be
+satisfied for any value of $x$ because $\Delta = 0$ and hence no
+value is possible in this case. Same is the case for $y$ and $z$.
+
+Thus, no solution is feasible and system of equations become inconsistent.
+
+{\bf Sub Case II.} When $\Delta_1 = \Delta_2 = \Delta_3 = 0$
+
+In this case infinite number of solutions are possible.
+
+\subsection{Condition for Consistency of Three Linear Equations in Two Unknonws}
+Consider a system of linear equations in $x$ and $y$m $a_1x + b_1y + c_1 = 0, a_2x + b_2y + c_2 = 0$ and $a_3x+ b_3y + c_3 = 0$
+will be consistent if the values of $x$ and $y$ obtained from any two equations satisfy the third equations.
+
+Solving first two equations by Cramer's rule, we have
+
+\startformula \frac{x}{\startdeterminant\NC  b_1 \NC c_1\NR\NC b_2 \NC c_2\NR\stopdeterminant} =
+\frac{-y}{\startdeterminant\NC  a_1 \NC c_1\NR\NC a_2 \NC c_2\NR\stopdeterminant} =
+\frac{1}{\startdeterminant\NC  a_1 \NC b_1\NR\NC a_2 \NC b_2\NR\stopdeterminant} = k(\text{say})\stopformula
+
+Substituting these in third equation we get,
+
+\startformula k[a_3(b_1c_2 - b_2c_1) - b_3(a_1c_2 - a_2c_1) + c_3(a_1b_2 - a_2b_1)] = 0\stopformula
+\startformula a_3(b_1c_2 - b_2c_1) - b_3(a_1c_2 - a_2c_1) + c_3(a_1b_2 - a_2b_1) = 0\stopformula
+\startformula \startdeterminant\NC  a_1\NC b_1\NC c_1\NR\NC a_2\NC b_2\NC c_2\NR\NC a_3\NC b_3\NC c_3\NR\stopdeterminant = 0\stopformula
+
+This is the required condition for consistency of three linear equations in two variables. If such a system of equations is
+consistent then number of solution is one i.e. a unique solution exists.
+
+\subsection{System of Homogeneous Linear Equations}
+A system of linear equations is said to be homogeneous if the sum of powers of the variables in each term is one. Let the three
+homogeneous equations in three unknowns $x, y, z$ be $a_1x + b_1y + c_1z = 0, a_2x + b_2y + c_2z = 0$ and $a_3x + b_3y + c_3z = 0$
+
+Clearly, $x = 0, y = 0, z= 0$ is a solution of above system of equations. This solution is called trivial solution and any other
+solution is called non-triivial solution. Let the above system of equations has a non-trivial solution.
+
+Let \startformula \Delta = \startdeterminant\NC  a_1\NC b_1\NC c_1\NR\NC a_2\NC b_2\NC c_2\NR\NC a_3\NC b_3\NC c_3\NR\stopdeterminant\stopformula
+
+From first two we have
+
+\startformula \frac{x}{\startdeterminant\NC  b_1 \NC c_1\NR\NC b_2 \NC c_2\NR\stopdeterminant} =
+\frac{-y}{\startdeterminant\NC  a_1 \NC c_1\NR\NC a_2 \NC c_2\NR\stopdeterminant} =
+\frac{z}{\startdeterminant\NC  a_1 \NC b_1\NR\NC a_2 \NC b_2\NR\stopdeterminant} = k(\text{say})\stopformula
+
+Substituting these in third equation we get
+
+\startformula k[a_3(b_1c_2 - b_2c_1) - b_3(a_1c_2 - a_2c_1) + c_3(a_1b_2 - a_2b_1)] =0\stopformula
+\startformula a_3(b_1c_2 - b_2c_1) - b_3(a_1c_2 - a_2c_1) + c_3(a_1b_2 - a_2b_1) = 0\stopformula
+\startformula \startdeterminant\NC  a_1\NC b_1\NC c_1\NR\NC a_2\NC b_2\NC c_2\NR\NC a_3\NC b_3\NC c_3\NR\stopdeterminant = 0\stopformula
+
+This is the condition for system of equation to have non-trivial solutions.
+
+\section{Use of Determinants in Coordinate Geometry}
+
+\subsection{Are of a Triangle}
+The area of a triangle whose vertices are $(x_1, y_1), (x_2, y_2)$ and $(x_3, y_3)$ is
+
+\startformula \Delta = \frac{1}{2}\startdeterminant\NC  x_1 \NC y_1 \NC 1\NR\NC x_2 \NC y_2 \NC 1\NR\NC x_3 \NC y_3 \NC1\NR\stopdeterminant\stopformula
+
+\subsection{Condition of Concurrency of Three Lines}
+Three lines are said to be concurrent if they pass through a common point i.e. they meet at a point.
+
+Let $a_1x + b_1y + c_1 = 0$ $a_2x + b_2y + c_2 = 0$ and $a_3x+ b_3y + c_3 = 0$ be three lines.
+
+These lines will be concurrent if
+\startformula \startdeterminant\NC  a_1\NC b_1\NC c_1\NR\NC a_2\NC b_2\NC c_2\NR\NC a_3\NC b_3\NC c_3\NR\stopdeterminant = 0\stopformula
+
+\subsection{Condition for General Equation in Second Degree to Represent a Pair of Straight Lines}
+The general second degree equation $ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0$ represent a pair of straight lines if
+
+\startformula \startdeterminant\NC  a \NC h \NC g\NR\NC h \NC b \NC f\NR\NC g \NC f \NC c\NR\stopdeterminant = 0\stopformula
+
+\section{Product of Two Determinants}
+Let \startformula \Delta_1 = \startdeterminant\NC  a_1 \NC a_2 \NC a_3\NR\NC b_1 \NC b_2 \NC b_3\NR\NC c_1 \NC
+c_2 \NC c_3\NR\stopdeterminant, \Delta_2 = \startdeterminant\NC  x_1 \NC x_2 \NC
+x_3\NR\NC y_1 \NC y_2 \NC y_3\NR\NC z_1 \NC z_2 \NC z_3\NR\stopdeterminant\stopformula then
+$\Delta_1\Delta_2$ is defined as
+
+\startformula \Delta_1\Delta_2 = \startdeterminant\NC  a_1x_1 + a_2x_2 + a_3x_3 \NC a_1y_1 +
+a_2y_2 + a_3y_3 \NC a_1z_1 + a_2z_2 + a_3z_3\NR\NC b_1x_1 + b_2x_2 + b_3x_3 \NC b_1y_1 +
+b_2y_2 + b_3y_3 \NC b_1z_1 + b_2z_2 + b_3z_3 \NR\NC  c_1x_1 + c_2x_2 + c_3x_3 \NC
+c_1y_1 + c_2y_2 + c_3y_3 \NC c_1z_1 + c_2z_2 + c_3z_3\NR\stopdeterminant\stopformula
+
+\section{Differential Coefficient of Determinant}
+Let \startformula y = \startdeterminant\NC  f_1(x) \NC f_2(x) \NC f_3(x)]\NR\NC g_1(x) \NC g_2(x) \NC
+g_3(x)\NR\NC h_1(x) \NC h_2(x) \NC h_3(x)\NR\stopdeterminant,\stopformula where $f_i(x), g_i(x),
+h_i(x), i= 1, 2, 3$ are differentiable functions of $x.$
+
+Now, $y = f_1(x)[g_2(x)h_3(x) - g_3(x)h_2(x)] - f_2(x)[g_1(x)h_3(x) -
+g_3(x)h_1(x)] +$ $f_3(x)[g_1(x)h_2(x) - g_2(x)h_1(x)]$
+
+$\therefore \frac{dy}{dx} = f_1^{\prime}(x)[g_2(x)h_3(x) -
+g_3(x)h_2(x)] + f_1(x)[g_2^{\prime}(x)h_3(x) - g_3^{\prime}(x)h_2(x) +
+g_2(x)h_3^{\prime}(x) - g_3(x)h_2^{\prime}(x)] +
+-f_2^{\prime}(x)[g_1(x)h_3(x) - g_3(x)h_1(x)] +
+-f_2(x)[g_1^{\prime}(x)h_3(x) - g_1(x)h_3^{\prime}(x) +
+g_1(x)h_3^{\prime}(x) - g_3(x)h_3^{\prime}(x)] +
+f_3^{\prime}(x)[g_1(x)h_2(x) - g_2(x)h_1(x)] +
+f_3(x)[g_1^{\prime}(x)h_2(x) - g_2^{\prime}(x)h_1(x)x +
+g_1(x)h_2^{\prime}(x) - g_2(x)h_1^{\prime}(x)]$
+
+\startformula = \startdeterminant\NC  f_1^{\prime}(x) \NC f_2^{\prime}(x) \NC
+f_1^{\prime}(x)\NR\NC g_1(x) \NC g_2(x) \NC g_3(x)\NR\NC h_1(x) \NC h_2(x) \NC
+h_3(x)\NR\stopdeterminant + \startdeterminant\NC  f_1(x) \NC f_2(x) \NC f_3(x)\NR\NC g_1^{\prime}(x)
+\NC g_2^{\prime}(x) \NC g_3^{\prime}(x) \NR\NC h_1(x) \NC h_2(x) \NC h_3(x) \NR\stopdeterminant +
+\startdeterminant\NC  f_(x) \NC f_2(x) \NC f_3(x)\NR\NC g_1(x) \NC g_2(x) \NC
+g_3(x)\NR\NC h_1^{\prime}(x) \NC h_2^{\prime}(x) \NC h_3^{\prime}(x)\NR\stopdeterminant\stopformula
+
+\section{Problems}
+\startitemize[n, 1*broad]
+\item Evaluate $\startdeterminant\NC  4 \NC 9 \NC 7\NR\NC 3 \NC 5 \NC 7\NR\NC 5 \NC 4 \NC 5\NR\stopdeterminant$.
+\item Show that $\startdeterminant\NC  1 \NC a\NC a^2\NR\NC 1 \NC b \NC b^2\NR\NC 1 \NC c \NC c^2\NR\stopdeterminant = (a - b)(b - c)(c - a)$.
+\item Evaluate $\startdeterminant\NC  1 \NC 2\NC 4\NR\NC 1 \NC 3 \NC 9\NR\NC 1 \NC 4 \NC 16\NR\stopdeterminant$ making use of relations between $2$nd and $3$rd
+  column.
+\item Evaluate $\startdeterminant\NC  4 \NC 9 \NC 2\NR\NC 3 \NC 5 \NC 7\NR\NC 8 \NC 1 \NC 6\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC  18 \NC 1 \NC 17\NR\NC 22 \NC 3 \NC 19\NR\NC 26 \NC 5 \NC 21\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC  4 \NC 9 \NC 7\NR\NC 3 \NC 5 \NC 7\NR\NC 5 \NC 4 \NC 5\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC  1^2 \NC 2^2 \NC 3^2\NR\NC 2^2 \NC 3^2 \NC 4^2\NR\NC 3^2 \NC 4^2 \NC 5^2\NR\stopdeterminant$.
+\item Let $a, b, c$ be positive and unequal. Show that the value of the determinant $\startdeterminant\NC  a \NC b \NC c\NR\NC b \NC c \NC a\NR\NC c \NC a \NC
+  b\NR\stopdeterminant$ is negative.
+\item Evaluate $\startdeterminant\NC  b + c\NC a + b \NC a\NR\NC c + a \NC b + c \NC b\NR\NC a + b \NC c + a \NC c\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC  1 + a_1 \NC a_2 \NC a_3\NC a_1 \NC 1+ a_2 \NC a_3\NR\NC a_1 \NC a_2 \NC 1 + a_3\NR\stopdeterminant$.
+\item Show that $\startdeterminant\NC  a + b + 2c \NC a \NC b\NR\NC c \NC b + c + 2a \NC b\NR\NC c \NC a \NC c + a + 2b\NR\stopdeterminant = 2(a + b + c)^3$.
+\item Show that $\startdeterminant\NC  a - b + c \NC a + b - c \NC a - b - c\NR\NC  b - c + a \NC b + c -a \NC b - c - a\NR\NC  c - a + b \NC c + a - b \NC c -
+  a -b\NR\stopdeterminant = 4(a^3 + b^3 + c^3 - 3abc)$.
+\item Prove that $\startdeterminant\NC  a - b - c \NC 2a \NC 2a\NR\NC 2b \NC b - c - a\NR\NC 2c \NC 2c \NC c - a - b\NR\stopdeterminant = (a + b + c)^3$.
+\item Prove that $\startdeterminant\NC  x \NC y \NC z\NR\NC x^2 \NC y^2 \NC z^2\NR\NC yz \NC zx \NC xy\NR\stopdeterminant = \startdeterminant\NC  1 \NC 1 \NC 1\NR\NC x^2 \NC y^2 \NC
+    z^2\NR\NC x^3 \NC y^3 \NC z^3\NR\stopdeterminant = (x - y)(y - z)(z - x)(xy + yz + zx)$.
+\item Prove that $\startdeterminant\NC  a^1 + 1 \NC ab \NC ac\NR\NC ab \NC b^2 + 1 \NC bc\NR\NC ac \NC bc \NC c^2 + 1\NR\stopdeterminant = 1 + a^2 + b^2 + c^2$.
+\item Prove that $\startdeterminant\NC 1 + a_1 \NC 1 \NC 1\NR\NC 1 \NC 1 + a_2 \NC 1\NR\NC 1 \NC 1 \NC 1 + a_3\NR\stopdeterminant = a_1a_2a_3\left(1 + \frac{1}{a_1}
+  + \frac{1}{a_2} + \frac{1}{a_3}\right)$.
+\item If $x,y,z$ are all different and if $\startdeterminant\NC  x \NC x^2 \NC 1 + x^3\NR\NC y \NC y^2 \NC 1 + y^3\NR\NC z \NC z^2 \NC 1 + z^3\NR\stopdeterminant =
+  0$, prove that $xyz = -1$.
+\item Evaluate $\startdeterminant\NC  b + c \NC a \NC a\NR\NC b \NC c + a \NC b\NR\NC c \NC c \NC a + b\NR\stopdeterminant$.
+\item Show that $\startdeterminant\NC (b + c)^2 \NC a^2 \NC a^2\NR\NC b^2 \NC (c + a)^2 \NC b^2\NR\NC c^2 \NC c^2 \NC (a + b)^2\NR\stopdeterminant = 2abc(a + b +
+  c)^3$.
+\item Solve the equation $\startdeterminant\NC 15 -x \NC 1 \NC 10\NR\NC 11 - 3x \NC 1\NC 16\NR\NC 7 - x \NC 1 \NC 13\NR\stopdeterminant = 0$.
+\item If $a + b + c = 0$, solve the equation $\startdeterminant\NC  a - x \NC c \NC b\NR\NC c \NC b - x \NC a\NR\NC b \NC a \NC c - x\NR\stopdeterminant = 0$.
+\item If $D_1 = \startdeterminant\NC  a \NC b \NC c\NR\NC d \NC e \NC f\NR\NC g \NC h \NC k\NR\stopdeterminant, D_2 = \startdeterminant\NC  a \NC g \NC x\NR\NC b \NC h \NC y\NR\NC c \NC k \NC
+    z\NR\stopdeterminant$ and $d=tx, e = hy, f = tz$, prove without expanding that $D_1 = -tD_2$
+\item Show without expanding thet $\startdeterminant\NC  a \NC bc \NC abc \NR\NC b \NC ca \NC abc\NR\NC c \NC ab \NC abc\NR\stopdeterminant = \startdeterminant\NC  a \NC
+    a^2 \NC a^3\NR\NC b \NC b^2 \NC b^3\NR\NC c \NC c^2 \NC c^3\NR\stopdeterminant$.
+\item If $a, b, c$ are positive and are the $p$th, $q$th, $r$th terms of a G.P., respectively, then show without expanding thet
+  $\startdeterminant\NC \log a \NC p \NC 1\NR\NC \log b \NC q \NC 1\NR\NC \log c \NC r \NC 1\NR\stopdeterminant = 0$.
+\item Evaluate $\startdeterminant\NC 1 \NC 1 \NC 1\NR\NC  1 \NC 1 + x \NC 1\NR\NC  1 \NC 1 \NC 1 +y\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC 1 \NC 1 \NC 1\NR\NC a \NC b \NC c\NR\NC a^3 \NC b^3 \NC c^3\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC 1 \NC b + c \NC b^2 + c^2\NR\NC 1 \NC c + a \NC c^2 + a^2\NR\NC  1 \NC a + b \NC a^2 + b^2\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC 1 \NC a \NC a^2 - bc\NR\NC  1 \NC b \NC b^2 - ac\NR\NC  1 \NC c \NC c^2 - ab\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC 1 \NC bc \NC bc(b + c)\NR\NC  1 \NC ca \NC ca(c + a)\NR\NC  1\NC ab \NC ab(a + b)\NR\stopdeterminant$.
+\item Prove that $\startdeterminant\NC 1 \NC a \NC b + c\NR\NC 1 \NC b \NC c + a\NR\NC 1 \NC c \NC c + a\NR\stopdeterminant = 0$.
+\item If $a, b, c$ are the $p$th, $q$th, $r$th terms respectively of an H.P., show that $\startdeterminant\NC  bc \NC p \NC 1\NR\NC  ca \NC q \NC
+  1\NR\NC  ab \NC r \NC 1\NR\stopdeterminant = 0$.
+\item If $\startdeterminant\NC  x^2 + 3x \NC x - 1 \NC x + 3\NR\NC  x + 1 \NC 1 - 2x \NC x - 4\NR\NC  x - 2 \NC x + 4 \NC 3x\NR\stopdeterminant = px^4 + qx^3 + rx^2 +
+  sx + t$ be an indentity in $x$, where $p, q, r, s$ and $t$ are constants, find the value of $t$.
+\item Prove that $\startdeterminant\NC  a \NC b \NC c\NR\NC a^2 \NC b^2 \NC c^2\NR\NC a^3 \NC b^3 \NC c^3\NR\stopdeterminant = abc(a - b)(b - c)(c - a)$.
+\item If $a, b, c$ are in A.P., show that $\startdeterminant\NC  x + 1 \NC x + 2 \NC x + a\NR\NC  x + 2 \NC x + 3 \NC x + b \NR\NC  x + 3 \NC x + 4 \NC x +
+  c\NR\stopdeterminant = 0$.
+\item If $\omega$ is a complex cube root of unity, prove that $\startdeterminant\NC  1 \NC \omega \NC \omega^2\NR\NC \omega \NC \omega^2 \NC 1\NR\NC \omega
+  \NC 1 \NC \omega^2\NR\stopdeterminant = 0$
+\item Evaluate $\startdeterminant\NC  k \NC k \NC k\NR\NC 1 \NC 2 \NC 3\NR\NC  1\NC 3 \NC 6\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC  a^2 + x \NC b^2 \NC c^2\NR\NC a^2 \NC b^2 + x \NC c^2\NR\NC a^2 \NC b^2 \NC c^2 + x\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC  a \NC b + c \NC a^2\NR\NC b \NC c + a \NC b^2\NR\NC c \NC a + b \NC c^2\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC  b + c \NC a - b \NC a\NR\NC c + a \NC b - c \NC b\NR\NC a + b \NC c - a \NC c\NR\stopdeterminant$.
+\item Show that $\startdeterminant\NC  a + b \NC b + c \NC c + a\NR\NC b + c \NC c + a \NC a + b\NR\NC c + a \NC a + b \NC b + c\NR\stopdeterminant = -2(a^3 + b^3 +
+  c^3 - 3abc)$.
+\item Show that $\startdeterminant\NC  x + a \NC x + b \NC x + c\NR\NC y + a \NC y + b \NC y + c\NR\NC z + a\NC z + b \NC z + c\NR\stopdeterminant = 0$.
+\item Show that $\startdeterminant\NC  0 \NC p - q \NC p - r\NR\NC  q - p \NC 0 \NC q - r\NR\NC  r - p \NC r - q \NC 0\NR\stopdeterminant = 0$.
+\item Show that $\startdeterminant\NC  a \NC a + b \NC a + 2b\NR\NC a + 2b \NC a \NC a + b\NR\NC a + b \NC a + 2b \NC a\NR\stopdeterminant = 9b^2(a + b)$
+\item Show that $\startdeterminant\NC  a \NC b - c \NC c + b\NR\NC  a + c \NC b \NC c - a\NR\NC  a - b \NC b + a \NC c\NR\stopdeterminant$ and $(a + b + c)$ have the
+  same sign.
+\item Evaluate $\startdeterminant\NC  b^2 + c^2 \NC ab \NC ac\NR\NC ab \NC c^2 + a^2 \NC bc\NR\NC ca \NC cb \NC a^2 + b^2\NR\stopdeterminant$.
+\item Show that $\startdeterminant\NC  (b + c)^2 \NC c^2 \NC b^2\NR\NC c^2 \NC (c + a)^2 \NC a^2\NR\NC b^2 \NC a^2 \NC (a + b)^2\NR\stopdeterminant = 2(ab + bc +
+  ca)^3$.
+\item Show that $\startdeterminant\NC  (a + b)^2 \NC ca \NC bc\NR\NC ca \NC (b + c)^2 \NC ab\NR\NC bc \NC ab \NC (c + a)^2\NR\stopdeterminant = 2abc(a + b + c)^3$.
+\item Show that $\startdeterminant\NC  \frac{a^2 + b^2}{c} \NC c \NC c\NR\NC a \NC \frac{b^2 + c^2}{a} \NC a\NR\NC b \NC b \NC \frac{c^2 + a^2}{b}\NR\stopdeterminant
+  = 4abc$.
+\stopitemize
+Solve the following equations:
+
+\startitemize[n, continue, 1*broad]
+\item $\startdeterminant\NC  a \NC a \NC x \NR\NC  a \NC a \NC a \NR\NC  b \NC x \NC b\NR\stopdeterminant = 0$.
+\item $\startdeterminant\NC  x \NC 2 \NC 3\NR\NC 6 \NC x + 4 \NC 4\NR\NC 7 \NC 8 \NC x + 8\NR\stopdeterminant = 0$.
+\item $\startdeterminant\NC  x \NC 2 \NC 3\NR\NC  4 \NC x \NC 1\NR\NC  x \NC 2 \NC 5\NR\stopdeterminant = 0$.
+\item $\startdeterminant\NC  x + a \NC b \NC c\NR\NC  a \NC x + b \NC c\NR\NC  a \NC b \NC x + c\NR\stopdeterminant = 0$.
+\item $\startdeterminant\NC  3 + x \NC 5 \NC 2 \NR\NC  1 \NC 7 + x \NC 6 \NR\NC  2 \NC 5 \NC 3 + x\NR\stopdeterminant = 0$.
+\stopitemize
+
+Show without expanding at any stage that:
+
+\startitemize[n, continue, 1*broad]
+\item $\startdeterminant\NC  a + b \NC b + c \NC c + a\NR\NC b + c \NC c + a \NC a + b\NR\NC b + c \NC c + a \NC a + b\NR\stopdeterminant = 2\startdeterminant\NC  a \NC b \NC
+  c\NR\NC b \NC c \NC a\NR\NC  c \NC a \NC b\NR\stopdeterminant$.
+\item $\startdeterminant\NC  b + c \NC c + a \NC a + b\NR\NC q + r \NC r + p \NC p + q \NR\NC  y + z \NC  z + x \NC x + y\NR\stopdeterminant = 2\startdeterminant\NC  a \NC b
+  \NC c\NR\NC p \NC q \NC r\NR\NC x \NC y \NC z\NR\stopdeterminant$.
+\item $\startdeterminant\NC  1 \NC \cos\alpha - \sin\alpha \NC \cos\alpha + \sin\alpha\NR\NC  1 \NC \cos\beta - \sin\beta \NC \cos\beta +
+  \sin\beta\NR\NC  1 \NC \cos\gamma - \sin\gamma \NC \cos\gamma + \sin\gamma\NR\stopdeterminant = 2\startdeterminant\NC  1 \NC \cos\alpha \NC \sin\alpha\NR\NC 1
+  \NC \cos\beta \NC \sin\beta\NR\NC 1 \NC \cos\gamma \NC \sin\gamma\NR\stopdeterminant$.
+\item $\startdeterminant\NC  (a - 1)^2 \NC a^2 + 1 \NC a\NR\NC (b - 1)^2 \NC b^2 + 1 \NC b\NR\NC (c - 1)^2 \NC c^2 + 1 \NC c\NR\stopdeterminant = 0$
+\item $\startdeterminant\NC  0 \NC c \NC b\NR\NC  -c \NC 0 \NC a\NR\NC  - b \NC -a \NC 0\NR\stopdeterminant = 0$.
+\item $\startdeterminant\NC  1 \NC a \NC bc\NR\NC  1 \NC b \NC ca\NR\NC  1 \NC c \NC ab\NR\stopdeterminant = \startdeterminant\NC  1 \NC a \NC a^2\NR\NC 1 \NC b \NC b^2\NR\NC  1 \NC c \NC
+    c^2\NR\stopdeterminant$.
+\item $\startdeterminant\NC  a \NC b \NC c\NR\NC x \NC y \NC z\NR\NC yz \NC zx \NC xy\NR\stopdeterminant = \startdeterminant\NC  ax \NC by \NC cz\NR\NC  x^2 \NC y^2 \NC z^2\NR\NC  1 \NC 1 \NC
+  1\NR\stopdeterminant$.
+\item $\startdeterminant\NC  a \NC b \NC c\NR\NC  x \NC y \NC z\NR\NC  p \NC q \NC r\NR\stopdeterminant = \startdeterminant\NC  y \NC b \NC q\NR\NC x \NC a \NC p\NR\NC  z \NC c \NC r\NR\stopdeterminant
+    = \startdeterminant\NC  x \NC y \NC z\NR\NC  p \NC q \NC r\NR\NC  a \NC b \NC c\NR\stopdeterminant$.
+\item find the value of the following determinant $\startdeterminant\NC  m! \NC (m + 1)! \NC (m + 2)!\NR\NC (m + 1)! \NC (m + 2)! \NC (m + 3)!\NR\NC (m +
+  2)! \NC (m + 3)! \NC (m + 4)!\NR\stopdeterminant$.
+\item Solve the following system of equations using Cramer'r rule: $x + y = 4,~2x - 3y = 9$.
+\item Solve the following system of equations using Cramer'r rule: $2x - y + 3z = 0,~x + y + z = 6,~x - y + z = 2$.
+\item Determine the nature of solution for the equations: $2x + 3y = 6,~4x + 6y = 10$.
+\item Show that the following system of equations is consistent $x + y - z = 1,~2x + 3x + z = 4,~4x + 3y + z = 16$.
+\item Determine the nature of solution for the equations: $x + y = 2,~2x + 2y = 4$.
+\item Determine whether the following system of equations is consistent: $2x + y = 13,~6x + 3y = 18,~x - y = -3$.
+\item Show that the system of following euqations has non-trivial solutions: $x + y - 6z = 0,~3x - y - 2x = 0,~x - y + 2x = 0$.
+\item For what value of $k$ the following system of equations possess non-trivial solution. Also, find all the solutions of the
+  system for that value of $k,~x + y - kz = 0,~3x - y - 2x = 0,\ x - y + 2x = 0$.
+\stopitemize
+
+Solve the following equations by Cramer's rule:
+
+\startitemize[n, continue, 1*broad]
+\item $x - 2y = 0;\ 7x + 6y = 40$.
+\item $x + y + z = 9;\ 3x + 2y - 3z = 0;\ z - x = 2$.
+\item $x - y + z = 0;\ 2x + 3y - 5z = -1;\ 3x - 4y + 2z = -1$.
+\item $2x + 3y - 3z = 0;\ 5x - 2y + 2z = 19;\ x + 7y - 5z = 5$.
+\item $x + y + z = 1;\ ax + by + cz = k;\ a^2x + b^2y + c^2z = k^2$ where $a\neq b\neq c$.
+\item $3x + 2y - 2z = 1;\ -x + y - 4z = 1;\ 2x - 3y + 4z = 8$.
+\stopitemize
+
+Determine whether the following system of equations have no solution, unique solution or infinite number of solution:
+
+\startitemize[n, continue, 1*broad]
+\item $3x + 9y = 5;\ 9x + 27y = 10$.
+\item $5x - 3y = 3;\ x + y = 7$.
+\item $x + 2y = 5;\ 3x + 6y = 15$.
+\item $2x + 3y + z = 5;\ 3x + y + 5z = 7;\ x + 4y - 2z = 3$.
+\item $x + y - z = -2;\ 6x + 4y + 6z = 26;\ 2x + 7y + 4z = 31$.
+\item $x + 4y = 9;\ 2x + 8y = 18;\ y - 2x = 0$.
+\stopitemize
+
+\startitemize[n, continue, 1*broad]
+\item Find the value of $k$ such that following system of equations possess a non-trivial solution over the set of rationals
+  $Q$. For that value of $k$ find all the solutions of the system: $x + ky _ 3z = 0;\ x + ky - 2z = 0;\ 2x + 3y - 4z = 0$.
+\item If $a, b, c$ are different, show that the following system of equations has non-trivial solutions only when $a + b + c =
+  0,\ ax + by + cz = 0;\ bx + cy + az = 0;\ cz + ay + bz = 0$.
+\item  what value of $\lambda$ the following system of equations has non-trivial solutions: $3x - y + 4z = 0;\ x _ 2y - 3z = 0;\ 6x
+  + 5y - \lambda z = 0$.
+\item For a positive integer $n$, if $D = \startdeterminant\NC  n! \NC (n + 1)! \NC (n + 2)!\NR\NC (n + 1)! \NC (n + 2)1 \NC (n + 3)! \NR\NC (n + 2)! \NC (n +
+  3)! \NC (n + 4)!\NR\stopdeterminant$, then show that $\frac{D}{(n!)^3} - 4$ is divisible by $n$.
+\item Let the three digit numbers $A28, 3B9, 62C,$ where $A, B, C$ are integers between $0$ and $9$, be divisible by a fixed
+  integer $k$, show that the determinant $\startdeterminant\NC  A \NC 2 \NC 6\NR\NC  8 \NC 9 \NC C \NR\NC  2 \NC B\NC 2\NR\stopdeterminant$ is divisible by $k$.
+\item Evaluate $\startdeterminant\NC {}^xC_1 \NC {}^xC_2 \NC {}^xC_3\NR\NC {}^yC_1 \NC {}^yC_2 \NC {}^yC_3\NR\NC {}^zC_1 \NC {}^zC_2 \NC {}^zC_3\NR\stopdeterminant$
+\item If $a\neq p, b\neq q, c\neq r$ and $\startdeterminant\NC  p \NC b \NC c\NR\NC a \NC q \NC c\NR\NC a \NC b \NC r\NR\stopdeterminant = 0$, then find the values of
+  $\frac{p}{p - a} + \frac{q}{q - b} + \frac{r}{r - c}$.
+\item Show that $\startdeterminant\NC (x - a)^2 \NC b^2 \NC c^2 \NR\NC a^2 \NC (x - b)^2 \NC c^2\NR\NC a^2 \NC b^2 \NC (x - c)^2\NR\stopdeterminant = x^2(x - 2a)(x -
+  2b)(x - 2c)$
+
+  $\left(x + \frac{a^2}{x - 2a} + \frac{b^2}{x - 2b} + \frac{c^2}{x - 2c}\right)$.
+\item If $a > 0, d > 0$, find the value of the determinant
+  \startformula \startdeterminant\NC \frac{1}{a} \NC \frac{1}{a(a + d)} \NC \frac{1}{(a + d)(a +
+    2d)}\NR\NC \frac{1}{a + d} \NC \frac{1}{(a + d)(a + 2d)} \NC \frac{1}{(a + 2d)(a + 3d)}\NR\NC \frac{1}{a + 2d} \NC \frac{1}{(a + 2d)(a + 3d)}
+  \NC \frac{1}{(a + 3d)(a + 4d)}\NR\stopdeterminant.\stopformula
+\item Show that $\startdeterminant\NC \frac{1}{a + x} \NC \frac{1}{a + y} \NC \frac{1}{a + z}\NR\NC \frac{1}{a + y} \NC \frac{1}{b + y} \NC
+  \frac{1}{b + z}\NR\NC \frac{1}{c + x} \NC \frac{1}{c + y} \NC \frac{1}{c + z}\NR\stopdeterminant = $ \startformula \frac{(a - b)(b - c)(c - a)(x - y)(y -
+  z)(z - x)}{(a + x)(b + x)(c + x)(b + x)(b + y)(b + z)(c + x)(c + y)(c + z)}.\stopformula
+\item If $2s = a + b + c$, show that \startformula \startdeterminant\NC  a^2 \NC (s - a)^2 \NC (s - a)^2\NR\NC (s - b)^2 \NC s^2 \NC (s - b)^2\NR\NC (s - c)^2 \NC (s -
+  c)^2 \NC s^2\NR\stopdeterminant = 2s^3(s - a)(s - b)(s - c).\stopformula
+\item Show that \startformula \startdeterminant\NC  ax - by - cz \NC ay + bx \NC cx + az\NR\NC ay + bx \NC by - cz - ax \NC bz + cy\NR\NC cx + az \NC bz + cy \NC cz - ax -
+  by\NR\stopdeterminant = (x^2 + y^2 + z^2)(a^2 + b^2 + c^2)(ax + by + cz).\stopformula
+\item Find the value of $\theta$ between $0$ and $\pi/2$ and satisfying the equation: \startformula \startdeterminant\NC 1 + \cos^2\theta \NC
+  \sin^2\theta \NC 4\sin\theta\NR\NC \cos^2\theta \NC 1 + \sin^2\theta \NC 4\sin\theta\NR\NC \cos^2\theta \NC \sin^2\theta \NC 1 +
+  4\sin\theta\NR\stopdeterminant = 0.\stopformula
+\item If $a^2 + b^2 + c^2 = 1$, then prove that \startformula \startdeterminant\NC  a^2 + (b^2 + c^2)\cos\phi \NC ab(1 - \cos\phi) \NC ac(1 -
+  \cos\phi)\NR\NC ab(1 - \cos\phi) \NC b^2 + (c^2 + a^2)\cos\phi \NC bc(1 - \cos\phi)\NR\NC ca(1 - \cos\phi) \NC bc(1 - \cos\phi) \NC c^2 + (a^2 +
+  b^2)\cos\phi\NR\stopdeterminant = \cos^2\phi.\stopformula
+\item If none of the $a,b,c$ is zero, show that $\startdeterminant\NC -bc \NC b^2 + ac \NC c^2 + bc\NR\NC a^2 + ac \NC -ac \NC c^2 + ac\NR\NC a^2 + ab \NC
+  b^2 + ab \NC -ab\NR\stopdeterminant = (ab + bc + ca)^3$.
+\item If $u, v$ are functions of $x$, and $y = \frac{u}{v}$, show that $v^2\frac{d^2x}{dy^2} = \startdeterminant\NC  u \NC v \NC 0\NR\NC u' \NC b' \NC
+  v\NR\NC u'' \NC v'' \NC 2v'\NR\stopdeterminant$ where primes denote derivatives.
+\item If $a\neq 0$ and $a\neq 1$, show that $\startdeterminant\NC  x + 1 \NC x \NC x\NR\NC x \NC x + a \NC x\NR\NC  x \NC x\NC x + a^2\NR\stopdeterminant = a^3\left[1
+    + \frac{x(a^3 - 1)}{a^2(a - 1)}\right]$.
+\item If $p + q + r = 0$, prove that $\startdeterminant\NC  pa \NC qb \NC rc \NR\NC  qc \NC ra \NC pb\NR\NC  rb \NC pc \NC qa\NR\stopdeterminant =
+  pqr\startdeterminant\NC  a \NC b \NC c\NR\NC  c \NC a \NC b\NR\NC b \NC c \NC a\NR\stopdeterminant$.
+\item Show without expanding that $\startdeterminant\NC 1 \NC a \NC a^2\NR\NC 1 \NC b \NC b^2\NR\NC 1 \NC c \NC c^2\NR\stopdeterminant = \startdeterminant\NC 1 \NC bc \NC b +
+  c\NR\NC  1 \NC ca \NC c + a\NR\NC  1 \NC ab \NC a + b\NR\stopdeterminant$.
+\item Show without expanding that $\startdeterminant\NC  x^2 + x \NC x + 1 \NC x - 2\NR\NC  2x^2 + 3x - 1 \NC 3x \NC 3x - 3\NR\NC  x^2 + 2x + 3 \NC 2x - 1 \NC
+  2x - 1\NR\stopdeterminant = aA + B$, where $A$ and $B$ are determinants of $3$rd order not involving $x$.
+\item If $D_r = \startdeterminant\NC  r \NC x \NC \frac{n(n + 1)}{2}\NR\NC  2r - 1 \NC y \NC \frac{n(3n - 1)}{2}\NR\NC  3r - 2 \NC z \NC \frac{n(3n -
+    1)}{2}\NR\stopdeterminant$ show that $\displaystyle\sum_{r=1}^nD_r = 0$.
+\item Without expanding the determinant, show that the value of $\startdeterminant\NC -5 \NC 3 + 5i \NC \frac{3}{2} - 4i\NR\NC  3 - 5i \NC 8 \NC 4 +
+  5i\NR\NC \frac{3}{2} + 4i \NC 4 - 5i \NC 9\NR\stopdeterminant$ is real.
+\item Prove that $\startdeterminant\NC -2a \NC a + b \NC b + c\NR\NC b + a \NC -2b \NC b + c\NR\NC c + a \NC c + b \NC -2c\NR\stopdeterminant = 4(a + b)(b + c)(c +
+  a).$
+\item $f_r(x), g_r(x), h_r(x)$, where $r = 1,2,3$ are polynomials in $x$ such that $f_r(a) = g_r(a) = h_r(a)$ and \startformula F(x)
+  = \startdeterminant\NC  f_1(x) \NC f_2(x) \NC f_3(x)\NR\NC g_1(x) \NC g_2(x) \NC g_3(x)\NR\NC h_1(x) \NC h_2(x) \NC h_3(x)\NR\stopdeterminant\stopformula then find $F'(x)$.
+\item Let $\alpha$ be a repeated root of a quadratic equation $f(x) = 0$ and $A(x), B(x), C(x)$ be polynomials of degree $3,4,5$
+  respectively. Show that $\Delta(x) = \startdeterminant\NC  A(x) \NC B(x) \NC C(x)\NR\NC A(\alpha) \NC B(\alpha) \NC C(\alpha)\NR\NC A'(\alpha) \NC
+    B'(\alpha) \NC C'(\alpha)\NR\stopdeterminant$ is divisible by $f(x)$, where prime denotes a derivative.
+\item Prove that $\startdeterminant\NC \cos(\theta + \alpha) \NC \cos(\theta + \beta) \NC \cos(\theta + \gamma)\NR\NC \sin(\theta + \alpha) \NC
+  \sin(\theta + \beta) \NC \sin(\theta + \gamma)\NR\NC \sin(\beta - \gamma) \NC \sin(\gamma - \alpha) \NC \sin(\alpha - \beta)\NR\stopdeterminant$
+  is independent of $\theta$.
+\item If $f, g, h$ are differential functions of $x$ and $\Delta = \startdeterminant\NC  f \NC g \NC h\NR\NC  f' \NC g' \NC h'\NR\NC (x^2f)'' \NC (x^2g)'' \NC
+  (x^2h)''\NR\stopdeterminant$ prove that $\Delta' = \startdeterminant\NC  f \NC g \NC h\NR\NC f' \NC g' \NC h'\NR\NC (x^3f'')' \NC (x^3y'')' \NC
+    (x^3h'')'\NR\stopdeterminant$
+\item If $f(x) = \startdeterminant\NC  x^n \NC \sin x \NC \cos x\NR\NC n! \NC \sin\frac{n\pi}{2} \NC \cos\frac{n\pi}{2}\NR\NC a \NC a^2 \NC a^3\NR\stopdeterminant$,
+  then show that $\frac{d^nf(x)}{dx^n} = 0$, where $x = 0$.
+\item Prove that $\startdeterminant\NC \cos(A - P) \NC \cos(A - Q) \NC \cos(A - R)\NR\NC \cos(B - P) \NC \cos(B - Q) \NC \cos(Q - R)\NR\NC \cos(C - P) \NC
+  \cos(C - Q) \NC \cos(C- R)\NR\stopdeterminant = 0$.
+\item Prove that $\startdeterminant\NC  2bc - a^2 \NC c^2 \NC b^2\NR\NC c^2 \NC 2bc - b^2 \NC a^2\NR\NC b^2 \NC a^2 \NC 2bc - c^2\NR\stopdeterminant = (a^3 + b^3 +
+  c^3 - 3abc)^2$.
+\item Prove that $\startdeterminant\NC  1 \NC \cos(\beta - \alpha) \NC \cos(\gamma - \alpha)\NR\NC \cos(\alpha - \beta) \NC 1 \NC \cos(\gamma -
+  beta)\NR\NC \cos(\alpha - \gamma) \NC \cos(\beta - \gamma) \NC 1\NR\stopdeterminant = 0.$
+\item For what value of $m$ does the system of equation $3x + my = m$ and $2x - 5y = 20$ has a solution satisfying the conditions
+  $x >0,\ y>0$.
+\item Prove that the system of equation $3x - y + 4z = 0,\ x + 2y - 3z = -2,\ 6x + 5y + \lambda z = -3$ has at least one solution
+  for any real $\lambda$. Find the set of solutions when $\lambda = -5$.
+\item For what value of $p$ and $q$, the system of equations $2x + py + 6z = 8,\ x + 2y + qz = 5,\ x + y + 3z = 4$ has (a) no
+  solution (b) a unique solution, and (c) infinite solutions.
+\item Let $\lambda$ and $\alpha$ be real. Find the set of all values of $\lambda$ for which the system of equations: $\lambda x +
+  y\sin\alpha - z\cos\alpha = 0,\ x + y\cos\alpha + z\sin\alpha = 0,\ -x + y\sin\alpha - z\cos\alpha = 0$.
+\item Evaluate $\startdeterminant\NC  a \NC b + c \NC a^2\NR\NC b \NC c + a \NC b^2\NR\NC c \NC a + b \NC c^2\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC \sqrt{13} + \sqrt{3} \NC 2\sqrt{5} \NC \sqrt{5}\NR\NC  \sqrt{15} + \sqrt{26} \NC 5 \NC \sqrt{10}\NR\NC  3 + \sqrt{65}
+  \NC \sqrt{15} \NC 5\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC  x \NC x(x^2 + 1) \NC x + 1\NR\NC y \NC y(y^2 + 1) \NC y + 1\NR\NC z \NC z(z^2 + 1) \NC z + 1\NR\stopdeterminant$.
+\item If $x, y, z$ are respectively $l$th, $2m$th, $3n$th terms of an H.P., then find the value of $\startdeterminant\NC  yz \NC zx \NC xy
+  \NR\NC  l \NC 2m \NC 3n\NR\NC 1 \NC 1 \NC 1\NR\stopdeterminant$.
+\item Show that $\startdeterminant\NC 1 \NC a^2 \NC a^3\NR\NC 1 \NC b^2 \NC b^3\NR\NC 1 \NC c^2 \NC c^3\NR\stopdeterminant = (ab + bc + ca)\startdeterminant\NC 1 \NC a \NC
+    a^2\NR\NC 1 \NC b \NC b^2\NR\NC 1 \NC c \NC c^2\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC (b + c)^2 \NC a^2 \NC bc\NR\NC (c + a)^2 \NC b^2 \NC ca\NR\NC  (a + b)^2 \NC c^2 \NC ab\NR\stopdeterminant$.
+\item Prove that $\startdeterminant\NC  x^2 \NC x^2 - (y - z)^2 \NC yz\NR\NC y^2 \NC y^2 - (z - x)^2 \NC zx\NR\NC z^2 \NC z^2 - (x - y)^2 \NC xy\NR\stopdeterminant =
+  (x - y)(y - z)(z - x)(x + y + z)(x^2 + y^2 + z^2)$.
+\item If $a_1b_1c_1,\ a_2b_2c_2,\ a_3b_3c_3$ are three $3$ digit numbers such that each of them is divisible by $k$, then prove
+  that the determinant $\startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2\NR\NC a_3 \NC b_3 \NC c_3\NR\stopdeterminant$ is divisible by $k$.
+\item If $a_i,\ b_i,\ c_i\in\mathbb{R}(i = 1,\ 2,\ 3)$ and $x\in R$, show that $\startdeterminant\NC  a_1 + b_1x \NC a_1x + b_1 \NC c_1\NR\NC a_2
+  + b_2x \NC a_2x + b_2 \NC c_2\NR\NC a_3 + b_3x \NC a_3x + b_3 \NC c_3\NR\stopdeterminant = (1 - x^2)\startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC
+    c_2\NR\NC a_3 \NC b_3 \NC c_3\NR\stopdeterminant$.
+\item If $a,\ b,\ c$ are the roots of the equation $px^3 + qx^2 + rx + s = 0$, then find the value of $\startdeterminant\NC  1 + a \NC 1 \NC
+  1\NR\NC 1 \NC 1 + b \NC 1\NR\NC 1 \NC 1 \NC 1 + c\NR\stopdeterminant$.
+\item If $a < b < c$, prove that $\startdeterminant\NC 1 \NC a \NC a^4\NR\NC 1 \NC b \NC b^4\NR\NC 1 \NC c \NC c^4\NR\stopdeterminant > 0$.
+\item If $a,\ b,\ c$ are distinct and $\startdeterminant\NC  a \NC a^3 \NC a^4 -1\NR\NC b \NC b^3 \NC b^4 - 1\NR\NC c \NC c^3 \NC c^4 - 1\NR\stopdeterminant = 0$,
+  show that $abc(ab + bc + ca) = a + b + c$.
+\item Show that $x_1,\ x_2,\ x_3\neq 0$, $\startdeterminant\NC  x_1 + a_1b_1 \NC a_1b_2 \NC a_1b_3\NR\NC a_2b_1 \NC x_2 + a_2b_2 \NC a_2b_3\NR\NC a_3b_1 \NC
+  a_3b_2 \NC x_3 + a_3b_3\NR\stopdeterminant = x_1x_2x_3$
+
+  $\left(1 + \frac{a_1b_1}{x} + \frac{a_2b_2}{x} + \frac{a_3b_3}{x_3}\right)$.
+\item Show that $\startdeterminant\NC \frac{1}{a + x} \NC \frac{1}{a + y} \NC 1\NR\NC \frac{1}{b + x} \NC \frac{1}{b + y} \NC 1\NR\NC \frac{1}{c + x} \NC
+  \frac{1}{c + y} \NC 1\NR\stopdeterminant  = \frac{(a - b)(b - c)(c - a)(x - y)}{(a + x)(b + x)(c + x)(a + y)(b + y)(c + y)}$.
+\item Show that $\startdeterminant\NC  a^2 \NC bc \NC ac + c^2\NR\NC a^2 + ab \NC b^2 \NC ac\NR\NC ab \NC b^2 + bc \NC c^2\NR\stopdeterminant = 4a^2b^2c^2$.
+\item Show that $\startdeterminant\NC 1 + a^2 - b^2 \NC 2ab \NC -2b\NR\NC 2ab \NC 1 - a^2 + b^2 \NC 2a\NR\NC 2b \NC -2a \NC 1 - a^2 - b^2\NR\stopdeterminant = (1 +
+  a^2 + b^2)^3$.
+\item If $a,\ b,\ c$ are sides of a triangle, show that $\startdeterminant\NC  a^2 \NC (s - a)^2 \NC (s - b)^2\NR\NC (s - b)^2 \NC b^2 \NC (s -
+  b)^2\NR\NC (s - c)^2 \NC (s - c)^2 \NC c^2\NR\stopdeterminant = \frac{1}{2}P^2A^2$, where $P$ denotes the perimeter of the triangle, $A$ its
+  area and $s = \frac{P}{2}$.
+\item Show that $\startdeterminant\NC (x - a)^2 \NC ab \NC ac\NR\NC ba \NC (x - b)^2 \NC bc\NR\NC ca \NC cb \NC (x - c)^2\NR\stopdeterminant = x^2(x - 2a)(x - 2b)(x
+  - 2c)$
+
+  $\left(x + \frac{a^2}{x - 2a} + \frac{b^2}{x - 2b} + \frac{c^2}{x - 2c}\right)$.
+\item If $x,\ y,\ z$ are unequal and $\startdeterminant\NC  x^3 \NC (x + a)^3 \NC (x - a)^3\NR\NC y^3 \NC (y + a)^3 \NC (y - a)^3\NR\NC z^3 \NC (z + a)^3 \NC (z
+  - z)^3\NR\stopdeterminant = 0$, prove that $a^2(x + y + z) = 3xyz$.
+\item Show that $\startdeterminant\NC (1 - x) \NC a \NC a^2\NR\NC a \NC a^2 - x \NC a^3\NR\NC a^2 \NC a^3 \NC a^4 - x\NR\stopdeterminant = x^2(1 + a^2 + a^3) - x^3$.
+\item If $y = \sin px$ and $y_n = \frac{d^nx}{dy^n}$, find the value of $\startdeterminant\NC  y \NC y_1 \NC y_2\NR\NC y_3 \NC y_4 \NC y_5\NR\NC y_6 \NC y_7
+  \NC y_8\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC \cos^2\theta \NC \cos\theta\sin\theta \NC -\sin\theta\NR\NC \cos\theta\sin\theta \NC \sin^2\theta \NC
+  \cos\theta\NR\NC \sin\theta \NC -\cos\theta \NC 0\NR\stopdeterminant$.
+\item Evaluate $\startdeterminant\NC \cos\alpha \NC \sin\alpha\cos\beta \NC \sin\alpha\sin\beta\NR\NC -\sin\alpha \NC \cos\alpha\cos\beta \NC
+  \cos\alpha\sin\beta\NR\NC 0 \NC -\sin\beta \NC \cos\beta\NR\stopdeterminant$.
+\item Solve the equation $\startdeterminant\NC  a^2 + x \NC ab \NC ac\NR\NC ab \NC b^2 + x \NC bc\NR\NC ac \NC bc \NC c^2 + x\NR\stopdeterminant = 0$.
+\item Solve the equation for $x, \startdeterminant\NC {}^xC_r \NC {}^{n - 1}C_r \NC {}^{n - 1}C_{r - 1}\NR\NC {}^{x + 1}C_r \NC {}^nC_r * {}^nC_{r -
+    1}\NR\NC {}^{x + 2}C_r \NC {}^{n + 1}C_r \NC {}^{n + 1}C_{r - 1}\NR\stopdeterminant = 0\ \forall n,r > 1$.
+\item Solve the equation $\startdeterminant\NC  u + a^2x \NC w' + abx \NC v' + acx\NR\NC w' + abx \NC v + b^2x \NC u' + bcx\NR\NC  v' + acx \NC u' + bcx \NC w
+  + c^2x\NR\stopdeterminant = 0$ expressing the result by means of determinants.
+\item If $f(a,\ b) = \frac{f(b) - f(a)}{b - a}$ and $f(a, b, c) = \frac{f(b, c) - f(a, b)}{c - a}$, show that \startformula f(a, b, c)
+  = \startdeterminant\NC  f(a) \NC f(b) \NC f(c)\NR\NC 1 \NC 1 \NC 1\NR\NC a \NC b \NC c\NR\stopdeterminant\div\startdeterminant\NC 1 \NC 1 \NC 1\NR\NC a \NC b \NC c\NR\NC a^2 \NC b^2 \NC
+    c^2\NR\stopdeterminant.\stopformula
+\item If $A, B, C$ are the angles of a $\triangle ABC$, then prove that $\startdeterminant\NC  e^{2iA} \NC e^{-iC} \NC e^{-iB}\NR\NC e^{-iC} \NC
+  e^{2iB} \NC e^{-iA}\NR\NC e^{-iB} \NC e^{-iA} \NC e^{2iC}\NR\stopdeterminant$ is purely real.
+\item If $A, B, C$ are the angles of a $\triangle ABC$ such that $A\geq B\geq C$, find the minimum value of $\Delta$, where
+  $\Delta = \startdeterminant\NC \sin^2A \NC \sin A\cos A \NC \cos^2A\NR\NC \sin^2B \NC \sin B\cos B \NC \cos^2B\NR\NC \sin^2C \NC \sin C\cos C \NC
+  \cos^2C\NR\stopdeterminant$. Also, show that $\Delta = \frac{1}{4}[\sin(2A - 2B) + \sin(2B - 2C) + \sin(2C - 2A)]$.
+\item Evaluate $\startdeterminant\NC  a^2 \NC a \NC 1\NR\NC \cos nx \NC \cos(n + 1)x \NC \cos(n + 2)x\NR\NC \sin nx \NC \sin(n + 1)x \NC \sin(n +
+  2)x\NR\stopdeterminant$.
+\item If $0<x<\frac{\pi}{2}$, the find the values of $x$ for which $\startdeterminant\NC  1 + \sin^2x \NC \cos^2x \NC 4\sin2x\NR\NC \sin^2x \NC 1 +
+  \cos^2x \NC 4\sin2x\NR\NC \sin^2x \NC \cos^2x \NC 1 + 4\sin2x\NR\stopdeterminant$ has maximum value.
+\item If $A, B, C$ are the angles of a triangle, show that $\startdeterminant\NC -1 \NC \cos C \NC \cos B\NR\NC \cos C \NC -1 \NC \cos A\NR\NC \cos B \NC
+  \cos A \NC 1\NR\stopdeterminant = 0$.
+\item If $A, B, C$ are the angles of an isoscceles triangle, evaluate \startformula \startdeterminant\NC 1 \NC 1 \NC 1\NR\NC 1 + \sin A \NC 1 + \sin B \NC 1 +
+  \sin C\NR\NC \sin A + \sin^2A \NC \sin B + \sin^2B \NC \sin C + \sin^2C\NR\stopdeterminant.\stopformula
+\item For positive numbers $x, y, z\neq 1$, show that the numeric value of the determinant \startformula \startdeterminant\NC 1 \NC \log_xy \NC
+  \log_xz\NR\NC \log_yx \NC 1 \NC \log_yz\NR\NC \log_zx \NC \log_zy \NC 1\NR\stopdeterminant = 0.\stopformula
+\item If $a, b, c > 0$ and $x, y, z\in\mathbb{R}$, then show without expanding that \startformula \startdeterminant\NC (a^x + a^{-x})^2 \NC (a^x -
+  a^{-x})^2 \NC 1\NR\NC (b^y + b^{-y})^2 \NC (b^y - b^{-y})^2 \NC 1\NR\NC (c^z + c^{-z})^2 \NC (c^z - c^{-z})^2 \NC 1\NR\stopdeterminant = 0.\stopformula
+\item Without expanding the determinants, prove that $\startdeterminant\NC 103 \NC 115 \NC 114\NR\NC 111 \NC 108 \NC 106\NR\NC  104 \NC 113 \NC
+  116\NR\stopdeterminant + \startdeterminant\NC 113 \NC 116 \NC 104\NR\NC 108 \NC 106 \NC 111\NR\NC 115 \NC 114 \NC 103\NR\stopdeterminant = 0$.
+\item Evaluate $\displaystyle\sum_{n = 1}^NU_n$ if $U_n = \startdeterminant\NC  n \NC 1 \NC 5\NR\NC n^2 \NC 2N + 1 \NC 2N + 1\NR\NC n^3 \NC 3N^2 \NC
+  3N\NR\stopdeterminant$.
+\item If $A, B,C$ are the angles of a triangle, then show without expanding that \startformula \startdeterminant\NC \sin(A + B + C) \NC \sin B \NC \cos
+  C\NR\NC -\sin B \NC 0 \NC \tan A\NR\NC \cos(A + B) \NC -\tan A \NC 0\NR\stopdeterminant = 0.\stopformula
+\item Evaluate without expanding $\startdeterminant\NC  b^2 - ab \NC b - c \NC bc - ac\NR\NC  ab - a^2 \NC a - b \NC b^2 - ab\NR\NC  bc - ac \NC c - a \NC ab -
+  a^2\NR\stopdeterminant$
+\item Let $\Delta_i = \startdeterminant\NC  i - 1 \NC n \NC 6\NR\NC (i - 1)^2 \NC 2n^2 \NC 4n - 2\NR\NC  (i - 1)^3 \NC 3n^3 \NC 3n^2 - 2n\NR\stopdeterminant$. Show
+  that $\displaystyle\sum_{n = 1}^n\Delta_i = k$, a constant.
+\item Let $m\in\mathbb{P}$ and $\Delta_r = \startdeterminant\NC  2r - 1 \NC {}^mC_r \NC 1\NR\NC m^2 - 1 \NC 2^m \NC m + 1\NR\NC \sin^2m^2 \NC \sin^2m \NC
+  \sin^2(m  + 1)\NR\stopdeterminant$, then find the value of $\displaystyle\sum_{r = 0}^m\Delta_r$.
+\item Show that $\startdeterminant\NC {}^{x}C_r \NC {}^xC_{r + 1} \NC {}^xC_{r + 2}\NR\NC {}^{y}C_r \NC {}^yC_{r + 1} \NC {}^yC_{r + 2}\NR\NC {}^{z}C_r \NC
+  {}^zC_{r + 1} \NC {}^zC_{r + 2}\NR\stopdeterminant = \startdeterminant\NC {}^{x}C_r \NC {}^{x + 1}C_{r + 1} \NC{}^{x + 2}C_{r + 1}\NR\NC {}^{y}C_r \NC
+  {}^{y + 1}C_{r + 1} \NC{}^{y + 2}C_{r + 1}\NR\NC {}^{z}C_r \NC {}^{z + 1}C_{r + 1} \NC{}^{z + 2}C_{r + 1}\NR\stopdeterminant$
+\item If $\Delta_r = \startdeterminant\NC  r \NC n + 1\NC 1\NR\NC r^2 \NC 2n - 1 \NC \frac{2n + 1}{3}\NR\NC r^3 \NC 3n + 2 \NC \frac{n(n + 1)}{2}\NR\stopdeterminant$,
+  show that $\displaystyle\sum_{r=1}^n\Delta_r = 0$.
+\item If $\Delta_r = \startdeterminant\NC 2^{r - 1} \NC 2.3^{r - 1} \NC 4.5^{r - 1}\NR\NC x \NC y \NC z\NR\NC 2^{n} - 1 \NC 3^n - 1 \NC 5^n - 1\NR\stopdeterminant$,
+  show that $\displaystyle\sum_{r=1}^n\Delta_r = 0$.
+\item Show without expanding that $\startdeterminant\NC  x^2 \NC (x - 1)^2 \NC (x - 2)^2\NR\NC (x - 1)^2 \NC (x - 2)^2 \NC (x - 3)^2\NR\NC (x - 2)^2 \NC (x -
+  3)^2 \NC (x- 4)^2\NR\stopdeterminant$ is independent of $x$.
+\item Show without expanding that $\startdeterminant\NC 2 \NC 1 + i \NC 3\NR\NC  1- i \NC 0 \NC 2 + i\NR\NC 3 \NC 2 - i \NC 1\NR\stopdeterminant$ is purely real.
+\item Show without expanding that $\startdeterminant\NC  x - 3 \NC 2x + 1 \NC 2\NR\NC 3x + 2 \NC x + 2 \NC 1\NR\NC 5x + 1 \NC 5x + 4 \NC 5\NR\stopdeterminant$ is
+  independent of $x$.
+\item If $a$ and $x$ are real numbers and $n$ is a positive integer, then show without expanding that $\startdeterminant\NC  a^n - x \NC
+  a^{n + 1} - x \NC a^{n + 2} - x\NR\NC a^{n + 3} - x \NC a^{n + 4} - x \NC a^{n + 5} - x\NR\NC a^{n + 6} - x \NC a^{n + 7} - x \NC a^{n + 8} -
+  x\NR\stopdeterminant = 0$.
+\item Find $\displaystyle_{r=2}^n(-2)^r\startdeterminant\NC {}^{n - 2}C_{r - 2} \NC {}^{n - 2}C_{r - 1} \NC {}^{n - 2}C_r\NR\NC -3 \NC 1 \NC 1\NR\NC 2 \NC
+  1\NC 0\NR\stopdeterminant, n > 2$.
+\item If $a, b, c$ are non-zero real numbers, show without expanding that $\startdeterminant\NC  b^2c^2 \NC bc \NC b + c\NR\NC c^2a^2 \NC ca \NC c +
+  a\NR\NC  a^2b^2 \NC ab \NC a + b\NR\stopdeterminant = 0$.
+\item Prove that $\startdeterminant\NC  b + a - a - d \NC bc - ad \NC bc(a + d) - ad(b + d)\NR\NC c + a - b - d \NC ca - bd \NC ca(b + d) - bd(c +
+  a)\NR\NC  a + b - c - d \NC ab - cd \NC ab(c + d) - cd(a + b)\NR\stopdeterminant = -2(b - c)(c - a)(a - b)(a - d)(b - d)(c - d)$.
+\item Prove that $\startdeterminant\NC  bc - a^2 \NC ca - b^2 \NC ab - c^2\NR\NC ca + ab - bc \NC bc + ab - ca \NC bc + ca - ab\NR\NC (a + b)(a + c) \NC (b +
+  c)(b + a) \NC (c + a)(c + b)\NR\stopdeterminant= 3(b - c)(c - a)(a - b)(a + b + c)(ab + bc + ca)$.
+\item Prove that $\startdeterminant\NC 1 \NC (m + n - l - p)^2 \NC (m + n - l - p)^4\NR\NC 1 \NC (n + l - m - p)^2 \NC (n + l - m - p)^4\NR\NC 1 \NC (l + m -
+  n - p)^2 \NC (l + m - n - p)^4\NR\stopdeterminant = 64(l - m)(l - n)(l - p)(m - n)(m -p)(n - p)$.
+\item If $u, v, w$ are differentiable functions of $f$ and suffixes denote the derivatives w.r..t $t$, prove that
+  $\frac{d}{dt}\startdeterminant\NC  u_1 \NC v_1 \NC w_1\NR\NC u_2 \NC v_2 \NC w_2\NR\NC u_3 \NC v_3 \NC w_3\NR\stopdeterminant = \startdeterminant\NC  u_1 \NC v_1 \NC w_1\NR\NC u_2
+    \NC v_2 \NC w_2\NR\NC u_4 \NC v_4 \NC w_4\NR\stopdeterminant$.
+\item If $Y = sX$ and $Z= tX$, all the variables being differentiable functions of $x$, prove that $\startdeterminant\NC  X \NC Y \NC Z\NR\NC X_1
+  \NC Y_1 \NC Z_1\NR\NC X_2 \NC Y_2 \NC Z_2\NR\stopdeterminant = X^3\startdeterminant\NC  s_1 \NC t_1\NR\NC s_2 \NC t_2\NR\stopdeterminant$, where suffixes denote the
+  derivatives w.r.t. $x$.
+\item If $f(x), g(x), h(x)$ are polynomials in $x$, find the condition that $\startdeterminant\NC  f(x) \NC g(x) \NC h(x)\NR\NC f(\alpha) \NC
+  g(\alpha) \NC h(\alpha)\NR\NC  f(\beta) \NC g(\beta) \NC h(\beta)\NR\stopdeterminant$, which is a polynomial of degree $3$, is expressible as $a(x
+  - \alpha)^2(x - \beta)$.
+\item Show that $\startdeterminant\NC \sin(x + \alpha) \NC \cos(x + \alpha) \NC a + x\sin\alpha\NR\NC \sin(x + \beta) \NC \cos(x + \beta) \NC b +
+  x\sin\beta\NR\NC \sin(x + \gamma) \NC \cos(x + \gamma) \NC c + x\sin\gamma\NR\stopdeterminant$ is independent of $x$.
+\item If $l_r\vec{i}, m_r\vec{j}, n_r\vec{k}, r = 1, 2 ,3$ be three mutually perpendicular unit vectors, show that
+  $\startdeterminant\NC  l_1 \NC l_2 \NC l_3\NR\NC m_1 \NC m_2 \NC m_3\NR\NC n_1 \NC n_2 \NC n_3\NR\stopdeterminant = \pm 1$.
+\item Let $\Delta = \startdeterminant\NC  a_1 \NC b_1 \NC c_1\NR\NC a_2 \NC b_2 \NC c_2\NR\NC a_3 \NC b_3 \NC c_3\NR\stopdeterminant$ and $A_i, B_i, C_i$ be the
+  cofactors of $a_i, b_i, c_i$ respectively and $\alpha_i, \beta_i, \gamma_i$ be the cofactors of $A_i, B_i, C_i$ respectively,
+  where $i = 1, 2, 3$, show that $\startdeterminant\NC  A_1 \NC B_1 \NC C_1\NR\NC A_2 \NC B_2 \NC C_2\NR\NC A_3 \NC B_3 \NC
+    C_3\NR\stopdeterminant\startdeterminant\NC \alpha_1 \NC \beta_1 \NC \gamma_1\NR\NC \alpha_2 \NC \beta_2 \NC \gamma_2\NR\NC \alpha_3 \NC \beta_3 \NC
+      \gamma_3\NR\stopdeterminant = \Delta^6$
+\item Using determinants, solve the equations: $x + 2y + 3z = 6, 2x + 4y + z = 17, 3x + 2y + 9z = 2$.
+\item Solve the system of equations $ax + by + ca = d, a^2x + b^2y + c^2a = d^2, a^3x + b^3y + c^3a = d^3$. Will the solution
+  always exist and be unique?
+\item Determine the coefficients $a, b, c$ of the quadratic function where $f(x) = ax^2 + bx + c$, if $f(1) = 0, f(2) = -2$ and
+  $f(3) = -6$.
+\item Determine the coefficients $a, b, c$ of the quadratic function where $f(x) = ax^2 + bx + c$, if $f(0) = 6, f(2) = 11, f(-3) =
+  6$. Also, find $f(1)$.
+\item Solvve $(b + c)(y + z) - ax = b - c, (c + a)(z + x) - by = c - a, (a + b)(x + y) - cz = a - b$, where $a + b + c\neq 0$.
+\item Examine the consistency of the system of equations $7x - 7y + 5z = 3, 3x + y + 5z = 7$ and $2x + 3y + 5z = 5$.
+\item Find the value of $k$ for which the following system of equations is consistent $x + y = 3, (1 + k)x + (2 + k)y = 8, x - (1 +
+  k)y + (2 + k) = 0$.
+\item Find the value of $k$ for which the following system of equations is consistent $(k + 1)^3x + (k + 2)^3y = (k + 1)^3, (k +
+  1)x + (k + 2)y = k + 3, x + y = 1$.
+\item Find the values of $c$ for which the system of equations $2x + 3y = 4; (c + 2)x + (c + 4)y = c + 6, (c + 2)^2x + (c + 4)^2 =
+  (c + 6)^2$ are consistent and find the solutions for all such values of $c$.
+\item Find the values of $\lambda$ for which the system of equations $x + y - 2z = 0, 2x - 3y + z = 0, x - 5y + 4z = \lambda$ are
+  consistent and find the solutions for all such values of $\lambda$.
+\item Find the values of $\lambda$ and $\mu$ for which the following system of equations $x + y + z = 0, x + 2y + 3z = 14, 2x + 5y
+  + \lambda z = \mu,\ \lambda, \mu\in R$ has (a) unique solution (b) infinite solutions.
+\item If $bc + qr = ca + rp = ab + pq = -1$, show that $\startdeterminant\NC  qp \NC a \NC p\NR\NC bq \NC b\NC q\NR\NC cr \NC c \NC r\NR\stopdeterminant = 0$.
+\item Find all values of $k$ for which the following system possesses a non-trivial solution: $x + ky + 3z = 0; kx + 2y + 2z = 0,
+  2x + 3y + 4z = 0$
+\item If $x = cy + bz, y = az + cx, z = bx + ay$, where $a, b, c$ are not all zero. Prove that $a^2 + b^2 + c^2 + 2abc = 1$.
+  Further if at least one of $a, b, c$ is a proper fraction, prove that (a) $a^2 + b^2 + c^2 < 3$ (b) $abc > -1$
+\item If $a = \frac{x}{y - z}, b = \frac{y}{z - x}, c = \frac{z}{x - y}$, where $x, y, z$ are not all zero, prove that $1 + ab + bc
+  + ca = 0$.
+\item Consider the system of linear equations, in $x, y, z: (\sin3\theta)x - y + z = 0, (\cos2\theta) + 4y + 3z = 0, 2x + 7y + 7z =
+  0$. Find the value of $\theta$ for which this system has non-trivial solution.
+\item If $a, b, c$ are in G.P. with common ratio $r_1; \alpha, \beta, \gamma$ are in G.P. with common ratio $r_2$, then find the
+  conditions that $r_1$ must satisfy in order that the equations $ax + \alpha y + z = 0, bx + \beta y + z = 0, cx + \gamma y + z =
+  0$ have only trivial solutions.
+\item Prove that $\startdeterminant\NC  x \NC l \NC m \NC 1\NR\NC \alpha \NC x \NC n \NC 1\NR\NC \alpha \NC \beta \NC x \NC 1\NR\NC \alpha \NC \beta \NC \gamma \NC 1\NR\stopdeterminant
+  = (x - \alpha)(x - \beta)(x - \gamma)$, where $l, m, n$ have any values whatever.
+\item Prove that $\startdeterminant\NC  a \NC b \NC c \NC d\NR\NC -b \NC a \NC -d \NC c\NR\NC -c \NC d \NC a \NC -b\NR\NC -d \NC -c \NC b \NC a\NR\stopdeterminant = (a^2 + b^2 + c^2 +
+  d^2)^2$.
+\item If $u = ax^4 + 4bx^3 + 6cx^2 + 4dx + e$ and $u_{11} = ax^2 + 2bx + c, u_{12} = bx^2 + 2cx + d, u_{22} = cx^2 + 2dx + e$,
+  prove that $\startdeterminant\NC  a \NC b \NC c \NC u_{11}\NR\NC b \NC c \NC d \NC u_{12}\NR\NC c \NC d \NC e \NC u_{22}\NR\NC u_{11} \NC u_{12} \NC u_{22} \NC 0\NR\stopdeterminant
+    = -u\startdeterminant\NC  a \NC b \NC c\NR\NC b \NC c \NC d\NR\NC c \NC d \NC e\NR\stopdeterminant.$
+\item If $u = ax^2 + 2bxy + cy^2, u' = a'x^2 + 2b'xy + c'y^2$, prove that $\startdeterminant\NC  y^2 \NC -xy \NC x^2\NR\NC a \NC b \NC c\NR\NC a' \NC b' \NC
+  c'\NR\stopdeterminant = \startdeterminant\NC  ax + by \NC bx + cy\NR\NC a'x + b'y \NC b'x + c'y\NR\stopdeterminant = -\frac{1}{y}\startdeterminant\NC  u \NC u'\NR\NC ax +
+      by \NC a'x + b'y\NR\stopdeterminant$.
+\item Prove that $\startdeterminant\NC  a \NC b \NC ax + by\NR\NC b \NC c \NC bx + cy\NR\NC ax + by \NC bx + cy \NC 0\NR\stopdeterminant = -(ac - b^2)(ax^2 + 2bxy +
+  cy^2)$.
+\item Prove that the determinant $\startdeterminant\NC  a - x \NC b \NC c \NC d\NR\NC b \NC c - x \NC d \NC a\NR\NC c \NC d \NC a - x \NC b\NR\NC d \NC a \NC b \NC c -
+  x\NR\stopdeterminant = (x - a - b - c -d)(x - a + b - c + d)[x^2 - (a - c)^2 - (b - d)^2]$.
+\stopitemize
