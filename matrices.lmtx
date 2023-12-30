@@ -35,7 +35,7 @@ If $m = n$ i.e number of rows and columns are equal then the matrix is called a 
 The diagonal from left-hand side upper corner to right-hand side lower corner is known as leading diagonal or principal diagonal. In the example of square
 matrix the elements of diagonal are $1, 5, 9$. When a matrix has all elements as zero except those belonging to its diagonal, then
 it is called a {\it diagonal} matrix. Equivalently, We can say that a matrix $[a_{ij}]_{m\times n}$ is a diagonal matrix if $a_{ij} =
-0~\forall~i\neq j$. For example, the square matrix example can be converted to a diagonal matrix like below:
+0\;\forall\;i\neq j$. For example, the square matrix example can be converted to a diagonal matrix like below:
 
 \startformula \startbmatrix\NC 1 \NC 0 \NC 0 \NR\NC 0 \NC 5 \NC 0 \NR\NC 0 \NC 0 \NC 9\NR\stopbmatrix \stopformula
 
@@ -46,7 +46,7 @@ For an $n\times n$ matrix the diagonal elements are represented as $[d_1, d_2 \l
 A diagonal matrix whose elements of the diagonal are equal is called {\it scalar} matrix. For example:
 \startformula\startbmatrix\NC 5 \NC 0 \NC 0 \NR\NC 0 \NC 5 \NC 0 \NR\NC 0 \NC 0 \NC 5\NR\stopbmatrix \stopformula
 For a square matrix $[a_{ij}]_{m\times n}$ to be a scalar matrix:
-\startformula a_{ij} = \startmathcases\NC 0, \NC i\neq j \NR\NC m,\NC i = j\NR\stopmathcases~\forall~m\neq 0\stopformula
+\startformula a_{ij} = \startmathcases\NC 0, \NC i\neq j \NR\NC m,\NC i = j\NR\stopmathcases\;\forall\;m\neq 0\stopformula
 
 \subsection{Unit Matrix or Identity Matrix}
 A diagonal matrix of order $n$, which has all elements of its diagonal as one, is called a {\it unit} or {\it identity}
@@ -58,7 +58,7 @@ An $m\times n$ matrix is called a {\it horizontal} matrix if $m < n$. For exampl
 \startformula \startbmatrix\NC 1 \NC 2 \NC 3\NR\NC4 \NC 5 \NC 6\NR\stopbmatrix \stopformula
 
 \subsection{Vertical Matrix}
-An $m\times n$ matrix is called a vertical matrix if $m > n$. For example:
+An $m\times n$ matrix is called a {\it vertical} matrix if $m > n$. For example:
 \startformula \startbmatrix\NC 1 \NC 2 \NR\NC 3 \NC 4 \NR\NC 5 \NC 6\NR\stopbmatrix \stopformula
 
 \subsection{Triangular Matrix}
@@ -67,7 +67,7 @@ sqaure matrix in which all the elements above the diagonal matrix is called {\it
 triangular matrix $a_{ij} = 0$ when $i < j$ and for an upper triangular matrix $a_{ij} = 0$ when $i > j$
 
 Clearly, a diagonal matrix is both lower and upper triangular matrix. A triangular matrix is called strictly triangular if $a_{ii}
-= 0~\forall~1\leq i \leq n$. Example of upper triangular matrix:
+= 0\;\forall\;1\leq i \leq n$. Example of upper triangular matrix:
 \startformula \startbmatrix\NC 1 \NC 2 \NC 3\NR\NC0 \NC 5 \NC 6\NR\NC0 \NC 0 \NC 9\NR\stopbmatrix \stopformula
 Example of lower triangular matrix:
 \startformula \startbmatrix\NC 1 \NC 0 \NC 0\NR\NC4 \NC 5 \NC 0\NR\NC7 \NC 8 \NC 9\NR\stopbmatrix \stopformula
@@ -159,11 +159,11 @@ and clearly, if order of $A$ is $m\times n$ then $A'$ will have order of $n\time
 Proofs of these properties are simple and have been left as an exercise.
 
 \subsection{Symmetric Matrix}
-A sqaure matrix $A = [a_{ij}]$ is called a {\it symmetric} matrix if $a_{ij} = a_{ji}~\forall~i,j$. We can also say thet a
+A sqaure matrix $A = [a_{ij}]$ is called a {\it symmetric} matrix if $a_{ij} = a_{ji}\;\forall\;i,j$. We can also say thet a
 matrix is symmetric if and only if $A = A'$.
 
 \subsection{Skew Symmetric Matrix}
-A square matrix $A$ is said to be a {\it skew symmetric} matrix if $a_{ij} = -a_{ji}~\forall i, j$. Clearly, if a matrix is skew
+A square matrix $A$ is said to be a {\it skew symmetric} matrix if $a_{ij} = -a_{ji}\;\forall i, j$. Clearly, if a matrix is skew
 symmetric then elements of its diagonal are all zeros.
 
 \subsection{Orthogonal Matrix}
@@ -198,18 +198,18 @@ $B = \startbmatrix\NC 15 \NC -2 \NC -6\NR\NC-10 \NC -1 \NC 4\NR\NC-1 \NC 2 \NC -
 Following from above, inverse of a matrix is $\frac{adj(A)}{|A|}$. Inverse of a matrix $A$ is denoted by $A^{-1}$.
 
 \subsection{Hermitian and Skew Hermitian Matrix}
-A sqaure matrix $A = [a_{ij}]$ is said to be a {\it Hermitian} matrix if $a_{ij} = \overline{a_{ij}}~\forall~i, j$ i.e. $A =
+A sqaure matrix $A = [a_{ij}]$ is said to be a {\it Hermitian} matrix if $a_{ij} = \overline{a_{ij}}\;\forall\;i, j$ i.e. $A =
 A^{\theta}$. For example,
 \startformula \startbmatrix\NC a \NC b + ic \NR\NC b - ic \NC d\NR\stopbmatrix \stopformula is a Hermitian
 matrix.
 
-Similarly, a sqaure matrix $A = [a_{ij}]$ is said to be a {\it skew Hermitian} matrix if $a_{ij} = \overline{a_{ji}}~\forall~i,
+Similarly, a sqaure matrix $A = [a_{ij}]$ is said to be a {\it skew Hermitian} matrix if $a_{ij} = \overline{a_{ji}}\;\forall\;i,
 j$ i.e. $A = -A^{\theta}$. For example,
 
 \startformula \startbmatrix\NC 0 \NC -b + ic \NR\NC b + ic \NC 0\NR\stopbmatrix \stopformula is a skew Hermitian matrix. Following are observed for these types of
 matrices:
 \startitemize[n]
-\item If $A$ is a hermitian matrix, then $a_{ii} = \overline{a_{ii}} \Rightarrow a_{ii}$ is real, $\forall~i.$ Thus, members of
+\item If $A$ is a hermitian matrix, then $a_{ii} = \overline{a_{ii}} \Rightarrow a_{ii}$ is real, $\forall\;i.$ Thus, members of
   diagonal of a Hermitian matrix are all real.
 \item A Hermitian matrix over the set of real numbers is actually a real symmetric matrix.
 \item If $A$ is a skew Hermitian matrix, then $a_{ii} = -\overline{(a_{ii})} \Rightarrow a_{ii} = 0$ i.e. $a_{ii}$ must be purely
@@ -232,17 +232,17 @@ matrix. Such smallest integer is called index of the nilpotent matrix.
 \startitemize[n]
 \item If $A$ is a sqaure matrix of order $n,$ then $A(adj(A)) = |A|I_n = (adj(A))A$.
 
-Let $A= [a_{ij}],$ and let $C_{ij}$ be a cofactor of $a_{ij}$ in $A$. Then, $(adj(A)) = C_{ji}~\forall~1\leq i, j\leq n$. Now,
+Let $A= [a_{ij}],$ and let $C_{ij}$ be a cofactor of $a_{ij}$ in $A$. Then, $(adj(A)) = C_{ji}\;\forall\;1\leq i, j\leq n$. Now,
 
-\startformula (A~adj(A)) = \sum_{r = 1}^n (A)_{ir}(adj(A))_{rj}\stopformula
-\startformula = \sum_{r = 1}^n a_{ir}C_{rj} = \startmathcases\NC |A|, \NC \text{if}~i = j \NR\NC 0, \NC \text{if}~i \neq j\NR\stopmathcases\stopformula
+\startformula (A\;adj(A)) = \sum_{r = 1}^n (A)_{ir}(adj(A))_{rj}\stopformula
+\startformula = \sum_{r = 1}^n a_{ir}C_{rj} = \startmathcases\NC |A|, \NC \text{if}\;i = j \NR\NC 0, \NC \text{if}\;i \neq j\NR\stopmathcases\stopformula
 \startformula \Rightarrow = \startbmatrix\NC  |A| \NC 0 \NC 0 \NC \ldots \NC 0 \NR\NC 0 \NC |A| \NC 0
    \ldots \NC 0 \NR\NC \vdots \NC \vdots \NC \vdots \NC \vdots \NC \vdots \NR\NC 0 \NC 0 \NC 0 \NC
    \ldots \NC |A|\NR\stopbmatrix \stopformula
 \startformula = |A|I_n\stopformula
 Similarly, \startformula (adj(A) A)_{ij} = \sum_{r = 1}^n (adj(A))_{ir}A_{rj}\stopformula
-\startformula = \sum_{r = 1}^n C_{ri}a_{rj}= \startmathcases\NC |A|, \NC \text{if}~i = j
-   \NR\NC 0, \NC \text{if}~i \neq j\NR\stopmathcases\stopformula
+\startformula = \sum_{r = 1}^n C_{ri}a_{rj}= \startmathcases\NC |A|, \NC \text{if}\;i = j
+   \NR\NC 0, \NC \text{if}\;i \neq j\NR\stopmathcases\stopformula
 
 \item Every invertible matrix possesses a unique matrix. Let $A$ be a sqaure matrix of order $n\times n$. Let $B$ and $C$ be two
 inverses of $A$. Then, $AB = BA = I_n$ and $AC = CA = I_n$
@@ -288,7 +288,7 @@ We have $A(adj(A)) = |A|I_n$
 
 We know that $B(adj(B)) = |B|I_n$ for every sqaure matrix of order $n.$ Replacing $B$ by $adj(A),$ we get $(adj(A))[adj(adj(A))] =
 |adj(A)|I_n = |A|^{n - 1}I_n$. Multiplying both sides by $A$
-\startformula (A~adj(A))[adj(adj(A))] = A\{|A|^{n - 1}I_n\}\stopformula
+\startformula (A\;adj(A))[adj(adj(A))] = A\{|A|^{n - 1}I_n\}\stopformula
 \startformula |A|I_n (adj(adj(A))) = |A^{n - 1}|(AI_n)\stopformula
 \startformula adj(adj(A)) = |A^{n - 2}|A\stopformula
 

@@ -1,0 +1,2026 @@
+!\chapter{Inequalities}
+Ineuqalities come up in different branches of mathematics; for example in algebra, geometry and trigonometry. They are very
+useful in establishing many relations among various quantities. Certain inequalities are very useful in studying properties of
+many common expressions which lead to interesting observations. In this chapter we will only study algebraic inequalitites. The
+problems given are quite basic and simple. We start with some useful theorems for these inequalities.
+
+There are some facts which are the very important for proving inequalities. Some of them are as follows:
+
+\startitemize[n]
+\item If $x\geq y$ and $y\geq z$ then $x\geq z$, for any $x, y, z\in\mathbb{R}$.
+\item If $x\geq a$ and $y\geq b$ then $x + a\geq y + b$, for any $x, y, a, b\in\mathbb{R}$.
+\item If $x\geq y$ then $x + z\geq y + z$, for any $x, y, z\in\mathbb{R}$.
+\item If $x\geq y$ and $a\geq b$ then $xa\geq yb$, for any $x, y\in\mathbb{R}^+$ or $a, b\in\mathbb{R}^+$.
+\item If $x\in\mathbb{R}$ then $x^2\geq 0$, with equality holding if and only if $x = 0$. More generally for $a_i\in\mathbb{R}^+$
+  and $x_i\in\mathbb{R}, i = 1, 2, \ldots, n$ holds $a_ix_i^2 + a_2x_2^2 + \cdots + a_nx_n^2\geq 0$, with equality holding if and
+  only if $x_1 = x_2 = \cdots = x_n = 0$.
+\stopitemize
+
+\section{Strum's Method}
+Strum's method is given by the German mathematician {\sl Friedrich Otto Rudolf Sturm}. Sturm's method helps prove a large number of
+different inequalities under certain conditions along with various other applications.
+
+\starttheorem[th:strum:1]
+Prove that if the product of positive numbers $x_1, x_2, \cdots, x_n (n\geq 2)$ is euqal to $1$, then $x_1 + x_2 + \cdots + x_n\geq n$.
+\stoptheorem
+\startproof
+  If $x_1 = \cdots = x_n$, then $x_1 + \cdots + x_n = n$. So we see that the statement is true if all the numbers are equal and are
+  unity. Now we consider the case when at least two numbers are different such that one is greater than $1$ and the other one is
+  smaller. Let us assume that these are $x_1$ and $x_2$ which does not cause loss of generality, and that $x_1 < 1 < x_2$. Note
+  that $x_1 + x_2 > 1 + x_1x_2 [\because (1 - x_1)(x2 - 1) > 0]$. If given numbers are substitued by $1, x_1x_2, x_3, \ldots, x_n$,
+  then the product is equal to $1$ and $1 + x_1x_2 + x_3 + \cdots + x_n < x_1 + x_2 + \cdots + x_n$. Repeating this we will find $n
+  - 1$ numbers equal to $1$ and the $n$th number equal to $x_1x_2\ldots x_n$. Thus, $x_1 + x_2 + \cdots + x_n < 1$. We see that
+  equality holds if and only if $x_1 = x_2 = \cdots = x_n = 1$
+\stopproof
+
+\starttheorem[th:strum:2]
+  Prove that if the sum of the numbers $x_1, x_2, \ldots, x_n (n\geq 2)$ is equal to $1$, then prove that $x_1^2 + x_2^2 + \cdots +
+  x_n^2 \geq \frac{1}{n}$.
+\stoptheorem
+\startproof
+  If $x_1 = x_2 = \ldots = x_n = \frac{1}{n}$ then $x_1^2 + x_2^2 + \cdots + x_n^2 = \frac{1}{n}$. Like previous theorem we
+  consider two numbers $x_1$ and $x_2$ such that one of them is greater than $\frac{1}{n}$ while the other is smaller than
+  $\frac{1}{n}$. Assume that these two numbers are $x_1$ and $x_2$, which does not cause loss of generality, and that $x_1 <
+  \frac{1}{n}$ and $x_2 > \frac{1}{n}$. So we obtain a sequence of numbers $\frac{1}{n}, x_1 + x_2 - \frac{1}{n}, x_3, \ldots, x_n$
+  suhc that their sum remains equal to $1$. We can easily prove that $x_1^2 + x_2^2 > \frac{1}{n^2} + \left(x_1 + x_2 -
+  \frac{1}{n}\right)^2$, and hence \startformula x_1^2 + x_2^2 + \cdots + x_n^2 > \frac{1}{n^2} + \left(x_1 + x_2 - \frac{1}{n}\right)^2 +
+  x_3^2 + \cdots + x_n^2.\stopformula
+
+  Repeating this we obtain a sequence in which all terms will be equal to $\frac{1}{n}$, and sum of their square is less than the
+  sum of squares of numbers $x_1, x_2, \ldots, x_n$ i.e. $x_1^2 + x_2^2 + \cdots + x_n^2 > \frac{1}{n^2} +
+  \text{~to~}n\text{~times}$. From this it follows that equality holds if and only if $x_1 = x_2 = \cdots = x_n$.
+\stopproof
+
+\section{A.M., G.M., H.M. and Q.M.}
+\starttheorem
+  {\rm\bf (A.M.-- G.M. -- H.M. -- Q.M. Inequality)} Let $x_1, x_2, \ldots, x_n$ be positive real numbers, then
+  \placeformula\startformula
+  \frac{n}{\frac{1}{x_1} + \frac{1}{x_2} + \cdots + \frac{1}{x_n}} \leq \sqrt[n]{x_1x_2 \ldots x_n}\leq \frac{x_1 + x_2 + \cdots
+    + x_n}{n}\leq \sqrt{\frac{x_1^2 + x_2^2 + \cdots + x_n^2}{n}}.
+  \stopformula
+\stoptheorem
+
+\startproof
+  Consider the numbers $\frac{x_1}{\sqrt[n]{x_1x_2\cdots x_n}}, \frac{x_2}{\sqrt[n]{x_1x_2\cdots x_n}}, \cdots,
+  \frac{x_n}{\sqrt[n]{x_1x_2\cdots x_n}}$, we see that product is equal to $1$. From ~\in{theorem}[th:strum:1], we have that
+  \startformula \frac{x_1}{\sqrt[n]{x_1x_2\cdots x_n}} + \frac{x_2}{\sqrt[n]{x_1x_2\cdots x_n}} + \cdots + \frac{x_n}{\sqrt[n]{x_1x_2\cdots
+      x_n}}\geq n \Rightarrow \frac{x_1 + x_2 + \cdots + x_n}{n}\geq \sqrt[n]{x_1x_2\cdots x_n}.\stopformula
+  The above inequality is also known as Cauchy's inequality.
+
+  In the above inequality, if we substitute $x_i = \frac{1}{x_i}$, then \startformula \frac{n}{\frac{1}{x_1} + \frac{1}{x_2} + \cdots +
+    \frac{1}{x_n}} \leq \sqrt[n]{x_1x_2 \cdots x_n}.\stopformula
+
+  Consider the numbers $\frac{x_1}{x_1 + x_2 + \cdots + x_n}, \frac{x_2}{x_1 + x_2 + \cdots + x_n}, \cdots, \frac{x_n}{x_1 + x_2 +
+    \cdots + x_n}$, and note that their sum is equal to $1$. According to ~\in{theorem}[th:strum:2], we have \startformula \left(\frac{x_1}{x_1 +
+    x_2 + \cdots + x_n}\right)^2 + \left(\frac{x_2}{x_1 + x_2 + \cdots + x_n}\right)^2 + \cdots + \left(\frac{x_n}{x_1 + x_2 +
+    \cdots + x_n}\right)^2 \geq \frac{1}{n}\stopformula
+  \startformula \Rightarrow \frac{x_1^2 + x_2^2 + \cdots + x_n^2}{n}\geq \left(\frac{x_1 + x_2 + \cdots + x_n}{n}\right)^2.\stopformula
+
+  Hence, all the inequalities have been proven.
+\stopproof
+
+\section{Cauchy-Bunyakovsky-Schwarz Inequality}
+\starttheorem
+  {\rm \bf (Cauchy-Bunyakovsky-Schwarz Inequality)} Let $a_1, a_2, \ldots, a_n,$ $b_1, b_2, \ldots, b_n \in R$. Then
+  \placeformula\startformula
+    (a_1^2 + a_2^2 + \cdots + a_n^2)(b_1^2 + b_2^2 + \cdots + b_n)^2 \geq (a_1b_1 + a_2b_2 + \cdots a_nb_n)^2.
+  \stopformula
+\stoptheorem
+
+\startproof
+  Let $x_k = \sqrt{(a_1^2 + a_2^2 + \cdots + a_k^2)(b_1^2 + b_2^2 + \cdots + b_k^2)}$, where $k = 1, 2, \ldots, n$.
+  In this case,
+
+  \startformula x_{k + 1} = \sqrt{(a_1^2 + a_2^2 + \cdots + a_k^2 + a_{k + 1}^2)(b_1^2 + b_2^2 + \cdots + b_k^2 + b_{k + 1}^2)}\stopformula
+  \startformula \sqrt{\left[\left(\sqrt{a_1^2 + a_2^2 + \cdots + a_k^2}\right)^2 + a_{k + 1}^2\right]\left[\left(\sqrt{b_1^2 + b_2^2 + \cdots +
+        b_k}\right)^2 + b_{k + 1}^2\right]}\stopformula
+  \startformula \geq \sqrt{\left(\sqrt{a_1^2 + a_2^2 + \cdots + a_k^2}.\sqrt{b_1^2 + b_2^2 + \cdots + b_k^2} + a_{k + 1}.b_{k + 1}\right)^2} =
+  x_k + a_{k + 1}b_{k + 1}\stopformula
+  {\it Alternative Proof.}
+  \startformula (a_1^2 + a_2^2 + \cdots + a_n^2)(b_1^2 + b_2^2 + \cdots + b_n)^2 - (a_1b_1 + a_2b_2 + \cdots a_nb_n)^2 =
+  \sum_{i,j=1\\i\geq j}^n(a_ib_j - b_ja_i)^2\geq 0.\stopformula
+\stopproof
+
+\subsection{Titu's Lemma}
+\startlemma
+  Let $a_1, a_2, \ldots, a_n, b_1, b_2, \ldots, b_n$ be positive real numbers then
+  \placeformula\startformula
+  \frac{a_1^2}{b_1} + \frac{a_2^2}{b_2} + \ldots
+    + \frac{a_n^2}{b_n} \geq \frac{(a_1 + a_2 + \cdots + a_n)^2}{b_1 + b_2 + \cdots + b_n}
+  \stopformula
+\stoplemma
+
+\startproof
+  This is a direct consequence of {\it Cauchy-Bunyakovsky-Schwarz Inequality}. It is obtained by substituting $a_i =
+  \frac{x_i}{\sqrt{y_i}}$ and $b_i = \sqrt{y_i}$ into Cauchy-Bunyakovsky-Schwarz Inequality. Equality holds if and only if $a_i =
+  kb_i$ for a non-zero real constant $k$.
+\stopproof
+
+\section{Chebyshev's Inequality}
+\starttheorem
+  Let $a_1, a_2, \ldots, a_n, b_1, b_2, \ldots, b_n$ be real numbers such that  $a_1\leq _2\leq a_2\leq \cdots\leq a_n$ and $b_1\leq
+  b_2\leq\cdots\leq b_n$ or $a_1\geq _2\geq a_2\geq \cdots\geq a_n$ and $b_1\geq b_2\geq\cdots\geq b_n$, then the inequality
+  \placeformula\startformula
+    \left(\frac{a_1 + a_2 + \cdots + a_n}{n}\right)\left(\frac{b_1 + b_2 + \cdots + b_n}{n}\right)\leq \frac{a_1b_1 + a_2b_2 +
+      \cdots + a_nb_n}{n}
+  \stopformula
+  holds. The inequality is strict unless at least one of the sequences is a constant sequence.
+\stoptheorem
+
+\startproof
+  We have \startformula \sum_{i=1}^n\sum_{j=1}^n(a_ib_i - a_jb_j) = \sum_{i=1}^n\left(na_ib_i - a_i\sum_{j=1}^nb_j\right) =
+  n\sum_{i=1}^na_ib_i - \sum_{i=1}^na_i\sum_{j=1}^nb_j\stopformula
+  Simiarly
+  \startformula \sum_{i=1}^n\sum_{j=1}^n\left(a_jb_j - a_jb_i\right) = n\sum_{j=1}^na_jb_j - \sum_{j=1}^na_j\sum_{i=1}^nb_i\stopformula
+  From these two equations, we get
+  \startformula n\sum_{j=1}^na_jb_j - \sum_{j=1}^na_j\sum_{i=1}^nb_i = \frac{1}{2}\left[\sum_{i=1}^n\sum_{j=1}^n\left(a_ib_i - a_ib_j + a_jb_j
+    - a_jb_i\right)\right]\stopformula
+  \startformula = \frac{1}{2}\sum_{i=1}^n\sum_{j=1}^n(a_i - a_j)(b_i - b_j)\stopformula
+  Since both the sequences are either decreasing or increasing, we will have $(a_i - a_j)(b_i - b_j)\geq 0$. Thus, we have
+  \startformula n\sum_{j=1}^na_jb_j - \sum_{j=1}^na_j\sum_{i=1}^nb_i \geq 0.\stopformula
+  Here equality holds if and only if for each of the indexes $i, j$ either $a_i = a_j$ or $b_i = b_j$.
+\stopproof
+
+\startremark
+  If the the order of sequences $\langle a_i\rangle$ and $\langle b_i\rangle$ in the orevious theorem are reverses then the
+  inequlaity reverses as well.
+
+  {\rm The proof is similar to the proof of the theorem.}
+\stopremark
+
+\startremark
+  Chebyshev's inequality can be generalized to three or more sets of real numbers, with the constraint that sets are in increasing
+  or decreasing order.
+\stopremark
+
+\startremark
+  If the two sequeqnces are non-increasing or non-decreasing, and let $p_1, p_2, \ldots, p_b$ be a sequence of non=negative real
+  numbers such that $\sum_{i=1}^np_i$ is positive. Then the following inequality holds
+  \startformula \left(\frac{\sum_{i=1}^np_ia_ib_i}{\sum_{i=1}^np_i}\right)\geq\left(\frac{\sum_{i=1}^np_ia_i}{\sum_{i=1}^np_i}\right)\left(\frac{\sum_{i=1}^np_ib_i}{\sum_{i=1}^np_i}\right).\stopformula
+
+  {\rm The proof is similar to the theorem. This is called Chebyshev's inequality with weights.}
+\stopremark
+
+\section{Sur\'anyi's Inequality}
+\starttheorem
+  Let $a_1, a_2, \ldots, a_n$ be non-negative real numbers, and let $n\in P$. Then
+  \placeformula\startformula
+    (n - 1)(a_1^n + a_2^n + \cdots + a_n^n) + na_1a_2 \cdots a_n\geq (a_1 + a_2 + \cdots + a_n)(a_1^{n-1} + a_2^{n - 1} + \cdots + a_n^{n-1}).
+  \stopformula
+\stoptheorem
+
+\startproof
+  We will prove this by mathematical induction. Due to symmetry and homegeneity of the inequality we may assume $a_1\geq a_2\geq
+  \cdots \geq a_n$ and $a_1 + a_2 + \cdots + a_n = 1$. For $n =1$ equality occurs. Let us assume that for $n = 1$ the inequality
+  holds i.e. \startformula (k - 1)(a_1^k + a_2^k + \cdots + a_k^k) + ka_1a_2\cdots a_k\geq a_1^{k-1} + a_2^{k - 1} + \cdots + a_k^{k - 1}.\stopformula
+  We need to prove that:
+  \startformula k\sum_{i=1}^{k+1}a_i^{k+1} + (k+1)\prod_{i=1}^{k+1}a_i - (1 + a_{k+1})\sum_{i=1}^{k+1}a_i^k\geq 0.\stopformula
+  Hence
+  \startformula ka_{k+1}\prod_{i=1}^ka_i\geq a_{k+1}\sum_{i=1}^ka_i^{k-1} - (k-1)a_{k+1}\sum_{i=1}^ka_i^k.\stopformula
+  Using this last inequality, it remains to prove that:
+  \startformula \left(k\sum_{i=1}^{k+1}a_i^{k+1} - \sum_{i=1}^ka_i^k\right) - a_{k+1}\left(k\sum_{i=1}^ka_i^k - \sum_{i=1}^ka_i^{k - 1}\right)
+  + a_{k+1}\left(\prod_{i=1}^ka_i + (k - 1)a_{k+1}^k - a_{k+1}^{k-1}\right)\geq 0.\stopformula
+  We have \startformula \prod_{i=1}^k a_i + (k - 1)a_{k+1}^k - a_{k+1}^{k-1} = \prod_{i=1}^k(a_i - a_{k +1} + a_{k + 1}) + (k - 1)a_{k+1}^k - a_{k+1}^{k
+    - 1}\stopformula
+  \startformula \geq a_{k+1}^k + a_{k+1}^{k-1}\sum_{i=1}^k(a_i - a_{k+1}) + (k - 1)a_{k+1}^k - a_{k+1}^{k-1} = 0.\stopformula
+  Also
+  \startformula \left(k\sum_{i=1}^{k+1}a_i^{k+1} - \sum_{i=1}^ka_i^k\right) - a_{k+1}\left(k\sum_{i=1}^ka_i^k - \sum_{i=1}^ka_i^{k - 1}\right)
+  \geq 0\stopformula
+  \startformula \Rightarrow k\sum_{i=1}^ka_i^{k+1} - \sum_{i=1}^ka_i^k\geq a_{k+1}\left(k\sum_{i=1}^ka_i^k - \sum_{i=1}^ka_i^{k - 1}\right)\stopformula
+  By Chebyshev's inequality, we have
+  \startformula k\sum_{i=1}^ka_i^k\geq \sum_{i=1}^ka_i\sum_{i=1}^ka_i^{k-1} = \sum_{i=1}^ka_i^{k-1}\stopformula
+  \startformula \Rightarrow k\sum_{i=1}^ka_i^k - \sum_{i=1}^ka_i^{k-1}\geq 0.\stopformula
+  and since $a_1 + a_2 + \cdots + a_{k + 1} = 1$, by the assumption $a_1\geq a_2 \geq\cdots\geq a_{k +1}$, we deduce that \startformula a_{k +
+    1}\leq \frac{1}{k}\stopformula
+  So it is enough to prove that
+  \startformula k\sum_{i=1}^ka_i^{k+1} - \sum_{i=1}^k a_i^k\geq \frac{1}{k}\left(k\sum_{i=1}^ka_i^k - \sum_{i=1}^ka_i^{k - 1}\right).\stopformula
+  which is equivalent to
+  \startformula k\sum_{i=1}^ka_i^{k+1} + \frac{1}{k}\sum_{i=1}^ka_i^{k-1}\geq 2\sum_{i=1}^ka_i^k\stopformula
+  Since AM $\geq$ GM we have that
+  \startformula ka_i^{k+1} + \frac{1}{k}a_i^{k - 1}\geq 2a_i^k~\forall~i\stopformula
+  Adding this inequality for $i=1, 2, \ldots, k$ we obtain the required inequality.
+\stopproof
+
+\section{Rearrangement Inequality}
+\starttheorem
+  Let $a_1\leq a_2\leq\cdots\leq a_n$ and $b_1\leq b_2\leq\cdots\leq b_n$ (or $a_1\geq a_2\geq\cdots\geq a_n$ and $b_1\geq
+  b_2\geq\cdots\geq b_n$) be real numbers. If $a_1', a_2', \ldots, a_n'$ is any permutation of $a_1, a_2, \ldots, a_n$ then the
+  equality
+  \placeformula\startformula
+    \sum_{i=1}^na_ib_{n+1-i}\leq \sum_{i=1}^na_i;b_i\leq\sum_{i=1}^na_ib_i,
+  \stopformula
+  holds. Thus the sum $\displaystyle\sum_{i=1}^na_ib_i$ is maximum when the two sequences $\langle a_i\rangle$ and $\langle
+  b_i\rangle$ are oredered similarly. And the sum is minimum when these are ordered in opposite manner.
+\stoptheorem
+
+\startproof
+  We start by assuming that both $a_i$'s and $b_i$'s are non-decreasing. Suppose $\langle a_i'\rangle\neq\langle a_i\rangle$. Let
+  $r$ be the largest index such that $a_r'\neq a_r$ i.e. $a_r'\neq a_r$ and $a_i'=a_i$ for $r<i\leq n$. This implies that $a_r'$ is
+  from the set $\{a_1, a_2, \ldots, a_{r - 1}\}$ and $a_r'<a_r$. Further this also shows that $a_1', a_2', \ldots, a_r'$ is a
+  permutation of $a_1, a_2, \ldots, a_r$. Thus we can find indices $k<r$ and $l<r$ such that $a_k' = a_r$ and $a_r' = a_l$. It
+  follows that \startformula a_k' - a_r' = a_r - a_l\geq 0,~~b_r - b_k\geq 0\stopformula
+  We now interchange $a_r'$ and $a_k'$ to get a permutation of $a_1'', a_2'', \ldots, a_n''$ of $a_1', a_2', \ldots, a_n'$; thus
+  \startformula \startmathcases\NC a_i''=a_i', \NC \text{if}i\neq r, k\NR\NC a_r''=a_k'=a_r,\\a_k''=a_r'=a_l\NR\stopmathcases\stopformula
+  Consider the sums
+  \startformula S'' = a_1''b_1 + a_2''b_2 + \cdots + a_n''b_n, ~~S' = a_1'b_1 + a_2'b_2 + \cdots + a_n'b_n,\stopformula
+  and the difference $S'' - S':$
+  \startformula \startalign\NC S'' - S' \NC = \sum_{i=1}^n(a_i'' - a_i')b_i\NR\NC \NC = (a_k'' - a_k') + (a_r'' - a_r')b_r\NR\NC\NC&=(a_r' - a_k')b_k + (a_k' -
+    a_r')b_r\NR\NC\NC = (a_k' - a_r')(b_r - b_k).\stopalign\stopformula
+  $\because a_k' - a_r' \geq 0$ and $b_r - b_k \geq 0$, we can say that $S''\geq S'$. We observe that the permutations $a_1'', a_2'',
+  \ldots, a_n''$ of $a_1', a_2', \ldots, a_n'$ has th eproperty that $a_i'' = a_i = a_i$ for $r< i\leq n$ and $a_r'' = a_k' =
+  a_r$. Hence the permutation $\langle a_i''\rangle$ in place of $\langle a_i'\rangle$ may be considered and the steps can be
+  continued like above. After at most $n - 1$ such steps, we will arrive at the original permutation $\langle a_i\rangle$ from
+  $\langle a_i'\rangle$. At each step the corresponding sum has the same order as $a_i$'s i.e. non-decreasing. Thus,
+  \placeformula[eq:rearrangement:2]\startformula
+    a_1'b_1 + a_2'b_2 + \cdots + a_n'b_n\leq a_1b_1 + a_2b_2 + \cdots + a_nb_n
+  \stopformula
+  For the other part, let us put $c_i = a_{n + 1 - i}', d_i = -b_{n + 1 - i}$. Then $c_1, c_2, \ldots, c_n$ is a permutation of
+  $a_1, a_2, \ldots, a_n$ and $d_1\leq d_2\leq \cdots\leq d_n$. Using the inequality (\in{Equation}[eq:rearrangement:2]) for the sequences
+  $\langle c_i\rangle$ and $\langle d_i\rangle$, we get
+  \startformula c_1d_1 + c_2d_2 + \cdots + c_nd_n\leq a_1d_2 + a_2d_2 + \cdots + a_nd_n.\stopformula
+  Thus,
+  \startformula -\sum_{i=1}^na_{n+1 - i}'b_{n+1-i}\leq -\sum_{n=1}^na_ib_{n+1-i}.\stopformula
+  Thus, \placeformula[rearrangement:3]\startformula a_1'b_1 + a_2'b_2 + \cdots + a_n'b_n\geq a_1b_1 + a_2b_{n - 1} + \cdots +
+    a_nb_1,\stopformula
+  which is the other part of the inequality.
+
+  For the equality, we consider pairs $k, l$ with $1\leq k < l\leq n$, either $a+k' = a_l'$ or $a_k'>a_l'$ and $b_k = b_l$, then
+  the equality holds for (\in{Equation}{rearrangement:2}). For (\in{Equation}[rearrangement:3]), for each $k, l$ with $1\leq k < l \leq n$, either
+  $a_{n + 1 - k}' \geq a_{n + 1 - l}'$ and $b_{n + 1 - k} = b_{n  + 1 - l}$.
+\stopproof
+
+\startcorollary
+  Let $\alpha_1, \alpha_2, \ldots, \alpha_n$ be real numbers and $\beta_1, \beta_2, \ldots, \beta_n$ be a permutation of $\alpha_1,
+  \alpha_2, \ldots, \alpha_n$. Then \startformula \sum_{i=1}^n\alpha_i\beta_1\leq \sum_{i=1}^n\alpha_i^2.\stopformula The equality holds if and only if
+  $\langle\alpha_i\rangle = \langle\beta_i\rangle$.
+\stopcorollary
+
+\startproof
+  Let $\alpha_1', \alpha_2', \ldots, \alpha_n'$ be a permutation of $\alpha_1, \alpha_2, \ldots, \alpha_n$ such that
+  $\alpha_1'\leq\alpha_2'\leq\ldots\leq\alpha_n'$. Then we can find a bijections $\sigma$ of $\{1,2,\ldots,n\}$ onto itself such
+  that $\alpha_i' = \alpha_{\sigma(i)}, 1\leq j\leq n$; i.e. $\sigma$ is a permutation on the set $\{1,2,\ldots, n\}$. Let
+  $\beta_i' = \beta_{\sigma(i)}$. Then $\beta_1', \beta_2', \ldots, \beta_n'$ is a permutation of
+  $\alpha_1'\leq\alpha_2'\leq\ldots\leq\alpha_n'$. Applying the rearrangement inequality to
+  $\alpha_1'\leq\alpha_2'\leq\ldots\leq\alpha_n'$ and $\beta_1', \beta_2', \ldots, \beta_n'$, we get
+  \startformula \sum_{i=1}^n\alpha_i'\beta_i'\leq\sum_{i=1}^n(\alpha_i')^2 = \sum_{i=1}^n\alpha_i^2.\stopformula
+  We also have \startformula \sum_{i=1}^n\alpha_i'\beta_i' = \sum_{i=1}^n\alpha_{\sigma(i)}\beta_{\sigma(i)} = \sum_{i=1}^n\alpha_i\beta_i,\stopformula
+  because $\sigma$ is a bijection on $\{1,2,\ldots,n\}$. Thus,
+  \startformula \sum_{i=1}^n\alpha_i\beta_i\leq\sum_{i=1}^n\alpha_i^2.\stopformula
+
+  Say that equality holds and $\langle\alpha_i\rangle\neq\langle\beta_i\rangle$. Then
+  $\langle\alpha_i'\rangle\neq\langle\beta_i'\rangle$. Let $k$ be the largest index such that $\alpha_k'\neq\beta_k'$ for $k <
+  i\neq n$. Let $m$ be the least integer such that $\alpha_k' = \beta_m'$. If $m>k$, then $\beta_m' = \alpha_k'$ and hence
+  $\alpha_k' = \alpha_m'$. This implies that $\alpha_k' = \alpha_{k+1}' = \cdots = \alpha_m'$ and hence $\beta_{k+1}' = \cdots =
+  \beta_m'$. We now have an $m_1 > m$ such that $\alpha_k' = \beta_{m_1}'$. Using $m_1$ as pivot, we get $\alpha_k' = \alpha_{k+1}'
+  = \cdots = \alpha_m' = \cdots = \alpha_m'$ and $\beta_{k+1}' = \cdots = \beta_m' = \cdots = \beta_{m_1}'$. It can be concluded
+  that $\alpha_k' = \beta_l'$ for some $l<k$, thus forcing $m < k$.
+
+  Clearly $\beta_m'\neq\beta_k'$ by our choice of $k$. We know that equality holds if and only if for any two indexes $r\neq s$,
+  either $\alpha_r' = \alpha_s'$ or $\beta_r' = \beta_s'$. Since $\beta_m'\neq\beta_k'$, we must have $\alpha_m' = \alpha_k'$. But
+  then we have $\alpha_m' = \alpha_{m+1}' = \cdots = \alpha_k'$. From the minimality of $m$, we see that $k - m + 1$ equal elements
+  $\alpha_m', \alpha_{m+1}', \ldots, \alpha_k'$ must be among $\beta_m', \beta_{m+1}', \ldots, \beta_n'$ and since
+  $\beta_k'\neq\alpha_k'$, we must have $\alpha_k' = \beta_l'$ for some $l > k$. But then using $\beta_l' = \alpha_l'$, we have
+  \startformula \alpha_m' = \alpha_{m+1}' = \cdots = \alpha_k' = \cdots = \alpha_l'.\stopformula
+  Thus the number of equal elements gets enlarged to $l - m + 1 > k -m + 1$. Since this process cannot be continues indefinitely,
+  we conclude that $\langle\alpha_i'\rangle = \langle\beta_i'\rangle$ which will be followed
+  by $\langle\alpha_i\rangle\neq\langle\beta_i\rangle$.
+\stopproof
+
+\startcorollary
+  Let $\alpha_1, \alpha_2, \ldots, \alpha_n$ be positive real numbers and let $\beta_1, \beta_2, \ldots, \beta_n$ be a permutation
+  of $\alpha_1, \alpha_2, \ldots, \alpha_n$. Then \startformula \sum_{i=1}^n\frac{\beta_i}{\alpha_i}\geq n.\stopformula
+  Equality holds if and only if $\langle\alpha_i\rangle\neq\langle\beta_i\rangle$.
+\stopcorollary
+\startproof
+  Let $\alpha_1', \alpha_2', \ldots, \alpha_n'$ be a permutation of $\alpha_1, \alpha_2, \ldots, \alpha_n$ suhc that
+  $\alpha_1'\leq\alpha_2'\leq\ldots\alpha_n'$. Like in previous corollary, we can find a permutation $\sigma$ of $\{1,2,\ldots,
+  n\}$ such that $\alpha_i' = \alpha_{\sigma(i)}$ for $1\leq i\leq n$. We defien $\beta_i' = \beta_{\sigma(i)}$. Then
+  $\langle\beta_i'\rangle$ is a permutation of $\langle\alpha_i'\rangle$. Using the rearrangement theorem, we get
+  \startformula \sum_{i=1}^n\beta_i'\left(-\frac{1}{\alpha_i'}\right)\leq\sum_{i=1}^n\alpha_i'\left(-\frac{1}{\alpha_i'}\right) = -n.\stopformula
+  Thus, we have the desired inequality. Like previous case we camn derive the equality.
+\stopproof
+
+\section{Young's Inequality}
+\starttheorem
+  If $p\in [1,\infty)$ and $q = p/(p - 1)$. $q\in [1, \infty]$ and $\dfrac{1}{p} + \frac{1}{q} = 1$. If $a, b > 0$,
+    then
+    \placeformula\startformula
+      \frac{a^p}{p} + \frac{b^q}{q}\geq ab
+    \stopformula
+\stoptheorem
+
+\startproof
+  Taking $\log$ of L.H.S. $\log\left(\frac{a^p}{p} + \frac{b^q}{q}\right)$
+
+  Notice that, since $\dfrac{1}{p} + \frac{1}{q} = 1$, so the L.H.S. is just a convext combination of $a^p$ and $b^q$. Since $\log
+  x$ is a concave function, we have
+  \startformula \log\left(\frac{a^p}{p} + \frac{b^q}{q}\right)\geq \dfrac{\log a^p}{p} + \dfrac{b^q}{q} = \log a + \log b = \log(ab).\stopformula
+  Hence, the inequality is proved(since $\log x$ is strictly increasing).
+
+  {\it Alternative Proof.}
+
+  Using generalized AM-GM inequality, \startformula \dfrac{x^p}{p} + \frac{b^q}{q}\geq \left[(x^p)^{1/p}(y^q)^{1/q}\right] = xy.\stopformula
+\stopproof
+
+\section{H\"{o}lder's Inequality}
+\starttheorem
+  Let $a_1, a_2, \ldots, a_n, b_1, b_2, \ldots, b_n$ be real numbers and $p, q$ be two positive real numbers such that $\frac{1}{p}
+  + \frac{1}{q} = 1.$ (Such a pair of indices is called a pair of conjugate indices.) Then the inequality holds
+  \placeformula\startformula
+    \left|\sum_{i=1}^na_ib_i\right|\leq\left(\sum_{i=1}^n|a_i|^p\right)^{1/p}\left(\sum_{i=1}^n|b_i|^q\right)^{1/q}
+  \stopformula
+holds. Equality holds if and only if $|a_i|^p = c|b_i|^q, 1\leq i\leq n$, for some real constant $c$.
+\stoptheorem
+
+\startproof
+  Following Young's inequality, consider \startformula x = \frac{|a_k|}{\left(\sum_{i=1}^n|a_i|^p\right)^{1/p}}, y =
+  \frac{|b_k|}{\left(\sum_{i=1}^n|b_i|^q\right)^{1/q}}\stopformula
+  so we get \startformula \frac{|a_k|^p}{p\left(\sum_{i=1}^n|a_i|^p\right)} +
+  \frac{|b_k|^q}{q\left(\sum_{i=1}^n|b_i|^q\right)}\geq
+  \frac{|a_k||b_k|}{\left(\sum_{i=1}^n|a_i|^p\right)^{1/p}\left(\sum_{i=1}^n|b_i|^q\right)^{1/q}}\stopformula
+  Now summing over $k$, we obtain
+  \startformula \frac{1}{p} + \frac{1}{q}\geq
+  \frac{\sum_{i=1}^n|a_kb_k|}{\left(\sum_{i=1}^n|a_i|^p\right)^{1/p}\left(\sum_{i=1}^n|b_i|^q\right)^{1/q}}\stopformula
+  Thus, we have
+  \startformula \sum_{i=1}^n|a_kb_k|\leq \left(\sum_{i=1}^n|a_i|^p\right)^{1/p}\left(\sum_{i=1}^n|b_i|^q\right)^{1/q}.\stopformula
+  It is now trivial to prove the condition for equality.
+\stopproof
+
+\startremark
+  If we take $p = q = 3$, H\"{o}lder's inequality reduces to the Cauchy-Schwarz inequality.
+\stopremark
+\startremark
+  If either of $p$ and $q$ is negativem H\"{o}lder's inequality is reversed.
+\stopremark
+\startremark
+  H\"{o}lder's inequality can have a version with weights. In addition to what we have, we also consider consider weights $w_1,
+  w_2, \ldots, w_n$ then following equality holds
+  \startformula \sum_{i=1}^nw_i|a_ib_i|\leq\left(\sum_{i=1}^nw_i|a_i|^p\right)^{1/p}\left(\sum_{i=1}^nw_i|b_i|^q\right)^{1/q}\stopformula
+\stopremark
+
+Given below is generalized H\"{o}lder's inequaltiy and the proof is similar like above.
+\starttheorem
+  Let $a_{ij}, i=1, 2, \ldots, m;j = 1, 2, \ldots, n$, be positive humbers and $\alpha_1, \alpha_2, \ldots, \alpha_n$ be positive
+  real numbers such that $\alpha_1 + \alpha_2 + \cdots + \alpha_n = 1$. Then
+  \placeformula\startformula
+    \sum_{i=1}^m\left(\prod_{j=1}^na_{ij}a_{ij}^{\alpha_j}\right)\leq \prod_{j=1}^n\left(\sum_{i=1}^ma_{ij}\right)^{\alpha_j}.
+  \stopformula
+\stoptheorem
+
+\section{Minkowski's Inequality}
+\starttheorem
+  Let $p\geq 1$ be a real number and $a_1, a_2, \ldots, a_n, b_1, b_2, \ldots, b_n$ be real numbers. Then
+  \placeformula[eq:10.7]\startformula
+    \left(\sum_{i=1}^n|ai + b_i|^p\right)^{1/p}\leq\left(\sum_{i=1}^n|a_i|^p\right)^{1/p} + \left(\sum_{i=1}^n|b_i|^p\right)^{1/p}
+  \stopformula
+  Here equality holds if and only if $a_i=\lambda b_i$ for some constant $\lambda, 1\leq i\leq n$.
+\stoptheorem
+
+\startproof
+  We assume that $p > 1$, because the result is clear for $p = 1$. Observe the following:
+  \startformula \sum_{i=1}^n|ai + b_i|^p = \sum_{i=1}^n|a_i + b_i|^{p - 1}|a_i + b_i|\leq \sum_{i=1}^n|a_i + b_i|^{p - 1}|a_i| +
+  \sum_{i=1}^n|a_i + b_i|^{p - 1}|b_i|.\stopformula
+  Let $q$ be the conjugate index of $p$. Using H\"{o}lder's inequaity to each sum on the right hand side, we have
+  \startformula \sum_{i=1}^n|a_i + b_i|^{p - 1}|a_i|\leq \left(\sum_{i=1}^n|a_i|^p\right)^{1/p}\left(\sum_{i=1}^n|a_i + b_i|^{(p -
+    1)q}\right)^{1/q}.\stopformula
+  Since $p, q$ are conjugate indexes, we get $(p - 1)q = p$. It follows that
+  \startformula \sum_{i=1}^n|a_i + b_i|^{p - 1}|a_i|\leq\left(\sum_{i=1}^n|a_i|^p\right)^{1/p}\left(\sum_{i=1}^n|a_i + b_i|^p\right)^{1/q}.\stopformula
+  Similarly,
+  \startformula \sum_{i=1}^n|a_i + b_i|^{p - 1}|b_i|\leq\left(\sum_{i=1}^n|b_i|^p\right)^{1/p}\left(\sum_{i=1}^n|a_i + b_i|^p\right)^{1/q}.\stopformula
+  It now follows that
+  \startformula \sum_{i=1}^n|a_i + b_i|^p\leq\left[\left(\sum_{i=1}^n|a_i|^p\right)^{1/p} +
+    \left(\sum_{i=1}^n|b_i|^p\right)^{1/p}\right]\left(\sum_{i=1}^n|a_i + b_i|^p\right)^{1/q}.\stopformula
+  If we use $1 - (1/1) = 1/p$, we finally get the required inequaity.
+
+  Like H\"{o}lder's inequality the equality can be proven for this using the same conditions.
+\stopproof
+
+\startremark
+\stopremark For $0<p<1$, the inequality (\in{Equation}[eq:10.7]) gets reversed.
+
+\section{Convex and Concave Functions}
+Most of the inequalities discussed so far are consequencce of inequalities for a special class of functions, known as
+{\it convex} and {\it concave} functions. Consider the function $f(x) = x^n~\forall~n>1$ defined on $\mathbb{R}$. Consider
+the case of $n=2$, then on the graphs of this function, the chord joining any two points always lies above the graph. In fact
+taking $a<b$, and the point $ka + (1 - k)b$ between $a$ and $b$, we see that
+\startformula [ka + (1 - k)b]^2 - ka^2 - (1 - k)b^2 = -k(1 - k)(a - b)^2\leq 0.\stopformula
+Thus,
+\startformula f(ka + (1 - k)b)\leq kf(a) + (1 - k)f(b).\stopformula
+This property is the defining property of a convex function. The family of convex functions obey a class of inequalities known as
+Jensen's inequality.
+
+Let $I$ be an interval in $\mathbb{R}$. A function $f:I\rightarrow\mathbb{R}$ is said to be convext if for all $x, y$ in $I$ and
+$k$ in the interval $[0, 1]$, the following inequality holds:
+\placeformula[eq:convex]\startformula
+  f(kx + (1 - k)y)\leq kf(x) + (1 - k)f(y).
+\stopformula
+
+If the inequality is strict for all $x\neq y$, $f$ is said to be strictly convex on $I$. If the inequality is reverse for same
+conditions then $f$ is said to be concave and similarly for strictly concave $f$.
+
+There are other equivalent properties of a convex function. Let $x_1, x_2, x_3$ are in $I$ such that $x_1<x_2<x_3$ and we take $k =
+\frac{x_3 - x_2}{x_3 - x_1}$ which gives us
+\startformula 1 - k = \frac{x_2 - x_1}{x_3 - x_1},\text{~and~}x_2 = kx_1 + (1 - k)x_3.\stopformula
+We have \startformula \startalign\NC f(x_2) \NC= f(kx_1 + (1 - k)x_3)\NR\NC\NC\leq kf(x_1) + (1 - k)f(x_3)\NR\NC\NC=\frac{x_3 - x_2}{x_3 - x_1}f(x_1) +
+  \frac{x_2 - x_1}{x_3 - x_1}f(x_3).\stopalign\stopformula
+We can write this as \startformula f\frac{f(x_1) - f(x_2)}{x_1 - x_2}\leq\frac{f(x_2) - f(x_3)}{x_2 - x_3},\stopformula
+for all $x_1<x_2<x_3$ in $I$. We can also write this as:
+\startformula \frac{f(x_1)}{(x_1 - x_2)(x_1 - x_3)} + \frac{f(x_2)}{(x_2 - x_1)(x_2 - x_3)} + \frac{f(x_3)}{(x_3 - x_1)(x_3 - x_2)}\geq 0.\stopformula
+Consider $z_1 = (a, f(a))$ and $z_2 = (b, f(b))$ as two points on $f$. The equation of line joining these two points is given by
+\startformula g(x) = f(a) + \frac{f(b) - f(a)}{b - z}(x - a).\stopformula
+Any point between $a$ and $b$ is of the form $x = ka + (1 - k)b$. Thus,
+\startformula \startalign\NC g(x) \NC = g(ka + (1 - k)b)\NR\NC\NC = f(a) + \frac{f(b) - f(a)}{b - a}(ka + (1 - k)b - a)\NR\NC\NC = f(a) + (1 - k)[f(b) -
+    f(a)]\NR\NC\NC = kf(a) + (1 - k)f(b)\NR\NC\NC \geq f(ka + (1 - k)b) = f(x)\stopalign\stopformula
+Thus, $(x, g(x))$ lies above $(x, f(x))$, a point on $f$.
+
+We can look at this in another way. A subset $E$ of the plane $\mathbb{R}^2$ is said to be convex if for every pair of points $z_1$
+and $z_2$ in $E$, the line joining $z_1$ and $z_2$ lies entirely in $E$. With every function $f: I\rightarrow\mathbb{R}$, we
+associate a subset of $\mathbb{R}^2$ by \startformula E(f) = \{(x, y):a\leq x\leq b, f(x)\leq y\}.\stopformula
+
+\starttheorem
+  The function $f: I\rightarrow\mathbb{R}$ is convex if and only if $E(f)$ is a convex subset of $\mathbb{R}^2$.
+\stoptheorem
+
+\startproof
+  Let $f$ be convex. Let $z_1 = (x_1, y_1)$ and $z_2 = (x_2, y_2)$ be two points of $E(f)$. Consider any point on the line zoining
+  $z_1$ and $z_2$. Then,
+  \startformula \startalign\NC z \NC = kz_1 + (1 - k)z_2\NR\NC\NC = (kx_1 + (1 - k)x_2, ky_1 + (1 - k)y_2)\stopalign\stopformula  for some $k\in[0, 1]$. We see
+  that $a\leq kx_1 + (1 - k)x_2\leq b$. Moreover,
+  \startformula \startalign\NC f(kx_1 + (1 - k)x_2)\NC\leq kf(x_1) + (1 - k)f(x_2)\NR\NC\NC\leq ky_1 + (1 - k)y_2.\stopalign\stopformula
+  Thus it follows that $z\in E(f)$, proving that $E(f)$ is convex.
+
+  Conversely let $E(f)$ be convex. Let $x_1, x_2$ be two points in $I$ and let $z_1 = (x_1,f(x_1))$ and $z_2 = (x_2, f(x_2))$. Then
+  $z_1$ and $z_2$ are in $E(f)$. By conexity of $E(f)$, the point $kz_1 + (1 - k)z_2$ also lies in $E(f)$ for each $k\in[0,
+    1]$. Thus,
+  \startformula (kx_1 + (1 - k)x_2, kf(x_1) + (1 - k)f(x_1))\in E(f)\stopformula
+  The definition of $E(f)$ shows that \startformula f(kx_1 + (1 - k)x_2)\leq kf(x_1) + (1 - k)f(x_2).\stopformula
+
+  This shows that $f$ is convex on the interval $I$.
+\stopproof
+
+Following theorem gives description about slope of a function's graph.
+
+\starttheorem
+  Let $f:I\rightarrow\mathbb{R}$ be a convex function and $a\in I$ be a fixed point. Define a function $P:I\setminus\{a\}\rightarrow
+  \mathbb{R}$ by \startformula P(x) = \frac{f(x) - f(a)}{x - a}.\stopformula  Then $P$ is a non-decreasing function on $I\setminus\{a\}$.
+\stoptheorem
+
+\startproof
+  Let $f$ is convex on $I$ and let $x, y$ be two points in $I, x\neq a, x\neq b$ such that $x<y$. Then exactly one of the three
+  possibilities will be possible:
+  \startformula a<x<y;~~x<a<y~~x<y<a.\stopformula
+  Consider the case $a<x<y$; other cases can be handled similarly. We can write
+  \startformula x = \frac{x - a}{y - a}y + \frac{y - x}{y - a}a.\stopformula
+  The convexity of $f$ shows that
+  \startformula f\left(\frac{x - a}{y - a}y + \frac{y - x}{y - a}a\right)\leq \frac{x - a}{y - a}f(y) + \frac{y - x}{y - a}f(a).\stopformula
+  This is equivalent to
+  \startformula \frac{f(x) - f(a)}{x - a}\leq \frac{f(y) - f(a)}{y - a}.\stopformula
+  Thus $P(x)\leq P(y).$ This shows that $P(x)$ is a non-decreasing function for $x\neq a$.
+\stopproof
+
+Interestingly, the converse is also true; if $P(x)$ is a non-decreasing function on $I\setminus\{a\}$ for every $a\in I$, then
+$f(x)$ is convex. We fix $x<y$ in $I$ and let $a = kx + (1 - k)y$ where $k\in(0,1)$. (The cases $k = 0$ or $1$ are obvious.) In
+this case
+\startformula P(x) = \frac{f(x) - f(a)}{x - a} = \frac{f(x) - f(a)}{(1 - k)(x - y)}\stopformula
+\startformula P(y) = \frac{f(y) - f(a)}{y - a} = \frac{f(y) - f(a)}{k(y - x)}.\stopformula
+The condition $P(x)\leq P(y)$ implies that $f(a)\leq kf(x) + (1 - k)f(y).$ Hence convexity of $f$ is proven.
+
+There is another easy way of deciding wherther a function is convex or concave for twice differentiable functions. If $f$ is convex
+on an interval $I$ and if its second derivative exists on $I$, then $f$ is convex(strictly convex) on $I$ if $f''(x)\geq 0(> 0)$ for
+all $x\in I$. Similarly $f$ is concave(striclty concave) on $I$ if $f''(x)\leq0(<0)$ for all $x\in I$.
+
+When we defined conex function the inequality involved two points $x, y$; refer to (\in{Equation}[eq:convex]). Jensen's inequaity extends
+this to any finite number of points.
+
+\section{Jensen's Inequality}
+\starttheorem
+  Let $f:I\rightarrow\mathbb{R}$be a convex function. Let $x_1, x_2, \ldots, x_n$ are points in $I$ and $k_1, k_2, \ldots, k_n$ are
+  real numbers in the interval $[0, 1]$ such that $k_1 + k_2 + \cdots + k_n = 1$. Then
+  \placeformula[eq:jensen]\startformula
+    f\left(\sum_{i=1}^nk_ix_i\right)\leq\sum_{i=1}^nk_if(x_i)
+  \stopformula
+\stoptheorem
+
+\startproof
+  We will use induction to prove this. For $n = 2$, this is the definition of a convex function. Suppose the inequality
+  (\in{Equarion}[eq:jensen]) is true for all $p<n$; i.e. for $p<n$ if $x_1, x-2, \ldots, x_p$ are $p$ points in $I$ and $k_1, k_2, \ldots,
+  k_p$ are real numbers in $[0,1]$ such that $\sum_{i=1}^nk-i = 1$, then
+  \startformula f\left(\sum_{i=1}^pk_ix_i\right)\leq \sum_{i=1}^pk+if(x_i).\stopformula
+  Now considering the conditions of the theorem,
+  \startformula y_1 = \frac{\sum_{i=1}^{n-1}k_ix_i}{\sum_{i=1}^{n-1}k_i},~~y_2= x_n,~~\alpha_1 = \sum_{j=1}^{n- 1}k_i,~~\alpha_2 = k_n.\stopformula
+  We observe that $\alpha_2 = 1 - \alpha_1$, and $y_1, y_2$ are in $I$. Using the conexity of $f$, we get
+  \startformula \startalign\NC f(\alpha_1y_1 + \alpha_2y_2)\NC = f(\alpha_1y_1 + (1 - \alpha_1)y_2)\NR\NC\NC \leq\alpha_1f(y_1) + (1 -
+    \alpha)1)f(y_2)\NR\NC\NC = \alpha_1f(y_1) + \alpha_2f(y_2).\stopalign\stopformula
+  However, we have \startformula \alpha_1y_1 + \alpha_2y_2 = \sum_{i=1}^nk_ix_i.\stopformula
+  Now we consider $f(y_1)$. If \startformula \mu_i = \frac{k_i}{\sum_{i=1}^{n-1}k_i}, 1\leq l\leq n - 1\stopformula
+  then it can be easily verifief that $\sum_{l=1}^{n-1}\mu_l = 1$. Using the induction hypothesis, we get
+  \startformula f\left(\sum_{l=1}^{n-1}\mu_lx_l\right)\leq \sum_{l=1}^{n-1}\mu_lf(x_l)\stopformula
+  Since \startformula \sum_{l=1}^{n-1}\mu_lx_l = y_1,\stopformula
+  we get
+  \startformula f(y_1)\leq \frac{\sum_{l=1}^{m-1}k_lf(x_l)}{\sum_{i=1}^{n - 1}k_i} = \frac{\sum_{i=1}^{n-1}f(x_i)}{\alpha_1}\stopformula
+  Thus we obtain
+  \startformula f\startalign\NC\left(\sum_{i=1}^nk_if(x_i)\right)\NC\leq\alpha_1\left(\frac{\sum_{i=1}^{n-1}k_if(x_i)}{\sum_{i=1}^{n-1}k_i}\right) + k_nf(x_n)\NR\NC\NC = \sum_{i=1}^nk_if(x_i).\stopalign\stopformula
+  Thus, the theorem is proved by induction.
+\stopproof
+
+\startremark
+  If $f:I\rightarrow\mathbb{R}$ is concave, then the inequality (\in{Equarion}[eq:jensen]) gets reversed. If $x_1, x_2, \ldots, x_n$ are
+  points in $I$ and $k_1, k_2, \ldots, k_n$ are real numbers in the interval $[0, 1]$, such that $k_1 + k_2 + \cdots + k_n = 1$,
+  then following inequality holds:
+  \placeformula\startformula
+    f\left(\sum_{i=1}^nk_ix_i\right)\geq\sum_{i=1}^nk_if(x_i)
+  \stopformula
+\stopremark
+
+\startremark
+  Using the concavity of $f(x) = \ln x$ on $(0, \infty)$, the AM-GM inequality can be proved. If $x_1, x_2, \ldots, x_n$ are points
+  in $(0, \infty)$ and $k_1, k_2, \ldots, k_n$ are real numbers in the interval $[0,1]$ such that $k_1 + k_2 + \ldots + k_n = 1$,
+  then we have
+  \startformula \ln\left(\sum_{i=1}^nk_ix_i\right)\geq\sum_{i=1}^nk_i\ln(x_i)\stopformula
+\stopremark
+
+\startproof
+  Taking $k_i = \frac{1}{n}$ for all $i$,
+  \startformula \ln\left(\sum_{i=1}^n\frac{x_i}{n}\right)\geq\frac{1}{n}\sum_{i=1}^n\ln x_i = \sum_{i=1}^n\ln\left(x_i^{1/n}\right).\stopformula
+  Using the fact that $g(x) = e^x = {\mathrm{exp}}(x)$ is strictly increasing on the interval $(-\infty, \infty)$, this leads to
+  \startformula \startalign\NC\frac{1}{n}\sum_{i=1}^nx_i \NC \geq{\mathrm{exp}}\left(\sum_{i=1}^n\ln\left(x_i^{1/n}\right)\right)\NR\NC\NC
+    =\prod_{i=1}^n\mathrm{exp}\left(\ln\left(x_i^{1/n}\right)\right)\NR\NC\NC = \left(x_1x_2\ldots x_n\right)^{1/n}.\stopalign\stopformula
+
+  We can also prove generalized AM-GM inequality with this method.
+  \startformula \ln\left(\sum_{i=1}^nk_ix_i\geq\sum_{i=1}^nk_i\ln(x_i)\right) = \sum_{i=1}^n\ln x_i^{k_i},\stopformula
+  Taking antilog
+  \startformula \sum_{i=1}^nk_ix_i\geq\prod_{i=1}^nx_i^{k_i}.\stopformula
+  Nowfor any $n$ positive real numbers $\alpha_1, \alpha_2, \ldots, \alpha_n$, consider
+  \startformula k_i = \frac{\alpha_i}{\sum_{j=1}^n\alpha_j}\stopformula
+  Observe that $k_i$ are in $[0, 1]$ and $\sum_{i=1}^nk_i = 1$. These choices of $k_i$ give
+  \startformula \frac{\alpha_1x_1 + \alpha_2x_2 + \cdots + \alpha_nx_n}{\alpha_1 + \alpha_2 + \cdots +
+    \alpha_n}\geq\left(x_1^{\alpha_1}x_2^{\alpha_2}\ldots x_n^{\alpha)2}\right)^{1/(\alpha_1 + \alpha_2 + \cdots + \alpha_n)},\stopformula
+  which is our generalized AM-GM inequality.
+\stopproof
+
+\startremark
+  Function $f(x) = x^p$ can be used to prove H\"{o}lder's inequality. We know that $f(x) = x^p$ is convex for $p\geq 1$ and concave
+  for $0,p<1$ for $p\in(0, \infty)$. Let $x_1, x_2, \ldots, x_n$ be real numbers and $k_1, k_2, \ldots, k_n$ in $[0, 1]$, then we
+  have
+  \startformula \left(\sum_{i=1}^nk_ix_i\right)^p\leq \sum_{i=1}^nk_ix_i^p\text{~for~}p\geq 1\stopformula
+  and
+  \startformula \left(\sum_{i=1}^nk_ix_i\right)^p\geq \sum_{i=1}^nk_ix_i^p\text{~for~}0<p<1.\stopformula
+\stopremark
+
+\startproof
+  Let $a_1, a_2, \ldots, a_n, b_1, b_2, \ldots, b_n$ be real numbers and $p>1$ and $q$ be conjugate numbers. Thus, $\frac{1}{p} +
+  \frac{1}{q} = 1.$ We need to assume that $b_i\neq 0$ for all $i$; else we may delete all those $b_i$ which are zero without
+  having an effect on the equality. Let
+  \startformula t = \sum_{i=1}^n|b_i|^q,~~k_j = \frac{|b_j|^q}{t},~~x_j = \frac{|a_j|}{|b_j|^{q - 1}}\stopformula
+  We have $k_j\in[0, 1]$ and $k_1 + k_2 + \ldots + k_n = 1$. Using the conexity of $x^p$, we have
+  \startformula \left(\sum_{i=1}^nk_ix_i\right)^p\leq\sum_{i=1}^nk_ix_i^p,\stopformula
+  which implies that
+  \startformula \left(\sum_{j=1}^n\frac{|b_j|^q}{t}\frac{|a_j|}{|b_j|^{q - 1}}\right)^p \leq
+  \sum_{j=1}^n\frac{|b_j|^1}{t}\frac{|a_j|^p}{|b_j|^{(q - 1)p}} = \frac{1}{t}\sum_{j=1}^n|a_j|^p.\stopformula
+  Futher simplification yields
+  \startformula \sum_{j=1}^n|a_jb_j|\leq\left(\sum_{j=1}^n|a_j|^p\right)^{1/p}t^{1 - (1/p)} =
+  \left(\sum_{j=1}^n|a_j|^p\right)^{1/p}\left(\sum_{j=1}^n|b_j|^q\right)^{1/q}\stopformula
+  For concave case the inequality is simply reversed.
+\stopproof
+
+\starttheorem
+  Let $f:I\rightarrow\mathbb{R}$ be a convex function; $a_1\leq a_2\leq\cdots\leq a_n, b_1, b_2, \ldots, b_n$ are real numbers in
+  $I$ such that $a_1 + b_1\in I$ and $a_n + b_n\in I$. Let $a_1', a_2', \ldots, a_n'$ be a permutation of $a_1, a_2, \ldots,
+  a_n$. Then the follwoing inequality is true: \startformula \sum_{i=1}^nf(a_i + b_{n+1-i})\leq\sum_{i=1}^nf(a_i' + b_i)\leq\sum_{i=1}^nf(a_i +
+  b_i).\stopformula
+\stoptheorem
+
+\startproof
+  We will use the proof of rearrangement inequality. Assume $\langle a_i'\rangle \neq\langle a_i\rangle$ and $r$ be the largest
+  index such that $a_r'\neq a_r$. Since $a_i=a_i'$ for $r<i\leq n$, we see that $a_1', a_2', \ldots, a_r'$ is a permutation of
+  $(a_1, a_2, \ldots, a_r)$. Thus we can find $k<r, l<r$ such that $a_k' = a_r$ and $a_r' = a_l$. We deduce that $a_k' - a_r' = a_r
+  - a_l\geq 0$ and $b_r - b_k\geq 0$. Interchanging $a_r'$ and $a_k'$ to get a permutation $(a_1'', a_2'', \ldots, a_n'')$ of $(a_1',
+  a_2', \ldots, a_n')$. Thus
+  \startformula a_i''= a_i'\text{~{\rm{for}}~} j\neq r,k,~~a_r''=a_k'=ar,~~a_k''=a_r'=a_l.\stopformula
+  Let \startformula S'' = \sum_{i=1}^nf(a_i'' + b_i),~~S' = \sum_{i=1}^nf(a_i' + b_i).\stopformula
+  Then, \startformula \startalign\NC S'' - S' \NC = f(a_r'' + b_r) + f(a_k'' + b_k) - f(a_r' + b_r) - f(a_k' + b_k)\NR\NC\NC = f(a_r + b_r) + f(a_l +
+    b_k) - f(a_l + b_r) - f(a_r + b_k).\stopalign\stopformula
+  We notice that \startformula a_l + b_k<a_r + b_k\text{~{\rm{and}}~}a_l + b_r < a_r + b_r.\stopformula
+  These give \startformula a_l + b_k < a_r + b_k \leq a_r + br,~~a_l + b_k\leq a_l + b_r < a_r + b_r.\stopformula
+  If $x_1, x_2, x_3$ are in $I$, then the convexity of $f$ implies that \startformula (x_3 - x_1)f(x_2)\leq(x_3 - x_2)f(x_1) + (x_2 -
+  x_1)f(x_3).\stopformula
+  Putting $x_1 = a_l + b_k, x_2 = a_r + b_k$ and $x_3 = a_r + b_r$, we get
+  \startformula (a_r + b_r - a_l - b_k)f(a_r + b_k)\leq (b_r - b_k)f(a_l + b_k) + (a_r - a_l)f(a_r + b_r).\stopformula
+  Similarly putting $x_1 = a_l + b_k, x_2= a_l + b_r$ and $x_3 = a_r + b_r$, we get
+  \startformula (a_r + b_r - a_l -b_k)f(a_l + b_r)\leq(a_r - a_l)f(a_l + b_k) + (b_r - b_k)f(a_r + b_r).\stopformula
+  Adding, we get
+  \startformula (a_r + b_r - a_l - b_k)\{f(a_r + b_k) + f(a_l + b_r)\}\leq (a_r + b_r - a_l - b_k)\{f(a_l + b_k) + f(a_r + b_r)\}.\stopformula
+  Since $a_l + b_k < a_r + b_r$, we arrive at
+  \startformula f(a_r + b_k) + f(a_l + b_r)\leq f(a_l + b_k) + f(a_r + b_r).\stopformula
+  This proves that $S'' - S' \geq 0$.
+
+  Now we observe that the permutation $(a_1'', a_2'', \ldots, a_n'')$ has the property $a_r''=a_r$ and $a_i'' = a_i$, for $r <
+  j\leq n$. We may consider the $(a_1'', a_2'', \ldots, a_n'')$ in place $(a_1', a_2', \ldots, a_n')$ and proceed as above. After
+  at most $n-1$ steps we arrive at the original numbers $\langle a_i\rangle$ from $\langle a_i'\rangle$ and at each stage the
+  corresponding sum in non-decreasing. Thus, finally we arrive at
+  \startformula \sum_{i=1}^nf(a_i' + n_i)\leq \sum_{i=1}^nf(a_i + b_i).\stopformula
+  For the other inequality we define $c_i = a_{n+1-i}$ so that $c_1\geq c_2\geq\cdots\geq c_n$. We have to show that
+  \startformula \sum_{i=1}^nf(a_{n+1-i} + b_i)\leq\sum_{i=1}^nf(a_i' + b_i).\stopformula
+  Setting $c_i' = a_i'$, we have
+  \startformula \sum_{i=1}^nf(c_i + b_i)\leq\sum_{i=1}^nf(c_i' + b_i),\stopformula
+  where $(c_1', c_2', \ldots, c_n')$ is a permutation of $(c_1, c_2, \ldots, c_n)$. We take $\langle c_i'\rangle\neq\langle
+  c_i\rangle$ and let $r$ be the smallest index such that $c_r'\neq c_r$. This forces that $c_r'\in\{c_{r+1}, c_{r+2},\ldots,
+  c_n\}$ and $c_r'<c_r$. We see that $(c_r', c_{r+1}', \ldots, c_n')$ is a permutation of $(c_r, c_{r+1}, \ldots, c_n)$. We can
+  find $k>r, l>r$ such that $c_k' = c_r$ and $c_r' = c_l$. This implies that $c_k' - c_r' = c_r - c_l\geq 0$ and $b_k - b_r\geq
+  0$. Now we can interchange $c_r'$ and $c_k'$ to get a permutation $(c_1'', c_2'', \ldots, c_n'')$ of $(c_1', c_2', \ldots,
+  c_n')$; thus
+  \startformula c_i''=c_i'\text{~{\rm{for}}~}i\neq r, k,~~c_r''=c_k' = c_r,~~c_k''=c_r'=c_l.\stopformula
+  We compute the difference between
+  \startformula S'' = \sum_{i=1}^nf(c_i'' + b_i),~~S'=\sum_{i=1}^nf(c_i' + b_i),\stopformula
+  and obtain
+  \startformula \startalign\NC S'' - S'\NC = f(c_r'' + b_r) + f(c_k'' + b_k) - f(c_r' + b_r) - f(c_k' + b_k)\NR\NC\NC = f(c_r + b_r) + f(c_l + b_k) -
+    f(c_l + b_r) - f(c_r + b_k).\stopalign\stopformula
+  We see that
+  \startformula c_l + b_r \leq c_l + b_k < c_r + b_k, c_l + b_r\leq c_r + b_r < c_r + b_k.\stopformula
+  From the convexity of $f$
+  \startformula (c_r + b_k - c_l - b_r)f(c_l + b_k)\leq(c_r - c_l)f(c_l + b_r) + (b_k - b_r)f(c_r + b_k),\stopformula
+  and
+  \startformula (c_r + b_k - c_l - b_r)f(c_r + b_r)\leq(b_k - b_r)f(c_l + b_r) + (c_r - c_l)f(c_r + b_k).\stopformula
+  Adding, we get
+  \startformula (c_r + b_k - c_l - b_r)\{f(c_l + b_k) + f(c_r + b_r)\}\leq(c_r + b_k - c_l - b_r)\{f(c_l + b_r) + f(c_r + b_k)\}.\stopformula
+  We know that $c_r + b_k - c_l - n_r \neq 0$, so we have
+  \startformula f(c_l + b_k) + f(c_r + b_r)\leq f(c_l + b_r) + f(c_r + b_k).\stopformula
+  Thus, we see that $S''\leq S'$. We also see that the new sequence $\langle c_i''\rangle$ has the property: $c_r'' = c_r$ and
+  $C_i'' = c_i$ for $1\leq i< r$. Now we repeat the above argument by replacing $\langle c_i'\rangle$ with $\langle
+  c_i''\rangle$. At each step the sum will never increase. After at most $n-1$ steps we arrive at the sequence $\langle
+  c_i\rangle$. Thus, we find that the corresponding sum does not exceed to that of $S'$. Thus we get
+  \startformula \sum_{i=1}^nf(c_i + b_i)\leq\sum_{i=1}^nf(c_i' + b_i),\stopformula  which was to be proved.
+\stopproof
+
+\section{Bernoulli's Inequality}
+\starttheorem
+  For every real number $r\geq 1$ and real number $x\geq -1$, we have \startformula (1 + x)^r\geq 1 + rx\stopformula while for $0\leq r\leq 1$ and real
+  number $x\geq -1$ we have \startformula (1 + x)^r\leq 1 + rx.\stopformula
+\stoptheorem
+
+\startproof
+  Using the convexity of $f(x) = \ln(x)$ on $(0, \infty)$. Since $x\geq -1$, we have $1 + x\geq 0$. If $0 \leq r \leq 1$, we have
+  \startformula \ln(1 + rx) = \ln(r(1 + x) + 1 - r)\geq r\ln(1 + x) + (1 - r)\ln(1) = r\ln(1 + x).\stopformula
+  Taking antilog gives $(1 + x)^r\leq 1 + rx.$ When $1\leq r < \infty$,
+  \startformula \ln(1 + x) = \ln\left(\frac{r - 1}{r} + \frac{1}{r}(1 + rx)\right)\geq\frac{r - 1}{r}\ln(1) + \frac{1}{r}\ln(1 + rx) =
+  \frac{1}{r}\ln(1 + rx).\stopformula
+  This gives $(1 + x)^r\geq 1 + rx.$
+\stopproof
+
+\section{Popoviciu's Inequality}
+\starttheorem
+  Let $f: I\rightarrow\mathbb{R}$. If $f$ is convex, then for any three p;oints $x, y, z$ in $I$:
+  \placeformula\startformula
+    \frac{f(x) + f(y) + f(z)}{3} + f\left(\frac{x + y + z}{3}\right)\geq \frac{2}{3}\left[f\left(\frac{x + y}{2}\right) +
+      f\left(\frac{y + z}{2}\right) + f\left(\frac{z + x}{2}\right)\right]
+  \stopformula
+\stoptheorem
+
+\startproof
+  Without loss of generality, we can assume that $x\leq y\leq z$. If $x\leq y\leq \frac{x + y + z}{3}$, then
+  \startformula \frac{x + y + z}{3}\leq \frac{x + z}{2}\leq z\text{~{\rm{and}}~}\frac{x + y + z}{3}\leq \frac{y + z}{2}\leq z.\stopformula
+  Therefore, there exists $s, t\in[0,1]$ such that
+  \startformula \frac{x + z}{2} = \left(\frac{x + y + z}{3}\right)s + z(1 - s)\stopformula
+  \startformula \frac{y + z}{2} = \left(\frac{x + y + z}{3}\right)t + z(1 - t)\stopformula
+  Adding, we get
+  \startformula \frac{x + y - 2z}{2} = \frac{x + y - 2z}{3}(s + t)\Rightarrow s + t = \frac{3}{2}.\stopformula
+  As $f$ is a convex function
+  \startformula f\left(\frac{x + z}{2}\right)\leq s.f\left(\frac{x + y + z}{3}\right) + (1 - s).f(z)\stopformula
+  \startformula f\left(\frac{y + z}{2}\right)\leq t.f\left(\frac{x + y + z}{3}\right) + (1 - t).f(z)\stopformula
+  and
+  \startformula f\left(\frac{x + y}{2}\right)\leq \frac{1}{2}f(x) + \frac{1}{2}f(y).\stopformula
+  Adding together last three inequalities we get the required inequality.
+  The case when $\frac{x + y + z}{3}\leq y$ is considered similarly, bearing in mind that $x\leq \frac{x + z}{2}\leq \frac{x + y +
+    z}{3}$ and $x\leq\frac{y + z}{2}\leq\frac{x + y + z}{3}$.
+
+  When $f$ is a concave function, the inequality gets reversed.
+\stopproof
+
+\section{Majorization}
+{\bf Definition:}
+  Given two seuquences $\langle a\rangle = (a_1, a_2, \ldots, a_n)$ and $\langle b\rangle = (b_1, b_2, \ldots, b_n)$ where $a_i,
+  b_i\in\mathbb{R}~~\forall i\in\{1,2,\ldots, n\}$. We say that the sequence $\langle a\rangle$ majorizes the seuqnece $\langle
+  b\rangle$, and write $\langle a\rangle\succ \langle b\rangle$, if the following conditions are fulfilled:
+  \startformula a_1\geq a_2\geq \cdots\geq a_n;\stopformula
+  \startformula b_1\geq b_2\geq \cdots\geq b_n;\stopformula
+  \startformula a_1 + a_2 + \cdots + a_n = b_1 + b_2 + \cdots + b_n;\stopformula
+  \startformula a_1 + a_2 + \cdots + a_k\geq b_1 + b_2 + \cdots + b_k~~~\forall k\in\{1, 2, \ldots, n - 1\}.\stopformula
+
+\section{Karamata's Inequality}
+\starttheorem
+  Let $f: [a,b]\rightarrow\mathbb{R}$ be a convex function. Suppose that $(x_1, \ldots, x_n)\succ(y_1, \ldots, y_n)$ where $x_1,
+  \ldots, x_n, y_1, \ldots, y_n\in[a, b]$. Then we have:
+  \placeformula\startformula
+    \sum_{i=1}^nf(x_i)\geq\sum_{i=1}^nf(y_i).
+  \stopformula
+\stoptheorem
+
+\startproof
+  If $f(x)$ is a convex function over the interval $(a, b)$, then $\forall a\leq x_1\leq x_2\leq b$ and $g(x, y)=\frac{f(y) -
+    f(x)}{y - x}, f(x_1,x)\leq g(x_2, x)$. If $x<x_1$, then
+  \startformula g(x_1, x) = \frac{f(x_1) - f(x)}{x_1 - x}\leq\frac{f(x_1) - f(x)}{x_1 - x} = g(x_2- x).\stopformula
+  We can argue similarly for other values of $x$.
+
+  \noindent We define a sequence $\langle C\rangle$ such that $c_i = g(a_i, b_i)$
+
+  \noindent We also define sequences $\langle A\rangle$ and $\langle B\rangle$ such that \startformula A_i = \sum_{j=1}^ia_j, A_0 =
+  0\text{~{\rm{and}}~} B_i = \sum_{j=1}^ib_j, B_0 =0\stopformula
+  If we assume that $a_i\geq a_{i+1}$ and similarly $b_i\geq b_{i+1}$, then we get that $c_i\geq c_{i+1}$. Now, we know that
+  \startformula \sum_{i=1}^nf(a_i) - \sum_{i=1}^nf(b_I) = \sum_{i=1}^nc_i(a_i - b_i) = \sum_{i=1}^nc_i(A_i - A_{i-1} - B_i + B_{i + 1})\stopformula
+  \startformula =\sum_{i=1}^nc_i(A_i - B_i) - \sum_{i=0}^{n-1}c_{i+1}(A_i - B_i) = \sum_{i=1}^n(c_i - c_{i+1})(A_i - B_i)\geq 0\stopformula
+  Therefore,
+  \startformula \sum_{i=1}^nf(x_i)\geq\sum_{i=1}^nf(y_i).\stopformula
+\stopproof
+
+\section{Muirhead's Inequality}
+\starttheorem
+  If a sequence $\langle a\rangle$ majorises a sequence $\langle b\rangle$, and $x_1, x_2, \ldots, x_n$ be a set of postiive real
+  numbers then
+  \placeformula\startformula
+    \sum_{sym}x_1^{a_1}x_2^{a_2}\ldots x_n^{a_n}\geq \sum_{sym}x_1^{b_1}x_2^{b_2}\ldots x_n^{b_n}
+  \stopformula
+\stoptheorem
+
+\startproof
+  We define a sequence $\langle c\rangle$ such that $\sum_{i=1}^nc_i = 0$, the we observe
+  \startformula \sum_{sym}x_1^{c_1}x_2^{c_2}\ldots x_n^{c_n}\geq n!\stopformula
+  for real $x_1, x_2, \ldots x_n$.
+  By AM-GM we know that
+  \startformula \frac{\sum_{sym}x_1^{c_1}x_2^{c_2}\ldots x_n^{c_n}}{n!}\geq n!\sqrt{\prod_{sym}x_1^{c_1}x_2^{c_2}\ldots x_n^{c_n}}\stopformula
+  \startformula \Rightarrow n!\sqrt{\prod_{sym}x_1^{c_1}x_2^{c_2}\ldots x_n^{c_n}} = n!\sqrt{\prod_{i=1}^nx_i^{(n-1)!(c_1 + c_2 + \cdots
+      c_n)}} = 1\stopformula
+  \startformula \Rightarrow \sum_{sym}x_1^{c_1}x_2^{c_2}\ldots x_n^{c_n} \geq n!\stopformula
+  We defined out sequence $\langle c\rangle$ such that $c_i = a_ i - b_i$ which gives us $\sum c_i = \sum a_i - \sum b_i = 0$
+
+  \noindent Thus, $\sum_{sym}x_1^{c_1}x_2^{c_2}\ldots x_n^{c_n} - n! \geq 0.$
+  Multiplying with $\sum_{sym}\prod_{i=1}^nx_i^{b_i}$, we get
+  \startformula \left(\sum_{sym}\prod_{i=1}^nx_i^{b_i}\right)\left(\sum_{sym}x_1^{c_1}x_2^{c_2}\ldots x_n^{c_n} - 1\right)\stopformula
+  \startformula = \sum_{sym}\prod_{i=1}^nx_i^{b_i + c_i} - \prod_{i=1}^nx_i^{b_1}\geq 0\stopformula
+  \startformula \Rightarrow \sum_{sym}\prod_{i=1}^nx_i^{a_i} - \prod_{i=1}^nx_i^{b_1}\geq 0\stopformula
+  Hence, it is proved.
+\stopproof
+
+\section{Schur's Inequality}
+\starttheorem
+  Let $x, y, z$ be non-negative real numbers. For any $r > 0$, we have
+  \placeformula\startformula
+    \sum_{cyc}x^r(x - y)(x - z) \geq 0
+  \stopformula
+  with equality if and only if $x = y = z$, or if two of $x, y, z$ are equal and the third is $0$.
+\stoptheorem
+
+\startproof
+  When $r = 1$, the following case arises:
+  \startformula x^3 + y^3 + z^3 + 3xyz \geq xy(x + y) + yz(y + z) + zx(z + x).\stopformula
+  Because L.H.S. is cyclic in $x, y, z$ without loss of generality we can assume $x\geq y \geq z$. Rewriting L.H.S., we have
+  \startformula (x - y)[x^r(x - z) - y^r(y - z)] + z^r(z - x)(z - y).\stopformula
+  We see that $x^r \geq y^r$ and $x - z\geq y - z$. Thus the expression inside brackets is non-negative. $(x - y)$ is also
+  non-negative. $z^r$ and $(z - x)(z - y)$ are also non-negtive. Thus entire expression is non-negative and hence the inequality is
+  proven.
+\stopproof
+
+\noindent Velentin Vornicu has given a general form of Schur's inequality. Consider $a, b, c, x, y, z\in\mathbb{R}$, where $a\geq
+b\geq c$, and either $z\geq y\geq z$ or $z\geq y\geq x$. Let $k\in\mathbb{Z}^+$, and let $f:\mathbb{R}\rightarrow\mathbb{R}_0^+$ be
+either convex or monotonic, then
+\placeformula\startformula
+  f(x)(a - b)^k(a - c)^k + f(y)(b - a)^k(b - c)^k + f(z)(c - a)^k(c - b)^k\geq 0.
+\stopformula
+
+\section{Symmetric Functions}
+Let $a_1, a_2, \ldots, a_n$ be arbitrary real numbers. Considering the polynomial $P(x) = (x + a_1)(x + a_2)\cdots(x + a_n) =
+c_ox^n + c_1x^{n - 1} + \cdots + c_{n-1}x + c_n$. The the coefficients $c_0, c_1, \ldots, c_n$ can be expressed as functions of
+$a_1, a_2, a_n$ like $c_0 = 1, c_1 = a_1 + a_2 + \cdots + a_n, c_2 = a_1a_2 + a_2a_3 + \cdots, a_{n-1}a_n, c_3 = a_1a_2a_3 +
+a_2a_3a_4 + \cdots + a_{n-2}a_{n-1}a_n, \ldots, c_n = a_1a_2\ldots a_n$.
+
+These are also called {\it elementary symmetric sum} and the first elementary symmetric sum of $f(x)$ is often written as
+$\sum_{sym}f(x)$ while the $n$th can be written as $\sum_{sym}^nf(x)$.
+
+The {\it symmetric sum} $\sum_{sym}f(x_1, x_2, \ldots, x_n)$ of a function $f(x_1, x_2, \ldots, x_n)$ of $n$ variables is
+defined to be $\sum_{\sigma}f(x_{\sigma(1)}, x_{\sigma(2)}, \ldots, x_{\sigma(n)})$, where $\sigma$ ranges over over all
+permutations of $(1, 2, \ldots, n)$. More generally symmetric sum of $n$ variables is a sum that is unchanged by any permutatoin of
+its variables. Any symmetric sum can be written as a polynomial of elementary symmetric sums.
+
+A {\it symmetric function} of $n$ variables is a function that does not change by any permutation of its variables. Therefore,
+
+\startformula \sum_{sym}f(x_1, x_2, \ldots, x_n) = n!f(x_1, x_2, \ldots, x_n)\stopformula
+
+We define {\it symmetric average} $p_k$ as $\frac{c_k}{\binom{n}{k}}$.
+
+\section{Newton's Inequality}
+\starttheorem
+  For non-negative $x_1, x_2, \ldots, x_n$ and $0<k< n$m
+  \placeformula\startformula
+    d_k^2\geq d_{k-1}d_{k + 1},
+  \stopformula
+  equality holds when all $x_i$'s are equal.
+\stoptheorem
+
+\startproof
+  We will prove this by mathematical induction. A proof by calculus is also possible but we will not prove by that method.
+
+  For $n = 2$, the inequality becomes AM-GM inequaltiy. Let the inequality hold for $n = m - 1$ for some positive integer $m\geq
+  3$.
+
+  Let $d_k'$ be the symmetric averages of $x_1, x_2, \ldots, x_{m-1}$. Note that $d_k = \frac{n-k}{n}{d'}_k +
+  \frac{k}{n}{d'}_{k-1}x_m$.
+  \startformula d_{k-1}d_{k+1} = \left(\frac{n-k+1}{n} {d'}_{k-1} + \frac{k-1}{n} {d'}_{k-2} x_m \right)\left(\frac{n-k-1}{n} {d'}_{k+1} +
+  \frac{k+1}{n} {d'}_k x_m \right)\stopformula
+  \startformula = \frac{(n-k+1)(n-k-1)}{n^2} {d'}_{k-1}{d'}_{k+1} + \frac{(k-1)(n-k-1)}{n^2} {d'}_{k-2} {d'}_{k+1} x_m\stopformula
+  \startformula + \frac{(n-k+1)(k+1)}{n^2} {d'}_{k-1}{d'}_k x_m + \frac{(k-1)(k+1)}{n^2} {d'}_{k-2}{d'}_k x_m^2\stopformula
+  \startformula \le  \frac{(n-k+1)(n-k-1)}{n^2} {d'}_k^2 + \frac{(k-1)(n-k-1)}{n^2} {d'}_{k-2} {d'}_{k+1} x_m\stopformula
+  \startformula + \frac{(n-k+1)(k+1)}{n^2} {d'}_{k-1}{d'}_k x_m + \frac{(k-1)(k+1)}{n^2} {d'}_{k-1}^2 x_m^2\stopformula
+  \startformula \le  \frac{(n-k+1)(n-k-1)}{n^2} {d'}_k^2 + \frac{(k-1)(n-k-1)}{n^2} {d'}_{k-1} {d'}_{k} x_m\stopformula
+  \startformula + \frac{(n-k+1)(k+1)}{n^2} {d'}_{k-1}{d'}_k x_m + \frac{(k-1)(k+1)}{n^2} {d'}_{k-1}^2 x_m^2\stopformula
+  \startformula = \frac{(n-k)^2}{n^2} {d'}_k^2 + \frac{2(n-k)k}{n^2} {d'}_k {d'}_{k-1} x_m +\frac{k^2}{n^2} {d'}_{k-1}^2 x_m^2 -
+  \left(\frac{d_k}{n} - \frac{d_{k-1}x_m}{n}\right)^2\stopformula
+  \startformula \le  \left(\frac{n-k}{n} {d'}_k + \frac{k}{n} {d'}_{k-1} x_m \right)^2        = d_k^2\stopformula
+  Hence, it is proven by induction.
+\stopproof
+
+\section{Maclaurin's Inequality}
+\starttheorem
+  For non-negative $x_1, x_2, \ldots, x_n$ and $0<k< n$m
+  \placeformula\startformula
+    d_1\geq d_2^{1/2}\geq\cdots\geq d_n^{1/n},
+  \stopformula
+  equality holds when all $x_i$'s are equal.
+\stoptheorem
+
+\startproof
+  Following Newton's inequality it is enough to show that $d_{n-1}^{1/(n-1)}\geq d_n^{1/n}$.
+
+  Since this is a homogeneous inequaqlity, it can be normalized. Thus, $d_n = \prod x_i = 1$ We then transform the inequality to(by
+  exponentiating both sides by $n-1$)
+  \startformula \frac{\sum 1/x_i}{n}\geq 1^{(n-1)/n} = 1.\stopformula  We know that the G.M. of $\frac{1}{x_1}, \frac{1}{x_2}, \cdots,
+  \frac{1}{x_n}$ is $1$ and hence the inequality is true by AM-GM.
+\stopproof
+
+\section{Aczel's Inequality}
+\starttheorem
+  If $a_1^2>a_2^2 + \cdots + a_n^2$ or $b_1^2 > b_2^2 + \cdots + b_n^2$, then
+  \placeformula\startformula
+    (a_1b_1 - a_2b_2 - \cdots - a_nb_n)^2 \geq (a_1^2 - a_2^2 - \cdots - a_n^2)(b_1^2 - b_2^2 - \cdots - b_n^2)
+  \stopformula
+\stoptheorem
+
+\startproof
+  Consider the function \startformula f(x) = (a_1x  - b_1)^2 - \sum_{i=2}^n(a_ix - b_i)^2\stopformula
+  \startformula = (a_1^2 - a_2^2 - \cdots - a_n^2)x^2 - 2(a_1b_2 - a_2b_2 - \cdots - a_nb_n)x + (b_1^2 - b_2^2 - \cdots - b_n^2).\stopformula
+  We have $f\left(\frac{b_1}{a_1}\right) = -\sum_{i=2}^n\left(a_i\frac{b_1}{a_1} - b_i\right)^2 \leq 0$, and from $a_1^2>a_2^2 +
+  \cdots + a_n^2$ we get $\displaystyle\lim_{x\to\infty}f(x)\rightarrow\infty$. Therefore, $f(x)$ must have at least one root,
+  $\Leftrightarrow D = (a_1b_1 - a_2b_2 - \cdots - a_nb_n)^2 - (a_1^2 - a_2^2 - \cdots - a_n^2)(b_1^2 - b_2^2 - \cdots - b_n^2)\geq
+  0.$
+\stopproof
+
+\section{Carleman's Inequality}
+\starttheorem
+  Let $a_1, a_2, \ldots, a_n$ be $n$ non-negative real numbers, where $n\geq 1$ then
+  \placeformula\startformula
+    \sum_{i=1}^{\infty} (a_1 a_2 \cdots a_i)^{1/i} < e \sum_{i=1}^{\infty} a_i ,
+  \stopformula
+  unless all of $a_i$'s are equal to zero.
+\stoptheorem
+
+\startproof
+  Let us define $c_n = n\left(1 + \frac{1}{n}\right)^n = \frac{(n + 1)^n}{n^{n - 1}}$. Then for all positive integers $i$,
+  \startformula (c_1\ldots c_i)^{1/i} = i + 1\stopformula
+  \startformula \Rightarrow \sum_{i=1}^\infty(a_1\ldots a_i)^{1/i} = \sum_{i=1}^\infty\frac{(c_1a_1\ldots c_ia_i)^{1/i}}{(c_1\ldots
+    c_i)^{1/i}} = \sum_{i=1}^\infty\frac{(c_1a_1\ldots c_ia_i)^{1/i}}{i + 1}.\stopformula
+  Using AM-GM inequality, we get
+  \startformula \sum_{i=1}^\infty\frac{(c_1a_1\ldots c_ia_i)^{1/i}}{i + 1} \leq \sum_{i=1}^\infty\sum_{j=1}^i\frac{c_ja_j}{i(i + 1)} =
+  \sum_{j=1}^\infty\sum_{i=j}^\infty\frac{c_ja_j}{i(i + 1)}.\stopformula
+  Using the partial fraction for $\frac{1}{i(i + 1)}$
+  \startformula \sum_{i=j}^\infty\frac{1}{i(i + 1)} = \sum_{i=j}^\infty\left(\frac{1}{i} - \frac{1}{i + 1}\right) = \frac{1}{j}.\stopformula
+  \startformula \Rightarrow \sum_{j=1}^\infty\sum_{i=j}^\infty\frac{c_ja_j}{i(i + 1)} = \sum_{j=1}^\infty\left(1 + \frac{1}{j}\right)^ja_i.\stopformula
+  Since $\left(1 + \frac{1}{j}\right)^j< e,~\forall~j\in I$ the inequality holds.
+\stopproof
+
+\section{Sum of Squares(SOS Method)}
+Sum of sqaures or S.O.S. method revolves around the basic fact that sum of
+squares is a non-negative quantity. As you can see it requires knowledge only of
+very basic inequalitites which makes it highly desirable. By using SOS method we
+rewrite inequalitites as {\it sum of squares} to prove them as non-negative
+using only basic inequalities.
+
+\startproposition[pp:sos1]
+  Let $a, b, c\in\mathbb{R}$. Then $(a - c)^2\leq 2(a - b)^2 + 2(b - c)^2$.
+\stopproposition
+
+\startproof
+  We have \startformula (a - c)^2\leq 2(a - b)^2 + 2(b - c)^2\stopformula
+  \startformula \Leftrightarrow a^2 - 2ac + c^2\leq 2(a^2 - 2ab + b^2) + 2(b^2 - 2bc +
+  c^2)\stopformula
+  \startformula \Leftrightarrow a^2 + 4b^2 + c^2 0 4ab - 4bc + 2ac\geq 0\stopformula
+  \startformula \Leftrightarrow (a + c - 2b)^2\geq 0,\stopformula
+  which clearly holds.
+\stopproof
+
+\startproposition[pp:sos2]
+  Let $a\geq b\geq c$. Then $(a - c)^2\geq (a - b)^2 + (b - c)^2$.
+\stopproposition
+
+\startproof
+  We have \startformula (a - c)^2\geq (a - b)^2 + (b - c)^2\stopformula
+  \startformula \Leftrightarrow a^2 - 2ac + c^2 \geq (a^2 - 2ab + b^2) + (b^2 - 2bc + c^2)\stopformula
+  \startformula \Leftrightarrow b^2 + ac - ab - b \leq 0\stopformula
+  \startformula \Leftrightarrow (b - a)(b - c)\leq 0,\stopformula
+  which is true for $a\geq b\geq c$.
+\stopproof
+
+\startproposition[pp:sos3]
+  Let $a\geq b\geq c$. Then $\frac{a - c}{b - c}\geq \frac{a}{b}$.
+\stopproposition
+
+\startproof
+  Given $\frac{a - c}{b - c}\geq \frac{a}{b}$
+  \startformula \Leftrightarrow b(a - c)\geq a(b - c)\Leftrightarrow ac\geq
+  bc\Leftrightarrow a\geq b.\stopformula
+\stopproof
+
+\starttheorem
+  Consider the expression $S = S_a(b - c)^2 + S_b(c - a)^2 + S_c(a - b)^2$,
+  where $S_a, S_b, S_c$ are functions of $a, b, c$.
+  \startitemize[n]
+  \item If $S_a, S_b, S_c\geq 0$ then $S\geq 0$.
+  \item If $a\geq b\geq c$ or $a\leq b\leq c$ and $S_b, S_b + S_a, S_b + S_c\geq
+    0$ then $S\geq 0$.
+  \item If $a\geq b\geq c$ or $a\leq b\leq c$ and $S_a, S_c, S_a + 2S_b, S_c +
+    2S_b \geq 0$ then $S\geq 0$.
+  \item If $a\geq b\geq c$ and $S_b, S_c, a^2S_b + b^2S_a\geq 0$ then $S\geq 0$.
+  \item If $S_a + S_b\geq 0$ or $S_b + S_c\geq 0$ or $S_c + S_a \geq 0$ or $S_a
+    + S_b + S_c \geq 0$ and $S_aS_b + S_bS_c + S_cS_a\geq 0$ then $S\geq 0$.
+  \stopitemize
+\stoptheorem
+
+\startproof
+  \startitemize[n]
+  \item If $S_a, S_b, S_c\geq 0$ then clearly $S\geq 0$.
+  \item Let us assume that $a\geq b\geq c$ or $a\leq b\leq c$ and $S_b, S_b +
+    S_a, S_b + S_c\geq 0$.
+
+    \noindent By Proposition (\in{Preposition}[pp:sos2]), it follows that $(a - c)^2 \geq (a
+    - b)^2 + (b - c)^2$, so we have
+    \startformula \startalign\NC S \NC= S_a(b - c)^2 + S_b(c - a)^2 + S_c(a - b)^2\NR\NC\NC\geq S_a(b
+      - c)^2 + S_b[(a - b)^2 + (b - c)^2] + S_c(a - b)^2\NR\NC\NC=(b - c)^2(S_a + S_b)
+      + (a - b)^2(S_b + S_c).\stopalign\stopformula
+    Thus, $S\geq 0$ because $S_a + S_b, S_b + S_c\geq 0$.
+    \item Let us assume that $a\geq b\geq c$ or $a\leq b\leq c$ and $S_a, S_c,
+      S_a + 2S_b, S_c + 2S_b \geq 0$.
+
+      \noindent Then if $S_b\geq 0$ clearly $S\geq 0$.
+
+      \noindent For case when $S_b\leq 0$, by Proposition (\in{Preposition}[pp:sos1]), we
+      have $(a - c)^2 \leq 2(a - b)^2 + 2(b - c)^2$. Therefore
+      \startformula \startalign\NC S \NC= S_b(b - c)^2 + S_b(a - c)^2 + S_c(a - b)^2\NR\NC\NC\geq
+        S_a(b - c)^2 + S_b[2(a - b)^2 + 2(b - c)^2] + S_c(a - b)^2\NR\NC\NC= (b -
+        c)^2(S_a + 2S_b) + (a - b)^2(S_c + 2S_b)\stopalign\stopformula
+      which is true for the given conditions.
+    \item Given $a\geq b\geq c$ and $S_b, S_c, a^2S_b + b^2S_a\geq 0$
+
+      \noindent By Proposition (\in{Preposition}[pp:sos3]), we have $\frac{a - c}{b - c}\geq
+      \frac{a}{b}$. Therefore
+      \startformula \startalign\NC S \NC= S_a(b - c)^2 + S_b(a - c)^2 + S_c(a - b)^2\geq S_a(b
+        - c)^2 + S_b(a - c)^2\NR\NC\NC=(b - c)^2\left[S_a + S_b\left(\frac{a - c}{b -
+            c}\right)^2\right]\geq (b - c)^2\left[S_a +
+          S_b\left(\frac{a}{b}\right)^2\right]\NR\NC\NC = (b - c)^2\left(\frac{b^2S_a
+          + a^2S_b}{b^2}\right),\stopalign\stopformula
+      which is true for given conditions.
+    \item We assume that $S_b + S_c\geq 0$. Then
+      \startformula \startalign\NC S \NC = S_a(b - c)^2 + S_b(a - c)^2 + S_c(a - b)^2\NR\NC\NC=
+      S_a(b - c)^2 +
+      S_b[(c - b) + (b - a)]^2 + S_c(a - b)^2\\&= (S_b + S_c)(a - b)^2 + 2S_b(c
+      - b)(b - a) + (S_a + S_b)(b - c)^2\NR\NC\NC=(S_b + S_c)\left(b - a +
+      \frac{S_b}{S_b + S_c}(c - b)\right)^2 + \frac{S_aS_b + S_bS_c+ S_cS_a}{S_b
+      + S_c}(c - b)^2&\geq 0.\stopalign\stopformula
+  \stopitemize
+\stopproof
+
+Every difference $\sum_{cyc}x_1^{\alpha_1}x_2^{\alpha_2}\ldots x_n^{\alpha_n} -
+\sum_{cyc}x_1^{\beta_1}x_2^{\beta_2}\ldots x_n^{\beta_n}$ where $\alpha_1 +
+\alpha_2 + \cdots + \alpha_n = \beta_1 + \beta_2 + \cdots + \beta_n$ can be
+written in SOS form.
+
+Some special cases are given below:
+
+\startitemize[n]
+  \item $a^2 + b^2 + c^2 - ab - bc - ca = \frac{(a - b)^2 + (b - c)^2 + (c -
+    a)^2}{2}$
+  \item $a^3 + b^3 + c^3 - 3abc = \frac{a + b + c}{2}\left[(a - b)^2 + (b - c)^2
+    + (c - a)^2\right]$
+  \item $a^b + b^2c + c^2a - ab^2 - bc^2 - ca^2 = \frac{(a - b)^3 + (b - c)^3 + (c -
+    a)^3}{3}$
+  \item $a^3 + b^3 + c^3 - a^2b - b^2c - c^2a = \frac{(2a + b)(a - b)^2 + (2b +
+    c)(b - c)^2 + (2c + a)(c - a)^2}{3}$
+  \item $a^4 + b^4 + c^4 - a^3b - b^3c - c^3b = \\\\\frac{(3a^2 + 2ab + b^2)(a -
+    b)^2 + (3b^2 + 2bc + c^2)(b - c)^2 + (3c^2 + 2ca + a^2)(c - a)^2}{4}$
+  \item $a^3b + b^3c + c^3a - ab^3 - bc^3 - ca^3 = \frac{a + b + c}{3}\left[(b -
+    a^3) + (c - b)^3 + (a - c)^3\right]$
+  \item $a^4 + b^4 + c^4 - a^2b^2 - b^2c^2 - c^2a^2 = \frac{(a^2 - b^2)^2 + (b^2
+    - c^2)^2 + (c^2 - a^2)^2}{2}$
+\stopitemize
+
+\starttheorem
+  Consider two polynomials having the same degree and same number of variables $A$ and $B$. The difference of these two polynomilas
+  can be written in SOS form:
+  \startformula \sum_{cyc}a_1^{\alpha_1}a_2^{\alpha_2}\ldots a_n^{\alpha_n} - \sum_{cyc}a_1^{\beta_1}a_2^{\beta_2}\ldots a_n^{\beta_n} = \sum
+  P_{ij}(a)(a_i - a_j)^2,\stopformula
+  where $\alpha_1 + \alpha_2 + \cdots + \alpha_n = \beta_1 + \beta_2 + \cdots + beta_n = m$ and $a = (a_1, a_2, \ldots,
+  a_n)$.
+\stoptheorem
+
+\startproof
+  We need to prove the following lemma first.
+  \startlemma
+    If $a = (a_1, a_2, \ldots, a_n)$ and $\alpha_1 + \alpha_2 + \alpha_n = m$, then:
+    \startformula \sum_{cyc}a_1^n - \sum_{cyc}a_1^{\alpha_1}a_2^{\alpha_2}\ldots a_n^{\alpha_n} = \sum P_{ij}(a)(a_i - a_j)^2\stopformula
+  \stoplemma
+  We prove this lemma by induction over $k$, which will be the number of elements except $0$ belonging to the set ${\alpha_1,
+    \alpha_2, \ldots, \alpha_n}$.
+
+  If $k = 1$, the theorem is obviously true.
+
+  If $k = 2$, the expression becomes $\sum_{cyc}a_1^m - \sum_{a_1}^ta_2^{m - t} = \sum P_{ij}(a)(a_i - a_j)^2$
+
+  We observe that $ta^m + (m - t)b^m - ma^tb^{m - t} = P(a, b)(a - b)^2$. We also observe that $f(x) = tx^n + (m - t) - mx^t = 0$
+  has one repeated root which is $1$ because $f(1) = f'(1) = 0$. Therefore $f(x)$ can be written like $Q(x)(x - 1)^2$ where degree
+  of $Q$ will be $m - 2$.
+
+  Let $x = \frac{a}{b}$, then we have: $b^mf\left(\frac{a}{b}\right) = ta^m + (m - t)b^m - ma^tb^{m - 1} = b^{m -
+    2}Q\left(\frac{a}{b}\right)(a - b)^2$.
+
+  However, $b^{m - 2}$ is a polynomial having $2$ variables $a, b$ because $Q$ is a $m - 2$ degree polynomial. If our proposition
+  is already true with $k$, the number of elements except for $0$ in the set of $\alpha$, with $k + 1$ we can transform this into
+  the case of $k$ as given below:
+
+  $a_1^{\alpha_1}a_2^{\alpha_2}\ldots a_{k+1}^{\alpha_{k +1}} = \frac{\alpha_1a_1^{\alpha_1 + \alpha_2} + \alpha_2a_2^{\alpha_1 +
+      \alpha_2} - (\alpha_1 + \alpha_2)a_1^{\alpha_1}a_2^{\alpha_2}}{\alpha_1 + \alpha_2}.a_3^{\alpha_3}\ldots a_{k+1}^{\alpha_{k
+    +1}}\frac{\alpha_1}{\alpha_1 + \alpha_2}a_1^{\alpha_1+\alpha_2}$
+
+  $a_3^{\alpha_3}\ldots a_{k + 1}^{\alpha_{k + 1}} + \frac{\alpha_2}{\alpha_1 + \alpha_2}a_2^{\alpha_1 + \alpha_3}a_3^{\alpha_3}\ldots a_{k
+    + 1}^{\alpha_{k +1}}$
+
+  With $k = 2$: $\frac{\alpha_1a_1^{\alpha_1 + \alpha_2} + \alpha_2a_2^{\alpha_1 + \alpha_2} - (\alpha_1 +
+    \alpha_2)a_1^{\alpha_1}a_2^{\alpha_2}}{\alpha_1 + \alpha_2} = H_{12}(a)(a_1 - a_2)^2$, we have:
+
+  $a_1^{\alpha_1}a_2^{\alpha_2}\ldots a_{k+1}^{k + 1} = Q_{12}(a)(a_1 - a_2)^2 + \frac{\alpha_1}{\alpha_1 +
+    \alpha_2}a_1^{\alpha_1+\alpha_2}a_3^{\alpha_3}\ldots a_{k + 1}^{\alpha_{k + 1}} + \frac{\alpha_2}{\alpha_1 + \alpha_2}a_2^{\alpha_1 +
+    \alpha_3}a_3^{\alpha_3}\ldots a_{k + 1}^{\alpha_{k +1}}$
+
+  $\therefore \sum_{cyc}a_1^m - \sum_{cyc}a_1^{\alpha_1}a_2^{\alpha_2}\ldots a_{k + 1}^{\alpha_{k + 1}} = -\sum_{cyc}Q_{12}(a)(a_1
+  - a_2)^2 + \sum_{cyc}a_1^m - \frac{\alpha_1}{\alpha_1 +
+    \alpha_2}$
+
+  $\sum a_1^{\alpha_1+\alpha_2} a_3^{\alpha_3}\ldots a_{k + 1}^{\alpha_{k + 1}} + \sum\frac{\alpha_2}{\alpha_1 +
+    \alpha_2}a_2^{\alpha_1 +\alpha_3}a_3^{\alpha_3}\ldots a_{k + 1}^{\alpha_{k +1}} \sum_{a_1}^m - \sum_{cyc}a_1^{\alpha_1}\ldots
+  a_{k +1}^{\alpha_{k +1}}$
+
+  $= -\sum Q_{12}(a)(a_1 - a_2)^2 + \frac{\alpha_1}{\alpha_1 + \alpha_2}\left(\sum_{cyc} a_1^m - \sum_{cyc}a_1^{\alpha_1 +
+    \alpha_2}a_3^{\alpha_3}\ldots a_{k+1}^{\alpha_{k+1}}\right) + $
+
+  $\frac{\alpha_2}{\alpha_1 + \alpha_2}\left(\sum_{cyc} a_1^m - \sum_{cyc}a_2^{\alpha_1 + \alpha_2}a_3^{\alpha_3}\ldots a_{k+1}^{\alpha_{k+1}}\right)$
+
+  So we see that these can be written in SOS form recursively. Hence proved.
+\stopproof
+
+\section{Problems}
+Prove the following equalities:
+
+\startitemize[n, 1*broad]
+\item $a^2 + b^2 \geq 2ab$.
+\item $\sqrt{ab}\geq \frac{2}{\frac{1}{a} + \frac{1}{b}}$, where $a>0, b>0$.
+\item $\sqrt{\frac{a^2 + b^2}{2}}\geq \frac{a + b}{2}$
+\item $\frac{a + b}{2}\geq \frac{2}{\frac{1}{a} + \frac{1}{b}}$, where $a>0, b>0$.
+\item $a + b > 1 + ab$, where $b < 1 < a$.
+\item $a^2 + b^2 > c^2 + (a + b - c)^2$, where $b < c< a$.
+\item $2\leq \frac{a}{b} + \frac{b}{a}$, where $ab > 0$.
+\item $\frac{a}{b} + \frac{b}{a}\leq -2$, where $ab < 0$.
+\item $x_1\leq \frac{x_1 + \cdots + x_n}{n}\leq x_n$, where $x_1\leq \cdots\leq x_n$.
+\item $\frac{x_1}{y_1}\leq \frac{x_1 + \cdots + x_n}{y_1 + \cdots + y_n}\leq x_n$, where $\frac{x_1}{y_1}\leq\cdots\leq
+  \frac{x_n}{y_n}$ and $y_i> 0, i=1, \ldots, n$.
+\item $x_1\leq(x_1\ldots x_n)^{\tfrac{1}{n}}\leq x_n$, where $n\geq 2, 0\leq x_1\leq\ldots\leq x_n$.
+\item $|a_1| + \cdots + |a_n|\geq |a_1 + a_2 + \cdots + a_n|$.
+\item $\frac{a_1 + \cdots + a_n}{n}\geq \frac{n}{\frac{1}{a_1} + \cdots + \frac{1}{a_n}}$, where $n\geq 2, a_i> 0, i=1, \ldots, n$.
+\item $a + b\sqrt{\frac{a + b}{2}} \geq a\sqrt{b} + b\sqrt{a}$, where $a > 0, b > 0$.
+\item $\frac{1}{2}(a + b) + \frac{1}{4}\geq \sqrt{\frac{a + b}{2}}$, where $a > 0, b > 0$.
+\item $a(x + y - a)\geq xy$, where $x\leq a\leq y$.
+\item $\frac{1}{x - 1} + \frac{1}{x + 1} > \frac{2}{x}$, where $x > 1$.
+\item $\frac{1}{3k + 1} + \frac{1}{3k + 2} + \frac{1}{3k + 3} > \frac{1}{2k + 1} + \frac{1}{2k + 2}$, where $k\in\mathbb{N}$.
+\item $\frac{ab}{(a + b)^2}\leq \frac{(1 - a)(1 - b)}{[(1 - a) + (1 - b)]^2}$, where $o<\leq\frac{1}{2}, 0<b\leq\frac{1}{2}$.
+\item $\frac{1}{\sqrt{3k + 1}}.\frac{2k + 1}{2k + 2} < \frac{1}{\sqrt{3k + 4}}$, where $k\in\mathbb{N}$.
+\item $2^{n - 1}\geq n$, where $n\in\mathbb{N}$.
+\item $\frac{1}{3} + \frac{2}{3}.\frac{1}{5} + \frac{2}{3}.\frac{4}{5} + \frac{1}{7} + \cdots +
+  \frac{2}{3}.\frac{4}{5}.\frac{6}{7}\cdots \frac{100}{101}.\frac{1}{103} < 1$.
+\item $\frac{1 - a}{1 - b} + \frac{1 - b}{1 - a}\leq \frac{a}{b} + \frac{b}{a}$, where $0 < a, b\leq \frac{1}{2}$.
+\item $\displaystyle\sum_{i=1}^n\frac{1}{1 - a_i}\sum_{i=1}^m(1 - a_i)\leq \sum_{i=1}^n\frac{1}{a_i}\sum_{i=1}^na_i$, where $0 < a_1, \ldots,
+  a_n\leq \frac{1}{2}$.
+\item $1 + \frac{1}{2^3} + \cdots + \frac{1}{n^3} < \frac{5}{4}$, where $n\in\mathbb{N}$.
+\item $\frac{1}{1 + a + b}\leq 1 - \frac{a + b}{2} + \frac{ab}{3}$, where $0\leq a\leq 1, 0\leq b\leq$.
+\item $|x - y| < |1 - xy|$, where $|x| < 1, |y| < 1$.
+\item $\frac{a}{bc} + \frac{b}{ca} + \frac{c}{ab}\geq \frac{2}{a} + \frac{2}{b} - \frac{2}{c}$, where $a > 0, b > 0, c > 0$.
+\item $\frac{1}{a} + \frac{1}{b} - \frac{1}{c} < \frac{1}{abc}$, where $a^2 + b^2 + c^2 = \frac{5}{3}$ and $a > 0, b > 0, c > 0$.
+\item $3(1 + a^2 + a^4)\geq (1 + a + a^2)^2$.
+\item $(ac + bd)^2 + (ad - bc)^2\geq 144$, where $a + b = 4, c + d = 6$.
+\item $x_1^2 + x_2^2 + \cdots + x_{2n}^2 + na^2 \geq a\sqrt{2}(x_1 + x_2 + \cdots + x_{2n})$.
+\item $\frac{1}{a + b} + \frac{1}{b + c} + \frac{1}{a + c}\leq \frac{\sqrt{a} + \sqrt{b} + \sqrt{c}}{2\sqrt{abc}}$, where $a > 0, b
+  > 0, c > 0$.
+\item $a^3(b^2 - c^2) + b^3(c^2 - a^2) + c^3(a^2 - b^2) < 0$, where $0 < a < b < c$.
+\item $\frac{y}{x} + \frac{y}{z} + \frac{x + z}{y}\leq \frac{(x + z)^2}{xz}$, where $0< x\leq y\leq z$.
+\item $\sqrt{1 + \sqrt{a}} + \sqrt{1 + \sqrt{a + \sqrt{a^2}}} + \cdots + \sqrt{1 + \sqrt{a + \cdots + \sqrt{a^n}}} < na$ where $n
+  \geq 2, a\geq 2, n\in\mathbb{N}$.
+\item $[5x]\geq [x] + \frac{[2x]}{2} + \frac{[3x]}{3} + \frac{[4x]}{4} + \frac{[5x]}{5}$, where $[x]$ si the integer part of the
+  real number $x$.
+\item $(n!)^2 \geq n^n$, where $n\in\mathbb{N}$.
+\item $x^6 + x^5 + 4x^4 - 12x^3 + 4x^2 + x + 1\geq 0$.
+\item $\log^2\alpha\geq \log\beta\log\gamma$, where $\alpha>1, \beta>1, \gamma>1, \alpha^@\geq\beta\gamma$.
+\item $\log_45 + \log_56 + \log_67 + \log_78> 4.4$.
+\item $\frac{1}{3} + \frac{2}{3.5} + \cdots + \frac{n}{3.5\ldots(2n + 1)} < \frac{1}{2}$, where $n\in\mathbb{N}$.
+\item $\frac{2^3 + 1}{2^3 - 1}\cdots\frac{n^3 + 1}{n^3 - 1}< \frac{3}{2}$, where $n\geq 2, n\in\mathbb{N}$.
+\item $1.1! + 2.2! + \cdots + n.n! < (n + 1)!$, where $n\in\mathbb{N}$.
+\item $\left(1 + \frac{1}{2^2}\right)\left(1 + \frac{1}{3^2}\right)\cdots\left(1 + \frac{1}{n^2}\right) < 2$, where $n\geq 2,
+  n\in\mathbb{B}$.
+\item $\left(1 - \frac{1}{p_1^2}\right)\left(1 - \frac{1}{p_2^2}\right)\cdots\left(1 - \frac{1}{p_n^2}\right) > \frac{1}{2}$, where
+  $1 < p_1 < p_2 <\cdots < p_n, p_i\in\mathbb{N}, i = 1, 2, \ldots n$.
+\item $\frac{1}{2} - \frac{1}{3} + \frac{1}{4} - \frac{1}{5} + \cdots - \frac{1}{999} + \frac{1}{1000}<\frac{2}{5}$.
+\item $\frac{a + b}{1 + a + b}\leq \frac{a}{1 + a} + \frac{b}{1 + b}$, where $a\geq 0, b\geq 0$.
+\item $\frac{a + b}{2 + a + b}\geq \frac{1}{2}\left(\frac{a}{1 + a} + \frac{b}{1 + b}\right)$, where $a\geq 0, b\geq 0$.
+\item $\displaystyle\sum_{i=1}^n\frac{a_1 + 2a_2 + \cdots + ia_i}{i^2}\leq 2\sum_{i=1}^na_i$, where $a_i\geq 0, i=1, 2, \ldots, n$.
+\item $\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\leq \frac{41}{42}$, where $\frac{1}{a} + \frac{1}{b} + \frac{1}{c}< 1, a, b,
+  c\in\mathbb{N}$.
+\item $\frac{4x}{y + z} + \frac{y}{x + z} + \frac{z}{x + y} > 2$, where $x,y,z > 0$.
+\item $1 < \frac{a}{a + b + d} + \frac{b}{a + b + c} + \frac{c}{b + c + d} + \frac{d}{a + c + d}< 2$, where $a,b,c,d > 0$.
+\item $a + b > c + d$, where $a, b, c, d\geq \frac{1}{2}$ and $a^2 + b > c^2 + d, a + b^2 > c + d^2$.
+\item $(b - a)(9 - a^2) + (c - a)(9 - b^2) + (c - b)(9 - c^2)\leq 24\sqrt{2}$, where $0\leq a\leq b\leq c\leq 3$.
+\item If $0<a, b, c < 1$, then one of the numbers $(1 - a)b, (1 - b)c, (1 - c)a$ is not greater than $\frac{1}{4}$.
+\item Let $a > 0, b > 0, c > 0$, and $a + b + c = 1$. Prove that $\sqrt{a + \frac{1}{4}(b - c)^2} + \sqrt{b + \frac{1}{4}(c - a)^2}
+  + \sqrt{c + \frac{1}{4}(b - a)^2}\leq 2$.
+\item Let $a > 0, b > 0, c > 0$, and $a + b + c = 1$. Prove that $\sqrt{a + \frac{1}{4}(b - c)^2} + \sqrt{b} + \sqrt{c}\leq
+  \sqrt{3}$.
+\item Find the smallest possible value of the expression: $\frac{a^4}{b^4} + \frac{b^4}{a^4} - \frac{a^2}{b^2} - \frac{b^2}{a^2} +
+  \frac{a}{b} + \frac{b}{a}$, where $a, b > 0$.
+\item $\frac{(1 - x_1)(1 - x_2)\ldots(1 - x_n)}{x_1x_2\ldots x_n}\geq (n - 1)^n$, where $n\geq 2, x_i>0,  i = 1, 2, \ldots, n$ and
+  $x_1 + x_2 + \cdots + x_n = 1$.
+\item $\frac{1}{1 + x_1} + \frac{1}{1 + x_2} + \cdots + \frac{1}{1 + x_n}$, where $n\geq 2, x_1\geq 1, x_2\geq 1, \ldots, x_n\geq
+  1$.
+\item $abc + bcd + cda + dab\leq \frac{1}{27} + \frac{176}{27}abcd$, where $a, b, c, d\geq 0$, and $a + b + c + d = 1$.
+\item $0\leq xy + yz + zx - 2xyz\leq \frac{7}{27}$, where $x, y, z\geq 0$, and $x + y + z = 1$.
+\item Suppose that for numbers $x_1, x_2, \ldots, x_{1997}$, the following conditions holds: (a) $-\frac{1}{\sqrt{3}}\leq x_i \leq
+  \sqrt{3}, i = 1, 2, \ldots, 1997$, (b) $x_1 + x_2 + \cdots + x_{1997} = -318\sqrt{3}$. Find the greatest possible value of the
+  expression $x_1^{12} + x_2^{12} + \cdots + x_{1997}^{12}$.
+\item Prove that $\cos\alpha_1\cos\alpha_2\cdots\cos\alpha_n(\tan\alpha_1 + \tan\alpha_2 + \cdots + \tan\alpha_n)\leq \frac{(n-
+  1)^{(n - 1)/2}}{n^{(n - 2)/2}}$, where $n\geq 2$ and $0\leq \alpha_i<\frac{\pi}{2}, i = 1, 2, \ldots, n$.
+\item Prove that $\displaystyle\sum_{i=1}^nx_i^k(1 - x_i)\leq a_k$, where $k\geq 2, k\in\mathbb{N}$, and $a_k = {\rm \max}[x^k(1 -
+  x) + (1 - x)^kx], x_i\geq 0, i=1, 2, \ldots, n, x_1 + x_2 + \cdots + x)n = 1, n\geq 2$.
+\item $2(n - 1)(x_2x_3 + x_1x_3 + \cdots + x_1x_n + x_2x_3 + \cdots + x_2x_n + \cdots + x_{n - 1}x_n) - n^{n - 1}x_1x_2\ldots
+  x_n\leq n - 2$, where, $n\geq 2, x_1, x_2, \ldots x_n\geq 0$ and $x_1 + x_2 + \cdots + x_n = 1$.
+\item $\frac{x_1 + x_2 + \cdots + x_n}{n} - \sqrt[n]{x_1x_2\ldots x_n}\leq$
+
+  $\frac{(\sqrt{x_1} - \sqrt{x_2})^2 + (\sqrt{x_1} -
+  \sqrt{x_3})^2 + \cdots + (\sqrt{x_1} - \sqrt{x_n})^2 + \cdots + (\sqrt{x_{n - 1}} - \sqrt{x_n})^2}{n}$, where $n\geq 2, x_1, x_2,
+  \ldots, x_n\geq 0$.
+\item {\it Turkevici's Inequality}: $(n - 1)(x_1^2 + x_2^2 + \cdots + x_n^2) + \sqrt[n]{x_1^2x_2^2\ldots x_n^2}\geq (x_1 + x_2 +
+  \cdots + x_n)^2$, where $n\geq 2, x_2, x_2, \ldots, x_n\geq 0$.
+\item $(a + b)(b + c)(c + a)\geq 8abc$, where $a>0, b>0, c>0$.
+\item $(a + b + c - d)(b + c + d - a)(c + d + a - b)(d + a + b - c)\leq (a + b)(b + c)(c + d)(d + a)$, where $a > 0, b > 0, c > 0,
+  d > 0$.
+\item ({\it Schur's Inequality}) $a^3 + b^3 + c^3 + 3abc \geq a^2b + ab^2 + b^2c + bc^2 + ca^2 + c^2a$, where $a > 0, b > 0, c > 0$.
+\item $\left(1 + \frac{4a}{b + c}\right)\left(1 + \frac{4b}{c + a}\right)\left(1 + \frac{4c}{a + b}\right) > 25$, where $a > 0, b >
+  0, c > 0$.
+\item $\frac{\log(a - 1)}{\log a} < \frac{\log a}{\log(a + 1)}$, where $a > 1$.
+\item ({\it Schur's Inequality}) $abc \geq (a + b - c)(c + a - b)(b + c - a)$, where $a>0, b>0, c>0$.
+\item $x^8 + y^8 \geq \frac{1}{128}$, if $x + y = 1$.
+\item $\left(a + \frac{1}{a}\right)^2 + \left(b + \frac{1}{b}\right)^2\geq 12.5$, if $a > 0, b > 0$ and $a + b = 1$.
+\item $\left(x_1 + \frac{1}{x_1}\right)^2 + \cdots + \left(x_n + \frac{1}{x_2}\right)^2\geq \frac{(n^2 + 1)^2}{n}$, if $n\geq 2,
+  x_1> 0, \ldots, x_n>0$ and $x_1 + \cdots + x_n = 1$.
+\item $a^4 + b^4 + c^4 \geq abc(a + b + c)$.
+\item $x^2 + y^2 \geq 2\sqrt{2}(x - y)$, if $xy = 1$.
+\item $\sqrt{6a_1 + 1} + \sqrt{6a_2 + 1} + \sqrt{6a_3 + 1} + \sqrt{6a_4 + 1} + \sqrt{6a_5 + 1}\leq \sqrt{55}$, if $a_1 > 0, \ldots,
+  a_5 > 0$ and $a_1 + \cdots + a_5 = 1$.
+\item $6a + 4b + 5c\geq 5\sqrt{ab} + 3\sqrt{bc + 7\sqrt{ca}}$, where $a\geq 0, b\geq 0, c\geq 0$.
+\item $2(a^4 + b^4) + 17 > 16 ab$.
+\item $\left(\frac{1 + nb}{n + 1}\right)^{n + 1}\geq b^n$, where $n\in\mathbb{N}, b > 0$.
+\item $\left(1 + \frac{1}{n}\right)^n < \left(1 + \frac{1}{n + 1}\right)^{n + 1}$, where $n\in\mathbb{N}$.
+\item $\left(1 + \frac{1}{n}\right)^{n + 1} < \left(1 + \frac{1}{n + 1}\right)^{n + 2}$, where $n\in\mathbb{N}$.
+\item $\left(1 + \frac{m}{n - 1}\right)^{(n - 1)/m} < \left(1 + \frac{m}{n}\right)^{n/m} < \left(1 + \frac{m - 1}{n}\right)^{n/(m
+  - 1)}$, where $m > 1, n > 1$ and $m,n \in\mathbb{N}$.
+\item $n!< \left(\frac{n + 1}{2}\right)^n$, where $n = 2, 3, 4, \ldots$.
+\item $n(n + 1)^{1/n} < n + S_n$, where $S_n = \frac{1}{1} + \frac{1}{2} + \cdots + \frac{1}{n}, n = 2, 3, 4, \ldots$.
+\item $n - S_n > (n - 1)^{1/(1 - n)}$, where $S_n = \frac{1}{1} + \frac{1}{2} + \cdots + \frac{1}{n}, n = 3, 4, \ldots$.
+\item $(q^n - 1)(q^{n + 1} + 1)\geq 2nq^n(q - 1)$, where $q > 1, n \in\mathbb{N}$.
+\item $a^2 + b^2 + c^2 + d^2 + ab + ac + ad + bc + bd + cd\geq 10$, where $a, b, c, d>0$, and $abcd = 1$.
+\item $\left(a - 1 + \frac{1}{b}\right)\left(b - 1 + \frac{1}{c}\right)\left(c - 1 + \frac{1}{a}\right)\leq \left(\frac{1 +
+  abc}{2\sqrt{abc}}\right)^3$, where $a, b, c> 0$.
+\item $\left(a + \frac{1}{b} - t\right)\left(b + \frac{1}{c} - t\right)\left(c + \frac{1}{a} - t\right)\leq (a + b +
+  c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right)(1 - t)^2 + 4 - 3t$, where $a, b,c, t > 0$ and $abc = 1$.
+\item $n\sqrt[n]{a_1a_2\ldots a_n} - (n - 1)\sqrt[n - 1]{a_1a_2\ldots a_{n - 1}} \leq a_n$, where $a_i > 0, i = 1, 2,
+  \ldots, n, n = 3, 4, \ldots$.
+\item $\sqrt[n]{a_1a_2\ldots a_n} + \sqrt[n]{b_1b_2\ldots b_n} + \cdots + \sqrt[n]{k_1k_2\ldots k_n}$
+
+  $\leq\sqrt[n]{(a_1 + b_1 + \cdots + k_1)(a_2 + b_2 + \cdots + k_2)\cdots(a_n + b_n + \cdots + k_n)}$ where
+
+  $a_1, a_2,\ldots, a_n, b_1, b_2, \ldots, b_n, \ldots, k_1, k_2, \ldots, k_n > 0$.
+\item $a_1 + \sqrt{a_1a_2} + \cdots + \sqrt[n]{a_1a_2\ldots a_n}\leq e(a_1 + a_2 + \cdots + a_n)$, where $n\geq 2, a_1, a_2,
+  \ldots, a_n\geq 0$.
+\item $na^k - ka^n\leq n - 1$, where $n > k, n, k\in\mathbb{N}, a > 0$.
+\item $\frac{x_1^2}{x_2} + \frac{x_2^3}{x_3^2} + \cdots + \frac{x_n^{n + 1}}{x_1^n}\geq x_1 + x_2 + \cdots + x_n$, where $n\geq 2,
+  n\in\mathbb{N}, x_1 = {\rm min}(x_1, x_2, \ldots, x_n) > 0$.
+\item $\frac{a^{x_1 - x_2}}{x_1 + x_2} + \frac{a^{x_2 - x_3}}{x_2 + x_3} + \cdots + \frac{a^{x_n - x_1}}{x_n +
+  x_1}\geq \frac{n^2}{2\displaystyle\sum_{i=1}^nx_i}$, where $a > 0, x_i > 0, i = 1, 2, \ldots, n$.
+\item $\sqrt[p]{x_1 + 1} + \sqrt[p]{x_2 + 1} + \cdots + \sqrt[p]{x_n + 1}\leq n + 1$, where $n\geq 2, x_1, x_2, x_n > 0, x_1 + x_2
+  + \cdots + x_n = p, p\in\mathbb{N}, p\geq 2$.
+\item $x^k(1 - x^m)\leq \frac{k^{k/m}.m}{(k + m)^{1 + k/m}}$, where $0\leq x\leq 1, k, m\in\mathbb{N}$.
+\item $\frac{x}{1 - x^2} + \frac{y}{1 - y^2} + \frac{z}{1 - z^2}\geq \frac{3\sqrt{3}}{2}$, where $x, y, z > 0$ and $x^2 + y^2 + z^2
+  = 1$.
+\item $\frac{1}{1 - x} + \frac{1}{1 - y} + \frac{1}{1 - z}\geq \frac{9 + 3\sqrt{3}}{2}$, where $x, y, z > 0$ and $x^2 + y^2 + z^2
+  = 1$.
+\item Find the minimum value of the funciton $f(x) = \frac{1}{\sqrt[n]{1 + x}} + \frac{1}{\sqrt[n]{1 - x}}$ in $[0, 1)$, where
+  $n\in\mathbb{N}, n > 1$.
+\item Find the minimum value of the funciton $f(x) = ax^m + \frac{b}{x^n}$ in $(0, \infty)$, where $a, b > 0, m, n\in\mathbb{N}$.
+\item Find in $[a, b] (0 < a < b)$ a point $x_0$ such that the function $f(x) = (x - a)^2(b^2 - x^2)$ attains its maximum value in
+  $\lfloor a, b\rfloor$ at $x_0$.
+\item Find the greatest possible value of the product $xyz$ given $x, y, z > 0$, and $2x + \sqrt{3}y + \pi z = 1$.
+\item Find the maximum and minimum values of the function $y = \frac{x}{ax^2 + b}$, where $a, b > 0$.
+\item Find the maximum value of the function $y = \frac{5\sqrt{x^2 + 6x + 8} + 12}{x + 3}$.
+\item Find the maximum value of the function $y = \frac{\sqrt[3]{(x^2 + 1)^2(x^2 + 3)}}{3x^3 + 4}$.
+\item Solve the system of equations: $x + y = 2, xy - z^2 = 1$.
+\item Solve the system of equations: $x + y + z = 3, x^2 + y^2 + z^2 = 3$.
+\item Given $a + b + c + d + e = 8, a^2 + b^2 + c^2 + d^2 + e^2 = 16$, find the greatest possible value of $e$.
+\item Find the minimum value of the expression $\frac{x_1}{x_2} + \frac{x_3}{x_4} + \frac{x_5}{x_6}$ if $1\leq x_1\leq x_2\leq
+  x_3\leq x_4\leq x_5\leq x_6\leq 1000$.
+\item Solve the equation $x^4 + y^4 + 2 = 4xy$.
+\item Find all integer solutions of the equation $\frac{xy}{z} + \frac{yz}{x} + \frac{zx}{y} = 3$.
+\item Prove that $x_1^\alpha + x_2^\alpha + \cdots + x_n^\alpha\geq x_1^\beta + x_2^\beta + \cdots + x_n^\beta$, where $n\geq 2,
+  x_1 > 0, x_2 > 0, \cdots, x_n > 0, \alpha > \beta \geq 0$, and $x_1x_2\ldots x_n = 1$.
+\item Prove that $x_1^\alpha + x_2^\alpha + \cdots + x_n^\alpha\geq x_1^\beta + x_2^\beta + \cdots + x_n^\beta$, where $n\geq 2,
+  x_1 > 0, x_2 > 0, \cdots, x_n > 0, \alpha\geq (n - 1)|\beta|$, and $x_1x_2\ldots x_n = 1$.
+\item Prove that $\frac{1 + a}{1 + ab} + \frac{1 + b}{1 + bc} + \frac{1 + c}{1 + cd} + \frac{1 + d}{1 + da}\geq 4$, where $a, b, c,
+  d > 0$ and $abcd = 1$.
+\item Prove that $\frac{1 + ab}{1 + a} + \frac{1 + bc}{1 + b} + \frac{1 + cd}{1 + c} + \frac{1 + da}{1 + d}\geq 4$, where $a, b, c,
+  d > 0$ and $abcd = 1$.
+\item Prove that $2ST > \sqrt{3(S + T)[S(bd + df + fb) + T(ac + ce + ea)]}$, where $0 < a < b < c < d < e < f$ and $a + c + e = S,
+  b + d + f = T$.
+\item Prove that $\frac{a + \sqrt{ab} + \sqrt[3]{abc} + \sqrt[4]{abcd}}{4}\leq \sqrt[4]{a.\frac{a + b}{2}.\frac{a + b +
+    c}{3}. \frac{a + b + c + d}{4}}$, where $a > 0, b > 0, c > 0, d > 0$.
+\item Prove that $a^{12} + (ab)^6 + (abc)^4 + (abcd)^3\leq 1.43(a^{12} + b^{12} + c^{12} + d^{12})$.
+\item $ab\leq \frac{a^p}{p} + \frac{b^q}{1}$, if $\frac{1}{p} + \frac{1}{q} =1, a, b, p, q >0$, where $p$ and $q$ are rational
+  numbers.
+\item $\left(1 + \frac{1}{n}\right)^n > 2$, where $n\in\mathbb{N}$.
+\item $(1 + a_1)(1 + a_2)\cdots(1 + a_n)\leq 1 + \frac{S}{1!} + \cdots + \frac{S^n}{n!}$, where $n\geq 2, S = a_1 + a_2 + \cdots +
+  a_n, a_i > 0, i = 1, 2, \ldots, n$.
+\item $\left(1 + \frac{1}{a}\right)\left(1 + \frac{1}{b}\right)\left(1 + \frac{1}{c}\right)\geq 64$, where $a, b, c > 0$ and $a + b
+  + c = 1$.
+\item $\sqrt[n]{a^{2n - 1}} + \sqrt[n]{a^{2n + 1}}\geq 3a - 1$, where $n\geq 2, a > 0, n > k, n,k\in\mathbb{N}$.
+\item $\frac{a^n - 1}{a^n(a - 1)}\geq n + 1 - a^{\tfrac{n(n + 1)}{2}}$, where $a > 0, a\neq 1$.
+\item $na^{n + 1} + 1\geq (n + 1)a^n$, where $a > 0$.
+\item $\left(\sqrt{k} + \sqrt{k + 1}\right)\left(\sqrt{k + 1} + \sqrt{k + 1}\right)\cdots \left(\sqrt{n} + \sqrt{n + 1}\right)\geq
+  \left(\sqrt{n} - \sqrt{k}\right)\left(\sqrt{n} + \sqrt{k} - 1\right) + 2$, where $n > k, n, k\in\mathbb{N}$.
+\item $\frac{a_1}{a_2} + \frac{a_2}{a_3} + \cdots + \frac{a_{n - 1}}{a_n} + \frac{a_n}{a_1}\geq n$, where $a_i > 0, i = 1, 2,
+  \ldots, n$.
+\item $a_{n + 1} + \frac{1}{a_1(a_2 - a_1)(a_3 - a_2)\cdots(a_{n + 1} - a_n)}\geq n + 1$, where $0 < a_k < a_{k + 1}, k = 1, 2,
+  \ldots, n$.
+\item $1 + \frac{x}{2}\leq \frac{1}{\sqrt{1 - x}}$, where $0\leq x < 1$.
+\item $\frac{a^4}{b^4} + \frac{b^4}{c^4} + \frac{d^4}{e^4} + \frac{e^4}{a^4}\geq \frac{a}{b} + \frac{b}{c} + \frac{c}{d} +
+  \frac{d}{e} + \frac{e}{a}$, where $abcde\neq 0$.
+\item $\left(\frac{a}{b}\right)^{1999} + \left(\frac{b}{c}\right)^{1999} + \left(\frac{c}{d}\right)^{1999} +
+  \left(\frac{d}{a}\right)^{1999}$, where $a, b, c, d > 0$.
+\item Prove that $\sqrt{\frac{a_1 + a_2}{a_3}} + \sqrt{\frac{a_2 + a_3}{a_4}} + \cdots + \sqrt{\frac{a_{n - 1} + a_n}{a_{1}}} +
+  \sqrt{\frac{a_n + a_1}{a_2}}\geq n\sqrt{2}$, where $n > 2$ and $a_1 > 0, a_2 > 0, \ldots, a_n > 0$.
+\item Prove that $\frac{x}{1 + x^2} + \frac{y}{1 + y^2} + \frac{z}{1 + z^2}\leq \frac{3\sqrt{3}}{4}$, where $x^2 + y^2 + z^2 = 1$.
+\item Prove that $\left(\frac{1}{a_1^2} - 1\right)\left(\frac{1}{a_2^2} - 1\right)\cdots\left(\frac{1}{a_n^2} - 1\right)\geq(n^2 -
+  1)n$, where $n\geq 2, a_1 > 0, a_2 > 0, \ldots, a_n > 0$ and $a_1 + a_2 + \cdots + a_n = 1$.
+\item Find the maximum and minimum value of the expression $(1 + u)(1 + v)(1 + w)$ if $0 < u \leq \frac{7}{16}, 0 < v \leq
+  \frac{7}{16}, 0 < w \leq \frac{7}{16}$, and $u + v + w = 1$.
+\item Find the maximum value of the expression $x^py^q$ if $x + y = a, x > 0, y > 0$ and $p, q\in\mathbb{N}$.
+\item Find the maximum value of the expression $a + 2c$ if for all $x$, one has $ax^2 + bx + c \leq \frac{1}{\sqrt{1 - x^2}}$,
+  where $|x|< 1$.
+\item Prove that $\left(1 + \frac{a}{b}\right)\left(1 + \frac{b}{c}\right)\left(1 + \frac{c}{a}\right) \geq 2\left(1 + \frac{a + b
+  + c}{\sqrt[3]{abc}}\right)$, where $a > 0, b > 0, c > 0$.
+\item Prove that $\frac{1 + a_1}{1 - a_1}.\frac{1 + a_2}{1 - a_2}\cdots\frac{1 + a_{n + 1}}{1 - a_{n + 1}}$, where $-1 < a_1, a_2,
+  \ldots, a_{n + 1} < 1$ and $a_1 + a_2 + \cdots + a_{n + 1}\geq n - 1$.
+\item Prove that $(a + b)^3(b + c)^3(c + d)^3(d + a)^3\geq 16a^2b^2c^2d^2(a + b + c + d)^4$, where $a >0, b > 0, c > 0, d > 0$.
+\item Prove that $\left[\left(1 + \frac{a}{b}\right)^2 + \left(1 + \frac{b}{c}\right)^2 + \left(1 + \frac{c}{a}\right)^2\right]
+  \left[\left(1 + \frac{b}{a}\right)^2 + \left(1 + \frac{c}{b}\right)^2 + \left(1 + \frac{a}{c}\right)^2\right]\geq$
+
+  $4\left(\frac{a + b}{c} + \frac{b + c}{a} + \frac{c + a}{b}\right)^2$, where $a > 0, b > 0, c > 0$.
+\item Prove that $(a^2 + bc)^3(b^2 + ac)^3(c^2 + ab)^3\geq 64(a^3 + b^3)(b^3 + c^3)(c^3 + a^3)$, where $a > 0, b > 0, c > 0$.
+\item Prove that $a + \sqrt{ab} + \sqrt[3]{abc}\leq \frac{4}{3}(a + b + c)$, where $a > 0, b > 0, c > 0$.
+\item Prove that $a + \sqrt{ab} + \sqrt[3]{abc}\leq 3.\sqrt[3]{a . \frac{a + b}{2} . \frac{a + b + c}{3}}$, where $a > 0, b > 0, c
+  > 0$.
+\item Prove that $(ab)^{\tfrac{5}{4}} + (bc)^{\tfrac{5}{4}} + (ca)^{\tfrac{5}{4}} \leq \frac{\sqrt{3}}{9}$, where $a > 0, b > 0, c >
+  0$ and $a + b + c = 1$.
+\item Prove that $a^2 + b^2 + c^2 \geq 14$ if $a + 2b + 3c\geq 14$.
+\item Prove that $ab + \sqrt{(1 - a^2)(1 - b^2)}\leq 1$ if $|a|\leq 1, |b|\leq 1$.
+\item Prove that $\sqrt{c(a - c)} + \sqrt{c(b - c)}\leq \sqrt{ab}$ if $a > c, b > c, c > 0$.
+\item Prove that $a\sqrt{a^2 + c^2} + b\sqrt{b^2 + c^2}\leq a^2 + b^2 + c^2$.
+\item Prove that $\frac{1}{\sqrt{ab}} + \frac{1}{\sqrt{bc}} + \frac{1}{\sqrt{ca}}\leq \frac{1}{a} + \frac{1}{b} + \frac{1}{c}$,
+  where $a > 0, b > 0, c > 0$.
+\item Prove that $\sqrt{a}(a + c - b) + \sqrt{b}(a + b - c) + \sqrt{c}(b + c - a)\leq \sqrt{(a^2 + b^2 + c^2)(a + b + c)}$, where
+  $a, b, c$ are lengths of sides of a triangle.
+\item Prove that $(a_1 + a_2 + \cdots + a_n)\left(\frac{1}{a_1} + \frac{1}{a_2} + \cdots + \frac{1}{a_n}\right)\geq n^2$, where
+  $a_1 > 0, a_2 > 0, \ldots, a_n > 0$.
+\item Prove that $\frac{a_1^2 + a_2^2 + \cdots + a_n^2}{n}\geq \left(\frac{a_1 + a_2 + \cdots + a_n}{n}\right)^2$.
+\item Prove that $a_1a_2 + a_2a_3 + \cdots + a_9a_{10} + a_{10}a_1\geq -1$ if $a_1^2 + a_2^2 + \cdots + a_{10}^2 = 1$.
+\item Prove that $x^4 + y^4 \geq x^3y + xy^3$.
+\item Prove that $\left(|a_1|^3 + |a_2|^3 + \cdots + |a_n|^3\right)^2\leq \left(a_1^2 + a_2^2 + \cdots + a_n^2\right)^3$.
+\item Prove that $3\left(a^2 + b^2 + c^2 + x^2 + y^2 + z^2\right) + 6\sqrt{\left(a^2 + b^2 + c^2\right)\left(x^2 + y^2 +
+  z^2\right)}\geq$
+
+  $\left(a + b + c + x + y + z\right)^2$.
+\item Prove that $a^2 + b^2 + c^2\geq ab + bc + ca$.
+\item Prove that $(a_1 + a_2 + \cdots + a_n)(a_1^7 + a_2^7 + \cdots + a_n^7)\geq(a_1^3 + a_2^3 + \cdots + a_n^3)(a_1^5 + a_2^5 +
+  \cdots + a_n^5)$, where $a_1 > 0, a_2 > 0, \ldots, a_n > 0$.
+\item Prove that $\sqrt{a + 1} + \sqrt{2a - 3} + \sqrt{50 - 3a}\leq 12$, where $\frac{3}{2}\leq a\leq \frac{50}{3}$.
+\item Prove that $a + b + c\leq abc + 2$, where $a^2 + b^2 + c^2 = 2$.
+\item Prove that $2(a + b + c) - abc \leq 10$, where $a^2 + b^2 + c^2 = 9$.
+\item Prove that $1 + abc\geq 3.min(a, b, c)$, where $a^2 + b^2 + c^2 = 9$.
+\item Prove that $\displaystyle\left(\sum_{i=1}^na_i^{k + 1}\right)\left(\sum_{i=1}^na_i^{-1}\right)\geq
+  n\left(\sum_{i=1}^na_i^k\right)$, where $k, n\in\mathbb{N}$ and $a_1 > 0, a_2 > 0, \ldots, a_n > 0$.
+\item Prove that $\frac{a + b + c}{3}\geq \sqrt[3]{abc}$, where $a > 0, b > 0, c > 0$.
+\item Prove that $\frac{a_1^k + a_2^k + \cdots + a_n^k}{n}\geq \left(\frac{a_1 + a_2 + \cdots + a_n}{n}\right)^k$, where $k,
+  n\in\mathbb{N}$ and $a_1 > 0, a_2 > 0, \ldots, a_n > 0$.
+\item Prove that $\left(1 + \frac{1}{\sin\alpha}\right)\left(1 + \frac{1}{\cos\alpha}\right) > 5$, where $0 < \alpha <
+  \frac{\pi}{2}$.
+\item Find the smallest possible value of the expression $(u - v)^2 + \left(\sqrt{2 - u^2} - \frac{9}{v}\right)^2$ if $0 < u <
+  \sqrt{2}, v > 0$.
+\item Prove that $x_1^2 + \left(\frac{x_1 + x_2}{2}\right)^2 + \cdots + \left(\frac{x_1 + x_2 + \cdots + x_n}{n}\right)^2\leq 4(x_1
+  + x_2 + \cdots + x_n)^2$. This inequality is a particular case of {\it Hardy's inequality}
+  $\displaystyle\sum_{k=1}^n\left(\frac{a_1 + a_2 + \cdots + a_k}{k}\right)^p \leq \left(\frac{p}{p - 1}\right)^p.\sum_{k = 1}^n
+  a_k^p$, where $p > 1, a_i \geq 0, i = 1, 2, \ldots, n$.
+\item Prove that $\frac{1}{a_1} + \frac{2}{a_1 + a_2} + \cdots + \frac{n}{a_1 + a_2 + \cdots + a_n} < 2\left(\frac{1}{a_1} +
+  \frac{1}{a_2} + \cdots + \frac{1}{a_n}\right)$, where $a_1 > 0, a_2 > 0, \ldots, a_n > 0$.
+\item Prove that $\left(\sin\alpha_1 + \sin\alpha_2 + \cdots + \sin\alpha_n\right)^2 + \left(\cos\alpha_1 + \cos\alpha_2 + \cdots +
+  \cos\alpha_n\right)^2\leq n^2$.
+\item Prove that $\frac{a_1 + a_2 + \cdots + a_n}{n}\geq \sqrt[n]{a_1a_2\ldots a_n}$, where $n\geq 2, a_1 > 0, a_2 > 0, \ldots, a_n
+  > 0$.
+\item Prove that $\sqrt{a_1b_1} + \sqrt{a_2b_2} + \cdots + \sqrt{a_nb_n}\leq \sqrt{a_1 + a_2 + \cdots + a_n}.\sqrt{b_1 + b_2 +
+  \cdots + b_n}$, where $a_i\geq 0, b_i\geq 0, i = 1, 2, \ldots, n$.
+\item Prove that $(x_1y_2 - x_2y_1)^2 + (x_2y_3 - x_3y_2)^2 + (x_1y_3 - x_3y_1)^2\leq (x_1^2 + x_2^2 + x_3^2)(y_1^2 + y_2^2 +
+  y_3^2)$.
+\item Prove that $\displaystyle\left(\sum_{i=1}^n\sqrt{a_ib_i}\right)^2\leq
+  \left(\sum_{i=1}^na_ix_i\right)\left(\sum_{i=1}^n\frac{b_i}{x_i}\right)$, where $x_i > 0, a_i > 0, b_i > 0, i = 1, 2, \ldots n$.
+\item Prove that $\displaystyle\left(\sum_{i=1}^nx_iy_i\right)\left(\sum_{i=1}^n\frac{x_i}{y_i}\right)\geq\left(\sum_{i =
+  1}^nx_i\right)^2$, where $x_i > 0, y_i > 0, i = 1, 2, \ldots, n$.
+\item Prove that $ax + by + cz + \sqrt{(a^2 + b^2 + c^2)(x^2 + y^2 + z^2)}\geq \frac{2}{3}(a + b + c)(x + y + z)$.
+\item Prove that $(p_1q_1 - p_2q_2 - \cdots - p_nq_n)^2\geq(p_1^2 - p_2^2 - \cdots - p_n^2)(q_1^2 - q_2^2 - \cdots - q_n^2)$, if
+  $p_1^2\geq p_2^2 + \cdots + p_n^2, q_1^2 \geq q_2^2 + \cdots + q_n^2$.
+\item Prove that $\sqrt{x^2 + xy + y^2}\sqrt{y^2 + yz + z^2} + \sqrt{y^2 + yz + z^2}\sqrt{z^2 + zx + x^2} + $
+
+  $\sqrt{z^2 + zx +  x^2}\sqrt{x^2 + xy + y^2}\geq (x + y + z)^2$.
+\item Prove that $a_1(b_1 + a_2) + a_2(b_2 + a_3) + \cdots + a_n(b_n + a_1) < 1$, where $n\geq 3, a_1, a_2, \ldots, a_n > 0$ and
+  $a_1 + a_2 + \cdots + a_n = 1, b_1^2 + b_2^2 + \cdots + b_n^2 = 1$.
+\item Prove that $\sqrt{1 - \left(\frac{x + y}{2}\right)^2} + \sqrt{1 - \left(\frac{y + z}{2}\right)^2} + \sqrt{1 - \left(\frac{z +
+    x}{2}\right)^2\geq \sqrt{6}}$, where $x, y, z \geq 0, x^2 + y^2 + z^2 = 1$.
+\item Prove that $\sqrt{\frac{a}{b + c}} + \sqrt{\frac{b}{c + a}} + \sqrt{\frac{c}{a + b}}\geq 2\sqrt{1 + \frac{abc}{(a + b)(b +
+    c)(c + a)}}$, where $a, b, c > 0$.
+\item Prove that $\sqrt{a + (b - c)^2} + \sqrt{b + (c - a)^2} + \sqrt{c + (a - b)^2}\geq \sqrt{3}$, where $a, b, c\geq 0$ and $a +
+  b + c = 1$.
+\item Prove that $\sqrt{\frac{a + b}{2} - ab} + \sqrt{\frac{b + c}{2} - bc} + \sqrt{\frac{c + a}{2} - ca}\geq \sqrt{2}$, where $a,
+  b, c \geq 0$ and $a + b + c = 2$.
+\item Prove that $\sqrt{1 - xy}\sqrt{1 - yz} + \sqrt{1 - yz}\sqrt{1 - zx} + \sqrt{1 - zx}\sqrt{1 - xy}\geq 2$, where $x, y, z\geq
+  0$ and $x^2 + y^2 + z^2 = 1$.
+\item Prove that $x\sqrt{1 - yz} + y\sqrt{1 - zx} + z\sqrt{1 - xy}\geq \frac{2\sqrt{2}}{3}$, where $x, y, z\geq 0$ and $x + y + z =
+  1$.
+\item Prove the following identity $\displaystyle(a_1c_1 + a_2c_2 + \cdots + a_nc_n) - (a_1d_1 + a_2d_2 + \cdots + a_nd_n)(b_1c_1 +
+  b_2c_2 + \cdots + b_nc_n) = \sum_{1\leq i<k\leq n}(a_ib_k - a_kb_i)(c_id_k - c_kd_i)$.
+\item Prove that $(a_1c_1 + a_2c_2 + \cdots + a_nc_n) - (a_1d_1 + a_2d_2 + \cdots + a_nd_n)\geq (a_1d_1 + a_2d_2 + \cdots +
+  a_nd_n)(b_1c_1 + b_2c_2 + \cdots + b_nc_n)$, where $b_id_1\geq 0 (i = 1, 2, \ldots, n)$ or $b_id_1 < 0 (i = 1, 2, \ldots, n)$ and
+  $\frac{a_1}{b_1}\leq \frac{a_2}{b_2}\leq \ldots\leq \frac{a_n}{b_n}, \frac{c_1}{d_1}\leq \frac{c_2}{d_2}\leq \ldots\leq
+  \frac{c_n}{d_n}$.
+\item Find the maximum and minimum value of the expression $\frac{\sqrt{x^2 + y^2} + \sqrt{(x - 2)^2 + (y - 1)^2}}{\sqrt{x^2 + (y -
+    1)^2} + \sqrt{(x - 2)^2 + y^2}}$.
+\item Find the minimum value of the expression $\left(\frac{1}{x^n} + \frac{1}{a^n} - 1\right)\left(\frac{1}{y^n} + \frac{1}{b^n} -
+  1\right)$, where $x, y, a, b > 0, x + y = 1, a + b = 1$.
+\item Prove that $4\leq a^2 + b^2 + ab + \sqrt{4 - a^2}\sqrt{9 - b^2}\leq 19$, where $0\leq a\leq 2$ and $0\leq b\leq 3$.
+\item Prove that $n\sqrt{m - 1} + m\sqrt{n - 1}\leq mn$, where $m\geq 1, n\geq 1$.
+\item Prove that $\sqrt{m^2 - n^2} + \sqrt{2mn - n^2}\geq m$, where $m > n > 0$.
+\item Prove that $x > \sqrt{x - 1} + \sqrt{x(\sqrt{x} - 1)}$, where $x\geq 1$.
+\item Prove that $1 + \frac{1}{\sqrt{2}} + \cdots + \frac{1}{\sqrt{n}}\geq n\sqrt{\frac{2}{n + 1}}$, where $n\in\mathbb{N}$.
+\item Prove that among seven arbitrary numbers one can find two numbers $x$ and $y$ such that $0\leq \frac{x - y}{1 + xy}
+  <\frac{\sqrt{3}}{3}$.
+\item Prove that $\frac{|a - b|}{\sqrt{1 + a^2}\sqrt{1 + b^2}}\leq \frac{|a - c|}{\sqrt{1 + a^2}\sqrt{1 + c^2}}\leq \frac{|b -
+  c|}{\sqrt{1 + b^2}\sqrt{1 + c^2}}$.
+\item {\it Huygen's inequality:} $\sqrt[n]{(a_1 + b_1)(a_2 + b_2)\cdots(a_n + b_n)}\geq \sqrt[n]{a_1a_2\ldots
+  a_n}\sqrt[n]{b_1b_2\ldots b_n}$, where $a_i > 0, b_i > 0, i = 1, 2, \ldots, n$.
+\item {\it Milne's inequality:} $\frac{a_1b_1}{a_1 + b_1} + \frac{a_2b_2}{a_2 + b_2} + \cdots + \frac{a_nb_n}{a_n + b_n}\leq$
+
+  $\frac{(a_1 + a_2 + \cdots + a_n)(b_1 + b_2 + \cdots + b_n)}{(a_1 + a_2 + \cdots + a_n) + (b_1 + b_2 + \cdots + b_n)}$, where $a_i
+  > 0, b_i > 0, i = 1, 2, \ldots, n$.
+\item Prove that $\frac{8}{(x_1 + x_2)(y_1 + y_2) - (z_1 + z_2)^2} \leq \frac{1}{x_1y_1 - z_1^2} + \frac{1}{x_2y_2 - z_2^2}$, where
+  $x_1 > 0, x_2 > 0$ and $x_1y_1 - z_1^2 > 0, x_2y_2 - z_2^2 > 0$.
+\item Prove that $\sqrt{a - 1} + \sqrt{b - 1} + \sqrt{c - 1} \leq \frac{2}{3}\sqrt{abc}$, where $a\geq 1, b\geq 1, c\geq 1$.
+\item Prove that $\sqrt{a - 1} + \sqrt{b - 1} + \sqrt{c - 1} + \sqrt{d - a}\leq \frac{3\sqrt{3}}{4}\sqrt{abcd}$, where $a\geq 1,
+  b\geq 1, c\geq 1, d\geq 1$.
+\item Prove that $\left(\frac{a^2 - b^2}{2}\right)^2 \geq \sqrt{\frac{a^2 + b^2}{2}} - \frac{a + b}{2}$, where $a, b\geq
+  \frac{1}{2}$.
+\item Prove that $x_1 + x_2 + \cdots + x_n \leq \frac{n}{3}$, where $x_1^3 + x_2^3 + \cdots + x_n^3 = 0$ and $x_i\in[-1, 1], i = 1,
+  2, \ldots, n$.
+\item Prove that $|x_1^3 + x_2^3 + \cdots + x_n^3|\leq 2n$, where $x_1 + x_2 + \cdots + x_n = 0$ and $x_i\in [-2, 2], i = 1, 2,
+  \ldots, n$.
+\item Prove that $1 < \frac{a}{\sqrt{a^2 + b^2}} + \frac{b}{\sqrt{b^2 + c^2}} + \frac{c}{\sqrt{c^2 + a^2}}\leq
+  \frac{3\sqrt{2}}{4}$, where $a, b, c > 0$.
+\item Prove that $\sqrt{1 - a} + \sqrt{1 - b} + \sqrt{1 - c} + \sqrt{1 - d}\geq \sqrt{a} + \sqrt{b} + \sqrt{c} + \sqrt{d}$, where
+  $a, b, c, d > 0, a^2 + b^2 + c^2 + d^2 = 1$.
+\item Prove that $\frac{a + b + c}{3} - \sqrt[3]{abc}\leq \max\left[\left(\sqrt{a} - \sqrt{b}\right)^2, \left(\sqrt{b} -
+  \sqrt{c}\right)^2, \left(\sqrt{c} - \sqrt{a}\right)^2\right]$, where $a > 0, b > 0, c > 0$.
+\item Given that $a^2 + b^2 = 1$. Prove that (i) $|a + b|\leq \sqrt{2}$, (ii) $|a - b|\leq \sqrt{2}$, (iii) $|ab|\leq \frac{1}{2}$,
+  and (iv) $|ab^2 + a^2b|\leq \frac{1}{\sqrt{2}}$.
+\item Prove that $|xy - \sqrt{(1 - x^2)(1 - y^2)}|\leq 1$, where $|x|\leq 1, |y|\leq 1$.
+\item Prove that $\sqrt{1 - x^2} + \sqrt{1 - y^2}\leq 2\sqrt{1 - \left(\frac{x + y}{2}\right)^2}$, where $|x|\leq 1, |y|\leq 1$.
+\item Prove that $\frac{a_1}{1 - a_1} + \frac{a_2}{1 - a_2} + \cdots + \frac{a_n}{1 - a_n}\geq \frac{n(a_1 + a_2 + \cdots + a_n)}{n
+  - (a_1 + a_2 + \cdots + a_n)}$, where $0\leq a_1<1, 0\leq a_2<1, \ldots, 0\leq a_n<1$.
+\item Prove that $\frac{1}{\sqrt{1 + a^2}} + \frac{1}{\sqrt{1 + b^2}} + \frac{1}{\sqrt{1 + c^2}}\leq \frac{3}{2}$, where $a, b, c
+  > 0$ and $a + b + c = abc$.
+\item Prove that $\frac{|x - y|}{1 + a|x - y|} + \frac{|y - z|}{1 + a|y - z|} \geq \frac{|x - z|}{1 + a|x - z|}$, where $a > 0$.
+\item Prove that $\frac{2x(1 - x^2)}{(1 + x^2)^2} + \frac{2y(1 - y^2)}{(1 + y^2)^2} + \frac{2z(1 - z^2)}{(1 + z^2)^2}\leq
+  \frac{x}{1 + x^2} + \frac{y}{1 + y^2} + \frac{z}{1 + z^2}$, where $x > 0, y > 0, z > 0$ and $xy + yz + zx = 1$.
+\item Prove that $\sqrt{a_1 + a_2 + \cdots + a_n}\leq \sqrt{1}(\sqrt{a_1} - \sqrt{a_2}) + \sqrt{2}(\sqrt{a_2} - \sqrt{a_3}) +
+  \cdots + \sqrt{n}(\sqrt{a_n} - \sqrt{a_{n + 1}})$, where $a_1\geq a_2\geq\ldots\geq a_{n + 1} = 0$.
+\item Prove that $\frac{1}{\frac{1}{1 + a_1} + \frac{1}{1 + a_2} + \cdots + \frac{1}{1 + a_n}} - \frac{1}{\frac{1}{a_1} +
+  \frac{1}{a_2} + \cdots + \frac{1}{a_n}}\geq \frac{1}{n}$, where $a_1 > 0, a_2 > 0, \ldots, a_n > 0$.
+\item Prove that $a + b + c - 2\sqrt{abc}\geq ab + bc + ca - 2abc$, where $0\leq a\leq 1, 0\leq b\leq 1, 0\leq c\leq 1$.
+\item Prove that $\sqrt{a(1 - b)(1 - c)} + \sqrt{b(1 - c)(1 - a)} + \sqrt{c(1- a)(1 - b)}\leq 1 + \sqrt{abc}$, where $0\leq a\leq
+  1, 0\leq b\leq 1, 0\leq c\leq 1$.
+\item Prove that $\left[(x + y)(y + z)(z + x)\right]^2\geq xyz(2x + y + z)(2y + z + x)(2z + x + y)$, where $x, y, z\geq 0$.
+\item Prove that $\frac{ab(1 - a)(1 - b)}{(1 - ab)^2} < \frac{1}{4}$, where $0 < a < 1, 0 < b < 1$.
+\item Prove that $\max(a_1, a_2, \ldots, a_n)\geq 2$, where $n > 3, a_1 + a_2 + \cdots + a_n \geq n, a_1^2 + a_2^2 + \cdots +
+  a_n^2\geq n^2$.
+\item Prove that $\sqrt{a_1 + \frac{(a_n - a_{n - 1})^2}{4(n - 2)}} + \cdots + \sqrt{a_{n - 2} + \frac{(a_n - a_{n - 1})^2}{4(n -
+    2)}} + \sqrt{a_{n - 1}} + \sqrt{a_n}\leq \sqrt{n}$, where $n \geq 3, a_1, a_2, \ldots, a_n \geq 0$ and $a_1 + a_2 + \cdots +
+  a_n = 1$.
+\item Prove that $2\sqrt{(x^2 - 1)(y^2 - 1)}\leq 2(x - 1)(y - 1) + 1$, where $0\leq x, y\leq 1$.
+\item Prove that $a^3 + b^3 + c^3 - 3abc\leq \sqrt{(a^2 + b^2 + c^2)^3}$.
+\item Pprove that $\frac{1}{n - 1 + x_1} + \frac{1}{n - 1 + x_2} + \cdots + \frac{1}{n - 1 + x_n}\leq 1$, where $x_1, x_2, \ldots,
+  x_n > 0$ and $x_1.x_2.\ldots.x_n = 1$.
+\item Prove that $\frac{x}{\sqrt{1 - x}} + \frac{1}{\sqrt{1 - y}}\geq \frac{x + y}{\sqrt{1 - \frac{x + y}{2}}}$, where $0\leq x, y<
+  1$.
+\item Prove that $\frac{x_1}{\sqrt{1 - x_1}} + \frac{x_2}{\sqrt{1 - x_2}} + \cdots + \frac{x_n}{\sqrt{1 - x_n}}\geq
+  \frac{\sqrt{x_1} + \sqrt{x_2} + \cdots + \sqrt{x_n}}{\sqrt{n - 1}}$, where $n\geq 2, n\in\mathbb{N}, x_1, x_2, \ldots, x_n > 0$
+  and $x_1 + x_2 + \cdots + x_n = 1$.
+\item Prove that $\frac{x}{\sqrt{4y^2 + 1}} + \frac{y}{\sqrt{4x^2 + 1}} \leq \frac{1}{\sqrt{2}}$, where $0\leq x,y\leq
+  \frac{1}{2}$.
+\item Prove that $0\leq ab + bc + ca - abc\leq 2$, where $a, b, c > 0$ and $a^2 + b^2 + c^2 + abc = 4$.
+\item Prove that $a + b + c\leq 3$, whhere $a, b, c > 0$ and $a^2 + b^2 + c^2 + abc = 4$.
+\item Prove that $(x - 1)(y - z)(z - 1)\leq 6\sqrt{3} - 10$, where $x, y, z > 0$ and $x + y + z = xyz$.
+\item Prove that $\sqrt[3]{\frac{x + y}{2z}} + \sqrt[3]{\frac{y + z}{2x}} + \sqrt[3]{\frac{z + x}{2y}}\leq \frac{5(x + y + z) +
+  9}{8}$, where $x, y, z > 0$ and $xyz = 1$.
+\item Prove that among four arbitrary numbers there are two numbers $a$ and $b$ such that $\frac{1 + ab}{\sqrt{1 + a^2}\sqrt{1 +
+    b^2}} > \frac{1}{2}$.
+\item Given that $x + y + z = 0$ and $x^2 + y^2 + z^2 = 6$, find all possible values of the expression $x^2y + y^2z + z^2x$.
+\item Let $(h_n)$ be a sequence such that $h_1 = \frac{1}{2}$ and $h_{n + 1} = \sqrt{\frac{1 - \sqrt{1 - h_n^2}}{2}}, n = 1, 2,
+  \ldots$. Prove that $h_1 + h_2 + \cdots + h_n\leq 1.03$.
+\item Prove that $abc\geq (a + b - c)(b + c - a)(c + a - b)$, where $a, b, c > 0$.
+\item Prove that $(a_1b_1 + a_2b_2 + \cdots + a_nb_n)^2\leq (a_1^2 + a_2^2 + \cdots + a_n^2)(b_1^2 + b_2^2 + \cdots + b_n^2)$.
+\item Prove that $(a + b)^2(a^2 + b^2)^2\cdots(a^n + b^n)^2\geq (a^{n + 1} + b^{n + 1})^n$, where $a, b > 0$.
+\item Prove that $(a_1^\alpha + a_2^\alpha + \cdots + a_n^\alpha)^\beta\leq(a_1^\beta + a_2^\beta + \cdots + a_n^\beta)^\alpha$,
+  where $0 < \beta < \alpha, a_1 > 0, a_2 > 0, \ldots, a_n > 0$.
+\item {\it Nesbitt's inequality:} $\frac{a}{b + c} + \frac{b}{c + a} + \frac{c}{a + b}\geq \frac{3}{2}$, where $a, b, c > 0$.
+\item Prove that $\sqrt{\frac{a}{b + c + d}} + \sqrt{\frac{b}{a + c + d}} + \sqrt{\frac{c}{a + b + d}} + \sqrt{\frac{d}{a + b + c}}
+  > 2$, where $a, b, c, d > 0$.
+\item Prove that $\sqrt[3]{\frac{abc + abd + acd + bcd}{4}}\leq \sqrt{\frac{ab + ac + ad + bc + bd + cd}{6}}$, where $a, b, c, d >
+  0$.
+\item Prove that $2\sqrt{ab + bc + ac}\leq 3\sqrt[3]{(b + c)(c + a)(a + b)}$, where $a, b, c > 0$.
+\item Prove that $8(x^3 + y^3 + z^3)^2 \geq 9(x^2 + yz)(y^2 + xz)(z^2 + xy)$, where $x, y, z > 0$.
+\item Prove that $4a^3 + 4b^3 + 4c^3 + 15abc\geq 1$, where $a, b, c\geq 0$ and $a + b + c = 1$.
+\item Prove that $a^3 + b^3 + c^3 + abcd \geq min\left(\frac{1}{4}, \frac{1}{9} + \frac{d}{27}\right)$, where $a, b, c\geq 0$ and
+  $a + b + c = 1$.
+\item Prove that $\frac{a_1 + a_2 + \cdots + a_n}{n}\geq \frac{1}{n}\sqrt{\frac{a_1^2 + a_2^2 + \cdots + a_n^2}{n}} + \left(1 -
+  \frac{1}{n}\right)\sqrt[n]{a_1a_2\ldots a_n}$, where $n\geq 2, a_i > 0, i = 1, 2, \ldots, n$.
+\item {\it Turkevici's Inequality:} $a^4 + b^4 + c^4 + d^4 + 2abcd \geq a^2b^2 + a^2c^2 + a^2d^2 + b^2c^2 + b^2d^2 + c^2d^2$,
+  where $a, b, c, d\geq 0$.
+\item Prove that $\frac{a_1^3}{b_1} + \frac{a_2^3}{b_2} + \cdots + \frac{a_n^3}{b_n}\geq 1$, where $a_i, b_i > 0, i = 1, 2, \ldots,
+  n$, and $(a_1^2 + a_2^2 + \cdots + a_n^2)^3 = b_1^2 + b_2^2 + \cdots + b_n^2$.
+\item Prove that $\frac{a}{b} + \frac{b}{c} + \frac{c}{a}\geq \frac{a + c}{b + c} + \frac{b + a}{c + a} + \frac{c + b}{a + b}$,
+  where $a, b, c > 0$.
+\item Prove that $\sqrt{\frac{a_1^n}{a_1^n + \lambda a_1a_2\ldots a_n}} + \sqrt{\frac{a_2^n}{a_2^n + \lambda a_1a_2\ldots a_n}} +
+  \cdots + \sqrt{\frac{a_n^n}{a_n^n + \lambda a_1a_2\ldots a_n}}\geq \frac{n}{\sqrt{1 + \lambda}}$, where $n\geq 2, a_1, 2_2,
+  \ldots, a_n > 0$ and $\lambda \geq n^2 - 1$.
+\item Prove that $\left(\sqrt[k]{2} - 1\right)(a_1 + a_2 + \cdots + a_n) < \sqrt[k]{2a_1^k + 2^2a_2^k + \cdots + 2^na_n^k}$, where
+  $k\in\mathbb{N}, k\geq 2, a_1, a_2, \ldots, a_n > 0$.
+\item Prove that $3(x^2y + y^2z + z^2x)(xy^2 + yz^2 + zx^2)\geq xyz(x + y + z)^3$, where $x, y, z > 0$.
+\item Prove that $(x_1 + x_2 + \cdots + x_n + y_1 + y_2 + \cdots + y_n)^2 \geq 4n(x_1y_1 + x_2y_2 + \cdots + x_ny_n)$, where
+  $x_1\leq x_2\leq\ldots\leq x_n\leq y_1\leq y_2\leq\ldots\leq y_n$.
+\item Prove that $\frac{\ln z - \ln y}{z - y} < \frac{\ln z - \ln x}{z - x} < \frac{\ln y - \ln x}{y - x}$, where $0 < x < y < z$.
+\item Prove that $a^bb^cc^dd^a\geq b^ac^bd^ca^d$, where $0\leq a\leq b\leq c\leq d$.
+\item Prove that $\frac{x_1}{S - x_1} + \frac{x_2}{S - x_2} + \cdots + \frac{x_n}{S - x_n}\geq \frac{n}{n + 1}$, where $n\geq 2, S
+  = x_1 + x_2 + \cdots + x_n, x_1, x_2, \ldots, x_n > 0$.
+\item Prove that $a^3 + b^3 + c^3 + 6abc \geq \frac{1}{4}(a + b + c)^3$, where $a, b, c\geq 0$.
+\item Prove that $a^2(2b + 2c - a) + b^2(2c + 2a - b) + c^2(2a + 2b - c)\geq 9abc$, where $a, b, c$ are side lengths of a triangle.
+\item Prove that $\sqrt[n]{a_1a_2\ldots a_n} + \sqrt[n]{b_1b_2\ldots b_n} \leq \sqrt[n]{(a_1 + b_1)(a_2 + b_2)\ldots(a_n + b_n)}$,
+  where $n\geq 2, a_i > 0, b_i > 0, i = 1, 2, \ldots, n$.
+\item Prove that $\sqrt[n]{(n + 1)!} - \sqrt[n]{n!}\geq 1$, where $n\geq 2, n\in\mathbb{N}$.
+\item Prove that $\sqrt[n]{F_{n + 1}} > 1 + \frac{`}{\sqrt[n]{F_n}}$, where $n\geq 2, F_1 = 1, F_2 = 2, F_{k + 2} = F_{k+1} + F_k,
+  k = 1, 2, \ldots$.
+\item Prove that $\sqrt[n]{C_{n+1}^n} > 2\left(1 + \frac{1}{\sqrt[n]{n + 1}}\right)$, where $n = 2, 3, \ldots$.
+\item Prove that $(1 + a_1)(2 + a_2)\cdots(n + a_n)\geq n^{\frac{n}{2}}$, where $n\geq 2, n\in\mathbb{N}, a_1, a_2, \ldots, a_n >
+  0$ and $a_1a_2\ldots a_n = 1$.
+\item Prove that $\sqrt[n]{\frac{(a_1 + b_1)(a_2 + b_2)\ldots(a_n + b_n)}{(a_1 - c_1)(a_2 - c_2)\ldots(a_n - c_n)}}\geq
+  \frac{\sqrt[n]{a_1a_2\ldots a_n} + \sqrt[n]{b_1b_2\ldots b_n}}{\sqrt[n]{a_1a_2\ldots a_n} - \sqrt[n]{c_1c_2\ldots c_n}}$, where
+  $n\geq 2, n\in\mathbb{N}, b_i > 0, a_i > c_i > 0, i = 1, 2, \ldots, n$.
+\item Prove that $\sqrt[3]{ab} + \sqrt[3]{cd}\leq \sqrt[3]{(a + c + d)(a + b + c)}$, where $a, b, ,c, d\geq 0$.
+\item Prove that $x^(x^2 - 1)^2 + y^2(y^2 - 1)^2 \geq (x^2 - 1)(y^2 - 1)(x^2 + y^2 - 1)$.
+\item Prove that $(x_1 - x_2)(x_1 - x_3)(x_1 - x_4)(x_1 - x_5) + (x_2 - x_1)(x_2 - x_3)(x_2 - x_4)(x_2 - x_5) + \cdots + (x_5 -
+  x_1)(x_5 - x_2)(x_5 - x_3)(x_5 - x_4)\geq 0$.
+\item Prove that $0\leq ab + bc + ca - abc\leq 2$, where $a, b, c\geq 0$ and $a^2 + b^2 + c^2 + abc = 4$.
+\item Prove that $x^\lambda(x - y)(x - z) + y^\lambda(y - z)(y - x) + z^\lambda(z - y)(z - x)\geq 0$, where $x, y, z > 0$.
+\item Prove that $\sqrt[3]{\left(\frac{a}{b + c}\right)^2} + \sqrt[3]{\left(\frac{b}{a + c}\right)^2} + \sqrt[3]{\left(\frac{c}{a +
+    b}\right)^2}\geq \frac{3}{\sqrt[3]{4}}$, where $a, b, c > 0$.
+\item Prove that $(a^5 - a^2 + 3)(b^5 - b^2 + 3)(c^5 - c^2 + 3)\geq (a + b + c)^3$, where $a, b, c > 0$.
+\item Prove that $abc + abd + bcd + acd - abcd\leq 3$, where $a, b, c, d > 0$ and $a^3 + b^3 + c^3 + d^3 + abcd = 5$.
+\item Prove that $0\leq ab + bc + ca - abc\leq 2$, where $a, b, c\geq 0$ and $a^2 + b^2 + c^2 + abc = 4$.
+\item Prove that $a^2 + b^2 + c^2 + 2abc + 1\geq (ab + bc + ca)$, where $a, b, c\geq 0$.
+\item Prove that $\frac{x + y + z}{xy + yz + zx}\leq 1 + \frac{1}{48}[(x - y)^2 + (y - z)^2 + (z - x)^2]$, where $x, y, z > 0$ and
+  $xy + yz + zx + xyz = 4$.
+\item Let $a_1, a_2, \ldots, a_{n +1}$ be $n + 1$ positive real numbers such that $a_1 + a_2 + \cdots + a_n = a_{n + 1}$. Prove
+  that $\displaystyle\sum_{i=1}^n\sqrt{a_i(a_{n + 1}) - a_i} \leq \sqrt{\sum_{i = 1}^na_{n + 1}(a_{n + 1} - a_i)}$.
+\item Prove that $\frac{a}{b + 2c} + \frac{b}{c + 2a} + \frac{c}{a + 2b}\geq 1$, where $a, b, c >0$ and $a, b, c\in\mathbb{R}$.
+\item Prove that $a^2 + b^2 + c^2 \geq \sqrt{3}abc$, where $a, b, c >0$ and $a, b, c\in\mathbb{R}$ such that $abc\leq a + b + c$.
+\item For any positive real numbers $a, b, c$ prove that $\frac{2}{b(a + b)} + \frac{2}{c(b + c)} + \frac{2}{a(c + a)}\geq
+  \frac{27}{(a + b + c)^2}$.
+\item Let $a, b, c$ be three sides of a triangle such that $a + b + c = 2$. Prove that $1\leq ab + bc + ca - abc\leq 1 +
+  \frac{1}{27}$.
+\item If $a, b, c$ be positive real numbers such that $a + b + c = 1$. Prove that $\sqrt{ab + c} + \sqrt{bc + a} + \sqrt{ca +
+  b}\geq 1 + \sqrt{ab} + \sqrt{bc} + \sqrt{ca}$.
+\item If $a, b, c, d$ are positive real numbers, prove that $\sqrt{\frac{a^2 + b^2 + c^2 + d^2}{4}}\geq$
+
+  $\sqrt[4]{\frac{abc + bcd + cda + abd}{4}}$.
+\item Let $a, b, c$ be the sides of a triangle such that $a + b + c = 2$. Prove that $a^2 + b^2 + c^2 + 2abc < 2$.
+\item If $a, b, c$ are positive real numbers such that $a^2 + b^2 + c^2 = 1$, prove that $\left(\frac{1}{a} + \frac{1}{b} +
+  \frac{1}{c}\right) + a + b + c\geq 4\sqrt{3}$.
+\item Find all triples $(a, b, c)$ of real numbers which satisfy the system of equations:
+  \startformula a + b + c = 6,\stopformula
+  \startformula \frac{1}{a} + \frac{1}{b} + \frac{1}{c} = 2 - \frac{4}{abc}.\stopformula
+\item Let $a, b, c$ be real numbers such that $a^2 + b^2 + c^2 = 1$. Prove that $\frac{a^2}{1 + 2bc} + \frac{b^2}{1 + 2ca} +
+  \frac{c^2}{1 + 2ab}\geq \frac{3}{5}$.
+\item Let $a, b, c$ and $\alpha, \beta, \gamma$ be positive real numbers such that $\alpha + \beta + \gamma = 1$. Prove that
+  $b\alpha + b\beta + c\gamma + 2\sqrt{(\alpha\beta + \beta\gamma + \gamma\alpha)(ab + bc + ca)}\leq a + b + c$.
+\item Prove that for all real numbers $a$ and $b, a^2 + b^2 + 1 > a\sqrt{b^2 + 1} + b\sqrt{a^2 + 1}$.
+\item For a fixed positive integer $n$, compute the minimum value of the sum $x_1 + \frac{x_2^2}{2} + \frac{x_3^3}{3} + \cdots +
+  \frac{x_n^n}{n}$, where $x_1, x_2, \ldots, x_n$ are positive real numbers such that $\frac{1}{x_1} + \frac{1}{x_2} + \cdots +
+  \frac{1}{x_n} = n$.
+\item Let $a, b, c, d$ be positive real numbers such that $a + b + c + d\leq 1$. Prove that $\frac{a}{b} +  \frac{b}{c} +
+  \frac{c}{d} + \frac{d}{a}\leq \frac{1}{64abcd}$.
+\item Let $a, b, c$ be positive real numbers, all less than $1$, such that $a + b + c = 2$. Prove that $abc\geq 8(1 - a)(1 - b)(1 -
+  c)$.
+\item Prove that $\frac{(2a + b + c)^2}{2a^2 + (b + c)^2} + \frac{(2b + c + a)^2}{2b^2 + (c + a)^2} + \frac{(2c + a + b)^2}{2c^2 +
+  (a + b)^2}\leq 8$, where $a, b, c$ are positive real numbers.
+\item Prove that $abc\leq 1$, where $a, b, c$ are real numbers such that $(1 + a)(1 + b)(1 + c) = 8$.
+\item Prove that $\displaystyle\sum_{i=1}^n\frac{a_i}{2 - a_i}]geq \frac{n}{2n - 1}$, where $a_1, a_2, \ldots, a_n \in\mathbb{R},
+  n\geq 2$ such that $\displaystyle\sum_{i=1}^na_i = 1$.
+\item Prove that $\displaystyle\sum_{i=1}^n\frac{a_i^2}{a_i + a_{i + 1}}\geq \frac{1}{2}$, where $a_1, a_2, \ldots, a_n$ are
+  positive numbers such that $\displaystyle\sum_{i=1}^na_i = 1$ and $a_1 = a_{n + 1}$.
+\item Prove that $\frac{1}{a} + \frac{4}{b} + \frac{9}{c} + \frac{16}{d}\geq \frac{100}{a + b + c + d}$, where $a, b, c,
+  d\in\mathbb{R}$.
+\item Prove that $\displaystyle\sum_{i=1}^n\frac{a_i^2}{1 - 2a_i}\geq \frac{1}{n - 2}$, where $n > 2, 0 < a_1, a_2, \ldots, a_n <
+  \frac{1}{2}$ such that $\displaystyle\sum_{i=1}^na_i = 1$.
+\item Prove that $x_1 + x_2 + \cdots + x_n\leq \frac{x_1}{y_1} + \frac{x_2}{y_2} + \cdots + \frac{x_n}{y_n}$, where $n\geq 2, x_1 +
+  x_2 + \cdots + x_n\geq x_1y_1 + x_2y_2 + \cdots + x_ny_n$ and $x_1, x_2, \ldots, x_n, y_1, y_2, \ldots, y_n$ are positive real
+  numbers.
+\item If $x_1, x_2, \ldots, x_n$ are $n$ positive real numbers, prove that $\frac{x_1}{1 + x_1^2} + \frac{x_2}{1 + x_1^2 + x_2^2} +
+  \cdots +$
+
+  $\frac{x_n}{1 + x_1^2 + x_2^2 + \cdots + x_n^2} < \sqrt{2}$.
+\item If $a, b, c$ are poositive real numbers, prove that $3(a^2b + b^2c + c^2a)(ab^2 + bc^2 + ca^2)\geq abc(a + b + c)^3$.
+\item Let $P(x) = ax^2 + bx + c$ be a quadratic polynomial with non-negative coefficients and let $\alpha$ be a positive real
+  number. Prove that $P(\alpha)P(1/\alpha)\geq P(1)^2$.
+\item If $a, b, c, d, e$ are positive, real numbers, prove that $\displaystyle\sum\frac{a}{b + c}\geq \frac{5}{2}$ where sum is
+  taken cyclically over $a, b, c, d, e$.
+\item Let $a, b, c$ be non-negative real numbers such that $\frac{1}{a^2 + 1} + \frac{1}{b^2 + 1} + \frac{1}{c^2 + 1} = 2$. Prove
+  that $ab + bc + ca\leq \frac{3}{2}$.
+\item Suppose $a, b, c$ are positive real numbers. Prove that $3(a + b + c)\geq 8\sqrt[3]{abc} + \sqrt[3]{\frac{a^3 + b^3 +
+    c^3}{3}}$. When does equality hold?
+\item Let $c_1, c_2, \ldots, c_n$ be $n$ real numbers such that either $0\leq c_i\leq 1$ for all $i$ or $c_i\geq 1$ for all
+  $i$. Prove that the inequality $\displaystyle\prod_{i=1}^n(1 - p +pc_i)\leq 1 - p + p\prod_{i=1}^nc_i$ holds, for any real $p$
+  with $0\leq p\leq 1$.
+\item Let $x_1, x_2, x_3, x_4$ be real numbers in the interval $(0, 1/2]$. Prove that
+
+  $\frac{x_1x_2x_3x_4}{(1 - x_1)(1 - x_2)(1 -
+    x_3)(1 - x_4)}\leq \frac{x_1^4 + x_2^4 + x_3^4 + x_4^4}{(1 - x_1)^4 + (1 - x_2)^4 + (1 - x_3)^4 + (1 - x_4)^4}$.
+\item If $x_1, x_2, \ldots, x_n$ be $n$ real numbers such that $x_i\in(0, 1/2]$. Prove that
+  $\displaystyle\frac{\prod_{i=1}^nx_i}{\left(\sum_{i=1}^nx_i\right)^n}\leq \frac{\prod_{i=1}^n(1 - x_i)}{\left(\sum_{i=1}^n(1 -
+    x_i)\right)^n}$.
+\item Consider a sequence $\langle a_i\rangle$ of real numbers satisfying $a_{i + j}\leq a_i + a_j$. Prove that $a_1 +
+  \frac{a_2}{2} + \cdots + \frac{a_n}{n}\geq a_n,~\forall n$.
+\item For positive real numbers $x, y, z,$ prove that $\displaystyle\sum\frac{x}{x + \sqrt{(x + y)(x + z)}}\leq 1$, where the sum
+  is taken cyclically over $x, y, z$.
+\item Let $x, y$ be non-negative real numbers such that $x + y = 2$. Prove that $x^3y^3(x^3 + y^3)\leq 2$.
+\item Let $\langle a_i\rangle$ and $\langle b_i\rangle$ be two sequences such that $0 < h\leq a_i\leq H$ and $0 < m\leq b_i\leq M$
+  for real $h, H, m, M$. Prove that $1\leq \frac{(\sum a_i^2)(\sum b_i^2)}{(\sum a_ib_i)^2}\leq
+  \frac{1}{4}\left(\sqrt{\frac{HM}{hm}} + \sqrt{\frac{hm}{HM}}\right)^2$.
+\item Let $f:[0, a]\rightarrow \mathbb{R}$ be a convex function. Consider $n$ points $x_1, x_2, \ldots, x_n$ in $[0, a]$ such that
+  $\sum_{i=1}^nx_i$ is also in $[0, a]$. Prove that $\displaystyle\sum_{i=1}^nf(x_i)\leq f\left(\sum_{i=1}^nx_i\right) + (n -
+  1)f(0)$.
+\item For any real number $n$, prove that $\displaystyle\binom{2n}{n}\sqrt{3n} < 4^n$.
+\item Let $a, b, c$ be positive real numbers and let $x$ be a non-negative real number. Prove that $a^{x + 2} + b^{x + 2} + c^{x +
+  2}\geq a^xbc + ab^xc + abc^x$.
+\item Let $(a_1, a_2, \ldots, a_n), (b_1, b_2, \ldots, b_n)$ and $(c_1, c_2, \ldots, c_n)$ be three seuqnences of positive real
+  numbers. Prove that $\displaystyle\sum_{i=1}^na_ib_ic_i\leq
+  \sqrt[3]{\sum_{i=1}^na_i^3}\sqrt[3]{\sum_{i=1}^nb_i^3}\sqrt[3]{\sum_{i=1}^nc_i^3}$.
+\item Prove for any three real numbers $a, b, c,$ the inequality $3(a^2 - a - 1)(b^2 - b - 1)(c^2 - c -1)\geq (abc)^2 - abc + 1$.
+\item Consider a polynomial of the form $P(x) = x^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + 1$, where $a_i \geq 0~\forall 1\leq
+  i\leq n - 1$. Suppose $P(x) = 0$ has $n$ real roots. Prove that $P(2)\geq 3^n$.
+\item Let $a_1<a_2<\cdots<a_n$ be $n$ positive integers. Prove that $(a_1 + a_2 + \cdots + a_n)^2\leq a_1^3 + a_2^3 + \cdots +
+  a_n^3$.
+\item Consider a sequence $a_1, a_2, \ldots, a_n$ of positive real numbers which add up to $1$, where $n\geq 2$ is an integer.
+  Prove that for any positive real numbers $x_1, x_2, \ldots, x_n$ with $\displaystyle\sum_{i=1}^nx_i = 1$, the inequality
+  $\displaystyle2\sum_{i<j}x_ix_j\leq \frac{n - 2}{n + 1} + \sum_{i=1}^n\frac{a_ix_i^2}{1 - a_i}$, holds.
+\item Let $x_1, x_2, x_3, x_4$ be four consecutive positive real numbers such that $x_1x_2x_3x_4 = 1$. Prove that $x_1^3 + x_2^3 +
+  x_3^3 + x_4^3\geq \min\left(x_1 + x_2 + x_3 + x_4, \frac{1}{x_1} + \frac{1}{x_2} + \frac{1}{x_3} + \frac{1}{x_4}\right)$.
+\item Let $\{x\}$ denote the fractional part of $x$ i.e. $\{x\} = x - \lceil x\rceil$. Prove for any positive integer $n,
+  \displaystyle\sum_{i=1}^n\{\sqrt{i}\}\leq \frac{n^2 - 1}{2}$.
+\item If $a, b, c$ are positive real numbers, prove that $\frac{a^2}{(a + b)(a + c)} + \frac{b^2}{(b + c)(b + a)} + \frac{c^2}{(c +
+  a)(c + b)}\geq \frac{3}{4}$.
+\item Let $a, b, c$ be positive real numbers such that $abc > ab + bc + ca$. Prove that $abc\geq 3(a + b + c)$.
+\item Let $a_1, a_2, \ldots, a_n$ be $n$ non-negative real numbers and let $a$ denote the sum of these numbers. Prove that
+  $\displaystyle\sum_{i=1}^{n - 1}a_ia_{i + 1}\leq \frac{a^2}{4}$.
+\item Let $a, b, c, d$ be complex numbers such that $ac\neq 0$. Prove that $\frac{\max(|ac|, |ad + bc|, |bd|)}{\max(|a|, |b|)(|c|,
+  |d|)}\geq \frac{-1 + \sqrt{5}}{2}$.
+\item Let $x_1, x_2, x_3, x_4$ be non-negative real numbers such that $\displaystyle\sum_{i=1}^n\frac{1}{1 + x_i}\leq 1$. Prove
+  that $x_1x_2\cdots x_n\geq (n - 1)^n$.
+\item Prove that $\frac{1}{m + n - 1} - \frac{1}{(m + 1)(n + 1)}\leq \frac{4}{45}$ for any two natural numbers $m$ and $n$.
+\item If $a, b$ are two positive real numbers, prove that $a^b + b^a > 1$.
+\item Let $a, b$ be positive real numbers such that $a + b = 1$ and let $p$ be a positive real. Prove that $\left(a +
+  \frac{1}{a}\right)^p + \left(b + \frac{1}{b}\right)^p \geq \frac{5^p}{2^{p - 1}}$.
+\item Let $a, b, c$ be positive real numbers such that $abc = 1$. Prove that $\left(a - 1 + \frac{1}{b}\right)\left(b - 1 +
+  \frac{1}{c}\right)$
+
+  $\left(c - 1 + \frac{1}{a}\right)\leq 1$.
+\item Let $x, y, z$ be real numbers in the interval $[-1, 2]$ such that $x + y + z = 0$. Prove that $\frac{(2 - x)(2 - y)}{(2 +
+  x)(2 + y)} + \sqrt{\frac{(2 - y)(2 - z)}{(2 + y)(2 + z)}} + \sqrt{\frac{(2 - z)(2 - x)}{(2 + z)(2 + x)}}\geq 3$.
+\item Let $\langle a_n\rangle$ be a sequence of distinct positive integers. Prove that $\displaystyle\sum_{i=1}\frac{a_i}{i^2}\geq
+  \sum_{i = 1}^n\frac{1}{i}$, for every positive integer $n$.
+\item Let $x, y, z$ be non-negative real numbers such that $x + y + z = 1$. Prove that $0\leq xy + yz + zx - 2xyz\leq
+  \frac{7}{27}$.
+\item Let $x_1, x_2, \ldots, x_n$ be $n$ positive real numbers. Prove that $\displaystyle\sum_{i=1}^n\frac{x_i^3}{x_i^2 + x_ix_{i +
+    1} + x_{i + 1}^2}\geq \frac{1}{3}\sum_{i=1}^nx_i$, where $x_1 = x_{n + 1}$.
+\item Suppose $x, y, z$ are non-negative real numbers. Prove that $x(x - z)^2 + y(y - z)^2\geq (x - z)(y - z)(x + y - z)$.
+\item Prove that $\frac{a}{b} + \frac{b}{c} + \frac{c}{a}\geq \frac{c + a}{c + b} + \frac{a + b}{a + c} + \frac{b + c}{b + a}$,
+  where $a, b, c$ are positive real numbers.
+\item If $a, b$ are real numbers, prove that $a^2 + ab + b^2\geq 3(a + b - 1)$.
+\item Define a sequence $\langle x_n\rangle$ by $x_1 = 2, x_{n + 1} = \frac{x_n^4 + 9}{10x_n}$. Prove that $\frac{4}{5}< x_n \leq
+  \frac{5}{4}~\forall~n > 1$.
+\item Let $a, b, c$ be positive real numbers such that $a^2 - ab + b^2 = c^2$. Prove that $(a - c)(b - c)\leq 0$.
+\item Let $a, b, c$ be positive real numbers. Prove that $\sqrt{a^2 - ab + b^2} + \sqrt{b^2 - bc + c^2}\geq \sqrt{a^2 + ac + c^2}$.
+\item For all real numbers $a$, show that $(a^3 - a + 2)^2 \geq 4a^2(a^2 + 1)(a - 2)$.
+\item Let $a, b, c$ be distinct real numbers. Prove that $\left(\frac{2a - b}{a - b}\right)^2 + \left(\frac{2b - c}{b -c}\right) +
+  \left(\frac{2c - a}{c - a}\right)^2\geq 5$.
+\item Let $\alpha, \beta, x_1, x_2, \ldots, x_n$ be positive reals such that $\alpha + \beta = 1$, and $x_1 + x_2 + \cdots + x_n =
+  1$. Prove that $\displaystyle\sum_{i=1}^n\frac{x_i^{2m + 1}}{\alpha x_i + \beta x_{i + 1}}\geq \frac{1}{n^{2m - 1}}$ for every
+  positive integer $m$, where $x_{n + 1} = x_1$.
+\item Given positive reals $a, b, c, d$, prove that $\sqrt{(a + c)^2 + (b + d)^2}\leq\sqrt{a^2 + b^2} + \sqrt{c^2 +
+  d^2}\leq\sqrt{(a + c)^2 + (b + d)^2} + \frac{2|ad - bc|}{\sqrt{(a + c)^2 + (b + d)^2}}$.
+\item With every natural number $n$, associate a real number $a_n$ by $a_n = \frac{1}{p_1} + \frac{1}{p_2} + \cdots +
+  \frac{1}{p_k}$, where $\{p_1, p_2, \ldots, p_k\}$ is the set of all prime divisors of $n$. Show that for any natural number
+  $N\geq 2, \displaystyle\sum_{i=2}^Na_1a_2\ldots a_n < 1$.
+\item Let $n$ be a fixed integer, with $n\geq 2$. Determine the least constant $C$ such that the inequality
+  $\displaystyle\sum_{1\leq i<j\leq n}x_ix_j(x_i^2 + x_j^2)\leq C\left(\sum_{1\leq i\leq n}x_i\right)^4$ holds for all real numbers
+  $x_1, x_2, \ldots, x_n$. Determine when the equality holds.
+\item Let $a, b, c, d$ be real numbers such that $(a^2 + b^2 - 1)(c^2 + d^2 - 1) > (ac + bd - 1)^2$. Prove that $a^2 + b^2 - 1 > 0$
+  and $c^2 - d^2 - 1 > 0$.
+\item Let $x_1, x_2, \ldots, x_{100}$ be $100$ positive integers such that $\frac{1}{\sqrt{x_1}} + \frac{1}{\sqrt{x_2}} + \cdots +
+  \frac{1}{\sqrt{x_{100}}} = 20$. Prove that at least two of the $x_i$'s are equal.
+\item Let $f(x)$ be a polynomial with integer coefficients and of degree $n > 1$. Suppose $f(x) = 0$ has $n$ real roots in the
+  interval $(0, 1)$, not all equal. If $a$ is the leading coefficient of $f(x)$, prove that $|a| \geq 2^n + 1$.
+\item Show that the equation $\frac{x}{y} + \frac{y}{z} + \frac{z}{w} + \frac{w}{x} = m$, has no solutions in positive reals for $m
+  = 2, 3$.
+\item Solve the system of equations: $x = \frac{4z^2}{1 + 4z^2}, y = z = \frac{4x^2}{1 + 4x^2}$, for real numbers $x, y, z$.
+\item Suppose $a, b$ are non-zero real numbers and that all the roots of the real polynomial $ax^n - ax^{n - 1} + a_{n - 1}x^{n -
+  2} + \cdots + a_2x^2 - n^2bx + b = 0$ are real and positive. Prove that all the roots are in fact equal.
+\item Find all triples $(a, b, c)$ of positive integers such that product of any two leaves a remainder $1$ when divided by the
+  third number.
+\item Find all positive solutions of the system: $x_1 + \frac{1}{x_2} = 4, x_2 + \frac{1}{x_3} = 1, \cdots, x_{1999} +
+  \frac{1}{x_{2000}} = 4, x_{2000} + \frac{1}{x_1} = 1$.
+\item Find all positive solutions of the system: $x + y + z = 1, x^3 + y^3 + z^3 + xyz = x^4 + y^4 + z^4 + 1$.
+\item Let $a, b$ be positive integers such that each equation $(a + b - x)^2 = a - b, (ab + 1 - x)^2 = ab - 1$ has two distinct
+  real roots. Suppose the bigger of these roots are the same. Show that the smaller roots are also the same.
+\item Suppose the polynomial $P(x) = x^n + nx^{n - 1} + a_2x^{n - 2} + \cdots + a_n$ has real roots $\alpha_1, \alpha_2, \ldots, \alpha_n$. If $\alpha_1^{16} + \alpha_2^{16} + \cdots + \alpha_n^{16} = n$. Find $\alpha_1,\alpha_2, \ldots, \alpha_n$.
+\item Find all the solutions of the following system of inequalities:
+  \startformula (x_1^2 - x_3x_5)(x_2^2 - x_3x_5)\leq 0,\stopformula
+  \startformula (x_2^2 - x_4x_1)(x_3^2 - x_4x_1)\leq 0,\stopformula
+  \startformula (x_3^2 - x_5x_2)(x_4^2 - x_5x_2)\leq 0,\stopformula
+  \startformula (x_4^2 - x_1x_3)(x_5^2 - x_1x_3)\leq 0,\stopformula
+  \startformula (x_5^2 - x_2x_4)(x_1^2 - x_2x_4)\leq 0.\stopformula
+\item Solve the following system of equations, when $a$ is a real number such that $|a| > 1$:
+  \startformula \startalign\NC x_1^2 \NC = ax_2 + 1,\NR\NC x_2^2 & = ax_3 + 1,\NR\NC\vdots \NC \;\;\;\l\vdots \NR\NC x_{999}^2 \NC = ax_{1000} + 1,\NR\NC x_{1000}^2 \NC =
+  ax_1 + 1.\stopalign\stopformula
+\item Let $a_1, a_2, \ldots, a_n$ be $n$ positive integers such that $\displaystyle\sum_{i=1}^na_i = \prod_{i=1}^na_i$. Let $K_n$
+  denote this common value. Show that $K_n \geq n + s$, where $s$ is the least positive integer such that $2^s - s\geq n$.
+\item Let $z_1, z_2, z_3, \ldots, z_n$ be $n$ complex numbers such that $\displaystyle_{i=1}^n|z_i| = 1$. Prove that there exists a
+  subset $S$ of the set $\{z_1, z_2, \ldots, z_n\}$ such that $\displaystyle\left|\sum_{z\in S}z\right|\geq \frac{1}{4}$.
+\item Let $\langle a_n\rangle$ and $\langle b_n\rangle$ be two sequences of real numbers which are not proportional. Let $\langle
+  x_n\rangle$ such that $\displaystyle\sum_{i=1}^na_ix_i = 0, \sum_{i=1}^nb_ix_i = 1$. Prove that $\displaystyle\sum_{i=1}^nx_i^2
+  \geq $
+
+  $\frac{\sum_{i=1}^na_i^2}{\left(\sum_{i=1}^na_i^2\right)\left(\sum_{i=1}^nb_i^2\right) - \left(\sum_{i=1}^na_ib_i\right)^2}$.
+  When does equality hold?
+\item Let $x_1, x_2, \ldots, x_n$ be $n$ positive real numbers. Prove that $\displaystyle\sum_{i=1}^n\frac{x_i}{2x_i + x_{i + 1} +
+  \cdots + x_{i + n - 2}}\leq n$, where $x_{n + i} = x_i$.
+\item Let $x_1, x_2, \ldots, x_n$ be $n\geq 2$ positive real numbers and $k$ be a fixed integer such that $1\leq k\leq n$. Show
+  that $\displaystyle\sum_{\rm cyclic}\frac{x_1 + 2x_2 + \cdots + 2x_{k - 1} + x_k}{x_k + x_{k + 1} + \cdots + x_n}\geq \frac{2n(k
+    - 1)}{n - k + 1}$.
+\item If $z_1$ and $z_2$ be two complex numbers such that $|z_1| \leq r, |z_2|\leq r$ and $z_1\neq z_2$. Prove that for any natural
+  number $n\left|\frac{z_1^n - z_2^n}{z_1 - z_2}\right|\leq \frac{1}{2}n(n - 1)r^{n - 2}|z_1 - z_2|$.
+\item A sequence $\langle a_n\rangle$ is said to be convex if $a_n - 2a_{n + 1} + a_{n + 2}\geq 0$ for all $n\geq 1$. Let $a_1,
+  a_2, \ldots, a_{2n + 1}$ be a convex sequence. Show that $\frac{a_1 + a_3 + \cdots + a_{2n + 1}}{n + 1}\geq \frac{a_2 + a_4 +
+    \cdots + a_{2n}}{n}$, and equality holds if and only if $a_1, a_2, \ldots, a_{2n + 1}$ is an arithmetic progression.
+\item Suppose $a_1, a_2, \ldots, a_n$ are $n$ positive real numbers. For each $k$, define $x_i = a_{i + 1} + a_{i + 2} + \cdots +
+  a_{i + n - 1} - (n - 2)a_i$, where $a_i = a_{i - n}$ for $i > n$. Suppose $x_k\geq 0$ for $1\leq i\leq n$. Prove that
+  $\displaystyle \prod_{i=1}^na_i\geq\prod_{i = 1}^nx_i$. Show that for $n = 3$ the inequality is still true without the
+  non-negativity of $x_i$'s, but for $n > 3$ these conditions are essential.
+\item Let $a, c$ be positive reals and $b$ be a complex number such that $f(z) = a|z|^2 + 2Re(bz) + c\geq 0$, for all complex
+  numbers $z$, where $Re(z)$ denoted the real part of $z$. Prove that $|b|^2\leq ac$, and $f(z)\leq (a + c)(1 + |z|^2)$. Show that
+  $|b|^2 = ac$ only if $f(z) = 0$ for some $z\in\mathbb{C}$.
+\item Suppose $x_1\leq x_2\leq \cdots\leq x_n$ be $n$ real numbers. Show that $\displaystyle\left(\sum_{i=1}^n\sum_{j=1}^n|x_i -
+  x_j|\right)^2\leq \frac{2(n^2 - 1)}{3}\sum_{i=1}^n\sum_{j = 1}^n(x_i - x_k)^2$. Prove also that equality holds if and only if
+  the sequence $\langle x_i\rangle$ is in A.P.
+\item Suppose $\langle a_n\rangle$ is an infinite sequence of real numbers with the properties
+  \startitemize[n]
+  \item there is some real constant $c$ such that $0\leq a_n\leq c$, for all $n\geq 1$, and
+  \item $|a_i - a_j|\geq \frac{1}{i + j}~\forall i\neq j$.
+  \stopitemize
+  Prove that $c\geq 1$.
+\item Let $a, b, c$ be positive reals such that $a + b + c = 1$. Prove that $a(1 + b - c)^{1/3} + b(1 + c - a)^{1/3} + c(1 + a -
+  b)^{1/3}\leq 1$.
+\item let $x_1, x_2, \ldots, x_n$ be $n$ positive reals which add up to $1$. Find the minimum value of $\displaystyle\sum_{i = 1}^n
+  \frac{x_i}{1 + \sum_{j\neq i}x_j}$.
+\item If $a, b, c, d$ are positive reals then find all possible values of $\frac{a}{a + b + d} + \frac{b}{a + b + c} + \frac{c}{b +
+  c + d} + \frac{d}{a + c + d}$.
+\item Let $\langle F_n\rangle$ be the Fibonacci sequence defined by $F_1 = F_2 = 1, F_{n + 2} = F_{n + 1} + F_n$, for $n\geq
+  1$. Prove that $\displaystyle\sum_{i=1}^n\frac{F_i}{2^i} < 2$ for all $n\geq 1$.
+\item Let $P(x) = x^n + a_{n - 1}x^{n - 1} + \cdots + a_0$ be a polynomial with real coefficients such that $|P(0)| =
+  P(1)$. Suppose all the roots of $P(x) = 0$ are real and lie in the interval $(0, 1)$. Prove that the product of the roots does
+  not exceed $\frac{1}{2^n}$.
+\item If $x, y$ are real numbers such that $2x + y + \sqrt{8x^2 + 4xy + 32y^2} = 3 + 3\sqrt{2}$, prove that $x^2y \leq 1$.
+\item Determine the maximum value of $\displaystyle\sum_{i < j}x_ix_j(x_i + x_j)$, over all $n$-tuples $(x_1, x_2, \ldots, x_n)$ of
+  reals such that $x_i\geq 0$ for $1\leq i\leq n$.
+\item Let $x_1, x_2, \ldots, x_n$ be positive real numbers. Prove that $\sum_{i=1}^n(x_1x_2\cdots x_i)^{1/i} <
+  3\left(\displaystyle\sum_{i=1}^nx_i\right)$.
+\item Let $a_1\leq a_2\leq \cdots\leq a_n$ be $n$ real numbers with the property $\displaystyle_{i=1}^na_i =
+  0$. Prove that $na_1a_n\displaystyle\sum_{i=1}^na_i^2\leq 0$.
+\item Let $a, b, c$ be positive real numbers. Prove that $\frac{1}{a(1 + b)} + \frac{1}{b(1 + c)} + \frac{1}{c(1 +
+  a)}\geq \frac{3}{1 + abc}$.
+\item Let $x, y, z$ be positive real numbers such that $x^2 + y^2 + z^2 = 2$. Prove that $x + y + z\leq 2 +
+  xyz$. Find the conditions under which equality holds.
+\item Let $0\leq x_1\leq x_2\leq\cdots\leq x_n$ be such that $\displaystyle\sum_{i=1}^nx_i = 1$, where $n\geq 2$ is
+  an integer. If $x_n\leq \frac{2}{3}$, prove that there exists a $j$ such that $1\leq j\leq n$ and
+  $\displaystyle\frac{1}{3}\leq \sum_{i=1}^jx_i\leq \frac{2}{3}$.
+\item Let $x, y, z$ be non-negative real numbers such that $xy + yz + zx + xyz = 4$. Prove that $x + y + z \geq xy
+  + yz + zx$.
+\item Let $x, y, z$ be non-negative real numbers such that $x + y + z = 1$. Prove that $x^y + y^z + z^x \leq
+  \frac{4}{27}$.
+\item Let $x, y, z$ be real numbers and let $p, q, r$ be real numbers in the interval $\left(0, \frac{1}{2}\right)$
+  such that $p + q + r = 1$. Prove that $pqr(x + y + z)^2\geq xyr(1 - 2r) + yzp(1 - 2p) + zxq(1 - 2q)$. When does
+  equality hold?
+\item Let $x_1, x_2, \ldots, x_n$ be $n$ real numbers in the interval $[0, 1]$. Prove that
+  $\displaystyle\left(\sum_{i = 1}^nx_i\right) - \left(\sum_{i=1}^nx_ix_{i + 1}\right)\leq
+  \left[\frac{n}{2}\right]$, where $x_{n + 1} = x_1$.
+\item Suppose $x, y, z$ are positive real numbers such that $xyz\geq 1$. Prove that $\frac{x^5 - x^2}{x^5 + y^2 +
+  z^2} + \frac{y^5 - y^2}{y^5 + z^2 + x^2} + \frac{z^5 - z^2}{z^5 + x^2 + y^2}\geq 0$.
+\item Consider two sequences of positive real numbers, $a_1\leq a_2\leq \cdots\leq a_n$ and $b_1\leq b_2\leq \cdots
+  \leq b_n$, such that $\displaystyle\sum_{i=1}^na_i\geq\sum_{i=1}^nb_i$. Suppose there exists a $j, 1\leq j\leq
+  n$, such that $b_i\leq a_i$ for $1\leq i\leq j$ and $b_i\geq a_i$ for $i > j$. Prove that
+  $\displaystyle\prod_{i=1}^na_i\geq\prod_{i=1}^nb_i$.
+\item Let $a, b, c$ be positive real numbers such that $abc = 1$. Prove that $\frac{1}{1 + a + b} + \frac{1}{1 + b
+  + c} + \frac{1}{1 + c + a}\leq\frac{1}{2 + a} + \frac{1}{2 + b} + \frac{1}{2 + c}$.
+\item Let $n\geq 4$ and let $a_1, a_2, \ldots, a_n$ be real numbers such that $a_1 + a_2 + \cdots + a_n\geq n,
+  a_1^2 + a_2^2 + \cdots + a_n^2\geq n^2$. Prove that $\max\{a_1, a_2, \ldots, a_n\}\geq 2$.
+\item Let $x_1\leq x_2\leq \cdots \leq x_{n + 1}$ be $n + 1$ positive integers. Prove that
+  $\displaystyle\sum_{i=1}^{n + 1}\frac{\sqrt{x_{i +1} - x_i}}{x_{i + 1}}< \sum_{i=1}^{n^2}\frac{1}{j}$.
+\item Let $a, b, c$ be three positive real numebrs which satisfy $abc = 1$ and $a^3 > 36$. Prove that
+  $\frac{2}{3}a^2 < a^2 + b^2 + c^2 - ab - bc - ca$.
+\item Let $z_1, z_2, \ldots, z_n$ be $n$ complex numbers and consider $n$ positive real numbers $\lambda_1,
+  \lambda_2, \ldots, \lambda_n$ which have the property that $\sum 1/\lambda_i = 1$. Prove that
+  $\displaystyle\left|\sum_{i=1}^nz_i\right|^2\leq\sum_{i=1}^n\lambda_1|z_i|^2$.
+\item Let $a, b, c$ be three distinct real numbers. Prove that $2\min\{a, b, c\} <\sum a - $
+
+  $\left(\sum a^2 - \sum
+  ab\right)^{1/2} < \sum a + \left(\sum a^2 - \sum ab\right)^{1/2} < 3\max\{a, b, c\}$, where the sum is cyclic
+  over $a, b, c$.
+\item Show that for all complex numbers $z$ with $\Re(z) > 1$, prove that $|z^{n + 1} - 1| > |z^n||z -
+  1|,~\forall~n\geq 1$.
+\item Suppose $a, b, c$ are positive real numbers such that $x = a + b - c, y = b + c - a, z = c + a - b$. Prove
+  that $abc(xy + yz + zx)\geq xyz(ab + bc + ca)$.
+\item Let $a, b, c$ be positive real numbers. Prove that $\displaystyle\sum\frac{a^3}{b^2 - bc + c^2}\geq
+  \frac{3\sum ab}{\sum a}$, where all sums are cyclic.
+\item Let $a_1, a_2, \ldots, a_n < 1$ be non-negative real numbers satisfying $a = \sqrt{\frac{a_1^2 + a_2^2 +
+    \cdots + a_n^2}{n}}\geq \frac{1}{\sqrt{3}}$. Prove that $\frac{a_1}{1 - a_1^2} + \frac{a_2}{1 - a_2^2} + \cdots
+  + \frac{a_n}{1 - a_n^2}\geq \frac{na}{1 - a^2}$.
+\item Suppose $x, y, z$ are non-negative real numbers such that $x^2 + y^2 + z^2 = 1$. Prove that
+  \startitemize[n]
+  \item $1\leq \sum\frac{x}{1 - yz}\leq\frac{3\sqrt{3}}{2}$, and
+  \item $1\leq \sum\frac{x}{1 + yz}\leq \sqrt{2}$.
+  \stopitemize
+  The sums are cyclic over $x, y$ and $z$.
+\item Let $x, y, z$ be non-negative real numbers satisfying $x + y + z = 1$. Prove that $xy^2 + yz^2 + zx^2 \geq xy
+  + yz + zx - \frac{2}{9}$.
+\item Let $a, b, c, d$ be positive real numbers such that $a + b + c + d = 2$. Prove that
+  $\displaystyle\sum_{cyclic}\frac{a^2}{(a^2 _ 1)^2}\leq \frac{16}{25}$.
+\item Prove that $\frac{a}{\sqrt{a^2 + 8bc}} + \frac{b}{\sqrt{b^2 + 8ca}} + \frac{c}{\sqrt{c^2 + 8ab}}\geq 1$ for
+  all positive real numbers $a, b$ and $c$.
+\item If $x, y$ are real numbers such that $x^3 + y^4 \leq x^2 + y^3$, prove that $x^3 + y^3\leq 2$.
+\item Let $a, b, c$ be three positive real numbers. Prove that $\sum \frac{ab}{c(c + a)}\geq\sum\frac{a}{c + a}$,
+  where the sum is cyclic over $a, b$ and $c$.
+\item Let $x, y$ be two real numbers, where $y$ is non-negative and $y(y + 1)\leq (x + 1)^2$. Prove that $y(y -
+  1)\leq x^2$.
+\item Let $x, y, z$ be positive real numbers. Prove that $\left(\frac{xy + yz + zx}{3}\right)^{1/2}\leq$
+
+  $\left(\frac{(x + y)(y + z)(z + x)}{8}\right)^{1/3}$.
+\item Let $a, b, c$ be positive real numbers such that $abc = 1$. Show that $\displaystyle\sum\frac{a^9 + b^9}{a^6
+  + a^3b^3 + b^6}\geq 2$, where the sum is cyclical.
+\item Let $a_1, a_2, \ldots, a_n(n > 2)$ be positive real numbers and let $s$ be their sum. Let $0< \beta\leq 1$ be
+  a real number. Prove that $\displaystyle\sum_{i = 1}^n\left(\frac{s - a_i}{a_i}\right)^\beta\geq(n -
+  1)^{2\beta}\sum_{i = 1}^n\left(\frac{a_i}{s - a_i}\right)^\beta$. When does equality hold?
+\item For $n\geq 4$, let $a_1, a_2, \ldots, a_n$ be $n$ positive real numbers such that $\displaystyle_{i=1}^na_i^2
+  = 1$. Show that $\frac{a_1}{a_2^2 + 1} + \frac{a_2}{a_3^2 + 1} + \cdots + \frac{a_n}{a_1^2 + 1}\geq
+  \frac{4}{5}(a_1\sqrt{a_1} + a_2\sqrt{a_2} + cdots + a_n\sqrt{a_n})^2$.
+\item Does there exist an infinite sequence $\langle x_n\rangle$ of positive real numbers such that $x_{n + 2} =
+  \sqrt{x_{n + 1}} - \sqrt{x_n},~\forall~n\geq 2$.
+\item Let $a_1, a_2, \ldots, a_n$ be $n$ positive real numbers and consider a permutation of $b_1, b_2, \ldots,
+  b_n$ of it. Prove that $\displaystyle\sum_{i=1}^n\frac{a_i^2}{b_i}\geq \sum_{i=1}^na_i$.
+\item Let $a_1, a_2, \ldots, a_n$ and $b_1, b_2, \ldots, b_n$ be two sequences of positive real numbers such that
+  $\displaystyle\sum_{i=1}^na_i = \sum_{i=1}^n b_i = 1$. Prove that $\displaystyle\sum_{i=1}^n\frac{a_i^2}{a_i +
+  b_i}\geq \frac{1}{2}$.
+\item Let $x, y, z$ be positive real numbers. Prove that $\frac{y^2 - x^2}{z + x} + \frac{z^2 - y^2}{x + y} +
+  \frac{x^2 - z^2}{y + z}\geq 0$.
+\item Find the greatest value of $k$ such that for every triple $(a, b, c)$ of positive real numbers, the
+  inequality $(a^2 - bc)^2 > k(b^2 - ca)(c^2 - ab)$ holds.
+\item Let $a, b, c, d$ be positive real numbers. Prove that $\displaystyle\sum_{\rm cyclic}\frac{a}{b + 2c + d}\geq
+  1$.
+\item Let $a, b, c$ be positive real numbers such that $(a + b)(b + c)(c + a) = 1$. Prove that $ab + bc + ca\leq
+  \frac{3}{4}$.
+\item Let $x, y, z$ be non-negative real numbers such that $x + y + z = 1$. Prove that $x^2 + y^2 + z^2 + 18xyz\leq
+  1$.
+\item Let $a, b, c$ be three positive real numbers such that $ab + bc + ca = 1$. Prove that $\left(\frac{1}{a} +
+  6b\right)^{1/3} + \left(\frac{1}{b} + 6c\right)^{1/3} + \left(\frac{1}{c} + 6a\right)^{1/3}\leq \frac{1}{abc}$.
+\item Let $a_1, a_2, \ldots, a_n$ be $n > 1$ positive real numbers. For each $k, 1\leq k\leq n$, let $A_k = (a_1 +
+  a_2 + \cdots + a_k)/k$. Let $g_n = (a_1a_2\cdots a_n)^{1/n}$ and $G_n = (A_1A_2\cdots A_n)^{1/n}$. Prove that
+  $n\left(\frac{G_n}{A_n}\right)^{1/n} + \frac{g_n}{G_n}\leq n + 1$. Find the cases of equality.
+\item Let $x, y, z$ be real numbers in the interval $[0, 1]$. Prove that $3(x^2y^2 + y^2z^2 + z^2x^2) - 2xyz(x + y
+  + z)\leq 3$.
+\item Let $x, y, z$ be non-negative real numbers such that $x + y + z = 1$. Prove that $7(xy + yz + zx)\leq 2 +
+  9xyz$.
+\item Let $x, y, z$ be real numbers in the interval $[0, 1]$. Prove that $\frac{x}{yz + 1} + \frac{y}{zx + 1} +
+  \frac{z}{xy + 1} \leq 2$.
+\item Let $a, b, c, d$ be positive real such that $a^3 + b^3 + 3ab = c + d = 1$. Prove that $\left(a +
+  \frac{1}{a}\right)^3 + \left(b + \frac{1}{b}\right)^3 + \left(c + \frac{1}{c}\right)^3 + \left(d +
+  \frac{1}{d}\right)^3 \geq 40$.
+\item Let $x, y, z$ be positive real numbers such that $x + y + z = xyz$. Prove that $\frac{1}{\sqrt{1 + x^2}} +
+  \frac{1}{\sqrt{1 + y^2}} + \frac{1}{\sqrt{1 + z^2}}\leq \frac{3}{2}$.
+\item Let $x, y, z$ be non-negative real numbers. Prove that $x^3 + y^3 + z^3 \geq x^2\sqrt{yz} + y^2\sqrt{zx} +
+  z^2\sqrt{xy}$.
+\item For all positive real numbers show that $4(ab + bc + ca) - 1\geq a^2 + b^2 + c^2 \geq 3(a^3 + b^3 + c^3)$.
+\item Let $a, b, c$ be positive real numbers such that $abc = 1$. Prove that $\frac{a}{(a + 1)(b + 1)} +
+  \frac{b}{(b + 1)(c + 1)} + \frac{c}{(c + 1)(a + 1)}\geq \frac{3}{4}$.
+\item Suppose $a, b, c$ are positive real numbers such that $a^2 + b^2 + c^2 = 1$. Prove that $\frac{1}{a^2} +
+  \frac{1}{b^2} + \frac{1}{c^2}\geq 3 + \frac{2(a^3 + b^3 + c^3)}{abc}$.
+\item Let $x, y, z$ be positive real numbers such that $xyz = 1$. Prove that $\frac{x^3}{(1 + y)(1 + z)} +
+  \frac{y^3}{(1 + z)(1 + z)} + \frac{z^3}{(1 + x)(1 + y)}\geq \frac{3}{4}$.
+\item Let $a, b, c, d$ be non-negative real numbers such that $ab + bc + cd + da = 1$. Show that $\frac{a^3}{b + c
+  + d} + \frac{b^3}{c + d + a} + \frac{c^3}{d + a + b} + \frac{d^3}{a + b + c}\geq \frac{1}{3}$.
+\item Find all real $k$ for which the inequality $x_1^2 + x_2^2 + x_3^2 \geq k(x_1x_2 + x_2x_3)$ holds for all real
+  numbers $x_1, x_2, x_3$.
+\item Let $a, b, c$ be positive real numbers such that $abc = 1$. Prove that $\frac{a}{b} + \frac{b}{c} +
+  \frac{c}{a} \geq \frac{1}{a} + \frac{1}{b} + \frac{1}{c}$.
+\item Let $a, b, c$ be non-negative reals such that $a + b\leq 1 + c, b + c\leq 1 + a, c + a\leq 1 + b$. Prove that
+  $a^2 + b^2 + c^2 \leq 2abc + 1$.
+\item If $a, b, c$ are non-negative real numbers such that $a + b + c = 1$, then show that $\frac{a}{1 + bc} +
+  \frac{b}{1 + ca} + \frac{c}{1 + ab}\geq \frac{9}{10}$.
+\item Let $a, b, c$ be three positive real numbers such that $a + b + c = 1$. Prove that among the three numbers $a
+  - ab, b - bc, c - ca$ there is one which is at most $1/4$ and there is one which is at least $2/9$.
+\item Let $x$ and $y$ be positive real numbers such that $y^3 + y \leq x - x^3$. Prove that (a) $y < x < 1$, and
+  (b) $x^2 + y^2 < 1$.
+\item Let $a, b, c$ be three positive real numbers such that $a + b + c = 1$. Let $k = \min\{a^3 + a^2bc, b^3 +
+  ab^2c, c^3 + abc^2\}$. Prove that the roots of the equation $x^2 + x + 4k = 0$ are real.
+\item If $a, b, c$ are three positive real numbers, prove that $\frac{a^2 + 1}{b + c} + \frac{b^2 + 1}{c + a} +
+  \frac{c^2 + 1}{a + b}\geq 3$.
+\item If $d$ is tghe largest among the positive numbers $a, b, c, d$, prove that $a(d - b) + b(d - c) + c(d -
+  a)\leq d^2$.
+\item If $x, y, z$ are positive real numbers, prove that $(x + y + z)^2(yz + zx + xy)^2\leq 3(y^2 + yz + z^2)(z^2 +
+  zx + x^2)(x^2 + xy + y^2)$.
+\item Suppose $a, b, c$ are positive real bumbers. Prove that $a^ab^bc^c\geq (abc)^{(a + b + c)/3}$.
+\item Find all real $p$ and $q$ for which the equation $x^4 - \frac{8p^2}{q}x^3 + 4qx^3 - 3px + p^2 = 0$ has four positive roots.
+\item Let $a_1, a_2, a_3$ be real numbers, each greater than $1$. Let $S = a_1 + a_2 + a_3$ and suppose $S < \frac{a_i^2}{a_i - 1}$
+  for $i = 1, 2, 3$. Prove that $\frac{1}{a_1 + a_2} + \frac{1}{a_2 + a_3} + \frac{1}{a_3 + a_1} > 1$.
+\item Let $a, b, c$ be positive real numbers such that $ab + bc + ca = \frac{1}{3}$. Prove that $\frac{a}{a^2 - bc + 1} +
+  \frac{b}{b^2 - ca + 1} + \frac{c}{c^2 - ab + 1}\geq \frac{1}{a + b + c}$.
+\item Suppose $a, b, c$ are positive real numbers. Prove that $\frac{a^2b(b - c)}{a + b} + \frac{b^2c(c - a)}{b + c} + \frac{c^2a(a
+  - b)}{c + a}\geq 0$.
+\item Let $a_1, a_2, \ldots, a_n$ be $n > 2$ positive real numbers such that $a_1 + a_2 + \cdots + a_n = 1$. Prove that
+  $\displaystyle\sum_{i = 1}^n\frac{a_1a_2\cdots a_{i - 1}a_{i + 1}\cdots a_n}{a_i + n - 1}\leq \frac{1}{(n - 1)^2}$.
+\item Determine the largest value of $k$ such that the inequality $\left(k + \frac{a}{b}\right)\left(k + \frac{b}{c}\right)\left(k
+  + \frac{c}{ba}\right)\geq \left(\frac{b}{a} + \frac{c}{b} + \frac{a}{c}\right)$ holds for positive real numbers $a, b, c$.
+\item Let $x_1, x_2, \ldots, x_n$ be $n\geq 3$ positive real numbers. Prove that $\frac{x+_1x_3}{x_1x_3 + x_2x_4} +
+  \frac{x_2x_4}{x_2x_4 + x_3x_5} + \cdots + \frac{x_{n - 1}x_1}{x_{n - 1}x_1 + x_nx_2} + \frac{x_nx_2}{x_nx_2 + x_1x_3}\leq n - 1$.
+\item Let $a_1, a_2, \ldots, a_{2017}$ be positive real numbers. Prove that $\displaystyle\sum_{i=1}^{2017}\frac{a_i}{a_{i + 1} +
+  a_{i + 2} + \cdots + a_{i + 1008}}\geq \frac{2017}{1008}$, where indices are taken modulo $2017$.
+\item Let $a, b, c$ be three positive real numbers such that $ab + bc + ca = 1$. Prove that $\sqrt{a + \frac{1}{a}} + \sqrt{b +
+  \frac{1}{b}} + \sqrt{c + \frac{1}{c}}\geq 2(\sqrt{a} + \sqrt{b} + \sqrt{c})$.
+\item Let $a, b, c$ be positive real numbers such that $a + b + c = 3$. Prove that $\frac{a^3 + 2}{b + 2} + \frac{b^3 + 2}{c + 2} +
+  \frac{c^3 + 2}{a + 3}\geq 3$.
+\item Let $a, b, c, d$ be real numbers such that $a^2 + b^2 + c^2 + d^2 = 4$. Prove that $(2 + a)(2 + b)\geq cd$.
+\item Find all real $k$ such that $\frac{a + b}{2}\geq k\sqrt{ab} + (1 - k)\sqrt{\frac{a^2 + b^2}{2}}$ holds for all positive real
+  numbers $a, b$.
+\item Let $a, b, c, d$ be real numbers having absolute value greater than $1$ such that $abc + abd + acd + bcd + a + b + c + d =
+  0$. Probvve that $\frac{1}{a - 1} + \frac{1}{b - 1} + \frac{1}{c - 1} + \frac{1}{d - 1} > 0$.
+\item For all positive, real $x, y$ show that $\frac{1}{x + y - 1} - \frac{1}{(x + 1)(y + 1)}< \frac{1}{11}$.
+\item Let $a, b, c$ be three positive real numbers such that $abc = 1$. Prove that $\frac{1}{b(a + b)} + \frac{1}{c(b + c)} +
+  \frac{1}{a(c + a)}\geq \frac{3}{2}$.
+\item Let $a, b, c$ be positive real numbers such that $a + b + c = 1$. Prove that $\frac{a^2}{(b + c)^3} + \frac{b^2}{(c + a)^3 +
+  \frac{c^2}{(a + b)^3}}\geq \frac{9}{8}$.
+\item Suppose $a, b, c$ are positive real numbers such that $ab + bc + ca\geq a + b + c$. Prove that $(a + b + c)(ab + bc + ca) +
+  3abc \geq 4(ab + bc + ca)$.
+\item Let $a, b, c, d$ be four real nubers such that $a + b + c + d = 0$. Prove that $(ab + ac + ad + bc + bd + cd)^2 + 12\geq
+  6(abc + abd + acd + bcd)$.
+\item Consider the expression $P = \frac{x^3y^4z^3}{(x^4 + y^4)(xy + z^2)^3} + \frac{y^3z^4x^3}{(y^4 + z^4)(yz + x^2)^3} +
+  \frac{z^3x^4y^3}{(z^4 + x^4)(zx + y^2)^3}$. Find the maximum value of $P$ when $x, y, z$ vary over the set of all positive real
+  numbers.
+\item Let $x_1, x_2, \ldots, x_n$ be positive real numbers such that $x_1x_2\ldots x_n = 1$. Let $S = x_1^3 + x_2^3 + \cdots +
+  x_n^3$. Prove that $\frac{x_1}{S - x_1^3 + x_1^2} + \frac{x_2}{S - x_2^3 + x_2^2} + \cdots + \frac{x_n}{S - x_n^3 + x_n^2}\leq
+  1$.
+\item Let $a_1, a_2, \ldots, a_n$ be $n > 1$ positive real numbers whose sum is $1$. Define $\displaystyle b_i =
+  \frac{a_i^2}{\sum_{j = 1}^na_j^2}, 1\leq i< 2$. Prove that $\displaystyle\sum_{i = 1}^n\frac{a_i}{1 - a_i}\leq \sum_{i =
+    1}^n\frac{b_i}{1 - b_i}$.
+\item Suppose $a, b, c, d$ are posotive real numbers. Prove that $\displaystyle\sum_{\rm cyclic}\frac{a^4}{a^3 + a^2b + ab^2 +
+  b^3}\geq \frac{a + b + c + d}{4}$.
+\item Let $a, b, c$ be non-negative real numberssatisfying $a^2 + b^2 + c^2 = 1$. Prove that $\sqrt{a + b} + \sqrt{b + c} + \sqrt{c
+  + a}\geq 5abc + 2$.
+\item Let $x, y, z$ be positive real numbers such that $x^2 + y^2 + z^2\leq x + y + z$. Prove that $\frac{x^2 + 3}{x^3 + 1} +
+  \frac{y^2 + 3}{y^3 + 1} + \frac{z^2 + 3}{z^3 + 1}\geq 6$.
+\item For any three positive real numbers $a, b, c$ prove that $\frac{a^2}{a + b} + \frac{b^2}{b + c}\geq \frac{3a + 2b - c}{4}$.
+\item Suppose $a, b, c$ are non-negative real numbers such that $a^3 + b^3 + c^3 + abc = 4$. Prove that $a^3b + b^3c + c^3a\leq 3$.
+\item Let $a, b, c$ be positive real numbers such that $abc = 1$. Prove that $\left(a + \frac{1}{b}\right)^2 + \left(b +
+  \frac{1}{c}\right)^2 + \left(c + \frac{1}{a}\right)^2\geq 3(a + b + c + 1)$.
+\item Let $a, b,c $ be positive reall numbers with $abc = 1$. Prove that $\frac{a}{c(a + 1)} + \frac{b}{a(b + 1)} + \frac{c}{b(c +
+  1)}\geq \frac{3}{2}$.
+\item Let $a, b, c$ be positive real numbers such that $abc = 1$. Prove that $\frac{1}{1 + a^{2014}} + \frac{1}{1 + b^{2014}} +
+  \frac{1}{1 + c^{2014}} > 1$.
+\item For positive real numbers $a, b, c$, prove the inequality
+
+  $\left(\frac{1}{a} + \frac{1}{b} +
+  \frac{1}{c}\right)\left(\frac{1}{1 + a} + \frac{1}{1 + b} + \frac{1}{1 + c}\right)\geq \frac{9}{1 + abc}$.
+\item Let $x, y, z$ be positive real numbers such that $x + y + z = 3$. Prove that $\sqrt{x} + \sqrt{y} + \sqrt{z}\geq xy + yz +
+  zx$.
+\item Let $a, b, c$ be positive real numbers. Prove that $\frac{9abc}{2(a + b + c)}\leq \frac{ab^2}{a + b} + \frac{bc^2}{b + c} +
+  \frac{ca^2}{c + a}\leq \frac{a^2 + b^2 + c^2}{2}$.
+\item For positive real numbers $a, b, c$, prove that $\frac{abc}{(1 + a)(a + b)(b + c)(c + 16)}\leq \frac{1}{81}$.
+\item Let $a, b, c, d$ be positive real numbers such that $a + b + c + d = 4$. Prove that $\frac{1}{a^2 + 1} + \frac{1}{b^2 + 1} +
+  \frac{1}{c^2 + 1} + \frac{1}{d^2 + 1}\geq 2$.
+\item Let $a, b, c$ be positive real numbers. Prove that $\frac{1 + ab}{c} + \frac{1 + bc}{a} + \frac{1 + ca}{b}\geq \sqrt{a^2 + 2}
+  + \sqrt{b^2 + 2} + \sqrt{c^2 + 2}$.
+\item Let $a, b, c$ be positive real numbers such that $a + b + c = 1$. Prove that $\frac{a^2}{b^3 + c^4 + 1} + \frac{b^2}{c^3 +
+  a^4 + 1} + \frac{c^2}{a^3 + b^4 + 1} > \frac{1}{5}$.
+\item {\it Janous Inequality}: Let $a, b, c$ and $x, y, z$ be two sets of positive real numbers. Prove that $\frac{x(b + c)}{y + z}
+  + \frac{y(c + a)}{z + x} + \frac{z(a + b)}{x + y}\geq \sqrt{3(ab + bc + ca)}$.
+\item Let $x, y, z$ be positive real numbers such that $xy + yz + zx = 1$. Prove that $\frac{x}{x^2 + 1} + \frac{y}{y^2 + 1} +
+  \frac{z}{z^2 + 1}\leq \frac{3\sqrt{3}}{4}$.
+\item Let $x, y, z$ be positive real numbers such that $x + y + z = 1$. Prove that $\frac{1}{1 - xy} + \frac{1}{1 - yz} +
+  \frac{1}{1 - zx}\leq \frac{27}{8}$.
+\item Let $x, y, z$ be positive real numbers such that $x + y + z = 1$. Show that $\frac{z - xy}{x^2 + xy + y^2} +$
+
+  $\frac{x - yz}{y^2 + yz + z^2} + \frac{y - zx}{z^2 + zx + x^2}\geq 2$.
+\item Let $a, b, c$ be positive real numbers. Define $u = a + b + c, \frac{u^2 - b^2}{3} = ab + bc + ca, w = abc$, where $v\geq
+  0$. Then $\frac{(u + v)^2(u - 2v)}{27}\leq w\leq \frac{(u - v)^2(u + 2v)}{27}$.
+\item Let $a, b, c$ be positive real numbers. Prove that $a^4 + b^4 + c^4 \geq abc(a + b + c)$.
+\item Let $a, b, c$ be real numbers such that $a^2 + b^2 + c^2 = 9$. Prove that $2(a + b + c) - abc\leq 10$.
+\item Let $a, b, c$ be positive real numbers such that $a + b + c = 1$. Prove that $a^2 + b^2 + c^2 + 3abc \geq \frac{9}{4}$.
+\item Determine the maximum value of $k$ such that $a + b + c\geq k$ for all positive reals $a, b, c$ with $a\sqrt{bc} + b\sqrt{ca}
+  + c\sqrt{ab}\geq 1$.
+\item If $a, b, c$ are real numbers such that $a + b + c = 1$, prove that $10(a^3 + b^3 + c^3) - 9(a^5 + b^5 + c^5)\geq 1$.
+\item Let $a, b, c$ be positive real numbers. Prove that $24abc\leq |a^3 + b^3 + c^3 - (a + b + c)^3|\leq \frac{8}{9}(a + b +
+  c)^3$. Also show that equality holds in both the inequalities if and only if $a = b = c$.
+\item Find all $k > 0$ such that the inequality $\sqrt{a^2 + kb^2} + \sqrt{b^2 + ka^2}\geq a + b + (k - 1)\sqrt{ab}$ holds positive
+  real numbers $a$ and $b$.
+\item Let $a, b, c$ be positive real numbers such that $abc = 1$. Prove that $a + b + c\geq \sqrt{\frac{1}{3}(a + 2)(b + 2)(c +
+  2)}$.
+\item Let $x_1, x_2, \ldots, x_n$ be $n\geq 3$ positive real numbers such that $x_1x_2\cdots x_n = 1$. Prove that
+  $\displaystyle\sum_{i = 1}^n \frac{x_i^8}{x_{i + 1}(x_i^4 + x_{i + 1}^4)}\geq \frac{n}{2}$, where $x_1 = x_{n + 1}$.
+\item Let $a, b, c$ be positive real numbers such that $\frac{1}{ab} + \frac{1}{bc} + \frac{1}{ca} = 1$. Prove that $\frac{a^2 +
+  b^2 + c^2 + ab + bc + ca - 3}{5}\geq \frac{a}{b} + \frac{b}{c} + \frac{c}{a}$.
+\item For positive, real $x, y, z$ show that $\frac{x(2x - y)}{y(2z + x)} + \frac{y(2y - z)}{z(2x + y)} + \frac{z(2z - x)}{x(2y +
+  z)}\geq 1$.
+\item Suppose $\frac{z(zx + yz + y)}{xy^2 + z^2 + 1}\leq k$, for alll real numbers $x, y, z\in (-2, 2)$ with $x^2 + y^2 + z^2 + xyz
+  = 4$. Find the smallest value of $k$.
+\item Suppose $a, b, c$ are positive real numbers such that $a^3 + b^3 + c^3 = a^4 + b^4 + c^4$. Prove that $\frac{a}{a^2 + b^3 +
+  c^3} + \frac{b}{b^2 + c^3 + a^3} + \frac{c}{c^2 + c^3 + a^3}\geq 1$.
+\item Let $a, b, c$ be positive real numbers such that $a + b + c = 1$. Prove that $\frac{a^4 + 5g^4}{a(a + 2b)} + \frac{b^4 +
+  5c^4}{b(b + 2c)} + \frac{c^4 + 5a^4}{c(c + 2a)}\geq 1 - (ab + bc + ca)$.
+\item Let $x, y, z$ be positive real numbers. Prove that $(xy + yz + zx)\left(\frac{1}{(x + y)^2} + \frac{1}{(y + z)^2} +
+  \frac{1}{(z + x)^2}\right)\geq \frac{9}{4}$.
+\item Suppose $a, b, c$ are positive real numbers such that $abc = 1$. Prove that $\displaystyle\sum_{\rm cyclic}\frac{a^2 +
+  bc}{a^2(b + c)}\geq ab + bc + ca$.
+\item Let $a, b, c$ be non-negative real numbers. Prove that $4(a^3 + b^3 + c^3) + 15abc\geq(a + b + c)^3$.
+\item Let $a, b, c$ be positive real numbers such that $a + b + c = 1$. Prove that $\frac{1}{a^4 + b + c} + \frac{1}{b^4 + c + a} +
+  \frac{1}{c^4 + a + b}\leq \frac{3}{a + b + c}$.
+\item Let $a, b, c$ be positive reals. Prove that $a^4(b + c) + b^4(c + a) + c^4(a + b)\leq \frac{1}{12}(a + b + c)^5$.
+\item Let $a, b, c$ be positive reals such that $ab + bc + ca = 1$. Prove that $\frac{1}{a + b} + \frac{1}{b + c} + \frac{1}{c + a}
+  - \frac{1}{a + b + c}\geq 2$.
+\item Let $a, b, c$ be positive reals such that $ab + bc + ca = 1$. Prove that $\frac{1 + a^2b^2}{(a + b)^2} + \frac{1 + b^2c^2}{(b
+  + c)^2} + \frac{1 + c^2a^2}{(c + a)^2}\geq \frac{5}{2}$.
+\item Let $a, b, c$ be positive real numbers. Prove that $3 + a + b + c + \frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{a}{b} +
+  \frac{b}{c} + \frac{c}{a}\geq 3\left[\frac{(a + 1)(b + 1)(c + 1)}{1 + abc}\right]$.
+\item Let $a, b, c$ be distinct positive real numbers such that $abc = 1$. Prove that $\displaystyle\sum_{\rm cyclic}\frac{a^6}{(a -
+  b)(a - c)} > 15$.
+\item Let $a, b, c$ be real numbers such that $a^2 + b^2 + c^2 = 1$. Prove that $a + b + c\leq 2abc + \sqrt{2}$.
+\item Let $a, b, c$ be positive real numbers. Prove that $\frac{(b + c - a)^2}{a^2 + (b + c)^2} + \frac{(c + a - b)^2}{b^2 + (c +
+  a)^2} + \frac{(a + b - c)^2}{c^2 + (a + b)^2}\geq \frac{3}{5}$.
+\item Let $a, b, c$ be positive real numbers such that $a + b + c = 1$. Prove that $\sqrt{\frac{1}{a} - 1}\sqrt{\frac{1}{b} - 1} +
+  \sqrt{\frac{1}{b} - 1}\sqrt{\frac{1}{c} - 1} + \sqrt{\frac{1}{c} - 1}\sqrt{\frac{1}{a} - 1}\geq 6$.
+\stopitemize

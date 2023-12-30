@@ -1,4 +1,4 @@
-\startcomponent preface.mkiv
+\startcomponent preface.lmtx
 \setupinteraction[state=start]
 \setcounter[userpage][0]
 

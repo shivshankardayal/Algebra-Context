@@ -286,7 +286,7 @@ the determinant $\Delta_1$ is symmetric and $\Delta_2$ is skew-symmetric. We als
 
 If $A_{ij}, A_{ji}$ are the cofactors of the elements $a_{ij}, a_{ji}$ of a symmetric determinant $\Delta$, then $A_{ij} = A{ji}$.
 
-For $A_{ij}$ is trandformed into $A_{ji}$, by changing rows into columns. Thus, if $\Delta = (a_{11}~a_{22}~a_{33})$
+For $A_{ij}$ is trandformed into $A_{ji}$, by changing rows into columns. Thus, if $\Delta = (a_{11}\;a_{22}\;a_{33})$
 \startformula A_{23} = -\startdeterminant\NC  a_{11} \NC a_{12}\NR\NC a_{31} \NC a_{32}\NR\stopdeterminant = -\startdeterminant\NC  a_{11} \NC a_{31}\NR\NC a_{12} \NC
 a_{32}\NR\stopdeterminant = -\startdeterminant\NC  a_{11} \NC a_{13}\NR\NC a_{21} \NC a_{23}\NR\stopdeterminant = A_{32}.\stopformula
 
@@ -554,15 +554,15 @@ Show without expanding at any stage that:
     = \startdeterminant\NC  x \NC y \NC z\NR\NC  p \NC q \NC r\NR\NC  a \NC b \NC c\NR\stopdeterminant$.
 \item find the value of the following determinant $\startdeterminant\NC  m! \NC (m + 1)! \NC (m + 2)!\NR\NC (m + 1)! \NC (m + 2)! \NC (m + 3)!\NR\NC (m +
   2)! \NC (m + 3)! \NC (m + 4)!\NR\stopdeterminant$.
-\item Solve the following system of equations using Cramer'r rule: $x + y = 4,~2x - 3y = 9$.
-\item Solve the following system of equations using Cramer'r rule: $2x - y + 3z = 0,~x + y + z = 6,~x - y + z = 2$.
-\item Determine the nature of solution for the equations: $2x + 3y = 6,~4x + 6y = 10$.
-\item Show that the following system of equations is consistent $x + y - z = 1,~2x + 3x + z = 4,~4x + 3y + z = 16$.
-\item Determine the nature of solution for the equations: $x + y = 2,~2x + 2y = 4$.
-\item Determine whether the following system of equations is consistent: $2x + y = 13,~6x + 3y = 18,~x - y = -3$.
-\item Show that the system of following euqations has non-trivial solutions: $x + y - 6z = 0,~3x - y - 2x = 0,~x - y + 2x = 0$.
+\item Solve the following system of equations using Cramer'r rule: $x + y = 4,\;2x - 3y = 9$.
+\item Solve the following system of equations using Cramer'r rule: $2x - y + 3z = 0,\;x + y + z = 6,\;x - y + z = 2$.
+\item Determine the nature of solution for the equations: $2x + 3y = 6,\;4x + 6y = 10$.
+\item Show that the following system of equations is consistent $x + y - z = 1,\;2x + 3x + z = 4,\;4x + 3y + z = 16$.
+\item Determine the nature of solution for the equations: $x + y = 2,\;2x + 2y = 4$.
+\item Determine whether the following system of equations is consistent: $2x + y = 13,\;6x + 3y = 18,\;x - y = -3$.
+\item Show that the system of following euqations has non-trivial solutions: $x + y - 6z = 0,\;3x - y - 2x = 0,\;x - y + 2x = 0$.
 \item For what value of $k$ the following system of equations possess non-trivial solution. Also, find all the solutions of the
-  system for that value of $k,~x + y - kz = 0,~3x - y - 2x = 0,\ x - y + 2x = 0$.
+  system for that value of $k,\;x + y - kz = 0,\;3x - y - 2x = 0,\;x - y + 2x = 0$.
 \stopitemize
 
 Solve the following equations by Cramer's rule:

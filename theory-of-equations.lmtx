@@ -157,7 +157,7 @@ If $D = b^2 - 4ac > 0$, then eq. \in{Equation}[eq:1] can be written as
 \startformula = a\left[\left(x + \frac{b + \sqrt{b^2 - 4ac}}{2a}\right)\left(x + \frac{b - \sqrt{b^2 - 4ac}}{2a}\right)\right]\stopformula
 \startformula = a(x - \alpha)(x - \beta)\stopformula
 
-If $D = b^2 - 4ac > 0$ and $a > 0$, then (See Fig. \in{Figure}[fig:3])
+If $D = b^2 - 4ac > 0$ and $a > 0$, then (See \in{Figure}[fig:3])
 
 \startformula f(x) = \startmathcases > 0\text{~for~}x <\alpha\text{~or~}x
   >\beta\NR>0\text{~for~}\alpha<x<\beta\\=0\text{~for~}x=\alpha,\beta\NR\stopmathcases\stopformula
@@ -166,7 +166,7 @@ If $D = b^2 - 4ac > 0$ and $a > 0$, then (See Fig. \in{Figure}[fig:3])
   \externalfigure[quadratic-equation-3.pdf]
 \stopplacefigure
 
-If $D = b^2 - 4ac > 0$ and $a < 0$, then (See Fig. \in{Figure}[fig:4])
+If $D = b^2 - 4ac > 0$ and $a < 0$, then (See \in{Figure}[fig:4])
 
 \startformula f(x) = \startmathcases < 0\text{~for~}x <\alpha\text{~or~}x
   >\beta\\>0\text{~for~}\alpha<x<\beta\\=0\text{~for~}x=\alpha,\beta\stopmathcases\stopformula
@@ -226,7 +226,7 @@ $f(k_1)>0$. In case $a<0$, the conditions are $D>0,\;k_1<-\frac{b}{2a}<k_2,\;f(k
 
 The quadratic equation $f(x) = ax^2 + bx + c = 0, a\neq 0$ has a repeated root if and only if $f(\alpha) = f'(\alpha) = 0$, where
 $\alpha$ is the repeated root. In this case, $f(x) = a(x - \alpha)^2$, In fact, $\alpha = -b/2a$. Geometrically, the $x$-axis will
-be a tangent to the parabola at $x = -b/2a$. See Fig. \in{Figure}[fig:7] and Fig. \in{Figure}[fig:8].
+be a tangent to the parabola at $x = -b/2a$. See \in{Figure}[fig:7] and Fig. \in{Figure}[fig:8].
 
 \startplacefigure[title={$f(\alpha)=0,\;f'(\alpha)=0$}, reference=fig:7]
   \externalfigure[quadratic-equation-7.pdf]

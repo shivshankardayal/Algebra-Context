@@ -1,0 +1,978 @@
+\chapter{Logarithm}
+\startitemize[n, 1*broad]
+\item $\log_{\sqrt{8}}x = \frac{10}{3} \Rightarrow \log_{2^{\tfrac{3}{2}}}x = \frac{10}{3}\Rightarrow \frac{2}{3}\log_2x = \frac{10}{3}$
+
+  $\Rightarrow \log_2x = 5 \Rightarrow x = 2^5 = 32.$
+\item L.H.S. $= \log_ba.\log_cb\log_ac = \frac{\log a}{\log b}.\frac{\log b}{\log c}.\frac{\log c}{\log a} = 1 =$ R.H.S.
+\item L.H.S. $= \log_3\log_2\log_{\sqrt{5}}(\sqrt{5})^8 = \log_3\log_28 = \log_33 = 1 =$ R.H.S.
+\item Given $a^2 + b^2 = 23ab \Rightarrow (a + b)^2 = 25ab \Rightarrow \frac{a + b}{5} = \sqrt{ab}$
+
+  Taking $\log$ of both sides, we get
+
+  $\log\frac{a + b}{5} = \frac{1}{2}(\log a + \log b)$.
+\item L.H.S. $= 7\log\frac{16}{15} + 5\log\frac{25}{24} + 3\log\frac{81}{80} = \log 2$
+
+  $= 7[\log 2^4 - \log 3.5] + 5[\log 5^2 - \log 2^3.3] + 3[\log 3^4 - \log 2^4.5]$
+
+  $= 7[4\log 2 - \log 3 - \log 5] + 5[2\log 5 - 3\log 2 - \log 3] + 3[4\log 3 - 4\log 2 - \log 5]$
+
+  $= \log 2 =$ R.H.S.
+\item L.H.S. $= \log\tan1^\circ + \log\tan2^\circ + \ldots + \log\tan89^\circ$
+
+  $= (\log\tan1^\circ + \log\tan89^\circ) + (\log\tan2^\circ + \log\tan88^\circ) + \cdots + \log\tan45^\circ$
+
+  $=(\log\tan1^\circ\cot1^\circ) + (\log\tan2^\circ\cot2^\circ) + \cdots + \log\tan45^\circ [\because \tan(90^\circ - \theta) =
+  \cot\theta]$
+
+  $= \log 1 + \log 1 + \cdots + \log 1 = 0 [\because \tan\theta\cot\theta = 1]$
+\item Given $\log_9\tan\frac{\pi}{6} = \log_9\frac{1}{\sqrt{3}} = -\log_9\sqrt{3} = -\log_99^{1/4} = -\frac{1}{4}$.
+\item Given $\frac{\log_{a^2}b}{\log_{\sqrt{a}}b^2} = \frac{\frac{1}{2}\log_ab}{2.2\log_ab} = \frac{1}{8}$.
+\item Given $\log_{\sqrt{5}}.008 = 2\log_6\frac{8}{1000} = 2[\log_58 - \log_51000] = 2[\log_58 - \log 8.125]$
+
+  $= 2[\log_58 - \log_68 - \log_5125] = -2.\log_55^3 = -6$.
+\item Given $\log_{2\sqrt{3}}144 = \log_{2\sqrt{3}}(2\sqrt{3})^4 = 4$.
+\item L.H.S. $= \log_3\log_2\log_{\sqrt{3}}81 = \log_3\log_2\log_{\sqrt{3}}(\sqrt{3})^8 = \log_3\log_28 = \log_33 = 1 =$ R.H.S.
+\item L.H.S. $= \log_ax\log_by = \frac{\log x}{\log a}.\frac{\log y}{\log b} = \frac{\log x}{\log b}.\frac{\log y}{\log a}$
+
+  $= \log_bx\log_ay =$ R.H.S.
+\item L.H.S. $= \log_2\log_2\log_216 = \log_2\log_2\log_22^4 = \log_2\log_24 = \log_22 = 1 =$ R.H.S.
+\item R.H.S. $= \log_bx\log_cb\ldots\log_nm\log_an = \frac{\log x}{\log b}.\frac{\log b}{\log c}\cdots\frac{\log m}{\log
+  n}.\frac{\log n}{\log a}$
+
+  $= \frac{\log x}{\log a} = \log_ax =$ L.H.S.
+\item Let $10^x\log_{10}a = z$.
+
+  Taking $\log$ of both sides, we get
+
+  $x\log_{10}a = \log z \Rightarrow \log_{10}a^x = \log z \Rightarrow z = a^x$.
+\item Given $a^2 + b^2 = 7ab \Rightarrow a^2 + b^2 + 2ab = (a + b)^2 = 9ab$
+
+  $\Rightarrow \left(\frac{a + b}{3}\right)^2 = ab \Rightarrow \frac{a + b}{3} = \sqrt{ab} = (ab)^{1/2}$
+
+  Taking $\log$ of both sides,
+
+  $\log \frac{a + b}{3} = \frac{1}{2}(\log a + \log b)$.
+\item L.H.S. $= \frac{\log_a\log_ba}{\log_b\log_ab}$
+
+  Let $\log_ba = z$, then L.H.S. $= \frac{\log_az}{\log_b\tfrac{1}{z}} = -\frac{\log_az}{\log_bz} = -\frac{\log z}{\log a}.\frac{\log z}{\log b}$
+
+  $= - \frac{\log b}{\log a} = -\log_ab =$ R.H.S.
+\item L.H.S. $= \log(1 + 2 + 3) = \log 6 = \log(1.2.3) = \log 1 + \log 2 + \log 3 =$ R.H.S.
+\item L.H.S. $= 2\log(1 + 2 + 4 + 7 + 14) = 2\log 28 = \log 784$
+
+  $= \log(1.2.4.7.14) = \log 1 + \log 2 + \log 4 + \log 7 + \log 14 =$ R.H.S.
+\item L.H.S. $= \log 2 + 16\log\frac{16}{15} + 12\log\frac{25}{24} + 7\log\frac{81}{80}$
+
+  $= \log 2 + 16[\log 2^4 - \log 3 - \log 5] + 12[\log 5^2 - \log 2^3 - \log 3] + 7[\log 3^4 - \log 2^4 - \log 5]$
+
+  $= \log 2 + 16[4\log 2 - \log 3 - \log 5] + 12[2\log 5 - 3\log 2 - \log 3] + 7[4\log 3 - 4\log 2 - \log 5]$
+
+  $= \log 2[1 + 64 - 36 - 28] + \log 3[28 - 16 -1 12] + \log 5[24 - 7 - 15]$
+
+  $= \log 2 + \log 5 = \log 10 = 1$ [$\because$ default base of $\log$ is $10$.]
+\item Given $\frac{\log_911}{\log_513}\div\frac{\log_311}{\log_{\sqrt{5}}13} =
+  \frac{\log_{3^2}11}{\log_513}.\frac{\log_{5^{\tfrac{1}{2}}}11}{\log_3 11}$
+
+  $= \frac{\tfrac{1}{2}\log_311}{\log_513}.\frac{2\log_513}{\log_311} = 1$.
+\item Given, $3^{\sqrt{\log_32}} - 2^{\sqrt{\log_23}}$
+
+  Taking $\log$ with base $10$,
+
+  $\sqrt{\log_32}\log 3 - \sqrt{\log_23}\log 2 = \sqrt{\frac{\log 2}{\log 2}(\log 3)^2} - \sqrt{\frac{\log 3}{\log 2}(\log 2)^2}$
+
+  $= \sqrt{\log 2\log 3} - \sqrt{\log 3\log 2} = 0$.
+\item Given $\log_{10}343 = 2.5353 \Rightarrow \log_{10}7^3 = 2.5353 \Rightarrow \log_{10}7 = o.8451$
+
+  For $7^n > 10^5 \Rightarrow n\log_{10}7 > 5 \Rightarrow n > \frac{5}{0.8451}$
+
+  Thus, least such integer is $6$.
+\item Since $a, b, c$ are in G.P., we can write $b^2 = ac$
+
+  Taking $\log$ of both sides, we get
+
+  $2\log b = \log a + \log c \Rightarrow \log a, \log b, \log c$ are in A.P.
+
+  i.e. $\frac{1}{\log a}, \frac{1}{\log b}, \frac{1}{\log c}$ are in H.P.
+
+  Multiplying each term with $\log x$,
+
+  $\frac{\log x}{\log a}, \frac{\log x}{\log b}, \frac{\log x}{\log c}$ are in H.P.
+
+  $\log_ax, \log_bx, \log_cx$ are in H.P.
+\item R.H.S. $= 3\log2 + \log\sin x + \log\cos x + \log\cos2x + \log\cos4x$
+
+  $= 2\log 2 + (\log 2.\sin x\cos x) + \log\cos2x + \log\cos4x$
+
+  $= 2\log 2 + \log\sin2x + \log\cos2x + \log\cos4x = \log 2 + (\log 2.\sin2x\cos2x) + \log\cos4x$
+
+  $= \log 2 + \log\sin4x + \cos4x = \log 2.\sin4x\cos4x$
+
+  $= \log\sin8x =$ L.H.S.
+\item We have to prove that $xyz + 1 = 2yz \Rightarrow x + \frac{1}{yz} = 2$
+
+  L.H.S. $= x + \frac{1}{yz}$, substituting the values of $x, y$ and $z$,
+
+  $\log_{2a}a + \frac{1}{\log_{3a}2a\log_{4a}3a} = \frac{\log a}{\log 2a} + \frac{\log 3a.\log 4a}{\log 2a.\log 3a}$
+
+  $= \frac{\log a + \log 4a}{\log 2a} = \frac{\log(2a)^2}{\log 2a} = 2 =$ R.H.S.
+\item We have to prove that $\log_{c + b}a + \log_{c - b}a = 2\log_{c + a}a\log_{c - b}a$
+
+  Dividing both sides by $\log_{c + b}a\log_{c - b}a$,
+
+  $\frac{1}{\log_{c - b}a} + \frac{1}{\log_{c + b}\log a} = 2$
+
+  $\Rightarrow \log_a(c - b) + \log_a(c + b) = 2$
+
+  $\Rightarrow \log_a(c^2 - b^2) = 2\Rightarrow c^2 = a^2 + b^2$
+
+  which is true because $c$ is hypotenuse and $a$ and $b$ are sides of a right-angle triangle.
+\item Let $\frac{\log x}{y - z} = \frac{\log y}{z - x} = \frac{\log z}{x - y} = k$
+
+  $\log x = k(y - z), \log y = k(z - x), \log z = k(x - y)$
+
+  $\Rightarrow x\log x + y\log y + z\log z = k(xy - zx + yz - xy + zx - yz) = 0$
+
+  $\Rightarrow \log x^x + \log y^y + \log z^z = \log x^xy^yz^z = 0$
+
+  $\Rightarrow x^xy^yz^z = 1$.
+\item Given $\frac{yz\log(yz)}{y + z} = \frac{zx\log(zx)}{z + x} = \frac{xy\log(xy)}{x + y}$
+
+  Dividing by $xyz, \frac{\log(yz)}{x(y + z)} = \frac{\log(zx)}{y(z + x)} = \frac{\log(xy)}{z(x + y)} = k$ (let)
+
+  $\log y + \log z = k(xy + yz), \log z + \log x = k(yz + xy), \log x + \log y = k(yz + zx)$
+
+  $\Rightarrow x\log x = kyz \Rightarrow x\log x = kxyz = y\log y = z\log z$
+
+  $\Rightarrow x^x = y^y = z^z$.
+\item We have to prove that $(yz)^{\log y - \log z}(zx)^{\log z - \log x}(xy)^{\log x - \log y} = 1$
+
+  Taking $\log$ of both sides,
+
+  $\Rightarrow (\log y - \log z)(\log y + \log z) + (\log z - \log x)(\log z + \log x) + (\log x - \log y)(\log x + \log y) = 0$
+
+  $\Rightarrow (\log y)^2 - (\log z)^2 + (\log z)^2 - (\log x)^2 + (\log x)^2 - (\log y)^2 = 0$
+
+  $\Rightarrow 0 = 0$.
+\item L.H.S $= \log_N2 + \log_n3 + \cdots + \log_n1988$
+
+  $= \log_N(2.3.4.\ldots1988) = \log_N1988! = \frac{1}{\log_{1988!}N} =$ R.H.S.
+\item L.H.S. $= \log(1 + x) + \log(1 + x^2) + \log(1 + x^4)\ldots~{\rm to}~\infty$
+
+  $= \log(1 + x + x^2 + \ldots~{\rm to}~\infty)$
+
+  $= \log\frac{1}{1 - x}[\because 0 < x < 1]$ (from the formula for the sum of an infinite G.P.)
+
+  $= -\log(1 - x) =$ R.H.S.
+\item Let $S_n = \frac{1}{\log_2a} + \frac{1}{\log_4a} + \cdots$ up to $n$ terms
+
+  $S_n = \log_a2 + \log_a4 + \log_a8 + \cdots$ up to $n$ terms
+
+  $S_n = (1 + 2 + 3 + \cdots + n)\log_a2 = \frac{n(n + 1)}{2}\log_a2$.
+\item L.H.S. $= \frac{1}{x + 1} + \frac{1}{y + 1} + \frac{1}{z + 1}$
+
+  $= \frac{1}{\log_410 + \log_44} + \frac{1}{\log_220 + \log_220} + \frac{1}{\log_58 + \log_55}$
+
+  $= \frac{1}{\log_440} + \frac{1}{\log_240} + \frac{1}{\log_540}$
+
+  $= \log_{40}4 + \log_{40}2 + \log_{40}5 = \log_{40}(4.2.5) = \log_{40}40 = 1 =$ R.H.S.
+\item L.H.S. $= \frac{1}{\log_abc + 1} + \frac{1}{\log_bca + 1} + \frac{1}{\log_cab + 1}$
+
+  $= \frac{1}{\log_abc + \log_aa} + \frac{1}{\log_bca + \log_bb} + \frac{1}{\log_cab + \log_cc}$
+
+  $= \frac{1}{\log_aabc} + \frac{1}{\log_babc} + \frac{1}{\log_cabc}$
+
+  $= \log_{abc}a + \log_{abc}b + \log_{abc}c = \log_{abc}abc = 1 =$ R.H.S.
+\item Given, $\frac{1}{1 + \log_ba + \log_bc} + \frac{1}{1 + \log_ca + \log_cb} + \frac{1}{1 + \log_ab + \log_ac} = 1$
+
+  L.H.S. $= \frac{1}{\log_ba + \log_ba + \log_bc} + \frac{1}{log_cc + \log_ca + \log_cb} + \frac{1}{\log_aa + \log_ab + \log_ac}$
+
+  $= \frac{1}{\log_babc} + \frac{1}{\log_cabc} + \frac{1}{\log_aabc}$
+
+  Like previous problem the above expression will evaluate to $1$.
+\item We have to prove that $x^{\log y - \log z}y^{\log z - \log x}z^{\log x - \log y} = 1$
+
+  Taking $\log$ of both sides,
+
+  $(\log y - \log z)\log x + (\log z - \log x)\log y + (\log x - \log y)\log z = 0$
+
+  $\Rightarrow \log y\log z - \log z\log x + \log z\log y - \log x\log y + \log x\log z - \log y\log z = 0$
+
+  $\Rightarrow 0 = 0$.
+\item Let $\frac{\log a}{y - z} = \frac{\log b}{z - x} = \frac{\log c}{x - y} = k$
+
+  $\Rightarrow x\log a = k(xy - zx), y\log b = k(yz - xy), z\log c = k(zx - yz)$
+
+  Adding all,
+
+  $x\log a + y\log b + z\log c = k(xy - zx + yz - xy + zx - yz) = 0$
+
+  $\log a^xb^yx^z = 0\Rightarrow a^xb^yc^z = 1$
+\item Let $\frac{x(y + z - x)}{\log x} = \frac{y(z + x - y)}{\log y} = \frac{z(x + y - z)}{\log z} = \frac{1}{k}$
+
+  $\Rightarrow \log x = kx(y + z - x), \log y = ky(z + x - y), \log z = kz(x + y - z)$
+
+  Let $y^zz^y = z^xz^z = x^yy^x$
+
+  Taking $\log$, we have
+
+  $z\log y + y\log z = x\log z + z\log x = y\log x + x\log y$
+
+  $\Rightarrow zky(z + x - y) + ykz(x + y - z) = xkz(x + y - z) + zkx(y + z - x) = ykx(y + z - x) + xky(x + z - y)$
+
+  $\Rightarrow yz^2 + xyz - y^2z + xyz + y^2 - z^2y = x^2z + xyz - xz^2 + xyz + xz^2 - x^2z = xy^2 + xyz - x^2y + x^2y + xyz -
+  xy^2$
+
+  $\Rightarrow 2xyz = 2xyz = 2xyz$.
+\item Let $\frac{\log a}{b - c} = \frac{\log b}{c - a} = \frac{\log c}{a - b} = k$
+
+  $\Rightarrow \log a = k(b - c), \log b = k(c - a), \log c = k(a - b)$
+
+  $\Rightarrow (b + c)\log a = k(b^2 - c^2), (c + a)\log b = k(c^2 - a^2), (a + b)\log c = k(a^2 - b^2)$
+
+  Adding all, $\log a^{b + c} + \log b^{c + a} + \log c^{a + b} = 0$
+
+  $\Rightarrow a^{b + c}b^{c + a}c^{a + b} = 1$.
+\item Let $\frac{\log x}{q - r} = \frac{\log y}{r - p} = \frac{\log z}{p - q} = k$
+
+  $\Rightarrow \log x = k(q - r), \log y = k(r - p), \log z = k(p - q)$
+
+  $\Rightarrow (q + r)\log x = k(q^2 - r^2), (r + p)\log y = k(r^2 - p^2), (p + q)\log z = k(p^2 - q^2)$
+
+  Adding all $\log x^{q + r} + \log y^{r + p} + \log z^{p + q} = 0$
+
+  $\Rightarrow x^{q + r}y^{r + p}z^{p + q} = 1$.
+
+  Similarly, $p\log x = kp(q - r), q\log y = kq(r - p), r\log z = kr(p - q)$
+
+  Adding all, $\log x^p + \log y^q + \log z^r = 0 \Rightarrow x^py^qz^r = 1$.
+\item Given $y = a^{\tfrac{1}{1 - \log_ax}}$ and $z = a^{\tfrac{1}{1 - \log_ay}}$
+
+  $\therefore z = a^{\tfrac{1}{1 - \log_aa^{\left(\tfrac{1}{1 - \log_ax}\right)}}} = a^{\tfrac{1}{1 - \tfrac{1}{1 - \log_ax}}}$
+
+  Taking $\log$ of both sides with base $a$,
+
+  $\log_az = \frac{1}{1 - \tfrac{1}{1 - \log_ax}} = \frac{1 - \log_ax}{-\log_ax} = 1 - \frac{1}{\log_ax}$
+
+  $\Rightarrow x = a^{\tfrac{1}{1 - \log_az}}$.
+\item Given $f(y) = e^{f(z)}$ and $z = e^{f(x)}$, where $f(x) = \frac{1}{1 - \log_ex}$
+
+  $f(y) = e^{\tfrac{1}{1 - \log_ez}} = e^{\tfrac{1}{1 - \log_ee^{\tfrac{1}{1 - \log_ex}}}} = e^{\tfrac{1}{1 - \tfrac{1}{1 -
+      \log_ex}}}$
+
+  Following like above exercie $x = e^{f(y)}$.
+\item L.H.S. $= \frac{1}{\log_2n} + \frac{1}{\log_3n} + \frac{1}{\log_4n} + \cdots + \frac{1}{\log_{43}n}$
+
+  $= \log_n2 + \log_n3 + \log_n4 + \cdots + \log_n43 = \log_n(2.3.4\ldots 43)$
+
+  $= \log_n43! = \frac{1}{\log_{43!}n} =$ R.H.S.
+\item L.H.S. $= (1 + 2 + 3 + \cdots + n).2\log a = \frac{n(n + 1)}{2}.2\log a = n(n + 1)\log a =$ R.H.S.
+\item We will use of the fact that positive characteristics of $n$ of a logarithmm means that there $n + 1$ digits in the number.
+
+  Let $\log y = 12\log 12 = 12\log(2.2.3) = 12[2\times0.301 + 0.477] = 12.96$.
+
+  Thus, number of digits is $13$.
+\item We can use the fact that the number of positive integers having base $b$ and characteristics $n$ is $b^{n + 1} - b^n$.
+
+  Thus, number of integer with base $3$ and characteristics $2$ is $3^3 - 3^3 = 18$.
+\item Let $y = (0.0504)^{10} \Rightarrow \log_{10}y = 10\log_{10}(0.504) = 10\log_{10}(504\times10^-4)$
+
+  $= -10\log_{10}[-4 + \log(2^3.3^2.7)] = -12.98$.
+
+  Thus, characteristics is $-13$. Therefore, number of zeros after decimal and first significant digit is $12$.
+\item Let $x = 72^{15} \therefore \log_{10}x = 15\log_{10}72 = 15\log_{10}(2^3\times3^2) = 15[3\log_{10}2 + 2\log_{10}3]$
+
+  $i = 15[3\times0.301 + 2\times0.477] = 15[0.903 + 0.954] = 15\times1.857 = 27.855$
+
+  So the characteristics is $27$ and hence the number of digits will be $28$.
+\item Given $b = 5, n = 2$, therefore the number of integers will be $5^3 - 5^2 - 100$.
+\item Let $x = 3^{15}\times 2^{10} \therefore \log_{10}x = 15\log_{10}3 + 10\log_{10}2$
+
+  $= 15\times0.477 + 10\times 0.301 = 10.165$.
+
+  So no. of digits will be $11$.
+\item Let $x = 6^{20} \therefore \log_{10}x = 20\log_{10}(2\times3) = 20[\log_{10}2 + \log_{10}3]$
+
+  $= 20[0.301 + 0.477] = 15.56$.
+
+  So no. of digits will be $16$.
+\item Let $x = 5^{25} \therefore \log_{10}x = 25\log_{10}\frac{10}{2}= 25[1 - \log_{10}2]$
+
+  $= 25\times 0.699 = 17.475$
+
+  So no. of digits will be $18$.
+\item Given $\log_a[1 + \log_b\{1 + \log_c(1 + \log_px)\}] = 0$
+
+  $\Rightarrow 1 + \log_b\{1 + \log_c(1 + \log_px)\} = 1$
+
+  $\Rightarrow \log_b\{1 + \log_c(1 + \log_px)\} = 0$
+
+  $\Rightarrow 1 + \log_c(1 + \log_px) = 1$
+
+  $\Rightarrow \log_c(1 + \log_px) = 0$
+
+  $\Rightarrow 1 + \log_px = 1$
+
+  $\Rightarrow \log_px = 0 \Rightarrow x = 1$
+\item Given $\log_7\log_5(\sqrt{x + 5} + \sqrt{x}) = 0 \Rightarrow \log_5(\sqrt{x + 5} + \sqrt{x}) = 1$
+
+  $\Rightarrow \sqrt{x + 5} + \sqrt{x} = 5 \Rightarrow \sqrt{x + 5} = 5 - \sqrt{x}$
+
+  Squaring both sides,
+
+  $x + 5 = 25 + x - 10\sqrt{x}\Rightarrow \sqrt{x} = 2\Rightarrow x = 4$.
+\item $\log_2x + \log_4(x + 2) = 2 \Rightarrow \log_2x + \frac{1}{2}\log_2(x + 2) = 2$
+
+  $\Rightarrow 2\log_2x + \log_2(x + 2) = 4 \Rightarrow \log_2x^2(x + 3) = 4$
+
+  $\Rightarrow x^2(x + 2) = 16 \Rightarrow x = 2$
+\item $\log_{(x + 2)}x + \log_x(x + 2) = \frac{5}{2} \Rightarrow \frac{1}{\log_x(x + 2)} + \log_x(x + 2) = \frac{5}{2}$
+
+  Let $z = \log_x(x + 2) \Rightarrow \frac{1}{z} + z = \frac{5}{2}$
+
+  $2z^2 + 2 - 5z = 0 \Rightarrow z = 2, \frac{1}{2}$
+
+  $\Rightarrow \log_x(x + 2) = 2, \frac{1}{2}$
+
+  $\Rightarrow x + 2 = 2^2, x + 2 = \sqrt{x}$
+
+  $x = 2, x^2 - 4x + 4 = 0 \Rightarrow x = \frac{3\pm\sqrt{-7}}{2}$
+
+  However, $x$ cannot be a complex number. $\therefore x = 2$.
+\item $\frac{\log(x + 1)}{\log x} = 2\Rightarrow \log_x(x + 1) = 2 \Rightarrow x + 1 = x^2$
+
+  $\Rightarrow x = \frac{1\pm \sqrt{5}}{2}$
+
+  $\because x > 0, x = \frac{1 + \sqrt{5}}{2}$.
+\item $2\log_xa + \log_{ax}a + 3\log_{a^2x}a = 0 \Rightarrow \frac{2}{\log_ax} + \frac{1}{\log_aax} + \frac{1}{\log_aa^2x} = 0$
+
+  $\Rightarrow \frac{2}{\log_ax} + \frac{1}{\log_aa + \log_ax} + \frac{1}{\log_aa^2 + \log_ax} = 0$
+
+  $\Rightarrow \frac{2}{\log_ax} + \frac{1}{1 + \log_ax} + \frac{1}{2 + \log_ax} = 0$
+
+  Substituting $\log_ax = z, \frac{2}{z} + \frac{1}{1 + z} + \frac{1}{2 + z} = 0$
+
+  $\Rightarrow 6z^2 + 11z + 4 = 0 \Rightarrow z = -\frac{1}{2}, -\frac{4}{3}$
+
+  $\therefore x = a^{-\tfrac{1}{2}}, a^{-\tfrac{4}{3}}$.
+\item $x + \log_{10}(1 + 2^2) = x\log_{10}5 + \log_{10}6$
+
+  $\Rightarrow \log_{10}10^x + \log_{10}(1 + 2^x) = \log_{10}5^x + \log_{10}6$
+
+  $\Rightarrow \log_{10}10^x(1 + x^x) = \log_{10}(5^x.6)$
+
+  $\Rightarrow 2^x(1 + 2^x) = 2.3 \Rightarrow 2^x = 2, 1 + 2^x = 3 \Rightarrow x = 1$.
+\item $x^{\tfrac{3}{4}(\log_2x)^2 + \log_2x - \tfrac{5}{4}} = \sqrt{2}$
+
+  Taking $\log_2$ of both sides,
+
+  $\left[\frac{3}{4}(\log_2x)^2 + \log_2x - \frac{5}{4}\right]\log_2x = \frac{1}{2}\log_22$
+
+  $\left[\frac{3}{4}(\log_2x)^2 + \log_2x - \frac{5}{4}\right]\log_2x = \frac{1}{2}$
+
+  Let $\log_2x = z, \Rightarrow \left(\frac{3}{4}z^2 + z - \frac{5}{4}\right)z = \frac{1}{2}$
+
+  Solving this qubic equation yields $x = 2, \frac{1}{4}, \frac{1}{\sqrt[3]{2}}$.
+\item Given $(x^2 + 6)^{\log_3x} = (5x)^{\log_3x}$
+
+  $\log_3x$ has a possible value of $0$, in that case $x = 1$
+
+  If $\log_3x\neq 0, \Rightarrow x^2 + 6 = 5x \Rightarrow x = 2, 3$.
+\item Given, $(3 + 2\sqrt{2})^{x^2 - 6x + 9} + (3 - 2\sqrt{2})^{x^2 - 6x + 9} = 6$
+
+  We observe that $3 + 2\sqrt{2} = \frac{1}{3 - 2\sqrt{2}}$, thus, given equation becomes
+
+  $(3 + 2\sqrt{2})^{x^2 - 6x + 9} + (3 + 2\sqrt{2})^{-(x^2 - 6x + 9)} = 6$
+
+  Let $z = (3 + 2\sqrt{2})^{x^2 - 6x + 9}\Rightarrow z + \frac{1}{z} = 6 \Rightarrow z = 3\pm2\sqrt{2}$
+
+  Thus, $x^2 - 6x + 9 = \pm 1 \Rightarrow x = 2, 4$ because other roots are irrational.
+\item Given, $\log_8\left(\frac{8}{x^2}\right)\div(\log_8x)^2 = 3$
+
+  $\Rightarrow \log_88 - \log_8x^2 = 3(\log_8x)^2 \Rightarrow 1 - 2\log_8x = 3(\log_8x)^2$
+
+  Let $z = \log_8x\Rightarrow 1 - 2z = 3z^2 \Rightarrow z = -1, \frac{1}{3}\Rightarrow x = 2, \frac{1}{8}$.
+\item Given, $\sqrt{\log_2(x)^4} + 4\log_4\sqrt{\tfrac{2}{x}} = 2$
+
+  $\Rightarrow \sqrt{\log_2(x)^4} + 2\log_2\sqrt{\tfrac{2}{x}} = 2$
+
+  $\Rightarrow \sqrt{4\log_2x} + \log_2\tfrac{2}{x} = 2$
+
+  $\Rightarrow \sqrt{4\log_2x} + 1 - \log_2x = 2 \Rightarrow \sqrt{4\log_2x} = 1 + \log_2x$
+
+  Squaring, $4\log_2x = 1 + 2\log_2x + (\log_2x)^2 \Rightarrow (\log_2x - 1)^2 = 0$
+
+  $\Rightarrow \log_2x = 1 \Rightarrow x = 2$.
+\item Given, $2\log_{10}x - \log_x0.01 = 5 \Rightarrow 2\log_{10}x - \log_x(10)^{-2} = 5$
+
+  $\Rightarrow 2\log_{10}x - \log_x(10)^{-2} = 5 \Rightarrow 2\log_{10}x + 2\log_x10 = 5$
+
+  $\Rightarrow 2\log_{10}x + \frac{2}{\log_{10}x} = 5$
+
+  Let $z = \log_{10}x \Rightarrow 2z + \frac{2}{z} = 5 \Rightarrow z = 2, \frac{1}{2}$
+
+  $\Rightarrow x = 100, \sqrt{10}$.
+\item Given, $\log_{\sin x}2\log_{\cos x}2 + \log_{\sin x}2 + \log_{\cos x}2 = 0$
+
+  $\Rightarrow \log_{\sin x}2(\log_{\cos x}2 + 1) + \log_{\cos x}2 = 0$
+
+  $\Rightarrow \frac{\ln 2}{\ln \sin x}\left(\frac{\ln 2}{\ln \cos x} + 1\right) + \frac{\ln 2}{\ln \cos x} = 0$
+
+  $\Rightarrow \frac{1}{\ln \sin x}\left(\frac{\ln 2}{\ln \cos x} + 1\right) + \frac{1}{\ln \cos x} = 0$
+
+  $\Rightarrow \frac{1}{\ln \sin x}\left(\frac{\ln 2}{\ln \cos x} + 1\right) = -\frac{1}{\ln \cos x}$
+
+  $\Rightarrow \frac{1}{\ln \sin x}(\ln 2 + \ln\cos x) = -1$
+
+  $\Rightarrow \ln(\sin2x) = 0\Rightarrow x = 2k\pi + \frac{\pi}{4}, k\in\mathbb{I}$.
+\item Given, $2^{x + 3} + 2^{x+2} + 2^{x + 1} = 7^x + 7^{x - 1}$
+
+  $\Rightarrow 2^{x + 1}(2^2 + 2 + 1) = 7^{x - 1}(7 + 1) \Rightarrow 2^{x - 2} = 7^{x - 2}$
+
+  Taking $\log$ of both sides
+
+  $(x - 1)\log 2 = (x - 2)(\log 7), \because 2\neq 7 \Rightarrow x = 2$.
+\item Given, $\log_{\sqrt{2}\sin x}(1 + \cos x) = 2$
+
+  $\Rightarrow 1 + \cos x = (\sqrt{2}\sin x)^2 = 2\sin^2x = 2 - 2\cos^2 x$
+
+  $\Rightarrow 2\cos^2x + \cos x - 1 = 0 \Rightarrow \cos x = -1, \frac{1}{2}$
+
+  $\Rightarrow x = 2n\pi,\,2n\pi + \frac{\pi}{3}, n\in I$
+\item Given, $\log_{10}[98 + \sqrt{x^2 - 12x + 36}] = 2$
+
+  $\Rightarrow 98 + \sqrt{x^2 - 12x + 36} = 10^2 = 100$
+
+  $\Rightarrow x^2 - 12x + 36 = 4 \Rightarrow x^2 - 12x + 32 = 0$
+
+  $\Rightarrow x = 4, 8$.
+\item Given, $2^x3^{2x} - 100 = 0 \Rightarrow x\log_{10}2 + 2x\log_{10}3 = \log_{10}100 = 2$
+
+  Substituting values for $\log_{10}2$ and $\log_{10}3$, we get
+
+  $0.30103x + 0.95424x = 2 \Rightarrow x = 1.593$.
+\item Given, $\log_x3\log_{\tfrac{x}{3}}3 + \log_{\tfrac{x}{81}}3 = 0$
+
+  $\Rightarrow \frac{1}{\log_3x}.\frac{1}{\log_x\tfrac{x}{3}} + \frac{1}{\log_3\tfrac{x}{81}} = 0$
+
+  $\Rightarrow \frac{1}{\log_3x}.\frac{1}{\log_3x - \log_33} + \frac{1}{\log_3x - \log_381} = 0$
+
+  Let $z = \log_3x, \Rightarrow \frac{1}{z}.\frac{1}{z - 1} + \frac{1}{z - 4} = 0$
+
+  $\Rightarrow z - 4 + z^2 - z = 0 \Rightarrow z^2 - 4 = 0 \Rightarrow z = \pm 2$
+
+  $\Rightarrow x = 9, \frac{1}{9}$.
+\item Given, $\log_{(2x + 3)}(6x^2 + 23x + 21) = 4 - \log_{(3x + 7)}(4x^2 + 12x + 9)$
+
+  $\Rightarrow \log_{(2x + 3)}(2x + 3)(3x + 7) = 4 - \log_{(3x + 7)}(2x + 3)^2$
+
+  $\Rightarrow 1 + \log_{(2x + 3)}(3x + 7) = 4 - 2\log_{(3xx + 7)}(2x + 3)$
+
+  Let $z = \log_{(2x + 3)}(3x + 7)$,
+
+  $\Rightarrow 1 + z = 4 - \frac{2}{z}\Rightarrow z = 1, 2 \Rightarrow x = -4, -3, -\frac{1}{4}$.
+
+  For logarithm to be defined, $2x + 3 > 0,\,2x + 3\neq 1$ and $3x + 7 > 0,\,3x + 7 \neq 1$.
+
+  Thus, $x = -\frac{1}{4}$ is the only valid solution.
+\item Given, $\log_2(x^2 - 1) = \log_{\tfrac{1}{2}}(x - 1)$
+
+  $\Rightarrow \log_2(x^2 - 1) = \log_{2^{-1}}(x - 1) = -\log_2(x - 1) = \log_2\frac{1}{x - 1}$
+
+  $\Rightarrow x^2 - 1 = \frac{1}{x - 1}\Rightarrow x = 0, x^2 - x - 1 = 0$
+
+  $\Rightarrow x = 0, \frac{1\pm\sqrt{5}}{2}$
+
+  For logarithm to be defined $x^2 - 1 > 0$ and $x - 1 > 0$
+
+  Thus, $x = \frac{1+\sqrt{5}}{2}$ is the only acceptable solution.
+\item Given, $\log_5\left(5^{\tfrac{1}{x} + 125}\right) = \log_56 + 1 + \frac{1}{2x}$
+
+  $\Rightarrow \log_5\left(5^{\tfrac{1}{x} + 125}\right) - \log_56 = 1 + \frac{1}{2x}$
+
+  $\Rightarrow \log_5\left(\tfrac{5^{\tfrac{1}{x} + 125}}{6}\right) = 1 + \frac{1}{2x}$
+
+  $\Rightarrow 5^{\tfrac{1}{x} + 125} = 30.5^{\tfrac{1}{2x}}$
+
+  Let $z= 5^{\tfrac{1}{2x}}$
+
+  $\Rightarrow z^2 - 30z + 125 = 0 \Rightarrow z = 5, 25 \Rightarrow x = \frac{1}{2}, \frac{1}{4}$.
+\item For $\log_{100}|x + y| = \frac{1}{2} \Rightarrow (x + y)^2 = 100$
+
+  And for $\log_{10}y - \log_{10}|x| = \log_{100}4\Rightarrow \log_{10}\frac{y}{|x|} = \log_{10}2$
+
+  $\Rightarrow y = 2|x| \Rightarrow y^2 = 4x^2 \Rightarrow 5x^2 + 4x|x| = 100$
+
+  When $x > 0,\, x = \frac{10}{3}$ and when $x < 0,\,x = -10$
+
+  $\Rightarrow y = \frac{20}{3}, 20$.
+\item Given, $2\log_2\log_2x + \log_{\tfrac{1}{2}}\log_2(2\sqrt{2}x) = 1$
+
+  $\Rightarrow \log_2(\log_2x)^2 - \log_2\log_2(2\sqrt{2}x) = 1$
+
+  $\Rightarrow \log_2\left(\frac{(\log_2)^2}{\log_2(2\sqrt{2}x)}\right) = 1$
+
+  $\Rightarrow \frac{(\log_2x)^2}{\log_2(2\sqrt{2}x)} = 2$
+
+  $\Rightarrow (\log_2x)^2 = \log_2(2\sqrt{2}x)^2$
+
+  $\Rightarrow (\log_2x)^2 - 3 - 2\log_2x = 0$
+
+  Let $z = \log_2x$, then $z^2 - 2z - 3 = 0 \Rightarrow z = -1, 3$
+
+  $\Rightarrow x = \frac{1}{2}, 8$
+
+  For logarithm to be defined $x > 0, 2\sqrt{2}x > 0,\log_2x > 0, \log_2(2\sqrt{2}x) > 0$.
+
+  Thus, $x = 8$ is only acceptable solution.
+\item  Given $\log_{\tfrac{3}{4}}\log_8(x^2 + 7) + \log_{\tfrac{1}{2}}\log_{\tfrac{1}{4}}(x^2 + 7)^{-1} = -2$
+
+  $\Rightarrow \log_{\tfrac{3}{4}}\log_{2^3}(x^2 + 7) + \log_{\tfrac{1}{2}}\log_{2^{-2}}(x^2 + 7)^-1 = -2$
+
+  $\Rightarrow \log_{\tfrac{3}{4}}\left[\frac{1}{3}\log_2(x^2 + 7)\right] + \log_{\tfrac{1}{2}}\left[\frac{1}{2}\log_2(x^2 + 7)\right] = -2$
+
+  Let $y = \log_2(x^2 + 7)$,
+
+  $\Rightarrow \log_{\tfrac{3}{4}}\left(\frac{y}{3}\right) + \log_{\tfrac{1}{2}}\tfrac{1}{2} + \log_{\tfrac{1}{2}}y = -2$
+
+  $\Rightarrow -\log_{\tfrac{3}{4}}3 + \log_2y.\log_{\tfrac{3}{4}}2 - \log_2y = -3$
+
+  $\Rightarrow \log_2y\left(\log_{\tfrac{3}{4}}2 - 1\right) = -3 + \log_{\tfrac{3}{4}}3$
+
+  $\Rightarrow \log_2y\left(\log_{\tfrac{3}{4}}2 - \log_{\tfrac{3}{4}}\tfrac{3}{4}\right) = \log_{\tfrac{3}{4}}\left(\tfrac{3}{4}\right)^{-3} + \log_{\tfrac{3}{4}}3$
+
+  $\Rightarrow \log_2y.\log_{\tfrac{3}{4}}\tfrac{8}{3} = \log_{\tfrac{3}{4}}\tfrac{64}{9} = 2\log_{\tfrac{3}{4}}\tfrac{8}{3}$
+
+  $\Rightarrow \log_2y = 2 \Rightarrow y = 3 \Rightarrow x = \pm3$, both of which are valid for the given equation.
+\item Given, $\log_{10}x + \log_{10}x^{\tfrac{1}{2}} + \log_{10}x^{\tfrac{1}{4}} + \cdots$ to $\infty = y$
+
+  $\Rightarrow \left[1 + \frac{1}{2} + \frac{1}{4} + \cdots~{\rm to~}\infty\right]\log_{10}x = y$
+
+  $\Rightarrow \frac{1}{1 - \frac{1}{2}}\log_{10}x = y \Rightarrow \log_{10}x = \frac{y}{2}$
+
+  Also given that $\frac{1 + 3 + 5 + \cdots + (2y - 1)}{4 + 7 + 10 + \cdots + (3y + 1)} = \frac{20}{7\log_{10}x}$
+
+  $\Rightarrow \frac{\frac{y}{2}[2 + (y - 1)2]}{\frac{y}{2}[8 + (y - 1)3]} = \frac{20}{7\log_{10}x}$
+
+  $\Rightarrow \frac{2y}{3y + 5} = \frac{20}{7\log_{10}x} = \frac{20\times2}{7y} \Rightarrow 7y^2 - 60y - 100 = 0$
+
+  $y = 10, -\frac{10}{7}$. Since number of terms cannot be fraction, therefore $y = 10$ and $x = 10^5$.
+\item Given, $18^{4x - 3} = (54\sqrt{2})^{3x - 4}$
+
+  Taking $\log$ on both sides,
+
+  $\Rightarrow (4x - 3)\log18 = (3x - 4)\log(18\times3\sqrt{2}) = \frac{3}{2}(3x -4)\log18$
+
+  $\Rightarrow 4x - 3 = \frac{3}{2}(3x - 4) \Rightarrow x = 6$
+\item Given, $4^{\log_93} + 9^{\log_24} = 10^{\log_x83}$
+
+  $\Rightarrow 4^{\log_{3^2}3} + 9^{\log_22^2} = 10^{\log_x83}$
+
+  $\Rightarrow 4^{\tfrac{1}{2}\log_33} + 9^{2\log_22} = 10^{\log_x83}$
+
+  $\Rightarrow 4^{\tfrac{1}{2}} + 9^2 = 83 = 10^{\log_x83}\Rightarrow x = 10$
+\item Given, $3^{4\log_9(x + 1)} = 2^{2\log_2(x + 3)}$
+
+  $\Rightarrow 3^{2\log_3(x + 1)} = x^2 + 3 [\because a^{\log_aN} = N]$
+
+  $\Rightarrow 3^{\log_3(x + 1)^2} = x^2 + 2x + 1 = x^2 + 3 \Rightarrow x = 1$
+\item $\frac{6}{5}a^{\log_ax\log_{10}a\log_a5} - 3^{\log_{10}\tfrac{x}{10}} = 9^{\log_{100}x + \log_42}$
+
+  $\Rightarrow \frac{6}{5}a^{\log_{10}x\log_a5} - 3^{\log_{10}x - 1} = 9^{\tfrac{1}{2}\log_{10}x + \tfrac{1}{2}\log_22}$
+
+  $\Rightarrow \frac{6}{5}\left(5^{\log_a5}\right)^{\log_{10}x} - 3^{\log_{10}x - 1} = 3^{\log_{10}x + 1}$
+
+  $\Rightarrow \frac{6}{5}5^{\log_{10}x} = 6.5^{\log_{10}x - 1} = 3^{\log_{10}x - 1}(1 + 3^3)$
+
+  $\Rightarrow \left(\frac{5}{3}\right)^{\log_{10}x - 1} = \frac{10}{6}$
+
+  $\Rightarrow \log_{10}x - 1 = 1\Rightarrow x = 100$
+\item Given, $2^{3x + \tfrac{1}{2}} + 2^{x + \tfrac{1}{2}} = 2^{\log_26}$
+
+  $\Rightarrow 2^{3x}\sqrt{2} + 2^x\sqrt{2} = 6$
+
+  $\Rightarrow (2^x)^3 + 2^2 = 3\sqrt{2} \Rightarrow 2^x = \sqrt{2}, \frac{-\sqrt{2} \pm \sqrt{-10}}{2}$
+
+  Ignoring complex roots we have $x = \frac{1}{2}$.
+\item $(5 + 2\sqrt{6})^{x^2 - 3} + (5 - 2\sqrt{6})^{x^2 - 3} = 10$
+
+  $\Rightarrow (5 + 2\sqrt{6})^{x^2 - 3} + (5 + 2\sqrt{6})^{-(x^2 - 3)} = 10$
+
+  Let $z = (5 + 2\sqrt{6})^{x^2 - 3}$, then
+
+  $\Rightarrow z + \frac{1}{z} = 10 \Rightarrow z = 5\pm2\sqrt{6}$
+
+  $\therefore x = \pm2, \pm\sqrt{2}$
+\item $2\log_{10x}x - \log_x{.01}\geq 4$
+
+  $\Rightarrow 2\log_{10}x - \log_x10^{-2} \geq 4$
+
+  $\Rightarrow 2\log_{10}x + 2\log_x10 \Rightarrow 2\log_{10}x + \frac{2}{\log_{10}x}\geq 4$
+
+  $= 2\left(\log_{10}x + \frac{1}{\log_{10}x}\right)\geq 4$
+
+  Let $z = \log_{10}x$, then $2\left(z + \frac{1}{z}\right) \geq 4$
+
+  $\Rightarrow 2\left[\left(\sqrt{z} - \frac{1}{\sqrt{z}}\right)^2 + 2\right]\geq 4$
+
+  which is true.
+\item Let $E = \log_b a + \log_ab = \log_ba + \frac{1}{\log_ba}$
+
+  Let $z = \log_ba$, then $E = z + \frac{1}{z}$
+
+  Clearly, $z\neq 0$, or the problem will be undefined.
+
+  When $z > 0, E = z + \frac{1}{z} = \left(\sqrt{z} - \frac{1}{\sqrt{z}}\right)^2 + 2 > 2$
+
+  When $z < 0, z = -y$ (let), then
+
+  $E = \left|- y - \frac{1}{y}\right| = y + \frac{1}{y} > 2$.
+\item Given, $\log_{0.3}(x^2 + 8) > \log_{0.3}9x$
+
+  $\Rightarrow x^2 + 8 < 9x \Rightarrow 1 < x < 8$.
+\item $\log_{x - 2}(2x - 3) > \log_{x - 2}(24 - 6x)$
+
+  {\bf Case I}: When $0 < x - 2 < 1 \Rightarrow 2 < x < 3$
+
+  Given inequality becomes $2x - 3 < 24 - 6x \Rightarrow x < \frac{27}{8}$
+
+  But $x < 3$ so $3$ si still limiting value of $x$.
+
+  {\bf Case II}: When $x - 2 > 1 \Rightarrow x > 3$
+
+  Given inequality becomes $2x - 3 > 24 - 6x \Rightarrow x > \frac{27}{3}$
+
+  However, for logarithm to be defined $2x - 3 > 0$ and $24 - 6x > 0$ and also $x - 2 > 0$.
+
+  Combining all these we get $2 < x < 3$.
+\item Given, $\log_{0.3}(x - 1) < \log_{0.09}(x - 1)$
+
+  $\Rightarrow (x - 1)^2 > (x - 1)\Rightarrow x^2 - 3x + 2 > 0$
+
+  $\Rightarrow x < 1, x > 2$.
+  For logarithm function to be defined $x > 1$, thus the interval for $x$ will be $(2,\infty]$.
+\item Given, $\log_{\tfrac{1}{2}}x \geq \log_{\tfrac{1}{3}}x$
+
+  $\Rightarrow \log_{\tfrac{1}{2}}x \geq \log_{\tfrac{1}{2}}x\log_{\tfrac{1}{3}}\frac{1}{2}$
+
+  $\Rightarrow \log_{\tfrac{1}{2}}x\left[1 - \log_{\tfrac{1}{3}}\frac{1}{2}\right]\geq 0$
+
+  $\Rightarrow \log_{\tfrac{1}{2}}x[1 - \log_32]\geq 0$
+
+  $\log_{\tfrac{1}{2}}x \geq 0 \Rightarrow x\leq 1$
+
+  For logarithm function to be defined $x > 0$, thus range of $x$ will be $(0, 1]$.
+\item Given, $\log_{\tfrac{1}{3}}\log_4(x^2 - 5) > 0$
+
+  $\Rightarrow \log_4(x^2 - 5) < 1 \Rightarrow x^2 - 5 < 4 \Rightarrow -3 < x < 3$
+
+  For logarithm to be defined $x^2 - 5 > 0$ and $\log_4(x^2 - 5) > 0$
+
+  $\Rightarrow x < -\sqrt{5}, x > \sqrt{5}$ and $x^2 - 5 > 1 \Rightarrow x < -\sqrt{6}, x > \sqrt{6}$
+
+  Combining all these conditions we get two ranges for $x, (-3, -\sqrt{6})$ and $(\sqrt{6}, 3)$.
+\item Given, $\log(x^2 -2x -2)\leq 0 \Rightarrow x^2 - 2x - 2 \leq 1$
+
+  $\Rightarrow -1\leq x \leq 3$
+
+  For logarithm to be defined $x^2 - 2x - 2 > 0$
+
+  $\Rightarrow x < 1 - \sqrt{3}, x > 1 + \sqrt{3}$
+
+  Combining all these ranges gives us the range as $[-1, 1-\sqrt{3})\cup(1 + \sqrt{3}, 3]$.
+\item Given, $\log_2^2(x-1)^2 - \log_{0.5}(x - 1) > 5$
+
+  $\Rightarrow (2\log_2|x - 1|)^2 - \log_{0.5}(x - 1) > 5$
+
+  $\Rightarrow 4[\log_2(x - 1)]^2 + \log_2(x - 1) > 5$
+
+  Let $z = \log_2(x - 1)$, $\Rightarrow 4x^2 + z - 5 > 0$
+
+  $\Rightarrow 2 < -\frac{5}{4}, x > 1 \Rightarrow x < 1 + \frac{1}{2\sqrt[4]{2}}$
+
+  For $\log$ to be defined $x -1 > 0 \Rightarrow x > 1$
+
+  When $z > 1, x > 3$
+
+  Thus, the range of $x$ is $\left(1, 1 + \frac{1}{2\sqrt[4]{2}}\right)\cup (3, \infty)$.
+\item We have to prove that $\log_217\log_{\tfrac{1}{5}}2\log_3\tfrac{1}{5} > 2$
+
+  $\Rightarrow \log_217\log_32 > 2 \Rightarrow \log_317 > 2$
+
+  $\because 17 > 3^2 \therefore \log_3{17} > 2$
+\item We have to prove that $\frac{1}{3} < \log_{20}3 < \frac{1}{2}$
+
+  $\frac{1}{3} < \log_{20}3 \Rightarrow 1 < \log_{20}3^3 \Rightarrow 1 < \log_{20}27$
+
+  which is true as the base is greater than $1$ and the number is greater than the base.
+
+  $\log_{20}3 < \frac{1}{2} \Rightarrow \log_{20}3^2 < 1 \Rightarrow \log_{20}9 < 1$
+
+  which is true as the base is greater than $1$ and the number is less than the base.
+\item We have to prove that $\frac{1}{4} < \log_{10}2 < \frac{1}{2}$
+
+  $\frac{1}{4} < \log_{10}2 \Rightarrow 1 < \log_{10}2^4 = \log_{10}16$
+
+  which is true because base is greater than $1$ and the number is greater than the base.
+
+  $\log_{10}2 < \frac{1}{2} \Rightarrow \log_{10}2^2 < 1 \Rightarrow \log_{10}4 < 1$
+
+  which is true as the base is greater than $1$ and the number is less than the base.
+\item Given $\log_{0.1}(4x^2 - 1) > \log_{0.1}3x$
+
+  $\Rightarrow 4x^2 - 3x - 1 < 0 \Rightarrow (4x + 1)(x - 1) < 0$
+
+  Thus, $[-\infty, -\frac{1}{4})\cup(1, \infty]$ is the initial solution.
+
+  Now, $x > 0$ is another restriction from R.H.S.
+
+  From L.H.S> $4x^2 - 1 > 0 \Rightarrow x < -\frac{1}{2}, x > \frac{1}{2}$
+
+  Combining all these we get, $\frac{1}{2} < x < 1$.
+\item Given, $\log_2(x^2 - 24) > \log_25x$
+
+  $\Rightarrow x^2 - 24 > 5x \Rightarrow x < -3, x > 8$
+
+  But $x^2 - 24 > 0$ and also $x > 0$ for loarithm function to be defined.
+
+  $\therefore x > 8$.
+\item We have to prove that $\frac{1}{\log_3\pi} + \frac{1}{\log_4\pi} > 2$
+
+  $\Rightarrow \log_{\pi}3 + \log_{\pi}4 > 2$
+
+  $\Rightarrow \log_{\pi}12 > 2 \Rightarrow 12 > \pi^2$ which is true.
+\item Given $(0.01)^{\tfrac{1}{3}}$ and $(0.001)^{\tfrac{1}{5}}$
+
+  Taking $\log$ of both with base $10$,
+
+  $\frac{1}{3}\log_{01}0.01$ and $\frac{1}{5}\log_{10}0.001$
+
+  $-\frac{2}{3}$ and $-\frac{3}{5}$ out of which $-\frac{3}{5}$ is greater, therefore $(0.001)^{\tfrac{1}{5}}$ is greater.
+\item $\log_311 > \log_39 = \log_3(3^2) = 2$ and $\log_23 < \log_24 = 2$.
+
+  Thus, $\log_311$ is geater.
+\item Given, $\log_3(x^2 + 10) > \log_37x$
+
+  $\Rightarrow x^2 + 10 > 7x \Rightarrow x < 2, x > 5$
+
+  However, $x^2 + 10 > 0$ and $x > 0$ for logarithm to be defined.
+
+  Thus, intervals are $0 < x < 2$ and $x > 5$.
+\item We have, $x^{\log_{10}x} > 10$
+
+  $\Rightarrow \log_{10}x\log_{10}x > 1 \Rightarrow \log_{10}x > \pm 1$
+
+  Thus range of values of $x$ would be $(0, 0.1)\cup(10, \infty]$.
+\item We have, $\log_2x\log_{2x}2\log_24x > 1$
+
+  $\Rightarrow \frac{1}{\log_x2}\left[\frac{1}{\log_22x}\log_22^2x\right] > 1$
+
+  $\Rightarrow \frac{1}{\log_x2}\left[\frac{1}{1 + \log_2x}\right]\left[2 + \frac{1}{\log_x2}\right] > 1$
+
+  Let $z = \log_x2$, then
+
+  $\Rightarrow \frac{1}{z}\frac{z}{1 + z}\left[2 + \frac{1}{z}\right] > 1$
+
+  Solving this inequality and applying rules for definition of logarithm we have following range for $x$
+
+  $\left(2^{-\sqrt{2}}, \frac{1}{2}\right)\cup\left(1, 2^{\sqrt{2}}\right)$
+\item Given, $\log_2x\log_32x + \log_3x\log_24x > 0$
+
+  Exchanging base, we have $\log_3x\log_22x + \log_3x\log_24x > 0$
+
+  $\Rightarrow \log_3x(\log_22 + \log_2x + \log_24 + \log_2x) > 0$
+
+  $\Rightarrow \log_3x(3 + 2\log_2x) > 0$
+
+  For $log_3x > 0, x > 1$ and for, $3 + 2\log_2x^2 > 0 \Rightarrow \log_2x^2 > -3$.
+
+  Also for $\log_3x < 0, 0 <x < 1$ and for $3 + \log_2x^2 < 0 \Rightarrow \log_2x^2 < -3$
+\item $\log_{12}60 = \frac{\log_260}{\log_212} = \frac{\log_2(2^2\times3\times5)}{\log_2(2^2\times3)}$
+
+  $= \frac{2 + \log_23 + \log_25}{2 + \log_23}$
+
+  Let $\log_23 = x$ and $\log_25 = y$, then $\log_{12}60 = \frac{2 + x + y}{2 + x}$
+
+  Given $a = \log_630 = \frac{\log_230}{\log_26} = \frac{\log_2(2\times3\times5)}{\log_22\times 3}$
+
+  $= \frac{1 + \log_23 + \log_25}{1 + \log_23} = \frac{1 + x + y}{1 + x}$
+
+  Also given, $b = \log_{15}24$, proceeding similarly $b = \frac{3 + x}{x + y}$
+
+  From these two, we can write $x$ and $y$ in terms of $x$ and $y$,
+
+  $x = \frac{b + 3 - ab}{ab -3}, y = \frac{2a - b - 2 + ab}{ab - 1}$
+
+  Substituting these values for $\log_{12}60$, we get
+
+  $\log_{12}60 = \frac{2ab + 2a - 1}{ab + b + 1}$
+\item $\log_ax, \log_bx$ and $\log_cx$ are in A.P.
+
+  $\therefore 2\log_xb = \frac{1}{\log_xa} + \frac{1}{\log_xc}$
+
+  $\Rightarrow \frac{2}{\log_xb} = \frac{\log_xac}{\log_xa\log_xc}$
+
+  $\Rightarrow 2\log_xc = \log_xac\frac{\log_xb}{\log_xa} \Rightarrow \log_xc^2 = \log_xac\log_ab$
+
+  $\Rightarrow c^2 = ac^{\log_ab}$.
+\item $a = \log_{\tfrac{1}{2}}\sqrt{0.125} > 0$ because both base and number are less than $1$.
+
+  $b = \log_3\left(\frac{1}{\sqrt{24} - \sqrt{17}}\right) = \log_3\left(\frac{\sqrt{24} + \sqrt{17}}{3}\right) > 0$
+
+  because both base and number are greater than $1$.
+\item Given $e^{-\tfrac{\pi}{2}} < \theta < \frac{\pi}{2}$
+
+  Taking $\log$ natural of both sides
+
+  $\log_ee^{-\tfrac{\pi}{2}} < \log_e\theta < \log_e\frac{\pi}{2}$
+
+  $\Rightarrow -\frac{\pi}{2} < \log_e\theta < 1 < \frac{\pi}{2}\left[\because \log_e\tfrac{\pi}{2} < \log_ee\right]$
+
+  $\Rightarrow -\frac{\pi}{2} < \log_e\theta < \frac{\pi}{2}$
+
+  $\Rightarrow \cos(\log_e\theta) > 0$
+
+  Again, $e^{-\tfrac{\pi}{2}} < \theta < \frac{\pi}{2}$
+
+  $\Rightarrow 0 < \theta <\frac{\pi}{2} [\because e^{-\tfrac{\pi}{2}} > 0]$
+
+  $\Rightarrow 0 < \cos\theta < 1 \Rightarrow \log_e\cos\theta < 0$
+
+  $\Rightarrow \cos(\log_e\theta) > \log_e(\cos\theta)$
+\item Given, $\log_2x + \log_2y \geq 6\Rightarrow \log_2xy \geq 6 \Rightarrow xy \geq 64$
+
+  This means $x$ and $y$ are positive as negative values will not be valid for logarithm function.
+
+  A.M $\geq$ G.M $\Rightarrow \frac{x + y}{2} \geq xy \Rightarrow x + y \geq 16$.
+\item Given, $\log_ba\log_ca - \log_aa + \log_ab\log_cb - \log_bb + \log_ac\log_bc - \log_cc = 0$
+
+  $\Rightarrow \frac{(\log a)^2}{\log b\log c} - 1 + \frac{(\log b)^2}{\log a\log c} - 1 + \frac{(\log c)^2}{\log a\log b} - 1 =0$
+
+  Let $x = \log a, y = \log b, z = \log c$, then
+
+  $\frac{x^2}{yz} + \frac{y^2}{zx} + \frac{z^2}{xy} - 3 = 0$
+
+  $\Rightarrow \frac{x^3 + y^3 + z^3 - 3xyz}{xyz} = 0$
+
+  $\Rightarrow (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx) = 0$
+
+  $\Rightarrow \frac{1}{2}(x + y + z)[(x - y)^2 + (y - z)^2 + (z - x)^2] = 0$
+
+  $\because x, y, z$ are different the term inside brackets will be always positive. Thus.
+
+  $x + y + z = 0$, now substituting the original values,
+
+  $\log abc = 0 \Rightarrow abc = 1$.
+\item Since $n$ is a natural number and $p1_p2, \ldots, p_k$ are distinct primes, therefore $a_1, a_2, \ldots, a_k$ are also natural
+  numbers.
+
+  Now $n = p_1^{a_1}p_2^{a_2}\ldots p_k^{a_K}$
+
+  $\Rightarrow \log n = a_1\log p_1 + a_2\log p_2 + \cdots + a_k\log p_k$
+
+  $\log n\geq \log 2 + \log 2 + \cdots + \log 2$ [since bases are primes so minimum value is is $2$ and pwoers are natural
+    numbers so they are greater than $1$]
+
+  $\log n \geq k\log 2$
+\item Let $d$ be the common difference of the A.P., then
+
+  $3\log_yx = 3 + d \Rightarrow \log_yx^3 = 3 + d \Rightarrow x^3 = y^{(3 +d)}$
+
+  $3\log_zy = 3 + 2d \Rightarrow y^3 = z^{(3 + 2d)}$
+
+  $7\log_xz = 3 + 3d \Rightarrow z^7 = x^{(3 + 3d)}$
+
+  $y^3 = z^{(3 + 2d)}\Rightarrow y = z^{\tfrac{3 + 2d}{3}}$
+
+  $x^3 = y^{(3 + d)}\Rightarrow x = y^{\tfrac{3 + d}{3}} = z^{\tfrac{(3 + d)(3 + 2d)}{9}}$
+
+  $z^7 = x^{(3 + 3d)}\Rightarrow x = z^{\tfrac{7}{3 + 3d}}$
+
+  $\therefore \frac{(3 + d)(3 + 2d)}{9} = \frac{7}{3 + 3d}\Rightarrow d = \frac{1}{2}$
+
+  Thus, $x^{18} = y^{21} = z^{28}$.
+\item We have, $\log_418 = \log_{2^2}(2\times3^2) = \frac{1}{2} + \log_23$
+
+  Thus, it will be enough to prove tha $\log_23$ is an irrational number.
+
+  Let $\log_23 = \frac{p}{q}$, where $p, q\in\mathbb{I}$
+
+  $\Rightarrow 2^{\tfrac{p}{q}} = 3 \Rightarrow 2^p = 3^q$
+
+  However, $2^p$ is an even number and $3^q$ is an odd number, and hence the equality will never be achieved.
+  Therefore, $\log_23$ is an irrational number.
+\item Given, $x, y, z$ are in G.P. $\therefore \frac{y}{x} = \frac{z}{y}$
+
+  $\Rightarrow \ln\frac{y}{x} = \ln\frac{z}{y}\Rightarrow \ln y - \ln x = \ln z - \ln y$
+
+  $\Rightarrow \ln x, \ln y, \ln z$ are in A.P.
+
+  $\Rightarrow 1 + \ln x, 1 + \ln y, 1 + \ln z$ are in A.P.
+
+  $\Rightarrow \frac{1}{1 + \ln x}, \frac{1}{1 + \ln y}, \frac{1}{1 + \ln z}$ are in H.P.
+\item $\log_{30}8 = \log_{30}2^3 = 3\log_{30}2 = 3\log_{30}\frac{30}{15}$
+
+  $= 3 - 3(\log_{30}3 + \log_{30}5) = 3(1 - a - b)$.
+\item Given $\log_712 = a$ and $\log_{12}24 = b$
+
+  Multiplying $ab = \log_724$
+
+  Adding $1$ on both sides
+
+  $ab + 1 = \log_724 + \log_77 = \log_7168$
+
+  Similarly, $8a = \log_712^8$ and $5ab = \log_7168^5$
+
+  $\frac{ab + 1}{8a - 5ab} \frac{\log_7168}{\log_712^8 - \log_7168^5}$
+
+  Upon simplification we find that $\log_{54}168 = \frac{ab + 1}{8a - 5ab}$
+\item {\bf Case I}: When $x > 1, x > a^2 + 1$. Also, $a^2 + 1 < 1 \therefore x > 1$
+
+  {\bf Case II}: When $x < 1, x < a^2 + 1$. Also, $a^2 > 0 \therefore x < 1$.
+
+  In both the cases $x > 0$.
+\item Given, $\log_{12}18 = a$ and $\log_{24}54 = b$
+
+  $\therefore ab + 5(a - b) = \frac{\log 18\log 54}{\log 12\log 24} + 5\left(\frac{\log 18}{\log 12} - \frac{\log 54}{\log 24}\right)$
+
+  $= \frac{\log 18\log 54 + 5(\log 18\log 24 - \log 54\log 12)}{\log 12\log 24}$
+
+  $\log 18 = \log 2 + 2\log 3, \log 12 = 2\log 2 + \log 3$
+
+  $\log 24 = 3\log 2 + \log 3, \log 54 = \log 2 + 3\log 3$
+
+  Now it is only a matter of substitution and simplification.
+\item Given, $a, b, c$ are in G.P. so we can write $b^2 = ac$
+
+  Taking $log$ with base $x$,
+
+  $2\log_xb = \log_xa + \log_xc \Rightarrow \frac{2}{\log_bx} = \frac{1}{\log_ax} + \frac{1}{\log_bx}$
+
+  Thus, $\log_ax, \log_bx, \log_cx$ are in H.P.
+\item Let $r$ be the common ratio of the G.P. and $d$ be the common difference of the A.P.
+
+  $\log a_n - b_n = \log a + n\log r - (b + nd) = \log a - b$
+
+  $\Rightarrow n\log r - nd = 0 \Rightarrow \log r = d \Rightarrow b = r^{\tfrac{1}{d}}$.
+\item Given $\log_32, \log_3(2^x - 5)$ and $\log_3\left(2^x - \frac{7}{2}\right)$ are in A.P.
+
+  $\Rightarrow 2\log_3(2^x - 5) = \log_3\left(2^x - \frac{7}{2}\right) + \log_32$
+
+  $\Rightarrow (2^x - 5)^2 = 2\left(2^x - \frac{7}{2}\right)$
+
+  Let $z = 2^x$, then
+
+  $z^2 - 10x  + 25 = 2z - 7 \Rightarrow z^2 - 12z + 32 = \Rightarrow z = 4, 8$
+
+  $\Rightarrow x = 2, 3$, however, if $x = 2$ then $2^x - 5 < 0$ so only acceptable value of $x$ is $3$.
+\item Let $\log_27$ is a rational number i.e. $\log_27 = \frac{p}{q}$, where $p, q\in\mathbb{I}$
+
+  $\Rightarrow 7 = 2^{\tfrac{p}{q}} \Rightarrow 7^q = 2^q$
+
+  However, integral power of $7$ is an odd number while that of $2$ is an even number. Thus, by contradiction
+  $\log_27$ is irrational number.
+\item Given, $\log_{0.5}(x - 2) < \log_{0.25}(x - 2)$
+
+  $\Rightarrow (x- 2)^2 > x - 2 \Rightarrow (x - 2)(x - 3) > 0$
+
+  Thus, $x > 3$ for logarithm function to be defined.
+\stopitemize
