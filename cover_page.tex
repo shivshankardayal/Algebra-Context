@@ -2,32 +2,32 @@
 
 \startcomponent cover_page.lmtx
 
-  \setvariables
-    [document]
-    [titleA=A Variable in Algebra,
-    titleB=A problem-oriented approach,
-    author=Shiv Shankar Dayal]
+  % \setvariables
+  %   [document]
+  %   [titleA=A Variable in Algebra,
+  %   titleB=A problem-oriented approach,
+  %   author=Shiv Shankar Dayal]
 
-  \startpagemakeup
+%   \startpagemakeup
 
-    \startMPcode
+%     \startMPcode
 
-      StartPage ;
+%       StartPage ;
 
-        fill Page enlarged 10mm withcolor \MPcolor{purple} ;
-        draw anchored.lrt(image(draw textext("\getvariable{document}{titleA}")  xsized(.70PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/18, PaperWidth/3.5)) ;
-        draw anchored.lrt(image(draw textext("\getvariable{document}{titleB}")  xsized(.70PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/18, PaperWidth/4.5)) ;
-%        draw anchored.lrt(image(draw textext("\getvariable{document}{titleC}")  xsized(.750PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/20, PaperWidth/5)) ;
-        draw anchored.urt(image(draw textext("\getvariable{document}{author}")   xsized(.375PaperWidth) rotated 90 withcolor white),(urcorner Page) shifted (-PaperWidth/20,-PaperWidth/20)) ;
+%         fill Page enlarged 10mm withcolor \MPcolor{purple} ;
+%         draw anchored.lrt(image(draw textext("\getvariable{document}{titleA}")  xsized(.70PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/18, PaperWidth/3.5)) ;
+%         draw anchored.lrt(image(draw textext("\getvariable{document}{titleB}")  xsized(.70PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/18, PaperWidth/4.5)) ;
+% %        draw anchored.lrt(image(draw textext("\getvariable{document}{titleC}")  xsized(.750PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/20, PaperWidth/5)) ;
+%         draw anchored.urt(image(draw textext("\getvariable{document}{author}")   xsized(.375PaperWidth) rotated 270 withcolor white),(urcorner Page) shifted (-PaperWidth/20,-PaperWidth/20)) ;
 
-        setbounds currentpicture to Page ;
+%         setbounds currentpicture to Page ;
 
-      StopPage ;
+%       StopPage ;
 
-    \stopMPcode
+%     \stopMPcode
 
-  \stoppagemakeup
-
+%   \stoppagemakeup
+  \copypages[images/cover.pdf][n=1]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Credit titles
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -38,16 +38,10 @@
     \ \vfill
 
     {\bf A Variable in Algebra}\\
-   Version 1.0 [\RevisionDate]\\
+    {\color[red]{Early Draft}} [\RevisionDate]\\
     \blank
 
-    % I wanted to use the copyleft symbol, but I have not found out how
-    % to generate it. With \mirror{\copyright} the symbol is generated,
-    % but a rather annoying linebreak is inserted after it. Copy and
-    % paste from the internet doesn't work and I don't know why. (It is
-    % not the first time this happens).
-
-    Copyright, \copyright~ Shiv Shankar Dayal, 2011-2023. All rights reserved.\\\\
+    Copyright, \copyright~ Shiv Shankar Dayal, 2023. All rights reserved.\\\\
     Permission is granted to copy, distribute and/or modify this document under the
     terms of the GNU Free Documentation License, Version 1.3 or any later version
     published by the Free Software Foundation; with no Invariant Sections, no

@@ -271,7 +271,7 @@ Thus, we can show that \startformula D = r\Delta - [A_1ll' + B_2mm' + C_2nn' + C
 \section{Symmetric Determinants}
 A determinant of $n$th order is often wirtten in the form
 
-\startformula \startdeterminant\NC a_{11} \NC a_{12} \NC a_{13} \NC \dotfill \NC a_{1n}\NR
+\startformula \startdeterminant\NC a_{11} \NC a_{12} \NC a_{13} \NC \cdots \NC a_{1n}\NR
   \NC a_{21} \NC a_{22} \NC a_{23} \NC \cdots \NC a_{2n}\NR
   \NC a_{31} \NC a_{32} \NC a_{33} \NC \cdots \NC a_{3n}\NR
   \multispan{9}{\dotfill}\NR
@@ -765,7 +765,7 @@ Determine whether the following system of equations have no solution, unique sol
 \item If $a$ and $x$ are real numbers and $n$ is a positive integer, then show without expanding that $\startdeterminant\NC  a^n - x \NC
   a^{n + 1} - x \NC a^{n + 2} - x\NR\NC a^{n + 3} - x \NC a^{n + 4} - x \NC a^{n + 5} - x\NR\NC a^{n + 6} - x \NC a^{n + 7} - x \NC a^{n + 8} -
   x\NR\stopdeterminant = 0$.
-\item Find $\displaystyle_{r=2}^n(-2)^r\startdeterminant\NC {}^{n - 2}C_{r - 2} \NC {}^{n - 2}C_{r - 1} \NC {}^{n - 2}C_r\NR\NC -3 \NC 1 \NC 1\NR\NC 2 \NC
+\item Find $\displaystyle\sum_{r=2}^n(-2)^r\startdeterminant\NC {}^{n - 2}C_{r - 2} \NC {}^{n - 2}C_{r - 1} \NC {}^{n - 2}C_r\NR\NC -3 \NC 1 \NC 1\NR\NC 2 \NC
   1\NC 0\NR\stopdeterminant, n > 2$.
 \item If $a, b, c$ are non-zero real numbers, show without expanding that $\startdeterminant\NC  b^2c^2 \NC bc \NC b + c\NR\NC c^2a^2 \NC ca \NC c +
   a\NR\NC  a^2b^2 \NC ab \NC a + b\NR\stopdeterminant = 0$.

@@ -1,6 +1,6 @@
-\environment algebra_env.lmtx
+\environment algebra_env.tex
 
-\startproduct algebra.lmtx
+\startproduct algebra.tex
 
   % Date of the last time modifications were introduced:
   \def\RevisionDate{\date}
@@ -80,6 +80,7 @@
       headstyle=italic,
       title=no, %this is the default
       style=normal]
+   \let\frac\dfrac
   %% We begin by setting the headers and footers for this part
 
      \setupheadertexts
@@ -92,17 +93,17 @@
   %     % We set chapter counter to zero.
        \setupheadnumber[chapter][0]
 
-        Chapters making up this part
-       \component logarithm.lmtx
-       \component progressions.lmtx
-       \component complex-numbers.lmtx
-       \component theory-of-equations.lmtx
-       \component permutations-and-combinations.lmtx
-       \component mathematical-induction.lmtx
-       \component binomial-multinomial-expansions.lmtx
-       \component determinants.lmtx
-       \component matrices.lmtx
-       \component inequalities.lmtx
+       % Chapters making up this part
+       %\component logarithm.tex
+       \component progressions.tex
+       %\component complex-numbers.tex
+       %\component theory-of-equations.tex
+       %\component permutations-and-combinations.tex
+       %\component mathematical-induction.tex
+       %\component binomial-multinomial-expansions.tex
+       %\component determinants.tex
+       %\component matrices.tex
+       %\component inequalities.tex
 
   \stoppart
 
@@ -119,8 +120,8 @@
 
       \setuplabeltext[en][chapter=Answers of Chapter ]
 
-      \component logarithm-solutions.lmtx
-      \component progressions-solutions.lmtx
+      %\component logarithm-solutions.tex
+      \component progressions-solutions.tex
 
   \stoppart
   \startpart
@@ -132,7 +133,7 @@
       [{\tfx\hbox to 2em{\hss\pagenumber}}]
     \setuplabeltext[en][Chapter=Appendix]
 
-      \component fdl-1.3.tex
+      %\component fdl-1.3.tex
   \stoppart
 
 

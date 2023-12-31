@@ -1,7 +1,7 @@
-\startenvironment algebra_env.lmtx
+\startenvironment algebra_env.tex
 
   %\mainlanguage[en] % Main language = English
-  \setupbodyfont[9pt] % The document's main (body) font
+  \setupbodyfont[9pt, dejavu] % The document's main (body) font
 
   % Page layout
 
@@ -17,13 +17,10 @@
     ]
 
   \usemodule[tikz]
-  \usemodule[amsl]
-  \usemodule[newmat]
   \setuppapersize[B5]
   \setupexternalfigures [directory=images, location=global] % Image directory
 
   \setupwhitespace[big] % Larger vertical space
-
   \def\startequation{%
     \placeformula
     \startformula}

@@ -1,5 +1,5 @@
-algebra.pdf: *.lmtx Makefile
-	context algebra.lmtx
+algebra.pdf: *.tex Makefile
+	context algebra.tex
 
 clean:
 	rm algebra.pdf
