@@ -1,3 +1,4 @@
+% -*- mode: context; -*-
 \chapter{Progressions}
 \startitemize[n, 1*broad]
 \item Given $t_n = 2n^2 + 1 \Rightarrow t_{n - 1} = 2(n - 1)^2 + 1$
@@ -913,4 +914,162 @@
   \Rightarrow r = \frac{1}{2} \Rightarrow a = 2$. So the G.P. is $2, 1, \frac{1}{2}, \frac{1}{4}, \ldots$.
 \item $p(x) = \tfrac{\tfrac{x^{2n} - 1}{x^2 - 1}}{\tfrac{x^n - 1}{x - 1}} = \frac{x^n + 1}{x + 1}$ so clearly
   $n$ is an odd number for $p(x)$ to be a polynomial in $x$.
+\item $x = a + \frac{a}{r} + \frac{a}{r^2} + \cdots$ to $\infty = \frac{a}{1 - \frac{1}{r}} = \frac{ar}{r -
+  1}$. Similarly $y = \frac{br}{r + 1}$ and $z = \frac{cr^2}{r^2 - 1},\;\therefore \frac{xy}{z} =
+  \frac{ab}{c}$.
+\item Let $a$ be the first term, $r$ be the common ratio and $2n$ be the no. of terms. Then sum of all terms
+  $S = \frac{a(r^{2n} - 1)}{r - 1}$ and sum of odd terms $S_{\mathrm{odd}} = \frac{a(r^{2n} - 1)}{r^2 - 1}$.
+
+  Given, $S = 5S_{\mathrm{odd}}\Rightarrow r = 4$.
+\item $S_n = 3 - \frac{3^{n + 1}}{4^{2n}} \Rightarrow t_n = S_n - S_{n - 1} = \frac{3^n}{4^{2(n - 1)}} -
+  \frac{3^{n + 1}}{4^{2n}} = \frac{16.3^n - 3^{n + 1}}{4^{2n}} = \frac{3^n.13}{4^{2n}}$.
+
+  $\Rightarrow r = \frac{t_n}{t_{n - 1}} = \frac{3}{16}$.
+\item Let $a$ be the first term and $r$ be the common ratio; then $t_n = ar^{n -1}$. Let the sum of all
+  terms succeeding $t_n$ be $S$. Then $S = \frac{ar^n}{1 - r}$.
+
+  $\frac{t_r}{S} = \frac{1 - r}{r}$. If $\frac{1 - r}{r} > 1$ then $r < \frac{1}{2}$, if $\frac{1 - r}{r} =
+  1$ then $r = \frac{1}{2}$ and $\frac{1 - r}{r} < 1$ then $r > \frac{1}{2}$.
+\item $666\ldots n\;\mathrm{digits} = \frac{6}{9}(10^n - 1) = \frac{2}{3}(10^n - 1)$.
+
+  $888\ldots n\;\mathrm{digits} = \frac{8}{9}(10^n - 1). \Rightarrow$ L.H.S. $= \frac{4}{9}(10^{2n} - 2.10^n + 1 -
+  2.10^n -2) = \frac{4}{9}(10^{2n} - 1)$
+
+  R.H.S. $= 444\ldots 2n\;\mathrm{digits} = \frac{4}{9}(10^{2n} - 1) =$ L.H.S.
+\item Let $S = (x + y) + (x^2 + xy + y^2) + (x^3 + x^2y + xy^2 + y^3) + \cdots$ to $n$ terms
+
+  $S = \frac{1}{x - y}[(x^2 - y^2) + (x^3 - y^3) + (x^4 + y^4) + \cdots]$ to $n$ terms
+
+  $= \frac{1}{x - y}\left[\frac{x^2(x^n - 1)}{x - 1} - \frac{y^2(y^n - 1)}{y - 1}\right]$.
+\item $S = \frac{1}{1 - r}\Rightarrow r = \frac{S - 1}{S}$. Let $S' =
+  \displaystyle\sum_{n=0}^{\infty}r^{2n}$ then
+  $S' = \frac{1}{1 - r^2} = \frac{S^2}{2S - 1}$.
+\item Let $a$ be the first term and $r$ be the common ratio. Then $t_m = ar^{m - 1} = \frac{1}{n^2}$ and
+  $t_n = ar^{n - 1} = \frac{1}{m^2} \Rightarrow \frac{t_m}{t_n} = r^{m - n} = \frac{m^2}{n^2} \Rightarrow r
+  = \sqrt[m - n]{\frac{m^2}{n^2}}$.
+
+  $ar^{m - 1} = \frac{1}{n^2} \Rightarrow a = \frac{1}{n^2}\left(\frac{n^2}{m^2}\right)^{\tfrac{m - 1}{m -
+      n}}$
+
+  $\Rightarrow t_{\tfrac{m + n}{2}} = ar^{\tfrac{m + n - 2}{2}} =
+  \frac{1}{n^2}\left(\frac{n^2}{m^2}\right)^{\tfrac{m - 1}{m - n}}.\left(\frac{m^2}{n^2}\right)^{\tfrac{m +
+      n -2}{2(m - n)}} = \frac{1}{mn}$.
+
+  This can be alternatively computed with G.M. formula i.e. $t_{\tfrac{m + n}{2}} = \sqrt{t_mt_n} =
+  \frac{1}{mn}$.
+\item Given condition is $c > 4b - 3a \Rightarrow c - 4b + 3a > 0 \Rightarrow r^2 - 4r + 3 < 0\;[\because a
+  < 0] \Rightarrow r> 3$ or $r < 1$.
+\item Given, $(1 - k)(1 + 2x + 4x^2 + 8x^3 + 16x^4 + 32x^5) = 1 - k^6 \Rightarrow (1 - k)\frac{64x^6 - 1}{x
+  - 1} = 1 - k^6 \Rightarrow k = 2x \Rightarrow \frac{k}{x} = 2$.
+\item Given, $(a^2 + b^2 + c^2)(b^2 + c^2 + d^2)\leq(ab + bc + cd)^2 \Rightarrow (b^2 - ac)^2 + (c^2 - ad)^2
+  + (ad - bc)^2 \leq 0$
+
+  Since $a, b, c, d$ are non-zero real numbers therefore the above conditiion leads to equality if and only
+  if $b^2 = ac, c^2 = ad, ad = bc$ i.e. $a, b, c, d$ are in G.P.
+\item This problem is generalization of previous problem and can be solved similarly.
+\item Let $r$ be the common ratio, then $\beta = \alpha r, \gamma = \alpha r^2, \delta = \alpha r^3$.
+
+  From roots of quadratic equaiton $\alpha + \beta = 3, \alpha\beta = a, \gamma + \delta = 12, \gamma\delta
+  = b$
+
+  $\frac{\gamma + \delta}{\alpha + \beta} = r^2 = 4 \Rightarrow r = 2$ because G.P. is increasing so we
+  discard the negative root.
+
+  $\Rightarrow \alpha = 1 \Rightarrow a = 2, \Rightarrow b = 32$.
+\item Let $a$ be the first term of the A.P. Then $t_{2n + 1} = a + 4n$. So the first term of the G.P. is $a
+  + 4n$.
+
+  Middle term of A.P. $t_{n + 1} = a + 2n$ and middle term of G.P. $= \frac{a + 4n}{2^n}$
+
+  Given, $a + 2n = \frac{a + 4n}{2^n}$ thus, $a$ can found and hence $a + 4n$ which is the mid term can be
+  deduced.
+\item $f(x) = 2x + 1, f(2x) = 4x + 1, f(4x) = 8x + 1$. Given that $f(x), f(2x), f(4x)$ are in G.P.
+
+  $\Rightarrow \frac{f(2x)}{f(x)} = \frac{f(4x)}{f(2x)} \Rightarrow (4x + 1)^2 = (2x + 1)(8x + 1)
+  \Rightarrow 8x + 1 = 10x + 1 \Rightarrow x = 0$.
+\item Let $r$ be the common ratio then $a + b + c = xb \Rightarrow 1 + r + r^2 = xr \Rightarrow x = \frac{1
+  + r + r^2}{r} = \frac{1}{r} + 1 + r$. We know that if $r > 0, r + \frac{1}{r} > 2 \Rightarrow x > 3$ and
+  if $r < 0, r + \frac{1}{r} < -2 \Rightarrow x < -1$.
+\item $x = \frac{1}{1 - a}, y = \frac{1}{1 - b}, z = \frac{1}{1 - c} \Rightarrow \frac{1}{x} = 1 - a,
+  \frac{1}{y} = 1 - b, \frac{1}{z} = 1 - c$
+
+  Thus, $\because a, b, c$ are in A.P. where $|a|, |b|, |c| < 1\;\therefore x, y, z$ are also in A.P.
+\item $p = \frac{1}{1 + \tan^2x} = \cos^2x; q = \frac{1}{1 + \cot^2y} = \sin^2y$
+
+  $\displaystyle\sum_{k = 0}^{\infty}\tan^{2k}x\cot^{2k}y = \frac{1}{1 - \tan^2x\cot^2y}$
+
+  $\frac{1}{\frac{1}{p} + \frac{1}{q} - \frac{1}{pq}} = \frac{\cos^2x\sin^2y}{\cos^2x + \sin^2y - 1}$
+
+  Dividing numerator and denominator with $\cos^2x\sin^2y$, we get
+
+  $= \frac{1}{\csc^2y + \sec^2x - \csc^2y\sec^2x} = \frac{1}{\tan^2x + \cot^2y + 2 - 1 -\tan^2x - cot^2y
+    - \tan^2xcot^2y} = \displaystyle\sum_{k = 0}^{\infty}\tan^{2k}x\cot^{2k}y$.
+\item We know that area of an equilateral triangle is $\frac{\sqrt{3}}{4}a^2$, where $a$ is one of the
+  sides. In this case $\Delta = \frac{3}{4}$.
+
+  Now the area of sides joining mid-point will have side $\frac{a}{2}$ and terefore area will be
+  $\frac{1}{4}$th of the original triangle. This ratio of $\frac{1}{4}$ will continue and areas of all
+  triangles will form a G.P. with common ratio of $\frac{1}{4}$. Thus sum of areas of all these triangles $=
+  \frac{\tfrac{3}{4}}{1 - \tfrac{1}{4}} = 1$.
+\item $1 + |\cos x| + |\cos^2x| + |\cos^3x| + \cdots$ to $\infty = \frac{1}{1 - |\cos x|} = p$(let).
+
+  $\Rightarrow e^{p.\log_e4} = 4^p$. Now given equation is $t^2 - 20t + 64 = 0 \Rightarrow t = 4, 16
+  \Rightarrow p = 1, 2 \Rightarrow |\cos x| = 0, 1/2 \Rightarrow x = \pi/2, \pi/3, 2\pi/3$.
+\item $1 + |\cos x| + |\cos^2x| + |\cos^3x| + \cdots$ to $\infty = \frac{1}{1 - |\cos x|} \Rightarrow
+  \frac{1}{1 - |\cos x|} = 2 \Rightarrow |\cos x| = \frac{1}{2}\Rightarrow \cos x = \pm\frac{1}{2}
+  \Rightarrow S = \left\{\frac{\pi}{3}, \frac{2\pi}{3}\right\}$.
+\item $\sin^2x + \sin^4x + \cdots$ to $\infty = \frac{\sin^2x}{1 - \sin^2x} = \tan^2x$
+
+  Roots of $x^2 - 9x + 8 = 0$ are $1, 8$ i.e. $2^0, 2^3 \Rightarrow \tan x = 0, \sqrt{3}$ (rejecting
+  $-\sqrt{3}$ as for $0< x< \frac{\pi}{2}, \tan x$  cannot be negative.)
+
+  $\frac{\cos x}{\cos x + \sin x} = \frac{1}{1 + \tan x} = 1, \frac{1}{1 + \sqrt{3}}$.
+\item $S_\lambda = \frac{\lambda}{\lambda - 1}$ [Hint: It is a G.P.]
+  $\displaystyle\sum_{\lambda=1}^n(\lambda - 1)S_\lambda = \sum_{\lambda=1}^n\lambda = \frac{n(n + 1)}{2}$.
+\item Let $2^{ax + 1}, 2^{bx + 1}, 2^{cx + 1}$ are in G.P. $\Rightarrow \frac{2^{bx + 1}}{2^{ax + 1}} =
+  \frac{2^{cx + 1}}{2^{bx + 1}} \Rightarrow (b - a)x = (c - b)x \Rightarrow b - a = c - b$
+
+  which implies that $a, b, c$ are in A.P. which is a given and hence we have proven required condition in
+  reverse.
+\item Given, $2\tan^{-1}y = \tan^{-1}x + \tan^{-1}z \Rightarrow \frac{2y}{1 - y^2} = \frac{x + z}{1 - zx}$
+
+  But we are also given that $y^2 = zx \Rightarrow 2y = x + z \Rightarrow x, y, z$ are in A.P. Now $4y^2 =
+  (x + z)^2 = 2(x + z) \Rightarrow x = z = y$ but the common values are not necessarily $0$.
+\item Given, $b - c = a - b\;[\because a, b, c$ are in A.P.$]$. From second condition $(c - b)^2 = (b - a)a
+  \Rightarrow (a - b)^2 = (a - b)a \Rightarrow 2a = b \Rightarrow 3a = c \Rightarrow a:b:c = 1:2:3$.
+\item Since $a, b, c$ are in G.P. $\Rightarrow b^2 = ac$. From second condition, $2(\log 2b - \log 3c) =
+  \log 3c - \log 2b \Rightarrow 3\log 2b = 3\log 3c \Rightarrow 2b = 3c \Rightarrow b = \frac{2a}{3}, c =
+  \frac{4a}{9}$. Clearly, $a$ is the greatest side. Using $\cos$ rule,
+
+  $\cos A = \frac{b^2 + c^2 - a^2}{2bc} = -\frac{1}{2}$ and thus $A > 90^\circ$ making the triangle
+  obtuse-angled triangle.
+\item Let $\alpha, \beta, \gamma$ are the roots. Then $\alpha + \beta + \gamma = -\frac{b}{c}, \alpha\beta +
+  \beta\gamma + \gamma\alpha = \frac{c}{a}, \alpha\beta\gamma = -\frac{d}{a}$. Let $r$ be the common ratio
+  of the G.P. then $\beta = \alpha r, \gamma = \alpha r^2$. Also let $\alpha = x$.
+
+  $\frac{c^3}{b^3} = \frac{c^3}{a^3}.\frac{a^3}{b^3} = -\frac{(\alpha\beta + \beta\gamma +
+    \gamma\alpha)^3}{(\alpha + \beta + \gamma)^3} = -\left(\frac{x^2r + x^2r^3 + x^2r^2}{x + xr +
+    xr^2}\right)^3 = -x^3r^3 = -\alpha\beta\gamma = \frac{d}{a} \Rightarrow c^3a = b^3d$.
+\item Clearly $t_n = \frac{1}{2n - 1} \Rightarrow t_{100} = \frac{1}{199}$.
+\item The corresponding $p$th and $q$th term in the A.P.would be $\frac{1}{qr}$ and $\frac{1}{rp}$. Let $a$
+  be the first term and $d$ be the commond difference of this A.P. Then, $a + (p - 1)d = \frac{1}{qr}$ and
+  $a + (q - 1)d = \frac{1}{rp}$. Subtracting $(p - q)d = \frac{p - q}{pqr} \Rightarrow d = \frac{1}{pqr}$.
+
+  $\Rightarrow a = \frac{1}{qr} - \frac{p - 1}{pqr} = \frac{1}{pqr}. \Rightarrow t_r = \frac{1}{pqr} +
+  \frac{r - 1}{pqr} = \frac{1}{pq}$. Therefore $r$th term in H.P. would be $pq$.
+\item Corrsponding $p$th, $q$th and $r$th term of the A.P. would be $\frac{1}{a}, \frac{1}{b}$ and
+  $\frac{1}{c}$. Let $x$ be the first term and $y$ be the c.d. of this A.P. Then,
+
+  $x + (p - 1)y = \frac{1}{a}, x + (q - 1)y = \frac{1}{b}, x + (r - 1)y = \frac{1}{c}$
+
+  $(p - q)y = \frac{b - a}{ab}\Rightarrow (p - q)ab = \frac{b - a}{y}$. Similarly, $(q - r)bc = \frac{c -
+  b}{y}$ and $(r - p)ca = \frac{c - a}{y}$. Clearly, $(q - r)bc + (r - p)ca + (p - q)ab = 0$.
+\item We have to prove that $\frac{a - b}{b - c} = \frac{a}{c}\Rightarrow ac - bc = ab - ac \Rightarrow 2ac
+  = ab + bc$ which prove that $a, b, c$ are in H.P. Thus required equality is proven in reverse.
+\item Let $d$ be the common difference of the corresponding $A.P.$ Then, $\frac{1}{x_n} - \frac{1}{x_1} = (n
+  - 1)d \Rightarrow \frac{x_1 - x_n}{d} = (n - 1)x_1x_n =$ R.H.S.
+
+  Now, $\frac{1}{x_1} - \frac{1}{x_2} = d \Rightarrow \frac{x_1 - x_2}{d} = x_1x_2$. Similarly, $\frac{x_2
+    - x_3}{d} = x_2x_3$ and so on till $\frac{x_{n - 1} - x_n}{d} = x_{n - 1}x_n$. Adding these and
+  comparing with R.H.S. we get the required equality.
 \stopitemize

@@ -2,35 +2,48 @@
 
 \startcomponent cover_page.lmtx
 
-  % \setvariables
-  %   [document]
-  %   [titleA=A Variable in Algebra,
-  %   titleB=A problem-oriented approach,
-  %   author=Shiv Shankar Dayal]
+  \setvariables
+    [document]
+    [titleA=A Variable in Algebra,
+    titleB=A problem-oriented approach,
+    author=Dayashru]
 
-%   \startpagemakeup
+  \startpagemakeup
 
-%     \startMPcode
+    \startMPcode
 
-%       StartPage ;
+      StartPage ;
 
-%         fill Page enlarged 10mm withcolor \MPcolor{purple} ;
-%         draw anchored.lrt(image(draw textext("\getvariable{document}{titleA}")  xsized(.70PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/18, PaperWidth/3.5)) ;
-%         draw anchored.lrt(image(draw textext("\getvariable{document}{titleB}")  xsized(.70PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/18, PaperWidth/4.5)) ;
-% %        draw anchored.lrt(image(draw textext("\getvariable{document}{titleC}")  xsized(.750PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/20, PaperWidth/5)) ;
-%         draw anchored.urt(image(draw textext("\getvariable{document}{author}")   xsized(.375PaperWidth) rotated 270 withcolor white),(urcorner Page) shifted (-PaperWidth/20,-PaperWidth/20)) ;
+        fill Page enlarged 10mm withcolor \MPcolor{purple} ;
+        draw anchored.lrt(image(draw textext("\getvariable{document}{titleA}")  xsized(.70PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/18, PaperWidth/3.5)) ;
+        draw anchored.lrt(image(draw textext("\getvariable{document}{titleB}")  xsized(.60PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/18, PaperWidth/4.5)) ;
+%       draw anchored.lrt(image(draw textext("\getvariable{document}{titleC}")  xsized(.750PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/20, PaperWidth/5)) ;
+        draw anchored.urt(image(draw textext("\getvariable{document}{author}")   xsized(.15PaperWidth) rotated 270 withcolor white),(urcorner Page) shifted (-PaperWidth/20,-PaperWidth/20)) ;
 
-%         setbounds currentpicture to Page ;
+        setbounds currentpicture to Page ;
+        fill fullcircle scaled 12cm shifted (.5PaperWidth, .5PaperHeight) withcolor white;
+        pair z, x, xn, y, yn;
+        z := (.5PaperWidth, .5PaperHeight);
+        x := z + (6cm, 0);
+        xn := z - (6cm, 0);
+        y := z + (0, 6cm);
+        yn := z - (0, 6cm);
+        drawdblarrow x--xn;
+        drawdblarrow y--yn;
+        draw function(2,"x","exp(x)",-5,1.6,.1) xyscaled(1cm, 1cm) shifted z withcolor \MPcolor{purple};
+        draw function(2,"x","sin(x)",-5,5,.1) xyscaled(1cm, 1cm) shifted z withcolor \MPcolor{purple};
+        label("$y = e^x$", z + (.9cm, 5cm));
+        label("$y = \sin x$", z + (1.2cm, 1.2cm));
+        label.bot("$x$", x - (0.1cm, 0));
+        label.lft("$y$", y - (0, 0.1cm));
+      StopPage ;
 
-%       StopPage ;
+    \stopMPcode
 
-%     \stopMPcode
-
-%   \stoppagemakeup
-  \copypages[images/cover.pdf][n=1]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Credit titles
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \stoppagemakeup
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % Credit titles
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   {
     \page[yes]
@@ -58,14 +71,14 @@
     \stopalignment
   }
 
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % Table of contents
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   % Table of contents
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   \starttitle
     [title={Table of Contents}]
 
-    % Header
+%     % Header
     \setupheadertexts
       [\tfx Table of Contents]
       [\tfx\pagenumber]
