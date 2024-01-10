@@ -263,7 +263,23 @@ We also see that this obeys vector addition i.e. $OP_1 + OP_2 = OP_1 + P_1P = OP
 
 \subsection{Subtraction}
 \startplacefigure[title={Complex numbers subtraction},reference=fig:cns]
-\externalfigure[complex-numbers-subtraction.pdf]
+\startMPcode
+drawarrow (-1cm, 0cm)--(3cm, 0cm);
+drawarrow (0cm, -1cm)--(0cm, 3cm);
+draw (0cm, 0cm)--(2cm, 1cm);
+draw (0cm, 0cm)--(1cm, 2cm);
+draw (0cm, 0cm)--(-1cm, -2cm);
+draw (0cm, 0cm)--(1cm, -1cm);
+draw (1cm, 2cm)--(2cm, 1cm);
+draw (2cm, 1cm)--(1cm, -1cm);
+draw (-1cm, -2cm)--(1cm, -1cm);
+label.rt("$x$", (3cm, 0));
+label.top("$y$", (0, 3cm));
+label.urt("$P_1(x_1, y_1)$", (2cm, 1cm));
+label.top("$P_2(x_2, y_2)$", (1cm, 2cm));
+label.lrt("$P(x_1 - x_2, y_1 - y_2)$", (1cm, -1cm));
+label.bot("$P_2'(-x_2,- y_2)$", (-1cm, -2cm));
+\stopMPcode
 \stopplacefigure
 In \in {Figure} [fig:cns], we first represent $-z_2$ by $P_2'$ so that  $P_2P_2'$ is bisected at $O.$ Complete the parallelogram $OP_1PP_2'.$ Then it can be
 easily seen that $P$  representd the difference $z_1 - z_2.$

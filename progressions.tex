@@ -19,6 +19,8 @@ be $a + (n - 1)d$. These terms are typically written as $t_1, t_2, t_3, \ldots, 
 Following above discussion, we can clearly say that the $n$th term of an arithmetic progression is given by $t_n = a + (n - 1)d$,
 where $a$ is called the first term and $d$ the common difference.
 
+\placeformula[eq:progression-tn]\startformula t_n = a + (n - 1)d\stopformula
+
 \subsection{Sum of an Arithmetic Progression}
 Let $S_n$ represent the sum of first $n$ terms of an arithmetic progression, then we can write.
 
@@ -27,11 +29,13 @@ Writing the terms in reverse order we have
 \startformula S_n = [a + (n - 1)s] + [a + (n - 2)d] + \cdots + (a + d) + a\stopformula
 Adding term by term, we get
 \startformula 2S_n = [2a + (n - 1)d] + [2a + (n - 1)d] + \cdots\text{~to~}n\text{~terms~}\stopformula
-\startformula 2S_n = n[2a + (n - 1)d]\Rightarrow S_n = \frac{n}{2}[2a + (n - 1)d]\stopformula
+  \startformula 2S_n = n[2a + (n - 1)d]\stopformula
+\placeformula[eq:progression-sn]\startformula S_n = \frac{n}{2}[2a + (n - 1)d]\stopformula
 
 We also see that $S_n = \frac{n}{2}(t_1 + t_n)$
 
-We also see that if a series is $\displaystyle 1 + 2 + 3 + \cdots + n = \sum_{i=0}^ni = \frac{n(n + 1)}{2}$.
+We also see that if a series is \placeformula[eq:progression-nn]]\startformula\displaystyle 1 + 2 + 3 +
+  \cdots + n = \sum_{i=0}^ni = \frac{n(n + 1)}{2}.\stopformula
 
 \subsection{Arithmetic Mean}
 When three quantities are in arithmetic progression the quantity in the middle is known to be arithmetic mean of the other two. For
@@ -51,6 +55,8 @@ Second A.M. $= a + 2d = \frac{a(n - 1) + b}{n + 1}$
 $\cdots$
 
 $n$th A.M. $= a + nd = \frac{a + nb}{n + 1}$
+
+\placeformula[eq:progression:amn]\startformula A_n = \frac{a + nb}{n + 1}\stopformula
 
 Suppose there are $n$ terms of an A.P., then the arithmetic mean of those $n$ terms is given by $\frac{t_1 + t_2 + \cdots +
   t_n}{n}$.
@@ -91,13 +97,13 @@ last three terms is also $36$ which is represented by $n = -3$.
 
 \subsection{Sum of Squares and Cubes and More}
 We observe that
-\startformula i^3 - (i - 1)^3 = 3i^3 - 3i + 1 \Rightarrow \sum_{i = 1}^n[i^3 - (i - 1)^3] = 3\sum_{i = 0}^ni^2 - \frac{3n(n + 1)}{2} + n\stopformula
+\placeformula[eq:progressions:ss]\startformula i^3 - (i - 1)^3 = 3i^3 - 3i + 1 \Rightarrow \sum_{i = 1}^n[i^3 - (i - 1)^3] = 3\sum_{i = 0}^ni^2 - \frac{3n(n + 1)}{2} + n\stopformula
 \startformula n^3 = 3\sum_{i = 0}^ni^2 - \frac{3n(n + 1)}{2} + n \Rightarrow 3\sum_{i=0}^ni^2 = n^3 + \frac{3n(n + 1)}{2} - n\stopformula
-\startformula\sum_{i=0}^ni^2 = \frac{n(n + 1)(2n + 1)}{6}\stopformula
+\placeformula[eq:progressions:sc]\startformula\sum_{i=0}^ni^2 = \frac{n(n + 1)(2n + 1)}{6}\stopformula
 
 Following in a similar fashion, we can show that
 
-\startformula\sum_{i=0}^n = \left\{\frac{n(n + 1)}{2}\right\}^2\stopformula
+\placeformula[eq:progressions:sn]\startformula\sum_{i=0}^n = \left\{\frac{n(n + 1)}{2}\right\}^2\stopformula
 
 More powers can be evaluated in a similar fashion.
 
@@ -575,6 +581,37 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
 \item If $a, b, c$ are in A.P., prove that $\frac{bc}{ab + ac}, \frac{ca}{bc + ab}, \frac{ab}{ca + cb}$ are in H.P.
 \item If $a, b, c$ are in H.P., prove that $\frac{a}{b + c - a}, \frac{b}{c + a - b}, \frac{c}{a + b - c}$ are in H.P.
 \item If $a, b, c$ are in H.P., prove that $\frac{a}{b + c}, \frac{b}{c + a}, \frac{c}{a + b}$ are in H.P.
+\item If $a, b, c$ are in A.P., and $x, y, z$ are in G.P.; show that $x^{b - c}.y^{c - a}.z^{a - b} = 1$.
+\item If $p$th, $q$th, $r$th and $s$th term of an A.P. be in G.P., prove that $p - q, q - r, r - s$ are in G.P.
+\item If $p$th, $q$th and $r$th terms of an A.P. and G.P. both be $a, b$ and $c$, show that $a^{b - c}b^{c -
+  a}c^{a - b} = 1$.
+\item If $a, b, c$ be in A.P. and $b, c, d$ be in H.P., prove that $ad = bc$.
+\item If $a^x = b^y = c^z$ and $a, b, c$ are in G.P., show that $x, y, z$ are in H.P.
+\item If $\frac{x + y}{2}, y, \frac{y + z}{2}$ be in H.P., show that $x, y, z$ are in G.P.
+\item If $x, y, z$ be in G.P., and $x +a , y + a , z + a$ be in H.P., prove that $a = y$.
+\item If three positive numbers $a, b, c$ are in A.P., G.P. and H.P. as well, then find their values.
+\item If $a, b, c$ be in A.P., $b, c, d$ be in G.P. and $c, d, e$ be in H.P., prove that $a, c, e$ are in
+  G.P.
+\item If $a, b, c$ be in A.P. and $a^2, b^2, c^2$ be in H.P., prove that $-\frac{a}{2}, b, c$ are in G.P. or
+  else $a = b = c$.
+\item If $a, b, c$ are the $p$th, $q$th and $r$th terms of boht an A.P. and a G.P., prove that $a^bb^cc^a =
+  a^cb^ac^b$.
+\item An A.P. and a G.P. of positive terms have the same first term. The sum of their first, second and
+  third terms are respectively $1, \frac{1}{2}$ and $2$. Show that the sum of their fourth terms is
+  $\frac{19}{2}$.
+\item If $\frac{a - x}{px} = \frac{a - y}{qy} = \frac{a - z}{rz}$ and $p, q, r$ be in A.P., show that
+  $x, y, z$ are in H.P.
+\item An A.P. and a H.P. have the same first term $a$, the same last term $b$ and the same number of terms
+  $n$. Prove that the product of the $r$th term of A.P. and the $(n - r + 1)$th terrm of term of H.P. is
+  $ab$.
+\item Prove that if from each term of the three consecutive terms of an H.P. half the second term be
+  subtracted the resulting terms are in G.P.
+\item If $y - x, 2(y - a), y - z$ are in H.P., prove that $x - a, y - a, z - a$ are in G.P.
+\item If $a, b, c$ be in A.P., $p, q, r$ be in H.P, and $ap, bq, cr$ be in G.P., show that $\frac{p}{r} +
+  \frac{r}{p} = \frac{a}{c} + \frac{c}{a}$.
+\item If $a, b, x$ be in A.P., $a, b, y$ be in G.P. and $a, b, z$ be in H.P., prove that $4z(x - y)(y - z) =
+  y(x - z)^2$.
+\item If $x, 1, z$ be in A.P., $x, 2, z$ be in G.P., show that $x, 4, z$ are in H.P.
 \item Find the sum of $n$ terms of the series whose $n$th term is $12n^2 - 6n + 5$.
 \item Find the sum to $n$ terms of the series $1^2 + 3^2 + 5^2 + 7^2 + \cdots$.
 \item Find the sum to $n$ terms of the series $1.2.3 + 2.3.4 + 3.4.5 + \cdots$.
@@ -664,7 +701,7 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
 \item If $a_1, a_2, \ldots, a_n$ are in A.P. where $a_i > 0\,\forall i,$ show that \startformula \frac{1}{\sqrt{a_1} + \sqrt{a_2}} +
   \frac{1}{\sqrt{a_2} + \sqrt{a_3}} + \cdots + \frac{1}{\sqrt{a_{n - 1}} + \sqrt{a_n}} = \frac{n - 1}{\sqrt{a_1} + \sqrt{a_n}}\stopformula
 \item If $a_1, a_2, \cdots, a_n$ are in A.P., whose common differemce is $d$ show that $\displaystyle\sum_{2}^n\tan^{-1}\frac{d}{1 +
-  a_{n - 1}a_n} = \tan^{-1}\frac{a_n - a_n}{1 + a_na_1}$.
+  a_{n - 1}a_n} = \tan^{-1}\frac{a_n - a_1}{1 + a_na_1}$.
 \item If $a_1, a_2, \ldots, a_n$ are the first $n$ items of an A.P. with first term $a$ and common difference $d$ such
   that $ad > 0.$ Let $S_n = \frac{1}{a_1a_2} + \frac{1}{a_2a_3} - \cdots + \frac{1}{a_{n - 1}a_n}$ Prove that the product
   $a_1a_nS_n$ does not depend on $a$ or $d$.
@@ -675,29 +712,28 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
 \item Prove that $\tan 70^\circ, \tan 50^\circ + \tan 20^\circ, \tan 20^\circ$ are in A.P.
 \item If $\log_l x, \log_m x, \log_n x$ are in A.P. and $x \neq 1,$ prove that $n^2 = (nl)^{\log_l m}$.
 \item The length of sides of a right angled triangle are in A.P., show that their ratio is $3:4:5$
-\item If $\log_3 2, \log_3(2^x - 5), \log_3\left(2^x - \frac{7}{2}\right)$ are in A.P., determine the value of $x$.
 \item Find the values of $a$ for which $5^{1 + x} + 5^{1 - x}, \frac{a}{2}, 25^x + 25^{-x}$ are in A.P.
 \item If $\log 2, \log(2^x - 1)$ and $\log(2^x + 3)$ are in A.P., then find $x$.
 \item If $1, \log_y x, \log_zy, -15\log_xz$ are in A.P., then prove that $x = z^3$ and $y = z^{-3}$.
 \item Show that $\sqrt{2}, \sqrt{3}, \sqrt{5}$ cannot be terms of a single A.P.
 \item A circle of one centimeter radius is drawn on a piece of paper and with the same center $3n - 1$ other circles are
   drawn of radii $2$ cm, $3$ cm, $4$ cm and so on. The inner circle is painted blue, the ring between that and next circle is
-  painted red, the next ring yellow then other rings blue, red, yellow and so on in this order. Show that the successive aread of
+  painted red, the next ring yellow then other rings blue, red, yellow and so on in this order. Show that the successive areas of
   each color are in A.P.
 \item If $x, y, z(x, y, z\neq 0)$ are in A.P. and $\tan^{-1}x, \tan^{-1}y, \tan^{-1}z$ are also in A.P., then prove that
   $x = y = z$.
 \item If $\theta$ and $\alpha$ are two real numbers such that $\frac{\cos^4\theta}{\cos^2\alpha}, \frac{1}{2},
   \frac{\sin^4\theta}{\sin^2\alpha}$ are in A.P., prove that $\frac{\cos^{2n + 2}\theta}{\cos^{2n}\alpha}, \frac{1}{2},
-  \frac{\sin^{2n + 2}\theta}{\sin^{2n}\alpha}$.
-\item If $a_n = \displaystyle\int_0^\pi (\sin 2nx/\sin x)dx,$ show that $a_1, a_2, a_3, \ldots$ are in A.P.
-\item If $l_n = \displaystyle\int_0^{\frac{\pi}{4}}tan^nxdx,$ show that $\frac{1}{l_2 + l_4}, \frac{1}{l_3 + l_5}, \frac{1}{l_4 + l_6},
+  \frac{\sin^{2n + 2}\theta}{\sin^{2n}\alpha}$ are also in A.P..
+\item If $a_n = \displaystyle\int_0^\pi (\sin 2nx/\sin x)dx$, show that $a_1, a_2, a_3, \ldots$ are in A.P.
+\item If $l_n = \displaystyle\int_0^{\tfrac{\pi}{4}}\tan^nxdx,$ show that $\frac{1}{l_2 + l_4}, \frac{1}{l_3 + l_5}, \frac{1}{l_4 + l_6},
   \cdots$ are in A.P. Find the common difference of A.P.
+\item If $I_n = \displaystyle\int_{0}^\pi\frac{1 - \cos2nx}{1 - \cos2x}dx$, then show that $I_1, I_2, I_3,
+  \ldots$ are in A.P.
 \item If $\alpha, \beta, \gamma$ are in A.P.and $\alpha = \sin(\beta + \gamma), \beta = \sin(\gamma + \alpha)$ and $\gamma
   = \sin(\alpha + \beta).$ Prove that $\tan \alpha = \tan \beta = \tan \gamma$.
 \item Suppose $a, b, c$ are three positive real numbers in A.P., such that $abc = 4.$ Prove that the minimum value of $b$
   is $4^{\tfrac{1}{3}}$.
-\item The sixth term of an A.P. is $2,$ and its common difference is greater than $1.$ Show that the value of the common
-  difference of the progression so that the product of first, fourth and fifth terms is greatest is $\frac{8}{5}$.
 \item Find the sum of $n$ terms of the series: $\log a + \log\frac{a^3}{b} + \log \frac{a^5}{b^2} + \log \frac{a^7}{b^3} +
   \cdots$.
 \item The first, second and the last terms of an A.P. are $a,b, c$ respectively. Prove that the sum of al the terms is
@@ -712,7 +748,7 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
 \item A postman delivered daily for $42$ days $4$ more letters each day than on the previous day. The total delivery made
   for the first $24$ days of the period was the same as that for the last $18$ days. How many letters did he deliver during the
   whole period?
-\item If $S_n$ denotes the sum to $n$ terms of an A.P. and $S_n = n^2p, S_m = m^2p, m\neq n,$ prove that $S_n = p^3$.
+\item If $S_n$ denotes the sum to $n$ terms of an A.P. and $S_n = n^2p, S_m = m^2p, m\neq n,$ prove that $S_p = p^3$.
 \item There are $n$ A.P.'s whose common difference are $1, 2, 3, \ldots, n$ respectively the first term of each being
   unity. Prove that the sum of their $n$th terms is $\frac{n}{2}(n^2 + 1)$.
 \item If $S_1, S_2, \ldots, S_m$ are the sum of $n$ terms of $m$ A.P.s whose first terms are $1, 2, \ldots, m$ and whose
@@ -721,22 +757,20 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
   1:2.$ On this line take an arbitrary point $M$ lying inside the square. Prove that the distances from $M$ to the sides $AB, AD,
   BC, CD$ of the square taken in that order, form an A.P.
 \item If the sides of a right-angled triangle are in G.P., find the cosine of the greater acute angle.
-\item If $a, b, c, d$ are non-zero real numbers and $(a^2 + b^2 + c^2)(b^2 + c^2 + d^2) = (ab + bc + cd)^2,$ prove that
-  $a, b, c, d$ are in G.P.
 \item Does there exist a geometric progression containing $27, 8$ and $12$ as three of its terms? If it exists, how many
   such progressions are possible?
 \item Show that $10, 11, 12$ cannot be terms of a G.P.
-\item If $\displaystyle\int_0^{\frac{\pi}{2}}\cos^nx\cos(nx)dx,$ then prove that $I_1, I_2, I_3, \ldots$ are in G.P.
+\item If $I_n = \displaystyle\int_0^{\frac{\pi}{2}}\cos^nx\cos(nx)dx$, then prove that $I_1, I_2, I_3, \ldots$ are in G.P.
 \item Let $\displaystyle I_n = \int_0^\pi \frac{\sin(2n - 1)x}{\sin x}dx.$ Show that $I_1, I_2, I_3, \ldots$ are in A.P. as well as in
   G.P.
 \item Prove that the three successive terms of a G.P. will form sides of a triangle if the common ratio $r$ satisfied the
   inequality $\frac{1}{2}(\sqrt{5} - 1) < r < \frac{1}{2}(\sqrt{5} + 1)$.
 \item Find out whether $111\ldots1( 91$ digits $)$ is a prime number.
 \item Find the natural number $a$ for which $\displaystyle\sum_{k = 1}^nf(a + k) = 16(2^n - 1),$ where the function $f$ satisfied the
-  relation $f(x + y) = f(x)f(y)$ for all natural nuumbers $x, y$ and further $f(1) = 2$.
+  relation $f(x + y) = f(x)f(y)$ for all natural numbers $x, y$ and further $f(1) = 2$.
 \item In a certain test, there are $n$ questions. In this test $2^{n - i}$ students give wrong answers to at least $i$
   questions ($1\leq i \leq n.$) If total no. of wrong answers given is $2047,$ find the value of $n$.
-\item If $S_1, S_2, S_3, \ldots, S_2n$ are the sums of infinite geometric series whose first terms are respectively $1, 2,
+\item If $S_1, S_2, S_3, \ldots, S_{2n}$ are the sums of infinite geometric series whose first terms are respectively $1, 2,
   3, \ldots, 2n$ and common ratio are respectively $\frac{1}{2}, \frac{1}{3}, \cdots, \frac{1}{2n + 1},$ find the value of $S_1^2 +
   S_2^2 + \cdots + S_{2n - 1}^2$.
 \item A sqaure is given, a second square is made by joining the middle points of the first square and then a third square
@@ -752,25 +786,19 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
 \item The sides of a triangle are in G.P. and its largest angle is twice the smallest one. Prove that the common ratio of
   the G.P. lies in the interval $(1, \sqrt{2})$.
 \item If $a, b, c, d$ are in G.P., then prove that $ax^3 + bx^2 + cx + d$ is divisible by $ax^2 + c$.
-\item If $a, b, c$ are three distinct real numbers and they are in G.P. If $a + b + c = xb,$ then prove that $x < -1$ or
-  $x > 3$.
-\item If $a, b, c, d, p$ are real and $(a^2 + b^2 + c^2)p^2 - 2(ab + bc + cd)p + (b^2 + c^2 + d^2)\leq 0.$ Show that $a,
+\item If $a, b, c, d, p$ are real and $(a^2 + b^2 + c^2)p^2 - 2(ab + bc + cd)p + (b^2 + c^2 + d^2)\leq 0$. Show that $a,
   b, c, d$ are in G.P. whose common ratio is $p$.
 \item If $2x^4 = y^4 + z^4, xyz = 8$ and $\log_yx, \log_zy, \log_xz$ are in G.P., show that $x = y = z = 2$.
 \item If $a, b, c, d$ are in both A.P. and G.P. and $b = 2,$ then find the number of such sequences.
 \item If $\log_x a, a^{x/2}, \log_b x$ are in G.P., then find $x.$
 \item The $(m + n)$th and $(m - n)$th terms of a G.P. are $p$ and $q$ respectively. Show that $m$th and $n$th terms are
-  $\sqrt{pq}$ and $p\left(\frac{q}{p}\right)^{\frac{m}{2n}}$ respectively.
+  $\sqrt{pq}$ and $p\left(\frac{q}{p}\right)^{\tfrac{m}{2n}}$ respectively.
 \item If the $p$th, $q$th and $r$th terms of an A.P. are in G.P., then find the common ratio of the G.P.
 \item A G.P. consists of $2n$ terms. If the sum of the terms occupying the odd places is $S_1,$ and that of the terms in
   even places is $S_2,$ show that the common ratio of the progression is $S_2/S_1$.
-\item If $x\neq 1, y\neq 1, x \neq y,$ find the sum to $n$ terms of the series $(x + y) + (x^2 + xy + y^2) + (x^3 + x^2y +
-  xy^2 + y^3) + \cdots$.
-\item Find a geometric progression of real numbers such that the sum of its first four terms is equal to $30$ and sum of
-  the squares of its first four terms is $340$.
 \item If $S_n$ denotes the sum of $n$ terms of a G.P. whose first term and common ratio are $a$ and $r$ respectively, show
   that \startformula rS_n + (1 - r)\sum_{n = 1}^nS_n = na\stopformula
-\item Find the sum of $2n$ terms of the series where every even term if $x$ times the term just before it and every odd
+\item Find the sum of $2n$ terms of the series where every even term is $x$ times the term just before it and every odd
   term is $y$ times the term just before it, the first term being $1$.
 \item Prove that in the sequence of numbers $49, 4489, 444889, \ldots$ in which every number is made by inserting $48$ in
   the middle of previous number as indicated, each number is the square of an integer.
@@ -807,25 +835,8 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
   third year, and so on up to the end of $n$th year. If the rate of interest is $\$r$ per rupee and the interest is compounded
   annually, find the amount the man will receive at the end of $(n + 1)$th year.
 \item Find the value of $(0.16)^{\log_{2.5}\left(\frac{1}{3} + \frac{1}{3^2} + \frac{1}{3^3} + \cdots \infty\right)}$
-\item One side of an equilateral triangle is $24$ cm. The mid-point of its sides are joined to form another triangle,
-  whose mid-points are in turn joined for form still another triangle. The process continues indefinitely. Find the sum of
-  perimeter of all the triangles.
-\item A ball is dropped from a height of $900$ cm. Each time is rebounces, it rises to $2/3$ of the height it has fallen
-  through. Find the total distance travelled by the ball before it comes to rest.
-\item A square is drawn by joining the mid-points of the sides of a given square. A third square is drawn inside the
-  second square in the same way and this process continutes indeinitely. If the sides of the first square is $4$ cm, determine the
-  sum of the areas of all the squares.
-\item In an increasing G.P., the sum of the first and the last term is $66,$ the product of the second and the last term
-  but one term is $128,$ and the sum of all the terms is $126.$ How many terms are there in the progression?
-\item The sum of an infinite G.P. is $2$ and the sum of the G.P. made from the cubes of the terms of this infinite series
-  is $24.$ Then find the series.
-\item The sum of an infinite G.P. is $3$ and the sum of squares of the terms of this series is also $3.$ Find the sequence.
-\item If the sum of an infinitely decreasing G.P. is $3.5$ and the sum of the squares of its terms is $147/16.$ Show that
-  the sum of the cubes of the terms is $1029/38$.
-\item Find the value of $x$ in $]-\pi, \pi[$ which satisfy the equation $8^{1 + |\cos x| + \cos^2 x + |\cos^3 x| + \cdots
-      \text{~to~}\infty} = 64$.
 \item If $A = 1 + r^a + r^{2a} + \cdots \text{~to~}\infty$ and $B = 1 + r^b + r^{2b} + \cdots \text{~to~}\infty,$ prove
-  that $r = \left(\frac{A - 1}{A}\right)^{\frac{1}{a}} = \left(\frac{B - 1}{B}\right)^{\frac{1}{b}}$.
+  that $r = \left(\frac{A - 1}{A}\right)^{\tfrac{1}{a}} = \left(\frac{B - 1}{B}\right)^{\tfrac{1}{b}}$.
 \item If $s_1, s_2, \ldots, s_n$ are the sums of infinite geometric series whose first terms are $1, 2, 3, \ldots, n$ and
   common ratios are $\frac{1}{2}, \frac{1}{3}, \cdots, \frac{1}{n + 1}$ respectively, then prove that $s_1 + s_2 + \cdots + s_n =
   \frac{1}{2}n(n + 3)$.
@@ -835,13 +846,9 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
   3x - 9$ on the interval $[-5, 3],$ and the difference between the first and second terms is $f'(0).$ Prove that the common ratio
   of the progression is $\frac{2}{3}$.
 \item Find the sum of the series $\frac{5}{13} + \frac{55}{13^2} + \frac{555}{13^3} + \cdots \infty$.
-\item If $e^{{\sin^2x + \sin^4x + \sin^6x + \cdots \infty}\log_e2}$ satisfies the equation $x^2 - 9x + 8 = 0,$ find the
-  value of $\frac{\cos x}{\cos x + \sin x}, 0 < x < \frac{\pi}{2}$.
 \item If $-\frac{\pi}{2} < x < \frac{\pi}{2}$ and the sum to infinite number of terms of series $\cos x + \frac{2}{3}\cos
   x\sin^2x + \frac{4}{9}\cos x\sin^4x + \cdots$ is finite, then show that $x$ lies in the set $\left(-\frac{\pi}{2},
   \frac{\pi}{2}\right)$
-\item Suppose $0 < x < \pi$ and the expression $e^{{1 + |\cos x| + \cos^2x + |\cos^3x| + \cdots \infty}\log_e 4}$
-  satisfies the quadratic equation $y^2 - 20y + 64 = 0,$ then find the value of $x$.
 \item An A.P. and a G.P. with positive terms have the same number of terms and their first terms as well as the last
   terms are equal. Show that the sum of A.P. is greater than or equal to the sum of the G.P.
 \item Given a G.P. and A.P. of positive terms $a, a_1, a_2, \ldots, a_n, \ldots$ and $b, b_1, b_2, \ldots, b_n, \ldots$
@@ -859,9 +866,6 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
 \item If $p$ be the first of the $n$ arithmetic means between two numbers $a$ and $b$ and $q$ the first of the $n$
   harmonic means between the same two numbers, prove that the value of $q$ cannot lie between $p$ and $\left(\frac{n + 1}{n -
     1}\right)^2p$.
-\item Find a three digit number whose consecutive numbers form a G.P. If we subtract $792$ from this number, we get a
-  number consisting of the same digits written in the reverse order. Now if we increase the second digit of the required number by
-  $2,$ the resulting number will form an A.P.
 \item An A.P. and a G.P. each has $p$ as first term and $q$ as second term where $0 < q < p.$ Find the sum to infinity,
   $s$ of the G.P., and prove that the sum of first $n$ terms of the A.P. may be written as $np - \frac{n(n - 1)}{2}.\frac{p^2}{s}$.
 \item If $\log_xy, \log_zx, \log_yz$ are in G.P., $xyz = 64$ and $x^3, y^3, z^3$ are in A.P., then find $x, y$ and $z.$
@@ -885,28 +889,10 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
 \item If $a^{\frac{1}{x}} = b^{\frac{1}{y}} = c^{\frac{1}{z}}$ and $a, b, c$ are in G.P. prove that $x, y, z$ are in A.P.
 \item If $a, b, c$ be in A.P., $l, m, n$ be in H.P. and $al, bm, cn$ be in G.P. with common ratio not equal to $1$ and
   $a, b, c, l, m, n$ are positive show that $a:b:c = \frac{1}{n}:\frac{1}{m}:\frac{1}{l}$.
-\item Find three numbers $a, b, c$ between $2$ and $18$ such that their sum is $25$, the numbers $2, a, b$ are
-  consecutive terms of an A.P. and the numbers $b, c, 18$ are consecutive terms of a G.P.
-\item If $a, b, c$ are in A.P. and $a, mb, c$ are in G.P.; prove that $a, m^2b, c$ are in H.P.
 \item An A.P., a G.P. and an H.P. have the same first term $a$ abd same second term $b,$ show that $n + 2$th terms will
   be in G.P. is $\frac{b^{2n + 2} - a^{2n + 2}}{ab(b^{2n} - a^{2n})} = \frac{n + 1}{n}$.
-\item The second, third and sixth terms of an A.P. are consecutive terms of a geometric progression. Find the common
-  ratio of the G.P.
-\item A sequence of numbers is formed by adding together corresponding terms of an A.P. and a G.P. with common ratio $2.$
-  The first term of the sequence is $57,$ the second term is $94$ and the third term is $171.$ Find the fourth term. Find also an
-  expression for the $n$th term of the sequence.
-\item The first, eighth and twenty second terms of an arithmetic progression are three consecutive terms of a geometric
-  progression. Find the common ratio of the geometric progression. If sum of the first twenty two terms of arithmetic progression
-  is $275,$ find its first term.
-\item An arithmetic progression has common difference $2$ and a geometric progression has common ratio $2.$ A new
-  sequence is formed by adding together the corresponding terms of these progressions. Given that the first term of this new
-  sequence is $8$ and the fifth term is $91,$ find the first terms.
-\item If $a, b, c$ are in A.P. and $b, c, d$ are in H.P., prove that $ad = bc$.
-\item If $a, b, c$ are in H.P., $b, c, d$ are in G.P. and $c, d, e$ are in A.P., show that $e = \frac{ab^2}{(2a - b)^2}$.
 \item If an A.P. and a G.P. have the same 1st and 2nd terms then show that every other term of the A.P. will be less than
   the corresponding term of G.P. all the terms being positive.
-\item If three unequal numbers are in H.P. and their squares are in A.P. show that they are in the ratio $1 +
-  \sqrt{3}:-2:1 - \sqrt{3}$ or $1 - \sqrt{3}:-2:1 + \sqrt{3}$.
 \item If $A, G, H$ are the arithmetic, geometric and harmonic means of two positive real numbers $a$ and $b$, and if $A =
   kh,$ prove that $A^2 = kG^2.$ Find the ratio of $a$ to $b.$ For what value of $k$ does the ratio exist.
 \item If $p$ be the $r$th term when $n$ A.M.'s are inserted between $a$ and $b$ and $q$ be the $r$th term when $n$ H.M.'s
@@ -915,7 +901,7 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
   station $P$ and second station $Q$ with speed $x$ and other half distance with speed $y$. Train $B$ covers the whole distance
   with speed $\frac{x + y}{2}.$ Which train will reach $Q$ earlier.
 \item If $n$ is a root of equation $x^2(1 - ac) - x(a^2+c^2) - (1 + ac) = 0$ and if $n$ H.M.'s are inserted between $a$
-  and $c,$ show that the difference between the first and last mena is equal to $ac(a - c)$.
+  and $c,$ show that the difference between the first and last mean is equal to $ac(a - c)$.
 \item If $A_1, A_2, \ldots, A_n$ are the $n$ A.M.'s and $H_1, H_2, \ldots, H_n$ the $n$ H.M.'s between $a$ and $b,$ show
   that $A_rH_{n - r + 1} = ab$ for $1\leq r\leq n$.
 \item Find the coefficient of $x^{99}$ and $x^{98}$ in the polynomial $(x - 1)(x - 2)(x - 3)\ldots(x - 100)$.
@@ -967,7 +953,6 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
   3x)(1 + 4x)} + \cdots$.
 \item Find the sum to $n$ terms of the series $\frac{1}{(1 + x)(1 + ax)} + \frac{a}{(1 + ax)(1 + a^2x)} + \frac{1}{(1 +
   a^2x)(1 + a^3x)} + \cdots$.
-\item Find the $n$th term of the series $-1, -3, 3, 23, 63, 129, \ldots$.
 \item Find the sum to $n$ terms of the series $\frac{1}{\sqrt{1} + \sqrt{3}} + \frac{1}{\sqrt{3} + \sqrt{5}} +
   \frac{1}{\sqrt{5} + \sqrt{7}} + \cdots$.
 \item If $a_1, a_2, \ldots, a_n, \ldots$ are in A.P. with first term $a$ and common difference $d,$ then prove that
@@ -993,7 +978,7 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
 \item If $H_n = 1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n},$ then prove that $H_n = n - \left(\frac{1}{2} +
   \frac{2}{3} + \frac{3}{4} + \cdots + \frac{n - 1}{n}\right)$.
 \item Show that $\frac{1}{x + 1} + \frac{2}{x^2 + 1} + \frac{4}{x^4 + 1} + \cdots + \frac{2^n}{x^{2^{n}} + 1} =
-  \frac{1}{x + 1} - \frac{2^{n + 1}}{x^{2^{n + 1}} -1}$.
+  \frac{1}{x - 1} - \frac{2^{n + 1}}{x^{2^{n + 1}} -1}$.
 \item Show that $\left(1 + \frac{1}{3}\right)\left(1 + \frac{1}{3^2}\right)\left(1 + \frac{1}{3^4}\right) \cdots \left(1
   + \frac{1}{3^{2^{n}}}\right) = \frac{3}{2}\left(1 - \frac{1}{3^{2^{n + 1}}}\right)$.
 \item If $x + y + z = 1$ and $x, y, z$ are positive numbers show that $(1 - x)(1 - y)(1 - z)\geq 8xyz$.
