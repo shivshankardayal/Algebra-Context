@@ -1,4 +1,4 @@
-\chapter{Complex Numbers and Polynomials}
+\chapter{Complex Numbers}
 By definition a complex number has two parts: a real part and an imaginary part. You already know about real numbers and know about
 them. However, imaginary numbers is something different.
 \section{Imaginary Numbers}
@@ -102,7 +102,7 @@ $\overline{z} = x - iy. \overline{z}$ is the typical representation for conjugat
 
   \startformula \overline{R(z)} = \frac{\overline{P}(\overline{z})}{\overline{Q}(\overline{z})}\stopformula
 \item If \startformula z = \startdeterminant \NC a_1 \NC a_2 \NC a_3\NR \NC b_1 \NC b_2 \NC b_3 \NR \NC c_1 \NC c_2 \NC c_3\NR\stopdeterminant, \text{~then~}\overline{z}
-  = \startdeterminant\NC\overline{a_1} \NC \overline{a_2} \NC \overline{a_3}\NR\NC \overline{b_1} &\NC \overline{b_2} \NC \overline{b_3}
+  = \startdeterminant\NC\overline{a_1} \NC \overline{a_2} \NC \overline{a_3}\NR\NC \overline{b_1} \NC \overline{b_2} \NC \overline{b_3}
     \NR \NC\overline{c_1} \NC \overline{c_2} \NC \overline{c_3}\NR\stopdeterminant,\stopformula
   where $a_i, b_i, c_i(i = 1,2,3)$ are complex numbers.
 \stopitemize
@@ -555,43 +555,44 @@ rewrite the abobe result as
   If $\alpha$ is a real number and $z_0$ is a fixed point, then $\\arg(z - z_0) =\alpha$ represents a vector starting at
   $z_0$(exlcluding  the point $z_0$) and making an angle $\alpha$ with real $x$-axis.
 
-\startplacefigure
-\externalfigure[complex-number-loci1.pdf]
-\stopplacefigure
+  \startplacefigure
+    \externalfigure[complex-number-loci1.pdf]
+  \stopplacefigure
 
   Now suppose $z_0$ is origin $O$, then the above equation becomes $\\arg(z) = \alpha$, which is a vector starting at origin and
   making an angle $\alpha$, which is a vector starting at origin and making an angle $\alpha$ with $x$-axis.
 \item If $z_1$ and $z_2$ are two fixed points such that $|z - z_1| = |z - z_2|$ then $z$ represents perpendicular bisector of the
   segment joining $A(z_1)$ and $B(z_2).$ And $z, z_1, z_2$ will form an isoscles triangle.
-\startplacefigure
-\externalfigure[complex-number-loci2.pdf]
-\stopplacefigure
+  \startplacefigure
+    \externalfigure[complex-number-loci2.pdf]
+  \stopplacefigure
 
   If $z_1$ and $z_2$ are two fixed points and $k > 0, k\neq 1$ is a real number then $\frac{|z- z_1|}{|z - z_2|} = k$ represents a
   circle.
+
 \item $|z - z_1| + |z - z_2| = k$. Let $z_1$ and $z_2$ be two fixed points and $k$ be a positive real number.
   \startitemize[i]
-    \item Refer \in{Figure}[fig:flbee], if $k > |z - z_2|,$ then $|z - z_1| + |z - z_2| = k$ represents an ellipse with foci at $A(z_1)$ and $B(z_2)$ and length
-      of major axis $= k$.
-      \startplacefigure[title={Locus of an Ellipse}, reference=fig:flbee]
-        {\hbox{\starttikzpicture
+  \item Refer \in{Figure}[fig:flbee], if $k > |z - z_2|,$ then $|z - z_1| + |z - z_2| = k$ represents an ellipse with foci at $A(z_1)$ and $B(z_2)$ and length
+    of major axis $= k$.
+    \startplacefigure[title={Locus of an Ellipse}, reference=fig:flbee]
+      {\hbox{\starttikzpicture
           \draw (0, 0) ellipse (2 and 1.5);
           \draw (-2, 0) node[anchor=east] {$C$} (2, 0) node[anchor=west] {$D$};
           \draw (-2, 0) -- (2, 0);
           \draw (-1, 0) node[anchor=north] {$A(z_1)$} (1, 0)
-                node[anchor=north] {$B(z_2)$};
+          node[anchor=north] {$B(z_2)$};
           \draw (-1, 0) circle(1pt) (1, 0) circle(1pt) (2, -.4)
-                node[anchor=west] {$CD = k$};
+          node[anchor=west] {$CD = k$};
         \stoptikzpicture}}
-      \stopplacefigure
-    \item If $k = |z - z_2|$, then it represents the line segment joining $z_1$ and $z_2$.
-    \item If $k < |z - z_2|$, thne it does not represent any curve/line in Argand plane.
+    \stopplacefigure
+  \item If $k = |z - z_2|$, then it represents the line segment joining $z_1$ and $z_2$.
+  \item If $k < |z - z_2|$, thne it does not represent any curve/line in Argand plane.
   \stopitemize
 \item If $|z - z_1| - |z - z_2| = k$. Let $z_1$ and $z_2$ be two fixed points and $k$ be a positive real number.
   \startitemize[i]
   \item Refer \in{Figure}[fig:flbep], if $k\neq |z - z_2|$, then it represnts a parabola with foci at $A(z_1)$ and $B(z_2)$.
-      \startplacefigure[title={Locus of a Parabola}, reference=fig:flbep]
-        {\hbox{\starttikzpicture
+    \startplacefigure[title={Locus of a Parabola}, reference=fig:flbep]
+      {\hbox{\starttikzpicture
           \draw plot[variable=\t,samples=100,domain=-50:50]
           ({2*sec(\t)},{.7*tan(\t)});
           \draw plot[variable=\t,samples=100,domain=-50:50]
@@ -601,34 +602,34 @@ rewrite the abobe result as
           \draw (-2.7, 0) node[anchor=east] {$A(z_1)$} (2.7, 0)
           node[anchor=west] {$B(z_2)$};
         \stoptikzpicture}}
-      \stopplacefigure
-    \item If $k = |z_1 - z_2|$, then it represents the straight line joining $A(z_1)$ and $B(z_2)$ but excluding the segment $AB$
-      \startplacefigure[location=force]
-        {\hbox{\starttikzpicture
+    \stopplacefigure
+  \item If $k = |z_1 - z_2|$, then it represents the straight line joining $A(z_1)$ and $B(z_2)$ but excluding the segment $AB$
+    \startplacefigure[location=force]
+      {\hbox{\starttikzpicture
           \draw[dashed] (-1, 0) -- (1, 0);
           \draw[->, >= stealth] (-1, 0) -- (-2, 0);
           \draw[->, >= stealth] (1, 0) -- (2, 0);
           \draw (-1, 0) node[anchor=north] {$A(z_1)$} (1, 0) node[anchor=north] {$B(z_2)$};
         \stoptikzpicture}}
-      \stopplacefigure
+    \stopplacefigure
   \stopitemize
-  \item $|z - z_1|^2 + |z - z_2|^2 = |z_1 - z_2|^2$. If $z_1$ and $z_2$ are two fixed points then it represents a circle with $z_1$
-    and $z_2$ as the endpoints of one of the diameters.
-    \startplacefigure[location=force]
-      {\hbox{\starttikzpicture
+\item $|z - z_1|^2 + |z - z_2|^2 = |z_1 - z_2|^2$. If $z_1$ and $z_2$ are two fixed points then it represents a circle with $z_1$
+  and $z_2$ as the endpoints of one of the diameters.
+  \startplacefigure[location=force]
+    {\hbox{\starttikzpicture
         \draw (0, 0) circle(2);
         \draw (-2, 0) -- (2, 0) (-2, 0) node[anchor=east] {$A(z_1)$}
         (2, 0) node[anchor=west] {$B(z_2)$};
         \draw (0, 0) circle(1pt) (0,0) node[anchor=north] {$O$};
       \stoptikzpicture}}
-    \stopplacefigure
-  \item $\arg\left(\frac{z - z_1}{z - z_2}\right) = \alpha$. Let $z_1$ and $z_2$ be any two fixed points and $\alpha$ be a real
-    number such that $0\leq \alpha \leq \pi$.
-    \startitemize[i]
-    \item If $0 < \alpha < \pi$ and $\alpha \neq \pi/2$, then it represents a segment of a circle passing through $A(z_1)$ and
-      $B(z_2)$.
-      \startplacefigure[location=force]
-        {\hbox{\starttikzpicture
+  \stopplacefigure
+\item $\arg\left(\frac{z - z_1}{z - z_2}\right) = \alpha$. Let $z_1$ and $z_2$ be any two fixed points and $\alpha$ be a real
+  number such that $0\leq \alpha \leq \pi$.
+  \startitemize[i]
+  \item If $0 < \alpha < \pi$ and $\alpha \neq \pi/2$, then it represents a segment of a circle passing through $A(z_1)$ and
+    $B(z_2)$.
+    \startplacefigure[location=force]
+      {\hbox{\starttikzpicture
           \draw (0, 0) circle(2);
           \draw (-1.414, -1.414) -- (1.414, -1.414);
           \draw (-1.414, -1.414) -- (1.414, 1.414) (1.414, -1.414) -- (1.414,
@@ -638,10 +639,10 @@ rewrite the abobe result as
           -1.414) node[anchor=north west] {$B(z_2)$};
           \draw (1.214, 1.114) node[anchor=north] {$\alpha$};
         \stoptikzpicture}}
-      \stopplacefigure
-    \item If $\alpha = \pi/2$, then it represents a circle with diameter as the line segment joining $A(z_1)$ and $B(z_2)$.
-      \startplacefigure[location=force]
-        {\hbox{\starttikzpicture
+    \stopplacefigure
+  \item If $\alpha = \pi/2$, then it represents a circle with diameter as the line segment joining $A(z_1)$ and $B(z_2)$.
+    \startplacefigure[location=force]
+      {\hbox{\starttikzpicture
           \draw (0, 0) circle(2);
           \draw (-2, 0) -- (2, 0);
           \draw (-2, 0) -- (1.414, 1.414) (2, 0) -- (1.414, 1.414) (-2, 0) --
@@ -653,73 +654,63 @@ rewrite the abobe result as
           \draw (1.2, 1.15) node[anchor=north] {$\pi/2$} (0, -1.7)
           node[anchor=south] {$\pi/2$};
         \stoptikzpicture}}
-      \stopplacefigure
-    \item If $\alpha = \pi$, then it represents the straight line joining $A(z_1)$ and $B(z_2)$ but excluding the line segment $AB$.
-      \startplacefigure[location=force]
-        {\hbox{\starttikzpicture
+    \stopplacefigure
+  \item If $\alpha = \pi$, then it represents the straight line joining $A(z_1)$ and $B(z_2)$ but excluding the line segment $AB$.
+    \startplacefigure[location=force]
+      {\hbox{\starttikzpicture
           \draw[dashed] (-1, 0) -- (1, 0);
           \draw[->, >= stealth] (-1, 0) -- (-2, 0);
           \draw[->, >= stealth] (1, 0) -- (2, 0);
           \draw (-1, 0) node[anchor=north] {$A(z_1)$} (1, 0) node[anchor=north] {$B(z_2)$};
         \stoptikzpicture}}
-      \stopplacefigure
-    \item If $\alpha = 0,$ then it represents the straight line joining $A(z_1)$ and $B(z_2)$.
-      \startplacefigure[location=force]
-        {\hbox{\starttikzpicture
+    \stopplacefigure
+  \item If $\alpha = 0,$ then it represents the straight line joining $A(z_1)$ and $B(z_2)$.
+    \startplacefigure[location=force]
+      {\hbox{\starttikzpicture
           \draw (-1, 0) -- (1, 0);
           \draw (-1, 0) node[anchor=north] {$A(z_1)$} (1, 0) node[anchor=north] {$B(z_2)$};
           \draw (-1, 0) circle(1pt) (1, 0) circle(1pt);
         \stoptikzpicture}}
-      \stopplacefigure
-    \stopitemize
+    \stopplacefigure
+  \stopitemize
 \stopitemize
-
-\section{Remainder Theorem}
-If $f(x)$ us a polynomial in $x$ and if $f(a) = 0$, then $f(x)e$ is exactly divisible by $x - a$. Thus, we can say that an $n$th
-degree polynomial can be resolved into $n$ equal or unequal factors. Let the polynomial $x^n + p_1x^{n - 1} + p_2x^{n - 2} + \ldots
-+ p_{n - 1}x + p_n$ have the roots $x_1, x_2, \ldots, x_n$ so that there exists factorization $x^n + p_1x^{n - 1} + p_2x^{n - 2} + \ldots
-+ p_{n - 1}x + p_n = (x - x_1)(x - x_2)\ldots(x - x_n)$.
-
-We then have following relations:
-\startformula x_1 + x_2 + \ldots + x_n = -p_1\stopformula
-\startformula x_1x_2 + x_1x_3 + \ldots + x_1x_n + x_2x_3 + \ldots + x_{n - 1}x_n = -p_2\stopformula
-\startformula x_1x_2x_3 + \ldots + x_{n -2}x_{n - 1}x_n = -p_3\stopformula
-\startformula \ldots\stopformula
-\startformula x_1x_2\ldots x_n = \pm p_n\stopformula
 
 \section{Problems}
 Find the square root of the following complex numbers:
 
 
-\startitemize[n, 1*broad]
-\item $7 + 8i$
-\item $3 + 4i$
-\item $a^2 - b^2 + 2abi$
-\item $7 - 25\sqrt{-2}$
-\item $\sqrt[4]{-81}$
+\startitemize[n, 1*broad, horizontal, four]
+\startitem $7 + 8i$\stopitem
+\startitem $a^2 - b^2 + 2abi$\stopitem
+\startitem $\sqrt[4]{-81}$\stopitem
+\stopitemize
+\startitemize[n,continue,1*broad]
 \item Find the square root of \startformula \frac{x^2}{y^2} + \frac{y^2}{x^2} + \frac{1}{2i}\left(\frac{x}{y} + \frac{y}{x}\right) +
   \frac{31}{16}\stopformula
-\item Find the square root of \startformula \frac{x^2}{y^2} + \frac{y^2}{x^2} - \frac{1}{i}\left(\frac{x}{y} - \frac{y}{x}\right) -
-  \frac{9}{4}\stopformula
-\item Find the square root of \startformula x^2 + \frac{1}{x^2} + 4i\left(x - \frac{1}{x}\right) - 6\stopformula
-\item Find $\sqrt{2 + 3\sqrt{-5}} + \sqrt{2 - 3\sqrt{-5}}$
-\item Find $\sqrt{i}\sqrt{-i}$
 \stopitemize
 
 \noindent Simplify the following in the form of $A + iB$
 
+\startitemize[n,continue,1*broad, horizontal, three]
+\startitem $i^{n + 80} + i^{n + 50}$\stopitem
+\startitem $\left(i^{17} + \frac{1}{i^{15}}\right)^3$\stopitem
+\startitem $\frac{(1 + i)^2}{2 + 3i}$\stopitem
+\startitem $\left(\frac{1}{1 + i} + \frac{1}{1 - i}\right)\frac{7 + 8i}{7 - 8i}$\stopitem
+\startitem $\frac{(1 + i)^{4n + 7}}{(1 - i)^{4n - 1}}$\stopitem
+\startitem $\frac{1}{1 - \cos\theta + 2i\sin\theta}$\stopitem
+\startitem $\frac{(\cos x + i\sin x)(\cos y + i\sin y)}{(\cot u + i)(i + \tan v)}$\stopitem
+\stopitemize
 \startitemize[n,continue,1*broad]
-\item $i^{n + 80} + i^{n + 50}$
-\item $\left(i^{17} + \frac{1}{i^{15}}\right)^3$
-\item $\frac{(1 + i)^2}{2 + 3i}$
-\item $\left(\frac{1}{1 + i} + \frac{1}{1 - i}\right)\frac{7 + 8i}{7 - 8i}$
-\item $\frac{(1 + i)^{4n + 7}}{(1 - i)^{4n - 1}}$
-\item $\frac{1}{1 - \cos\theta + 2i\sin\theta}$
-\item $\frac{(\cos x + i\sin x)(\cos y + i\sin y)}{(\cot u + i)(i + \tan v)}$
-\item Evaluate i. $i^5$ ii. $i^{67}$ iii. $i^{-59}$ iv. $i^{2014}$
+\item Evaluate:
+  \startitemize[i, horizontal, four]
+  \startitem $i^5$\stopitem
+  \startitem $i^{67}$\stopitem
+  \startitem $i^{-59}$\stopitem
+  \startitem $i^{2014}$\stopitem
+  \stopitemize
 \item If $a<0, b>0$, then prove that $\sqrt{ab}$ is equal to $\sqrt{|a|b}i$.
 \item Prove that $i^n + i^{n + 1} + i^{n + 2} + i^{n + 3} = 0$.
-\item Find the value of the sum $\sum_{n = 1^13}(i^n + i^{n + 1})$
+\item Find the value of the sum $\displaystyle\sum_{n = 1}^{13}(i^n + i^{n + 1})$.
 \item Simplify and find the value of $\frac{2^n}{(1 + i)^{2n}} + \frac{(1 + i)^{2n}}{2^n}$
 \item Find different values of $i^n + i^{-n}, \,\forall\,n\in I$.
 \item If $4x + (3x - y)i = 3 - 6i$, then find the value of $x$ and $y$.
@@ -1228,9 +1219,9 @@ Find the square root of the following complex numbers:
   1}\cos\frac{n\pi}{3}\right)$
 \item Let $A = x + y + z, A' = x' + y' + z', AA' = x" + y" + z", B = x + y\omega + z\omega^2, B' = x' + y'\omega + z'\omega^2, BB'
   = x", y"\omega, z"\omega^2, C = x + y\omega^2 + z\omega, C' = x' y'\omega^2 + z'\omega, CC' = x" + y"\omega^2 + z"\omega,$ then
-  find $x", y"$ and $z"$ in terms of $x, y, z$ and $x', y' z'$.
+  find $x'', y''$ and $z''$ in terms of $x, y, z$ and $x', y' z'$.
 \item If $\omega$ is a cube root of unity and $x + y + z = A, x + y\omega + z\omega^2 = B, x + y\omega^2 + z\omega = C$, then
-  express $x, y z$ in terms of $A, B, C$. Also, prove that $|A|^2 + |B|^2 + |C|^2 = 3(|x|^2 + |y|^2 + |z|^2)$
+  express $x, y, z$ in terms of $A, B, C$. Also, prove that $|A|^2 + |B|^2 + |C|^2 = 3(|x|^2 + |y|^2 + |z|^2)$
 \item Prove the equaity $(ax - by - cz - dt)^2 + (bx + ay - dz + ct)^2 + (cx + dy + az - bt)^2 + (dx - cy + bz + at)^2 = (a^2 + b62
   + c^2 + d^2)(x^2 + y^2 + z^2 + t^2)$
 \item Prove the equality: $\frac{\cos n\theta}{\cos^n\theta} = 1 - {}^nC_2\tan^2\theta + {}^nC_4\tan^4\theta - \ldots + A$, where
@@ -1254,20 +1245,10 @@ Find the square root of the following complex numbers:
   k\theta,\;[{}^nC_0 = 1]\stopformula
 \item If $\alpha = \frac{\pi}{2n}$ and $p < 2n$, then prove that
   \startformula \sin^{2p}\alpha + \sin^{2p}2\alpha + \ldots + \sin^{2p}n\alpha = \frac{1}{2} + n\frac{1.3.5.\ldots(2p - 1)}{2.4.\ldots 2p}\stopformula
-\item Prove that the polynomial $x(x^{n - 1} - na^{n - 1}) + a^n(n - 1)$ is divisible by $(x - a)^2$.
-\item Prove that the polynomial $(1 - x^n)(1 + x) - 2nx^n(1 - x) - n^2x^n(1 - x)^2$ is divisible by $(1 - x)^3$.
 \item Prove that $(x + y)^n - x^n - y^n$ is divisible by $xy(x + y)(x^2 + xy + y^2)$ if $n$ is an odd number and not divisible by
   $3$.
 \item Prove that $(x + y)^n - x^n - y^n$ is divisible by $xy(x + y)(x^2 + xy + y^2)^2$ if $n$, when divided by $6$ has a remainder
   of $1$.
-\item Show that the expression $(x + y + z)^m - x^m - y^m - z^m, m = 2n + 1\;\forall\;n\in P$ is divisible by $(x + y + z)^3 - x^3 -
-  y^3 - z^3$.
-\item Find the condition necessary and sufficient for $x^3 + y^3 + z^3 + kxyz$ to be divisible by $x + y + z$.
-\item Find the condition for $x^n - a^n$ to be divisible by $x^p - a^p\;\forall\;n, p \in P$.
-\item Find out whether the polynomial $x^{4a} + x^{4b + 1} + x^{4c + 2} + x^{4d + 3}, \;\forall\;a,b,c,d\in P$, is divisible by $x^3
-  + x^2 + x + 1$.
-\item Find out at what $n$ the polynomial $1 + x^2 + x^4 + \ldots + x^{2n - 2}$ is divisible by the polynomial $1 + x + x^2 +
-  \ldots + x^{n - 1}$.
 \item Prove that the polynomial $(\cos\theta + x\sin\theta)^n - \cos n\theta - x\sin n\theta$ is divisible by $x^2 + 1$.
 \item Proove that the polynomial $x^n\sin\theta - p^{n - 1}x\sin n\theta + p^n\sin(n - 1)\theta$ is divisible by $x^2 -
   2px\cos\theta + p^2$.
