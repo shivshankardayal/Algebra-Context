@@ -9,11 +9,11 @@
     [
       width=middle,
       height=middle,
-      topspace=1cm,
-      backspace=2cm,
+      topspace=1.5cm,
+      backspace=3cm,
       header=1cm,
-      headerdistance=.5cm,
-      footer=1cm
+      headerdistance=.8cm,
+      footer=1.5cm
 %      marking=empty,
 %      location=middle
     ]
@@ -39,9 +39,9 @@
   \setupitemize [color=maincolor]
   \setupcaptions [headstyle=\bfx, style=\tfx] % Style of table and image titles
 
-  \definecolor [maincolor] [r=0,g=0.5,b=.7] % Title colour
+  \definecolor [maincolor] [r=.3,g=.3,b=.3] % Title colour
 
-  \definecolor [purple] [r=.7,g=0.7,b=.7] % Cover colour
+  \definecolor [purple] [r=.3,g=0.3,b=.3] % Cover colour
 
   % Writing commands and code snippets
   \setuptype [color=maincolor]
@@ -85,7 +85,7 @@
       alternative=middle,
       conversion=I,
       style={\switchtobodyfont[30pt, ss]\bf},
-      color=purple,
+      color=maincolor,
       before={\ \godown[4cm]},
       header=high,
       footer=ChapterFirstPage,
@@ -102,7 +102,7 @@
       sectionsegments=2:2,
       commandbefore={\blank[small]},
       header=high,
-      footer=ChapterFirstPage,
+      footer=ChapterFirstPage
     ]
 
   \setuphead
@@ -122,8 +122,7 @@
       before=\blank,
       after=\blank,
       color=maincolor,
-      sectionsegments=2:4,
-      hidenumber=yes
+      sectionsegments=2:4
     ]
 
   \define[1]\PlacePoint{#1.}

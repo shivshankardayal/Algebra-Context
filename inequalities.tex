@@ -48,7 +48,7 @@ Prove that if the product of positive numbers $x_1, x_2, \cdots, x_n (n\geq 2)$ 
 
   Repeating this we obtain a sequence in which all terms will be equal to $\frac{1}{n}$, and sum of their square is less than the
   sum of squares of numbers $x_1, x_2, \ldots, x_n$ i.e. $x_1^2 + x_2^2 + \cdots + x_n^2 > \frac{1}{n^2} +
-  \text{~to~}n\text{~times}$. From this it follows that equality holds if and only if $x_1 = x_2 = \cdots = x_n$.
+  \;\text{to}\;n\;\text{times}$. From this it follows that equality holds if and only if $x_1 = x_2 = \cdots = x_n$.
 \stopproof
 
 \section{A.M., G.M., H.M. and Q.M.}
@@ -62,7 +62,7 @@ Prove that if the product of positive numbers $x_1, x_2, \cdots, x_n (n\geq 2)$ 
 
 \startproof
   Consider the numbers $\frac{x_1}{\sqrt[n]{x_1x_2\cdots x_n}}, \frac{x_2}{\sqrt[n]{x_1x_2\cdots x_n}}, \cdots,
-  \frac{x_n}{\sqrt[n]{x_1x_2\cdots x_n}}$, we see that product is equal to $1$. From ~\in{theorem}[th:strum:1], we have that
+  \frac{x_n}{\sqrt[n]{x_1x_2\cdots x_n}}$, we see that product is equal to $1$. From \;\in{theorem}[th:strum:1], we have that
   \startformula \frac{x_1}{\sqrt[n]{x_1x_2\cdots x_n}} + \frac{x_2}{\sqrt[n]{x_1x_2\cdots x_n}} + \cdots + \frac{x_n}{\sqrt[n]{x_1x_2\cdots
       x_n}}\geq n \Rightarrow \frac{x_1 + x_2 + \cdots + x_n}{n}\geq \sqrt[n]{x_1x_2\cdots x_n}.\stopformula
   The above inequality is also known as Cauchy's inequality.
@@ -71,7 +71,7 @@ Prove that if the product of positive numbers $x_1, x_2, \cdots, x_n (n\geq 2)$ 
     \frac{1}{x_n}} \leq \sqrt[n]{x_1x_2 \cdots x_n}.\stopformula
 
   Consider the numbers $\frac{x_1}{x_1 + x_2 + \cdots + x_n}, \frac{x_2}{x_1 + x_2 + \cdots + x_n}, \cdots, \frac{x_n}{x_1 + x_2 +
-    \cdots + x_n}$, and note that their sum is equal to $1$. According to ~\in{theorem}[th:strum:2], we have \startformula \left(\frac{x_1}{x_1 +
+    \cdots + x_n}$, and note that their sum is equal to $1$. According to \;\in{theorem}[th:strum:2], we have \startformula \left(\frac{x_1}{x_1 +
     x_2 + \cdots + x_n}\right)^2 + \left(\frac{x_2}{x_1 + x_2 + \cdots + x_n}\right)^2 + \cdots + \left(\frac{x_n}{x_1 + x_2 +
     \cdots + x_n}\right)^2 \geq \frac{1}{n}\stopformula
   \startformula \Rightarrow \frac{x_1^2 + x_2^2 + \cdots + x_n^2}{n}\geq \left(\frac{x_1 + x_2 + \cdots + x_n}{n}\right)^2.\stopformula
@@ -197,7 +197,7 @@ Prove that if the product of positive numbers $x_1, x_2, \cdots, x_n (n\geq 2)$ 
   which is equivalent to
   \startformula k\sum_{i=1}^ka_i^{k+1} + \frac{1}{k}\sum_{i=1}^ka_i^{k-1}\geq 2\sum_{i=1}^ka_i^k\stopformula
   Since AM $\geq$ GM we have that
-  \startformula ka_i^{k+1} + \frac{1}{k}a_i^{k - 1}\geq 2a_i^k~\forall~i\stopformula
+  \startformula ka_i^{k+1} + \frac{1}{k}a_i^{k - 1}\geq 2a_i^k\;\forall\;i\stopformula
   Adding this inequality for $i=1, 2, \ldots, k$ we obtain the required inequality.
 \stopproof
 
@@ -218,11 +218,11 @@ Prove that if the product of positive numbers $x_1, x_2, \cdots, x_n (n\geq 2)$ 
   $r$ be the largest index such that $a_r'\neq a_r$ i.e. $a_r'\neq a_r$ and $a_i'=a_i$ for $r<i\leq n$. This implies that $a_r'$ is
   from the set $\{a_1, a_2, \ldots, a_{r - 1}\}$ and $a_r'<a_r$. Further this also shows that $a_1', a_2', \ldots, a_r'$ is a
   permutation of $a_1, a_2, \ldots, a_r$. Thus we can find indices $k<r$ and $l<r$ such that $a_k' = a_r$ and $a_r' = a_l$. It
-  follows that \startformula a_k' - a_r' = a_r - a_l\geq 0,~~b_r - b_k\geq 0\stopformula
+  follows that \startformula a_k' - a_r' = a_r - a_l\geq 0,\;b_r - b_k\geq 0\stopformula
   We now interchange $a_r'$ and $a_k'$ to get a permutation of $a_1'', a_2'', \ldots, a_n''$ of $a_1', a_2', \ldots, a_n'$; thus
   \startformula \startmathcases\NC a_i''=a_i', \NC \text{if}i\neq r, k\NR\NC a_r''=a_k'=a_r,\\a_k''=a_r'=a_l\NR\stopmathcases\stopformula
   Consider the sums
-  \startformula S'' = a_1''b_1 + a_2''b_2 + \cdots + a_n''b_n, ~~S' = a_1'b_1 + a_2'b_2 + \cdots + a_n'b_n,\stopformula
+  \startformula S'' = a_1''b_1 + a_2''b_2 + \cdots + a_n''b_n, \;S' = a_1'b_1 + a_2'b_2 + \cdots + a_n'b_n,\stopformula
   and the difference $S'' - S':$
   \startformula \startalign\NC S'' - S' \NC = \sum_{i=1}^n(a_i'' - a_i')b_i\NR\NC \NC = (a_k'' - a_k') + (a_r'' - a_r')b_r\NR\NC\NC&=(a_r' - a_k')b_k + (a_k' -
     a_r')b_r\NR\NC\NC = (a_k' - a_r')(b_r - b_k).\stopalign\stopformula
@@ -400,7 +400,7 @@ Given below is generalized H\"{o}lder's inequaltiy and the proof is similar like
 
 \section{Convex and Concave Functions}
 Most of the inequalities discussed so far are consequencce of inequalities for a special class of functions, known as
-{\it convex} and {\it concave} functions. Consider the function $f(x) = x^n~\forall~n>1$ defined on $\mathbb{R}$. Consider
+{\it convex} and {\it concave} functions. Consider the function $f(x) = x^n\;\forall\;n>1$ defined on $\mathbb{R}$. Consider
 the case of $n=2$, then on the graphs of this function, the chord joining any two points always lies above the graph. In fact
 taking $a<b$, and the point $ka + (1 - k)b$ between $a$ and $b$, we see that
 \startformula [ka + (1 - k)b]^2 - ka^2 - (1 - k)b^2 = -k(1 - k)(a - b)^2\leq 0.\stopformula
@@ -420,7 +420,7 @@ conditions then $f$ is said to be concave and similarly for strictly concave $f$
 
 There are other equivalent properties of a convex function. Let $x_1, x_2, x_3$ are in $I$ such that $x_1<x_2<x_3$ and we take $k =
 \frac{x_3 - x_2}{x_3 - x_1}$ which gives us
-\startformula 1 - k = \frac{x_2 - x_1}{x_3 - x_1},\text{~and~}x_2 = kx_1 + (1 - k)x_3.\stopformula
+\startformula 1 - k = \frac{x_2 - x_1}{x_3 - x_1},\;\text{and}\;x_2 = kx_1 + (1 - k)x_3.\stopformula
 We have \startformula \startalign\NC f(x_2) \NC= f(kx_1 + (1 - k)x_3)\NR\NC\NC\leq kf(x_1) + (1 - k)f(x_3)\NR\NC\NC=\frac{x_3 - x_2}{x_3 - x_1}f(x_1) +
   \frac{x_2 - x_1}{x_3 - x_1}f(x_3).\stopalign\stopformula
 We can write this as \startformula f\frac{f(x_1) - f(x_2)}{x_1 - x_2}\leq\frac{f(x_2) - f(x_3)}{x_2 - x_3},\stopformula
@@ -468,7 +468,7 @@ Following theorem gives description about slope of a function's graph.
 \startproof
   Let $f$ is convex on $I$ and let $x, y$ be two points in $I, x\neq a, x\neq b$ such that $x<y$. Then exactly one of the three
   possibilities will be possible:
-  \startformula a<x<y;~~x<a<y~~x<y<a.\stopformula
+  \startformula a<x<y;\;x<a<y\;x<y<a.\stopformula
   Consider the case $a<x<y$; other cases can be handled similarly. We can write
   \startformula x = \frac{x - a}{y - a}y + \frac{y - x}{y - a}a.\stopformula
   The convexity of $f$ shows that
@@ -507,7 +507,7 @@ this to any finite number of points.
   k_p$ are real numbers in $[0,1]$ such that $\sum_{i=1}^nk-i = 1$, then
   \startformula f\left(\sum_{i=1}^pk_ix_i\right)\leq \sum_{i=1}^pk+if(x_i).\stopformula
   Now considering the conditions of the theorem,
-  \startformula y_1 = \frac{\sum_{i=1}^{n-1}k_ix_i}{\sum_{i=1}^{n-1}k_i},~~y_2= x_n,~~\alpha_1 = \sum_{j=1}^{n- 1}k_i,~~\alpha_2 = k_n.\stopformula
+  \startformula y_1 = \frac{\sum_{i=1}^{n-1}k_ix_i}{\sum_{i=1}^{n-1}k_i},\;y_2= x_n,\;\alpha_1 = \sum_{j=1}^{n- 1}k_i,\;\alpha_2 = k_n.\stopformula
   We observe that $\alpha_2 = 1 - \alpha_1$, and $y_1, y_2$ are in $I$. Using the conexity of $f$, we get
   \startformula \startalign\NC f(\alpha_1y_1 + \alpha_2y_2)\NC = f(\alpha_1y_1 + (1 - \alpha_1)y_2)\NR\NC\NC \leq\alpha_1f(y_1) + (1 -
     \alpha)1)f(y_2)\NR\NC\NC = \alpha_1f(y_1) + \alpha_2f(y_2).\stopalign\stopformula
@@ -562,16 +562,16 @@ this to any finite number of points.
   Function $f(x) = x^p$ can be used to prove H\"{o}lder's inequality. We know that $f(x) = x^p$ is convex for $p\geq 1$ and concave
   for $0,p<1$ for $p\in(0, \infty)$. Let $x_1, x_2, \ldots, x_n$ be real numbers and $k_1, k_2, \ldots, k_n$ in $[0, 1]$, then we
   have
-  \startformula \left(\sum_{i=1}^nk_ix_i\right)^p\leq \sum_{i=1}^nk_ix_i^p\text{~for~}p\geq 1\stopformula
+  \startformula \left(\sum_{i=1}^nk_ix_i\right)^p\leq \sum_{i=1}^nk_ix_i^p\;\text{for}\;p\geq 1\stopformula
   and
-  \startformula \left(\sum_{i=1}^nk_ix_i\right)^p\geq \sum_{i=1}^nk_ix_i^p\text{~for~}0<p<1.\stopformula
+  \startformula \left(\sum_{i=1}^nk_ix_i\right)^p\geq \sum_{i=1}^nk_ix_i^p\;\text{for}\;0<p<1.\stopformula
 \stopremark
 
 \startproof
   Let $a_1, a_2, \ldots, a_n, b_1, b_2, \ldots, b_n$ be real numbers and $p>1$ and $q$ be conjugate numbers. Thus, $\frac{1}{p} +
   \frac{1}{q} = 1.$ We need to assume that $b_i\neq 0$ for all $i$; else we may delete all those $b_i$ which are zero without
   having an effect on the equality. Let
-  \startformula t = \sum_{i=1}^n|b_i|^q,~~k_j = \frac{|b_j|^q}{t},~~x_j = \frac{|a_j|}{|b_j|^{q - 1}}\stopformula
+  \startformula t = \sum_{i=1}^n|b_i|^q,\;k_j = \frac{|b_j|^q}{t},\;x_j = \frac{|a_j|}{|b_j|^{q - 1}}\stopformula
   We have $k_j\in[0, 1]$ and $k_1 + k_2 + \ldots + k_n = 1$. Using the conexity of $x^p$, we have
   \startformula \left(\sum_{i=1}^nk_ix_i\right)^p\leq\sum_{i=1}^nk_ix_i^p,\stopformula
   which implies that
@@ -596,12 +596,12 @@ this to any finite number of points.
   $(a_1, a_2, \ldots, a_r)$. Thus we can find $k<r, l<r$ such that $a_k' = a_r$ and $a_r' = a_l$. We deduce that $a_k' - a_r' = a_r
   - a_l\geq 0$ and $b_r - b_k\geq 0$. Interchanging $a_r'$ and $a_k'$ to get a permutation $(a_1'', a_2'', \ldots, a_n'')$ of $(a_1',
   a_2', \ldots, a_n')$. Thus
-  \startformula a_i''= a_i'\text{~{\rm{for}}~} j\neq r,k,~~a_r''=a_k'=ar,~~a_k''=a_r'=a_l.\stopformula
-  Let \startformula S'' = \sum_{i=1}^nf(a_i'' + b_i),~~S' = \sum_{i=1}^nf(a_i' + b_i).\stopformula
+  \startformula a_i''= a_i'\;\text{{\rm{for}}}\; j\neq r,k,\;a_r''=a_k'=ar,\;a_k''=a_r'=a_l.\stopformula
+  Let \startformula S'' = \sum_{i=1}^nf(a_i'' + b_i),\;S' = \sum_{i=1}^nf(a_i' + b_i).\stopformula
   Then, \startformula \startalign\NC S'' - S' \NC = f(a_r'' + b_r) + f(a_k'' + b_k) - f(a_r' + b_r) - f(a_k' + b_k)\NR\NC\NC = f(a_r + b_r) + f(a_l +
     b_k) - f(a_l + b_r) - f(a_r + b_k).\stopalign\stopformula
-  We notice that \startformula a_l + b_k<a_r + b_k\text{~{\rm{and}}~}a_l + b_r < a_r + b_r.\stopformula
-  These give \startformula a_l + b_k < a_r + b_k \leq a_r + br,~~a_l + b_k\leq a_l + b_r < a_r + b_r.\stopformula
+  We notice that \startformula a_l + b_k<a_r + b_k\;\text{{\rm{and}}}\;a_l + b_r < a_r + b_r.\stopformula
+  These give \startformula a_l + b_k < a_r + b_k \leq a_r + br,\;a_l + b_k\leq a_l + b_r < a_r + b_r.\stopformula
   If $x_1, x_2, x_3$ are in $I$, then the convexity of $f$ implies that \startformula (x_3 - x_1)f(x_2)\leq(x_3 - x_2)f(x_1) + (x_2 -
   x_1)f(x_3).\stopformula
   Putting $x_1 = a_l + b_k, x_2 = a_r + b_k$ and $x_3 = a_r + b_r$, we get
@@ -629,9 +629,9 @@ this to any finite number of points.
   find $k>r, l>r$ such that $c_k' = c_r$ and $c_r' = c_l$. This implies that $c_k' - c_r' = c_r - c_l\geq 0$ and $b_k - b_r\geq
   0$. Now we can interchange $c_r'$ and $c_k'$ to get a permutation $(c_1'', c_2'', \ldots, c_n'')$ of $(c_1', c_2', \ldots,
   c_n')$; thus
-  \startformula c_i''=c_i'\text{~{\rm{for}}~}i\neq r, k,~~c_r''=c_k' = c_r,~~c_k''=c_r'=c_l.\stopformula
+  \startformula c_i''=c_i'\;\text{{\rm{for}}}\;i\neq r, k,\;c_r''=c_k' = c_r,\;c_k''=c_r'=c_l.\stopformula
   We compute the difference between
-  \startformula S'' = \sum_{i=1}^nf(c_i'' + b_i),~~S'=\sum_{i=1}^nf(c_i' + b_i),\stopformula
+  \startformula S'' = \sum_{i=1}^nf(c_i'' + b_i),\;S'=\sum_{i=1}^nf(c_i' + b_i),\stopformula
   and obtain
   \startformula \startalign\NC S'' - S'\NC = f(c_r'' + b_r) + f(c_k'' + b_k) - f(c_r' + b_r) - f(c_k' + b_k)\NR\NC\NC = f(c_r + b_r) + f(c_l + b_k) -
     f(c_l + b_r) - f(c_r + b_k).\stopalign\stopformula
@@ -678,7 +678,7 @@ this to any finite number of points.
 
 \startproof
   Without loss of generality, we can assume that $x\leq y\leq z$. If $x\leq y\leq \frac{x + y + z}{3}$, then
-  \startformula \frac{x + y + z}{3}\leq \frac{x + z}{2}\leq z\text{~{\rm{and}}~}\frac{x + y + z}{3}\leq \frac{y + z}{2}\leq z.\stopformula
+  \startformula \frac{x + y + z}{3}\leq \frac{x + z}{2}\leq z\;\text{{\rm{and}}}\;\frac{x + y + z}{3}\leq \frac{y + z}{2}\leq z.\stopformula
   Therefore, there exists $s, t\in[0,1]$ such that
   \startformula \frac{x + z}{2} = \left(\frac{x + y + z}{3}\right)s + z(1 - s)\stopformula
   \startformula \frac{y + z}{2} = \left(\frac{x + y + z}{3}\right)t + z(1 - t)\stopformula
@@ -699,12 +699,12 @@ this to any finite number of points.
 \section{Majorization}
 {\bf Definition:}
   Given two seuquences $\langle a\rangle = (a_1, a_2, \ldots, a_n)$ and $\langle b\rangle = (b_1, b_2, \ldots, b_n)$ where $a_i,
-  b_i\in\mathbb{R}~~\forall i\in\{1,2,\ldots, n\}$. We say that the sequence $\langle a\rangle$ majorizes the seuqnece $\langle
+  b_i\in\mathbb{R}\;\forall i\in\{1,2,\ldots, n\}$. We say that the sequence $\langle a\rangle$ majorizes the seuqnece $\langle
   b\rangle$, and write $\langle a\rangle\succ \langle b\rangle$, if the following conditions are fulfilled:
   \startformula a_1\geq a_2\geq \cdots\geq a_n;\stopformula
   \startformula b_1\geq b_2\geq \cdots\geq b_n;\stopformula
   \startformula a_1 + a_2 + \cdots + a_n = b_1 + b_2 + \cdots + b_n;\stopformula
-  \startformula a_1 + a_2 + \cdots + a_k\geq b_1 + b_2 + \cdots + b_k~~~\forall k\in\{1, 2, \ldots, n - 1\}.\stopformula
+  \startformula a_1 + a_2 + \cdots + a_k\geq b_1 + b_2 + \cdots + b_k\;\forall k\in\{1, 2, \ldots, n - 1\}.\stopformula
 
 \section{Karamata's Inequality}
 \starttheorem
@@ -724,7 +724,7 @@ this to any finite number of points.
   \noindent We define a sequence $\langle C\rangle$ such that $c_i = g(a_i, b_i)$
 
   \noindent We also define sequences $\langle A\rangle$ and $\langle B\rangle$ such that \startformula A_i = \sum_{j=1}^ia_j, A_0 =
-  0\text{~{\rm{and}}~} B_i = \sum_{j=1}^ib_j, B_0 =0\stopformula
+  0\;\text{{\rm{and}}}\; B_i = \sum_{j=1}^ib_j, B_0 =0\stopformula
   If we assume that $a_i\geq a_{i+1}$ and similarly $b_i\geq b_{i+1}$, then we get that $c_i\geq c_{i+1}$. Now, we know that
   \startformula \sum_{i=1}^nf(a_i) - \sum_{i=1}^nf(b_I) = \sum_{i=1}^nc_i(a_i - b_i) = \sum_{i=1}^nc_i(A_i - A_{i-1} - B_i + B_{i + 1})\stopformula
   \startformula =\sum_{i=1}^nc_i(A_i - B_i) - \sum_{i=0}^{n-1}c_{i+1}(A_i - B_i) = \sum_{i=1}^n(c_i - c_{i+1})(A_i - B_i)\geq 0\stopformula
@@ -892,7 +892,7 @@ We define {\it symmetric average} $p_k$ as $\frac{c_k}{\binom{n}{k}}$.
   Using the partial fraction for $\frac{1}{i(i + 1)}$
   \startformula \sum_{i=j}^\infty\frac{1}{i(i + 1)} = \sum_{i=j}^\infty\left(\frac{1}{i} - \frac{1}{i + 1}\right) = \frac{1}{j}.\stopformula
   \startformula \Rightarrow \sum_{j=1}^\infty\sum_{i=j}^\infty\frac{c_ja_j}{i(i + 1)} = \sum_{j=1}^\infty\left(1 + \frac{1}{j}\right)^ja_i.\stopformula
-  Since $\left(1 + \frac{1}{j}\right)^j< e,~\forall~j\in I$ the inequality holds.
+  Since $\left(1 + \frac{1}{j}\right)^j< e,\;\forall\;j\in I$ the inequality holds.
 \stopproof
 
 \section{Sum of Squares(SOS Method)}
@@ -1598,7 +1598,7 @@ Prove the following inequalities:
   $\displaystyle\frac{\prod_{i=1}^nx_i}{\left(\sum_{i=1}^nx_i\right)^n}\leq \frac{\prod_{i=1}^n(1 - x_i)}{\left(\sum_{i=1}^n(1 -
     x_i)\right)^n}$.
 \item Consider a sequence $\langle a_i\rangle$ of real numbers satisfying $a_{i + j}\leq a_i + a_j$. Prove that $a_1 +
-  \frac{a_2}{2} + \cdots + \frac{a_n}{n}\geq a_n,~\forall n$.
+  \frac{a_2}{2} + \cdots + \frac{a_n}{n}\geq a_n,\;\forall n$.
 \item For positive real numbers $x, y, z,$ prove that $\displaystyle\sum\frac{x}{x + \sqrt{(x + y)(x + z)}}\leq 1$, where the sum
   is taken cyclically over $x, y, z$.
 \item Let $x, y$ be non-negative real numbers such that $x + y = 2$. Prove that $x^3y^3(x^3 + y^3)\leq 2$.
@@ -1615,7 +1615,7 @@ Prove the following inequalities:
   numbers. Prove that $\displaystyle\sum_{i=1}^na_ib_ic_i\leq
   \sqrt[3]{\sum_{i=1}^na_i^3}\sqrt[3]{\sum_{i=1}^nb_i^3}\sqrt[3]{\sum_{i=1}^nc_i^3}$.
 \item Prove for any three real numbers $a, b, c,$ the inequality $3(a^2 - a - 1)(b^2 - b - 1)(c^2 - c -1)\geq (abc)^2 - abc + 1$.
-\item Consider a polynomial of the form $P(x) = x^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + 1$, where $a_i \geq 0~\forall 1\leq
+\item Consider a polynomial of the form $P(x) = x^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + 1$, where $a_i \geq 0\;\forall 1\leq
   i\leq n - 1$. Suppose $P(x) = 0$ has $n$ real roots. Prove that $P(2)\geq 3^n$.
 \item Let $a_1<a_2<\cdots<a_n$ be $n$ positive integers. Prove that $(a_1 + a_2 + \cdots + a_n)^2\leq a_1^3 + a_2^3 + \cdots +
   a_n^3$.
@@ -1656,7 +1656,7 @@ Prove the following inequalities:
   where $a, b, c$ are positive real numbers.
 \item If $a, b$ are real numbers, prove that $a^2 + ab + b^2\geq 3(a + b - 1)$.
 \item Define a sequence $\langle x_n\rangle$ by $x_1 = 2, x_{n + 1} = \frac{x_n^4 + 9}{10x_n}$. Prove that $\frac{4}{5}< x_n \leq
-  \frac{5}{4}~\forall~n > 1$.
+  \frac{5}{4}\;\forall\;n > 1$.
 \item Let $a, b, c$ be positive real numbers such that $a^2 - ab + b^2 = c^2$. Prove that $(a - c)(b - c)\leq 0$.
 \item Let $a, b, c$ be positive real numbers. Prove that $\sqrt{a^2 - ab + b^2} + \sqrt{b^2 - bc + c^2}\geq \sqrt{a^2 + ac + c^2}$.
 \item For all real numbers $a$, show that $(a^3 - a + 2)^2 \geq 4a^2(a^2 + 1)(a - 2)$.
@@ -1734,7 +1734,7 @@ Prove the following inequalities:
 \item Suppose $\langle a_n\rangle$ is an infinite sequence of real numbers with the properties
   \startitemize[n]
   \item there is some real constant $c$ such that $0\leq a_n\leq c$, for all $n\geq 1$, and
-  \item $|a_i - a_j|\geq \frac{1}{i + j}~\forall i\neq j$.
+  \item $|a_i - a_j|\geq \frac{1}{i + j}\;\forall i\neq j$.
   \stopitemize
   Prove that $c\geq 1$.
 \item Let $a, b, c$ be positive reals such that $a + b + c = 1$. Prove that $a(1 + b - c)^{1/3} + b(1 + c - a)^{1/3} + c(1 + a -
@@ -1795,7 +1795,7 @@ Prove the following inequalities:
   ab\right)^{1/2} < \sum a + \left(\sum a^2 - \sum ab\right)^{1/2} < 3\max\{a, b, c\}$, where the sum is cyclic
   over $a, b, c$.
 \item Show that for all complex numbers $z$ with $\Re(z) > 1$, prove that $|z^{n + 1} - 1| > |z^n||z -
-  1|,~\forall~n\geq 1$.
+  1|,\;\forall\;n\geq 1$.
 \item Suppose $a, b, c$ are positive real numbers such that $x = a + b - c, y = b + c - a, z = c + a - b$. Prove
   that $abc(xy + yz + zx)\geq xyz(ab + bc + ca)$.
 \item Let $a, b, c$ be positive real numbers. Prove that $\displaystyle\sum\frac{a^3}{b^2 - bc + c^2}\geq
@@ -1832,7 +1832,7 @@ Prove the following inequalities:
   = 1$. Show that $\frac{a_1}{a_2^2 + 1} + \frac{a_2}{a_3^2 + 1} + \cdots + \frac{a_n}{a_1^2 + 1}\geq
   \frac{4}{5}(a_1\sqrt{a_1} + a_2\sqrt{a_2} + cdots + a_n\sqrt{a_n})^2$.
 \item Does there exist an infinite sequence $\langle x_n\rangle$ of positive real numbers such that $x_{n + 2} =
-  \sqrt{x_{n + 1}} - \sqrt{x_n},~\forall~n\geq 2$.
+  \sqrt{x_{n + 1}} - \sqrt{x_n},\;\forall\;n\geq 2$.
 \item Let $a_1, a_2, \ldots, a_n$ be $n$ positive real numbers and consider a permutation of $b_1, b_2, \ldots,
   b_n$ of it. Prove that $\displaystyle\sum_{i=1}^n\frac{a_i^2}{b_i}\geq \sum_{i=1}^na_i$.
 \item Let $a_1, a_2, \ldots, a_n$ and $b_1, b_2, \ldots, b_n$ be two sequences of positive real numbers such that
