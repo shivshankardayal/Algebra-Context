@@ -1,6 +1,6 @@
 % -*- mode: context; -*-
 \chapter{Complex Numbers}
-\startitemize[n, 1*broad]
+\startitemize[n, 2*broad]
 \item Let $z = 7 + 8i$, and $\sqrt{z} = \sqrt{7 + 8i} = x + iy$. Squaring $7 + 8i = (x^2 - y^2) + 2ixy$
   Comparing real and imaginary parts $x^2 - y^2 = 7, xy = 4 \Rightarrow x^2 + y^2 = \sqrt{113}$. We discaard
   $-\sqrt{113}$ as that will make $x, y$ complex.
@@ -29,11 +29,10 @@
 \item Let $z = \frac{(\cos x + i\sin x)(\cos y + i\sin y)}{(\cot u + i)(i + \tan v)}$. Using Euler's
   formula, we have $z = \frac{e^{ix}.e^{iy}}{\frac{e^{iu}}{\sin u}.\frac{e^{iv}}{\cos v}} = \sin u\cos
   v.e^{i(x + y - u - v)} = \sin u\cos v\cos(x + y - u - v) + i\sin u\cos v\sin(x + y - u - v)$.
-\item \startitemize[i]\item $i^5 = i^{4 + 1} = i$.
+\item $i^5 = i^{4 + 1} = i$.
 \item $i^{67} = i^{64 + 3} = i^3 = -i[\because i^2 = -1]$.
 \item $i^{-59} = \frac{1}{i^{15.4 - 1}} = i$.
 \item $i^{2014} = i^{4.503 + 2} = i^2 = -1$.
-\stopitemize
 \item $|a| = -a \Rightarrow \sqrt{ab} = \sqrt{|a|b}i$.
 \item Let $z = i^n + i^{n + 1} + i^{n + 2} + i^{n + 3} = i^n + i.i^n - i^n - i.i^n = 0$.
 \item $\displaystyle\sum_{n = 1}^{13}(i^n + i^{n + 1}) = \sum_{i=1}^{13}i^n + \sum_{i=1}^{13}i^{n + 1} = (i
@@ -538,4 +537,1219 @@
 
   $\Rightarrow z_1^2 + z_2^2 - 2z_1z_2 = -2z_3^2 + 2z_2z_3 + 2z_1z_3 - 2z_1z_2\Rightarrow (z_1 - z_2)^2 =
   2(z_1 - z_3)(z_3 - z_2)$.
+\item Clearly, $|z - z_0|^2 = r^2 \Rightarrow (z - z_0)(\overline{z - z_0}) = r^2\Rightarrow (z -
+  z_0)(\overline{z} - \overline{z_0}) = r^2$
+
+  $\Rightarrow z\overline{z} - \overline{z}z_0 - z\overline{z_0} + z_0\overline{z_0} = r^2$.
+\item Given, $z = 1 - t + i\sqrt{t^2 + t + 2};$ comparing real and imaginary parts, we get $x = 1 - t, y =
+  \sqrt{t^2 + t + 1} \Rightarrow y^2 = t^2 + t + 2$
+
+  $\Rightarrow y^2 = (1 - x)^2 + (1 - x) + 2 = \left(x - \frac{3}{2}\right)^2 + \frac{7}{4}$, which is
+  equation of a hyperparabola.
+\item Given, $\overline{z} = \overline{a} + \frac{r^2}{z - a}\Rightarrow (\overline{z} - \overline{a})(z -
+  a) = r^2$, which is equation of a circle with center at $a$ and radius $r.$
+\item Since $z_1$ and $z_2$ are ends of diameter $\Rightarrow |z - z_1|^2 + |z - z_2|^2 = |z_1 -
+  z_2|^2\Rightarrow k = |z_1 - z_2|^2 = |2 + 3i - 4 - 3i|^2 = 4$.
+\item $z = x + iy,$ then $|(x + 1) + iy| = \sqrt{2}|(x - 1) + iy|$
+
+  Squaring both sides, we get $(x + 1)^2 + y^2 = 2[(x - 1)^2 + y^2] \Rightarrow x^2 + y^2 - 6x + 1 = 0$,
+  which is equation of a circle.
+\item Given, $\left|\frac{z - 1}{z - i}\right| = 1 \Rightarrow |z - 1| = |z - i|$
+
+  Let $z = x + iy,$ then we have $|(x - 1) + iy| = |x + i(y - 1)|$
+
+  Squaring both sides, we get $\Rightarrow (x - 1)^2 + y^2 = x^2 + (y - 1)^2 \Rightarrow 2x = 2y \Rightarrow
+  x = y$, which is equation of a straight line.
+\item \startplacefigure[location={left, none}]
+    \startMPcode
+      draw fullcircle scaled 2cm;
+      draw((.707cm, .707cm) -- (.707cm, -.707cm));
+      draw((-.707cm, .707cm) -- (-.707cm, -.707cm));
+      draw((.707cm, .707cm) -- (-.707cm, .707cm));
+      draw((-.707cm, -.707cm) -- (.707cm, -.707cm));
+      label.llft("$A(z_1)$", (-.707cm, -.707cm));
+      label.lrt("$B(z_2)$", (.707cm, -.707cm));
+      label.urt("$C(z_3)$", (.707cm, .707cm));
+      label.ulft("$D(z)$", (-.707cm, .707cm));
+    \stopMPcode
+  \stopplacefigure
+  $\angle z_1 = \arg\left(\frac{z_1 - z_2}{z_1 - z_4}\right),$
+  $\angle z_2 = \arg\left(\frac{z_3 - z_2}{z_1 - z_2}\right),$
+  $\angle z_3 = \arg\left(\frac{z_3 - z_4}{z_3 - z_2}\right),$ and
+  $\angle z_4 = \arg\left(\frac{z_1 - z_4}{z_3 - z_4}\right)$
+
+  $\angle z_1 + \angle z_3 = \pi \Rightarrow \arg {\frac {z_1 - z_2} {z_1 - z_4} } + \arg \left( {\frac {z_3
+      - z_4} {z_3- z_2} }\right) = \pi$
+
+  $\Rightarrow \arg\left(\frac{(z_1 - z_2)(z_3 - z_4)}{(z_1 - z_4)(z_3 - z_2)}\right) = \pi$
+  $\Rightarrow \frac{(z_1 - z_2)(z_3 - z_4)}{(z_1 - z_4)(z_3 - z_2)}$ is real number.
+\item Given, $\frac{2}{z_1} = \frac{1}{z_2} + \frac{1}{z_3}\Rightarrow \frac{z_2 - z_1}{z_3 - z_1} =
+  -\frac{z_2}{z_3}\Rightarrow \arg\left(\frac{z_2 - z_1}{z_3 - z_1}\right) = \pi - \arg\frac{z_3}{z_2}$
+
+  $\Rightarrow \arg\left(\frac{z_2 - z_1}{z_3 - z_1}\right) + arg\left(\frac{z_3 - 0}{z_2 - 0}\right) = \pi$
+  Thus, the given points and the origin are concyclic.
+\item From the equation of circle, $r^2 = |\omega - \omega^2|^2\Rightarrow r^2 = |i\sqrt{3}|^2 = 3
+  \Rightarrow r = \sqrt{3}$.
+\item Let $z = x + iy\Rightarrow (x - 4)^2 + y^2 < (x - 2)^2 + y^2 \Rightarrow x^2 - 8x + 16 < x^2 - 4x +
+  4\Rightarrow 4x > 12 \Rightarrow x > 3$.
+\item Given, $2z_1 - 3z_2 + z_3 = 0\Rightarrow z_2 = \frac{2z_1 + z_3}{3} = \frac{2z_1 + z_3}{2 + 1}$
+
+  Thus, $z_1$ divides the line segement $z_1z_3$ in the ratio of $2:1$ i.e. all three points are collinear.
+\item Given, $|z + 1| = |z - 1| \Rightarrow (x + 1)^2 + y^2 = (x - 1)^2 + y^2 \Rightarrow x = 0$
+
+  Also, given that $\arg\frac{z - 1}{z + 1} = \frac{\pi}{4}\Rightarrow z - 1 = (z + 1)e^{i\pi/4} \Rightarrow
+  -1 + iy = (1 + iy)\left(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}\right)$
+
+  $\Rightarrow -1 + iy = (1 + iy)\left(\frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}}\right)\Rightarrow y =
+  \sqrt{2} + 1$.
+\item Given, $|z|^8 = |z - 1|^8 \Rightarrow |z| = |z - 1|, \Rightarrow x^2 + y^2 = (x - 1)^2 + y^2
+  \Rightarrow x = \frac{1}{2}, y\in(\infty, \infty)$,
+  which is equation of straight line parallel to $y$-axis at $x = 1/2.$
+\item Given, $z\overline{z} + a\overline{z} + \overline{a}z + b = 0$
+  $\Rightarrow z\overline{z} + a\overline{z} + \overline{a}z + a\overline{a} = a\overline{a} - b$
+
+  $(z + a)(\overline{z} + \overline{a}) = |a|^2 - b$,
+  which is equation of a circle if $|a|^2 - b > 0 \Rightarrow |a|^2 > b$.
+\item Let $z = x + iy,$ comparing real and imaginary part gives us
+  $x = \lambda + 3, y = \sqrt{3 - \lambda^2} \Rightarrow y^2 = 3 - \lambda^2$
+
+  $\Rightarrow (x - 3)^2 + y^2 = 3$,
+  which is equation of a circle with center $(3, 0)$ and radius $\sqrt{3}$.
+\item Let $z = x + iy,$ then $|Re(z)| + |Im(z)| = k$ will give us four equations. $x + y = k, x - y = k, -x + y = k$ and $-x - y = k$
+
+  These lines will intersect at $(k, 0), (0, k), (-k, 0), (0 -k)$ giving us a square as locus of $z.$
+\item $z_2 = z_1^2 + i = i, z_3 = z_2^2 + i = i - 1, z_4 = z_3^2 + i = (i - 1)^2 + i = -i, z_5 = z_4^2 + i =
+  i - 1, z_6 = z_5^2 + i = -i$
+
+  Thus, we see that it is a cycle between $-i$ and $i - 1$ starting at $z_3.$
+  $\Rightarrow z_{111} = z_3 = i - 1 \Rightarrow |z_{111}| = \sqrt{2}$
+\item Given, $z\overline{z}^3 + z^3\overline{z} = 350 \Rightarrow z\overline{z}(\overline{z}^2 + z^2) = 350$
+
+  Let $z = x + iy,$ then given equation becomes $2(x^2 + y^2)(x^2 - y^2) = 350 \Rightarrow (x^2 + y^2)(x^2 -
+  y^2) = 175$
+
+  Prime factors of $175$ are $5, 5, 7$ so the only solution which yields integers for $x$ and $y$ are $x^2 +
+  y^2 = 25, x^2-y^2 = 7$
+
+  $\Rightarrow x = \pm 4, y = \pm 3$ which gives a rectangle with four points and digonal with a length of
+  $10$ units.
+\item We know that $z_1 + z_2$ and $z_1 - z_2$ are the diagonals of a quadrilateral. Now diagonals of a
+  parallelogram does not intersect at angle $\pi/2$ and diagonals of a square and rectangle are equal. Only
+  rhombus satisfies the given criteria of diagonals meeting at right angle and having different lengths.
+Thus, the given conditions represent a rhombus but not a square.
+\item Let $\arg(z_1) = \theta, \arg(z_2) = \theta + \alpha \Rightarrow \frac{az_1}{bz_2} =
+  \frac{a|z_1|e^{i\theta}}{b|z_2|e^{i(\theta + \alpha)}} = e^{-i\alpha}$
+
+  $\Rightarrow \frac{bz_2}{az_1} = e^{i\alpha}\Rightarrow \frac{az_1}{bz_2} + \frac{bz_2}{az_1} =
+  e^{i\alpha} + e^{-i\alpha} = 2\cos\alpha$
+
+  Thus, it will lie on the line segment $[-2, 2]$ of the real axis.
+\item Since $z_1, z_2, z_3$ are roots of the equation $z^3 + 3\alpha z^2 + 3\beta z + \gamma = 0\Rightarrow
+  z_1 + z_2 + z_3 = -3\alpha, z_1z_2 + z_2z_3 + z_3z_1 = 3\beta, z_1z_2z_3 = \gamma$
+
+  We know that for a triangle to be equilateral $z_1^2 + z_2^2 + z_3^2 = z_1z_2 + z_2z_3 + z_3z_1$
+
+  $\Rightarrow (z_1 + z_2 + z_3)^2 = 3(z_1z_2 + z_2z_3 + z_3z_1)\Rightarrow 9\alpha^2 = 3.3\beta \Rightarrow
+  \alpha^2 = \beta$.
+\item Given, $z_1^2 + z_2^2 + 2z_1z_2\cos\theta = 0$ Dividing both sides with $z_2^2,$ we get
+  $\left(\frac{z_1}{z_2}\right)^2 + 1 + 2\frac{z_1}{z_2}\cos\theta = 0$
+
+  The above equation is a quadratic equation in $\frac{z_1}{z_2}, \therefore \frac{z_1}{z_2} =
+  \frac{-2\cos\theta \pm\sqrt{4\cos^2\theta - 1}}{2}$
+
+  $\Rightarrow \frac{z_1}{z_2} = -\cos\theta \pm i\sin\theta \Rightarrow \left|\frac{z_1}{z_2}\right| =
+  1\Rightarrow |z_1| = |z_2| \Rightarrow |z_1 - 0| = |z_2 - 0|$
+
+  Thus, $z_1, z_1$ and the origin form an isosceles triangle.
+\item Since origin is circumcenter $\Rightarrow |z_1| = |z_2| = |z_3| = |z|$
+  $\Rightarrow z_1\overline{z_1} = z_2\overline{z_2} = z_3\overline{z_3} = z\overline{z}$
+
+  $\because\;AP\perp BC \therefore\;\frac{z - z_1}{\overline{z} - \overline{z_1}} + \frac{z_2 - z_3}{\overline{z_2} -
+    \overline{z_3}} = 0$
+  $\Rightarrow \frac{z - z_1}{\frac{z\overline{z_1}}{z} - \overline{z_1}} + \frac{z_2 - z_3}{\frac{z_3\overline{z_3}}{z} -
+    \overline{z_3}} = 0$
+
+  $\Rightarrow \frac{z(z - z_1)}{z_1\overline{z_1} - z\overline{z_1}} + \frac{z_2(z_2 - z_3)}{z_3\overline{z_3} -
+    z_2\overline{z_3}} = 0$
+  $\Rightarrow \frac{-z(z_1 - z)}{\overline{z_1}(z_1 - z)} - \frac{z_2(z_3 - z_2)}{\overline{z_3}(z_3 - z_2)} = 0$
+  $\Rightarrow \frac{-z}{z_1} - \frac{z_2}{z_3} = 0 \Rightarrow z = -\frac{z_1z_2}{z_3}$.
+\item Given $OA = OB, \Rightarrow |z_1| = |z_2| = l$ (let).
+  Also given, $\arg(z_1) = \alpha + \arg(z_2) \Rightarrow z_1 = le^{i(\alpha + \arg(z_2))} = le^{i\arg(z_2)}.e^{i\alpha} =
+  z_2e^{i\alpha}$
+
+  Now, $z_1z_2 = q \Rightarrow z_2^2e^{i\alpha} = q$ and $z_1 + z_2 = -p \Rightarrow z_2(1 + e^{i\alpha}) = -p$
+  $\Rightarrow 2z_2\cos\frac{\alpha}{2}.e^{i\alpha/2} = -p \Rightarrow p^2 = 4z_2^2\cos^2\frac{\alpha}{2}.e^{i\alpha}$
+  $\Rightarrow p^2 = 4q\cos^2\frac{\alpha}{2}$.
+\item Let $z + iy,$ then $\Re\left(\frac{z + 4}{2x - i}\right) = \Re\left(\frac{x + 4 + iy}{2x + i(2y - 1)}\right)$
+  $\Rightarrow \Re\left(\frac{[(x + 4) + iy][(2x - i(2y - 1))]}{4x^2 + (2y - 1)^2}\right) = \frac{1}{2}$
+
+  $\Rightarrow \frac{2x(x + 4) + y(2y - 1)}{4x^2 + (2y - 1)^2} = \frac{1}{2} \Rightarrow 16x + 2y - 1= 0$,
+  which is equation of a straight line.
+\item Since the circle is inscribed in $|z| = 2$ so center is origin. Also, since $z_1, z_2$ and $z_3$ are in
+  clockwise direction $z_2 = z_1e^{-i120^\circ}, z_3 = z_2e^{-i120^\circ}$
+
+  $\Rightarrow z_2 = (1 + \sqrt{3}i)[(\cos. -120^\circ + i.\sin -120^\circ)] = 1-\sqrt{3}i$
+  $\Rightarrow z_3 = -2$.
+\item Given $z_1 = \frac{a}{1 - i} \Rightarrow z_1 = \frac{a + ia}{2}, z_2 = \frac{b}{2 + i} = \frac{2b - ib}{5}$
+  Also given, $z_1 - z_2 = 1 \Rightarrow 5a + i5a - 4b + i2b = 10$
+
+  Comparing real and imaginary parts, we get $5a - 4b = 10, 5a + 2b = 0 \Rightarrow a = \frac{2}{3}, b = -\frac{5}{3}$
+  Cnetroid is $\frac{z_1 + z_2 + z_3}{3} = \frac{1}{3}(1 + 7i)$.
+\item From the quadratic equation we have $z_1 + z_2 = -1$ and $z_1z_2 = \frac{\lambda}{2}$.
+  Since $0, z_1, z_2$ form an equilateral triangle, $\Rightarrow z_1z_2 + z_2.0 + z_1.0 = z_1^2 + z_2^2 + 0^2$
+
+  $\Rightarrow (z_1 + z_2)^2 = 3z_1z_2 \Rightarrow (-1)^2 = 3.\frac{\lambda}{2}\Rightarrow \lambda =
+  \frac{2}{3}$.
+\item Let $A, B, C$ represent $a,b,c$ and $U, V, W$ represent $u, v, w.$
+  $\Rightarrow AB = b - c, BC = c - b = (a - b)(1 - r), CA = a - c = r(a - b)$
+
+  $\Rightarrow UV = v - u, VW = w - v = (u - v)(1 - r), WU = u - w = r(u - v)$
+  $\Rightarrow \frac{AB}{UV} = \frac{BC}{VW} = \frac{CA}{WU}$
+  Thus, the triangles are similar.
+\item Let $z_1$ and $z_2$ be points on real axis which circle cuts with. Since these are on real axis and if $z$
+  represents this points then $z = \overline{z}[\because z = x + i.0]$
+
+  Substituting $z = \overline{z}$ in the equation of the circle, we get $z^2 + (\overline{\alpha} + \alpha)z + r = 0$
+  Since $z_1, z_2$ are the roots $\therefore z_1 + z_2 = -\alpha, z_1z_2 = r$
+
+  Length of intercept $=|z_1 - z_2| = \sqrt{(z_1 - z_2)^2} = \sqrt{(z_1 + z_2)^2 - 4z_1z_2} = \sqrt{(\overline{\alpha} + \alpha)^2
+    - 4r}$.
+\item Clearly, $a = e^{i\alpha}, b = e^{i\beta}, c= e^{i\gamma}$.
+  Also given, $\frac{a}{b} + \frac{b}{c} + \frac{c}{a} = 1\Rightarrow e^{i(\alpha - \beta)} + e^{i(\beta - \gamma)} + e^{i(\gamma -
+    \alpha)} = 1$.
+
+  Comparing real parts, we get $\cos(\alpha - \beta) + \cos(\beta - \gamma) + \cos(\gamma - \alpha) = 1$.
+\item Let $A(z_1), B(z_2)$ be the centers of given circles and $P$ be the center of the variable circle which
+  touches given circles externally, then
+
+  $|AP| = a + r$ and $|BP| = b + r$ where $r$ is the radius of the variable circle. Clearly,
+  $|AP| - |BP| = a - b \Rightarrow ||AP| - |BP|| = |a - b| = $a constant.
+
+  Hence, locus of $P$ is a right bisector if $a = b,$ a hyperbola if $|a - b| < |AB|$ an empty set of $|a - b|>|AB|,$ set of all
+  points on line $AB$ except those which lie between $A$ and $B$ if $|a - b| = |AB|\neq 0.$
+\item Let $a + ib = re^{i\theta}, r^2 = a^2 + b^2 \Rightarrow a - ib = e^{-i\theta}, \tan\theta = \frac{b}{a}$
+  $\frac{a - ib}{a + ib} = e^{-2i\theta} \Rightarrow i\log\left(\frac{a - ib}{a + ib}\right) = i\log e^{-2i\theta} = 2\theta$
+
+  $\Rightarrow \tan\left[i\log\left(\frac{a - ib}{a + ib}\right)\right] = \tan2\theta = \frac{2\tan\theta}{1 - \tan^2\theta}$
+  $= \frac{2b/a}{1 - b^2/a^2} = \frac{2ab}{a^2 - b^2}$.
+\item Given, $|z_1| = |z_2| = 1\Rightarrow a^2 + b^2 = c^2 + d^2 = 1$
+  $\Re(z_1\overline{z_2}) = 0 \Rightarrow \Re[(a + ib)(c - id)] = 0 \Rightarrow ac + bd = 0$
+
+  $a^2 + b^2 = c^2 + d^2 \Rightarrow (a + ic)^2 = (d - ib)^2[\because ac = =bd] \Rightarrow a + ic = d - ib
+  or -d + ib$ $\Rightarrow a = d$ and $c = -b$ or $a = -d, c = b$
+
+  $\Rightarrow a^2 + c^2 = b^2 + d^2 = 1 \Rightarrow |w_1| = |w_2| = 1$
+  $\Rightarrow \Re(w_1\overline{w2}) = \Re[(a + ic)(b - id)] = ab + cd = 0$.
+\item Let $z_1 = r(\cos\theta + i\sin\theta)$. Given, $\left|\frac{z_1}{z_2}\right| = 1$
+  $\Rightarrow |z_1| = |z_2| = r$. Also given, $\arg(z_1z_2) = 0 \Rightarrow \arg(z_1) + \arg(z_2) = 0$
+
+  $\Rightarrow \arg(z_2) = -\theta \Rightarrow z_2 = r[\cos(-\theta) + i\sin(-\theta)] = r[\cos\theta -
+  i\sin\theta] = \overline{z_1}$
+  $\Rightarrow \overline{z_2} = z_1 \Rightarrow |z_2|^2 = z_1z_2$.
+\item $t_n = (n + 1)\left(n + \frac{1}{\omega}\right)\left(n + \frac{1}{\omega^2}\right)$
+  $= n^3 + n^2\left(1 + \frac{1}{\omega} + \frac{1}{\omega^2}\right) + n\left(1 + \frac{1}{\omega} +
+  \frac{1}{\omega^2}\right) + 1$
+
+  $= n^3 + n^2(1 + \omega + \omega^2) + n(1 + \omega + \omega^2) + 1 = n^3 + 1$
+  $\displaystyle\therefore S_n = \sum_{i = 1}^nt_i = \sum_{i = 1}(i^3 + 1) = \frac{n^2(n + 1)^2}{4} + 1$.
+\item Given $|z_1 + iz_2| = |z_1 - iz_2|$
+  $\Rightarrow (z_1 + iz_2)(\overline{z_1} - i\overline{z_2}) = (z_1 - iz_2)(\overline{z_1 +
+  i\overline{z_2}})$
+
+  $\Rightarrow \overline{z_1}z_2 = z_1\overline{z_2} \Rightarrow \frac{z_1}{z_2} =
+  \frac{\overline{z_1}}{\overline{z_2}}$.
+  Thus, $\frac{z_1}{z_2}$ is purely real.
+\item $z = -2 + 2\sqrt{3}i = 4\omega$
+  $\Rightarrow z^{2n} + 2^{2n}z^n + 2^{4n} = 4^{2n}[\omega^{2n} + \omega^n + 1]$
+
+  The above expression has value of $0$ if $n$ is not a multiple of $3$ and $3.4^{2n}$ if $n$ is multiple of
+  $3$.
+\item $x + \frac{1}{x} = 2\cos\theta, \Rightarrow x^2 - 2\cos\theta x + 1 = 0$
+  $\Rightarrow x = \frac{2\cos\theta \pm \sqrt{4\cos^2\theta - 1}}{2} = \cos\theta \pm i\sin\theta = e^{\pm
+  i\theta}$
+
+  Similarly, $y = e^{\pm i\phi}\Rightarrow \frac{x}{y} + \frac{y}{z} = 2\cos(\theta - \phi)$
+  and $xy + \frac{1}{xy} = 2\cos(\theta + \phi)$.
+\item Given, $|z_1| = |z_2|, \Re(z_1) > 0$ and $\Im(z_1) < 0$
+  $\Re\left(\frac{z_1 + z_2}{z_1 - z_2}\right) = \frac{1}{2}\left(\frac{z_1 + z_2}{z_1 - z_2} +
+  \frac{\overline{z_1} + \overline{z_2}}{\overline{z_1} - \overline{z_2}}\right)$
+
+  $= \frac{1}{2}\left(\frac{2(|z_1|^2 - |z_2|^2)}{|z_1 - z_2|^2}\right) = 0$
+  Thus, $\frac{z_1 + z_2}{z_1 - z_2}$ is purely imaginary.
+\item Given, $\frac{AB}{BC} = \sqrt{2} \Rightarrow \frac{z_1 - z_2}{z_3 - z_2} = \frac{|z_1 - z_2|}{|z_3 -
+  z_2|}.e^{i\pi/4}$
+
+  $= \frac{AB}{BC}.e^{i\pi/4} = \sqrt{2}\left(\frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}}\right) = 1 + i$
+  $\Rightarrow z_1 - z_2 = (1 + i)(z_3 - z_2) \Rightarrow z_2 = z_3 + i(z_1 - z_3)$.
+\item Given, $z_1(z_1^2 - 3z_2^2) = 2$ and $z_2(3z_1^2 - z_2^2) = 11$
+  $\Rightarrow z_1^3 - 3z_1z_2^2 + iz_2(3z_1^2 - z_2^2) = 2 + 11i \Rightarrow (z_1 + iz_2)^3 = 2 + 11i$, and
+
+  $\Rightarrow z_1^3 - 3z_1z_2^2 - iz_2(3z_1^2 - z_2^2) = 2 - 11i \Rightarrow (z_1 - iz_2)^3 = 2 - 11i$
+
+  Multiplying above equations, we get
+  $(z_1^2 + z_2^2)^3 = 4 + 121 = 125 \Rightarrow z_1^2 + z_2^2 = 5$.
+\item Given $\sqrt{1 - c^2} = nc - 1 \Rightarrow 1 - c^2 = n^2c^2 - 2nc + 1 \Rightarrow \frac{c}{2n} =
+  \frac{1}{1 + n^2}$
+
+  $\frac{c}{2n}(1 + nz)\left(1 + \frac{n}{z}\right) = \frac{1}{1 + n^2}\left[1 + n^2 + n\left(z +
+    \frac{1}{z}\right)\right]$
+
+  $= \frac{1}{1 + n^2}\left[1 + n^2 + 2\cos\theta + n\right] = 1 + \frac{2n}{1 + n^2}\cos\theta = 1 +
+  c\cos\theta$.
+\item If $P(z)$ is any point of the ellipse, then equation of ellipse is given by
+  $|z - z_1| + |z- z_2| = \frac{|z_1 - z_2|}{e}$
+
+  If we put $z_1$ or $z_2$ in the above equation then L.H.S. becomes $|z_1 - z_2|$.
+  Thus, for any interior point of the ellipse, we have $|z - z_1| + |z - z_2| < \frac{|z_1 - z_2|}{e}$
+
+  If $P(z)$ lies on the ellipse, we have $|z - z_1| + |z- z_2| = \frac{|z_1 - z_2|}{e}$.
+  It is given that origin is an internal point, so
+  $|0 - z_1| + |0 - z_2| < \frac{|z_1 - z_2|}{e}$
+  $\Rightarrow e\in\left(0, \frac{|z_1 - z_2|}{|z_1| + |z_2|}\right)$.
+\item Let $z = x + iy$, then we have
+  $|(x - 2) + i(y - 1)| = |z|\left|\frac{1}{\sqrt{2}}\cos\theta - \frac{1}{\sqrt{2}}\sin\theta\right|$
+  where, $\theta = \arg(z)$
+
+  $\Rightarrow \sqrt{(x - 2)^2 + (y - 1)^2} = \frac{1}{\sqrt{2}}|x - y|$,
+  which is equation of a parabola.
+\item Since $|z - z_1| = |z - z_2|$, therefore $z$ will be one of the vertices of the isosceles triangle
+  where base will be formed by $z_1$ and $z_2$.
+
+  Also, since $\left|z - \frac{z_1 + z_2}{2}\right|\leq r$ so $z$ will lie on the circle whose center is
+  $\frac{z_1 + z_2}{2}$ and radius is $r$. Thus, the distance between segment $z_1z_2$ will be $r$.
+  Thus, the maximum area of the triangle will be $\frac{1}{2}|z_1 - z2|.r$.
+\item Given $|z_1| = 1 \Rightarrow a_1^2 + b_1^2 = 1, |z_2| = 2 \Rightarrow a_2^2 + b_2^2 = 4$.
+  Also given $\Re(z_1z_2) = 0 \Rightarrow a_1a_2 - b_1b_2 = 0 \Rightarrow a_1a_2 = b_1b_2$
+
+  $\Rightarrow a_2^2 + b_2^2 = 4a_1^2 + 4b_1^2 \Rightarrow a_2^2 - 4a_1^2 = 4b_1^2 - b_2^2 \Rightarrow a_2^2
+  - 4a_1^2 + 4ia_1a_2 = 4b_1^2 - b_2^2 + 4ib_1b_2$
+  $\Rightarrow (a_2 + 2ia_1)^2 = (2b_1 + ib_2)^2 \Rightarrow a_2 = \pm 2b_1$
+
+  $\omega_1 = a_1 + \frac{ia_2}{2} = a_1 \pm b_1 \Rightarrow |\omega_1| = \sqrt{a_1^2 + b_1^2} = 1$
+  $\omega_2 = 2b_1 + ib_2 = \pm a_2 + ib_2 \Rightarrow |\omega_2| = \sqrt{a_2^2 + b_2^2} = 2$
+  $\Re(\omega_1\omega_2) = 2a_1b_1 - 2a_2b_2 = 0$.
+\item Given $z^2 + az + a^2 = 0 \Rightarrow z = a\omega, a\omega^2$ where $\omega$ is cube-root of unity.
+
+  Thus, it represents a pair of straight lines and $|z| = |a|$.
+  $\arg(z) = \arg(a) + \arg(\omega)$ or $\arg(a) + \arg(\omega^2) = \pm \frac{2\pi}{3}$.
+\item Given $x + \frac{1}{x} = 1 \Rightarrow x^2 - x + 1 = 0 \therefore x = -\omega, -\omega^2$.  Now, for
+  $x = -\omega, p = \omega^{4000} + \frac{1}{\omega^{4000}} = \omega + \frac{1}{\omega} = -1$
+
+  Similarly, for $x = -\omega^2, p = -1\Rightarrow 2^{2^n} = 2^{4k} = 16^k =$ a number with last digit as $6
+  \Rightarrow q = 6 + 1 = 7\Rightarrow p + q = -1 + 7 = 6$.
+\item $A(z_1) = \frac{2i}{\sqrt{3}},B(z_2) = \frac{2}{\sqrt{3}}\left(\frac{\sqrt{3}}{2} -
+  i\frac{1}{2}\right) = 1 - \frac{i}{\sqrt{3}}, C(z_3) = \frac{2}{\sqrt{3}}\left(-\frac{\sqrt{3}}{2} -
+  \frac{i}{2}\right) = -1-\frac{i}{\sqrt{3}}$
+
+  Clearly, the points lie on the circle $z=2/\sqrt{3}$ and $\triangle ABC$ is equilateral and its centroid
+  coincides with circumcentre. Hence,
+
+  $z_1 + z_2 + z_3 = 0$ and $\overline{z_1} + \overline{z_2} + \overline{z_3} = 0$.
+  Clearly, radius of incircle $= \frac{1}{\sqrt{3}}$ hence any point on circle is
+  $\frac{1}{\sqrt{3}}(\cos\alpha + i\sin\alpha)$. $AP^2 = |z - z_1|^2 = |z|^2 + |z_1|^2 - (z\overline{z_1} +
+  \overline{z}z_1)$
+
+  $\Rightarrow AP^2 + BP^2 + CP^2 = 3|z|^2 + |z_1|^2 + |z_2|^2 + |z_3|^2 - z(\overline{z_1} + \overline{z_2}
+  + \overline{z_3}) - \overline{z}(z_1 + z_2 + z_3)$
+  $= 3\times\frac{1}{3} + \frac{4}{3} + \frac{4}{3} + \frac{4}{3} - 0 - 0 = 5$.
+\item Let $O$ be the center of the polygon and $z_0, z_1, \ldots, z_{n - 1}$ represent the vertices $A_1, A_2,
+  \ldots, A_n$. $\therefore z_0 = 1, z_1 = \alpha, z_2 = \alpha^2, \ldots, z_{n - 1} = \alpha^{n - 1}$ where
+  $\alpha = e^{i2\pi/n}$
+
+  $|A_1A_2|^2 =|\alpha^r - 1|^2 = |1 - \alpha^r|^2 = \left|1 - \cos\frac{2r\pi}{n} +
+  i\sin\frac{2r\pi}{n}\right|^2$ $= \left(1 - \cos\frac{2r\pi}{n}\right)^2 + \sin^2\frac{2r\pi}{n} = 2 -
+  2\cos\frac{2r\pi}{n}$
+
+  $\displaystyle\sum_{r=1}^n |A_1A_2|^2 = 2(n - 1) - 2\left[\cos\frac{2\pi}{n} + \cos\frac{4\pi}{3} + \ldots
+    + \cos\frac{2(n - 1)\pi}{n}\right]$
+  $= 2(n - 1) -2.$ real part of $(\alpha + \alpha^2 + \ldots + \alpha^{n - 1}) = 2n [\because 1 + \alpha +
+    \alpha^2 + \ldots + \alpha^{n - 1} = 0]$
+
+  $|A_1A_2||A_1A_3|\ldots |A_1A_n| = |1 - \alpha||1 - \alpha^2|\ldots|1 - \alpha^{n - 1}|$ $= |(1 -
+  \alpha)(1 - \alpha^2)\ldots(1 - \alpha^{n - 1})|$
+
+  Since $1, \alpha, \alpha^2, \ldots, \alpha^{n - 1}$ are roots of $z^n - 1 = 0$. $(z - 1)(z - \alpha)(z -
+  \alpha^2)\ldots(z - \alpha^{n - 1}) = z^n - 1$
+  $\Rightarrow (z - \alpha)(z - \alpha^2)\ldots(z - \alpha^{n - 1}) = \frac{z^n - 1}{z - 1} = 1 + z + z^2 +
+  \ldots + z^{n - 1}$
+
+  Putting $z = 1$, we get
+  $|(1 - \alpha)(1 - \alpha^2)\ldots(1 - \alpha^{n - 1})| = n \Rightarrow \frac{a}{b} = 2$.
+\item Let L.H.S. $= z_1$ and R.H.S. $= z_2$ then $\overline{z_1} = \overline{z_2}$
+  $\Rightarrow z_1\overline{z_1} = z_2\overline{z_2} \Rightarrow z_1^2 = z_2^2$
+
+  $\Rightarrow \left(1 + \frac{x^2}{a^2}\right)\left(1 + \frac{x^2}{b^2}\right)\left(1 +
+  \frac{x^2}{c^2}\right)\ldots = A^2 + B^2$.
+\item Given, $x + iy + \alpha\sqrt{(x - 1)^2 + y^2} + 2i = 0$. Equating real and imaginary parts, we get
+
+  $y + 2 = 0 \Rightarrow y = -2$ and $x + \alpha\sqrt{(x - 1)^2 + y^2} = 0$.
+  Substituting the value of $y$, we get
+  $\alpha\sqrt{x^2 - 2x + 5} = -x \Rightarrow (\alpha^2 - 1)x^2 - 2\alpha^2x +5\alpha^2 = 0$
+
+  Because $x$ is real, the discriminant has to be greater than zero.
+  $\Rightarrow 4\alpha^4 - 20\alpha^2(\alpha^2 - 1) \geq 0$
+  $\Rightarrow \alpha^2 - 5\alpha^2 + 5 \geq 0 \Rightarrow -\frac{\sqrt{5}}{2}\leq\alpha\leq
+  \frac{\sqrt{5}}{2}$.
+\item Let $z = x + iy \Rightarrow 2\sqrt{x^2 + y^2} - 4a(x + iy) + 1 + ia = 0$.
+  Equating real and imaginary parts, we get
+
+  $2\sqrt{x^2 + y^2} - 4ax + 1 = 0$ and $-4ay + a = 0 \Rightarrow y = \frac{1}{4}$
+  $\Rightarrow 2\sqrt{x^2 + \frac{1}{16}} - 4ax + 1 = 0 \Rightarrow 4\left(x^2 + \frac{1}{16}\right) =
+  16a^2x^2 - 8ax + 1$
+
+  $x^2(4 - 16a^2) + 8ax - \frac{3}{4} = 0 \Rightarrow x = \frac{-a}{1 - 4a^2} \pm
+  \frac{1}{4}\frac{\sqrt{4a^2 + 3}}{1 - 4a^2}$.
+\item $(x + iy)^5 = (x^5 - 10x^3y^2 + 5xy^4) + i(5x^4y - 10x^2y^3 + y^5)$.
+  Taking modulus and squaring, we get
+  $(x^2 + y^2)^5 = (x^5 - 10x^3y^2 + 5xy^4) + (5x^4y - 10x^2y^3 + y^5)^2$.
+\item $(x + ia)(x + ib)(x + ic) = [(x^2 - ab) + i(a + b)x](x + ic) = (x^3 - abx - acx - bcx) + i(cx^2 - abc
+  + ax^2 + bx^2)$
+
+  Taking modulus and squaring, we get $(x^2 + a^2)(x^2 + b^2)(x^2 + c^2) = [x^3 -(ab + bc + ca)x] + [(a + b
+    + c)x^2 - abc]^2$.
+\item Given, $(1 + x)^n = a_0 + a_1x + a_2x^2 + \ldots + a_nx^n$. Substituting $x = i$,we get
+
+  $(1 + i)^n = a_o + ia_1 - a_2 - ia_3 + a_4 + \ldots = (a_0 - a_2 + a_4 - \ldots) + i(a_1 - a_3 + a_5 -
+  \ldots)$
+
+  Taking modulus and squaring, we get $2^n = (a_0 - a_2 + a_4 - \ldots)^2 + (a_1 - a_3 + a_5 - \ldots)^2$.
+\item Let $f(z) = m(z - i) + i$ and $f(z) = n(z + i) + 1 + i$ where $m$ and $n$ are quotients upon division.
+  Substituting $z = i$ in the first equation and $z = -i$ in the second we obtain $f(i) = i$ and $f(-i) = 1
+  + i$.
+
+  Let $g(z)$ be the quotient and $az + b$ be the remainder upong division of $f(z)$ by $z^2 + 1.$ Hence we
+  have $f(z) = g(z)(z^2 + 1) + az + b.$ Substituting $z = i$ and $z = -i,$ we get
+
+  $f(i) = i = ai + b$ and $f(-i) = 1 + i = -ai + b$. Adding, we get $2b = 1 + 2i \Rightarrow b = \frac{1 +
+    2i}{2} \Rightarrow ai = i - \frac{1 + 2i}{2}$.
+\item Let $z = r_1e^{i\theta_1}, w = r_2e^{i\theta_2}$. $\because |z|\leq 1$ and $|w|\leq 1 \Rightarrow
+  r_1\leq 1$ and $r_2\leq 1$
+
+  $|z - w|^2 = (r_1\cos\theta_1 - r_2\cos\theta_2)^2 + (r_1\sin\theta_1 - r_2\sin\theta_2)^2$
+  $= r_1^2 + r_2^2 - 2r_2r_2\cos(\theta_1 - \theta_2) = (r_1 - r_2)^2 + 2r_2r_2 - 2r_2r_2\cos(\theta_1 - \theta_2)$
+
+  $= (r_1 - r_2)^2 + 4r_1r_2\sin\left(\frac{\theta_1 - \theta_2}{2}\right)^2\leq (r_1 - r_2)^2 + (\theta_1 -
+  \theta_2)^2[\because r_1, r_2\leq 1$ and $\sin\theta \leq \theta]$
+  $= (|z| - |w|)^2 + [\arg(z) - \arg(w)]^2$.
+\item Let $z = re^{i\theta}$, then $\frac{z}{|z|} = e^{i\theta} = \cos\theta + i\sin\theta$
+  $\Rightarrow \left|\frac{z}{|z|} - 1\right| = |(\cos\theta - 1) + i\sin\theta| = \sqrt{\cos\theta^2 -
+  2\cos\theta + 1 + \sin^2\theta}$
+
+  $= \sqrt{2 - 2\cos\theta} = \sqrt{4\sin^2\frac{\theta}{2}} = 2\sin\frac{\theta}{2}\leq \theta$
+  $\Rightarrow \left|\frac{z}{|z|} - 1\right| \leq |arg(z)|$.
+\item Clearly, $|z - 1| = |z - |z| + |z| - 1|\leq |z - |z|| + ||z| - 1|$
+  $= |z|\left|\frac{z}{|z|} - 1\right| + ||z| - 1|$
+
+  Using the result of previous problem, we get $|z - 1| \leq ||z| - 1|+|z||argz|$.
+\item Let $z = r(\cos\theta + i\sin\theta)$, then $\frac{1}{z} = \frac{1}{r}(\cos\theta - i\sin\theta)$,
+  $\left|z + \frac{1}{z}\right| = \left|\left(r + \frac{1}{r}\right)\cos\theta + i\left(r -
+  \frac{1}{r}\right)\sin\theta\right|$
+
+  $\Rightarrow \left(r + \frac{1}{r}\right)^2\cos^2\theta + i\left(r - \frac{1}{r}\right)^2\sin^2\theta =
+  a^2$ $\Rightarrow \left(r - \frac{1}{r}\right)^2 = a^2 - 4\cos^2\theta$
+
+  $r$ will be greatest when $r - \frac{1}{r}$ will be greatets i.e. $\cos\theta= 0 \Rightarrow r -
+  \frac{1}{r} = a$ $\Rightarrow r_{max} = \frac{a + \sqrt{a^2 + 4}}{2}$
+
+  Similarly, for lowest value of $r, \cos\theta = 1 \Rightarrow r - \frac{1}{r} = a^2 - 4 \Rightarrow r^2 -
+  (a^2 - 4)r - 1 = 0$ $r_{min} = \frac{a^2- 4 - \sqrt{a^4 - 8a^2 + 20}}{2}$.
+\item We have to prove that $|z_1 + z_2|^2 < (1 + c)|z_1|^2 + \left(1 + \frac{1}{c}\right)|z_2|^2$
+  $\Rightarrow (z_1 + z_2)(\overline{z_1} + \overline{z_2}) < (1 + c)|z_1|^2 + \left(1 + \frac{1}{c}\right)|z_2|^2$
+
+  $\Rightarrow |z_1|^2 + z_1\overline{z_2} + z_2\overline{z_1} + |z_1|^2 < (1 + c)|z_1|^2 + \left(1 + \frac{1}{c}\right)|z_2|^2$
+  $\Rightarrow z_1\overline{z_2} + z_2\overline{z_1} < (1 + c)|z_1|^2 + \left(1 + \frac{1}{c}\right)|z_2|^2$
+
+  $\Rightarrow (x_1 + iy_1)(x_2 - iy_2) + (x_2 + iy_2)(x_1 - iy_1) < \frac{1}{c}[c^2(x_1^2 + y_1^2) + (x_2^2 + y_2^2)]$
+  $\Rightarrow 2cx_1x_2 + 2cy_1y_2 < c^2x_1^2 + c^2y_1^2 + x_2^2 + y_2^2$
+
+  $\Rightarrow (cx_1 - x_2)^2 + (cy_1 - y_2)^2 > 0$ which is true.
+\item Given $\left|\frac{z_1 - z_2}{z_1 + z_2}\right| = 1 \Rightarrow |z_1 - z_2|^2 = |z_1 + z_2|^2$
+  $\Rightarrow (z_1 - z_2)(\overline{z_1} - \overline{z_2}) = (z_1 + z_2)(\overline{z_1} + \overline{z_2})$
+
+  $\Rightarrow 2z_1\overline{z_2} = -2z_2\overline{z_1} \Rightarrow \overline{\left(\frac{z_1}{z_2}\right)}
+  = -\frac{z_1}{z_2}$ $\Rightarrow \frac{z_1}{z_2} = $ purely imaginary $\Rightarrow i\frac{z_1}{z_2} =$
+  real $= x$
+
+  Now $\frac{z_1 + z_2}{z_1 - z_2} = \frac{z_1/z_2 + 1}{z_1/z_2 - 1} = \frac{-ix + 1}{-ix - 1} = \frac{-1 +
+    x^2 + 2ix}{1 + x^2}$. If $\theta$ is the angle between given lines then
+  $\tan\theta = \arg\frac{z_1 + z_2}{z_1 - z_2} = \frac{2x}{x^2 - 1}$.
+\item Let $z_1 = r_1(\cos\theta_1 + i\sin\theta_1), z_2 = r_2(\cos\theta_2 + i\sin\theta_2)$. Also let $a =
+  r\cos\alpha, b = r\sin\alpha$.
+  $|az_1 + bz_2|^2 = |rr_1(\cos\theta_1 + i\sin\theta_1)\cos\alpha + rr_2(\cos\theta_2 + i\sin\theta_2)\sin\alpha|^2$
+
+  $= r^2(r1\cos\theta_1\cos\alpha + r_2\cos\theta_2\sin\alpha)^2 + r^2(r_1\sin\theta_1\cos\alpha + r_2\sin\theta_2\sin\alpha)^2$
+  $= r^2[r_1^2\cos^2\alpha + r_2^2\sin^2\alpha + 2r_1r_2\cos\alpha\sin\alpha\cos(\theta_1 - \theta_2)]$
+
+  $= \frac{r^2}{2}[r_1^2(1 + \cos2\alpha) + r_2^2(1 - \cos2\alpha) + 2r_1r_2\sin2\alpha\cos(\theta_1 - \theta_2)]$
+  $\frac{2|az_1 + bz_2|^2}{a^2 - b^2}= r_1^2 + r_2^2 + (r_1^2 - r_2^2)\cos2\alpha + 2r_2r_2\cos(\theta_1 - \theta_2)\sin2\alpha$
+
+  $= A + B\cos2\alpha + C\sin2\alpha$ where $A = r_1^2 + r_2^2, B = r_1^2- r_2^2, C = 2r_1r_2\cos(\theta_1 - \theta_2)$
+  Clearly, $-\sqrt{B^2 + C^2}\leq B\cos2\alpha + C\sin2\alpha \leq \sqrt{B^2 + C^2}$
+
+  $\therefore A -\sqrt{B^2 + C^2}\leq A + B\cos2\alpha + C\sin2\alpha \leq A + \sqrt{B^2 + C^2}$
+  $\therefore A -\sqrt{B^2 + C^2}\leq  \frac{2|az_1 + bz_2|^2}{a^2 + b^2}\leq A + \sqrt{B^2 + C^2}$
+
+  Now $B^2 + C^2 = r_1^4 + r_2^4 - 2r_1^2r_2^2 + 4r_1^2r_2^2\cos^2(\theta_1 - \theta_2)$.
+  Again $|z_1^2 + z_2^2| = |r_1^2(\cos2\theta_1 + i\sin2\theta_1) + r_2^2(\cos2\theta_2 + i\sin2\theta_2)|$
+  $= \sqrt{(r_1^2\cos2\theta_1 + r_2^2\cos2\theta_2)^2 + (r_1^2\sin2\theta_1 + r_2^2\sin2\theta_2)^2}$
+
+  $= \sqrt{r_1^4 + r_2^4 + 2r_1^2r_2^2\cos2(\theta_1 - \theta_2)}$
+  $= \sqrt{r_1^4 + r_2^4 + 2r_1^2r_2^2[2\cos^2(\theta_1 - \theta_2) - 1]} = \sqrt{B^2 + C^2}$
+
+  $A = r_1^2 + r_2^2 = |z_1|^2 + |z_2|^2$
+  Hence, $|z_1|^2 + |z_2|^2 - |z_1^2 + z_2^2| \leq 2\frac{|az_1 + bz_2|^2}{a^2 + b^2}\leq |z_1|^2 + |z_2|^2
+  + |z_1^2 + z_2^2|$.
+\item Given $z = \frac{b + ic}{1 + a} \therefore iz = \frac{-c + ib}{1 + a} \Rightarrow \frac{1}{iz} =
+  \frac{1 + a}{-c + ib}$. Using componendo and dividendo, we get
+  $\Rightarrow \frac{1 + iz}{1 - iz} = \frac{1 + a - c + ib}{1 + a + c - ib}$.
+  Also, given $a^2 + b^2 + c^2 = 1 \Rightarrow a^2 + b^2 = 1 - c^2$
+
+  $\Rightarrow (a + ib)(a - ib) = (1 + c)(1 - c)\Rightarrow \frac{a + ib}{1 - c} = \frac{1 + c}{a - ib} =
+  \frac{1}{u}$(say) $\therefore \frac{1 + iz}{1 - iz} = \frac{a + ib + 1 - c}{1 + c + a - ib} = \frac{a + ib
+    + u(a + ib)}{1 + c + u(1 + c)}$ $= \frac{a + ib}{1 + c}$.
+\item We can write that $(x - a)(x - b)\ldots (x - k) = x^n + p_1x^{n - 1} + p_2x^{n - 2} + \ldots + p_{n -
+  1}x + p_n$
+
+  Substituting $x = i$, we get
+  $(i - a)(i - b)\ldots (i - k) = i^n + p_1i^{n - 1} + p_2i^{n - 2} + \ldots + p_{n - 1}i +  p_n$.
+  Dividing both sides by $i^n$, we get
+  $(1 + ia)(1 + ib)\ldots(1 + ik) = 1 + \frac{p_1}{i} + \frac{p_2}{i^2} + \ldots$
+
+  Taking modulus and squaring, we get
+  $(1 + a^2)(1 + b^2)\ldots (1 + k^2) = (1 - p_2 + p_4 + \ldots)^2 + (p_1 - p_3 + \ldots)^2$.
+\item $3 + 2i$ is one value of $x$ for which $f(3 + 2i) = a + ib$
+  $\Rightarrow x = 3 + 2i \Rightarrow x^2 - 6x + 13 = 0$
+
+  $f(x) = x^4 - 8x^3 + 4x^2 + 4x + 39 = (x^2 - 6x + 13)(x^2 - 2x -21) -96x + 312$
+  $\Rightarrow f(3 + 2i) = -96(3 + 2i) + 312 = 24 - 192i = a + ib$
+  $\Rightarrow a:b = 1:-8$.
+\item Given $\frac{A}{B} + \frac{B}{A} = 1 \Rightarrow A^2 - AB + B^2 = 0$.
+  $A = \frac{B \pm \sqrt{3}iB}{2} = -\omega B, -\omega^2B\Rightarrow |A| = |B|$
+
+  $|A - B| = |-\omega B - B|$ or $|-\omega^2B - B| = |\omega^2 B|$ or $|\omega B|$
+  $\Rightarrow |A - B| = |B|$.
+  Thus, $|A| = |B| = |A - B|$ making the triangle equilateral.
+\item Given $z^n = (z + 1)^n \Rightarrow |z|^n = |z + 1|^n$
+  $\Rightarrow |z| = |z + 1|\Rightarrow x^2 = (x^2 + 2x + 1) \Rightarrow 2x + 1 = 0$,
+  which is the equation of a straight line on which roots of the given equation will lie.
+\item Let $z_1, z_2, z_3, z_4$ be represented by the points $A, B, C, D$ respectively.
+  $\therefore AD = |z_1 - z_4|$ and $BC = |z_2 - z_3|$
+
+  Let $a = (z_1 - z_4)(z_2 - z_3), b = (z_2 - z_4)(z_3 - z_1)$ and $c = (z_3 - z_4)(z_1 - z_2)$
+  $b + c = (z_2 - z_4)(z_3 - z_1) + (z_3 - z_4)(z_1 - z_2) = -(z_1 - z_4)(z_2 - z_3) = -a$
+
+  $|a| = |b + c| \leq |b| + |c| \Rightarrow |-(z_1 - z_4)(z_2 - z_3)| = |(z_2 - z_4)(z_3 - z_1)| + |(z_3 -
+  z_4)(z_1 - z_2)|$
+  $\Rightarrow AD.BC\leq BD.CA + CD.AB$.
+\item Euqation of a line joining points $a$ and $ib$ is
+  $\startbmatrix\NC z \NC \overline{z} \NC 1\NR\NC a \NC \overline{a} \NC 1 \NR\NC ib \NC i\overline{b} \NC
+  1\NR\stopbmatrix = 0$ or $(\overline{a} +i\overline{b})z - (a - ib)\overline{z} - i(a\overline{b} +
+  \overline{a}b) = 0$
+
+  $\Rightarrow (a + ib)z - (a -ib)\overline{z} - 2abi = 0[\because a, b\in R \therefore a = \overline{a}, b
+    = \overline{b}]\Rightarrow (a + ib)z - (a -ib)\overline{z} = 2abi$
+  $\Rightarrow \left(\frac{1}{2a} - \frac{i}{2b}\right)z + \left(\frac{1}{2a} +
+  \frac{i}{2b}\right)\overline{z} = 1$.
+\item Let $z_1 = r_1e^{i\theta_1}$ and $z_2 = r_2e^{i\theta_2}$.
+
+  Then $r_1 - r_2 = \sqrt{(r_1\cos\theta_1 - r_2\cos\theta_2)^2 + (r_1\sin\theta_1 - r_2\sin\theta_2)^2}$
+
+  $\Rightarrow 2r_1r_2 = 2r_1r_2\cos(\theta_1 - \theta_2)\Rightarrow \cos(\theta_1- \theta_2) = \cos 2n\pi$
+  $\Rightarrow \arg(z_1) - \arg(z_2) = 2n\pi$.
+\item $\triangle ABC$ and $\triangle DOE$ will be similar if
+  $\frac{AC}{AB} = \frac{DE}{DO}$ and $\angle BAC = \angle ODE$
+
+  $\Rightarrow \left|\frac{z_3 - z_1}{z_2 - z_1}\right| = \left|\frac{z_5 - z_4}{0 - z_4}\right|$ and
+  $\arg\left(\frac{z_3 - z_1}{z_2 - z_1}\right) = \arg\left(\frac{z_5 - z_4}{0 - z_4}\right)$
+
+  $\Rightarrow \frac{z_3 - z_1}{z_2 - z_1} = \frac{z_5 - z_4}{0 - z_4}$.
+  Solving this yields $(z_3 - z_2)z_4 = (z_1 - z_2)z_5$ and hence triangles are similar.
+\item Given $OA = 1$ and $|z| = 1 = OP \Rightarrow OA = OP$. $OP_0 = |z_0|$ and $OQ = |z\overline{z_0}| =
+  |z||\overline{z_0}| = |z_0|$
+
+  $\Rightarrow OP_0 = OQ$. Also given that $\angle P_0OP = \arg\frac{z_0}{z}$.
+  $\angle AOQ = \arg\left(\frac{1}{z\overline{z_0}}\right) =
+  \arg\left(\frac{\overline{z}}{\overline{z_0}}\right)[\because z\overline{z} = 1]$
+
+  $= -\arg\left(\frac{\overline{z_0}}{\overline{z}}\right)= -\arg\overline{\left(\frac{z_0}{z}\right)} =
+  \arg\left(\frac{z_0}{z}\right) = \angle P_0OP$ and thus the triangles are congruent.
+\item $P = \frac{az_2 + bz_1}{a + b}, Q = \frac{az_2 - bz_1}{a - b}$
+  $OP^2 = \left|\frac{az_2 + bz_1}{a + b}\right|^2 = \left(\frac{az_2 + bz_1}{a +
+  b}\right)\left(\frac{a\overline{z_2} + b\overline{z_1}}{a + b}\right)$
+
+  $= \frac{1}{a^2 + b^2}[a^2|z_2|^2 + b^2|z_1|^2 + ab(z_1\overline{z_2} + \overline{z_1}z_2)]$.
+  Similalry $OQ^2$ can be computed and the sum be found.
+\item Let $c\neq 0$, then $c = -(a + b)$ so we can write $az_1 + bz_2 - (a + b)z_3 = 0 \Rightarrow z_3 =
+  \frac{az_1 + bz_2}{a + b}$.
+
+  Thus, we see that $z_3$ divides line segment $z_1z_2$ in the ratio of $a:b$ making all three of them
+  collinear.
+\item Equation of a line passing through origin is $a\overline{z} + \overline{a}z = 0$. Let us assume that
+  all the points lie on the same side of the above line, so we have
+
+  $a\overline{z_i} + \overline{a}z_i > 0$ or $< 0$ for $i = 1, 2, 3, \ldots, n$.
+  Thus, $a\displaystyle\sum_{i = 1}^n\overline{z_i} + \overline{a}\sum_{i = 1}^nz_i > 0$ or $< 0$
+
+  But it is given that $\displaystyle\sum_{i = 1}^n z_i = 0 \Rightarrow \sum_{i = 1}^n \overline{z_i} = 0$
+  $\therefore\displaystyle a\sum_{i =1}^n\overline{z_i} + \overline{a}\sum_{i = 1}^nz_i = 0$,
+  which is in contradiction with equation above. So all points cannot lie on the same side of line.
+\item Let $OA$ and $OB$ be the unit vectors representing $z_1$ and $z_2$, then we have
+  $\vec{OA} = \frac{z_1}{|z_1|}, \vec{OB} = \frac{z_2}{|z_2|}$
+
+  Therefore equation of bisector will be $z = t\left(\frac{z_1}{|z_1|} + \frac{z_2}{|z_2|}\right) =
+  \frac{6}{5}t,$ where is an arbitrary positive integer.
+\item The diagram is given below:
+  \startplacefigure[location={left, none}]
+    \startMPcode
+      pair a; pair b; pair c;
+      pickup pencircle scaled 0.2pt;
+      a = (0, 4cm); b = (-2cm, 0); c = (1cm, 0);
+      draw a -- b -- c -- cycle;
+      pair p; pair q; pair r; pair d;
+      p = whatever[b, c]; a - p = whatever * (b - c) rotated 90;
+      q = whatever[c, a]; b - q = whatever * (c - a) rotated 90;
+      r = whatever[a, b]; c - r = whatever * (a -b) rotated 90;
+      d = whatever[a, p] = whatever[b, q]; % orthocenter
+      pickup pencircle scaled 2pt;
+      drawdot d;
+      pair l;
+      l = (a -- p) intersectionpoint  (b -- c);
+      pickup pencircle scaled 0.2pt;
+      draw a -- l;
+      pair m;
+      m = (b -- q) intersectionpoint  (a -- c);
+      draw b -- m;
+      label.bot("$L$", l);
+      label.rt("$M$", m);
+      label.ulft("$H$", d);
+      label.top("$A$", a);
+      label.llft("$B$", b);
+      label.lrt("$C$", c);
+      draw unitsquare scaled 5 rotated angle (a - l) shifted l;
+      draw unitsquare scaled 5 rotated angle (b - m) shifted m;
+      label.bot("$a$", (b + c)/2);
+      label.ulft("$c$", (b + a)/2);
+      label.urt("$b$", (c + a)/2);
+    \stopMPcode
+  \stopplacefigure
+  Let $AL$ be perpendicular on $BC$ and $H$ be orthocenter of the $\triangle ABC$.
+
+  $\frac{BL}{LC} = \frac{c\cos B}{b\cos C} = \frac{c\sec C}{b\sec B}$, thus $L$ divides $BC$ internally in the ratio of $c\sec
+  C:b\sec B$,  $L = \frac{z_3c\sec C + z_2b\sec B}{c\sec C + b\sec B}$
+
+  $\frac{AH}{HL} = \frac{\Delta ABH}{\Delta HBL} = \frac{\frac{1}{2}AB.BH\sin\angle
+    ABM}{\frac{1}{2}BL.BH.\sin\angle MBC} = \frac{c\cos A}{c\cos B\cos C}[\because \angle ABM = 90^\circ -
+    A, \angle MBC = 90^\circ - C]$
+
+  $= \frac{a\cos A}{a\cos B\cos C} = \frac{(b\cos C + c\cos B)\cos A}{a\cos B\cos C} = \frac{b\sec B + c\sec C}{a\sec A}$
+
+  $H = \frac{z_1a\sec A + z_2b\sec B + z_3c\sec C}{a\sec A + b\sec B + c\sec C}$
+
+  Since the above expression is similar w.r.t. $A, B$ and $C$, therefore it will also lie on the perpendiculars from $B$ and $C$ to
+  opposing sides as well.
+  Thus, orthocenter $H = \frac{z_1a\sec A + z_2b\sec B + z_3c\sec C}{a\sec A + b\sec B + c\sec C}$
+
+  $H = \frac{z_1k\sin A\sec A + z_2k\sin B\sec B + z_3k\sin C\sec C}{k\sin A\sec A + k\sin B\sec B + k\sin C\sec C}$,
+  $H = \frac{z_1\tan A + z_2\tan B + z_3\tan C}{\tan A + \tan B + \tan C}$.
+\item The diagram is given below:
+  \startplacefigure[location={left, none}]
+    \startMPcode
+      pair a; pair b; pair c;
+      pickup pencircle scaled 0.2pt;
+      a = (0, 4cm); b = (-2cm, 0); c = (1cm, 0);
+      draw a -- b -- c -- cycle;
+      pair p; pair q; pair r; pair d; pair m; pair n;
+      p = whatever[b, c]; a - p = whatever * (b - c) rotated 90;
+      q = whatever[c, a]; b - q = whatever * (c - a) rotated 90;
+      r = whatever[a, b]; c - r = whatever * (a -b) rotated 90;
+      d = whatever[a, p] = whatever[b, q]; % orthocenter
+      n = 1/4(a + b + c + d); % remarkably...
+      m = d rotatedabout(n, 180); % M is also the circumcentre
+      path circumcircle;
+      circumcircle = fullcircle scaled 2 abs(m - a) shifted m;
+      draw circumcircle;
+      pair l;
+      pickup pencircle scaled 2pt;
+      drawdot m;
+      pickup pencircle scaled 0.2pt;
+      pair ll;
+      ll = (a-- (a - 100(a - m))) intersectionpoint (b -- c);
+      draw a -- ll;
+      draw b -- m;
+      draw c -- m;
+      pair t;
+      t = whatever[b, c];
+      t - m = whatever * (b - c) rotated 90; % perpendicular calculation
+      draw m -- t;
+      label.bot("$D$", ll);
+      label.bot("$L$", t);
+      label.rt("$O$", m + (0.2cm, 0));
+      label.top("$A$", a);
+      label.llft("$B$", b);
+      label.lrt("$C$", c);
+      draw fullcircle scaled 16 rotated angle (a - m) shifted m cutafter (m -- b) withcolor red; % angle marking
+      draw fullcircle scaled 16 rotated angle (b - m) shifted m cutafter (m -- ll) withcolor .7green;
+      draw fullcircle scaled 24 rotated angle (ll - m) shifted m cutafter (m -- c) withcolor .7green;
+      draw fullcircle scaled 16 rotated angle (c - m) shifted m cutafter (m -- a) withcolor .7blue;
+      label.lft("$2C$", m - (0.2cm, 0)) withcolor red;
+      label.l("$\pi - 2C$", m - (0, 0.5cm)) withcolor .7green;
+      label.lrt("$\pi - 2B$", m - (-0.5, 0.5cm)) withcolor .7green;
+      label.rt("$\pi - 2B$", m + (0.4cm, 0)) withcolor .7blue;
+      label.bot("$a$", (b + c)/2 + (.2cm, 0cm));
+      label.ulft("$c$", (b + a)/2);
+      label.urt("$b$", (c + a)/2);
+    \stopMPcode
+  \stopplacefigure
+  Let $O$ be the circumcenter of $\triangle ABC$ where $A=z_1, B=z_2$ and $C=z_3. \frac{BD}{DC} =
+  \frac{\frac{1}{2}BD.OL}{\frac{1}{2}DC.OL} = \frac{\Delta BOD}{\Delta COD}$
+
+  $= \frac{\frac{1}{2}OB.OD.\sin(\pi - 2C)}{\frac{1}{2}OC.OD\sin(\pi - 2C)} = \frac{\sin2C}{\sin2B}$.  Thus,
+  $D$ divides $BC$ internally in the ratio $\sin2C:\sin2B \Rightarrow D = \frac{z_3\sin2C +
+    z_2\sin2B}{\sin2C + \sin2B}$
+
+  The complex number dividing $AD$ internally in the ratio $\sin2B+\sin2C:\sin2A$ is $\frac{z_1\sin 2A +
+    z_2\sin 2B + z_3\sin 2C}{\sin 2A + \sin 2B + \sin 2C}$
+
+  Since the above expression is similar w.r.t. $A, B$ and $C$, therefore it will also lie on the
+  perpendicular bisectors on $AC$ and $AB$ as well.
+
+  Let $BO$ produced meet $AC$ at $E$ and $CO$ produced meet $AB$ at $F$. We can show that, the complex
+  numner representing the point dividing the line segment $BE$ internally in the ratio $(\sin2C +
+  \sin2A):\sin2B$ and the complex number representing the point dividing the line segment $CF$ internally in
+  the ratio $(\sin2A+ \sin2B):\sin2C$ will be each $= \frac{z_1\sin 2A + z_2\sin 2B + z_3\sin 2C}{\sin 2A +
+    \sin 2B + \sin 2C}$
+
+  Thus, circumcenter is $\frac{z_1\sin 2A + z_2\sin 2B + z_3\sin 2C}{\sin 2A + \sin 2B + \sin 2C}$
+\item Let $z$ be the circumcenter of the triangle represented by $A(z_1), B(z_2)$ and $C(z_3)$ respectively,
+  then $|z - z_1| = |z - z_2| = |z - z_3|$ so we have $|z - z_1| = |z - z_2|$
+  $\Rightarrow |z - z_1|^2 = |z - z_2|^2 \Rightarrow (z - z_1)(\overline{z} - \overline{z_1}) = (z -
+  z_2)(\overline{z} - \overline{z_2})$
+
+  $\Rightarrow z\overline{z} + z_1\overline{z_1} - \overline{z}z_1 - z\overline{z_1} = z\overline{z} +
+  z_2\overline{z_1} - \overline{z}z_2 - z\overline{z_2}$
+  $\Rightarrow z(\overline{z_1} - \overline{z_2})+ \overline{z}(z_1 - z_2) = z_1\overline{z_1} - z_2\overline{z_2}$
+
+  Similarly considering $|z - z_1| = |z - z_3|$, we will have
+  $\Rightarrow z(\overline{z_1} - \overline{z_3})+ \overline{z}(z_1 - z_3) = z_1\overline{z_1} - z_3\overline{z_3}\stopalign$
+
+  We have to eliminate $\overline{z}$ from equation (1) and (2) i.e. multiplying equation (1) with $(z_1 - z_3)$ and (2) with $(z_1
+  - z_2)$, we get following
+
+  $z[\overline{z_1}(z_2 - z_3) + \overline{z_2}(z_3 - z_1) + \overline{z_3}(z_1 - z_2)] = z_1\overline{z_1}(z_2 - z_3) +
+  z_2\overline{z_2}(z_3 - z_1) + z_3\overline{z_3}(z_1 - z_2)$
+  $\Rightarrow z = \frac{\sum z_1\overline{z_1}(z_2 - z_3)}{\sum \overline{z_1}(z_2 - z_3)}$.
+\item Let $z$ be the orthocenter of $\triangle A(z_1)B(z_2)C(z_3)$ i.e. the intersection point of
+  perpendiculars on sides from opposite vertices.
+
+  Since $AH\perp BC \therefore \arg\left(\frac{z_1 - z}{z_3 - z_2}\right) = \pm\frac{\pi}{2}$
+  $\Rightarrow \frac{z_1 - z}{z_3 - z_2}$ is purely imaginary.
+
+  $\Rightarrow \overline{\left(\frac{z_1 - z}{z_3 - z_2}\right)} = -\left(\frac{z_1 - z}{z_3 -
+    z_2}\right)\Rightarrow\frac{\overline{z_1} - \overline{z}}{\overline{z_3} - \overline{z_2}} = \frac{z - z_1}{z_3 - z_2}$
+  $\Rightarrow \overline{z_1} - \overline{z} = \frac{(z - z_1)(\overline{z_3} - \overline{z_2})}{z_3 - z_2}$
+
+  Similarly for $BH\perp AC, \overline{z_2} - \overline{z} = \frac{(z - z_2)(\overline{z_1} - \overline{z_2})}{z_1 - z_3}$
+
+  Eliminating $\overline{z}$ like last problem we arrive at the desired result.
+\item We have $\angle CBA =\frac{2\pi}{3}$, therefore
+  $\frac{z_3 - z_2}{z_1 - z_2} = \frac{|z_3 - z_2|}{|z_1 - z_2|}\left[\cos\frac{2\pi}{3} + i\sin\frac{2\pi}{3}\right]$
+  $= -\frac{1}{2} + \frac{i\sqrt{3}}{2}[\because BC = AB]$
+
+  $z_3 + \left(\frac{1}{2} - \frac{i\sqrt{3}}{2}\right)z_1 = \left(\frac{3}{2} - \frac{i\sqrt{3}}{2}\right)z_2$
+
+  Solving this yields $2\sqrt{3}z_2 = (\sqrt{3} - i)z_1 + (\sqrt{3} + i)z_3$.
+  Also, since diagonals bisect each other $\Rightarrow \frac{z_1 + z_3}{2} = \frac{z_2 + z_4}{2}$,
+  $z_4 = z_1 + z_3 - z_2$
+  Substituting the value of $z_2$, we get
+  $2\sqrt{3}z_4 = (\sqrt{3} + i)z_1 + (\sqrt{3} - i)z_3$.
+\item Since $\angle PQR = \angle PRQ = \frac{1}{2}(\pi - \alpha) \therefore PQ = PR$ Also, $\angle QPR = \pi
+  - 2\left(\frac{\pi}{2} - \frac{\alpha}{2}\right) = \alpha$
+  $\therefore \arg\frac{z_3 - z_1}{z_2 - z_1} = \alpha \Rightarrow \frac{z_3 - z_1}{z_2 - z_1} =
+  \frac{PR}{RQ}(\cos\alpha + i\sin\alpha)$
+
+  $\Rightarrow \frac{z_3 - z_1}{z_2 - z_1} -1 = (\cos\alpha - 1) + i\sin\alpha \Rightarrow \frac{z_3 -
+    z_2}{z_2 - z_1} = -2\sin^2\frac{\alpha}{2} + i2\sin\frac{\alpha}{2}\cos\frac{\alpha}{2}$
+
+  $\Rightarrow \left(\frac{z_3 - z_2}{z_2 - z_1}\right)^2 =
+  -4\sin^2\frac{\alpha}{2}\left[\cos\frac{\alpha}{2} + i\sin\frac{\alpha}{2}\right]^2 =
+  -4\sin^2\frac{\alpha}{2}[\cos\alpha + i\sin\alpha] = -4\sin^2\frac{\alpha}{2}.\frac{z_3 - z_1}{z_2 - z_1}$
+
+  $\Rightarrow (z_3 - z_2)^2 = 4(z_3 - z_1)(z_1 - z_2)\sin^2\frac{\alpha}{2}$.
+\item Let $C$ be the center of a regular polygon of $n$ sides. Let $A_1(z_1), A_2(z_2)$ and $A_3(z_3)$ be its three
+  consecutive vertices.
+
+  $\angle CA_2A_1 = \frac{1}{2}\left(\pi - \frac{2\pi}{n}\right) \therefore A_1A_2A_3 = \pi - \frac{2\pi}{n}$
+
+  {\bf Case I:} When $z_1, z_2, z_3$ are in anticlockwise order. $\Rightarrow z_1 - z_2 = (z_3 - z_2)e^{i\left(\pi -
+    2\pi/n\right)}[\because A_1A_2 = A_3A_2]$
+
+  $z_1 - z_2 = (z_2 - z_3)e^{-i2\pi/n}[\because e^{i\pi} = -1] \Rightarrow z_3 = z_2 - (z_1 - z_2)e^{i2\pi/n}$
+
+  {\bf Case II:} When $z_1, z_2, z_3$ are in clockwise order. $\Rightarrow z_3 - z_2 = (z_1 - z_2)e^{i\left(\pi -
+    i2\pi/n\right)}$
+
+  $z_3 = z_2 + (z_2 - z_1)e^{-i2\pi/n}$.
+\item Let $O$ be the origin and the complex number representing $A_1$ be $z$, then $A_2, A_3, A_4$ will be
+  represented by $ze^{i2\pi/n}, ze^{i4\pi/n}, ze^{i6\pi/n}$. Let $|z| = a$
+
+  $A_1A_2 = \left|z - ze^{i2\pi/n}\right| = |z|\left|1 - \cos\frac{2\pi}{n} - i\sin\frac{2\pi}{n}\right|$
+  $= a\sqrt{\left(1 - \cos\frac{2\pi}{n}\right)^2 + \sin^2\frac{2\pi}{n}} = a\sqrt{2\left(1 -
+    \cos\frac{2\pi}{n}\right)} = 2a\sin\frac{\pi}{n}$
+
+  Similarly, $A_1A_3 = 2a\sin\frac{2\pi}{n}$ and $A_1A_4 = 2a\sin\frac{3\pi}{n}$
+
+  Given $\frac{1}{A_1A_2} = \frac{1}{A_1A_3} + \frac{1}{A_1A_4}\therefore \frac{1}{2a\sin\frac{\pi}{n}} =
+  \frac{1}{2a\sin\frac{2\pi}{n}} + \frac{1}{2a\sin\frac{3\pi}{n}}$
+  $\Rightarrow \sin\frac{\pi}{n}\left(\sin\frac{3\pi}{n} + \sin\frac{2\pi}{n}\right) =
+  \sin\frac{2\pi}{n}\sin\frac{3\pi}{n}$
+
+  $\Rightarrow \sin\frac{3\pi}{n} + \sin\frac{2\pi}{n} = 2\cos\frac{2\pi}{n}\sin\frac{3\pi}{n} =
+  \sin\frac{4\pi}{n} + \sin\frac{2\pi}{n}$
+  $\Rightarrow \sin\frac{3\pi}{n} = \sin\frac{4\pi}{n}\Rightarrow \frac{3\pi}{n} = m\pi +
+  (-1)^n\frac{4\pi}{n}, m = 0,\pm1, \pm2,\ldots$
+
+  If $m = 0\Rightarrow \frac{3\pi}{n} = \frac{4\pi}{n} \Rightarrow 3 = 4$ (not possible).
+  If $m = 1\Rightarrow \frac{3\pi}{n} = \pi - \frac{4\pi}{n}\Rightarrow n = 7$.
+  If $m = 2,3 \ldots, -1, -2,\ldots$ gives values of $n$ which are not possible. Thus $n = 7$.
+\item Given, $|z| = 2$. Let $z_1 = -1 + 5z \Rightarrow z_1 + 1 = 5z$.
+
+  $|z_1 + 1| = |5z| = 5|z| = 10$
+  $\Rightarrow z_1$ lies on a circle with center $(-1, 0)$ having radius $10$.
+\item Given, $|z - 4 + 3i|\leq 2 \Rightarrow ||z| - |4 - 3i||\leq 2\Rightarrow ||z| - 5|\leq 2 \Rightarrow
+  -2 \leq |z| - 5\leq 2 \Rightarrow 3\leq |z|\leq 7$.
+\item $|z - 6 - 8i|\leq |4| \Rightarrow -4 \leq ||z| - |6 + 8i|| \leq 4\Rightarrow -4 \leq |z| - 10 \leq 10
+  \Rightarrow 6\leq |z|\leq 14$.
+\item The diagram is given below:
+  \startplacefigure[location={left,none}]
+    \startMPcode
+      pickup pencircle scaled 0.2pt;
+      pair c;
+      c = (0cm, 2.5cm);
+      draw fullcircle scaled 3cm shifted c;
+      drawarrow (-0.5cm, 0cm) -- (4cm, 0cm);
+      drawarrow (0cm, -0.5cm) -- (0cm, 5cm);
+      draw (0, 0) -- (3cm, 4cm);
+      draw (0, 2.5cm) -- (1.2cm, 1.6cm);
+      label.rt("$x$", (4cm, 0));
+      label.top("$y$", (0, 5cm));
+      label.llft("$O$", (0,0));
+      label.lft("$C(0, 25)$", c);
+      label.rt("$P$", (1.2cm, 1.6cm));
+      draw fullcircle scaled 16 rotated angle ((1cm, 0) - (0, 0)) shifted (0, 0) cutafter ((0, 0) -- (3cm, 4cm));
+      % angle marking
+      label.rt("$\theta$", (0.2cm, 0.25cm));
+      draw fullcircle scaled 16 rotated angle ((0, 0) - c) shifted c cutafter (c -- (1.2cm, 1.6cm));
+      label.rt("$\theta$", c - (-0.1cm, 0.4cm));
+    \stopMPcode
+  \stopplacefigure
+  Given $z - 25i \leq 15$, which represents a circle having center $(0, 25)$ and a radius $15$.
+  Let $OP$ be tangent to the circle at point $P$, then $\angle XOP$ will represent least
+  value of $\arg(z)$.
+
+  Let $\angle XOP = \theta$ then $\angle OCP = \theta$. Now $OC = 25, CP = 15 \therefore OP = 20\therefore
+  \tan\theta = \frac{OP}{CP} = \frac{4}{3}$. $\therefore$ Least value of $\arg(z) = \theta =
+  \tan^{-1}\frac{4}{3}$
+  \vskip 1.8cm
+\item Given, $|z - z_1|^2 + |z - z_2|^2 = k\Rightarrow |z|^2 + |z_1|^2 - 2z\overline{z_1} + |z|^2 + |z_2|^2
+  - 2z\overline{z_2} = k$
+
+  $\Rightarrow 2|z|^2 - 2z(\overline{z_1} + \overline{z_2}) = k - (|z_1|^2 + |z_2|^2)\Rightarrow |z|^2 -
+  2z\left(\frac{\overline{z_1 + z_2}}{2}\right) + \frac{1}{4}|z_1 + z_2|^2 = \frac{k}{2} + \frac{1}{4}[|z_1
+    + z_2|^2 - 2|z_1|^2 -2|z_2|^2]$
+
+  $\Rightarrow \left|z - \frac{z_1 + z_2}{2}\right|^2 = \frac{1}{2}\left[k - \frac{1}{2}|z_1 -
+    z_2|^2\right]$. The above equation represents a circle with center at $\frac{z_1 + z_2}{2}$ and radius
+  $\frac{1}{2}\sqrt{2k - |z_1 - z_2|^2}$ provided $k\geq \frac{|z_1 - z_2|^2}{2}$.
+\item Since $|z - 1| = 1, z$ represents a circle with center $(1, 0)$ and a radius of of $1$. It is shown
+  below:
+  \startplacefigure[location={left,none}]
+    \startMPcode
+      pickup pencircle scaled 0.2pt;
+      pair c; c = (1cm, 0);
+      draw fullcircle scaled 2cm shifted c;
+      drawarrow (-0.5cm, 0) -- (3cm, 0);
+      drawarrow (0, -1.5cm) -- (0, 1.5cm);
+      label.rt("$x$", (3cm, 0));
+      label.top("$y$", (0, 1.5cm));
+      label.llft("$O$", (0,0));
+      label.bot("$C(1, 0)$", c);
+    \stopMPcode
+  \stopplacefigure
+  Now $|z - 1| = 1$. Let $z = x + iy$ then $x^2 + y^2 = 2x$. Also,
+
+  $\frac{z - 2}{z} = \frac{x - 2 + iy}{x + iy} = \frac{x^2 - 2x + y^2 + 2iy}{x^2 + y^2} = i\frac{y}{x}$
+
+  \noindent{\bf Case I.} When $z$ lies in the first quadrant. This implies $\arg(z) = \theta$, where
+  $\tan\theta = \frac{y}{x} \therefore i\tan[\arg(z)] = i\tan\theta = i\frac{y}{x}$.
+
+  \noindent{\bf Case II.} When $z$ lies in the fourth quadrant. Thus, $\arg(z) = 2\pi - \theta$, where
+  $\tan\theta = \frac{-y}{x}\therefore i\tan[\arg(z)] = i\tan(2\pi - \theta) = i\frac{y}{x}$.
+\item Let $z = x + iy$. Now we have $\frac{z - 1}{z + 1} = \frac{(x^2 - 1) + y^2}{(x + 1)^2 + y^2} +
+  i\frac{2y}{(x + 1)^2 + y^2}$
+
+  $\therefore \arg\left(\frac{z - 1}{z + 1}\right) = \frac{\pi}{4}\Rightarrow \tan\left(\arg\left(\frac{z -
+    1}{z + 1}\right)\right) = \frac{2y}{x^2 - 1 + y^2}$
+
+  $\Rightarrow x^2 + y^2 - 1 -2 y = 0 \Rightarrow x^2 + (y - 1)^2 = 2$, which is equation of a circle having
+  center at $(0, 1)$ and radius $\sqrt{2}$.
+\item Let $z = x + iy$. Now, $u + iv = (z - 1)(\cos\alpha - i\sin\alpha) + \frac{1}{z - 1}(\cos\alpha +
+  i\sin\alpha)= (x - 1)\cos\alpha + y\sin\alpha + i[y\cos\alpha - (x - 1)\sin\alpha] + \frac{x - 1 - iy}{(x
+    - 1)^2 + y^2}(\cos\alpha + i\sin\alpha) = 0$
+
+  Equating imaginary parts, we get
+  $v = y\cos\alpha - (x - 1)\sin\alpha + \frac{(x - 1)\sin\alpha - y\cos\alpha}{(x - 1)^2 + y^2} =
+  0\Rightarrow [y\cos\alpha - (x - 1)\sin\alpha][(x - 1)^2 + y^2] = 0$
+
+  $\therefore $ Either $y\cos\alpha - (x - 1)\sin\alpha = 0 \Rightarrow y = \tan\alpha(x - 1)$, which is a
+  straight line passing through $(1, 0)$ or $(x - 1)^2 + y^2 - 1 = 0$ which is a circle with center $(1, 0)$
+  and unit radius.
+\item Given, $1 + a_1z + a_2z^2 + \cdots + a_nz^n = 0 \Rightarrow |a_1z| + |a_2z^2| + \cdots + |a_nz^b|\geq
+  1$ and
+
+  L.H.S. $ < 2|z| + 2|z|^2 + \cdots$ to $\infty[\because |a_n| < 2]$.
+
+  Let $|z| < 1$ then $\frac{2|z|}{1 - |z|} < 1 \Rightarrow |z| > \frac{1}{3}$
+
+  When $|z|> 1$, clearly $|z| > \frac{1}{3}$; hence, $z$ does not lie in the interior of the circle with
+  radius $\frac{1}{3}$.
+\item Given, $z^n\cos\theta_0 + z^{n - 1}\cos\theta_1 + \cdots + \cos\theta_n = 2$
+  $\Rightarrow 2 = |z^n\cos\theta_0 + z^{n - 1}\cos\theta_1 + \cdots + \cos\theta_n|$
+
+  $< |z^n\cos\theta_0| + |z^{n - 1}\cos\theta_1| + \cdots + |\cos\theta_n|$
+  $= |z^n||\cos\theta_0| + |z^{n - 1}||\cos\theta_1| + \cdots + |\cos\theta_n|$
+
+  $\leq |z|^n + |z|^{n - 1}  + \cdots + 1 < 1 + |z| + |z|^2 + \cdots$ to $\infty$
+  $\Rightarrow 2 = \frac{1}{1 - |z|} \Rightarrow |z| > \frac{1}{2} [$ when $|z| < 1]$
+
+  Hence $z$ lies outside the circle $|z| = \frac{1}{2}$.
+  Thus all roots of the given equation lie outside the circle $|z| = \frac{1}{2}$.
+\item Recall that points $z_1, z_2, z_3$ are concyclic if $\left(\frac{z_2 - z_4}{z_1 -
+  z_4}\right)\left(\frac{z_1 - z_3}{z_2 - z_3}\right)$ is real. We assume that $z_4$ is origin.
+
+  Given, $\frac{2}{z_1} = \frac{1}{z_2} + \frac{1}{z_3} = \frac{z_2 + z_3}{z_2z_3} \therefore z_1 =
+  \frac{2z_2z_3}{z_1+z_3}$.
+
+  Putting the value of $z_1$ and $z_4$ in the concyclic condition expression we obtain
+
+  $\left(\frac{z_2 - z_4}{z_1 - z_4}\right)\left(\frac{z_1 - z_3}{z_2 - z_3}\right) = \frac{1}{2}$.
+  Thus, $z_1, z_2, z_3$ lie on a circle passing through origin.
+\item The diagram given below:
+  \startplacefigure[location={left,none}]
+    \startMPcode
+      % \draw (0, 0) circle(1);
+      % \draw (.866, -.5) -- (-.866, -.5) -- (.5, .866) -- cycle;
+      % \draw (.5, .866) -- (.5, -.866);
+      % \filldraw (0, 0) circle(1pt);
+      % \draw (0, 0) node[anchor=north] {$O$};
+      % \draw (.866, -.5) node[anchor=north west] {$C(z_3)$} (-.866, -.5)
+      % node[anchor=north east] {$B(z_2)$} (.5, .866) node[anchor=south]
+      % {$A(z_1)$} (.5, -.866) node[anchor=north] {$P(z)$};
+      pickup pencircle scaled 0.2pt;
+      draw fullcircle scaled 2cm;
+      draw (.866cm, -.5cm) -- (-.866cm, -.5cm) -- (.5cm, .866cm) -- cycle;
+      draw (.5cm, .866cm) -- (.5cm, -.866cm);
+      pickup pencircle scaled 2pt;
+      drawdot (0, 0);
+      label.bot("$O$", (0, 0));
+      label.lrt("$C(z_3)$", (.866cm, -.5cm));
+      label.llft("$B(z_2)$", (-.866cm, -.5cm));
+      label.top("$A(z_1)$", (.5cm, .866cm));
+      label.bot("$P(z)$", (.5cm, -.866cm));
+    \stopMPcode
+  \stopplacefigure
+  We have $OP=OA=OB=OC \therefore |z| = |z_1| = |z_2| = |z_3| \Rightarrow |z|^2 = |z_1|^2 = |z_2|^2 =
+  |z_3|^2 \Rightarrow z\overline{z} = z_1\overline{z_1} = z\overline{z_2} = z\overline{z_3}$.
+
+  Since $AP$ is perpendicular to $BC, \therefore\arg\left(\frac{z_1 - z}{z_2 - z_3}\right) = \frac{\pi}{2}$
+  or $\frac{-\pi}{2}\Rightarrow \frac{z_1 - z}{z_2 - z_3}$ is purely imaginary.
+
+  $\Rightarrow \overline{\left(\frac{z_1 - z}{z_2 - z_3}\right)} = -\frac{z_1 - z}{z_2 - z_3}$.
+  Solving the above equation gives $z = \frac{z_2z_3}{z_1}$.
+\item The diagram is given below:
+  \startplacefigure[location={left,none}]
+    \startMPcode
+      pickup pencircle scaled 0.2pt;
+      draw fullcircle scaled 2cm shifted (2cm, 0);
+      draw (0cm, -0.2cm) -- (3.2cm, -0.2cm);
+      draw (0cm, -0.2cm) -- (3.2cm, 0.8cm);
+      draw fullcircle scaled 2cm shifted (5cm, 0);
+      draw (3.8cm, -.6cm) -- (6.2cm, .6cm);
+      draw (3.8cm, .8cm) -- (6.2cm, -.8cm);
+      label("$A$", (0.9cm, -0.4cm));
+      label("$B$", (3.1cm, -0.4cm));
+      label("$P$", (-0.2cm, -0.2cm));
+      label("$C$", (0.9cm, 0.3cm));
+      label("$D$", (2.9cm, 0.85cm));
+      label("$A$", (4cm, -0.6cm));
+      label("$P$", (4.95cm, -0.2cm));
+      label("$B$", (5.95cm, 0.65cm));
+      label("$C$", (4.15cm, 0.75cm));
+      label("$D$", (5.85cm, -0.75cm));
+    \stopMPcode
+  \stopplacefigure
+  Let $P(z)$ be the point of intersection and $A, B, C, D$ represent points $a, b, c, d$ respectively. Clearly, $P, A, B$ are
+  collinear. Thus,
+
+  $\startbmatrix\NC z \NC \overline{z} \NC 1\NR\NC a \NC \overline{a} \NC 1\NR\NC b \NC \overline{b} \NC
+  1\NR\stopbmatrix = 0 \Rightarrow z(\overline{a} - \overline{b}) - \overline{z}(a - b) + (a\overline{b} -
+  \overline{a}b) = 0$
+
+  Similarly, $P, C, D$ are collinear and thus
+  $\Rightarrow z(\overline{c} - \overline{d}) - \overline{z}(c - d) + (c\overline{d} - \overline{c}d) = 0$
+
+  Eliminating $\overline{z}$ because we have to find $z$, we have
+  $z(\overline{a} - \overline{b})(c - d) - z(\overline{c} - \overline{d})(a - b) = (c\overline{d} -
+  \overline{c}d)(a - b) - (a\overline{b} - \overline{a}b)(c - d)$.
+
+  $\because a, b, c, d$ lie on the circle. $|a| = |b| = |c| = |d| = r \Rightarrow a^2 = b^2 = c^2 = d^2 = r^2$
+  $\Rightarrow a\overline{a} = b\overline{b} = c\overline{c} = d\overline{d} = r^2$
+
+  $\Rightarrow \overline{a} = \frac{r^2}{a}, \overline{b} = \frac{r^2}{b}, \overline{c} = \frac{r^2}{c},
+  \overline{d} = \frac{r^2}{d}$
+
+  Putting these values in the equation we had obtained,
+  $z\left(\frac{r^2}{a} - \frac{r^2}{b}\right)(c - d) - z\left(\frac{r^2}{c} - \frac{r^2}{d}\right)(a - b) = \left(\frac{cr^2}{d} -
+  \frac{dr^2}{c}\right)(a - b) - \left(\frac{ar^2}{b} - \frac{br^2}{a}\right)(c - d)$
+
+  Solving this for $z$, we arrive at desired answer.
+\item Given $\startbmatrix\NC a \NC b \NC c\NR\NC b \NC c \NC a\NR\NC c \NC a \NC b\NR\stopbmatrix = 0$
+    $\Rightarrow a^3 + b^3 + c^3 - 3abc = 0\Rightarrow (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca) = 0$
+
+    $\because z_1, z_2, z_3$ are three non-zero complex numbers, hence $a^2 + b^2 + c^2 - ab - bc - ca = 0$
+    $\Rightarrow (a - b)^2 + (b - c)^2 + (c - a)^2 = 0 \Rightarrow a = b = c$. This can be represented by
+  following diagram:
+  \startplacefigure[location={left,none}]
+    \startMPcode
+      % pair o = (0,0);
+      % path circle = circle(o, 2);
+      % draw(circle);
+      % pair a = (0, 2);
+      % pair b = (1.414, -1.414);
+      % pair c = (-1.414, -1.414);
+      % draw (a -- b -- c -- cycle);
+      % draw (b -- o);
+      % draw (c -- o);
+      % label("$A$", a, align=N);
+      % label("$B$", b, align=E);
+      % label("$C$", c, align=W);
+      % label("$O$", o, align=N);
+      % markangle("", radius=10, c, o, b);
+      pair o;
+      o = (0, 0);
+      draw fullcircle scaled 4cm;
+      pair a; pair b; pair c;
+      a = (0, 2cm); b = (1.414cm, -1.414cm);
+      c = (-1.414cm, -1.414cm);
+      draw a -- b -- c -- cycle;
+      draw b -- o;
+      draw c -- o;
+      label.top("$A$", a);
+      label.rt("$B$", b);
+      label.lft("$C$", c);
+      label.top("$O$", o);
+      draw fullcircle scaled 16 rotated angle (c - o) shifted o cutafter (o -- b);
+    \stopMPcode
+  \stopplacefigure
+  Now $OA=OB=OC$, where $O$ is the origin and $A, B$ and $C$ are the points representing $z_1, z_2$ and $z_3$ respectively.
+  $\therefore O$ is the circumcenter of $\triangle ABC$.
+
+  Now $\arg\left(\frac{z_3}{z_2}\right) = \angle BOC = 2\angle BAC = \arg\left(\frac{z_3 - z_1}{z_2 -
+    z_1}\right)^2$.
+  \vskip 2cm
+\item The diagram is given below:
+  \startplacefigure[location={left, none}]
+    \startMPcode
+      pair oo;
+      oo = (2cm, 0cm);
+      draw fullcircle scaled 4cm shifted oo;
+      pair o; pair p; pair q; pair r;
+      o = (0, 0); p = (4cm, 0); q = (3cm, 1.732cm); r = (1cm, 1.732cm);
+      draw o -- p; draw o -- q; draw o -- r; draw p -- q; draw p -- r;
+      draw unitsquare scaled 5 rotated angle (o - q) shifted q;
+      draw unitsquare scaled 5 rotated angle (o - r) shifted r;
+      draw fullcircle scaled 16 rotated angle (p - o) shifted o cutafter (o -- q);
+      draw fullcircle scaled 16 rotated angle (q - o) shifted o cutafter (o -- r);
+      label.lft("$O$", o);
+      label.rt("$P(z_1)$", p);
+      label.top("$Q(z_2)$", q);
+      label.top("$R(z_3)$", r);
+    \stopMPcode
+  \stopplacefigure
+  $z_2 = \frac{OQ}{OP}z_1e^{i\theta} = \cos\theta z_1e^{i\theta}$ and $z_3 = \frac{OR}{OP}z_1e^{i2\theta} =
+  \cos2\theta z_1e^{i2\theta}$
+
+  $\Rightarrow z_2^2 = \cos^2\theta z_1^2e^{i2\theta} \Rightarrow z_2^2\cos2\theta = z_1z_3\cos^2\theta$.
+  \vskip 2.5cm
+\item Given circles are $|z| = 1 \Rightarrow x^2 + y^2 - 1 = 0$ and $|z - 1| = 4 \Rightarrow x^2 - 2x + y^2
+  - 15 = 0$.
+
+  Let the circles cut by these two orthogonally is $x^2 + y^2 + 2gx + 2fy + c = 0$. Since first circle cuts
+  this family of circles orthoginally, therefore
+
+  $2g.0 + 2f.0 = c - 1 \Rightarrow c = 1$ and $2g(-1) + 2f.0 = c - 15 \Rightarrow g = 7$.
+  Thus, required circles are $x^2 + y^2 + 14x + 2fy + 1 = 0 \Rightarrow |z + 7 + if| = \sqrt{48 + f^2}$.
+\item Given, $|z + 3| = t^2 - 2t + 6$ which is equation of a circle having center $(-3, 0)$ and radius $t^2 - 2t +
+  6$. Let $A = (-3, 0)$ and $r_1 = t^2 - 2t + 6$. In this case $z$ lies on the circle.
+
+  Also, $|z - 3\sqrt{3}i| < t^2$ implies $z$ lies on the interior of the circle having center $(0,
+  3\sqrt{3})$ and radius $t^2$. Let $B = (0, 3\sqrt{3})$ and $r_2 = t^2$. $AB = \sqrt{3^2 + 27} = 6$. $r_2 -
+  r_1 = 2(t - 3)$
+
+  Clearly, when the two circles are disjoint or touching each other no solution is possible. This leads to
+  following cases:
+
+  {\bf Case I:} When $t > 3$ i.e. $r2 > r_1$. In this case at least one $z$ is possible if $AB < r_1 + r_2
+  \Rightarrow 6 < 2(t^2 - t + 3)\Rightarrow t < 0$ or $t > 1\Rightarrow 3 < t <\infty$
+
+  {\bf Case II:} When $t \leq 3$ i.e. $r_1 > r_2$. In this case at least one $z$ will be possible if $|r_1 -
+  r_2| \leq AB < r_1 + r_2$
+
+  $2(3 - t)\leq 6 < 2(t^2 - t + 3)$ i.e. $t \leq 0$ and $t < 0$ or $t > 1$
+  Combining all solutions we gace $1 < t < \infty$.
+\item Let $z = x + iy$. $\frac{az + b}{cz + d} = \frac{ax + b + iay}{cx + d + icy} = \frac{(ax + b + iay)(cx
+  + d - icy)}{(cx + d)^2 + c^2y^2}$
+
+  $\Im\left(\frac{az + b}{cz + d}\right) = \frac{ay(cx + d) - cy(ax + b)}{(cx + d)^2 + c^2y^2} = \frac{ady -
+  bcy}{(cx + d)^2 + c^2y^2}$
+
+  $\because ad > bc$, therefore the signs of imaginary parts of $z$ and $\frac{az + b}{cz + d}$ are the same.
+\item Given, $z_1 = \frac{i(z_2 + 1)}{z_2 - 1} \Rightarrow x_1 + iy_1 = \frac{-y_2 + i(x_2 + 1)}{(x_2 - 1) + iy_2}
+  = \frac{[-y_2 + i(x_2 + 1)][(x_2 - 1) + iy_2]}{(x_2 - 1)^2 + y_2^2}$
+
+  Comparing real and imaginary parts, we have
+
+  $x_1 = \frac{-y_2(x_2 - 1) -(x_2 + 1)y_2}{(x_2 - 1)^2 + y_2^2} = \frac{-2x_2y_2}{(x_2 - 1)^2 + y_2^2}$ and $y_1 = \frac{x_2^2 - 1
+    - y_2^2}{(x_2 - 1)^2 + y_2^2}$
+
+  Substituting for $x_1$ and $y_1$ in $x_1^2 + y_1^2 - x_1$ we will arrive at the desired result.
+\item $(\cos3\theta - i\sin3\theta)^6 = (e^{-i3\theta})^6 = e^{-i18\theta}$ and $(\cos2\theta +
+  i\sin2\theta)^5 = (e^i2\theta)^5 = e^{i10\theta}$
+
+  $(\sin\theta - i\cos\theta)^3 = [(-i)^3(\cos\theta + i\sin\theta)^3] = i.e^{i3\theta}$ and
+  $\frac{(\cos3\theta - i\sin3\theta)^6(\sin\theta - i\cos\theta)^3}{(\cos2\theta + i\sin2\theta)^5} =
+  i.e^{-i25\theta} = \sin25\theta + i\cos25\theta$.
+\item Let $z = x + iy$, then we have $x^2 - y^2 + 2ixy + \sqrt{x^2 + y^2} = 0$
+
+  Equating imaginary parts, we have $2xy = 0$ i.e. either $x = 0$ or $y = 0$.
+
+  If $x = 0$, then $-y^2 + \sqrt{y^2} = 0 \Rightarrow y^4 + y^2 = 0 \Rightarrow y = 0, y = \pm i$.
+
+  If $y = 0$, then $x^2 + \sqrt{x^2} = 0$ Since $x$ is real only one solution is possible i.e. $x = 0$.
+  Hence, $z = 0, \pm i$.
+\item Clearly $z = 0$ is one of the solutions. For other solutions divide both sides by $|z|^2$ which gives
+  us $t^2 + t + 1 = 0$ where $t = \frac{z}{|z|}$.
+
+  The equation $t^2 + t + 1 = 0$ has two roots i.e. $t = \omega, \omega^2 \Rightarrow \frac{z}{|z|} =
+  \omega, \omega^2\Rightarrow z = k\omega, k\omega^2$ where $k = |z|$ is a non-negative real number.
+\item Let $z = x + iy$, then $(x + iy)\sqrt{x^2 + y^2} + a(x + iy) + 1 = 0$.
+  Comparing real and imaginary parts, we get
+
+  $y\sqrt{x^2 + y^2} + ay = 0 \Rightarrow y = 0\;\because \sqrt{x^2 + y^2} + a \neq 0\;[\because a > 0]$ and
+  $\therefore x\sqrt{x^2 + 0} + ax + 1 = 0 \Rightarrow x^2 + ax + 1 = 0 \Rightarrow x = \frac{-a
+    \pm\sqrt{a^2 - 4}}{2}$
+
+  Clearly, both the values of $x$ are negative, so $z$ is a negative real number.
+\item Let $z = x + iy$, then $x^2 + y^2 - 2i(x + iy) + 2a(1 + i) = 0$.
+  Comparing real and imaginary parts, we get
+
+  $x^2 + y^2 + 2y + 2a = 0 \Rightarrow x^2 + (y - 1)^2 = 1 - 2a$ and $-2x + 2a = 0 \Rightarrow x = a$
+
+  $\Rightarrow (y - 1)^2 = 1 - 2a - a^2 \Rightarrow y = 1 \pm \sqrt{1 - 2a - a^2}$.
+  However $1 - 2a - a^2 > 0$. Roots of equivalent quadratic equation is $a = \frac{2 \pm \sqrt{8}}{-2}
+  \Rightarrow -1\pm \sqrt{2}$ but $a > 0$ so the range for $a$ is $0 < a < \sqrt{2} - 1$.
+\item i. We have $(3 + 4i)^x = 5^{\frac{x}{2}}$. Squaring both sides $(-7 + 24i)^x = 5^x \Rightarrow
+  \left(\frac{-7 + 24i}{5}\right)^x = 1$ which is possible only if $x = 0$.
+
+  ii. Given $(1 - i)^x = 2^x \Rightarrow \left(\frac{1 - i}{2}\right)^x  = 1$ which is possible only if $x =
+  0$.
+
+  iii. Given $(1 - i)^x = (1 + i)^x \Rightarrow \left(\frac{1 - i}{1 + i}\right)^x = 1 \Rightarrow (-i)^x =
+  1 \Rightarrow x = 0, 4, 8, \ldots, 4n\;\forall\;4n\in I$.
+\item $z^3 + 2z^2 + 2z + 1 = 0\Rightarrow (z + 1)(z^2 + z + 1) = 0 \Rightarrow z = -1, \omega, \omega^2$.
+
+  When $z = -1, z^{1985} + z^{100} + 1 = -1 + 1 + 1 = 1 \neq 0$, when $z = \omega, \omega^{1985} +
+  \omega^{100} + 1 = \omega^2 + \omega + 1 = 0$ and when $z = \omega^2, \omega^{1985*2} + \omega^{200} + 1 =
+  \omega + \omega^2 + 1 = 0$. Thus common roots are $\omega, \omega^2$.
+\item Adding all equations $\alpha + \beta + \gamma = 3z_1 \Rightarrow z_1 = \frac{\alpha + \beta +
+  \gamma}{3}$. Similarly, multiplying second equatin with $\omega$ and third equation with $\omega^2$, and
+  then adding we have $z_3 = \frac{\alpha + \beta\omega + \gamma\omega^2}{3}$. Similarly, $z_2 =
+  \frac{\alpha + \beta\omega^2 + \gamma\omega}{3}$.
+
+  $|\alpha|^2 = \alpha\overline{\alpha} = (z_1 + z_2 + z_3)(\overline{z_1} + \overline{z_2} +
+  \overline{z_3}), |\beta|^2 = \beta\overline{\beta} = (z_1 + z_2\omega + z_3\omega^2)(\overline{z_1} +
+  \overline{z_2}\omega^2 + \overline{z_3}\omega)$ and $\|\gamma|^2 = \gamma\overline{\gamma} = (z_1 +
+  z_2\omega^2 + z_3\omega)(\overline{z_1} + \overline{z_2}\omega + \overline{z_3}\omega^2)\;[\because
+    \overline{\omega} = \omega^2 \& \overline{\omega^2} = \omega]$
+
+  $\Rightarrow |\alpha|^2 + |\beta|^2 + |\gamma|^2 = 3(|z_1|^2 + |z_2|^2 + |z_3|^2) + z_1[\overline{z_2}(1 +
+    \omega + \omega^2) + \overline{z_3}(1 + \omega + \omega^2)] + z_2[\overline{z_1}(1 + \omega + \omega^2)
+    + \overline{z_2}(1 + \omega + \omega^2)] + z_3[\overline{z_1}(1 + \omega + \omega^2) + \overline{z_2}(1
+    + \omega + \omega^2)] = 3(|z_1|^2 + |z_2|^2 + |z_3|^2) =$ R.H.S.
+\item Let $f(x) = (x + 1)^n - x^n - 1. x^3 + x^2 + x = 0 \Rightarrow x(x^2 + x + 1) = 0\Rightarrow x = 0,
+  \omega, \omega^2$. So for $x^3 + x^2 + x$ to be a factor of $f(x), f(0) = 0, f(\omega) = 0, f(\omega^2) =
+  0$.
+
+  $f(0) = 1^n - 1 = 0, f(\omega) = (\omega + 1)^n - \omega^n - 1 = -\omega^{2n} - \omega^n - 1\;[\because n$
+    is odd. $] = -(1 + \omega^n + \omega^{2n}) = 0$. Similarly, $f(\omega^2) = 0$. Hence proved.
+\item Let $f(x, y) = (x + y)^n - x^n - y^n. xy(x + y)(x^2 + xy + y^2) = 0 \Rightarrow x = 0, y = 0, x = -y, y =
+  x\omega, y = x\omega^2$. When $x = 0, f(x, y) = 0; y = 0, f(x, y) = 0; y = -x \Rightarrow f(x, y) = -x^n -(-x)^n =
+  0 [\because n = 2m + 1\;\forall\;m\in\mathbb{I}], y = xw \Rightarrow f(x, y) = [x^n(1 + \omega)^n - x^n -
+    x^n\omega^n] = -x^n\omega^{2n} - x^n - x^n\omega^n = 0$, and similarly when $y = x\omega^2, f(x, y) =
+  0$. Hence proved.
+\item R.H.S. $= \left|\frac{1}{z_1} + \frac{1}{z_2} + \cdots + \frac{1}{z_n}\right| =
+  \left|\frac{\overline{z_1}}{|z_1|^2} + \frac{\overline{z_2}}{|z_2|^2} + \cdots +
+  \frac{\overline{z_n}}{|z_n|^2}\right|$
+
+  $= |\overline{z_1} + \overline{z_2} + \cdots + \overline{z_n}| = |\overline{z_1 + z_2 + \cdots + z_n}| =
+  |z_1 + z_2 + \cdots + z_n| =$ R.H.S.
+\item For any two complex numbers $z_1$ and $z_2$, we know that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 +
+  2|z_2|^2$. Let $z_1 = \alpha + \sqrt{\alpha^2 - \beta^2}$ and $z_2 = \alpha - \sqrt{\alpha^2 - \beta^2}$.
+
+  Now $(|z_1| + |z_2|)^2 = |z_1|^2 + |z_2|^2 + 2|z_1||z_2| = 2|\alpha|^2 + 2|\alpha^2 - \beta^2| +
+  2|\beta|^2 = |\alpha + \beta|^2 + |\alpha - \beta|^2 + 2|\alpha + \beta||\alpha -\beta|$
+
+  $= (|\alpha + \beta| + |\alpha - \beta|)^2\Rightarrow |z_1| + |z_2| = |\alpha + \beta| + |\alpha - \beta|
+  =$ R.H.S.
+\item $|z_1| = |z_1| = 1 \Rightarrow a^2 + b^2 = c^2 + d^2 = 1, z_1\overline{z_2} = ac + bd + i(bc -
+  ad)\;\because\;\Re(z_1\overline{z_2}) = 0 \Rightarrow ac + bd = 0 \Rightarrow \frac{a}{d} = -\frac{b}{c} =
+  k$ (say). $\therefore a = kd, b = -kc$.
+
+  $\therefore k^2d^2 + k^2c^2 = 1 \Rightarrow k^2 = 1 \Rightarrow k = \pm 1$. Now $|\omega_1| = \sqrt{a^2 +
+    c^2} = \sqrt{a^2 + b^2} = 1, |\omega_2| = \sqrt{b^2 + d^2} = \sqrt{a^2 + b^2} = 1,
+  \omega_1\overline{\omega_2} = (a + ic)(b - id) \therefore \Re(\omega\overline{\omega_2}) = ab + cd = 0$.
+\item Given, $\left|\frac{z_1 - z_2}{1 - \overline{z_1}z_2}\right|< 1\Leftrightarrow \left|\frac{z_1 -
+  z_2}{1 - \overline{z_1}z_2}\right|^2 < 1 \Leftrightarrow |z_1 - z_2|^2 < |1 - \overline{z_1}z_2|^2$
+
+  $\Leftrightarrow (z_1 - z_2)\overline{(z_1 - z_2)} < (1 - \overline{z_1}z_2)\overline{(1 -
+  \overline{z_1}z_2)} \Leftrightarrow (z_1 - z_2)(\overline{z_1} - \overline{z_2}) < (1 -
+  \overline{z_1}z_2)((1 - z_1\overline{z_2}))$
+
+  $\Leftrightarrow |z_1|^2 + |z_2|^2 > 1 + |z_1|^2|z_2|^2 \Leftrightarrow 1 - |z_1|^2 - |z_2|^2 +
+  |z_1|^2|z_2|^2 > 0 \Leftrightarrow (1 - |z_1|^2)(1 - |z_2|^2) > 0 \Rightarrow (1 + |z_1|)(1 - |z_1|)(1 +
+  |z_2|)(1 - |z_2|) > 0$
+
+  $\Leftrightarrow (1 - |z_1|)(1 - |z_2|) > 0$ which is true as $|z_1| < 1$ and $|z_2| < 1$.
+\item Let $z = x + iy$ then $\frac{z - z_1}{z - z_2} = \frac{(x - 10) + i(y - 6)}{(x - 4) + i(y -
+  6)}$. Rationalizing $\frac{x^2 - 14x + 40 + (y - 6)^2}{(x - 4)^2 + (y - 6)^2} + \frac{i6(y - 6)}{(x - 4)^2
+  + (y - 6)^2} = a + ib$ (say)
+
+  $\because \arg(a + ib) = \frac{\pi}{4}\Rightarrow x^2 - 14x + 40 + (y - 6)^2 = 6(y - 6)\Rightarrow x^2 +
+  y^2 - 14x - 18y + 112 = 0 \Rightarrow |z - 7 - 9i|^2 = 18$. Hence proved.
+\item Let $z = x + iy$ then $\frac{3z - 6 - 3i}{2z - 8 - 6i} = \frac{x - 6 + i(3y - 3)}{2x - 8 + i(2y -
+  6)}$. Rationalizing $\frac{6x^2 + 6y^2 - 36x - 24y + 66 + i(12x - 12y - 12)}{(2x - 8)^2 + (2y - 6)^2} = a
+  + ib$ (let)
+
+  $\because\arg(a + ib) = \frac{\pi}{4} \Rightarrow 6x^2 + 6y^2 - 36x - 24y + 66 = 12x - 12y - 12
+  \Rightarrow x^2 + y^2 - 8x - 2y + 13 = 0$. Also given, $|z - 3 + i| = 3 \Rightarrow x = -2y +
+  6$. Substituting this in previously obtained equation, we have
+
+  $5y^2 - 10y + 1 = 0 \Rightarrow y = 1 \pm\frac{2}{\sqrt{5}}\Rightarrow x = 4\mp\frac{4}{\sqrt{5}}$. Hence
+  we have our $z$.
+\item Let $|z_1| = r_1, |w| = r_2, \arg(z_1)= \theta_1$ and $\arg(w) = \theta_2$. Then, $|z - w|^2 =
+  (r_1\cos\theta_1 - r_1\sin\theta_1)^2 + (r_2\cos\theta_2 - r_2\sin\theta_2)^2 = (r_1 - r_2)^2 + 2r_1r_2 -
+  2r_1r_2\cos(\theta_1 - \theta_2)$
+
+  $= (r_1 - r_2)^2 + 4r_1r_2\sin^2\frac{\theta_1 - \theta_2}{2}\leq (r_1 - r_2)^2 +
+  2.1.1.2\left(\frac{\theta_1 - \theta_2}{2}\right)^2 = (|z| - |w|)^2 + (\theta_1 - \theta_2)^2$. Hence
+  proved.
 \stopitemize
