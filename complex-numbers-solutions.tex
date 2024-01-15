@@ -3069,7 +3069,7 @@ Thus, the given conditions represent a rhombus but not a square.
 
   $x^{2n} - 1 = (x^2 - 1)\displaystyle\prod_{s = 1}^{n - 1}(x - x_s)(x - \overline{x_s}) = (x^2 - 1)\prod_{s
     = 1}^{n - 1}(x^2 - 2x\cos\frac{s\pi}{n} + 1)$.
-\item Considering $2n + 1$th root of unity $x_s = \cos\frac{(2s + 1)\pi}{2n + 1} + i\sin\frac{(2s +
+\item Considering $2n + 1$th root of unity $x_s = \cos\frac{2(2s + 1)\pi}{2n + 1} + i\sin\frac{(2s +
   1)\pi}{2n + 1}\;\;(s = 1, 2, 3, \ldots, n)$.
 
   Therefore $x^{2n + 1} - 1 = \displaystyle\prod_{s = 1}^{2n + 1}(x - x_s)$. However, $x_{2n + 1} = 1$,
@@ -3078,7 +3078,7 @@ Thus, the given conditions represent a rhombus but not a square.
   $x^{2n + 1} - 1 = \displaystyle(x - 1)\prod_{s=1}^{2n}(x - x_s)$, but $x_{2n - s} = \displaystyle\overline{x_s}
   \Rightarrow x^{2n + 1} - 1 = (x - 1)\prod_{x=1}^{n}(x - x_s)(x - \overline{x_s}) = (x +
   1)\displaystyle\prod_{k = 1}^n\left(x^2 - 2x\cos\frac{2k\pi}{2n + 1} + 1\right)$.
-\item Considering $2n + 1$th root of $-1, x_s = -\cos\frac{(2s + 1)\pi}{2n + 1} + i\sin\frac{(2s +
+\item Considering $2n + 1$th root of $-1, x_s = -\cos\frac{2(2s + 1)\pi}{2n + 1} + i\sin\frac{(2s +
   1)\pi}{2n + 1}\;\;(s = 1, 2, 3, \ldots, n)$.
   Therefore $x^{2n + 1} + 1 = \displaystyle\prod_{s = 1}^{2n + 1}(x - x_s)$. However, $x_{2n + 1} = -1$,
   therefore
@@ -3108,5 +3108,102 @@ Thus, the given conditions represent a rhombus but not a square.
 
   Hence, $\displaystyle\sum_{k= 0}^np_k\sin\alpha k = p_1\sin\alpha + p_2\sin2\alpha + \cdots + p_n\sin
   n\alpha = 0$.
-\item
+\item The roots of the equation $x^7 = 1$ are $\cos\frac{2k\pi}{7} + i\sin\frac{2k\pi}{7}\;\;(k = 0, 1, 2,
+  \ldots, 6)$.
+
+  Therefore, the roots of the equation $x^6 + x^5 + x^4 + x^3 + x^2 + x + 1 = 0$ will be $x_k =
+  \cos\frac{2k\pi}{7} + i\sin\frac{2k\pi}{7}\;\;(k = 1, 2, 3, \ldots, 6)$.
+
+  Putting $x + \frac{1}{x} = y$, then $x^2 + \frac{1}{x^2} = y^2 - 2y$ and $x^3 + \frac{1}{x^3} = y^3 -
+  3y$. Rewriting the above equation $\left(x^3 + \frac{1}{x^3}\right) + \left(x^2 + \frac{1}{x^2}\right) +
+  \left(x + \frac{1}{x}\right) + 1 = 0$.
+
+  Clearly, $x_1 = \overline{x_6}, x_2 = \overline{x_5}, x_3 = \overline{x_4}, x_k + \frac{1}{x_k} = x_k +
+  \overline{x_k} = 2\cos\frac{2k\pi}{7}$.
+
+  Hence we can say that quantities $2\cos\frac{2\pi}{7},
+  2\cos\frac{4\pi}{7}, 2\cos\frac{6\pi}{7}$ are the rootss of the equation $y^3 + y^2 - 2y - 1 = 0$.
+
+  Let the roots of the cubic equation $x^3 - ax^2 + bx - c = 0$ be $\alpha, \beta, \gamma$. Then $\alpha +
+  \beta + \gamma = a, \alpha\beta + \beta\gamma + \gamma\alpha = b, \alpha\beta\gamma = c$.
+
+  Let the equation, whose roots are $\sqrt[3]{\alpha}, \sqrt[3]{\beta}, \sqrt[3]{\gamma}$, be $x^3 - Ax^2 +
+  Bx - C = 0$. Then,
+
+  $\sqrt[3]{\alpha} + \sqrt[3]{\beta} + \sqrt[3]{\gamma} = A, \sqrt[3]{\alpha\beta} + \sqrt[3]{\beta\gamma}
+  + \sqrt[3]{\gamma\alpha} = B, \sqrt[3]{\alpha\beta\gamma} = C$.
+
+  We know that $(m + p + q)^3 = m^3 + p^3 + q^3 + 3(m + p + q)(mp + mq + pq) - 3mpq$. Substituting
+  $\sqrt[3]{\alpha}, \sqrt[3]{\beta}, \sqrt[3]{\gamma}$ and $\sqrt[3]{\alpha\beta}, \sqrt[3]{\beta\gamma},
+  \sqrt[3]{\gamma\alpha}$ for $m, p, q$ we obtain
+
+  $A^3 = a + 3AB - 3C, B^3 = b + 3BCA - 3C^2$. In our case, $a = -1, b = -2, c = 1, C = 1$. Hence, $A^3 = 3AB
+  - 4, B^3 = 3AB - 5$.
+
+  Multiplying these equations and putting $AB = z$, we find
+
+  $z^3 - 9z^2 + 27z - 20 = 0 \Rightarrow (z - 3)^3 + 7 = 0 \Rightarrow z = 3 - \sqrt[3]{7}$
+
+  But $A^3 = 3z - 4 \Rightarrow A = \sqrt[3]{5 - 3\sqrt[3]{7}}$ and hence
+
+  $\sqrt[3]{\cos\frac{2\pi}{7}} + \sqrt[3]{\cos\frac{4\pi}{7}} + \sqrt[3]{\cos\frac{8\pi}{7}} =
+  \sqrt[3]{\frac{1}{2}(5 - 3\sqrt[3]{7})}$.
+\item This problem can be solved like previous problem.
+\item Squaring the first trimonial, $A^2 = (x_1^2 + 2x_2x_3) + (x_3^2 + 2x_1x_2)\omega + (x_2^2 +
+  2x_1x_3)\omega^2$.
+
+  Then $A^3 = (x_1^2 + x_2^2 + x_3^2 + 6x_1x_2x_3) + (3x_1^2x_2 + 3x_2^2x_1 + 3x_2^2x_3)\omega + (3x_1^2x_3
+  + 3x_2^2x_1 + 3x_3^2x_2)\omega^2$
+
+  Putting $3\alpha = 3x_1^2x_2 + 3x_2^2x_1 + 3x_2^2x_3$ and $3\beta = 3x_1^2x_3 + 3x_2^2x_1 + 3x_3^2x_2$.
+
+  Now $x_1^3 + x_2^3 + x_3^3 = -(px_1 + q) - (px_2 + q) - (px_3 + q) = -3q$ since $x_1 + x_2 + x_3 =
+  0$. Moreover, $x_1x_2x_3 = -q$, therefore
+
+  $A^3 = -9q + 3\alpha\omega + 3\beta\omega^2$, we also find $B^3 = -9q + 3\alpha\omega^2 + 3\beta\omega$.
+
+  Hence, $A^3 + B^3 = -18q - 3\alpha - 3\beta = -27q$, and similarly, $A^3B^3 = -27p^3$.
+\item Let $f(x) = \frac{5x^4 + 10x^2 + 1}{x^4 + 10x^2 + 5}$ then the equation takes the form $f(x).f(a) =
+  ax$.
+
+  $x - f(x) = \frac{(x - 1)^5}{x^4 + 10x^2 + 5}$ and $x + f(x) = \frac{(x + 1)^5}{x^4 + 10x^2 +
+    5}$. Dividing,
+
+  $\frac{x - f(x)}{x + f(x)} = \left(\frac{x - 1}{x + 1}\right)^5$. Let $\frac{x - 1}{x + 1} = y$ and
+  $\frac{a - 1}{a + 1} = b$.
+
+  $\Rightarrow x - f(x) = y^5x + y^5f(x), x(1 - y^5) = f(x)(1 + y^5)\Rightarrow \frac{f(x)}{x} = \frac{1 -
+    y^5}{1 + y^5}$.
+
+  Similarly, $\frac{f(a)}{a} = \frac{1 - b^5}{1 + b^5}$. So we can write the equation as $\frac{1 - y^5}{1 +
+    y^5} = \frac{1 + b^5}{1 - b^5}\Rightarrow y^5 = -b^5$.
+
+  The last equation has five roots. $y_k = -b\epsilon^k$, where $\epsilon = \cos\frac{2\pi}{5} +
+  i\sin\frac{2\pi}{5}$.
+
+  But $x = \frac{1 + y}{1 - y}\Rightarrow x_k = \frac{(a + 1) - (a - 1)\epsilon^k}{(a + 1) + (a -
+    1)\epsilon^k} = \frac{\cos\frac{k\pi}{5} - ia\sin\frac{k\pi}{5}}{a\cos\frac{k\pi}{5} -
+    i\sin\frac{k\pi}{5}}$.
+\item $\left(-\frac{1}{2} + i\frac{\sqrt{3}}{2}\right)^n = \cos\frac{2n\pi}{3} + i\sin\frac{2n\pi}{3}$
+
+  Further $\left(-\frac{1}{2} + i\frac{\sqrt{3}}{2}\right)^n = \frac{(-1)^n}{2^n}(1 - i\sqrt{3})^n =
+  \frac{(-1)^n}{2^n}[1 + C_1^^n(-i\sqrt{3}) + C_2^^n(-i\sqrt{3})^2 + C_3^^n(-i\sqrt{3})^3 + \cdots]$
+
+  $= \frac{(-1)^n}{2^n}[1 - 3C_2^^n + \cdots] -i\sqrt{3}[C_1^^n -3C_3^^n + 3^2C_5^^n - 3^3C_7^^n + \cdots]$
+
+  Equating coefficient of $i$ in both the equations, $S = (-1)^{n +
+    1}\frac{2^n}{\sqrt{3}}\sin\frac{2n\pi}{3}$.
+\item We have $(1 + i)^n = 1 + C_1^^n i + C_2^^n i^2 + C_3^^n i^3 + \cdots = 1 + C_1^^n i - C_2^^n - C_3^^n
+  i + \cdots$
+
+  But $1 + i = \sqrt{2}\left(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}\right)$
+
+  Therefore, $\sigma = 1 - C_2^^n + C_4^^n -C_6^^n + \cdots = 2^{\frac{n}{2}}\cos\frac{n\pi}{4}$,
+
+  $\sigma' = C_1^^n - C_3^^n + C_5^^n - C_7^^n + \cdots = 2^{\frac{n}{2}}\sin\frac{n\pi}{4}$.
+
+  Hence, if $n = 0(\mod 4)$ i.e. $n = 4m\;\forall\;m\in\mathbb{I}$, then $\sigma = (-1)^m2^{2m}, \sigma' =
+  0$. If $n = 4m + 1$, then $\sigma = \sigma' = (-1)^m2^{2m}$, for $n = 4m + 2, \sigma = 0, \sigma' =
+  (-1)2^{2m + 1}$ and for $n = 4n + 3, \sigma = (-1)^{m + 1}2^{2m + 1}, \sigma' = (-1)^m2^{2m + 1}$.
+
 \stopitemize
