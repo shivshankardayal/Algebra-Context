@@ -493,14 +493,20 @@ Circumcenter $S(z)$ of a $\triangle ABC$ is the point of concurrence of perpendi
 given by
 
 \startformula z = \frac{(z_2 - z_3)|z_1|^2 + (z_3 - z_1)|z_2|^2 + (z_1 - z_2)|z_3|^2}{\overline{z_1}(z_2 - z_3) + \overline{z_2}(z_3 - z_1) + \overline{z_3}(z_1 - z_2)}\stopformula
-\startformula = \frac{\startdeterminant\NC|z_1|^2 \NC z_1 NC 1\NR\NC |z_2|^2 \NC z_2 \NC 1 \NR\NC |z_3|^2 \NC z_3 \NC 1\NR\stopdeterminant}{\startdeterminant\NC\overline{z_1} \NC z_1 \NC 1\NR\NC\overline{z_2} NC z_2 \NC 1\NR\NC\overline{z_3} \NC z_3 \NC 1 \NR\stopdeterminant}\stopformula
+\startformula = \frac{\startdeterminant\NC|z_1|^2 \NC z_1 \NC 1\NR\NC |z_2|^2 \NC z_2 \NC 1 \NR\NC |z_3|^2
+  \NC z_3 \NC 1\NR\stopdeterminant}{\startdeterminant\NC\overline{z_1} \NC z_1 \NC 1\NR\NC\overline{z_2} \NC
+  z_2 \NC 1\NR\NC\overline{z_3} \NC z_3 \NC 1 \NR\stopdeterminant}\stopformula
 
 Also,
 \startformula z = \frac{z_1\sin2A + z_2\sin2B + z_3\sin2C}{\sin2A + \sin2B + \sin2C}\stopformula
 
 \subsection{Orthocenter of a Triangle}
 The orthocenter $H(z)$ of the $\triangle ABC$ is the point of concurrence of altitudes of the side. It is given by
-\startformula z = \frac{\startdeterminant\NC z_1^2 \NC \overline{z_1} NC 1\NR\NC z_2^2 \NC \overline{z_2} \NC 1\NR\NC z_3^2 \NC \overline{z_3} \NC 1\NR\stopdeterminant + \startdeterminant \NC|z_1|^2 NC z_1 NC 1\NR\NC|z_2|^2 \NC z_2 \NC 1\NR\NC|z_3|^2 \NC z_3 \NC 1\NR\stopdeterminant}{\startdeterminant\NC\overline{z_1} \NC z_1 NC 1\NR\NC\overline{z_2} \NC z_2 \NC 1\NR\NC\overline{z_3} \NC z_3 \NC 1\NR\stopdeterminant}\stopformula
+\startformula z = \frac{\startdeterminant\NC z_1^2 \NC \overline{z_1} NC 1\NR\NC z_2^2 \NC \overline{z_2}
+  \NC 1\NR\NC z_3^2 \NC \overline{z_3} \NC 1\NR\stopdeterminant + \startdeterminant \NC|z_1|^2 NC z_1 NC
+  1\NR\NC|z_2|^2 \NC z_2 \NC 1\NR\NC|z_3|^2 \NC z_3 \NC
+  1\NR\stopdeterminant}{\startdeterminant\NC\overline{z_1} \NC z_1 NC 1\NR\NC\overline{z_2} \NC z_2 \NC
+  1\NR\NC\overline{z_3} \NC z_3 \NC 1\NR\stopdeterminant}\stopformula
 \startformula = \frac{z_1\tan A + z_2\tan B + z_3\tan C}{\tan A + \tan B + \tan C}\stopformula
 \startformula = \frac{z_1a\sec A + bz_2\sec B + cz_3\sec C}{a\sec A + b\sec B + c\sec C}\stopformula
 
@@ -990,10 +996,9 @@ Find the square root of the following complex numbers:
   circumcenter of the $\triangle ABC$ lies on the origin. If the altitude of the triangle through the vertex $A$ meets the circle
   again at $P$, prove that $P$ represents the complex number $\frac{z_2z_3}{z_1}$.
 \item Two different non-parallel lines cut the circle $|z| = r$ at points $a, b, c, d$ respectively. Prove that these two lines
-  meet at a point given by $\frac{a^{-1} + b^{-1} + c^{-1} + d^{-1}}{a^{-1}b^{-1}c^{-1}d^{-1}}$.
+  meet at a point given by $\frac{a^{-1} + b^{-1} - c^{-1} - d^{-1}}{a^{-1}b^{-1}- c^{-1}d^{-1}}$.
 \item Let $z_1, z_2, z_3$ be three non-zero complex numbners such that $z_2\neq 1, a = |z_1|, b = |z_2|$ and $c =
-  |z_3|$. If \startformula \startdeterminant \NC a \NC b \NC c\NR\NC b \NC c \NC a\NR\NC c \NC a \NC b\NR\stopdeterminant = 0\stopformula
-
+  |z_3|$. If \startdeterminant \NC a \NC b \NC c\NR\NC b \NC c \NC a\NR\NC c \NC a \NC b\NR\stopdeterminant = 0
     then show that $\arg\left(\frac{z_3}{z_2}\right) = \arg\left(\frac{z_3 - z_1}{z_2 - z_1}\right)^2$.
 \item $P$ is a point on a circle with $OP$ as diameter. Two points $Q$ and $R$ are taken such that $\angle POQ = \angle QOR =
   \theta$. If $O$ is the origin and $P, Q$ and $R$ are represented by the complex numbers $z_1, z_2$ and $z_3$ respectively, show
@@ -1033,8 +1038,24 @@ Find the square root of the following complex numbers:
 \item Find all complex numbers $z$ for which $\arg\left(\frac{3z - 6 - 3i}{2z - 8 - 6i}\right) =
   \frac{\pi}{4}$ and $|z - 3 + i| = 3$.
 \item If $|z|\leq 1, |w|\leq 1$, show that $|z - w|^2\leq (|z| - |w|)^2 + (\arg(z) - \arg(w))^2$.
-\item
-% mark1
+\item If $z$ is any non-zero complex number, show that $\left|\frac{z}{|z|} - 1\right|\leq
+  |\arg(z)|$ and $|z - 1|\leq ||z| -1| + |z||\arg(z)|$.
+\item If $\left|z + \frac{1}{z}\right| = a$, where $z$ is a complex number and $a > 0$, find the greatest
+  value of $|z|$.
+\item If $z_1, z_2$ are complex numbers and $c$ is a positive number, prove that $|z_1 + z_2|^2 < (1 +
+  c)|z_1|^2 + \left(1 + \frac{1}{c}\right)|z_2|^2$.
+\item If $z_1$ and $z_2$ are two complex numbers such that $\left|\frac{z_1 - z_2}{z_1 + z_2}\right| = 1$,
+  prove that $\frac{iz_1}{z_2} = x$, where $x$ is a real number. Find the angle between the lines from the
+  origin to the points $z_1 + z_2$ and $z_1 - z_2$ in terms of $x$.
+\item Let $z_1, z_2$ be any two complex numbers and $a, b$ be two real numbers such that $a^2 + b^2 \neq
+  0$. Prove that $|z_1|^2 + |z_2|^2 - |z_1^2 + z_2^2|\leq 2\frac{|az_1 + bz_2|^2}{a^2 + b^2}\leq |z_1|^2 +
+  |z_2|^2 + |z_1^2 + z_2^2|$.
+\item If $b + ic = (1 + a)z$ and $a^2 + b^2 + c^2 = 1$, prove that $\frac{a + ib}{1 + c} = \frac{1 + iz}{1 -
+  iz}$, where $a, b, c$ are real numbers and $z$ is a complex number.
+\item For any two complex numbers $z_1$ and $z_2$ and any real numbers $a$ and $b$, show that $|az_1 -
+  bz_2|^2 + |bz_1 - az_2|^2 = (a^2 + b^2)(|z_1|^2 + |z_2|^2)$.
+\item If $\alpha$ and $\beta$ are any two complex numbers, show that $|\alpha + \beta|^2 = |\alpha|^2 +
+  |\beta|^2 + \Re(\alpha\overline{\beta}) + \Re(\overline{\alpha}\beta)$.
 \item Prove that $|1 - \overline{z_1}z_2|^2 - |z_1 - z_2|^2 = (1 - |z_1|^2)(1 - |z_2|^2)$.
 \item If $a_i, b_i\in R, i = 1, 2, \ldots, n$, show that $\displaystyle\left(\sum_{n = 1}^na_i\right)^2 +
   \left(\sum_{n = 1}^nb_i\right)^2 \leq \left(\sum_{n = 1}^n\sqrt{a_i^2 + b_i^2}\right)^2$.
@@ -1047,27 +1068,31 @@ Find the square root of the following complex numbers:
 \item If $a, b, c$ are complex numbers such that $a + b + c = 0$ and $|a| = |b| = |c| = 1$, find the value of $\frac{1}{a} +
   \frac{1}{b} + \frac{1}{c}$.
 \item If $|z + 4|\leq 3$, find the least and greatest value of $|z + 1|$.
-\item Show that for any two non-zero complex numbers $z_1$ and $z_2, (|z_1| + |z_2|)\left(\frac{z_1}{|z_1|} +
-  \frac{z_2}{|z_2|}\right) \leq 2|z_1 + z_2|$
+\item Show that for any two non-zero complex numbers $z_1$ and $z_2, (|z_1| + |z_2|)\left|\frac{z_1}{|z_1|} +
+  \frac{z_2}{|z_2|}\right| \leq 2|z_1 + z_2|$
 \item Show that the necessary and sufficient condition for both the roots of the equation $z^2 + az + b = 0$ to be unimodular are
-  $|a|\leq 2, |b| = 1, \arg(b) = 2\arg(a)$.
+  $|a|\leq 2, |b| = 1$ and $\arg(b) = 2\arg(a)$.
 \item If $z$ is a complex number, show that $|z|\leq |\Re(z)| + |\Im(z)|\leq \sqrt{2}|z|$.
-\item If $|z - \frac{4}{z}| = 2$, show that the greatest value of $|z|$ is $\sqrt{5} + 1$.
+\item If $\left|z - \frac{4}{z}\right| = 2$, show that the greatest value of $|z|$ is $\sqrt{5} + 1$.
 \item If $\alpha, \beta, \gamma, \delta$ be the real roots of the equation $ax^4 + bx^3 + cs^2 + dx + e = 0$, show that $a^2(1 +
   \alpha^2)(1 + \beta^2)(1 + \gamma^2)(1 + \delta^2) = (a - c + e)^2 + (b - d)^2$.
 \item If $a_i\in R, i = 1, 2, \ldots, n$ and $\alpha_1, \alpha_2, \ldots, \alpha_n$ are the roots of the equation $x^n + a_1x^{n -
-  1} + a_2x^{n - 2} + \ldots + a_{n- 1}x + a_n = 0$, show that $\prod_{i = 1}^n(1 + \alpha_i^2) = (1 - a_2 + a_4 - \ldots)^2 + (a_1
-  - a_3 + \ldots)^2$
+  1} + a_2x^{n - 2} + \ldots + a_{n- 1}x + a_n = 0$, show that $\displaystyle\prod_{i = 1}^n(1 + \alpha_i^2)
+  = (1 - a_2 + a_4 - \ldots)^2 + (a_1 - a_3 + \ldots)^2$
 \item If the complex numbers $z_1, z_2, z_3$ are the vertices of an equilateral triangle such that $|z_1| = |z_2| = |z_3|$, prove
   that $z_1 + z_2 + z_3 = 0$.
+\item If $z_1 + z_2 + z_3 = 0$ and $|z_1| = |z_2| = |z_3| = 1$, then prove that the complex numbers $z_1,
+  z_2, z_3$ are the vertices of an equilateral triangle inscribed in a unit circle.
+\item If $z_1, z_2, z_3$ be the vertices of an equilateral triangle whose circumcenter is $z_0$, then prove
+  that $z_1^2 + z_2^2 + z_3^2 = 3z_0^2$.
 \item Prove that the complex numbers $z_1$ and $z_2$ and the origin form an equilateral triangle if $z_1^2 + z_2^2 - z_1z_2 = 0$.
 \item If $z_1$ and $z_2$ be the roots of the equation $z^2 + az + b = 0$, then prove that the origin, $z_1$ and $z_2$ form an
   equilatera triangle if $a^2 = 3b$.
-\item Let $z_1, z_2$ and $z_3$ be the roots of the eqiuation $z^3 + 3\alpha z^2 + 3\beta z + \gamma = 0$, where $\alpha, beta$ and
+\item Let $z_1, z_2$ and $z_3$ be the roots of the equation $z^3 + 3\alpha z^2 + 3\beta z + \gamma = 0$, where $\alpha, \beta$ and
   $\gamma$ are complex numbers and that these represent the vertices of $A, B$ and $C$ of a triangle. Find the centroid of
   $\triangle ABC$. Show that the triangle will be equilateral, if $\alpha^2 = \beta$.
 \item If $z_1, z_2, z_3$ are in A.P., prove that they are collinear.
-\item If $z_1, z_2$ and $z_3$ are collinear points in argand plane then show the one of the following holds: $-z_1|z_2 - z_3| +
+\item If $z_1, z_2$ and $z_3$ are collinear points in argand plane then show that one of the following holds: $-z_1|z_2 - z_3| +
   z_2|z_3 - z_1| + z_3|z_1 - z_2| = 0, z_1|z_2 - z_3| - z_2|z_3 - z_1| + z_3|z_1 - z_2| = 0, z_1|z_2 - z_3| + z_2|z_3 - z_1| -
   z_3|z_1 - z_2| = 0$.
 \item What region in the argand plane is represented by the inequality $1 < |z - 3 - 4i| < 2$.
@@ -1084,12 +1109,12 @@ Find the square root of the following complex numbers:
   $x$-axis. Find the complex numbers represented by $B$ and $C$.
 \item $ABCD$ is a rhombus. Its diagonals $AC$ and $BD$ intersect at a point $M$ and satisfy $BD = 2AC$. If the points $D$ and $M$
   represent the complex numbers $1 + i$ and $2 - i$ respectively, then find the complex number represented by $A$.
-\item If $z_1, z_2 , z_3$ and $z_4$ are the vertices of a square taken in anti-clockwise order, prove that $z_3 = -iz_1 + (1 +
+\item If $z_1, z_2 , z_3$ and $z_4$ are the vertices of a square taken in anticlockwise order, prove that $z_3 = -iz_1 + (1 +
   i)z_2$ and $z_4 = (1 - i)z_1 + iz_2$.
-\item Let $z_1, z_2$ and $z+3$ are vertices of an equilateral triangle in the circle $|z| = 2$. If $z_1 = 1 + i\sqrt{3}$, then find
+\item Let $z_1, z_2$ and $z_3$ are vertices of an equilateral triangle in the circle $|z| = 2$. If $z_1 = 1 + i\sqrt{3}$, then find
   $z_2$ and $z_3$.
-\item If $a$ and $b$ are real numbers between $0$ and $1$ such that points $z_1 = a + i, z_2 = 1 _ bi$, and $z_3 = 0$ form an
-  equilaterla triangle, then find $a$ and $b$.
+\item If $a$ and $b$ are real numbers between $0$ and $1$ such that points $z_1 = a + i, z_2 = 1 + bi$, and $z_3 = 0$ form an
+  equilateral triangle, then find $a$ and $b$.
 \item Let $ABCD$ be a square described in the anticlockwise sense in the argand plane. If $A$ represents $3 + 5i$ and the center of
   the square represents $\frac{7}{2} + \frac{5}{2}i$. Find the numbers represented by $B, C$ and $D$.
 \item Find the vertices of a regulara polygon of $n$ sides, if its center is located at origin and one of its vertices is $z_1$.
@@ -1104,15 +1129,16 @@ Find the square root of the following complex numbers:
   = 0$ and $z_1 + z_2 =0$.
 \item Show that the triangles whose vertices are $z_1, z_2, z_3$ and $z_1', z_2', z_3'$ are similar if \startformula \startdeterminant
   \NC z_1 \NC z_1' \NC 1\NR\NC z_2 \NC z_2' \NC 1\NR\NC z_3 \NC z_3' \NC 1\NR\stopdeterminant = 0\stopformula
-\item If $a, b, c$ and $u, v, w$ are the complex numbers representing two triangles such that $c = (1 - r)a + rb$ and $w = (i = r)u
+\item If $a, b, c$ and $u, v, w$ are the complex numbers representing two triangles such that $c = (1 - r)a
+  + rb$ and $w = (1 - r)u
   + rv$, where $r$ is a complex number, prove that the two triangles are similar.
 \item Find the equation of perpendicular bisector of the line segment joining points $z_1$ and $z_2$.
 \item Find the equation of a circle having the line segment joining $z_1$ and $z_2$ as diameter.
-\item If $\left|\frac{z - z_1}{z - z_2}\right| = c, \c\neq 0,$ then show that locus of $z$ is a circle.
+\item If $\left|\frac{z - z_1}{z - z_2}\right| = c, c\neq 0,$ then show that locus of $z$ is a circle.
 \item If $|z| = 1,$ find the locus of the point $\frac{2}{z}$.
 \item If for any two complex numbers $z_1$ and $z_2, |z_1 + z_2| = |z_1| + |z_2|$, prove that $\arg(z_1) - \arg(z_2) = 2n\pi$.
 \item Find the complex number $z$, the least in absolute value, which satisfies the condition $|z - 2 + 2i| = 1$.
-\item Find the pint in the first quadrant, on the curve $|z - 5i| = 3$, whose argument is minimum.
+\item Find the point in the first quadrant, on the curve $|z - 5i| = 3$, whose argument is minimum.
 \item Find the set of points of the cooradinate plane, which satisfy the inequality
 
   $\log_{1/3}\left(\frac{|z - 1| + 4}{3|z - 1| - 2}\right) > 1$
@@ -1121,27 +1147,32 @@ Find the square root of the following complex numbers:
 \item Find the real values of the parameter $a$ for which at least one complex number $z$ satisfies the equality $|z - az| = a + 4$
   and the inequality $|z - 1|< 1$.
 \item Find the real values of the parameter $t$ for whihc at least one complex number $z$ satisfied the equality $|z + \sqrt{2}| =
-  t^2 - 3t + 2$ and the inequality $|z + t\sqrt{2}| < t^2$.
-\item Among the complex numbers which satisfy the condition $|z - 15i|\leq 15,$ find the number having least positive argument.
-\item Find $z$ which $|z - 5i|\leq 1$ and $\arg(z)$ is minimum.
+  t^2 - 3t + 2$ and the inequality $|z + i\sqrt{2}| < t^2$.
+\item Among the complex numbers which satisfy the condition $|z - 25i|\leq 15,$ find the number having least positive argument.
 \item Find the real value of $a$ for which there is at least one complex number satisfying $|z + 4i| = \sqrt{a^2 - 12a + 28}$ and
   $|z - 4\sqrt{3}| < 1$.
 \item Find the set of points belonging to the coordinate plane $xy$, for which the real part of the complex number $(1 + i)z^2$ is
   positive.
 \item Solve the equation $2z = |z| + 2i$ in complex numbers.
-\item Show that all roots of the equation $a_1z^3 + a_2z^2 + a_3z + a4 = 4$, where $|a_i|\leq 1, i = 12,3,4$ lie outside the circle
-  with center as origin and radius $\frac{2}{3}$.
-\item Given that $\sum_{i = 1}^nb_i = 0$ and $\sum_{i=1}^nb_iz_i = 0$, where $b_i$s are non-zero real numbers, no three of $z_i$s
-  form a straight line. Prove that $z_i$s are concyclic if $b_1b_2|z_1 - z_2|^2 = b3b4|z_3 - z_4|^2$.
+\item If $a > 0$ and $z|z| + az + 1 = 0$, show that $z$ is a negative real number.
+\item If $a > 0$ and $z|z| + az + i = 0$, show that $z$ is a negative imaginary number.
+\item Three points represented by the complex numbers $a, b, c$ lie on a circle with center $O$ and radius
+  $r$. The tangent at $c$ cuts the chord joining the points $a, b$ at $z$. Show that $z = \frac{a^{-1} +
+  b^{-1} - 2c^{-1}}{a^{-1}b^{-1} - c^{-2}}$.
+\item Show that all roots of the equation $a_1z^3 + a_2z^2 + a_3z + a_4 = 3$, where $|a_i|\leq 1, i = 1, 2,
+  3, 4$ lie outside the circle with center as origin and radius $\frac{2}{3}$.
+\item Given that $\displaystyle\sum_{i = 1}^nb_i = 0$ and $\displaystyle\sum_{i=1}^nb_iz_i = 0$, where
+  $b_i$s are non-zero real numbers, no three of $z_i$'s form a straight line. Prove that $z_i$'s are concyclic
+  if $b_1b_2|z_1 - z_2|^2 = b_3b_4|z_3 - z_4|^2$.
 \item A cubic equation $f(x) = 0$ has one real root $\alpha$ and two complex roots $\beta \pm i\gamma$. Points $A, B$ and $C$
   represent these roots. Show that the roots of the derived equation $f'(x) = 0$ are complex if $A$ falls inside one of the two
   equilateral triangles described on base $BC$.
 \item Prove that the reflection of $\overline{a}z + a\overline{z} = 0$ in the real axis is $\overline{az} + az = 0$.
-\item If $\alpha, \beta, \gamma, \delta$ are four complex numbers such that $\frac{\gamma}{\delta}$ is rela and $\alpha\delta -
+\item If $\alpha, \beta, \gamma, \delta$ are four complex numbers such that $\frac{\gamma}{\delta}$ is real and $\alpha\delta -
   \beta\gamma \neq 0$, then prove that $z = \frac{\alpha + \beta t}{\gamma + \delta t}, t\in R$ represents a straight line.
 \item If $\omega, \omega^2$ are cube roots of unity, then prove that
   \startitemize[i]
-  \item $(3 + 3\omega + 5\omega^2)^2 - (2 + 6\omega + 2\omega^2) = 0$.
+  \item $(3 + 3\omega + 5\omega^2)^6 - (2 + 6\omega + 2\omega^2)^3 = 0$.
   \item $(2 - \omega)(2 - \omega^2)(2 - \omega^{10})(2 - \omega^{11}) = 49$.
   \item $(1 - \omega)(1 - \omega^2)(1 - \omega^4)(1 - \omega^5) = 9$.
   \item $(1 - \omega + \omega^2)^5 + (1 + \omega - \omega^2)^5 = 32$.
@@ -1160,12 +1191,12 @@ Find the square root of the following complex numbers:
   \item $a^3 + b^3 + c^3 - 3abc$
   \stopitemize
 \item Show that $x^{3p} + x^{3q + 1} + x^{3r + 2}$, where $p, q, r$ are positive integers is divisible by $x^2 + x + 1$.
-\item Show that $x^{3p} + x^{3q + 1} + x^{3r + 2} + x^{3s + 3}$, where $p, q, r, s$ are positive integers is divisible by $x^3 +
+\item Show that $x^{4p} + x^{4q + 1} + x^{4r + 2} + x^{4s + 3}$, where $p, q, r, s$ are positive integers is divisible by $x^3 +
   x^2 + x + 1$.
 \item If $p = a + b + c, q = a + b\omega + c\omega^2, r = a + b\omega^2 + c\omega,$ where $\omega$ is a cube root of unity, prove
   that $p^3 + q^3 + r^3 - 3pqr = 27abc$.
 \item If $\omega$ is a cube root of unity, prove that $(a + b\omega + c\omega^2)^3 + (a + b\omega^2 + c\omega)^3 = (2a - b - c)(2b
-  - a - c)(2c - a -b)$.
+  - a - c)(2c - a - b)$.
 \item If $ax + cy + bz = X, cx + by + az = Y, bc + ay + cz = Z$, show that
   \startitemize[i]
   \item $(a^2 + b^2 + c^2 - ab - bc - ca)(x^2 + y^2 + z^2 - xy - yz - zx) = X^2 + Y^2 + Z^2 - XY - YZ - ZX$
@@ -1174,9 +1205,10 @@ Find the square root of the following complex numbers:
 \item Prove that $\left(\frac{\cos\theta + i\sin\theta}{\sin\theta + i\cos\theta}\right)^4 = \cos8\theta + i\sin8\theta$.
 \item If $z^2 - 2z\cos\theta + 1 = 0$, show that $z^2 + z^{-2} = 2\cos2\theta$.
 \item Prove that $(1 + i)^n + (1 - i)^n = 2^{n/2 + 1}\cos\frac{n\pi}{4}$.
-\item Show that the value of $\sum_{k = 1}^6\left(\sin\frac{2\pi k}{7} - i\cos\frac{2\pi k}{7}\right)$ is $i$.
+\item Show that the value of $\displaystyle\sum_{k = 1}^6\left(\sin\frac{2\pi k}{7} - i\cos\frac{2\pi
+  k}{7}\right)$ is $i$.
 \item Show that $e^{2mi\cot^{-1}p}\left(\frac{pi + 1}{pi - 1}\right)^m = 1$.
-\item Prove that $\left(\frac{1 + \sin\phi + i\cos\phi}{1 + \sin\phi - i\cos\phi}\right)^n = \cos\left(\frac{n\pi}{2} +
+\item Prove that $\left(\frac{1 + \sin\phi + i\cos\phi}{1 + \sin\phi - i\cos\phi}\right)^n = \cos\left(\frac{n\pi}{2} -
   n\phi\right) + i\sin\left(\frac{n\phi}{2} - n\phi\right)$
 \item If $\sin\alpha + \sin\beta + \sin\gamma = \cos\alpha + \cos\beta + \cos\gamma = 0$, show that $\cos3\alpha + \cos3\beta +
   \cos3\gamma = 3\cos(\alpha + \beta + \gamma)$ and $\sin3\alpha + \sin3\beta + \sin3\gamma = 3\sin(\alpha + \beta + \gamma)$.
@@ -1205,6 +1237,10 @@ Find the square root of the following complex numbers:
   \cot\theta(1 - \cos^n\theta\cos n\theta)$
 \item Show that $-3 - 4i = 5e^{i(\pi + \tan^{-1}4/3)}$
 \item Solve the equation $2\sqrt{2}x^4 = (\sqrt{3 - 1}) + i(\sqrt{3} + 1)$.
+\item If $z_r = \cos\frac{\pi}{3^r} + i\sin\frac{\pi}{3^r}$, prove that $z_1z_2z_3\ldots$ to $\infty = i$.
+\item If $\cos\theta + i\sin\theta$ is a solution of the equation $p_0x^n + p_1x^{n - 1} + p_2x^{n - 2} +
+  \cdots + p_n = 0$, prove that $p_1\sin\theta + p_2\sin2\theta + \cdots + p_n = 0$ and $p_0 + p_2\cos\theta
+  + \cdots + p_n\cos n\theta = 0, p_i\in\mathbb{R}, i=1, 2, 3, \ldots, n$.
 \item Show that $\left(\frac{1 + \cos\phi + i\sin\phi}{1 + \cos\phi - i\sin\phi}\right)^n = \cos n\phi + i\sin\phi$.
 \item If $2\cos\theta = x + \frac{1}{x}$ and $2\cos\phi = y + \frac{1}{y}$, then prove that
   \startitemize[i]
@@ -1216,31 +1252,27 @@ Find the square root of the following complex numbers:
 \item If $\alpha, \beta$ are the roots of the equation $x^2 - 2x + 4 = 0$, prove that $\alpha^n + \beta^n = 2^{n +
   1}\cos\frac{n\pi}{3}$
 \item Find the equation whose roots are $n$th powers of the roots of the equation $x^2 - 2x\cos\theta + 1 = 0$.
-\item If $\alpha, \beta$ are imaginary roots of $1$, then show that $\alpha e^{\alpha x} + \beta e^{\beta x} =$
-
-  $-e^{x/2}\left[\cos\left(\frac{\sqrt{3}}{2}x\right) + \sqrt{3}\sin\left(\frac{\sqrt{3}}{2}x\right)\right]$
-\item Find the values of $A$ and $B$, where $Ae^{2i\theta} + Be^{-2i\theta} = 5\cos2\theta - 7\cos2\theta$.
+\item Find the values of $A$ and $B$, where $Ae^{2i\theta} + Be^{-2i\theta} = 5\cos2\theta - 7\sin2\theta$.
 \item If $x = \cos\theta + i\sin\theta$ and $\sqrt{1 - c^2} = nc - 1$, prove that $1 + c\cos\theta = \frac{c}{2n}(1 + nx)(1 +
-  \frac{n}{x})$
+  \frac{n}{x})$.
 \item Show that the roots of equation $(1 + z)^n = (1 - z)^n$ are $i\tan\frac{r\pi}{n}, r = 0, 1, 2, \ldots, (n - 1)$ excluding the
   value when $n$ is even and $r = \frac{n}{2}$.
 \item If $x = \cos\alpha + i\sin\alpha, y = \cos\beta + i\sin\beta$, show that $\frac{(x + y)(xy - 1)}{(x - y)(xy + 1)} =
   \frac{\sin\alpha + \sin\beta}{\sin\alpha - \sin\beta}$
-\item Show that ${}^nC_0 + {}^nC_3 + {}^nC_6 + \ldots = \frac{1}{3}\left[2^n + 2\cos\frac{n\pi}{3}\right]$
-\item Show that ${}^nC_1 + {}^nC_4 + {}^nC_7 + \ldots = \frac{1}{3}\left[2^{n - 2} + 2\cos\frac{(n - 2)\pi}{3}\right]$
-\item Show that ${}^nC_2 + {}^nC_5 + {}^nC_8 + \ldots = \frac{1}{3}\left[2^{n + 2} + 2\cos\frac{(n + 2)\pi}{3}\right]$
-\item If $(1 - x + x^2)^{6n} = a_0 + a_1x + a_2x^2 + \ldots$, show that $a_0 + a_3 + a_6 + \ldots = \frac{1}{3}(2^{6n + 1} + 1)$
-\item If $(1 - x + x^2)^n = a_0 + a_1x + a_2x^2 + \ldots$, show that $a_0 + a_3 + a_6 + \ldots = \frac{1}{3}\left(1 + 2^{n +
+\item Show that $C_0^^n + C_3^^n + C_6^^n + \cdots = \frac{1}{3}\left[2^n + 2\cos\frac{n\pi}{3}\right]$
+\item Show that $C_1^^n + C_4^^n + C_7^^n + \cdots = \frac{1}{3}\left[2^{n - 2} + 2\cos\frac{(n - 2)\pi}{3}\right]$
+\item Show that $C_2^^N + C_5^^n + C_8^^n + \cdots = \frac{1}{3}\left[2^{n + 2} + 2\cos\frac{(n + 2)\pi}{3}\right]$
+\item If $C_r$ stands for $C_r^^{4n}$, prove that $C_0 + C_4 + C_8 + \cdots = 2^{4n - 2} + (-1)^n2^{2n - 1}$.
+\item If $(1 - x + x^2)^{6n} = a_0 + a_1x + a_2x^2 + \cdots$, show that $a_0 + a_3 + a_6 + \ldots = \frac{1}{3}(2^{6n + 1} + 1)$
+\item If $(1 - x + x^2)^n = a_0 + a_1x + a_2x^2 + \cdots$, show that $a_0 + a_3 + a_6 + \ldots = \frac{1}{3}\left(1 + (-1)^n2^{n +
   1}\cos\frac{n\pi}{3}\right)$
-\item Let $A = x + y + z, A' = x' + y' + z', AA' = x" + y" + z", B = x + y\omega + z\omega^2, B' = x' + y'\omega + z'\omega^2, BB'
-  = x", y"\omega, z"\omega^2, C = x + y\omega^2 + z\omega, C' = x' y'\omega^2 + z'\omega, CC' = x" + y"\omega^2 + z"\omega,$ then
+\item Let $A = x + y + z, A' = x' + y' + z', AA' = x'' + y'' + z'', B = x + y\omega + z\omega^2, B' = x' + y'\omega + z'\omega^2, BB'
+  = x'', y''\omega, z''\omega^2, C = x + y\omega^2 + z\omega, C' = x' y'\omega^2 + z'\omega, CC' = x'' + y''\omega^2 + z''\omega,$ then
   find $x'', y''$ and $z''$ in terms of $x, y, z$ and $x', y' z'$.
-\item If $\omega$ is a cube root of unity and $x + y + z = A, x + y\omega + z\omega^2 = B, x + y\omega^2 + z\omega = C$, then
-  express $x, y, z$ in terms of $A, B, C$. Also, prove that $|A|^2 + |B|^2 + |C|^2 = 3(|x|^2 + |y|^2 + |z|^2)$
-\item Prove the equaity $(ax - by - cz - dt)^2 + (bx + ay - dz + ct)^2 + (cx + dy + az - bt)^2 + (dx - cy + bz + at)^2 = (a^2 + b62
+\item Prove the equaity $(ax - by - cz - dt)^2 + (bx + ay - dz + ct)^2 + (cx + dy + az - bt)^2 + (dx - cy + bz + at)^2 = (a^2 + b^2
   + c^2 + d^2)(x^2 + y^2 + z^2 + t^2)$
-\item Prove the equality: $\frac{\cos n\theta}{\cos^n\theta} = 1 - {}^nC_2\tan^2\theta + {}^nC_4\tan^4\theta - \ldots + A$, where
-  $A = (-1)^{n/2}\tan^{n}\theta$ if $n$ is even, $A = (-1)^{(n - 1)/2}.{}^nC_{n - 1}\tan^n\theta$ if $n$ is odd.
+\item Prove the equality: $\frac{\cos n\theta}{\cos^n\theta} = 1 - C_2^^n\tan^2\theta + C_4^^n\tan^4\theta - \ldots + A$, where
+  $A = (-1)^{n/2}\tan^{n}\theta$ if $n$ is even, $A = (-1)^{(n - 1)/2}.C_{n - 1}^^n\tan^n\theta$ if $n$ is odd.
 \item Prove the equality: $\frac{\sin
   n\theta}{\cos^n\theta} = {}^nC_1\tan\theta - {}^nC_3\tan^3\theta + {}^nC_5\tan^5\theta - \ldots + A$, where $A = (-1)^{(n -
   2)/2}.{}^nC_{n - 1}\tan^{n - 1}\theta$ if $n$ is odd, $A = (-1)^{n/2}.\tan^n\theta$ if $n$ is odd.
@@ -1254,40 +1286,40 @@ Find the square root of the following complex numbers:
     2r\cos\theta + r^2},\stopformula
   \startformula v_n = \frac{\sin\alpha - r\sin(\alpha - \theta) - r^{n + 1}\sin[\alpha + (n + 1)\theta] + r^{n +
       2}\sin(\alpha + n\theta)}{1 - 2r\cos\theta + r^2}\stopformula
-\item Simplify the following sum: \startformula S = 1 + n\cos\theta + \frac{n(n - 1)}{1.2}\cos2\theta + \ldots = \sum_{k = 0}^n{}^nC_k\cos
+\item Simplify the following sums: \startformula S = 1 + n\cos\theta + \frac{n(n - 1)}{1.2}\cos2\theta + \ldots = \sum_{k = 0}^n{}^nC_k\cos
   k\theta,\;[{}^nC_0 = 1]\stopformula
-\item Simplify the following sum: \startformula S = 1 + n\sin\theta + \frac{n(n - 1)}{1.2}\sin2\theta + \ldots = \sum_{k = 0}^n{}^nC_k\sin
+  \startformula S' = 1 + n\sin\theta + \frac{n(n - 1)}{1.2}\sin2\theta + \ldots = \sum_{k = 0}^n{}^nC_k\sin
   k\theta,\;[{}^nC_0 = 1]\stopformula
-\item If $\alpha = \frac{\pi}{2n}$ and $p < 2n$, then prove that
+\item If $\alpha = \frac{\pi}{2n}$ and $p < 2n(p\;\mathrm{a\;popsitive\;integer})$, then prove that
   \startformula \sin^{2p}\alpha + \sin^{2p}2\alpha + \ldots + \sin^{2p}n\alpha = \frac{1}{2} + n\frac{1.3.5.\ldots(2p - 1)}{2.4.\ldots 2p}\stopformula
 \item Prove that $(x + y)^n - x^n - y^n$ is divisible by $xy(x + y)(x^2 + xy + y^2)$ if $n$ is an odd number and not divisible by
   $3$.
 \item Prove that $(x + y)^n - x^n - y^n$ is divisible by $xy(x + y)(x^2 + xy + y^2)^2$ if $n$, when divided by $6$ has a remainder
   of $1$.
 \item Prove that the polynomial $(\cos\theta + x\sin\theta)^n - \cos n\theta - x\sin n\theta$ is divisible by $x^2 + 1$.
-\item Proove that the polynomial $x^n\sin\theta - p^{n - 1}x\sin n\theta + p^n\sin(n - 1)\theta$ is divisible by $x^2 -
+\item Prove that the polynomial $x^n\sin\theta - p^{n - 1}x\sin n\theta + p^n\sin(n - 1)\theta$ is divisible by $x^2 -
   2px\cos\theta + p^2$.
 \item Find out for what values of $p$ and $q$ the binomial $x^4 + 1$ is divisible by $x^2 + px + q$.
+\item Find the sum of the $p$th($p\in\mathbb{P}$) power of the roots of the equation $x^n = 1$.
 \item Let $\epsilon = \cos\frac{2\pi}{n} + i\sin\frac{2\pi}{n}, \;\forall\;n\in P$, and let $A_k = x + y\epsilon^k + z\epsilon^{2k} +
-  \ldots + w\epsilon^{(n - 1)k}, (k = 0, 1, 2, \ldots, n - 1)$ where $x, y, z, \ldots, w$ are $n$ arbitrary complex numbers. Prove
+  \cdots + w\epsilon^{(n - 1)k}, (k = 0, 1, 2, \ldots, n - 1)$ where $x, y, z, \ldots, w$ are $n$ arbitrary complex numbers. Prove
   that \startformula \sum_{k = 0}^{n - 1}|A_k|^2 = n(|x|^2 + |y|^2 + \ldots + |w|^2)\stopformula
-\item Prove the identity $x^{2n} - 1 = (x^2 - 1)\sum_{k = 1}^{n - 1}\left(x^2 - 2x\cos\frac{k\pi}{n} + 1\right)$.
-\item Prove the identity $x^{2n + 1} - 1 = (x - 1)\prod_{k = 1}^n\left(x^2 - 2x\cos\frac{2k\pi}{2n + 1} + 1\right)$.
-\item Prove the identity $x^{2n + 1} - 1 = (x + 1)\prod_{k = 1}^n\left(x^2 + 2x\cos\frac{2k\pi}{2n + 1} + 1\right)$.
-\item Prove the identity $x^{2n} + 1 = \prod_{k = 0}^{n - 1}\left(x^2 - 2x\cos\frac{(2k + 1)\pi}{2n} + 1\right)$.
+\item Prove the identity $x^{2n} - 1 = (x^2 - 1)\displaystyle\prod_{k = 1}^{n - 1}\left(x^2 -
+  2x\cos\frac{k\pi}{n} + 1\right)$.
+\item Prove the identity $x^{2n + 1} - 1 = (x - 1)\displaystyle\prod_{k = 1}^n\left(x^2 -
+  2x\cos\frac{2k\pi}{2n + 1} + 1\right)$.
+\item Prove the identity $x^{2n + 1} + 1 = (x + 1)\displaystyle\prod_{k = 1}^n\left(x^2 +
+  2x\cos\frac{2k\pi}{2n + 1} + 1\right)$.
+\item Prove the identity $x^{2n} + 1 = \displaystyle\prod_{k = 0}^{n - 1}\left(x^2 - 2x\cos\frac{(2k +
+  1)\pi}{2n} + 1\right)$.
 \item If $n$ is even, then prove the identity $\sin\frac{\pi}{2n}\sin\frac{2\pi}{2n}\ldots \sin\frac{(n - 1)\pi}{2n} =
   \frac{\sqrt{n}}{2^{n - 1}}$.
 \item If $n$ is even, then prove the identity $\cos\frac{2\pi}{2n + 1}\cos\frac{4\pi}{2n + 1}\ldots\cos\frac{2n\pi}{2n + 1} =
   \frac{(-1)^{n/2}}{2^n}$.
-\item Let the equation $x^n - 1$ have the roots $1, \alpha, \beta, \gamma, \ldots, \lambda$. Show that $(1 - \alpha)(1 - \beta)(1 -
-  \gamma)\ldots(1 - \lambda) = n$.
-\item Let $x_1, x_2, \ldots, x_n$ be the roots of the equation $x^n + x^{n - 1} + \ldots + x + 1 = 0$. Compute the expression
-  $\frac{1}{x_1 - 1} + \frac{1}{x_2 - 1} + \ldots + \frac{1}{x_n - 1}$.
-\item Without solving the family of equations
-  \startformula \frac{x^2}{p^2} + \frac{y^2}{p^2 - b^2} + \frac{z^2}{p^2 - c^2} = 1\stopformula
-  \startformula \frac{x^2}{q^2} + \frac{y^2}{q^2 - b^2} + \frac{z^2}{q^2 - c^2} = 1\stopformula
-  \startformula \frac{x^2}{r^2} + \frac{y^2}{r^2 - b^2} + \frac{z^2}{r^2 - c^2} = 1\stopformula
-  find $x^2 + y^2 + z^2$.
+\item Prove that if $\cos\alpha + i\sin\alpha$ is the solution of the equation $x^n + p_1x^{n - 1} + \cdots
+  + p_n = 0$, then $p_1\sin\alpha + p_2\sin2\alpha + \cdots + p_n\sin n\alpha = 0(p1, p2, \ldots,
+  p_n\mtext{ are real})$.
+  % mark1
 \item Show that if the equations $x^3 + px + q = 0$ and $x^3 + p'x + q' = 0$ have a common root, then $(pq' - qp')(p - p')^2 = (q -
   q')^3$.
 \item Prove the identity $\sqrt[3]{\cos\frac{2\pi}{7}} + \sqrt[3]{\cos\frac{4\pi}{7}} + \sqrt[3]{\cos\frac{8\pi}{7}} =
