@@ -36,7 +36,7 @@
     \stopformula}
 
   %\setupitemize [indenting=none] % First line of paragraphs not indented
-  \setupitemize [color=maincolor]
+  %\setupitemize [color=maincolor]
   \setupcaptions [headstyle=\bfx, style=\tfx] % Style of table and image titles
 
   \definecolor [maincolor] [r=,g=.5,b=.7] % Title colour
@@ -96,13 +96,14 @@
     [
       style={\switchtobodyfont[20pt, ss]\bf},
       align=flushright,
-      before={\blank[big, force]},
+      before={\blank[big, force]\hrule},
       after={\blank[2*big]},
       color=maincolor,
       sectionsegments=2:2,
       commandbefore={\blank[small]},
       header=high,
-      footer=ChapterFirstPage
+      footer=ChapterFirstPage,
+      after=\hrule\vskip .5cm
     ]
 
   \setuphead
@@ -256,5 +257,4 @@
   \setupalign[hz,lesshyphenated,verytolerant,stretch]
 
   \setuplanguage[en][spacing=packed]% This avoids an extra space after full stops (periods) which is no longer 'de rigeur' in printed material in English.
-
 \stopenvironment
