@@ -1,5 +1,8 @@
 \startenvironment algebra_env.tex
-
+\setupbackend
+  [format=PDF/X-4p,
+   intent={ISO Coated v2 (ECI)},
+   profile={sRGB.icc,default_gray.icc}]
   %\mainlanguage[en] % Main language = English
   \setupbodyfont[10pt] % The document's main (body) font
 
@@ -103,7 +106,8 @@
       commandbefore={\blank[small]},
       header=high,
       footer=ChapterFirstPage,
-      after=\hrule\vskip .5cm
+      after=\hrule\vskip .5cm,
+      text=empty
     ]
 
   \setuphead
