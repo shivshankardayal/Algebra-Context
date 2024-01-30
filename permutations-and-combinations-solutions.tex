@@ -1,0 +1,161 @@
+% -*- mode: context; -*-
+\chapter{Permutations and Combinations}
+\startitemize[n, 1*broad]
+\item Given, $P_4^^n = 360 \Rightarrow n(n - 1)(n - 2)(n - 3) = 3\times 4\times 5\times 6\Rightarrow n = 6$.
+\item Given, $P_3^^n = 9240 \Rightarrow n(n - 1)(n - 2) = 20\times21\times22 \Rightarrow n = 22$.
+\item Given, $P_r^^{10} = 720 = 8\times9\times10 \Rightarrow r = 3$.
+\item Given, $P_{n - 1}^^{2n + 1}:P_n^^{2n - 1} = 3: 5 \Rightarrow \frac{(2n + 1)!}{(n + 2)!}.\frac{(2n -
+  1)!}{(n -- 1)!} = \frac{3}{5}\Rightarrow \frac{(2n + 1)2n}{n(n + 1)(n + 2)}= \frac{3}{5}$
+
+  $\Rightarrow 3n^2 - 11n - 4 = 0 \Rightarrow n = 4, -\frac{1}{3}$, but $n$ is an integer. Hence, $n = 4$.
+\item Given, $P_4^^n = 12\times P_2^^n \Rightarrow n(n - 1)(n - 2)(n - 3) = 12\times n(n - 1)\Rightarrow n^2
+  - 5n - 6 = 0 \Rightarrow n = 6, -1$.
+
+  But $n > 0 \Rightarrow n = 6$ is the only solution.
+\item Given, $P_5^^n = 20\times P_3^^n \Rightarrow (n -3)(n - 4) = 20  \Rightarrow n^2 - 7n - 8 =
+  0\Rightarrow n = 8, -1$.
+
+  But $n > 0 \Rightarrow n = 8$ is the only solution.
+\item Given, $P_4^^n:P_4^^{n+1} = 3:4\Rightarrow \frac{n!}{(n - 4)!}.\frac{(n - 3)!}{(n + 1)!} =
+  \frac{3}{4}$
+
+  $\Rightarrow \frac{(n - 3)}{n + 1} = \frac{3}{4}\Rightarrow 4n - 12 = 3n + 3 \Rightarrow n = 15$.
+\item Given $P_r^^{20} = 6840 = 18\times19\times20 \Rightarrow r = 3$.
+\item Given, $P_{k + 1}^^{k + 5} = \frac{11(k - 1)}{2}.P_{k}^^{k + 3} \Rightarrow (k + 5)(k + 4)(k + 3)\cdots
+  6.5 = \frac{11(k - 1)}{2}.(k + 3)(k + 2)\cdots 5.4$
+
+  $\Rightarrow (k + 5)(k + 4) = 22k - 22 \Rightarrow k^2 - 13k + 42 = 0 \Rightarrow k = 6, 7$.
+\item Given, $P_{r + 1}^^{22}:P_{r + 2}^^{20} = 11:52\Rightarrow \frac{22!}{(21 - r)!}.\frac{(18 - r)!}{20!}
+  = \frac{11}{54}$
+
+  $\Rightarrow \frac{22.21}{(21 - r)(20 - r)(19 - r)} = \frac{11}{52} \Rightarrow (21 - r)(20 - r)(19 - r) =
+  42.52 = 12. 13.14 \Rightarrow r = 7$.
+\item Given, $P_2^^{m + n} = 90 \Rightarrow (m + n)(m + n - 1) = 10.9 \Rightarrow m + n = 10$, and
+
+  $P_2^^{m - n} = 30\Rightarrow (m - n)(m - n - 1) = 6.5\Rightarrow m - n = 6 \Rightarrow m = 8, n = 2$.
+\item Given, $P_r^^{12} = 11880 \Rightarrow \frac{12!}{(12 - r)!} = 9\times\10\times11\times 12 \Rightarrow
+  r = 4$.
+\item Given, $P_{r + 6}^^{56}:P_{r + 3}^^{54} = 30800:1 \Rightarrow \frac{56!}{(50 - r)!}.\frac{(51 -
+  r)!}{54!} = 30800$
+
+  $\Rightarrow 56\times55\times(51 - r) = 30800 \Rightarrow 51 - r = 10 \Rightarrow r = 41$.
+\item $n.P_n^^n = n.n! = (n + 1 - 1).n! = (n + 1)! - n!$. Similarly, $(n - 1).P_{n - 1}^^{n - 1} = n! - (n -
+  1)!, \ldots, 2.P_2^^2 = 3! - 2!, 1.P_1^^1 = 2! - 1!$.
+
+  Adding these, we obtain L.H.S. $= (n + 1)! - 1! = P_{n + 1}^^{n + 1} - 1 =$ R.H.S.
+\item Given, $C_{30}^^n = C_4^^n \Rightarrow \frac{n!}{30!(n - 30)!} = \frac{n!}{4!(n - 4)!}$
+
+  Equating $n - 30 = 4$ and $n - 4 = 30$, we obtain $n = 34$ from both.
+\item Given, $C_{12}^^n = C_8^^n \Rightarrow \frac{n!}{(n - 12)!12!} = \frac{n!}{(n - 8)!8!} \Rightarrow n -
+  12 = 8$ and $n - 8 = 12$. Thus, $n = 20$
+
+  $C_{17}^^{20} = \frac{20!}{17!3!} = \frac{20\times19\times18}{3\times2} = 1140$, and
+  $C_{20}^^{22} = \frac{22!}{20!2!} = \frac{22\times21}{2} = 231$.
+\item Given, $C_r^^{18} = C_{r + 2}^^18 \Rightarrow \frac{18!}{(18 - r)!r!} = \frac{18!}{(r + 2)!(16 - r)!}
+  \Rightarrow 18 - r = r + 2 \Rightarrow r = 8$ and $r = 16 - r \Rightarrow r = 8$.
+
+  $C_6^^r = C_6^^8 = \frac{8!}{6!2!} = 28$.
+\item Given, $C_{n- 4}^^n = 15 \Rightarrow \frac{n!}{(n - 4)!4!} = 15 \Rightarrow n(n - 1)(n - 2)(n - 3) =
+  3\times 4\times 5\times 6\Rightarrow n = 6$.
+\item Given, $C_r^^{15}:C_{r - 1}^^15 = 11:5\Rightarrow \frac{15!}{(15 - r)!r!}.\frac{(r - 1)!(16 -
+  r!)}{15!} = \frac{11}{5}\Rightarrow \frac{16 - r}{r} = \frac{11}{5}\Rightarrow r = 5$.
+\item Given, $P_r^^n = 2520 \Rightarrow \frac{n!}{(n - r)!} = 2520$ and $C_r^^n = 21 \Rightarrow
+  \frac{n!}{(n - r)!r!} = 21$
+
+  $\Rightarrow \frac{2520}{r!} = 21 \Rightarrow r! = 120 \Rightarrow r = 5\Rightarrow n(n - 1)(n - 2)(n -
+  3)(n - 4) = 2520 = 7\times 6\times 5\times 4\times 3\Rightarrow n = 7$.
+\item We know that $C_r^^n = C_{n - r}^^n\Rightarrow C_{13}^^{20} = C_7^^{20}$ and $C_{14}^^{20} =
+  C_6^^{20}$.
+
+  $\therefore C_{13}^^{20} + C_{14}^^{20} - C_6^^{20} - C_7^^{20} = 0$.
+\item Given, $C_{r - 1}^^n = 36\Rightarrow \frac{n!}{(n - r + 1)(r - 1)!} = 36, C_r^^n = 84 \Rightarrow
+  \frac{n!}{(n - r)!r!} = 84$, and $\frac{n!}{(n - r - 1)!(r + 1)!} = 126$.
+
+  Dividing first two, $\frac{r}{n - r + 1} = \frac{3}{7}\Rightarrow 3n = 10r - 3$, and dividing last two
+
+  $\frac{r + 1}{n - r} = \frac{2}{3}\Rightarrow 2n = 5r + 3$. Solving these two equations, we have $n = 9, r
+  = 3$.
+\item Thoudand's place can be filled in $5$ ways, hundred's place can be filled in $4$ ways, ten's place can
+  be filled in $3$ ways and unit's place can be filled in $2$ ways.
+
+  Thus, total number of $4$ digit numbers is $5\times 4\times 3\times 2 = 120$.
+
+  Alternatively, it is $P_4^^5 = 120$.
+\item Hundred's place can be filled in $3$ ways excluding $0, 2, 3$, ten's place can be filled in $5$ ways
+  and unit's place can be filled in $4$ ways.
+
+  Thus, no. of numbers between $400$ and $1000$ is $5\times 4\times 3 = 60$.
+\item {\bf Case I:} When the number is of three digits i.e. between $300$ and $1000$.
+
+  Hundred's place can be filled in $3$ ways using $3, 4$ or $5$, ten's place can be filled in $5$ ways and
+  unit's place can be filled in $4$ ways.
+
+  Thus, total no. of three digit numbers is $5\times 4\times 3 = 60$.
+
+  {\bf Case II:} When the number is of four digits i.e. between $1000$ and $3000$.
+
+  Thousand's place can be filled in $2$ ways using $1$ or $2$. Three remaining places can be filled in
+  $P_3^^5$ ways i.e. $60$ ways.
+
+  Therefore, total no. of four digit numbers is $2\times 60 = 120$.
+
+  Thus, total no. of numbers between $300$ and $3000$ is $60 + 120 = 180$.
+\item {\bf Case I:} When $2$ is at thousands place.
+
+  Hundred's placec can be filled in $4$ ways using $3, 4, 5, 6$. Two remaining places can be filled in
+  $P_2^^5$ i.e. $20$ ways. Number of numbers formed in this case is $4\times 20 = 80$.
+
+  {\bf Case II:} When thousands place is occupied by $3, 4, 5$ or $6$.
+
+  We see that there are four ways to fill thousands place. Three remaining placed can be filled in $P_3^^6$
+  i.e. $120$ ways. Number of numbers formed in this case is $4\times 120 = 480$.
+
+  Hence, total no. of numbers is $80 + 480 = 560$.
+\item {\bf Case I:} When the number is of one digit.
+
+  There will be four positive numbers excluding $0$.
+
+  {\bf Case II}: When the number is of two digits.
+
+  Ten's place can be filled in $4$ ways using $1, 2, 3$ or $4$. Unit's place can be filled in $P_1^^4$
+  ways. Total no. of one digit numbers is $4\times P_1^^4 = 16$.
+
+  {\bf Case III:} When the number is of three digits.
+
+  Hundred's place can be filled in $4$ ways like previous case. Remaining two places can be filled in
+  $P_2^^4$ ways. Total no. of three digit numbers is $4\times P_2^^4 = 48$.
+
+  {\bf Case IV:} When the number is four digits.
+
+  Thousand's place can be filled in $4$ ways like previous case. Remaining three places can be filled in
+  $P_3^^4$ ways. Total no. of four digit numbers is $4\times P_3^^4 = 96$.
+
+  {\bf Case V:} When the number is of five digits.
+
+  Ten thousand's place can be filled in $4$ ways. Remaining four places can be filled in $P_4^^4$
+  ways. Total no. of five digit numbers is $4\times P_4^^4 = 96$.
+
+  Thus, total no. of numbers formed is $4 + 16 + 48 + 96 + 96 = 260$.
+\item Total no. of numbers will be $P_4^^4 = 24$. Now since there are $4$ digits and $24$ numbers each
+  no. will occur at each place for $6$ times. Thus, sum of digits at each place would be $6(1 + 2 + 3 + 4) =
+  60$.
+
+  Therefore, sum of all numbers $60(1 + 10 + 100 + 1000) = 66660$.
+\item When any digit except $0$ will occupy unit's place the thousand's place has to be occupied by the
+  other two digits. Thus, total no. of such numbers is $3\times2\times P_2^^2 = 12$. Thus, $4$ numbers for
+  each of positive digits.
+
+  When one of $1, 2, 3$ occupy thousand's place total no. of numbers is $3\times P_3^^3 = 18$. Thus, $6$
+  numbers for each of the positive digits.
+
+  Sum of digits at units, tens and thousands place will be $4(1 + 2 + 3) = 24$ and sum of digits at
+  thousands place will be $6(1 + 2 + 3) = 36$.
+
+  Thus, sum of numbers formed is $24(1 + 10 + 100) + 36\times 1000 = 38,664$.
+\item Each of the four digits $1, 2, 2, 3$ occurs at each place $\frac{P_3^^3}{2!}$ i.e. $3$ times. Thus,
+  sum of digits at each place is $3(1 + 2 + 2 + 3) = 24$.
+
+  Thus, sum of numbers formed $24(1 + 10 + 100 + 1000) = 26,664$.
+\item Each friennd can be sent invitation by one servant. Since there are three servants each friend can
+  receive an invitaion in three ways. Thus, total no. of ways of sending invitations is $3^6 = 729$.
+\stopitemize
