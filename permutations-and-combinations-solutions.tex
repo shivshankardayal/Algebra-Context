@@ -635,4 +635,295 @@
 \item There are $7$ unique letter in the word \quotation{Violent} with $3$ vowels. There are $4$ odd places
   so three vowels can be arranged in $P_3^^4 = 4!$ ways. Rest $4$ consonants can be arrannged in $4! = 24$
   ways. Thus, total no. of such words is $24\times 24 = 576$.
+\item There are $3$ distinct consonants and $3$ vowels, where \quote{o} repeats once in the word
+  \quotation{Saloon}. Since consonants and vowels have to occupy alternate place we will have two
+  patterns. $VCVCVC$ and $CVCVCV$, where $C$ represents consonants and $V$ represents vowels.
+
+  Three consonants can be arranged in $3!$ arrangements and $3$ vowels can be arranged in $\frac{3!}{2!}$
+  arrangement. Thus, total no. of arrangements is $3!3! = 36$.
+\item There are $4$ consonants and $3$ vowels in the word \quotation{Article}. Clearly, there are three even
+  places which are to be occupied by vowels in $3!$ arrangements and consonants can be arranged in $4!$
+  arrangements for remaining $4$ positions.
+
+  Thus, total no. of words is $4!3! = 144$.
+\item Since the number has to be greater than $4$ million and we are given $7$ digits the ten millions place
+  can be occupied by either $4$ or $5$ in $2$ ways.
+
+  Remaning digits can be arranged in $\frac{6!}{2!2!} = 180$ arrangements as $2$ and $3$ repeat once. Thus,
+  total no. of required numbers is $2\times180 = 360$.
+\item In the given digits $2$ comes thrice and $3$ comes twicec so the no. of numbers is $\frac{7!}{3!2!} =
+  420$.
+
+  For odd numbers units place is to be occupied by $1, 3$ or $5$. When $1$ or $5$ occupy units place
+  remaining positions can be filled in $\frac{6!}{3!2!} = 60$ ways making the number $2\times60 = 120$.
+
+  When one of the $3$'s occupy units place rest of the positions can eb filled in $\frac{6!}{3!} = 120$
+  ways. Thus, total no. of odd numbers is $120 + 120 = 240$.
+\item There are four odd digits with both $1$ and $3$ repeating. The even no. $2$ repeats once. In a $7$
+  digits number there are four odd places which can be filled by odd numbers in $\frac{4!}{2!2!} = 6$ ways.
+
+  Even places can be filled by $2$ and $4$ can be filled in $\frac{3!}{2!} = 3$ ways. Thus, no. of required
+  numbers is $6\times3 = 18$.
+\item {\bf Case I:} When the no. if is five digits.
+
+  When ten thousands place is occupied by $2, 3$ or $4$ remaining four places can be filled in
+  $\frac{P_4^^5}{2!} = 60$ ways, making such numbers $60\times3 = 180$ in number.
+
+  When ten thousands place is occupied by $1$ remaining four places can be filled in $P_4^^5 = 120$ ways.
+
+  Thus, total no. of five digit numbers is $180 + 120 = 300$.
+
+  {\bf Case II:} When the no. is of six digits.
+
+  When hundred thousands place is occupied by $2, 3$ or $4$ remaining five places can be filled in
+  $\frac{P_5^^5}{2!} = 60$ ways, making such numbers $60\times3 = 180$ in number.
+
+  When hundred thousands place is occupied by $1$ remaining four places can be filled in $P_5^^5 = 120$ ways.
+
+  Thus, total no. of six digit numbers is $180 + 120 = 300$.
+
+  Thus, total no. of numbers is $300 + 300 = 600$.
+\item When the digits are repeated thousands place can be filled in $5$ ways excluding $0$. Remaining $3$
+  positions can be filled by $6$ digits in $6^3$ ways.
+
+  Thus, no. of such numbers is $5\times6^3 = 1080$.
+
+  To find the no. of numbers where at least one digit is repeated we find the no. of numbers where no digit
+  is repeated and subtract it from previously obtained result.
+
+  For no repetition, thousands placec can be filled in $5$ ways exluding $0$. Remaning $3$ places can be
+  filled by $5$ digits in $P_3^^5 = 60$ ways.
+
+  Thus, no. of numbers without repetition is $60\times 5 = 300$.
+
+  Thus, no. of numbers where at least one digit is repeated is $1080 - 300 = 780$.
+\item There are a total of $9$ flags, of which, $2$ are red, $2$ are blue and $5$ are yellow. Thus, total
+  no. of signals that can be made by using all of them at the same time is $\frac{9!}{2!2!5!}$.
+\item When all are of same color $P_1^^6$ signals can be made. When all are of two colors $P_2^^6$ signals
+  can be made and so on.
+
+  Thus, total no. of signals is $P_1^^6 + P_2^^6 + P_3^^6 + P_4^^6 + P_5^^6 + P_6^^6 = 1956$.
+\item {\bf Case I:} When \quote{e} is in first place. Remaining four places can be filled in $4!$ ways.
+
+  {\bf Case II:} When \quote{e} is in second place. First place can be filled in $3$ ways and remaining $3$
+  places in $3!$ ways.
+
+  {\bf Case III:} When \quote{e} is in third place. First two places in $3\times2$ ways and remaining two
+  places in $2!$ ways.
+
+  {\bf Case IV:} When \quote{e} is in fourth place. First three places in $3!$ ways and last place with
+  \quote{i}.
+
+  Thus, total no. of words is $4! + 3\times3! + 6\times2! + 3! = 60$.
+
+  {\bf Second method:} Total no. of words is $5!$. In half of these \quote{e} will come before \quote{i} and
+  in half of them after it. Thus, no. of words is $\frac{5!}{2} = 60$.
+\item No. of ways in which $5$ men can sit around a round table is $(5 - 1)! = 24$ arrangements.
+\item When there is no restriction we have $10$ girls and boys. Thus, total no. of arrangements would be
+  $9!$.
+
+  When no girls are to sit together we first seat the boys in $4!$ arrangements giving us five open
+  positions. These can be filled by $5$ girls in $5!$ ways.
+
+  Thus, total no. of seating arrangements is $4!5!$.
+\item Treating all girls as a single girl we have $7$ boys and girls which can be seated in $6!$ ways. But
+  the $4$ girls can be arranged in $4!$ ways among themselves.
+
+  Thus, total no. of seating arrangements is $6!4!$.
+\item The line can start with boys so we first seat the boys put the boys in $5!$ ways followed by girls in
+  between boys in $5!$ ways. This can be repeated starting with girls in same manner.
+
+  Thus, no. of lines that can be formed is $2.5!5!$.
+
+  For a round table we have already solved previously giving us $4!5!$ no. of arrangements.
+\item $6$ boys can be seated first in $5!$ ways giving us $6$ open places in which girls can be seated in
+  $P_5^^6$ ways. Thus, total no. of seating arrangements is $5!6!$.
+\item Since in a necklace clockwise and anticlockwise does not matter, therefore, total no. of necklaces
+  that can be made using $50$ pearls is $\frac{49!}{2!}$.
+\item Treating the two particular delegates as one delegate we have $19$ delegates which can be seated in
+  $18!$ ways. But the two delegates can be seated in $2!$ ways among themselves.
+
+  Thus, total no. of seating arrangements is $18!2!$.
+\item The question effectively asks for alternate seating arrangements among gentlemen and ladies. Thus,
+  followin from problem solved previously total no. of seating arrangements would be $4!3!$.
+\item $7$ Englishmen can be seated in $6!$ ways giving us $7$ open places which can be filled by $6$ Indians
+  in $P_6^^7$ ways.
+
+  Thus, total no. of seating arrangements is $6!7!$.
+\item We know that if $C_x^^n = C_y^^n$ then either $x = y$ or $x + y = n$. Given, $C_{3r}^^{15} = C_{r +
+  3}^^{15}$ therefore either $3r = r + 3$ or $3r + r + 3 = 15$.
+
+  However, $3r = r = 3 \Rightarrow r = \frac{3}{2}$, which is not possible, therefore, $3r + r + 3 = 15
+  \Rightarrow r = 3$ must be the case.
+\item Given, $C_6^^n:C_3^^{n - 3} \Rightarrow \frac{n!}{6!(n - 6!)}.\frac{3!(n - 6)!}{(n - 3)!} =
+  \frac{33}{4}$
+
+  $\Rightarrow \frac{n!}{(n - 3)!}.\frac{3!}{6!} = \frac{n(n - 1)(n - 2)}{6.5.4} = \frac{33}{4} \Rightarrow
+  n(n - 1)(n - 3) = 11.10.9 \Rightarrow n = 11$.
+\item Given, $\displaystyle C_4^^{47} + \sum_{j=1}^5C_3^^{52-j}$
+
+  $= C_4^^{47} + (C_3^^{51} + C_3^^{50} + C_3^^{49} + C_3^^{48} + C_3^^{47}) = (C_4^^{47} + C_3^^{47}) +
+  (C_3^^{51} + C_3^^{50} + C_3^^{49} + C_3^^{48})$
+
+  $= C_4^^48 + (C_3^^{51} + C_3^^{50} + C_3^^{49} + C_3^^{48} + C_3^^{47}) [\because C_r^^n + C_{r + 1}^^n =
+  C_{r + 1}^^{n + 1}]$
+
+  Repeating this we have the expression equal to $C_4^^{52}$.
+\item Let $p$ be the product of $r$ consecutive integers starting from $n$. Then, $p = n(n + 1)(n + 2)\cdots
+  (n + r - 1)$
+
+  $\Rightarrow \frac{p}{r!} = \frac{n(n + 1)(n + 2)\cdots(n + r - 1)}{r!} = \frac{1.2.3.\ldots.(n - 1)n(n +
+  1)(n + 2)\cdots(n + r - 1)}{1.2.3.\ldots.(n - 1).r!}$
+
+  $= \frac{(n + r - 1)!}{(n - 1)!r!} = C_r^^{n + r - 1}$, which would be an integer, and hence, $p$ is
+  divisible by $r!$.
+\item A triangle is formed with three vertices so the problem is essentially about choosing $3$ out of $m$
+  i.e. $C_3^^m = \frac{m(m - 1)(m - 2)}{6}$.
+\item Number of children is $8$. No. of children to be taken at a time is $3$. Out of $8$ children $3$ can
+  be selected in $C_3^^8$ ways. Hence, the man has to go to zoo $C_3^^8 = 56$ times.
+
+  Number of selection of $3$ children out of $8$ children including a particular child is $1\times C_2^^7 =
+  21$. Hence, a particular child will go $21$ times to the zoo.
+\item Let there be $n$ students. No. of ways in which $2$ students can be selected out of $n$ is $C_2^^n$
+  i.e. we have $C_2^^n$ pairs.
+
+  But, for each pair of students no. of cards sent is $2$. Thus, total no. of cards sent is $2.C_2^^n = n(n
+  - 1) = 600 \Rightarrow n = 25$ because $n\neq -24$.
+
+  {\bf Second method:} Each student sends cards to $n - 1$ students. Thus, total no. of cards sent is $n(n -
+  1) = 600 \Rightarrow n = 25$.
+\item A polygon of $m$ sides will have $m$ vertices. When any two vertices of the polygon are joined, either
+  a diagonal or a side is formed.
+
+  Total no. of selections of $2$ points taken at a time from $m$ points is $C_2^^m$.
+\item Total no. of persons is $6 + 4 = 10$. Total no. of selections of $5$ persons out of $10$ is
+  $C_5^^{10}$. Number of selections when no lady is taken is $C_5^^6$.
+
+  Thus, no. of selections when at least one lady is present is $C_5^^10 - C_5^^6 = 252 - 6 = 246$.
+\item (a) Total no. of selections of $3$ points out of $10$ points is $C_3^^{10} = 120$. Number of selections
+  of $3$ points out of $4$ collinear points is $C_3^^4 = 4$.
+
+  Thus, no. of triangles formed is $120 - 4 = 116$.
+
+  (b) Total no. of selections of $2$ points out of $10$ points is $C_2^^{10} = 45$. No. of selection of
+  points when only one line is formed is $C_2^^4 = 6$
+
+  Therefore, no. of straight lines formed is $45 - C_2^^4 + 1 = 40$. (We take $1$ line formed from four
+  collinear points)
+
+  (c) Total no. of selections of $4$ points out of $10$ points is $C_4^^{10} = 210$. No. of selection of
+  points when no quadrilateral is formed is $C_3^^4.C_1^^6 + C_4^^4.C_0^^6 = 25$.
+
+  Thus, no. of quadrilaterals formed is $210 - 25 = 185$.
+\item Zero or more oranges can be selected from $4$ oranges in $5$ ways because oranges are
+  identical. Similalry, the no. of selection for apples would be $6$ and for mangoes it would be $7$.
+
+  Thus, no. of selections when all three types of fruits are selected from is $5\times6\times7 = 210$. But
+  one of these selections will contain $0$ fruits.
+
+  Thus, required no. of selections is $209$.
+\item No. of selections by which $1$ or more green dye can be chosen is $C_1^^5 + C_2^^5 + C_3^^5 + C_4^^5 +
+  C_5^^5 = 2^5 - 1$. No. of selections by which $1$ or more blue dye can be chosen is $C_1^^4 + C_2^^4 +
+  C_3^^4 + C_4^^4 = 2^4 - 1$. No. of selections by which $0$ or more red dye can be chosen is $C_0^^3 +
+  C_1^^3 + C_2^^3 + C_3^^3 = 2^3 = 8$.
+
+  Thus, required no. of selections is $21\times15\times8 = 3720$.
+\item Factos of $216,\,000$ are $5\ 2$s, $3\ 3$s and $2\ 5$s. Zero or more $2$s can be selected in $5 + 1 =
+  6$ ways. Zero or more $3$s can be selected in $3 + 1 = 4$ ways. Zero of more $5$s can be selected in $2 +
+  1 = 3$ ways.
+
+  Thus, no. of divisors is $6\times4\times3 - 1 = 71$ because one of these would contain no factor. Adding
+  $1$ to the no. of divisors we have total no. of divisors as $72$.
+\item A student can fail in one , two, three, four or all of five subjects. Thus, no. of ways of failing is
+  $C_1^^5 + C_2^^5 + C_3^^5 + C_4^^5 + C_5^^5 = 2^5 - 1 = 31$.
+\item Each person can be given $4$ things. No. of ways of giving $4$ things out of $12$ to the first person
+  is $C_4^^{12}$. Then, $8$ things remain. No. of ways of giving $4$ things out of $8$ to the second person
+  is $C_4^^8$. Now third person can receive $4$ things out of $4$ in $C_4^^4$ ways.
+
+  Thus, required no. of ways is $C_4^^{12}\times C_4^^8\times C_4^^4 = \frac{12!}{(4!)^3}$.
+
+  No. of ways in which $12$ things can be divided equally among $3$ sets is $\frac{12!}{(4!)^3.3}$.
+\item There are $11$ letters in the word \quotation{Examination} in which three occur in pairs
+  i.e. \quote{A}, \quote{N} and \quote{I}. The different letters are $E, X, A, M, I, N, T, O$ i.e. $8$.
+
+  {\bf Case I:} When two pairs of identical letters are chosen.
+
+  The two pairs can be chosen from three in $C_2^^3 = 3$ ways. These letters can be arranged among themselves in
+  $\frac{4!}{2!2!} = 6$ ways. Thus, total no. of words formed is $3\times6 = 18$.
+
+  {\bf Case II:} When one pair of identical letters is chosen and remaining two letters are different.
+
+  The pair of identical letters can be chosen in $C_1^^3 = 3$ ways. The two different letters can be chosen
+  in $C_2^^7 = 21$ ways. These letters can be arranged in $\frac{4!}{2!}$ ways.
+
+  Thus, total no. of words formed is $3\times C_2^^7\times\frac{4!}{2!} = 756$.
+
+  {\bf Case III:} When all four letters are different.
+
+  No. of words that can be formed is $P_4^^8 = 1680$.
+
+  Thus, total no. of words formed is $756 + 18 + 1680 = 2454$.
+\item We need to select $4$ vertices out of $n$ of a polygon to form a quadrilateral. No. of selections of
+  $4$ points is $C_4^^n$.
+\item No. of ways of selecting $3$ friends out of $7$ is $C_3^^7 = 35$. Thus, no. of parties that can be
+  given is $35$.
+
+  Suppose a particular friends is mandatory in a party then $2$ other friends can be selected in $C_2^^6$
+  ways. Thus, no. of parties a particular friend will attend is $C_2^^6 = 15$.
+\item If $p$ things always occue then we have to select remaning $r - p$ things out of $n - p$ ways, which
+  is $C_{r - p}^^{n - p}$.
+\item (a) If a particular member is always added then we have to choose $5$ more from remaining $11$, which
+  is $C_5^^{11}$.
+
+  (b) If a particular member is always excluded then we have to chhose $6$ more from remaining $11$, which
+  is $C_6^^{11}$.
+\item (a) Total no. of ways of seating $6$ students is $P_6^^6 = 720$. Now we will put $C$ and $D$ together
+  and subtract that from total no. of ways to find no. of ways of seating them when $C$ and $D$ are not
+  together.
+
+  Treating $C$ and $D$ as one student we have $5$ students which can be seated in $P_5^^5 = 120$ ways. But
+  these two can be arranged among themseleves in $2!$ ways making total no. of ways $120\times2 = 240$.
+
+  Thus, no. of ways of seating these $6$ students together when $C$ and $D$ are not together is $720 - 240 =
+  480$.
+
+  (b) If $C$ is always included then we need to select $3$ more from remaining $5$, which can be done in
+  $C_3^^5 = 10$ ways.
+
+  (c) Since $E$ is always excluded we have only $5$ students left. Thus, following previous part it can be
+  done in $C_3^^4 = 4$ ways.
+\item Let there be $n$ stations. To print a ticket we need a source station and a desination station. So
+  different tickets which can be printed with $n$ stations is $C_2^^n$, which is $105$ in our case.
+
+  $\therefore \frac{n!}{(n - 2)!2!} = 105 \Rightarrow n(n - 1) = 210 = 14.15 \Rightarrow n = 15$.
+\item No. of ways to select $2$ points to form a straight line out of $15$ points is $C_2^^{15} = 105$.
+  This will include $2$ points out of $6$ collinear points which will actually contain only $1$ straight
+  line out of it. So no. of ways to choose $2$ points out of these $6$ points is $C_2^^6 = 15$. Thus, total
+  no. of straight lines formed is $105 - 10 + 1 = 91$.
+
+  No. of ways of choosing $3$ points out of $15$ is $C_3^^{15} = 455$. We have to not consider cases when
+  all three points aree selected from collinear points as those won't form a triangle. No. of selections of
+  $3$ points out of collinear points is $C_3^^6 = 20$.
+
+  Thus, total no. of triangles formed is $455 - 20 = 435$.
+\item No. of ways of choosing $4$ points out of $10$ is $C_4^^{10} = 210$. When $3$ or $4$ points are chosen
+  from $5$ collinear pooints the quadrilateral won't be formed. When we choose $3$ points from collinear
+  points we have $C_3^^5 = 10$ ways, and $1$ remaining point from $5$ non-collinear points in $5$ ways. Thus,
+  total no. of such selections is $10\times5 = 50$.
+
+  When all four points are chosen from collinear points; this can be done in $C_4^^5 = 5$ ways.
+
+  Thus, total no. of quadrilaterals formed is $210 - 50 - 5 = 155$.
+\item There is a total of $12$ points and we can choose $3$ points from these in $C_3^^{12} = 220$
+  ways. However, these points must not come from points of same side.
+
+  Thus, no. of triangles formed is $220 - C_3^^3 - C_3^^4 - C_3^^5 = 205$.
+\item We need one goalkeeper in the team and two are available so goalkeeper can be chosen in $2$ ways. Rest
+  of $10$ players can be chosen from remaining $12$ players in $C_{10}^^{12} = 66$ ways.
+
+  Thus, no. of ways in which a team of $11$ out of $14$ can be formed is $2\times66 = 122$.
+\item $2$ men can be chosen from $5$ men in $C_2^^5 = 10$ ways. Similarly, $2$ women from $6$ women can be
+  chosen in $C_2^^6 = 15$ ways.
+
+  Thus, total no. of ways of forming the committee is $10\times 15 = 150$.
 \stopitemize

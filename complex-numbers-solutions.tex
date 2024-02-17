@@ -2058,7 +2058,7 @@ Thus, the given conditions represent a rhombus but not a square.
 
   Simplifying these two equations gives us our determinant.
   \vskip .8cm
-\item From these two equation we have $r = \frac{c - a}{b - a}$ and $r = \frac{\omega - u}{v -u}$. Equating
+\item From these two equations we have $r = \frac{c - a}{b - a}$ and $r = \frac{\omega - u}{v -u}$. Equating
   these two equations and taking modulus and argument, it follows from the previous problem that the two
   triangles are similar.
 \item We know that points on a perpendicular bisector is equidistant from the two points of the line to
@@ -2077,7 +2077,7 @@ Thus, the given conditions represent a rhombus but not a square.
   $\left|(x - x_1) + i(y - y_1)\right| = c\left|(x - x_2) + i(y - y_2)\right| \Rightarrow (x - x_1)^2 + (y -
   y_1)^2 = c^2\{(x - x_2)^2 + (y - y_2)^2\}$, which is equation of a circle.
 \item Given, $|z| = 1 \Rightarrow 2z\overline{z} = 2 \Rightarrow \frac{2}{z} = 2\overline{z}$ which gives us
-  a circle with radius of $2$ units.
+  a circle.
 \item  Let $z_1 = r_1(\cos\theta_1 + i\sin\theta_1)$ and $z_2 = r_2(\cos\theta_2 + i\sin\theta_2)$. Then
   L.H.S. $= \left|z_1 + z_2\right|$ $\Rightarrow \left|z_1 + z_2\right|^2 = {r^2}_1 + {r^2}_2 +
   2r_1r_2\cos(\theta_1 - \theta_2)$.
@@ -2137,9 +2137,9 @@ Thus, the given conditions represent a rhombus but not a square.
   $\Rightarrow CP = 4\Rightarrow \tan\theta = \frac{4}{3}$. Therefore, the point would be
   $4(\cos\theta + i\sin\theta) = \frac{12}{5} + \frac{16i}{5}$.
   \vskip .5cm
-\item From given equation, $\left(\frac{\left|z-1\right| + 4}{3\left|z - 1\right| + 2}\right) < \frac{1}{2}$
+\item From given equation, $\left(\frac{\left|z-1\right| + 4}{3\left|z - 1\right| - 2}\right) < \frac{1}{2}$
 
-  $\Rightarrow |z - 1| > 0$. This represents area which lies outside a circle with center at $(1, 0)$ and
+  $\Rightarrow |z - 1| > 10$. This represents area which lies outside a circle with center at $(1, 0)$ and
   radius $10$.
 \item Let $z = x + iy$ then the equation becomes $x^2 - y^2 + x + 1 + iy(1 + 2x) = 0$. Clearly, imaginary
   part has to be zero i.e. either $y = 0$ or $x = -\frac{1}{2}$. So, it is real and positive for all points
@@ -2161,40 +2161,6 @@ Thus, the given conditions represent a rhombus but not a square.
   $\Rightarrow r_1 + r_2 > 2 \Rightarrow 2t^2 - 3t + 2 > 2 \Rightarrow t(2t - 3) > 0 \Rightarrow t < 0, t >
   \frac{3}{2}$ and $r_1 < r_2 + 2 \Rightarrow t^2 - 2t + 2 < t^2 + 2 \Rightarrow t  > 0$. Combining all the
   inequalities, $t > 2$.
-\item The diagram is given below:
-  \startplacefigure[location={left,none}]
-    \startMPcode
-      pickup pencircle scaled 0.2pt;
-      pair c;
-      c = (0cm, 2.5cm);
-      draw fullcircle scaled 3cm shifted c;
-      drawarrow (-0.5cm, 0cm) -- (4cm, 0cm);
-      drawarrow (0cm, -0.5cm) -- (0cm, 5cm);
-      draw (0, 0) -- (3cm, 4cm);
-      draw (0, 2.5cm) -- (1.2cm, 1.6cm);
-      label.rt("$x$", (4cm, 0));
-      label.top("$y$", (0, 5cm));
-      label.llft("$O$", (0,0));
-      label.lft("$C(0, 25)$", c);
-      label.rt("$P$", (1.2cm, 1.6cm));
-      draw fullcircle scaled 16 rotated angle ((1cm, 0) - (0, 0)) shifted (0, 0) cutafter ((0, 0) -- (3cm, 4cm));
-      % angle marking
-      label.rt("$\theta$", (0.2cm, 0.25cm));
-      draw fullcircle scaled 16 rotated angle ((0, 0) - c) shifted c cutafter (c -- (1.2cm, 1.6cm));
-      label.rt("$\theta$", c - (-0.1cm, 0.4cm));
-    \stopMPcode
-  \stopplacefigure
-  Given $z - 25i \leq 15$, which represents a circle having center $(0, 25)$ and a radius $15$.
-  Let $OP$ be tangent to the circle at point $P$, then $\angle XOP$ will represent least
-  value of $\arg(z)$.
-
-  Let $\angle XOP = \theta$ then $\angle OCP = \theta$. Now $OC = 25, CP = 15 \therefore OP = 20\therefore
-  \tan\theta = \frac{OP}{CP} = \frac{4}{3}$. $\therefore$ Least value of $\arg(z) = \theta =
-  \tan^{-1}\frac{4}{3}$
-
-  Clearly, $OCP$ is a right angle triangle. $\Rightarrow OC^2 = OP^2 + CP^2 \Rightarrow OP = 20. \therefore
-  z = 20\left(\frac{3}{5}\right + i\frac{4}{5}\right) = 12 + 16i$.
-  \vskip .7cm
 \item Let $z = x + iy$ then $\sqrt{x^2 + 8x + 16 + y^2} = \sqrt{a^2 - 12a + 28}$ and $\sqrt{x^2 - 8\sqrt{3}x
   + 48 + y^2} < 1$.
 
@@ -2209,15 +2175,7 @@ Thus, the given conditions represent a rhombus but not a square.
 \item Let $z = x + iy$ then $2z = |z| + 2i \Rightarrow 2(x + iy) = \sqrt{x^2 + y^2} + 2iy$. Equating real
   and imaginary parts, $y = 1, 2x = \sqrt{x^2 + 1}$. Squaring $4x^2 = x^2 + 1 \Rightarrow x =
   \pm\frac{1}{\sqrt{3}}$.
-\item Let $z = x + iy$ then $z|z| + az + 1 = 0 \Rightarrow x\sqrt{x^2 + y^2} + iy\sqrt{x^2 + y^2} + ax +
-  aiy + 1 = 0$. Equating real and imaginary parts,
-
-  $x\sqrt{x^2 + y^2} + ax + 1 = 0$ and $y\sqrt{x^2 + y^2} + ay = 0 \Rightarrow y(\sqrt{x^2 + y^2} + a) =
-  0$. However, $\sqrt{x^2 + y^2}\neq -a$ because that will make the first equation meaningless. $\therefore
-  y = 0$ and hence $x = \frac{-a \pm\sqrt{a^2 - 4}}{2}$, which is a negative real number for $a > 0$.
-\item We can solve this like previous problem and find that $x = 0$ and $y = \frac{-a \pm\sqrt{a^2 -
-    4}}{2}$.
-\item We have earlier porven that if there are two non-parallel lines cutting a circle at $a, b$ and $c, d$
+\item We have earlier proven that if there are two non-parallel lines cutting a circle at $a, b$ and $c, d$
   then their point of intersection is given by $\frac{a^{-1} + b^{-1} - c^{-1} - d^{-1}}{a^{-1}b^{-1}-
     c^{-1}d^{-1}}$. Now if $c$ and $d$ coincide then that line will become a tangent. So putting $d = c$ we
   have
