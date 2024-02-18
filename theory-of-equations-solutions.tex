@@ -1,6 +1,17 @@
 % -*- mode: context; -*-
 \chapter{Theory of Equations}
 \startitemize[n, 1*broad]
+\item $x + x^9 + x^{25} + x^{49} + x^{81} = x(1 + x^8 + x^{24} + x^{48} + x^{80}) = x[(x^{80} - 1) + (x^{48}
+  - 1) + (x^{24 } - 1) + (x^{8} - 1) + 5]$.
+
+  All terms are divisible by $x(x^2 - 1)$ except last term $5x$, and hence, $5x$ is the remainder.
+\item Let $P = x^{9999} + x^{8888} + x^{7777} + \cdots + x^{1111} + 1$ and $Q = x^9 + x^8 + x^7 + \cdots + x
+  + 1$, then $P - Q = x^9[(x^{10})^{999} - 1] + x^8[(x^{10})^{888} - 1] + \cdots + x[(x^{10})^{100} - 1]$
+
+  But $(x^{10})^n - 1$ is divisible by $x^{10} - 1\;\forall\;n\geq 1. \therefore P - Q$ is divisible by
+  $x^{10} - 1$.
+
+  As $$
 \item For roots to be equal the discriminant has to be zero.
 
    $D = 4(1 + 3m)^2 - 4(1 + m)(1 + 8m) = 0\Rightarrow 4(1 + 9m^2 + 6m - 1 - 9m -8m^2) = 0\Rightarrow m^2 -
