@@ -11,7 +11,88 @@
   But $(x^{10})^n - 1$ is divisible by $x^{10} - 1\;\forall\;n\geq 1. \therefore P - Q$ is divisible by
   $x^{10} - 1$.
 
-  As $$
+  Because $x^9 + x^8 + x^7 + \cdots + x + 1|x^{10} - 1\Rightarrow x^9 + x^8 + x^7 + \cdots + x + 1|P - Q
+  \Rightarrow x^9 + x^8 + x^7 + \cdots + x + 1|P$.
+\item We will prove this by contradiction. Suppose that $f(n) = 0$, then $f(x - n)$ divides $f(x)$
+  i.e. $f(x) = (x - n)g(x)$, where $g(x)$ is another polynomial with integral coefficients. Now $f(1) = (1 -
+  n)g(1)$ and $f(2) = (2 - n)g(2)$. Both of these should be odd numbers but that is not possible as $1 - n$
+  and $2 - n$ are consecutive integers. Thus, either $f(1)$ or $f(2)$ should be even, which is a
+  contradiction, and hence, the result.
+\item Suppose that there exists such an integer $b$, such that $f(b) = 1993$. Let $g(x) = f(x) - 1991$. Now,
+  $g$ is a polynomial with integer coefficients and $g(a_i) = 0$ for $i = 1, 2, 3, 4$.
+
+  Thus, $(x - a_1), (x - a_2), (x - a_3)$ and $(x - a_4)$ are all factors of $g(x)$. So $g(x) = (x - a_1)(x
+  - a_2)(x - a_3)(x - a_4)h(x)$, where $h(x)$ is a polynomial with integer coefficients. $g(b) = f(b) - 1991
+  = 2$ so $g(b) = (b - a_1)(b - a_2)(b - a_3)(b - a_4)h(b) = 2$.
+
+  Thus, $(b - a_1)(b - a_2)(b - a_3)(b - a_4)$ are all divisors of $2$ and distinct. Such values are $1, -1,
+  -2, 2$ and $h(b)$ is an integer.
+
+  $\therefore g(b) = 4.h(b) = 2$, which is not possible. Hence, such an integer does not exist.
+\item We know that when coefficients of a polynomial are integers then quadratic surds as roots appear in
+  pairs. Therefore, the other root would be $-\sqrt{5}$ giving us a second degree polynomial $x^2 -
+  5$. Therefore, we can write the polynomial is of the form $ax^2 - 5a$.
+
+  {\bf Second method:} Since the order of the surd $\sqrt{5}$ is $2$, we can expect a polynomial of the
+  lowest degree to be a polynomial of degree $2$. Let $f(x) = ax^2 + bx + c, a, b,
+  c\in\mathbb{Q}$. $f(\sqrt{5}) = 5a + \sqrt{5}a + c = 0$ But $\sqrt{5}$ is irrational so $5a + c = 0$ and
+  $b = 0\Rightarrow c = -5a$ so the polynomial is of the form $ax^2 - 5a$ giving us second root at
+  $-\sqrt{5}$.
+\item Let $f(x) = x - (\sqrt{5} + \sqrt{2}) = [(x - \sqrt{5}) - \sqrt{2}]$. Using conjugate as the other
+  zero, we have $f_1(x) = [(x - \sqrt{5}) - \sqrt{2}][(x - \sqrt{5}) + \sqrt{2}] = (x^2 + 3 - 2\sqrt{5}x)$
+  $\Rightarrow f_2(x) = [(x^2 + 3) - 2\sqrt{5}x][(x^2 + 3) + 2\sqrt{5}x] = x^4 - 14x^2 + 9\Rightarrow f(x) =
+  ax^4 - 14x^2 + 9a$, where $a\in\mathbb{Z}, a\neq 0$.
+\item Putting $x = 0, 0 = -f(0)\Rightarrow f(0) = 0$. Putting $x = 1, f(0) = -3f(1) \Rightarrow f(1) =
+  0$. Similalrly, $f(2) = f(3) = 0$. Let is assume $f(x) = x(x - 1)(x - 2)(x - 3)g(x)$, where $g(x)$ is some
+  polynomial. Now using the given relation we have $x(x - 1)(x - 2)(x - 3)(x - 4)g(x - 1) = x(x - 1)(x -
+  2)(x - 3)(x - 4)g(x)$
+
+  $\Rightarrow g(x - 1) = g(x)\;\forall\;x\in\mathbb{R} - \{0, 1, 2, 3, 4\} \Rightarrow g(x - 1) =
+  g(x)\;\forall\;x\in\mathbb{R}$ from identity theorem.
+
+  $\Rightarrow g(x)$ is periodic. $\Rightarrow g(x) = c \Rightarrow f(x) = cx(x - 1)(x - 2)(x - 3)$
+\item Because $f(x)$ is a monic coefficieng of highest degree will be $1$. Let $g(x) = f(x) - x$, where
+  $g(x)$ is also a cubic polynomial.
+
+  $g(1) = 0, g(2) = 0, g(3) = 0 \Rightarrow g(x) = (x - 1)(x - 2)(x - 3) \Rightarrow f(x) = (x - 1)(x - 2)(x
+  - 3) + x \Rightarrow f(4) = 10$.
+\item Let $f(x) = x - (\sqrt{3} + \sqrt{7}) = [(x - \sqrt{3}) - \sqrt{7}]$. Using conjugate as the other
+  zero, we have $f_1(x) = [(x - \sqrt{3}) - \sqrt{7}][(x - \sqrt{3}) + \sqrt{7}] = (x^2 - 4 - 2\sqrt{3}x)$
+  $\Rightarrow f_2(x) = [(x^2 - 4) - 2\sqrt{3}x][(x^2 - 4) + 2\sqrt{3}x] = x^4 - 8x^2 + 16 - 12x^2 = x^4 -
+  20x^2 + 16 = 0$.
+\item Clearly, we will have conjugate roots for the given surds as roots, which would be $2 - \sqrt{3}$ and
+  $3 - \sqrt{2}$. Therefore, the polynomial would be
+
+  $f(x) = [(x - 2) - \sqrt{3}][(x - 2) + \sqrt{3}][(x - 3) - \sqrt{2}][(x - 3) + \sqrt{2}] = (x^2 - 4x + 4 -
+  3)(x^2 - 6x + 9 - 2) = (x^2 - 4x + 1)(x^2 - 6x + 7) = x^4 - 10x^3 + 32x^2 - 34x + 7 = 0$.
+\item Let $y = \sqrt[3]{2}$, then $x = y + 3y^2 = y(3y + 1)$. Cubing both sides $x^3 = y^3(27y^3 + 27y^2 +
+  9y + 1) = 2(9x + 55)\Rightarrow x^3 - 18x - 110 = 0$. This is the minimal polynomial as
+  $[\mathbb{Q}(\sqrt[3]{2}) : Q] = 3$.
+\item $x^n - nx + n - 1 = (x - 1)(x^{n- 1} + x^{n - 2} + \cdots + x + 1) - n(x - 1) = (x - 1)[(x^{n - 1} -
+  1) + (x^{n - 2} - 1) + \cdots + (x - 1)]$, which clearly has a factor $(x - 1)^2$.
+\item Because $a, b, c, d, e$ are all zeroes of the polynomial $6x^5 + 5x^4 + 4x^3 + 3x^2 + 2x + 1$,
+  therefore, $6(x - a)(x - b)(x - c)(x - d)(x - e) = 6x^5 + 5x^4 + 4x^3 + 3x^2 + 2x + 1$.
+
+  Putting $x = 1, -6(1 + a)(1 + b)(1 + c)(1 + d)(1 + e) = -6 + 5 - 4 + 3 - 2 + 1 = -3 \Rightarrow (1 + a)(1
+  + b)(1 + c)(1 + d)(1 + e) = \frac{1}{2}$.
+\item Because $1, \alpha_1, \alpha_2, \ldots, \alpha_{n - 1}$ are the roots of the equation $x^n - 1 = 0$,
+  therefore, $(x - 1)(x - \alpha_1)(x - \alpha_2)\cdots(x - \alpha_{n - 1}) = x^{n} - 1 \Rightarrow (x -
+  \alpha_1)(x - \alpha_2)\cdots(x - \alpha_{n - 1}) = x^{n - 1} + x^{n - 2} + \cdots + x + 1$.
+
+  Putting $x = 1$, in the above equation, we deduce the desired result.
+\item Consider a function $g(x) = f(x) - 10x$, then $g(1) = g(2) = g(3) = 0$ i.e. $(x - 1)(x - 2)(x - 3)$
+  would divide $g(x)$. Since $f(x)$ has a degree of $4$ so $g(x)$ will also have a degree of $4$. Let $g(x)
+  = (x - t)(x - 1)(x - 2)(x - 3)$ so $f(x) = 10x + (x - t)(x - 1)(x - 2)(x - 3)$.
+
+  Now for $x = 12, (x - 1)(x - 2)(x - 3) = 990$ and for $x = -8, (x - 1)(x - 2)(x - 3) = -990$.
+
+  $\therefore \frac{f(12) + f(-8)}{10} = \frac{10(12 - 8) + (12 - t)990 + (-8 - t).-990}{10} = 1984$.
+\item Roots of $x^2 + x + 1$ are $\omega, \omega^2$. Since given polynomial is not divisible by $x^2 + x +
+  1$, so these roots won't satisfy the given polynomial. Thus,
+
+  $\omega^{2k} + 1 + (1 + \omega)^{2k} = \omega^{2k} + 1 + (\omega^2)^{2k} = 1 + \omega^k + \omega^{2k}\neq
+  0$. We know that $1 + \omega^k + \omega^{2k} = 3$ when $k = 3n, n\in\mathbb{N}$. Hence, $k = 3, 6, 9,
+  \ldots$.
 \item For roots to be equal the discriminant has to be zero.
 
    $D = 4(1 + 3m)^2 - 4(1 + m)(1 + 8m) = 0\Rightarrow 4(1 + 9m^2 + 6m - 1 - 9m -8m^2) = 0\Rightarrow m^2 -
