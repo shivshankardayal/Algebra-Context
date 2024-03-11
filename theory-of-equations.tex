@@ -7,7 +7,7 @@ $i\in\mathbb{I}$. Since $a_i\in\mathbb{C}$, it is evident that $a_i\in\mathbb{R}
 $\mathbb{R}\subset\mathbb{C}$. This equation will be called an equation of degree $n$ if and only if
 $a_n\neq 0$. $a_n$ is called {\it leading} coefficient of the polynomial. If the leading coefficient is $1$
 then the polynomial is also callled {\it monic} polynomial. A polynomial with one term is called {\it
-  monomila}, with two terms, a {\it binomial} and with three terms it is called a {\it trinomial}. The most
+  monomial}, with two terms, a {\it binomial} and with three terms it is called a {\it trinomial}. The most
 useful trinomials are quadratic equations, which we will study further in this chapter. If $f(x) = a_0$,
 then it is called a {\it constant} polynomial. If $n = 0$ implies $f(x) = a_0$, which will be a polynomial
 of degree $0$. If $f(x) = 0$, then it is callled {\it zero} polynomial, in this case the degree is defined
@@ -150,6 +150,7 @@ If $\alpha_1, \alpha_2, \ldots, \alpha_n$ are $n$ roots of the equation $a_nx^n 
   n}\alpha_i\alpha_j\alpha_n = -\frac{a_{n - 3}}{a_n}, \cdots, \alpha_1\alpha_2\ldots\alpha_n =
 (-1)^n\frac{a_0}{a_n}$.
 
+These relations are denoted as $\sigma_1, \sigma_2, \ldots, \sigma_n$ as well.
 These relations are known as Vieta's relations.
 
 \section{Symmetric Functions}
@@ -185,6 +186,10 @@ Over $\mathbb{I}$, first is reducible while other are irreducible, over $\mathbb
 bit last two are not, over $\mathbb{R}$, first three are reducible but last one is not and over $\mathbb{C}$
 all are reducible.
 
+\subsection{Gausss' Lemma}
+If a polynomial with integer coefficients is reducible over $\mathbb{Q}$, then it is reducible over
+$\mathbb{Z}$.
+
 \section{Eisenstein's Irreducibility Criterion Theorem}
 \starttheorem
 Consider the polynomial $f(x) = a_nx^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0$ with integer
@@ -216,6 +221,30 @@ p|b_ic_0$. But $p\nmid c_0 \Rightarrow p|b_i$, which is a contradiction, and the
 irreducible.
 \stopproof
 
+\section{Extended Eisenstein's Irreducibility Criterion Theorem}
+\starttheorem
+  Let $f(x) = a_nx^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0$ be a polynomial with integer
+  coefficient. If there exists a prime number $p$ and an integer $k\in\{0, 1, 2, \ldots, n - 1\}$ such that
+  $p\mid a_0, a_1, \ldots, a_k;p\nmid a_{k + 1}$ and $p^2\nmid a_0$, then $f(x)$ has an irreducible factor
+  of degree at least $k + 1$. In particular if $p$ can be taken so that $k = n - 1$, then $f(x)$ is
+  irreducible.
+\stoptheorem
+\startproof
+  Suppose that $f(x) = g(x)h(x)$ such that \startformula g(x) = b_kx^k + b_{k - 1}x^{k - 1} + \cdots + b_1x
+  + b_0\stopformula
+  \startformula h(x) = c_rx^r + c_{r - 1}x^{r - 1} + \cdots + c_1x + c_0\stopformula
+    where $b_i, c_i\in\mathbb{Z}\;\forall\;i = 0, 1, 2, \ldots;b_k \neq 0, c_r\neq 0; 1\leq m, r\leq n - 1$.
+
+  Since $a_0 = b_0c_0$ is divisible by $p$ and not by $p^2$, exactly one of $b_0, c_0$ is a multiple of
+  $p$. Without loss of generality assume that $p\mid b_0$ and $p\nmid c_0$.
+
+  Now $p\mid a_1 = b_0c_1 + b_1c_0 \Rightarrow p\mid b_1c_0\Rightarrow p\mid b_1$.
+
+  Simmilarly, $p\mid a_2 = b_0c_2 + b_1c_2 + b_2c_0\Rightarrow p\mid b_2c_0\Rightarrow p\mid b_2$ and so on.
+
+  We conclude that all coefficients $b_0, b_1, \ldots, b_k$ are divisible by $p$. Now, $a_{k + 1} = b_kc_1 +
+  b_{k - 1}c_2 + b_{k - 2}c_2 + \ldots \Rightarrow p\nmid a_{k + 1}$. It follows that degree of $g\geq k  + 1$.
+\stopproof
 \section{Quadratic Equations}
 An equation of the form $ax^2 + bx + c = 0$, where $a, b, c\in \mathbb{C}$, the set of complex numbers, is
 called a {\it quadratic equation}. The numbers $a, b, c$ are called {it coefficients} of the equation. The
@@ -593,6 +622,132 @@ Let the given equation be
 \item If the polynomial $x^{2k} + 1 + (x + 1)^{2k}$ is not divisible by $x^2 + x + 1$, then find the value
   of $k\in\mathbb{N}$.
 \item Find all polynomials $P(x)$ with real coefficients such that $(x - 8)P(2x) = 8(x - 1)P(x)$.
+\item If $(x - 1)^3$ divides $f(x) + 1$ and $(x + 1)^3$ divides $f(x) - 1$, then find the polynomial $f(x)$
+  of degree $5$.
+\item Find the polynomial equation of lowest degree with rational coefficients, two of whose roots are $3 +
+  2i$ and $2 + 3i$.
+\item Find the roots of the equation $x^4 + x^3 -19x^2 - 49x - 30$, if all roots are rational numbers.
+\item Find the rational roots of $2x^3 - 3x^2 - 11x + 6 = 0$.
+\item Solve $x^3 - 3x^3 + 5x - 15 = 0$.
+\item Show that $f(x) = x^{1000} - x^{500} + x + 1 = 0$ has no rational roots.
+\item If $x^2 + ax + b + 1 = 0$, where $a, b\in\mathbb{Z}$ and $b\neq -1$, has a root in integers then prove
+  that $a^2 + b^2$ is composite.
+\item For what values of $p$, will the sum of squares of the roots $x^2 - px + p - 1 = 0$ be minimum?
+\item Let $\alpha, \beta$ be two real numbers not equal to $-1$, such that $\alpha, \beta$ and $\alpha\beta$
+  are the roots of a cubic polynomial with rational coefficients. Prove or disprove that $\alpha\beta$ is
+  rational.
+\item Find the roots of the cubic equation $9x^3 - 27x^2 + 26x - 8 = 0$, given that one of the roots of the
+  equation is double the other.
+\item If the product of two roots of the equation $4x^4 - 24x^3 + 31x^2 + 6x - 8 = 0$ is $1$, find all the
+  roots.
+\item One root of the equation $x^4 - 5x^3 + ax^2 + bc + c = 0$ is $3 + \sqrt{2}$. If all the roots of the
+  equation are real, find extremum values of $a, b, c$; given that $a, b$ and $c$ are rational.
+\item Find the rational roots of the equation $x^4 - 4x^3 + 6x^2 - 4x + 1 = 0$.
+\item Solve the equation $x^4 + 10x^3 + 35x^2 + 50x + 24 = 0$, if some of two of its roots is equal to the
+  sum of the other two roots.
+\item Find the rational roots of $6x^4 + x^3 - 3x^2 - 9x - 4 = 0$.
+\item Find the rational roots of $6x^4 + 35x^3 + 62x^2 + 35x + 2 = 0$.
+\item Given that the sum of two of the roots of $4x^3 + ax^2 - x + b = 0$ is zero, where $a,
+  b\in\mathbb{Q}$. Solve the equation for all values of $a$ and $b$.
+\item Find all $a, b$ such that $x^3 + ax^2 + bx - 8 = 0$ are real and in G.P.
+\item Show that $2x^6 + 12x^5 + 30x^4 + 60x^3 + 80x^2 + 30x + 45 = 0$ has no real roots.
+\item Construct a polynomial equation, of the least degree with rational coefficients one of whose roots is
+  $\sin10^\circ$.
+\item Construct a polynomial equation, of the least degree with rational coefficients one of whose roots is
+  $\sin20^\circ$.
+\item Construct a polynomial equation, of the least degree with rational coefficients one of whose roots is
+  $\cos10^\circ$.
+\item Construct a polynomial equation, of the least degree with rational coefficients one of whose roots is
+  $\cos20^\circ$.
+\item Construct a polynomial equation, of the least degree with rational coefficients one of whose roots is
+  $\tan10^\circ$.
+\item Construct a polynomial equation, of the least degree with rational coefficients one of whose roots is
+  $\tan20^\circ$.
+\item Construct a polynomial equation, of the least degree with rational coefficients two of whose roots are
+  $\sin10^\circ$ and $\cos20^\circ$.
+\item If $p, q, r$ are the real roots of $x^3 - 6x^2 + 3x + 1 = 0$, determine the possible values of $p^2q +
+  q^2r + r^2p$.
+\item The product of two of the four roots of the equation $x^4 - 18x^3 + kx^2 + 200x -1984 = 0$ is
+  $32$. Determine the value of $k$.
+\item If $x + y = 1$ and $x^4 + y^4 = c$, find $x^3 + y^3$ and $x^2 + y^2$ in terms of $c$.
+\item Find all $x$ and $y$ that satisfy $x^3 + y^3 = 7$ and $x^2 + y^2 + x + y + xy = 4$.
+\item If $\alpha, \beta, \gamma$ are the roots of the equation $x^3 + px + q = 0$, then prove that
+  $\frac{\alpha^5 + \beta^5 + \gamma^5}{5} = \frac{\alpha^3 + \beta^3 + \gamma^3}{3}\times \frac{\alpha^2 +
+  \beta^2 + \gamma^2}{2}$.
+\item If $\alpha, \beta, \gamma$ are the roots of the equation $x^3 + px + q = 0$, then prove that
+  $\frac{\alpha^7 + \beta^7 + \gamma^7}{7} = \frac{\alpha^5 + \beta^5 + \gamma^5}{5}\times \frac{\alpha^2 +
+  \beta^2 + \gamma^2}{2}$.
+\item If $\alpha + \beta + \gamma = 0$, then show that $3(\alpha^2 + \beta^2 + \gamma^2)(\alpha^5 + \beta^5
+  + \gamma^5) = 5(\alpha^3 + \beta^3 + \gamma^3)(\alpha^4 + \beta^4 + \gamma^4)$.
+\item Show that there does not exist any distinct natural numbers $a, b, c$ and $d$ such that $a^3 + b^3 =
+  c^3 + d^3$ and $a + b = c + d$.
+\item Determine all the roots of the system of simultaneous equations $x + y + z = 3, x^2 + y^2 + z^2 = 3$,
+  and $x^3 + y^3 + z^3 = 3$.
+\item Given real numbers $x, y, z,$ such that $x + y + z = 3, x^2 + y^2 + z^2 = 5, x^3 + y^3 + z^3 = 7$,
+  find $x^4 + y^4 + z^4$.
+\item If $\alpha, \beta$ are the roots of the equation $x^2 - (a + d)x + ad - bc = 0$, show that $\alpha^3$
+  and $\beta^3$ are the roots of the equation $x^2 - (a^3 + d^3 + 3abc + 3bcd)y + (ad - bc)^3 = 0$.
+\item If $a^3 + b^3 + c^3 = (a + b + c)^3$, prove that $a^5 + b^5 + c^5 = (a + b + c)^5$. Generalize your
+  result.
+\item If $p, q$ and $r$ are distinct roots of $x^3 - x^2 + x - 2 = 0$, find the value of $p^3 + q^3 + r^3$.
+\item Find the sum of the $5$th powers of the roots of the equation $x^3 + 3x + 9 = 0$.
+\item Find the sum of the $5$th powers of the roots of the equation $x^3 - 7x^2 + 4x - 3 = 0$.
+\item $\alpha, \beta, \gamma$ are the roots of the equation $x^3 - 9x + 9 = 0$. Find the value of
+  $\alpha^{-3} + \beta^{-3} + \gamma^{-3}$ and $\alpha^{-5} + \beta^{-5} + \gamma^{-5}$.
+\item Find the cubic equation whose roots are $\alpha, \beta$ and $\gamma$, such that $\alpha + \beta +
+  \gamma = 9, \alpha^2 + \beta^2 + \gamma^2 = 29, \alpha^3 + \beta^3 + \gamma^3 = 99$. Also, find the value
+  of $\alpha^4 + \beta^4 + \gamma^4$.
+\item If $\alpha + \beta + \gamma = 4, \alpha^2 + \beta^2 + \gamma^2 = 7, \alpha^3 + \beta^3 + \gamma^3 =
+  28$, find $\alpha^4 + \beta^4 + \gamma^4$ and $\alpha^5 + \beta^5 + \gamma^5$.
+\item Solve: $x^3 + y^3 + z^3 = a^3, x^2 + y^2 + z^2 = a^2, x + y + z = a$ in terms of $a$.
+\item If $\alpha, \beta, \gamma$ be the roots of $2x^3 + x^2 + x + 1 = 0$, show that
+  $\left(\frac{1}{\beta^3} + \frac{1}{\gamma^3} - \frac{1}{\alpha^3}\right)\left(\frac{1}{\gamma^3} +
+  \frac{1}{\alpha^3} - \frac{1}{\beta^3}\right)\left(\frac{1}{\alpha^3} + \frac{1}{\beta^3} -
+  \frac{1}{\gamma^3}\right) = 16$.
+\item Find $x, y\in\mathbb{C}$ such that $x^5 + y^5 = 275, x + y = 5$.
+\item Find real $x$ such that $\sqrt[4]{97 - x} + \sqrt[4]{x} = 5$.
+\item Find the common roots of the polynomials $x^3 + x^2 - 2x - 2$ and $x^3 - x^2 - 2x + 2$.
+\item Find the common roots of $x^4 + 5x^3 - 22x^2 - 50x + 132 = 0$ and $x^4 + x^3 - 20x^2 + 16x + 24 = 0$,
+  and solve the equations.
+\item Show that the set of polynomials $P = \{p_k(x):p_k(x) = x^{5k + 4} + x^3 + x^2 + x + 1\},
+  k\in\mathbb{N}$ has a common non-trivial polynomial divisor.
+\item Find the common roots of the equations $x^3 - 3x - 4x + 12 = 0$ and $x^3 + 9x^2 + 26x + 24 = 0$.
+\item Find the common roots of the equations $x^4 - 5x^3 + 2x^2 + 20x - 24 = 0$ and $x^4 + 7x^3 + 8x^2 - 28x
+  - 48 = 0$.
+\item If $d, e, f$ are in G.P. and the two quadratic equations $ax^2 + 2bx + c = 0$ and $dx^2 + 2ex + f = 0$
+  have a common root, then prove that $\frac{d}{a}, \frac{e}{b}, \frac{f}{c}$ are in H.P.
+\item If $n$ is even and $\alpha, \beta$ are the roots of the equation $x^2 + px + q = 0$ and also of the
+  equation $x^{2n} + p^nx^n + q^n = 0$ and $f(x) = \frac{(1 + x)^n}{1 + x^n}$ where $\alpha^n + \beta^n\neq
+  0, p\neq = 0$, find the value of $f\left(\frac{\alpha}{\beta}\right)$.
+\item Factorize $x^4 + 4$ as a product of irreducible polynomials over the sets $\mathbb{Q}, \mathbb{R}$ and
+  $\mathbb{C}$.
+\item Check if $x^4 + x^3 - x - 1$ is irreducible over $\mathbb{Z}$.
+\item Check if $x^3 + x^2 + x + 3$ is irreducible over $\mathbb{Z}$.
+\item Show that $x^4 + x^3 - x + 1$ is irreducible over $\mathbb{Z}$.
+\item Prove that if the integer \quote{a} is not divisible by $5$, then $f(x) = x^5 - x + a$ cannot be
+  factored as the product of two non-constant polynomials with integer coefficients.
+\item Let $f(x) = a_nx^n + a_{n - 1}x^{n -1} + \cdots + a_1x + a_0$ be a polynomial with integer
+  coefficients such that $|a_0|$ is a prime and $|a_0| > |a_1| + |a_2| + \cdots + |a_n|$. Prove that $f(x)$
+  is irreduicible over $\mathbb{Z}$.
+\item Prove that $16x^3 - 35x^2 + 105x + 175$ is irreducible over $\mathbb{Z}$.
+\item Prove that $x^3 - 3x^2 + 3x + 22$ is irreducible over $\mathbb{Z}$.
+\item Let $p$ be a prime number. Show that $\Phi_p(x) = x^{p - 1} + x^{p - 2} + \cdots + x + 1$ is
+  irreducible.
+\item Let $f(x) = x^n + 5x^{n - 1} + 3, n > 1$ is an integer. Prove that $f(x)$ cannot be expressed as a
+  product of two polynomials, each of which has all its coefficient integers and degree at least $1$.
+\item Prove that for any prime $p$, polynomial, $x^n - p$ is irreducible over $\mathbb{Z}$.
+\item Prove that $x^7 + 48x - 24$ is irreducible over $\mathbb{Z}$.
+\item Prove that $x^4 + 2x^2 + 2x + 2$ is not product of two polynomials $x^2 + ax + b$ and $x^2 + cx + d$,
+  where $a, b, c, d$ are integers.
+\item Prove that $x^5 - 36x^4 + 6x^3 + 30x^2 + 24$ is irreducible over $\mathbb{Z}$.
+\item Prove that $x^3 + 3x^2 + 3x + 5$ is irreducible over $\mathbb{Z}$.
+\item Prove that $x^p + px + p - 1$ is reducible for some prime $p$ then it must be \quote{$2$}.
+\item Let $a_nx^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0$ is a polynomial over $\mathbb{Z}$ and
+  irreducible over it. Prove that $a_0x^n + a_1x^{n - 1} + \cdots + a_{n - 1}x + a_0$ is also irreducible
+  over $\mathbb{Z}$ and use this to show that $21x^5 - 49x^3 + 14x^2 - 4$ is irreducible over $\mathbb{Z}$.
+\item If $a_1, a_2, \ldots, a_n\in\mathbb{Z}$ are distinct, then prove that $(x - a_1)(x - a_2)\cdots(x -
+  a_n) - 1$ is irreducible over $\mathbb{z}$.
+\item Prove that $1 + x^p + x^{2p} + \cdots + x^{p(p - 1)}$ is irreducible over $\mathbb{Z}$.
 \item For what values of $(1 + m)x^2 - 2(1 + 3m)x + (1 + 8m) = 0$ has equal roots?
 \item If $a + b + c = 0$ and $a,b,c$ are rational. Prove that the roots of the equation $(b + c - a)x^2 + (c + a - b)x + (a + b -
   c) = 0$ are rational.

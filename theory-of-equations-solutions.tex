@@ -1,5 +1,5 @@
 % -*- mode: context; -*-
-\chapter{Theory of Equations}
+\chapter{Polynomials and Theory of Equations}
 \startitemize[n, 1*broad]
 \item $x + x^9 + x^{25} + x^{49} + x^{81} = x(1 + x^8 + x^{24} + x^{48} + x^{80}) = x[(x^{80} - 1) + (x^{48}
   - 1) + (x^{24 } - 1) + (x^{8} - 1) + 5]$.
@@ -51,7 +51,7 @@
   g(x)\;\forall\;x\in\mathbb{R}$ from identity theorem.
 
   $\Rightarrow g(x)$ is periodic. $\Rightarrow g(x) = c \Rightarrow f(x) = cx(x - 1)(x - 2)(x - 3)$
-\item Because $f(x)$ is a monic coefficieng of highest degree will be $1$. Let $g(x) = f(x) - x$, where
+\item Because $f(x)$ is a monic coefficient of highest degree will be $1$. Let $g(x) = f(x) - x$, where
   $g(x)$ is also a cubic polynomial.
 
   $g(1) = 0, g(2) = 0, g(3) = 0 \Rightarrow g(x) = (x - 1)(x - 2)(x - 3) \Rightarrow f(x) = (x - 1)(x - 2)(x
@@ -93,6 +93,557 @@
   $\omega^{2k} + 1 + (1 + \omega)^{2k} = \omega^{2k} + 1 + (\omega^2)^{2k} = 1 + \omega^k + \omega^{2k}\neq
   0$. We know that $1 + \omega^k + \omega^{2k} = 3$ when $k = 3n, n\in\mathbb{N}$. Hence, $k = 3, 6, 9,
   \ldots$.
+\item Putting $x = 1, -7P(2) = 0 \Rightarrow P(2) = 0$. Putting $x = 8, 0 = 56P(8)\Rightarrow P(8) = 0$.
+
+  $\Rightarrow P(x) = (x - 2)(x - 8)Q(x) \Rightarrow P(2x) = (2x - 2)(2x - 8)Q(2x)$
+
+  $\Rightarrow (x - 8)(2x - 2)(2x - 8)Q(2x) = 8(x - 1)(x - 2)(x - 8)Q(x)\Rightarrow \frac{Q(2x)}{Q(x)} =
+  \frac{2x - 4}{x - 4} \Rightarrow Q(x) = x - 4 \Rightarrow P(x) = (x - 2)(x - 4)(x - 8)$.
+\item If $(x - 1)^3$ divides $f(x) + 1$, then $(x - 1)^2$ divides $f'(x)$ and if $(x + 1)^3$ divides $f(x) -
+  1$ then $(x + 1)^3$ divides $f'(x)$. Since we have to find $f(x)$ of degree $5$, $f'(x)$ will be of degree
+  $4$. So $f'(x) = k(x - 1)^2(x + 1)^2 = k(x^4 - 2x^2 + 1)$.
+
+  Integrating both sides, $f(x) = K\left(\frac{x^5}{5} - \frac{2x^3}{3} + x\right) + c$, where
+  $c\in\mathbb{R}$. Also, $(x - 1)^3$ divides $f(x) + 1\Rightarrow f(1) + 1 = 0 \Rightarrow f(1) = -1$ and
+  $(x + 1)^3$ divides $f(x) - 1\Rightarrow f(-1) - 1= 0 \Rightarrow f(-1) = 1$.
+
+  Putting $x = 1$ in the equation for $f(x), \Rightarrow f(1) = K\left(\frac{1}{5} - \frac{2}{3} + 1\right)
+  + c= -1$, and putting $x = -1 \Rightarrow f(-1) = K\left(\frac{-1}{5} + \frac{2}{3} - 1\right) +c = 1$.
+
+  From these two equations we deduce $K = -\frac{15}{8}, c = 0$. Thus, our required polynomial is $f(x) =
+  -\frac{3}{8}x^5 + \frac{5}{4}x^3 - \frac{15}{8}x$.
+\item Since the polynomial equation has rational coefficients the complex roots must appear in conjugate
+  pairs. So we have at least two more roots i.e. $3 - 2i$ and $2 - 3i$ making out polynomial equation of at
+  least having a degree of $4$. Let us find out the polynomial equation to test if the coefficients with
+  these roots are rational.
+
+  $f(x) = a[(x - 3 - 2i)(x - 3 + 2i)][x - 2 - 3i][x - 2 + 3i] = a(x^4 - 10x^3 + 50x^2 - 130x + 169),
+  a\in\mathbb{Q}\setminus\{0\}$.
+\item Since all the roots are rational, so they are divisors of $-30$. The divisors or $-30$ are $\pm1,
+  \pm2, \pm3, \pm5, \pm6, \pm 10, \pm 15,$ and $\pm30$. By applying remainder theorm, we find the roots as
+  $-1, -2, -3$ and $5$.
+\item Let the roots be of the form $\frac{p}{q}$, where $(p, q) = 1$ and $q > 0$. Since $q\mid 2, q$ must be
+  $1$ or $2$ and $p\mid 6\Rightarrow p = \pm 1, \pm 2, \pm 3, \pm 6$.
+
+  Applying remainder theorem, $f\left(\frac{1}{2}\right) = f\left(\frac{-2}{1}\right) =
+  f\left(\frac{3}{1}\right) = 0$. So the three roots of the equation are $\frac{1}{2}, -2,$ and $3$.
+\item $x^3 - 3x^3 + 5x - 15 = (x^2 + 5)(x - 3) = 0 \Rightarrow x = 3, \sqrt{5}i, -\sqrt{5}i$.
+\item Let the roots be of the form $\frac{p}{q}$, where $(p, q) = 1$ and $q > 0$. Since $q\mid 1\Rightarrow
+  q = \pm1$, also $p\mid1 \Rightarrow p = \pm 1 \Rightarrow \frac{p}{q} = \pm1$. But $f(\pm1) \neq 0$.
+
+  Hence, the given equation has no real roots.
+\item Let $\alpha$ and $\beta$ be the two roots of the given equation, where $\alpha\in\mathbb{Z}$. Then,
+
+  $\alpha + \beta = -a$ and $\alpha\beta = b + 1\Rightarrow \beta = -a -\alpha$ is an integer. Also, since
+  $b + 1\neq 0, \beta\neq 0$. From these equations $a^2 + b^2 = (\alpha + \beta)^2 + (\alpha\beta - 1)^2 =
+  (1 + \alpha^2)(1 + \beta)^2$. Hence, $a^2 + b^2$ is a composite number.
+\item Let $\alpha$ and $\beta$ bet the roots of the given equation, then $\alpha + \beta = p, \alpha\beta =
+  p - 1$.
+
+  $(\alpha^2 + \beta^2) = (\alpha + \beta)^2 - 2\alpha\beta = p^2 - 2p + 2 = (p - 1)^2 + 1$. For the sum to
+  be minimum $(p - 1)^2$ has to be minimum, which is minimum at $p = 1$.
+\item Let $x^3 + ax^2 + bx + c = 0$ be the polynomial, of which $\alpha,\beta$ and $\alpha\beta$ are the
+  roots and $a, b$ and $c$ are all rationals.
+
+  From Vieta's relations $\alpha + \beta + \alpha\beta = -a, \alpha\beta + \alpha^2\beta + \alpha\beta^2 =
+  b, \alpha^2\beta^2 = -c.$ $b = \alpha\beta(1 + \alpha + \beta) = \alpha\beta(1 - a - \alpha\beta) = (1 -
+  a)\alpha\beta - \alpha^2\beta^2 = (1 - a)\alpha\beta + c$. As $a\neq -1, \alpha\beta = \frac{b - c}{1 -
+    a}$ and since $a, b, c$ are rational $\alpha\beta$ is rational.
+
+  Note that $a = 1 \Rightarrow 1 + \alpha + \beta + \alpha\beta = 0 \Rightarrow (1 + \alpha)(1 + \beta) = 0
+  \Rightarrow \alpha = -1$ or $\beta = -1$, which is not the case.
+\item Let the roots be $\alpha, 2\alpha$ and $\beta$, then from Vieta's relations we have $3\alpha + \beta =
+  \frac{27}{9} = 3 \Rightarrow \beta = 3(1 - \alpha), 2\alpha^2 + 3\alpha\beta = \frac{26}{9}$ and
+  $2\alpha^2\beta = \frac{8}{9}$.
+
+  From first two equations, we get $2\alpha^2 + 3\alpha.3(1 - \alpha) = \frac{26}{9} \Rightarrow \alpha =
+  \frac{13}{21}$ or $\frac{2}{3}$. If $\alpha = \frac{13}{21}$ then $beta = \frac{8}{7}$ but then
+  $2\alpha^2\beta = 2\times\frac{169}{144}\times\frac{8}{7}\neq \frac{8}{9}$, which is a contradiction.
+
+  So taking $\alpha = \frac{2}{3}\Rightarrow \beta = 1$. Hence, $\alpha + 2\alpha + \beta =3, 2\alpha^2 +
+  3\alpha\beta = \frac{26}{9}$ and $2\alpha^2\beta = \frac{8}{9}$. Hence, the roots are $\frac{2}{3},
+  \frac{4}{3}$ and $1$.
+\item Suppose the roots are $\alpha, \beta, \gamma, \delta$ and $\alpha\beta = 1$. Now $\alpha + \beta +
+  \gamma + \delta = \frac{-24}{6} = -4, (\alpha + \beta)(\gamma + \delta) + \alpha\beta + \gamma\delta =
+  \frac{31}{4}\Rightarrow (\alpha + \beta)(\gamma + \delta) + \gamma\delta = \frac{27}{4},
+  \gamma\delta(\alpha + \beta) + \alpha\beta(\gamma + \delta) = \frac{-3}{2} \Rightarrow \gamma\delta(\alpha
+  + \beta) + \gamma + \delta = \frac{-3}{2}, \alpha\beta\gamma\delta = -2\Rightarrow \gamma\delta = -2$.
+
+  From second and fourth equation, we have $(\alpha + \beta)(\gamma + \delta) = \frac{35}{6}$ from third and
+  fourth equation, we have $-2(\alpha + \beta) + \gamma + \delta = \frac{-3}{2} \Rightarrow 3(\alpha +
+  \beta) = \frac{15}{2} \Rightarrow \alpha + \frac{1}{\alpha} = \frac{5}{2}\Rightarrow \alpha = 2,
+  \frac{1}{2}$. Hence, $\beta = \frac{1}{2}, 2$. Now it is trivial to find $\gamma$ and $\delta$, which can
+  be found to be $\frac{-1}{2}$ and $4$.
+\item Since the coefficients are rational, where $3 + \sqrt{2}$ is a root, so $3 - \sqrt{2}$ is also a
+  root. Thus, if two other roots are $\alpha$ and $\beta$, we  have
+
+  $\sigma_1 = \alpha + \beta + 3 + \sqrt{2} + 3 - \sqrt{2} = -(-5) = 5 \Rightarrow \alpha + \beta = -1$.
+
+  $\sigma_2 = (\alpha + \beta)(3 + \sqrt{2} + 3 - \sqrt{2}) + \alpha\beta + (3 + \sqrt{2})(3 - \sqrt{2}) = a
+  \Rightarrow 6(\alpha + \beta) + \alpha + \beta + 7 = a \Rightarrow \alpha\beta = a - 1$.
+
+  $\sigma_3 = \alpha\beta(3 + \sqrt{2} + 3 - \sqrt{2}) + (3 + \sqrt{2})(3 - \sqrt{2})(\alpha + \beta) = -b
+  \Rightarrow 6\alpha\beta - 7 = b\Rightarrow \alpha\beta = \frac{7 - b}{6}$
+
+  $\sigma_4 = 7\alpha\beta = c \Rightarrow \alpha\beta = \frac{c}{7}$.
+
+  We take $\alpha + \beta = -1, \alpha\beta = k$. $\alpha$ and $\beta$ are roots of the equation $x^2 + x +
+  k= 0$. Since the roots of the given equation are real $\Rightarrow 1 - 4k\geq 0 \Rightarrow k\leq
+  \frac{1}{4}$. Now for $a, k = a - 1\Rightarrow a\leq \frac{5}{4}$. So the greatest value of $a$ is
+  $\frac{5}{4}$. For $b, k = \frac{7 - b}{6} \Rightarrow b\geq \frac{11}{2}$ so least value of $b$ will be
+  $\frac{11}{2}$. For $c, k = \frac{c}{7} \Rightarrow c\leq \frac{7}{4}$ So the maximum value of $c$ will be
+  $\frac{7}{4}$.
+
+  The two other roots can be found as $-\frac{1}{2}$, which is a repeated root.
+\item Let the rational roots be of the form $\frac{p}{q}$, then $q\mid 1 \Rightarrow q = \pm 1$ and $p\mid
+  1\Rightarrow p = \pm 1 \Rightarrow \frac{p}{q} = \pm 1$. But we see that $x = -1$ does not satisfy the
+  equation so $x = 1$ is the only root.
+
+  {\bf Second method:} You can observe by looking at the coefficients that it is expansion of $(x - 1)^4$ as
+  the coefficients are from binomoal theorem. Hence, the root is $1.$
+\item Let $\alpha, \beta, gamma, delta$ are the roots of the equation, then from Vieta's relations $\alpha +
+  \beta + \gamma + \delta = -10$. From question $\alpha + \beta = \gamma + \delta \Rightarrow \alpha \beta =
+  \gamma + \delta = -5$.
+
+  Let the roots be of the form $\frac{p}{q}$ then $q\mid 1 \Rightarrow q = \pm 1$ and $p\mid 24 \Rightarrow
+  p = \pm1, \pm2, \pm3, \pm4, \pm6, \pm8, \pm12, \pm24$. Clearly, $\pm12$ and $\pm24$ are not possible
+  values. Testing with other values we find roots as $-1, -2, -3, -4$.
+\item Let the rational roots be of the form $\frac{p}{q}$, then $q\mid 6 \Rightarrow q = \pm1, \pm2, \pm3,
+  \pm6$ and $p\mid -4 \Rightarrow p = \pm 1, \pm2, \pm4$.
+
+  We find that $-\frac{1}{2}$ and $\frac{4}{3}$ satisfy the given equation and the given equation becomes
+  $(2x + 1)(3x - 4)(x^2 + x + 1) = 0$, which has two more roots $\omega, \omega^2$, which are cube roots of
+  unity, and are not rational roots.
+\item Let the rational roots be of the form $\frac{p}{q}$, then $q\mid 6 \Rightarrow q = \pm1, \pm2, \pm3,
+  \pm6$ and $p\mid 2 \Rightarrow p = \pm1, \pm2$. We see that all coefficients are positive so positive
+  values of $\frac{p}{q}$ will not satisfy the given equation.
+
+  From negative values we see that only $x = -1$ satisfies the given equation.
+\item Let $\alpha, \beta, \gamma$ are the roots of the given equation, then according to the questions
+  $\alpha + \beta = 0 \Rightarrow \alpha = -\beta$.
+
+  From Vieta's relations $\alpha + \beta + \gamma = -\frac{a}{4}\Rightarrow \gamma = -\frac{a}{4}, \alpha +
+  \beta + \beta\gamma + \alpha + \gamma = \alpha\beta = -\beta^2 = -\frac{1}{4}\Rightarrow \beta =
+  \pm\frac{1}{2} \Rightarrow \alpha = \mp\frac{1}{2}$ and $\alpha\beta\gamma = -\frac{b}{4}\Rightarrow a +
+  4b = 0$, where $b\in\mathbb{Q}$.
+\item Let the roots be $\alpha, \alpha.r, \alpha.r^2$ be the roots of the given equation, then from Vieta's
+  relations, we have
+
+  $\frac{\alpha}{r} + \alpha + \alpha.r = -a, \frac{\alpha^2}{r} + \alpha^2 + \alpha^2.r = b$ and $\alpha^3
+  = 8 \Rightarrow \alpha = 2$.
+
+  From first two equations, $\alpha = -\frac{b}{a} = 2 \Rightarrow b = -2a$. Substituting the value of
+  $\alpha$ in the first equation, we have
+
+  $2r^2 + (a + 2)r + 2 = 0$, but $r$ is real so $D\geq 0 \Rightarrow a^2 + 4a - 12 = 0 \Rightarrow
+  a\in(-\infty, 6)\cup(2, \infty)$.
+\item $2x^6 + 12x^5 + 30x^4 + 60x^3 + 80x^2 + 30x + 45 = 2(x^3 + 3x^2)^2 + 12\left(x^2 +
+  \frac{5}{2}x\right)^2 + 5(x + 3)^2 = 0$, but it could be zero only if
+
+  $(x^3 + 3x^2) = \left(x^2 + \frac{5}{2}x\right) = x + 3 = 0$.
+
+  The last and first condition simplifies to $x = -3$, but it contradicts the seccond. Thus, given
+  polynomial has no real roots.
+
+  {\bf Second method:} Let the roots be of the form $\frac{p}{q}$ then $q\div 2 \Rightarrow q = \pm 1, \pm
+  2$ and $p\div 45 \Rightarrow p = \pm1, \pm3, \pm5, \pm9, \pm15, \pm45$. Clearly, the roots have to be
+  negative as all coefficients are positive. But none of the combinations of $\frac{p}{q}$ satisfy the given
+  equation, hence, it has no real roots.
+\item $\sin30^\circ = 3\sin10^\circ - 4\sin^310^\circ \Rightarrow \sin10^\circ$ is a root of $6x - 8x^3 =
+  1$. By the rational root theorem, this equation has no rational roots. Therefore, $\sin10^\circ$ is not
+  rational. Since $3$ is prime, this equation is the one with least degree having $\sin10^\circ$ as a root.
+
+  {\bf Second Method}: $\sin10^\circ = \cos80^\circ = \cos\frac{4\pi}{9}$. Let $\omega = e^{2i\pi/9}$, then
+  $\omega^6 + \omega^3 + 1 = 0$, from which we can calculate that $\omega + \frac{1}{\omega}, \omega^2 +
+  \frac{1}{\omega^2}$ and $\omega^4 + \frac{1}{\omega^4}$ are the roots of $x^3 - 3x + 1 = 0$. Since
+  $2\cos90^\circ$ is such a root so $8x^3 - 6x + 1 = 0$ is the equation.
+\item Following like previous problem $\sin60^\circ = 3\sin20^\circ - 4\sin^320^\circ$. Putting $x =
+  \sin20^\circ$ and squaring, $64x^6 - 96x^4 + 36x^2 - 3 = 0$ is the required equation.
+\item Following like previous problem $\cos30^\circ = 4\cos^310^\circ - 3\cos10^\circ \Rightarrow
+  \frac{\sqrt{3}}{2} = 4\cos^310^\circ - 3\cos10^\circ \Rightarrow 64x^6 - 96x^4 + 36x^2 - 3 = 0$ is the
+  required equation.
+\item Following like previous problems $\cos60^\circ = 4\cos20^\circ - 3\cos20^\circ \Rightarrow 8x^3 - 6x -
+  1 = 0$.
+\item Following like previous problems $\tan30^\circ = \frac{3\tan10^\circ - \tan^310^\circ}{1 -
+  3\tan^210^\circ} \Rightarrow \frac{1}{\sqrt{3}} = \frac{3x - x^3}{1 - 3x^2}$. Squaring, we get
+  $3x^6 - 27x^4 + 33x^2 - 1 = 0$.
+\item Following like previous problems $\tan60^\circ = \frac{3\tan20^\circ - \tan^320^\circ}{1 -
+  3\tan^220^\circ} \Rightarrow \sqrt{3} = \frac{3x - x^3}{1 - 3x^2}$. Squaring, we get
+  $x^6 - 33x^4 + 27x^2 - 3 = 0$.
+\item We have found the equations for $\sin10^\circ$ and $\cos20^\circ$ are $8x^3 - 6x + 1 = 0$ and $8x^3 -
+  6x - 1 = 0$. Therefore, the equation having these two as roots must be $(8x^3 - 6x + 1)(8x^3 - 6x - 1) = 0
+  \Rightarrow 64x^6 - 96x^4 - 36x^2 - 1 = 0$.
+\item From Vieta's relations $p + q + r = 6, pq + qr + rp = 3, pqr = -1\Rightarrow p^2 + q^2 + r^2 = 30, p^3
+  + q^3 + r^3 = 159, p^3q^3 + q^3r^3 + r^3p^3 = 84$.
+
+  Let $A = p^2q + q^2r + r^2p$ and $B = p^2r + q^2p + r^2q$, then $A + B = 6(p^2 + q^2 + r^2) - (p^3 + q^3 +
+  r^3) = 21$ and $AB = -(p^3 + q^3 + r^3)(p^3q^3 + q^3r^3 + r^3p^3) + 3 = 72$.
+
+  Thus, possible value of $A$ are $24, -3$.
+\item Let $\alpha, \beta, \gamma, \delta$ be the roots of the given equation such that $\alpha\beta = -32$,
+  then from Vietas relations $\alpha + \beta + \gamma + \delta = 18, \alpha\beta + \beta\gamma +
+  \gamma\delta + \alpha\gamma + \alpha\delta + \beta\delta = k, \alpha\beta\gamma + \alpha\beta\delta +
+  \alpha\gamma\delta + \beta\gamma\delta = -200$ and $\alpha\beta\gamma\delta = -1984$.
+
+  $\therefore \gamma\delta = \frac{\alpha\beta\gamma\delta}{\alpha\beta} = \frac{-1984}{-32} = 62$.
+
+  $\therefore -32 + \beta\gamma + 62 + \alpha\gamma + \alpha\delta + \beta\delta = k \Rightarrow \beta\gamma
+  + \alpha\gamma + \alpha\delta + \beta\delta = k - 30$. Let $p = \alpha + \beta$ and $q = \gamma + \delta$.
+
+  $\therefore -200 = -32q + 62p$ and $p + q = 18 \Rightarrow p = 4, q = 14\Rightarrow \frac{\alpha +
+    \beta}{2}\frac{\gamma + \delta}{2} = k - 30 \Rightarrow k = 86$.
+\item $x^2 + y^2 = 1 - 2xy \Rightarrow (x^2 + y^2)^2 = (1 - 2xy)^2 \Rightarrow x^t + y^4 = 2x^2y^2 - 4xy + 1
+  \Rightarrow 2x6y^2 - 4xy + 1 - c = 0 \Rightarrow xy = \frac{4 \pm\sqrt{16 + 8c - 8}}{4} =
+  1\pm\sqrt{\frac{1 + c}{2}}$
+
+  Now, $x^2 + y^2 = 1 - 2\left(1\pm\sqrt{\frac{1 + c}{2}}\right) = -1\pm \sqrt{2(1 + c)}$,
+
+  and $x^3 + y^3 = (x + y)^3 - 3xy(x + y) = 2\pm\frac{3}{2}\sqrt{2 + 2c}$.
+\item Let $x + y = \alpha$ and $xy = \beta$, then $x^2 + y^2 = \alpha^2 - 2\beta$.
+
+  Now, $x^3 + y^3 = (x + y)(x^2 + y^2 + xy) = \alpha(\alpha^2 - 3\beta) = 7\Rightarrow \alpha^3 -
+  3\alpha\beta = 7$,
+
+  and $x^2 + y^2 + x + y + xy = 4 \Rightarrow \alpha^2 - 2\beta + \alpha + \beta = 4 \Rightarrow \beta =
+  \alpha^2 + \alpha - 4$.
+
+  From these two equations $\alpha^3 - 3\alpha(\alpha^2 + \alpha - 4) = 7\Rightarrow f(\alpha) = 2\alpha^3 +
+  3\alpha^2 - 12\alpha + 7 = 0$.
+
+  Since sum of coefficients is zero, therefore, $\alpha = 1$ must be a solution. $\Rightarrow f(1) = 0
+  \Rightarrow f(\alpha) = (\alpha - 1)^2(2\alpha + 7) = 0 \Rightarrow \alpha = 1, -\frac{7}{2}$.
+
+  When $\alpha = 1, \beta = -2$ and when $\alpha = -\frac{7}{2}, \beta = \frac{19}{4}$. Thus, when $\alpha
+  =1, \beta = -2$ we find that $(x, y)$ is $(-2, 1)$ or $(1, -2)$. But when $\alpha = -\frac{7}{2}$ and
+  $\beta = \frac{19}{4}$, then $x, y$ are roots of $4t^4 + 14t + 19 = 0$, whose discriminant is less than
+  $0$ and hence no real roots are possible. Thus, value of $x, y$ is $-2, 1$ or $1, -2$.
+\item From Vieta's relations $\alpha + \beta + \gamma = \sum \alpha = 0, \alpha\beta + \beta\gamma +
+  \gamma\alpha = \sum \alpha\beta = p, \alpha\beta\gamma = \prod\alpha = q$.
+
+  Since $\alpha, \beta, \gamma$ are roots of $x^3 + px + q = 0 \Rightarrow \alpha^3 + p\alpha + q = 0,
+  \beta^3 + p\beta + q = 0, \gamma^3 + p\gamma + q = 0$
+
+  Adding these equations, we have $\sum\alpha^3 + p\sum\alpha + 3q = 0 \Rightarrow \sum\alpha^3 =
+  -3q[\because \sum\alpha = 0]$
+
+  $\sum\alpha^2 = (\sum\alpha)^2 - 2\sum\alpha\beta = 0^2 - 2p = -2p$.
+
+  Multiplying the given equation by $x^2$, we get $x^5 + px^3 + qx^2 = 0$. Putting $x = \alpha, \beta,
+  \gamma$ and adding, we have
+
+  $\sum\alpha^5 + p\sum\alpha^3 + q\sum\alpha^2 = 0 \Rightarrow \sum\alpha^5 = 5pq\Rightarrow
+  \frac{1}{5}\sum\alpha^3 = pq = \frac{1}{3}\sum\alpha^2 + \frac{1}{2}\sum\alpha$.
+
+  Hence, proved.
+\item Following like previous problem and using results from previous problem, multiplying the given
+  equation by $x$, we have $x^4 + px^2 + qx = 0 \Rightarrow \sum\alpha^4 + p\sum\alpha^2 + q\sum\alpha =
+  0\Rightarrow \sum\alpha^4 = -p\sum\alpha^2$.
+
+  Multiplying the given equation by $x^4$, we get $x^7 + px^5 + qx^4 = 0 \Rightarrow \sum\alpha^7 +
+  p\sum\alpha^5 + q\sum\alpha^4 = 0\Rightarrow \sum\alpha^7 = -p\sum\alpha^5 - q\alpha^4 = -5p^2q +
+  pq\sum\alpha^2 = -7p^2q \Rightarrow \frac{\sum\alpha^7}{7} = pq.(-q) =
+  \frac{\sum\alpha^5}{5}.\frac{\sum\alpha^2}{2}$
+
+  $\Rightarrow \frac{\alpha^7 + \beta^7 + \gamma^7}{7} = \frac{\alpha^5 + \beta^5 + \gamma^5}{5}\times
+  \frac{\alpha^2 + \beta^2 + \gamma^2}{2}$.
+\item Since $\alpha + \beta + \gamma = 0$, therefore, $\alpha, \beta, \gamma$ are the roots of the equation
+  $x^3 + px + q = 0.\Rightarrow \sum\alpha\beta = p$ and $\sum\alpha = -q$ as shown in previous problems.
+
+  $\alpha^2 + \beta^2 + \gamma^2 = (\alpha + \beta + \gamma)^2 - 2(\alpha\beta + \beta\gamma + \gamma\alpha)
+  = 0^2 - 2p = -2p$ and $\sum\alpha^3 = 3\alpha\beta\gamma = 3q$.
+
+  Multiplying $x^3 + px + q = 0$ with $x$, we have $x^4 + px^2 + qx = 0$. Putting $x = \alpha, \beta,
+  \gamma$ and adding, we have
+
+  $\sum\alpha^4 + p\sum\alpha^2 + q\sum\alpha = 0 \Rightarrow \sum\alpha^4 = -p\sum\alpha^2 = 2p^2$.
+
+  Similarly, $x^5 + px^3 + qx^2 = 0 \Rightarrow \sum\alpha^5 = -p\sum\alpha^3 - q\sum\alpha^2 = 5pq$.
+
+  $\therefore 3(\alpha^2 + \beta^2 + \gamma^2)(\alpha^5 + \beta^5 + \gamma^5) = 3\times-2p\times5pq =
+  5\times(-3q)\times2p^2 = 5(\alpha^3 + \beta^3 + \gamma^3)(\alpha^4 + \beta^4 + \gamma^4)$.
+
+  Hence, proved.
+\item Suppose that $a^3 + b^3 = c^3 + d^3$ and $a + b = c + d = m$(say), then $(a + b)^3 = (c + d)^3
+  \Rightarrow 3ab(a + b) = 3cd(c + d) \Rightarrow ab = cd = n$ (say).
+
+  If $a, b$ are the roots of a quadratic equation, then the equation is $x^2 - mx + n = 0$. But $a + b = m$
+  and $ab = n$. So $a$ and $b$ are roots of this equation, and thus, $c$ and $d$ are also the roots of the
+  equation. But a quadratic equation can have at most two distinct roots.
+
+  Hence, our supposition is incorrect. Hence, proved.
+\item Let $x, y, z$ be the roots of the cubic equation $t^3 - at^2 + bt - c = 0$, then $x + y + z = a, xy +
+  yz + zx = b \Rightarrow 2xy + 2yz + 2zx = 2b = (x + y + z)^2 - (x^2 + y^2 + z^2) = 9 - 3 \Rightarrow b =
+  3$.
+
+  Substituting $x, y, z$ in our equation and adding, we get $(x^3 + y^3 + z^3) - a(x^2 + y^2 + z^2) + b(x +
+  y + z) -3c = 0 \Rightarrow c = 1$.
+
+  Thus, our equation becomes $t^3 - 3t^2 + 3t - 1 = 0 \Rightarrow (t - 1)^3 = 0$, thus roots are $1, 1,
+  1$. And hence, $x = y = z = 1$.
+\item $xy + yz + zx = \frac{1}{2}[(x + y + z)^2 - (x^2 + y^2 + z^2)] = 2$.
+
+  We know that $x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx)\Rightarrow xyz =
+  -\frac{2}{3}$.
+
+  $x^4 + y^4 + z^4 = (x^2 + y^2 + z^2)^2 - 2[(xy)^2 + (yz)^2 + (zx)^2] = 25 - 2[(xy + yz + zx)^2 - 2(xy^2z +
+    zxy^2 + xyz^2)] = 25 - 2[4 - 2xyz(x + y + z)] = 9$.
+\item From question $\alpha + \beta = a + d$ and $\alpha\beta = ad - bc$.
+
+  $\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta) = (a + d)^3 - 3(ad - bc)(a + d) =
+  a^3 + d^3 + 3a^2d + 3ad^2 - 3a^2d - 3ad^2 + 3abc + 3bcd = a^3 + b^3 + 3abc + 3bcd$ and $\alpha^3\beta^3 =
+  (ad - bc)^3$.
+
+  Thus, equation whose roots are $\alpha^3$ and $\beta^3$ is $x^2 - (a^3 + d^3 + 3abc + 3bcd)y + (ad - bc)^3
+  = 0$.
+\item $a^3 + b^3 + c^3 = a^3 + b^3 + c^3 + 3(a + b)(b + c)(c + a)\Rightarrow (a + b)(b + c)(c + a) = 0$,
+  which implies that one of $a + b, b + c, c + a = 0$.
+
+  In any case $a^{2n + 1} + b^{2n + 1} + c^{2n + 1} = (a + b + c)^{2n + 1}\;\forall\;n\in\mathbb{N}$ and for
+  $n = 2, a^5 + b^5 + c^5 = (a + b + c)^5$.
+\item We know that $p^3 + q^3 + r^3 = (p + q + r)[(p + q + r)^2 - 3(pq + qr + rp)] + 3pqr$.
+
+  From Vieta's relations, we have $p + q + r = 1, pq + qr + rp = 1$ and $pqr = 2$, therefore,
+
+  $p^3 + q^3 + r^3 = 1[1 - 3] + 6 = 4$.
+\item Let $a, b, c$ be the roots of the equation, then from Vieta's relations $a + b + c = 0, ab + bc + ca =
+  3, abc = -9$.
+
+  Given equation is $x^3 + 3x + 9 = 0$, putting $x = a, b, c$, and adding $a^3 + b^3 + c^3 + 3(a + b + c) +
+  27 = 0 \Rightarrow a^3 + b^3 + c^3 = -27$.
+
+  Multiplying given equation with $x^2$, putting $x = a, b, c$, and adding $a^5 + b^5 + c^3 + 3(a^3 + b^3 +
+  c^3) + 9(a^2 + b^2 + c^2) = 0$
+
+  $\Rightarrow a^5 + b^5 + c^5 = 81 - 9[(a + b + c)^2 - 2(ab + bc + ca)] = 81 + 18\times 3 = 135$.
+\item Let $a, b, c$ are the roots of the equation $x^3 - 7x^2 + 4x - 3 = 0$, then from Vieta's relations $a
+  + b + c = 7, ab + bc + ca = 4,$ and $abc = 3$.
+
+  $a^2 + b^2 + c^2 = (a + b + c)^2 - 2(ab + bc + ca) = 7^2 - 2.4 = 41$.
+
+  Putting $x = a, b, c$ and adding, we get $a^3 + b^3 + c^3 = 7(a^2 + b^2 + c^2) - 4(a + b + c) + 9 =
+  7\times41 - 4\times7 + 9 = 287 - 28 + 9 = 268$.
+
+  Multiplying given equation with $x$, putting $x = a, b, c$, and adding $a^4 + b^4 + c^4 = 7(a^3 + b^3 +
+  c^3) - 4(a^2 + b^2 + c^2) + 3(a + b + c) = 7\times268 - 4\times41 + 3\times7 = 1733$.
+
+  Multiplying given equation with $x^2$, putting $x = a, b, c$, and adding $a^5 + b^5 + c^5 = 7(a^4 + b^4 +
+  c^4) - 4(a^3 + b^3 + c^3) + 3(a^2 + b^2 + c^2) = 7\times1733 - 4\times268 + 3\times41 = 11182$.
+\item From Vieta's relations we have $\alpha + \beta + \gamma = 0, \alpha\beta + \beta\gamma + \gamma\alpha
+  = -9, \alpha\beta\gamma = -9$.
+
+  Putting $x = \frac{1}{\alpha}, \frac{1}{\beta}$ and $\frac{1}{\gamma}$ in the given equation and adding,
+  we have $\alpha^{-3} + \beta^{-3} + \gamma^{-3} = 9\left(\frac{1}{\alpha} + \frac{1}{\beta} +
+  \frac{1}{\gamma}\right) - 27 = 9\frac{\alpha\beta + \beta\gamma + \gamma\alpha}{\alpha\beta\gamma} - 27 =
+  -18$.
+
+  Multiplying the given equation by $x^2$ and putting $x = \frac{1}{\alpha}, \frac{1}{\beta},
+  \frac{1}{\gamma}$, and adding
+
+  $\alpha^{-5} + \beta^{-5} + \gamma^{-5} = 9(\alpha^{-3} + \beta^{-3} + \gamma^{-3}) - 9(\alpha^{-2} +
+  \beta^{-2} + \gamma^{-2}) = \frac{4}{9}$.
+\item Let the cubic equation be $x^3 + ax^2 + bx + c = 0$, then from Vieta's relation $a = -(\alpha + \beta
+  + \gamma) = -9$. We also have $\alpha\beta + \beta\gamma + \gamma\alpha = \frac{(\alpha + \beta +
+    \gamma)^2 - (\alpha^2 + \beta^2 + \gamma^2)}{2} = \frac{81 - 29}{2} = 26$ and hence $b = \alpha\beta +
+  \beta\gamma + \gamma\alpha = 26$.
+
+  Putting $x = \alpha, \beta, \gamma$ in the given equation, and adding
+
+  $(\alpha^3 + \beta^3 + \gamma^3) - 9(\alpha^2 + \beta^2 + \gamma^2) + 26(\alpha + \beta + \gamma) + 3c = 0
+  \Rightarrow c = -24$, and hence, our equation is $x^3 - 9x^2 + 26x - 24 = 0$
+
+  Multiplying the given equation with $x$, putting $x = \alpha, \beta, \gamma$ and adding, we have
+
+  $\alpha^4 + \beta^4 + \gamma^4 = 9(\alpha^3 + \beta^3 + \gamma^3) - 26(\alpha^2 + \beta^2 + \gamma^2) +
+  9(\alpha + \beta + \gamma) = 353$.
+\item Let the cubic equation be $x^3 + ax^2 + bx + c = 0$, then from Vieta's relation $a = -(\alpha + \beta
+  + \gamma) = -4$. We also have $\alpha\beta + \beta\gamma + \gamma\alpha = \frac{(\alpha + \beta +
+    \gamma)^2 - (\alpha^2 + \beta^2 + \gamma^2)}{2} = \frac{16 - 7}{2} = \frac{9}{2}$ and hence $b =
+  \alpha\beta + \beta\gamma + \gamma\alpha = \frac{9}{2}$.
+
+  Putting $x = \alpha, \beta, \gamma$ in the given equation, and adding
+
+  $(\alpha^3 + \beta^3 + \gamma^3) - 4(\alpha^2 + \beta^2 + \gamma^2) + \frac{9}{2}(\alpha + \beta + \gamma)
+  + 3c = 0
+  \Rightarrow 3c = -28 + 4\times7 -\frac{9}{2}4 = -18\Rightarrow c = -6$.
+
+  Now we can multiply the given equation with $x$ and $x^2$ and put $x = \alpha, \beta, \gamma$ and add to
+  find $\alpha^4 + \beta^4 + \gamma^4$ and $\alpha^5 + \beta^5 + \gamma^5$ as $\frac{209}{2}$ and $334$.
+\item $(x + y + z)^2 = x^2 + y^2 + z^2 + 2(xy + yz + zx) \Rightarrow a^2 = a^2 + + 2(xy + yz + zx)
+  \Rightarrow xy + yz + zx = 0$
+
+  $x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx) \Rightarrow a^3 - 3xyz = a(a^2 - 0)
+  \Rightarrow xyz = 0 \Rightarrow x = 0$ or $y = 0$ or $z = 0$.
+
+  If $x = 0 \Rightarrow y + z = a$ and $y^2 + z^2 = a^2 \Rightarrow (a - z)^2 + z^2 = a^2 \Rightarrow 2z^2 -
+  2za = 0 \Rightarrow z = 0, a\Rightarrow y = a, 0$.
+
+  When $y = 0, z = 0$, then $x = a$. Thus the solution is $(x, y, z) = (a, 0, 0), (0, a, 0), (0, 0, a)$.
+\item On multiplying given equation with $x - 1$ we have $x^3(x - 1) + (x - 1)(x^3 + x^2 + x + 1) = 0
+  \Rightarrow 2x^4 - x^3 - 1 = 0 \Rightarrow \frac{1}{x^3} = 2x - 1$. Thus, required equation becomes
+
+  $E = (2\beta + 2\gamma - 2\alpha - 1)(2\beta + 2\alpha - 2\gamma - 1)(2\alpha + 2\gamma - 2\beta - 1)$.
+
+  From Vieta's relations $\alpha + \beta + \gamma = -\frac{1}{2}$. So the expression becomes
+
+  $E = -8(2\alpha + 1)(2\beta + 1)(2\gamma + 1) = -16$.
+\item Observe that $x = 2, y = 3$ or $x = 3, y = 2$ are two possible roots. Then,
+
+  $(x^2 - 5x + 19)(x - 2)(x - 3) = 0$ so the roots of $x^2 - 5x + 19 = 0$ are $\frac{5\pm\sqrt{51}i}{2}$
+  complex conjugates.
+\item Let $\sqrt[4]{97 - x} = a$ and $\sqrt[4]{x} = b$, then $a + b = 5$ and $a^4 + b^4 = 97$.
+
+  Now, $a^4 + b^4 = (a^2 + b^2)^2 - 2a^2b^2 = [(a + b)^2 - 2ab]^2 - 2a^2b^2 = 625 - 100ab + 2a^2b^2 = 97$
+
+  $\Rightarrow (ab - 25)^2 = 361 \Rightarrow ab = 44$ which is impossible and $ab = 6$ which gives $x$ as
+  $16, 81$.
+\item The HCF of given polynomials is $x^2 - 2$, and hence, the common roots of the given polynomials are
+  the roots of $x^2 - 2 = 0$ i.e. $\pm\sqrt{2}$.
+\item The HCF is $4(x^2 - 5x + 6)$ and hence the common roots are $x = 2, 3$. If two other roots of first
+  equation are $\alpha$ and $\beta$, then $\alpha + \beta + 5 = -5$ and $6\alpha\beta = 132 \Rightarrow
+  \alpha\beta = 22$.
+
+  Therefore, the having $\alpha, \beta$ as roots is $x^^2 + 10x + 22 = 0$, whose roots are $-5\pm\sqrt{3}$.
+
+  Similarly, let $\alpha_1$ and $\beta_1$ be two other roots of the second equation then $\alpha_1 + \beta_1
+  + 5 = -1$ and $6\alpha_1\beta_1 = 34 \Rightarrow \alpha_1\beta_1 = 4$. Thus, $\alpha_1$ and $\beta_1$ are
+  roots of $x&2 + 6x + 4 = 0$, whose roots are $-3\pm\sqrt{5}$.
+\item If $k = 1, p_1(x) = x^9 + x^3 + x^2 + x + 1 = x^9 - x^4 + x^4 + x^3 + x^2 + x + 1 = x^4(x^4 - 1) +
+  (x^4 + x^3 + x^2 + x + 1)$
+
+  $= (x^4 + x^3 + x^2 + x + 1)[x^4(x - 1) + 1]$. Thus, $x^4 + x^3 + x^2 + x + 1$ is a non-tirvial polynomial
+  divisor of $p_1(x)$.
+
+  $p_k(x) = x^^(x{5k} - 1) + x^4 + x^3 + x^2 + x + 1$. $x^5 - 1$ divides $x^{5k} - 1, x^4 + x^3 + x^2 + x +
+  1$ divides $x^5 - 1$, and hence $x^{5k} - 1$. Therefore, $x^4 + x^3 + x^2 + x + 1$ divides $p_k(x)$ for
+  all $k$.
+\item The HCF of given equations is $x + 2$, and hence, common root is $-2$.
+\item The HCF of given equations is $x^3 - 4$, and hence, common roots are $2, -2$.
+\item $\because d, e, f$ are in G.P. $\therefore df = e^2$. Discriminant of second equation is $D = 4e^2 -
+  4fd = 4e^2 - 4e^2 = 0$.
+
+  Thus, second equation will have one, repeated root $x = -\frac{2e}{2d} = -\frac{e}{d}$. This is the common
+  root with first equation. Thus,
+
+  $\frac{ae^2}{d^2} - \frac{2be}{d} + c = 0 \Rightarrow \frac{adf}{d^2} - \frac{2be}{d} + c = 0 \Rightarrow
+  \frac{af}{d} - \frac{2be}{d} + c = 0 \Rightarrow \frac{af}{d} + c = \frac{2be}{d} \Rightarrow \frac{a}{d}
+  + \frac{c}{f} = \frac{2be}{df} = \frac{2b}{e}$.
+
+  Thus, $\frac{d}{a}, \frac{e}{b}, \frac{f}{c}$ are in H.P.
+\item $x^2 + px + q = (x - \alpha)(x - \beta) \Rightarrow \alpha + \beta = -p$ and $\alpha\beta = q$.
+
+  $x^{2n} + p^nx^n + q^n = (x - \alpha^n)(x - \beta^n) \Rightarrow \alpha^n + \beta^n = -p^n$ and
+  $\alpha^n\beta^n = q^n$
+
+  $f\left(\frac{\alpha}{\beta}\right) = \frac{\left(1 + \frac{\alpha^n}{\beta^n}\right)}{1 +
+  \frac{\alpha^n}{\beta^n}} = \frac{(\alpha + \beta)^n}{\alpha^n + \beta^n} = \frac{(-p)^n}{-p^n} = -1$.
+\item Over $\mathbb{Q}: x^4 + 4 = x^4 + 4x^2 - 4x^2 + 4 = (x^2 + 2)^2 - (2x)^2 = (x^2 + 2x + 2)(x^2 - 2x +
+  2)$. Over $\mathbb{R}$ it is same.
+
+  Over $\mathbb{C}$. We need further factorization of $x^2 + 2x + 2$ and $x^2 - 2x + 2. x^2 + 2x + 2 = 0
+  \Rightarrow x = -1 \pm i$ and $x^2 - 2x + 2 = 0 \Rightarrow x = 1 \pm i$.
+
+  Thus, $x^4 + 4 = (x + 1 - i)(x + 1 + i)(x - 1 - i)(x - 1 + i)$.
+\item $x^4 + x^3 - x - 1 = x^3(x + 1) - (x + 1) = (x^3 - 1)(x + 1) = (x - 1)(x + 1)(x^2 + x + 1)$. Hence, it
+  is reducible over $\mathbb{Z}$.
+\item As it is a cubic polynomial, if this is reducible then it would have to have a linear factor $x -
+  \alpha$, hence a root ($\alpha\in\mathbb{Z}$). But by integer root theorem $\alpha$ would have been an
+  integer divisor of constant $3$, hence it would have to be $1, -1, 3$ or $-3$, however, none of these is a
+  root, and hence the polynomial is irreducible.
+\item Following like previous problem using integer root theorem we have no integral roots, and hence, no
+  linear factors. However, it might be a product of two quadratics. Consider:
+
+  $x^4 + x^3 - x + 1 = (x^2 + ax + b)(x^2 + cx + d)$. Now equating coefficients, $a + c = 1, b + ac + d = 0,
+  ad + bc = -1, bd = 1$. Since $a, b, c, d$ are all integers, we have either $b = d = 1$ or $b = d = -1$.
+
+  In the first case the other equations become $a + c = 0, ac = -2, a + c = -1$, which is impossible. And in
+  the second case we obtain $a + c = 1, ac = 2$ which has no integer solution. Thus, there is no
+  factorization, and the poynomial is irreducible.
+\item Suppose $f$ can be faactored then $f(x) = (x - n)g(x)$ or $f(x) = (x^2 - bx + c)g(x)$.
+
+  In the first case, $f(n) = n^5 - n + a$. Now $n^5\equiv n(\mod 5)$ by Fermat's little theorem $5\mid(b -
+  b^5) = a$, contradiction.
+
+  In the second case, $f(x) = x^5 - x + a$ by $x^2 - bx + c$, we get the remainder $(b^4 + 3b^2c + c^2 -
+  1)(b^3c + 2bc^2 + a)$. Since $x^2 - bx + c$ is a factor of $f(x)$, both coefficients of remainder equal to
+  $0$. That is $b^4 + 3b^2x + c^2 - 1= 0$ and $b^3c + 2bc^2 + a = 0\Rightarrow b(b^4 + 3b^2x + c^2 - 1) -
+  3(b^3c + 2bc^2 + a) = b^5 - b - 5bc^2 - 3a = 0\Rightarrow 3a = b^5 - b - 5bc^2$ is divisible by
+  $5\Rightarrow 5\mid a$, which is a contradiction.
+\item Let $\alpha$ be any complex zero of $f$.
+
+  {\bf Case I:} Consider $|\alpha|\leq 1$, then $|a_0| = |a_1\alpha + \cdots + a_n\alpha^n|\leq |a_1| +
+  \cdots + |a_n|$, which is a contradiction.
+
+  {\bf Case II:} Therefore, all the zeros of $f$ satisfy the condition $|\alpha| > 1$. Let us assume that
+  $f(x) = g(x)h(x)$, where $g$ and $h$ are non-constant integer polynomials. Then $a_0 = f(0) =
+  g(0)h(0)$. Since $a_0$ is a prime, one of $|g(0), h(0)|$ equals $1.$. Say $|g(0)| = 1$, and let $b$ be the
+  leading coefficient of $g$.
+
+  Let $\alpha_1, \alpha_2, \ldots, \alpha_k$ are the roots of $g$, then $|\alpha_1\alpha_2\ldots\alpha_k| =
+  \frac{1}{|b|}\leq 1(\because b\in\mathbb{Z}- \{0\}\Rightarrow |b|\geq 1)$.
+
+  But $\alpha_1, \alpha_2, \ldots,\alpha_k$ are also zeroes of $f$, and from case $1$ have magnitude of each
+  $\alpha_i\geq 1\Rightarrow |\alpha_1\alpha_2\ldots\alpha_k|\geq 1$, which is a contradiction.
+
+  Hence, $f$ is irreducible.
+\item The given polynomial is irreducible by Eisenstein's criterion with $7$ being the prime $p$. $7$ does
+  not divide the leading coefficient but it divides all others, and its square $49$, does not divide
+  $175$. Note that using prime $5$ is not valid because $25$ divides the constant coefficinet $175$.
+\item Let $f(x) = x^3 - 3x^2 + 3x + 22$. Eisenstein's criteria does not apply since there is no suitable
+  prime. Substituting $x - 1$ for $x$ gives the polynomial $x^3 - 6x^2 + 6x + 21$ to which we can apply
+  Eisenstein's criteria with $p = 3$. Writing $f(x)$ for the original polynomial, we deduce that $f(x - 1)$
+  is irreducible. But a factorization of $f(x)$ would give a factorization of $f(x - 1)$, hence $f(x)$ is
+  irreducible over $\mathbb{Z}$.
+\item $\Phi_p(x) = x^{p - 1} + x^{p - 2} + \cdots + x + 1 = \frac{x^p - 1}{x - 1}$.
+
+  Consider $\Phi_p(x + 1) = \frac{(x + 1)^p - 1}{x + 1 - 1} = \frac{x^p + C_1^^px^{p - 1} + C_2^^px^{p - 1}
+    + C_P^^{p - 1}x^2 + C_P^^{p - 1}x}{x} = x^{p - 1} + C_1^^px^{p - 1} + \cdots + C_p^^{p - 2}x + C_p^^{p -
+    1}$.
+
+  As $p\mid C_i^^p\;\forall\; i = 1, 2, 3,\ldots, p - 1$, so all the lower coefficients are divisible by $p$ and
+  the constant coefficient is exactly $p$, so it is not divisible by $p$. Thus, Eisenstein's criteria apply,
+  and $\Phi_p(x + 1)$ is irreducible. Certainly if $\Phi_p(x) = g(x)h(x)$ then $\Phi_p(x + 1) = g(x + 1)h(x
+  + 1)$ gives a factorization of $\Phi_p(x + 1)$. Thus, $\Phi_p$ is irreducible.
+\item Taking prime $p = 3$, clearly $3\mid a_i\;\forall\; i = 0, 1, 2, \ldots,  n - 2; 3^2\nmid a_0 = 3,
+  3\nmid a_{n - 1} = 5$. Hence, by extended Eisenstein's criterion $f$ has an irreducible factor of degree
+  at least $n - 1$. If possible, let us take one factor of degree $n - 1$ then other must be linear and
+  monic as $f$ is monic. This implies that $f$ has integral roots. By integer root theorem this root must be
+  an integer divisor of $3$, hence would have to be $1, -1, 3$ or $-3$. However, none of these are roots of
+  the given equation, and hence, $f$ is irreducible.
+\item We treat the polynomial as $f(x) = a_nx^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0$, where $a_n = 0,
+  a_i = 0\;\forall\;i\in\{1, 2, \ldots, n - 1\}$ and $a_0 = -p$.
+
+  Clearly if we consider the prime $p$ given in the polynomial then $p\mid a_i$ for $0\leq i\leq n - 1,
+  p\nmid 1$ and $p^2\nmid -p$. Thus, $f(x)$ is irreducible over $\mathbb{Z}$.
+\item Considering prime $p = 3$, we  have $p\mid a_i$ for $0\leq n - 1, p\nmid 1$ and $p^2\nmid24$. Thus,
+  the polynomial is irreducible over $\mathbb{Z}$.
+\item Considering prime $p = 2$, we  have $p\mid a_i$ for $0\leq n - 1, p\nmid 1$ and $p^2\nmid2$. Thus,
+  the polynomial is irreducible over $\mathbb{Z}$, which implies that it cannot be represented as product of
+  two given polynomials.
+\item Considerung prime $p = 3$, we  have $p\mid a_i$ for $0\leq n - 1, p\nmid 1$ and $p^2\nmid2$. Thus,
+  the polynomial is irreducible over $\mathbb{Z}$.
+\item There is no suitable prime for $x^3 + 3x^2 + 3x + 5$. Substituting $x - 3$ for $x$ gives the
+  polynomial $x^3 - 6x^2 + 14x - 10$ to which Eisenstein does apply, with $p = 2$. Writing $f(x)$ for the
+  original polynomial, we deduce that $f(x - 3)$ is irreducible. But a factorization of $f(x)$ would give a
+  factorization of $f(x - 3)$, hence $f(x)$ is irreducible over $\mathbb{Z}$.
+\item We see that our prime $p$ will divide the coefficient of $x$ but it won't divide $p - 1$ for $p >
+  2$ making the prime $p$ unsuitable for Eisenstein criteria. However, if $p = 2$ the the polynomial is $x^2
+  + 2x + 1 = (x + 1)^2$. So if the polynomial has to be
+  reducible for some prime then it must be $2$.
+\item Given polynomial is irreducible over $\mathbb{Z}$. Substituting $x = \frac{1}{x}$ we obtain the
+  desired polynomial and find that it is irreducible over $\mathbb{Z}$.
+
+  If we substitute $x = \frac{1}{x}$ in $21x^5 - 49x^3 + 14x^2 - 4$ then it becomes $4x^5 - 14x^3 + 49x^2 -
+  21$ for which Eisenstein's ceriteria is satisfied for $p = 7$.
+\item If the polynomial were reducible over $\mathbb{Z}$, then there would exist two monic polynomials
+  $P(x)$ and $Q(x)$ such that $P(x)Q(x) = (x - a_1)(x - a_2)\cdots(x - a_n) - 1$. Consequently,
+  $P(a_i)Q(a_i) = -1\;\forall i\in\{1, 2, \ldots, n\}$ but $P(a_i)$ and $Q(a_i)$ are integers, so there are
+  only two possibilities:
+
+  $P(a_i) = 1, Q(a_i) = -1$ and $P(a_i) = -1, Q(a_i) = 1$. In any case, $P(a_i) + Q(a_i) = 0$, but it is
+  impossible because $P(x) + Q(x)\neq 0$ (sum of monic polynomials) has degree less than $n$, so according
+  to fundamental theorem of algebra, it cannot have $n$ different roots. Hence, there do not exist such
+  polynomials making the given polynomial irreducible.
+\item This problem is similar to $81$ and can be solved similarly.
 \item For roots to be equal the discriminant has to be zero.
 
    $D = 4(1 + 3m)^2 - 4(1 + m)(1 + 8m) = 0\Rightarrow 4(1 + 9m^2 + 6m - 1 - 9m -8m^2) = 0\Rightarrow m^2 -
