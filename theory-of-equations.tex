@@ -1,7 +1,7 @@
 % -*- mode: context; -*-
 \chapter{Polynomials and Theory of Equations}
 \section{Polynomial Functions}
-A function of the form $f(x) = a_nx^n, a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0$ is callled a polynomial
+A function of the form $f(x) = a_nx^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0$ is callled a polynomial
 function where $a_i\in\mathbb{C}$, where $i = 0, 1, 2, \ldots, n$ i.e. $i \geq 0$ and
 $i\in\mathbb{I}$. Since $a_i\in\mathbb{C}$, it is evident that $a_i\in\mathbb{R}$ because
 $\mathbb{R}\subset\mathbb{C}$. This equation will be called an equation of degree $n$ if and only if
@@ -19,7 +19,7 @@ polynomial.
 If $f(x)$ is a polynomial of degree $p$, and $g(x)$ is a polynomial of degree $q$, then
 
 \startitemize[n]
-\item $f(x)\pm g(x)$ is a polymial of degree $\max(p, q)$,
+\item $f(x)\pm g(x)$ is a polymnoial of degree $\max(p, q)$,
 \item $f(x).g(x)$ is a polynomial of degree $p + q$, and
 \item $f(g(x))$ is a polynomial of degree $p.q$, where $g(x)$ is not a constant polynomial.
 \stopitemize
@@ -62,7 +62,7 @@ Every polynomial of degree greater or equal than one has at least one root/solut
 numbers. We can also say that for $f(x)$ introduced in the beginning with $n\geq 1$, then there exists a
 $z\in\mathbb{C}$, such that
 
-\startformula f(z) = a_nz^n + a_z^{n - 1} + \cdots + a_1z + a_0 = 0.\stopformula
+\startformula f(z) = a_nz^n + a_{n - 1}z^{n - 1} + \cdots + a_1z + a_0 = 0.\stopformula
 
 Now it is trivial to deduce that an $n$th degree polynomial will have exactly $n$ roots i.e. $f(x) = a(x -
 \alpha_1)(x - \alpha_2)\cdots(x - \alpha_{n - 1})(x - \alpha_n)$.
@@ -84,7 +84,7 @@ Now it is trivial to deduce that an $n$th degree polynomial will have exactly $n
   identically $0$.
 \stoptheorem
 \startproof
-  We have $f(x) = a(x - \alpha_1)(x - \alpha_2)\cdots(c - \alpha_{n - 1})(x - \alpha_n)$, and we let that it
+  We have $f(x) = a(x - \alpha_1)(x - \alpha_2)\cdots(x - \alpha_{n - 1})(x - \alpha_n)$, and we let that it
   vanishes for $\alpha_{n + 1}$, then
 
   \startformula f(x) = a(\alpha_{n + 1} - \alpha_1)(\alpha_{n + 1} - \alpha_2)\cdots(\alpha_{n + 1} -
@@ -136,7 +136,7 @@ $a_n$.
 \stopproof
 
 \startcorollary
-  If roots of $x^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0 = 0$, where $\0\leq i\leq n- 1$ is an integer
+  {\bf Integer Root Theorem} If roots of $x^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0 = 0$, where $0\leq i\leq n- 1$ are integers
   and coefficients are also integer, are integer then all the roots divide $a_0$.
 \stopcorollary
 \startproof
@@ -168,7 +168,7 @@ HCF of two integers using Euclid's method.
 
 \section{Irreducabilty of Polynomials}
 When we talk of irreducability we talk in terms of set to which the coefficients of the polynomial
-belong. The set could be $\mathbb{Q}, \mathbb{z}, \mathbb{R}$ or $\mathbb{C}$.
+belong. The set could be $\mathbb{Q}, \mathbb{Z}, \mathbb{R}$ or $\mathbb{C}$.
 
 An irreducible polynomial is, a non-constant polynomial which cannot have non-constant factors in the same
 set as coefficients of the polynomial itself.
@@ -213,8 +213,8 @@ b_kc_l\Rightarrow p\nmid b_k$ and $p\nmid c_l$.
 Similarly, $a_0 = b_0c_0$. As $p|a_0$ and $p^2\nmid a_0\Rightarrow p|b_0c_0$, but both $b_0$ and $c_0$
 cannot be divided by $p$. Without loss of generality, we suppose $p|b_0$ and $p\nmid c_0$. Suppose $i$ be
 the smallest index such that $b_i$ is not divisible by $p$. There is such an index $i$ since $p\nmid b_k$,
-where $1\leq i\leq k$. Depending on $i$ and $k$, for $i\leq k, a_i = b_ic_0 + b_{i-1}c_1 + \cdots + i_0c_i$
-and for $i > k, a_i = b_ic_0 + b_{i-1}c_1 + \cdots + b_{i-k}c__k$.
+where $1\leq i\leq k$. Depending on $i$ and $k$, for $i\leq k, a_i = b_ic_0 + b_{i-1}c_1 + \cdots + b_0c_i$
+and for $i > k, a_i = b_ic_0 + b_{i-1}c_1 + \cdots + b_{i-k}c_k$.
 
 We have $p|a_i$ and by supposition $p$ divides each one of $b_0, b_1, \ldots, b_{i - 1}\Rightarrow
 p|b_ic_0$. But $p\nmid c_0 \Rightarrow p|b_i$, which is a contradiction, and therefore, $f(x)$ is
@@ -748,6 +748,68 @@ Let the given equation be
 \item If $a_1, a_2, \ldots, a_n\in\mathbb{Z}$ are distinct, then prove that $(x - a_1)(x - a_2)\cdots(x -
   a_n) - 1$ is irreducible over $\mathbb{z}$.
 \item Prove that $1 + x^p + x^{2p} + \cdots + x^{p(p - 1)}$ is irreducible over $\mathbb{Z}$.
+\item Solve for $x: 2p(p - 2)x = p - 2$.
+\item If $x_1$ and $x_2$ are non-zero roots of the equations $ax^2 + bx + c = 0$ and $-ax^2 + bx + c = 0$
+  respectively, prove that $\frac{a}{2}x^2 + bx + c$ has a root between $x_1$ and $x_2$, where $a\neq 0$.
+\item Let $P(x) = x^2 + ax + b$ be a quadratic polynomial in which $a$ and $b$ are integers. Show that there
+  exists an integer $M$ such that $P(n).P(n + 1) = P(M)$ for any integer $n$.
+\item Prove that, if the coefficients of the quadratic equation $ax^2 + bx + c = 0$ are odd integers, then
+  the roots of the equation cannot be rational numbers.
+\item If $\frac{1}{a} + \frac{1}{b} + \frac{1}{c} = \frac{1}{a + b + c}$, then prove that $\frac{1}{a^n} +
+  \frac{1}{b^n} + \frac{1}{c^n} = \frac{1}{a^n + b^n + c^n}$ for all odd $n$.
+\item Show that $\frac{a^3}{(a - b)(a - c)} + \frac{b^3}{(b - a)(b - c)} + \frac{c^3}{(c - a)(c - b)} = a +
+  b + c$.
+\item Let $a_1, a_2, \ldots, a_n$ be non-negative real numbers not all zero. Prove that $x^n - a_1x^{n-1} -
+  \cdots - a_{n - 1}x - a_n = 0$ has exactly one positive real root.
+\item Let $P(x)$ be a real polynomial function, and $P(x) = ax^3 + bx^3 + cx + d$. Prove that if $P(x)\leq
+  1$ for all $x$ such that $|x|\leq 1$, then $|a| + |b| + |c| + |d| \leq 7$.
+\item A person who left home between $4$ p.m. and $5$ p.m. returned between $5$ p.m. and $6$ p.m. and found
+  that the hands of his watch has exactly changed places. When did he go out?
+\item If $\alpha^{13} = 1$ and $\alpha\neq1$, find the quadratic equation whose roots are $\alpha + \alpha^3
+  + \alpha^4 + \alpha^{-4} + \alpha^{-3} + \alpha^{-1}$ and $\alpha^2 + \alpha^5 + \alpha^6 + \alpha^{-6} +
+  \alpha^{-5} + \alpha^{-2}$.
+\item Determine all pairs of positive integers $(m, n)$, such that $(1 + x^n + x^{2n} + \cdots + x^{mn})$ is
+  divisible by $(1 + x + x^2 + \cdots + x^m)$.
+\item Show that $(a - b)^2 + (a - c)^2 = (b - c)^2$ is not solvable when $a, b, c$ are all distinct.
+\item If $P(x)$ is a polynomial of degree $n$ such that $P(x) = 2^x$ for $x = 1, 2, 3, \ldots, n + 1$, find
+  $P(x + 2)$.
+\item If $a, b, c, d$ are all real and $a^2 + b^2 + c^2 + d^2 = ab + bc + cd + da$, then show that $a = b =
+  c = d$.
+\item Determine $x, y, z\in\mathbb{R}$, such that $2x^2 + y^2 + 2x^2 - 8x + 2y - 2xy + 2xz - 16z = 35 = 0$.
+\item Find all real numbers satisfying $x^8 + y^8 = 8xy - 6$.
+\item Solve the system of equations for real $x$ and $y, 5x\left(1 + \frac{1}{x^2 + y^2}\right) = 12,
+  5y\left(1 - \frac{1}{x^2 + y^2}\right) = 4$.
+\item Solve the system $(x + y)(x + y + z) = 18, (y + z)(x + y + z) = 30, (z + x)(x + y + z) = 2L$ in terms
+  of $L$, where $x, y, z, L\in\mathbb{R}^+$.
+\item Solve $x + y - z = 4, x^2 - y^2 + z^2 = -4, xyz = 6$, where $x, y, z\in\mathbb{R}$.
+\item Solve $3x(x + y - 2) = 2y \cdots (1), y(x + y - 1) = 9x \cdots (2)$.
+\item Solve $xy + x + y = 23 \cdots (1), yz + y + z = 31 \cdots (2), zx + z + x = 47 \cdots (3)$.
+\item Find all the solutions of the system of equations $y = 4x^3 - 3x, z = 4y^3 - 3y$ and $x = 4z^3 - 3z$.
+\item Let $x = p, y = q, z = r$ and $w = s$ be the unique solutions of the system of linear equations $x +
+  a_iy + a_i^2z + a_i^3w = a_i^4, i = 1, 2, , 3 ,4$. Express the solution of the following system in the
+  terms of $p, q, ,r$ and $s. x + a_i^2y + a_i^4z + a_i^6w = a_i^8, i = 1, 2, 3, 4$. Assume the uniqueness
+  of the solution.
+\item Find out all values of $a$ and $b$, for which $xyz + z = a \cdots (1), xyz^2 + z = b \cdots (2)$ and
+  $x^2 + y^2 + z^2 = 4$ has only one solution.
+\item Given $a, b$ and $c$ are positive real numbers, such that $a^2 + ab + \frac{b^2}{3} = 25,
+  \frac{b^2}{3}+ c^2 = 9, c^2 + ca + a^2 = 16$. Find out the value of $ab + 2bc + 3ca$.
+\item Solve $\log_3(\log_2x) + \log_{1/3}(\log_{1/2}y) = 1, xy^2 = 4$.
+\item Solve $\log_2x + \log_4y + \log_4z = 2, \log_3y + \log_9z + \log_9x = 2, \log_4z + \log_{16}x +
+  \log_{16}y = 2$.
+\item Find all real numbers $x$ and $y$ satisfying $\log_3x + \log_2y = 2, 3^x - 2^y = 23$.
+\item Let $\alpha, \beta, \gamma$ be the roots of $x^3 - x^2 - 1= 0$, then find the value of $\frac{1 +
+  \alpha}{1 - \alpha} + \frac{1 + \beta}{1 - \beta} + \frac{1 + \gamma}{1 + \gamma}$.
+\item Show that $(x - 1)^2$ is a factor of $x^{m + 1} - x^m - x + 1$.
+\item Find all real solution $x$ of the equation $x^{10} - x^{8} + 8x^6 - 24x^4 + 32x^2 - 48 = 0$.
+\item Solve $2x^{99} + 3x^{98} + 2x^{97} + 3x^{96} + \cdots + 2x + 3 = 0$ in $\mathbb{R}$.
+\item Prove that $1 + x^{111} + x^{222} + x^{333} + x^{444}$ divides $1 + x^{111} + x^{222} + x^{333} +
+  \cdots + x^{999}$.
+\item If $x, y, z$ are rational and strictly positive and if $\frac{1}{x} + \frac{1}{y} = \frac{1}{z}$ show
+  that $\sqrt{x^2 + y^2 + z^2}$ is rational.
+\item If $a^2x^3 + b^2y^3 + c^2z^3 = p^5, ax^2 = by^2 = cz^2$ and $\frac{1}{x} + \frac{1}{y} + \frac{1}{z} =
+  \frac{1}{p}$, find $\sqrt{a} + \sqrt{b} + \sqrt{c}$ only in terms of $p$.
+\item If $ax^3 = by^3 = cz^3$ and $\frac{1}{x} + \frac{1}{y} + \frac{1}{z} = 1$; prove that $\sqrt[3]{ax^2 +
+  by^2 + cz^2} = \sqrt[3]{a} + \sqrt[3]{b} + \sqrt[3]{c}$.
 \item For what values of $(1 + m)x^2 - 2(1 + 3m)x + (1 + 8m) = 0$ has equal roots?
 \item If $a + b + c = 0$ and $a,b,c$ are rational. Prove that the roots of the equation $(b + c - a)x^2 + (c + a - b)x + (a + b -
   c) = 0$ are rational.

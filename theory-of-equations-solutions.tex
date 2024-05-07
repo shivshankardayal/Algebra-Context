@@ -644,6 +644,308 @@
   to fundamental theorem of algebra, it cannot have $n$ different roots. Hence, there do not exist such
   polynomials making the given polynomial irreducible.
 \item This problem is similar to $81$ and can be solved similarly.
+\item $x = \frac{p - 2}{2p(p - 2)}$. If $p = 0$ or $p = 2$ then the equation is undefined. However, if $p =
+  0$, then the equation becomes $0 = -2$, which is inconsistent. Hence, no value of $x$ will satisfy it and
+  there is no solution for $p = 0$.
+
+  If $p = 2$ then the equation becomes $0 = 0$. Thus, every value from the domain of $x$ will satisfy the
+  equationm, and hence, there exists infinite number of solutions.
+
+  If $p\neq 0, p\neq 2$, then the equation is well defined and $x = \frac{1}{2p}$.
+\item Substituting the roots we have $ax_1^2 + bx_1 + c = 0, -ax_2^2 + bx_2 + c = 0$ and $f(x_1) =
+  \frac{a}{2}x_1^2 + bx_1 + c, f(x_2) = \frac{a}{2}x_2^2 + bx_2 + c$.
+
+  $\therefore f(x_1) + \frac{a}{2}x_1^2 = ax_1^2 + bx_1 + c = 0$ and $f(x_2) - \frac{3}{2}ax_2^2 = -ax_2^2
+  + bx_2 + c = 0$
+
+  $\because f(x_1)$ and $f(x_2)$ have opposite signs, and hence, $f(x)$ must have a root between $x_1$ and
+  $x_2$.
+\item Let $P(x) = x^2 + ax + b = (x - \alpha)(x - \beta)$, where $\alpha + \beta = -a$ and $\alpha\beta =
+  b$.
+
+  Now $P(n)P(n + 1) = (n - \alpha)(n - \beta)(n + 1 - \alpha)(n + 1 - \beta) = (n - \alpha)(n + 1 - \beta)(n
+  - \beta)(n + 1 - \alpha) = [n^2 - (\alpha + \beta - 1)n + \alpha\beta - \alpha][n^2 + (\alpha + \beta -
+    1)n + \alpha\beta - b] = [n^2  + (a + 1)n + b - \alpha][n^2 + (a + 1)n + b - \beta] = (M - \alpha)(M -
+  \beta)$, where $M = n^2 + (a + 1)n + b$.
+\item Let there be a rational root $\frac{p}{q}$, where $(p, q) = 1$. Then, $a\frac{p^2}{q^2} + b\frac{p}{q}
+  + c = 0 \Rightarrow ap^2 + bpq + cq^2 = 0$
+
+  Now $p, q$ both may be odd or one of the $p, q$ be even. In both the cases $ap^2 + bpq + cq^2$ cannot be
+  equal to zero. Thus, the equation cannot have rational roots.
+\item Given, $\frac{1}{a} + \frac{1}{b} + \frac{1}{c} = \frac{1}{a + b + c} \Rightarrow \frac{1}{a} +
+  \frac{1}{b} = \frac{1}{a + b + c} - \frac{1}{c}\Rightarrow (a + b)(b + c)(c + a) = 0\Rightarrow a = -b$ or
+  $b = - c$ or $c = -a$.
+
+  If $a = -b$, then $a^n = -b^n$ for odd $n \Rightarrow \frac{1}{a^n} = - \frac{1}{b^n}\Rightarrow
+  \frac{1}{a^n} + \frac{1}{b^n} + \frac{1}{c^n} = \frac{1}{a^n + b^n + c^n}$. Similarly, it can be proved
+  for other two cases as well.
+\item We have $\frac{a^3}{(a - b)(a - c)} = -\frac{a^3}{(a - b)(c - a)}, \frac{b^3}{(b - a)(b - c)} =
+  -\frac{b^3}{(a - b)(b - c)}$ and $\frac{c^3}{(c - a)(c - b)} = -\frac{c^3}{(c - a)(b - c)}$.
+
+  $\displaystyle\frac{a^3}{(a - b)(a - c)} = \left[\frac{(b - c)a^3 + (c - a)b^3 + (a - b)c^3}{(a - b)(b -
+      c)(c - a)}\right]$
+
+  Numerator of RHS is a cyclic symmetric expression in $a, b, c$ in $4$th degree and writting $b = c$, we
+  get $(c - a)b^3 + (a - b)c^3 = 0$. So $b - c$ and hence $c - a$ and $a - b$ are factors. Since it is a
+  $4$th degree symmetric expression $a + b + c$ is also a factor. Thus, we have
+
+  $k(a + b + c)(a - b)(b - c)(c - a) = (b - c)a^3 + (c - a)b^3 + (a - b)c^3$.
+
+  If $a = 1, b = -1$ and $c = 2$, we get $k = -1$.
+
+  Thus, the expression $\frac{(a + b + c)(a - b)(b - c)(c - a)}{(a - b)(b - c)(c - a)} = a + b + c$.
+\item $x^n - a_1x^{n-1} - \cdots - a_{n - 1}x - a_n = 0\Rightarrow -x^n\left[-1 + \frac{a_1}{x} +
+  \frac{a_2}{x^2} + \cdots + \frac{a_n}{x^n}\right] = 0$.
+
+  Let $f(x) = \frac{a_1}{x} + \frac{a_2}{x^2} + \cdots + \frac{a_n}{x^n}. f(x)$ is a decreasing function as
+  $x$ increases in $(0, \infty), f(x)$ decreases in $(\infty, 0)$. Hence there exists a unique positive real
+  number $R$ such that $f(R) = \frac{a_1}{R} + \frac{a_2}{R^2} + \cdots + \frac{a_n}{R^n} = 1$. Thus, for $x
+  = R$, we get
+
+  $-R^n\left[-1 + \frac{a_1}{R} + \frac{a_2}{R^2} + \cdots + \frac{a_n}{R^n}\right] = 0$. Therefore, $R$ is
+  a root of the given equation.
+\item Considering the polynomial $\pm P(\pm x)$ we may assume without loss of generality that $a, b\geq 0$.
+
+  {\bf Case I:} If $c, d\geq 0$, then $|a| + |b| + |c| + |d| = P(1)\leq 1 < 7$
+
+  {\bf Case II:} If $c\geq 0$ and $d\leq 0$, then $|a| + |b| + |c| + |d| = a + b + c - d = (a + b + c + d) -
+  2d = P(1) - 2P(0) \leq 1 + 2 = 3 < 7$
+
+  {\bf Case III:} If $c < 0$ and $d \geq 0$, then $|a| + |b| + |c| + |d| = a + b - c + d = \frac{4}{3}P(1) -
+  \frac{1}{3}P(-1) - \frac{8}{3}P\left(\frac{1}{2}\right) + \frac{8}{3}P\left(-\frac{1}{2}\right)\leq
+  \frac{4}{3} + \frac{1}{3} + \frac{8}{3} + \frac{8}{3} = 7$
+
+  {\bf Case IV:} If $c, d < 0$, then $|a| + |b| + |c| + |d| = a + b - c - d = \frac{5}{3}P(1) -
+  4P\left(\frac{1}{2}\right) + \frac{4}{3}P\left(-\frac{1}{2}\right) \leq \frac{5}{3} + 4 + \frac{4}{3} =
+  7$.
+\item In one hour, the minute hand makes one complete revolution, i.e., it moved through $60$ divisions and
+  the hour hand moves through $5$ divisions. Suppose, when the man went out, the hour hand was $x$ divisions
+  ahead of the point labeled $12$ of the dial, where $20 < x < 25$ as he went out between $4$ p.m. and $5$
+  p.m. Also, suppose, when the man the hour hand was $y$ divisions ahead of $0$ mark and $25 < y < 30$.
+
+  Given that minute hand and hour hand exchanged their places, the minute hand was at $y$ when he went out
+  and at $x$ when he returned. Because minute hand moves $12$ times faster than hour hand,
+
+  $y = 12(x - 20)$ and $x = 12(y - 25)\Rightarrow y = 12[12(y - 25) - 20]\Rightarrow y =
+  \frac{3840}{143}$. Since the man went out when the hand was at $y$, the man went at $\frac{3840}{143}$
+  minutes past $4$ p.m.
+\item Sum of roots is $\alpha + \alpha^3 + \alpha^4 + \alpha^{-4} + \alpha^{-3} + \alpha^{-1}  + \alpha^2 +
+  \alpha^5 + \alpha^6 + \alpha^{-6} + \alpha^{-5} + \alpha^{-2} = \alpha + \alpha^2 + \alpha^3 + \alpha^4 +
+  \alpha^5 + \alpha^6 + \alpha^7 + \alpha^8 + \alpha^9 + \alpha^{10} + \alpha^{11} + \alpha^{12}\;(\because
+  \alpha^{13} = 1) = (1 + \alpha + \alpha^2 + \cdots + \alpha^{12}) - 1 = \frac{1 - \alpha^{13}}{1 - \alpha}
+  - 1 = -1$.
+
+  Product of roots is $(\alpha + \alpha^3 + \alpha^4 + \alpha^{-4} + \alpha^{-3} + \alpha^{-1})(\alpha^2 +
+  \alpha^5 + \alpha^6 + \alpha^{-6} + \alpha^{-5} + \alpha^{-2}) = 3(\alpha + \alpha^2 + \cdots +
+  \alpha^{12}) = -3$.
+
+  Thus, the quadratic equation having these roots is $x^2 + x - 3 = 0$.
+\item $1 + x^n + x^{2n} + \cdots + x^{mn} = \frac{x^{(m + 1)n} - 1}{x^n - 1}$ and
+
+  $1 + x + x^2 + \cdots + x^m = \frac{x^{m + 1} - 1}{x - 1}$.
+
+  We have to find $(m, n)$ such that $\frac{x^{(m + 1)n} - 1}{x^n - 1}\div \frac{x^{m + 1} - 1}{x - 1} =
+  \frac{(x^{(m + 1)n} - 1)(x - 1)}{(x^n - 1)(x^{m + 1} - 1)}$ is a polynomial.
+
+  Now if $k$ and $l$ are relatively prime, then $(x^k - 1)$ and $(x^l - 1)$ have just one common factor $x -
+  1$. By De'moivre's theorem, the roots of $x^k - 1 = 0$ are $\cos\frac{2n\pi}{k} + i\sin\frac{2n\pi}{k}$
+  for $n = 0, 1, 2, \ldots, k - 1$ and those of $x^l - 1 = 0$ are $\cos\frac{2n\pi}{l} +
+  i\sin\frac{2n\pi}{l}$ for $n = 0, 1, 2, \ldots, n - 1$. If $l$ and $k$ are co-prime integer other than
+  zero, these roots will be different.
+
+  Since all the factors of $x^{(m + 1)n} - 1$ are distinct, $x^m - 1, x^n - 1$ cannot have any common
+  factors other than $x - 1$. Thus, $m + 1$ and $n$ must be relatively prime.
+
+  Again, $x^{(m + 1)n} - 1 = (x^{n})^{m + 1} - 1 = (x^{m + 1})^n - 1$. So $x^{(m + 1)n} - 1$ is divisible by
+  both the factors in denominator. Thus, it is sufficient for our result for $m + 1$ and $n$ to be
+  relatively prime.
+\item Given, $(a - b)^2 + (a - c)^2 = (b - c)^2 \Rightarrow 2a^2 - 2ab - 2ac + 2bc = 0 \Rightarrow a^2 - a(b
+  + c) + bc = 0 \Rightarrow (a - b)(a - c) = 0 \Rightarrow a = b$ or $a = c$.
+
+  However, it contradicts with the given fact that $a, b, c$ are all distinct, and hence, has no solution.
+\item $2^m = (1 + 1)^m = C_0^^m + C_1^^m + C_2^^m + \cdots + C_m^^m$ for $m = 1, 2, \ldots, n + 1$.
+
+  Now consider the polynomial $f(x) = 2[C_0^^{x - 1} + C_1^^{x - 1} + C_2^^{x - 1} + \cdots + C_n^^{x -
+      1}]$, clearly, $f(x)$ is of degree $n$.
+
+  So $f(x) = 2.2^{x - 1}$ for all $x = 1, 2, \ldots, n + 1$. Thus, $f(x + 2) = 2[C_0^^{x + 1} + C_1^^{x + 1}
+    + C_2^^{x + 1} + \cdots + C_n^^{x + 1}] = 2[2^{x + 1} - 1] = 2^{x + 2} - 2$.
+\item Given, $a^2 + b^2 + c^2 + d^2 = ab + bc + cd + da\Rightarrow (a - b)^2 + (b - c)^2 + (c - d)^2 + (d -
+  a)^2 = 0 \Rightarrow a = b, b = c, c = d, d = a\Rightarrow a = b = c = d$.
+\item Given, $2x^2 + y^2 + 2x^2 - 8x + 2y - 2xy + 2xz - 16z = 35 = 0 \Rightarrow (x - y)^2 + (x + z)^2 + z^2
+  - 16x - 8x + 2y + 35 = 0\Rightarrow (x - y - 1)^2 + (x + z - 3)^2 + z^2 - 10z + 25 = 0\Rightarrow (x - y -
+  1)^2 + (x + z - 3)^2 + (z - 5)^2 = 0\Rightarrow x - y = 1, x + z = 3, z = 5\Rightarrow x = -2, y = -3$.
+\item We know that $x^8 + y^8 + 6 = 8xy\Rightarrow x$ and $y$ must be of the same sign otherwise LHS $> 0$
+  and RHS $< 0$. Moreover $(x, y)$ is a solution then $(-x, -y)$ is also a solution, also WLOG $x, y > 0$.
+
+  Now, $x^8 + y^8 + 1 + 1 + 1 + 1 + 1 + 1 = 8xy$. By AM-GM inequality $x^8 + y^8 + 1 + 1 + 1 + 1 + 1 + 1\geq
+  8\sqrt[8]{x^8 + y^8} = 8|xy|$. But, by this hypothesis, equality holds. Hence, all eight terms are
+  equal. Therefore, $x^8 = y^8 = 1$. Hence, $(x, y) = (1, 1) = (-1, -1)$ is the solution set.
+
+  By observation you can see that the genral equation is $x^{2n} + y^{2n} = 2nxy + 2n - 2$, where $n = 1, 2,
+  \ldots$ which will have the same solution set.
+\item Given that, $5x\left(1 + \frac{1}{x^2 + y^2}\right) = 12 \Rightarrow 25x^2 = \frac{144}{\left(1 +
+  \frac{1}{x^2 + y^2}\right)^2}$. Similarly, we can find from the second equation $25y^2 = \frac{16}{\left(1
+  - \frac{1}{x^2 + y^2}\right)^2}$.
+
+  Adding, $25(x^2 + y^2) = \frac{144}{\left(1 + \frac{1}{x^2 + y^2}\right)^2} + \frac{16}{\left(1 -
+    \frac{1}{x^2 + y^2}\right)^2}$. Let $\frac{1}{x^2 + y^2} = t \Rightarrow x^2 + y^2 = \frac{1}{t}$
+
+  $\therefore \frac{25}{t} = \frac{144}{(1 + t)^2} + \frac{16}{(1 - t)^2}\Rightarrow 32t(5t^2 - 8t + 5) =
+  25(t^4 - 2t^2 + 1)$. Dividing both sides by $t^2$, we arrive at $32\left[5\left(t + \frac{1}{t}\right) -
+    8\right] = 25\left[\left(t + \frac{1}{t}\right)^2 - 4\right]$
+
+  Putting $t + \frac{1}{t} = \alpha$, we have $25\alpha^2 - 160\alpha + 156 = 0\Rightarrow \alpha =
+  \frac{6}{5}, \frac{26}{5}\Rightarrow t + \frac{1}{t} = \frac{6}{5}, \frac{26}{5}\Rightarrow 5t^2 - 6t + 5
+  = 0$ or $5t^2 - 26t + 5 = 0$. Since the discriminant of $5t^2 -6t + 5 = 0$ is $36 - 100 < 0$, there is no
+  real root. $5t^2 - 26t + 5 = 0$, the roots are $5, \frac{1}{5}$.
+
+  If $x^2 + y^2 = 5$ then $5x\left(1 + \frac{1}{5}\right) = 12$ and $5y\left(1 - \frac{1}{5}\right) = 4
+  \Rightarrow x = 2, y = 1$. If $x^2 + y^2 = \frac{1}{5}$ then $5x(1 + 5) = 12$ and $5y(1 - 5) = 4$. Thus,
+  $x = \frac{2}{5}$ and $y = -\frac{1}{5}$.
+\item Adding all $2(x + y + z)^2 = 48 + 2L \Rightarrow x + y + z = \sqrt{24 + L}$. Dividing all the
+  equations with $x + y + z = \sqrt{24 + L}$, we get $x + y = \frac{18}{\sqrt{24 + L}}, y + z =
+  \frac{30}{\sqrt{24 + L}}, z + x = \frac{2L}{\sqrt{24 + L}}$.
+
+  Solving these, we get $x = \frac{L - 6}{\sqrt{24 + L}}, y = \frac{24 - L}{\sqrt{24 + L}}, z = \frac{L +
+    6}{\sqrt{24 + L}}$, where $6 < L < 24$.
+\item From eq. $(1), (x - z) = (4 - y)\Rightarrow x^2 - 2zx + z^2 = 16 - 8y + y^2 \Rightarrow (x^2 + z^2 -
+  y^2) - 2zx + 8y - 16 = 0 \Rightarrow zx = 2(2y - 5)[\because x^2 + y^2 - z^2 = -4] \cdots (4)$
+
+  From eq. $(3)$ and $(4)$, we get $y\times2(2y - 5) = 6 \Rightarrow y = -\frac{1}{2}, 3$. Putting $y =
+  -\frac{1}{2}$ in eq. $(1)$ and $(3)$, we get $x - z = \frac{9}{2}$ and $zx = -12$
+
+  $(x + z)^2 = (x - z)^2 + 4zx = \frac{81}{4} - 48 < 0$. So $y = 3$ is the only valid solution for $y$
+
+  $(x - z) = 1, zx = 2 \Rightarrow x + z = \pm3\Rightarrow x = 2, -1$ and $z = 1, -2$.
+\item Multiplying given equations, we get $3xy(x + y - 2)(x + y - 1) = 18xy \Rightarrow 3xy[(x + y - 1)(x +
+  y - 2) - 6] = 0\Rightarrow 3xy(x + y - 4)(x + y + 1) = 0$.
+
+  So $x = 0$ or $y = 0$ or $x + y = 4$ or $x + y = -1$. Putting $x + y = 4$ in eq. $(1)$, we get $6x = 2y
+  \Rightarrow y = 3x\Rightarrow x = 1, y = 3$.
+
+  Putting $x + y = -1$ in eq. $(1)$, we get $y = -\frac{9x}{2} \Rightarrow -\frac{7}{2}x = -1 \Rightarrow x
+  = \frac{2}{7}, y = -\frac{9}{7}$.
+\item Adding $1$ to both sides of $(1), xy + x + y + 1 = 24 \Rightarrow (x + 1)(y + 1) = 24$. Similarly, $(y
+  + 1)(z + 1) = 32$ and $(z + 1)(x + 1) = 48$.
+
+  $\Rightarrow (x + 1)^2(y + 1)^2(z + 1)^2 = 24 \times32\times48 \Rightarrow (x + 1)(y + 1)(z + 1) =
+  \pm(24\times 8) \Rightarrow z + 1 = \pm8, x + 1 = \pm6, y + 1 = \pm4$.
+
+  Thus, $x = 5, y = 3, z = 7$ and $x = -7, y = -5, z = -9$.
+\item If $x > 1$, then $y = x^3 + 3x(x^2 - 1) > x^3 > x > 1, z = y^3 + 3y(y^2 - 1) > y^3 > y > 1$ and $x =
+  z^3 + 3z(z^2 - 1) > z^3 > z > 1$.
+
+  Thus, $z > y > x > z$, which is impossible. Thus, $x\leq 1$ and again, $x < -1$ leads to $x > y > z > x$
+  so $x geq -1$. So $|x|\leq 1, |y|\leq 1, |z|\leq 1$.
+
+  And hence we can write $x = \cos\theta$, where $0\leq\theta\leq\pi$.
+
+  Now, $y = 4\cos^3\theta - 3\cos\theta = \cos3\theta, z = 4\cos^33\theta - 3\cos3\theta = \cos9\theta$ and
+  $x = 4z^3 - 3z = 4\cos^39\theta - 3\cos9\theta = \cos27\theta$.
+
+  Since trigonometric functions are periodic, it is possible. Thus, $\cos\theta = \cos27\theta \Rightarrow
+  \cos\theta - \cos27\theta = 0 \Rightarrow 2\sin14\theta\cos13\theta = 0 \Rightarrow \theta =
+  \frac{k\pi}{13}$, where $k = 0, 1, 2, \ldots, 13$ or $\theta = \frac{k\pi}{14}$, where $k = 1, 2, \ldots,
+  13$. The solution is $(x, y, z) = (\cos\theta, \cos3\theta, \cos9\theta)$ where $\theta$ takes all the
+  above values.
+\item Consider the equation $p + qt + rt^2 + st^3 = t^4 \Rightarrow t^4 - st^3 - rt^2 - qt - p = 0$. Given
+  that $a_1, a_2, a_3, a_4$ are the solutions of this equation, and hence,
+
+  $\sigma_1 = a_1 + a_2 + a_3 + a_4 = s, \sigma_2 = (a_1 + a_2)(a_3 + a_4) + a_1a_2 + a_3a_4 = -r, \sigma_3
+  = a_1a_2(a_3 + a_4) + a_3a_4(a_1 + a_2) = q, \sigma_4 = a_1a_2a_3a_4 = -p$.
+
+  The second system of equation is $(t^2)^4 - w(t^2)^3 - z(t^2)^2 - y(t^2) - x = 0$. Putting $t^2 = u$, we
+  have $u^4 - wu^3 - zu^2 - yu - x = 0$ and the roots would be $a_1^2, a_2^2, a_3^2, a_4^2$.
+
+  $\sigma_1 = a_1^2 + a_2^2 + a_3^2 + a_4^2 = w \Rightarrow w = \displaystyle\left(\sum a_i\right)^2 -
+  2\sum_{i<j}a_ia_j = s^2 + 2r$.
+
+  $\sigma_2 = \displaystyle_{i<j}a_i^2a_j^2 = -z \Rightarrow z = -\left(\sum_{i,j}a_ia_j\right)^2 - 2\sum
+  a_i\sum_{i<j<k}a_ia_ja_k - 2a_1a_2a_3a_4 = -r^2 + 2qs + 2p$.
+
+  $\sigma_3 = a_1^2a_2^2a_3^2 + a_1^2a_2^2a_4^2 + a_1^2a_3^2a_4^2 + a_2^2a_3^2a_4^2 = y \Rightarrow y = q^2
+  - 2pr$
+
+  $\sigma_4 = -x = -p^2$.
+\item We observe that both $(x, y, z)$ and $(-x, -y, z)$ satisfy the given system of equations. Since there
+  has to be only one solution, we deduce $x = y = 0$ and so $z^2 = 4 \Rightarrow z = \pm 2$.
+
+  From equations $(1)$ and $(2), z = a, z = b$. So either $a = b = 2$ or $a = b = -2$.
+
+  If $a = b = 2$, we have $xyz + z = 2, xyz^2 + z = 2, x^2 + y^2 + z^2 = 4\Rightarrow xyz(z - 1) = 0$ so
+  either $x = 0$ or $y = 0$ or $z = 0$ or $z = 1$. If $z = 0$ the from last equation $0 = 4$, which is not
+  possible. If $z = 1$, then $x, y$ are not zero, which gives more than one solution of the equation. Hence,
+  $a = b = 2$ does not satisfy the condition.
+
+  If $a = b = -2$, we have $xyz + z = -2, xyz^2 + z = -2, x^2 + y^2 + z^2 = 4$. Following like above when $z
+  = 0$, we have $0 = -2$, which is not possible. If $z = 1$, then $xy + 1 = -2\Rightarrow xy = -3$ and $x^2
+  + y^2 = 3\Rightarrow (x + y)^2 = -3$, which is not posssible for real $x, y$, and hence, $z\neq 1$.
+
+  Thus, we have a unique solution $(0, 0, -2)$.
+\item Clearly, $a^2 + ab + \frac{b^2}{3} = \frac{b^2}{3} + c^2 + c^2 + ca + a^2\Rightarrow 2c^2 + ac - ab =
+  0 \Rightarrow a + 2c = \frac{ab}{c}$.
+
+  Also, $25 - 9 + 16 = 32 \Rightarrow 2a + b + c = \frac{32}{a}$.
+
+  $ab + 2bc + 3ca = b(a + 2c) + 3ca = \frac{b\times ab}{c} + 3ca = \frac{3a}{c}\left(\frac{b^2}{3} +
+  c\right) = \frac{27a}{c}$.
+
+  Again, $ab + 2bc + 3ca = 2c^2 + ac + 2bc + 3ca = 2c(c + b + 2a)$.
+
+  $\Rightarrow \frac{32}{a} = \frac{27a}{c}.\frac{1}{2c} = \frac{27a}{2c^2} \Rightarrow \frac{a^2}{c^2} =
+  \frac{64}{27}\Rightarrow ab + 2bc + 3ca = 27\times\frac{a}{c} = 24\sqrt{3}$.
+\item We have $\log_3(\log_2x) + \log_{1/3}(\log_{1/2}y) = 1 \Rightarrow \log_3(\log_2x) -
+  \log_3(\log_{1/2}y) = 1 \Rightarrow \frac{\log_2x}{\log_{1/2}y} = 3 \Rightarrow \log_2x = -3\log_2y
+  \Rightarrow \log_2xy^3 = 0 \Rightarrow xy^3 = 1 \Rightarrow y = \frac{1}{4}, x = 64$.
+\item We know that $\log_ax = \log_{\left(a^n\right)}(x^n)$. So $\log_2x = \log_4x^2, \log_3y = \log_9y^2,
+  \log_4z = \log_{16}z^2$.
+
+  Now, $\log_2x + \log_4y + \log_4z = 2 \Rightarrow x^2yz = 16$. Similarly, $y^2zx = 81$ and $z^2xy = 256$.
+
+  $\Rightarrow x^2yz\times y^2zx\times z^2xy = (xyz)^4 = 16\times81\times256 \Rightarrow xyz = 24$.
+
+  $\Rightarrow x = \frac{2}{3}, y = \frac{27}{8}, z = \frac{32}{3}$.
+\item By observation one solution is $x = 3, y = 2$. As $\log_33 + \log_22 = 2$ and $3^3 - 2^2 = 23$.
+
+  If $x < 3$, then $\log_3x < 1$. Since, $\log_3x + \log_2y = 2\Rightarrow \log_2y > 2\Rightarrow y >
+  2$. Hence, $3^x < 3^3 = 27$ and $2^y > 2^2 = 4\Rightarrow 3^x - 2^y < 27 - 4 = 23$. Hence, $x$ cannot be
+  less than $3$.
+
+  Similarly, $x$ cannot be greater than $3$. Thus, $x = 3, y = 2$.
+\item Given that $\alpha, \beta, \gamma$ are roots of the equation $x^3 - x^2 - 1 = 0$, so from Vieta's
+  relations, we have $\alpha + \beta + \gamma = 1, \alpha\beta + \beta\gamma + \gamma\alpha = 0$ and
+  $\alpha\beta\gamma = 1$. Now,
+
+  $\frac{1 + \alpha}{1 - \alpha} + \frac{1 + \beta}{1 - \beta} + \frac{1 + \gamma}{1 + \gamma} = \frac{3 -
+    (\alpha + \beta + \gamma) - (\alpha\beta + \beta\gamma + \gamma\alpha) + 3\alpha\beta\gamma}{1 - (\alpha
+    + \beta + \gamma) + (\alpha\beta + \beta\gamma + \gamma\alpha) - \alpha\beta\gamma} = -5$.
+\item $x^{m + 1} - x^m - x + 1 = (x^m - 1)(x - 1) = (x^{m - 1} + x^{m - 2} + \cdots + x^2 + x + 1)(x - 1)^2$,
+  and hence, $(x - 1)^2$ is a factor of $x^{m + 1} - x^m - x + 1$.
+\item $x^{10} - x^{8} + 8x^6 - 24x^4 + 32x^2 - 48 = (x^2 - 2)(x^8 + x^6 + 10x^4 - 4x^2 + 24) = 0$.
+
+  If $x^2 - 2 = 0$ then $x = \pm\sqrt{2}$. Now $x^8 + x^6 + 10x^4 - 4x^2 + 24 = x^8 + x^6 + 9x^4 + x^4 -
+  4x^2 + 4 + 20 = x^8 + x^6 + 9x^4 + (x^2 - 2)^2 + 20 > 0$.
+
+  Thus, the given equation has two solutions $\pm\sqrt{2}$.
+\item Given, $3 + 2x + \cdots + 3x^{96} + 2x^{97} + 3x^{98} + 2x^{99} = 0 \Rightarrow 3\frac{x^{100} -
+  1}{x^2 - 1} + 2x\frac{x^{100} - 1}{x^2 - 1} = 0\Rightarrow 3 + 2x = 0$ as $x\neq 1\Rightarrow x =
+  -\frac{3}{2}$.
+\item $1 + x^{111} + x^{222} + x^{333} + x^{444} = \frac{x^{555} - 1}{x^{111} - 1}$ and $1 + x^{111} +
+  x^{222} + x^{333} + \cdots + x^{999} = \frac{x^{1110} - 1}{x^{111} - 1}$.
+
+  Now $x^{1110} = x^{2*555}\Rightarrow x^{1110} - 1 = (x^{555} - 1)(x^{555} + 1)$, and thus, we see that
+  required condition is satisfied.
+\item Given, $\frac{1}{x} + \frac{1}{y} = \frac{1}{z} \Rightarrow zx + yz - xy = 0$
+
+  $(x + y - z)^2 = x^2 + y^2 + z^2 - zx - yz + xy = x^2 + y^2 + z^2$, and hence, $\sqrt{x^2 + y^2 + z^2} =
+  \pm(x + y - z)$, which is rational.
+\item Given, $ax^2 = by^2 = cz^2 = k$(say), then also given, $a^2x^3 + b^2y^3 + c^2z^3 = p^5 \Rightarrow
+  \frac{k^2}{x} + \frac{k^2}{y} + \frac{k^2}{z} = p^5 \Rightarrow \frac{1}{x} + \frac{1}{y} + \frac{1}{z} =
+  \frac{p^5}{k^2} = \frac{1}{p} \Rightarrow k = p^3$.
+
+  Now, $\sqrt{a} + \sqrt{b} + \sqrt{c} = \frac{\sqrt{p^3}}{x} + \frac{\sqrt{p^3}}{y} + \frac{\sqrt{p^3}}{z}
+  = \sqrt{p^3}\left(\frac{1}{x} + \frac{1}{y} + \frac{1}{z}\right) = \frac{\sqrt{p^3}}{p} = \sqrt{p}$.
 \item For roots to be equal the discriminant has to be zero.
 
    $D = 4(1 + 3m)^2 - 4(1 + m)(1 + 8m) = 0\Rightarrow 4(1 + 9m^2 + 6m - 1 - 9m -8m^2) = 0\Rightarrow m^2 -

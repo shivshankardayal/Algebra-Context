@@ -1,5 +1,7 @@
 # Algebra-Context
 
+## This book is written as a way to give back to the world for what I have received.
+
 You need ConTeXt installed for this. I have used standalone version of ConTeXt on Linux.
 You can download one from https://wiki.contextgarden.net/
 
@@ -15,3 +17,5 @@ Refer to https://wiki.contextgarden.net/ for details.
 
 The PDF version is set to `PDF/X-4p` and it is not recommended to change this unless you
 know what you are doing.
+
+`Emacs` was used to write this books using `Auctex` with `ConTeXt`-mode.
