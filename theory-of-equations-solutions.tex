@@ -1088,6 +1088,155 @@
   We assume that $a\leq b\leq c$, so it is enough to prove that $\sqrt{a} + \sqrt{b} \geq
   \sqrt{c}\Rightarrow a + b + 2\sqrt{ab}\geq c \Rightarrow 4ab\geq a^2 + b^2 + c^2 + 2ab - 2bc - 2ca$, which
   is true.
+\item Since $x + 1$ divides $ax^2 + bx + c$, therefore, $x = -1$ must be its root. Thus, $a - b + c = 0
+  \Rightarrow b = a + c$.
+
+  Clearly, $b > 2$. So we observe that for $b = 3, 4$ we have $2$ pairs of solutions for $a$ and $c$, for $b
+  = 5, 6$, we have $4$ and so on. This becomes an A.P. summing which, we get $498002$.
+\item For $x^2 + 2ax + b = 0, D = a^2 - b = (a - k)^2 = a^2 - 2ak + k^2$. Setting $b = k^2 - 2ak$ we have
+  discriminant of first equation as $a^2 - 4b = (a - 4k)^2 - 3(2k)^2$. Thus, we can say that if there are
+  infinite no. of rational points on $x^2 - 3y^2 = 1$ such that $(a, b)$ is relatively prime then it is
+  proved. Now we choose $(2, 1)$ as $(a, b)$, which are relatively prime. The infinte no. of points is given
+  by intersection of the curve with $y = m(x - 2) + 1$, where $m\in\mathbb{Q}$.
+\item Putting $x = 0, 1, \frac{1}{2}$, we get $|c|\leq 1, |a + b + c|\leq 1, |a + 2b + 4c|\leq 4$.
+
+  Thus, $|b + 3c|\leq 5 \Rightarrow |b|\leq 8 \Rightarrow |a + b + 3c|\leq 3\Rightarrow |a|\leq 8
+  \Rightarrow |a| + |b| + |c|\leq 17$.
+\item When $x = 0, |c|\leq 1$. Setting $x = \pm 1, |a + b + c|\leq 1$ and $|a - b + c|\leq 1\Rightarrow |a +
+  c|\leq 1\Rightarrow |a|\leq 2$.
+
+  Considering $-1\leq x\leq 1$, if $a > 0$ then, $2ax + b \leq 2a + b = a + b + c + a - c\leq 1 + a - c\leq
+  1 + 1 + 2 = 4$ and $-4 = -2 - 1 - 1\leq -(a + c) - 1\leq (-a + c) - a + b - c\leq -2a + b\leq 2ax + b$.
+
+  Similarly, it can be proven for $a < 0$.
+\item $|a| = max\{-a, a\}$ implies $\frac{|p(1) + p(-1)|}{2} = \frac{|1 + p + q| + |1 - p  q|}{2} =
+  \frac{1}{2}\mathrm{max}\{(1 + p + q + 1 - p - q), (1 + p + q - (1 - p + q))\} = \mathrm{max}\{|1 + q|, |p|\}$.
+
+  Clearly, minimum value of $\mathrm{max}\{|1 + q|, |p|\}$ will be when $p = 0$ and $q = -\frac{1}{2}$. Thus, our
+  polynomial is $x^2 - \frac{1}{2}$.
+\item Clearly, $|a + b + c|\leq 1, |a - b + c|\leq 1, |c|\leq 1 \Rightarrow |a|\leq 2$. Now, $\frac{8}{3}a^2
+  + 2b^2 = \frac{2}{3}[4a^2 + 3b^2] = \frac{2}{3}[2(a + b)^2 + 2(a - b)^2 - b^2]$, which will be maximum if
+  $b = 0$. Thus, $a = \pm 2, c = \pm 1$.
+\item Let the roots are $-p, -q, -r$ so that $p, q, r > 0$. From Vieta's relations, we have $p + q + r = a <
+  3, b + c = pq + qr + rp + pqr$. By AM-GM inequality, $pqr\leq\left(\frac{p + q + r}{3}\right)^3 <
+  1$. Also, $p^2 + q^2 + r^2\geq pq + qr + rp \Rightarrow (p + q + r)^2\geq 3(pq + qr + rp)\Rightarrow pq +
+  qr = rp \leq 3 \Rightarrow pq + qr + rp + pqr < 3 + 1 = 4$.
+\item Set $x = 0, p(0) = 1$. Setting $x = 1, p(1) = 0$. We continue till $x = 29$ to find $p(29) = 0$. Let
+  $p(x) = x(x - 1)(x - 2)\cdots(x - 29)Q(x)$, where $Q(x)$ is some polynomial. Then,
+
+  $x(x - 1)(x - 2)\cdots(x- 30)Q(x - 1) = x(x - 1)(x - 2)\cdots(x - 30)Q(x)\Rightarrow Q(x - 1) = Q(x)
+  \Rightarrow Q(x)$ is periodic. $\Rightarrow Q(x) = c\Rightarrow p(x) = cx(x - 1)(x - 2)\cdots(x - 29)$.
+\item We observe that $p(0) = 0, p(1) = 0, p(2) = 0$ and so on. Hence, $p(x)$ has infinite roots. Thus,
+  $p(x) = 0$.
+\item We will prove this by contradiction. Suppose $f(f(x)) = x$ has a real root $a$ i.e. $f(f(a)) = a$,
+  then $f(x) = b\neq a$ since $f(x) = x$ has no real root. WLOG, we may assume that $b > a$, then
+  $f(a) = b, f(b) = a$. Let $g(x) = f(x) - x$ for all $x$. It follows that $g(a) = b - a > 0$ and $g(b) = a
+  - b < 0$. Since $f$ is a quadratic poplynomial, $f$ is continuous. This means that between $a$ and $b$
+  there must exist one $x_0$ such that $f(x_0) = 0$ making it a root, which is a contradiction.
+\item We set $x = 0, \pm1, \pm 2$, we have $7|e, 7|a + b + c + d + e, 7|a - b + c - d + e, 7|16a + 8b + 4c +
+  2d + e, 7|16a - 8b + 4c - 2d + e$, which simplifies to $7|a + c, 7|32a + 8c$, which implies the given
+  result.
+\item $(2a + b - 3)^2 + 3(b - 1)^2\geq 0$.
+\item $p(x^5) = x^{20} + x^{15} + x^{10} + x^5 + 1 = x^{20} - x^{15} + 2x^{15} - 2x^{10} + 3x^{10} - 3x^5 +
+  4x^5 - 4 + 5 = (x^5 - 1)(x^{15} + 2x^{10} + 3x^5 + 4) + 5 = f(x)(x - 1)(x^{15} + 2x^{10} + 3x^5 + 4) +
+  5$. Thus, remainder would be $5$.
+\item Roots of $x^2 + 1$ are $\pm i$ and roots of $x^2 + x + 1$ are $\omega, \omega^2$. Let
+  $x^{2025} = f(x)g(x) + ax^3 + bx^2 + cx + d$, where $g(x)$ is divisible by
+  $(x^2 + 1)(x^2 + x + 1)$.
+
+  Setting $x = i, i = -ai - b + ci + d$. Comparing real and imaginary parts, $b = d$ and $c - a = 1$. Setting
+  $x = \omega, \omega = a + b\omega^2 + c\omega + d = a + b\left(\frac{-1 + i\sqrt{3}}{2}\right) +
+  c\left(\frac{-1 - i\sqrt{3}}{2}\right) + d$. Comparing real and imaginary parts, $2a + 2d - b - c = 2$ and
+  $b = c$. Thus, $a = 1, b = 2, c = 2, d = 2$. So the remainder is $x^3 + 2x^2 + 2x + 2$.
+\item We may assume that the leading coefficient in $p(x)$ is positive, so that $p(x)\rightarrow \infty$
+  when $n\rightarrow \infty$, and $p(n) > 1$ for $n > N$. If $x > N$ and $p(x) = a_nx^n + \cdots = y > 1$
+  then $p(ry + x) = a_n(ry + x)^n + \cdots $ is divisible by $y$ for every integral $r$; and $p(ry + x)$
+  tends to infinity with $r$. Hence there are infinitely many composite values off($n$).
+\item Given, $x + \sqrt{a + \sqrt{x}} = a \Rightarrow (a - x)^2 = a + \sqrt{x} \Rightarrow a^2 - (2x + 1)a +
+  x^2 - \sqrt{x} = 0$, which is a quadratic equation in $a$. Thus, $a = \frac{2x + 1 \pm (2\sqrt{x}) +
+    1}{2}$. Let $z = \sqrt{x}$, then $a = z^2 + z + 1$ and $a = z^2 - z$. First we consider second root. From
+  the given equation $\sqrt{a + \sqrt{x}} = a - x\geq 0 \Rightarrow a \geq x \Rightarrow a \geq
+  z^2$. Substituting from first equation $z^2 - z = a \geq z^2 \Rightarrow -z\geq 0 \Rightarrow
+  -\sqrt{x}\geq 0$. This is true only if $x = 0 \Rightarrow a = 0$.
+
+  Now we consider the first root. $a = z^2 + z + 1 \Rightarrow z = \frac{-1 \pm \sqrt{4a - 3}}{2}$. Since $z
+  > 0$, we discard negative root. $\Rightarrow z = \frac{-1\pm\sqrt{4a - 3}}{2} \Rightarrow 4a - 3\geq 0\cap
+  z\geq 0 \Rightarrow a\geq 1$. Thus, $x = z^2 = \frac{2a - 1 - \sqrt{4a - 3}}{2}$.
+\item Given, $x^2 - \sqrt{a - x} = a \Rightarrow a^2 - (2x^2 + 1)a + x^4 + x = 0 \Rightarrow a = x^2 + x,
+  x^2 - x + 1\Rightarrow x = \frac{-1 \pm \sqrt{1 + 4a}}{2}, \frac{1\pm\sqrt{4a - 3}}{2}$. Clearly,
+  $a\geq\frac{3}{4}$ and we also need to discard negative root in the first one.
+\item Given, $\sqrt{a - \sqrt{a + x}} = x \Rightarrow a^2 - (2x^2 + 1)a + x^4 - x = 0 \Rightarrow a = x^2 +
+  x + 1, x^2 - x \Rightarrow x = \frac{-1 + \sqrt{4a}}{2}, \frac{1\pm\sqrt{1 + 4a}}{2}$. Clearly, if $a\geq
+  0$, then $x$ will be real.
+\item Let the three rational roots of the equation are $\frac{\alpha_2}{\alpha_1}, \frac{\beta_2}{\beta_1},
+  \frac{\gamma_2}{\gamma_1}$, then $ax^3 + bx^2 + cx + d = k(\alpha_1x + \alpha_2) + (\beta_1x + \beta_2) +
+  (\gamma_1x + \gamma_2)\Rightarrow a = \alpha_1\beta_1\gamma_1, b = \alpha_1\beta_1\gamma_2 + \alpha_1\beta_2\gamma_1
+  + \alpha_2\beta_1\gamma_1, c = \alpha_1\beta_2\gamma_2 + \alpha_2\beta_1\gamma_2 + \alpha_2\beta_2\gamma_1, d =
+  \alpha_2\beta_2\gamma_2$. As $ad$ is odd, all of $\alpha_1, \alpha_2, \beta_1, \beta_2, \gamma_1, \gamma_2$ must be
+  odd. This implies that $b$ and $c$ must be odd as well, which is a contradiction.
+\item We observe that $f(x) = f\left(\frac{1}{x}\right)$. Dividing the given equation by $x^2$, we have $x^2
+  + ax + b + \frac{a}{x} + \frac{1}{x^2} = 0 \Rightarrow \left(x + \frac{1}{x}\right)^2 + a\left(x +
+  \frac{1}{x}\right) + b - 2 = 0$. Substituting $x + \frac{1}{x} = z\geq 2$, we have
+
+  $z^2 + az + b - 2 = 0 \Rightarrow D = \frac{-a \pm \sqrt{a^2 -4b + 8}}{2}\geq 2 \Rightarrow a^2 - 4b +
+  8\geq a^2 + 8a + 16\Rightarrow -b\geq 2a + 2 \Rightarrow a^2 + b^2\geq 5a^2 + 8a + 4$.
+
+  We know that for a quadratic equation minimum value is $-\frac{D^2}{4a}$, so minimum value of $a^2 +
+  b^2$ is $\frac{4}{5}$.
+\item $(x - 2)^2 = x^2 - 4x + 4\Rightarrow (x - 2)^2 - 2 = x^2 - 4x + 2$ thus we see that the term involving
+  power of $x^0$ will always become $4$ as after the expansion and before squaring the constant term will
+  always be $2$, and hence, $a_0 = 4$.
+
+  $a_1$ is coefficient of $x$. Again $(x - 2)^2 - 2= x^2 - 4x + 2$. Now if we perform a square then we see
+  that coefficient of $x$ will be four times because it will get multiplied with $2$ twice and get
+  added. Thus, $a_1 = -4^k$.
+
+  Similarly, we find that on first expansion $a_2 = 1 = \frac{4 - 1}{3}$, on second expansion it is $a_2 =
+  4 + 4^2 = \frac{4^3 - 4^1}{3}$, and on third expansion $a_2 = 4^2 + 4^3 + 4^4 = \frac{4^{2k
+      - 1} - 4^{k - 1}}{3}$, proceeding we find that $a_k = 4^{k-1} + 4^{k} + \cdots + 4^{2k - 2} =
+  \frac{4^{2k - 1} - 4^{k - 1}}{3}$.
+
+  The coefficient of $a_{2^k} = 1$ becauase it is the coefficient of highest power of $x$, which will remain
+  constant on any number of squaring.
+\item We have $x^2 - 3xy + 2y^2 + x - y = 0 \Rightarrow (x - y)(x - 2y + 1) = 0\Rightarrow x = y$ or $x = 2y
+  - 1$. Substituting $x = y$ in the second equation, we have $y = 0$, which satisfy the third
+  equation. Setting  $x = 2y - 1$ in the second equation, we have $y^2 - 5y + 6 = 0 \Rightarrow y = 2,3
+  \Rightarrow x = 3, 5$. Both these pairs of value satisfy the third equation.
+\item From first equation $y = 2x + a$. Setting this in the second equation we have $3x^2 + 3ax + (a^2 - b)
+  = 0 \Rightarrow x = \frac{-3a \pm\sqrt{12b - 3a^2}}{3}$.
+
+  Given that roots are rational, $\therefore 12b - 3a^2 = c^2\;c\in\mathbb{I}$. $c$ will be a multiple of
+  $3$ becaause L.H.S. is a multiple of $3$. If $a$ is odd, then $c$ is odd and if $a$ is even then $c$ is
+  even. Thus, $a$ and $c$ has same parity, and $-3a\pm c$ is always even, and hence is a multiple of
+  $6$. This implies that $x$ and $y$ are integers.
+\item We can assume that $a\geq b\geq c\geq d\geq e$, then $3a\leq3e \Rightarrow a = e\Rightarrow 3a =
+  (3a)^3 \Rightarrow a = 0, \frac{1}{3}, -\frac{1}{3}$. Similarly, it can be proven if $a\leq b\leq c\leq
+  d\leq e$.
+\item Setting $y = xt$, we have $x^3t^2 = 15x^2 + 17x^2t + 15x^2t^2$ and $x^3t^2 = 20x^2 +
+  3x^2t^2$. Multiplying second equation by $t$, and subtracting $3x^2(t - 5)(t^2 + 1) = 0 \Rightarrow x = 0,
+  t = 5\Rightarrow (x, y) = (19, 95)$.
+\item Subtracting we have $y^2 - x^2 = 7 \Rightarrow (y - x)(y + x) = 7$. Now there are four possibilities
+  $y - x = 1, y + x = 7\Rightarrow y = 4, x = 3$, $y - x = 7, y + x = 1\Rightarrow y = 3, -4$ which
+  does not satisfy the given equations, $y - x = -1, y + x = -7\Rightarrow y = -4, x = -3$, and $y - x =
+  -7, y + x = -1\Rightarrow y = -4, x = 3$, which does not satisfy the given equations.
+\item $a_1 + a_2 + a_3 = 40, a_2 + a_3 + a_4 = 40\Rightarrow a_1 = a_4$ or $a_{i+ 1} = a_{i + 4}$. Similarly,
+  $a_{3i} = a_{3i + 3}\Rightarrow a_{2013} = a_3 = 10$.
+\item $t_1 = 2007, t_2 = 53, t_3 = 34, t_4 = 25, t_5 = 29, t_6 = 85, t_7 = 89, t_8 = 145, t_9 = 42, t_{10} =
+  20, t_{11} = 4, t_{12} = 16, t_{13} = 37, t_{14} = 58, t_{15} = 89$, so we see that $89$ has recurred, and
+  hence, the sequence will repeat. The sum of first $7$ terms is $2322$. Now we will have this repetition of
+  next $8$ terms. No. of such repetitions is $\frac{2013 - 7}{8} = 250 + \frac{6}{8}$. Sum of these $8$
+  terms is $411$ and sum of first $6$ terms is $264$. Hence, required sum is $2322 + 411\times250 + 264 =
+  105336$.
+\item Let the sequence be $a_1, a_2, \ldots, a_{16}$. Then, $a_1 + a_2 + \cdots + a_7 = -1, a_2 + a_3 +
+  \cdots + a_8 = -1, \cdots, a_{10} + a_{11} + \cdots + a_{16} = -1$, and $a_1 + a_2 + \cdots + a_{11} = 1,
+  a_2 + a_3 + \cdots + a_{12} = 1, \cdots, a_6 + a_7 + \cdots + a_{16} = 1$. Also, $a_1 = a_{16}, a_2 =
+  a_{15}, \cdots, a_8 = a_9$. Solving these we get the numbers as $5, 5, -13, 5, 5, 5, -13, 5, 5, -13, 5, 5,
+  5, -13, 5, 5$.
+\item Because of the inaccuracies of the balance if $x$ is the weight in left pan and $y$ is the weight in
+  right pan then there will be two constants $m$ and $n$ such that $y = mx + n$. Thus, $A_2 = mA_1 + n, B_2
+  = mB_1 + n \Rightarrow m = \frac{B_2 - A_2}{B_1 - A_1}, n = \frac{A_2B_1 - A_1B_2}{B_1 - A_1}$.
+
+  Thus, $C_2 = mC_1 + n = \frac{C_1(B_2 - A_2) + A_2B_1 - A_1B_2}{B_1 - A_1}$.
 \item For roots to be equal the discriminant has to be zero.
 
    $D = 4(1 + 3m)^2 - 4(1 + m)(1 + 8m) = 0\Rightarrow 4(1 + 9m^2 + 6m - 1 - 9m -8m^2) = 0\Rightarrow m^2 -
