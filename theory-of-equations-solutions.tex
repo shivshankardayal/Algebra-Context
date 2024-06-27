@@ -1341,6 +1341,89 @@
   Let $\omega = e^{2\pi i/3}$ as third root of unity, we have $|P(z)|^2 + |P(z\omega)|^2 + |P(z\omega^2)|^2
   = 12 + 6\R(a\overline{d}z^3)$. We can choose a $z_0$ such that $a\overline{d}z_0^3 = 1$, then one of the
   terms on left must be greater than or equal to $6$.
+\item From the question it is clear that both the functions cross $x$-axis at $a$ and $b$ respectively. This
+  means, $a$ and $b$ are roots of $f(x)$ and $g(x)$. Let $a$ and $b$ repeat evenly for $f(x)$, then we have
+  to prove that
+
+  $(\alpha - a)^2(\alpha - b)^2 < (\alpha - a)(\alpha - b) \Rightarrow (\alpha - a)(\alpha - b)[(\alpha -
+    a)(\alpha - b) - 1] < 0$. Substituting $\alpha = b + c, (2 + c)c[(2 + c)c - 1] < 0 \Rightarrow c(c^3 +
+  4c^2 + 3c - 2) < 0$ which is true for very small $c$.
+
+  Let $a$ has a multiplicity of $3$ and $b$ has of $1$, then we have to prove that
+
+  $(x - a)^3(x - b) < (x - a)(x - b) \Rightarrow (x - a)(x - b)[(x - a)^2 - 1] < 0$, which is true between
+  $a$ and $b$ because $b - a > 2$.
+\item Putting $x = 2\cos t$ we find $P_n(x)= 2\cos2^nt$. Then $P_n(x) = x \Rightarrow \cos2^nt = \cos t$,
+  which has $2^n$ solutions giving $2^n$ distinct solutions in $x$.
+\item If $\alpha$ is a root then $\alpha^2$ is also a root. Similarly, if $\alpha - 1$ is a root then
+  $(\alpha - 1)^2$ is also a root. If $|\alpha| > 1$, then it implies that there are infinitely many
+  roots. If $\alpha\in(-1, 0)$ or $\alpha\in(0, 1)$, then it implies that there are infinitely many
+  roots. Thus, $f(x)$ can have only $0$ and $1$ as roots. We also see that if we have have root of one kind
+  then it must also have root of the other kind.
+
+  Setting $f(x) = kx^a(x - 1)^b$, where $k\neq = 0$. Using the identity we get that $-k = x^{a - b}(x +
+  1)^{b - a}$, but $k$ is a constant. Hence, $a = b$ and $k = -1$. Thus, $-x^n(x - 1)^n$ is one form of
+  function.
+
+  We see that complex numbers, which are root of unity, and satisfy the property $z_1 = z_2^2$ will also be
+  roots of this identity. For example, cube roots of unity. Deducing similarly we find that $-(x^2 + x +
+  1)^n$ is another form of funciton.
+
+  If $f(x) = c$ then $c = -1$ or $c = 0$.
+\item $P(2x^2) = \frac{P(2x^3 + x)}{P(x)}$ is an even function so either both $P(2x^3 + x)$ and $P(x)$ are
+  even functions or both are odd functions. We also see that $P(0)P(0) = P(0)\Rightarrow P(0) = 0$ or $1$.
+
+  Consider $P(0) = 0$ and $P(x)$ is even, let $a_{2n}x^{2n}$ be the minimum power of $x$. Then, $(P'(x) +
+  a_{2n}x^{2n})(P'(2x^2) + a_{2n}(2x^2)^{2n}) = P'(2x^3 + x) + a_{2n}(2x^3 + x)^{2n}$. Considering only
+  lower powers of $x$, we find that $a_{2n} = 0$. Similarly, we find that of $P(0) = 0$ and $P(x)$ odd, we
+  can prove that $P(x)$ cannot also be odd.
+
+  So $P(0) = 1$ and $P(x)$ is even then $P(x) = 1 + \sum_{k=1}^na_{2n}x^{2n}$, putting $n = 1, 2, \ldots$
+  and so on we find that $P(x) = (1 + x^2)^n$.
+\item If $f(x)$ is constant $k$, then $k^2 = k \Rightarrow f(x) = 0$ and $f(x) = 1$. Given, $f(x)f(x + 1) =
+  f(x^2 + x +1)$. Setting $x = x - 1$, we have $f(x)f(x - 1) = f(x^2 - x + 1)$. Suppose $f(x)$ is not a
+  constant. Assume that it has at least one complex root. Let $z$ be at maximum distance from $O$. From our
+  equations $f(z^2 + z + 1) = f(z^2 - z + 1) = 0$. Thus, $z\neq 0$. If also $z^2 + 1 \neq 0$, then $z, z^2 + z
+  + 1, z^2 - z + 1, -z$ are vertices of a parallelogram. Thus, either of $z^2 + z + 1$ or $z^2 - z + 1$ is
+  greater than $|z|$, which is a contradiction with the choice of $z$. Thus, $z^2 + 1 = 0$ is a factor of
+  $f$. Hence, $f(x) = (x^2 + 1)^mg(x),\;m\in\mathbb{N}, x^2 + 1\nmid g(x)$.
+
+  Putting this in our equation we see that it is satisfied. We also see that $g(x)$ satisfies our
+  equation. Since it is not divisible by $x^2 + 1$, we must have $g(x) = 1$. Thus the solution is $f(x) =
+  (x^2 + 1)^m\;\forall m\in\mathbb{N}$.
+\item We see that if $\alpha$ is a root then $\alpha^2$ is also a root. Thus if $|\alpha| > 1$ or $0 < |\alpha|
+  < 1$ then there will be infinitely many roots. Thus, all roots must lie on unit circle.
+
+  If $f(x)$ is constant then $c^2 - c^2 = 0 \Rightarrow c = 0$ or $c = 1$. Let us assume that $f(x) = ax +
+  b$. then $(ax + b)(b - ax) = ax^2 + b \Rightarrow a = -1, b = 0$ or $b = 1$. Thus, $f(x) = -x$ and $f(x) =
+  1 - x$.
+
+  If $f(x) = ax^2 + bx + c$, then $(ax^2 + bx + c)(ax^2 - bx + c) = (ax^4 + bx^2 + c) \Rightarrow a = 1, c^2
+  = c \Rightarrow c = 0, 1$, and $2ac - b^2 = b$. If $c = 0\Rightarrow b = 0, -1$. If $c = 1\Rightarrow b =
+  1, -2$. So we have $f(x) = x^2, x^2 -x, x^2 - 2x + 1 = (x - 1)^2, x^2 + x + 1$. We can rewrite the second
+  and third in the form $f(x) = -x(1 - x)$ and $f(x) = (1 - x)^2$. Now we can write a general solution $f(x)
+  = (-x)^p(1 - x)^q(x^2 + x + 1)^r, p, q, r\in\mathbb{Z}$.
+\item Suppose $p(x), q(x), r(x)\in\mathbb{Z}[x]$ with $p(x) = q(x)r(x)$ where $0\leq\mathrm{deg}(q)\leq 3 <
+  \mathrm{deg}(r)\leq\mathrm{deg}(p) = 7$. Given that for $n_1, n_2, \ldots, n_7$ distinct integers
+  $|p(n_i)| = 1$ for $1\leq i\leq 7$. Observe that $q(x)$ and $r(x)$ are both polynomials with integer
+  coefficients.
+
+  Then $q(n_i), r(n_i)\in\mathbb{Z}$ for each $i$ and $|q(n_i)r(n_i)| = 1 \Rightarrow q(n_i) = \pm1$. We see
+  that the values of $1$ or $-1$ is taken at least $4$ times but the degree of $q(x)$ is at most $3$ thus,
+  $q(x) = \pm 1$. Hence, $p(x)$ is irreducible.
+\item Let $f(x) = (x - a_1)^2(x - a_2)^2\cdots(x - a_n)^2 + 1$, and suppose that it factors non-trivially as
+  $f(x) = g(x)h(x)$ over $\mathbb{Z}$.
+
+  By Gauss's lemma we may assume that $g, h$ are monic polynomials with integeral coefficients. Let $g(x) =
+  x^k + b_{k - 1}x^{k - 1} + \cdots + b_0, h(x) = x^l + c_{l - 1}x^{l - 1} + \cdots + c_0\in\mathbb{Z}[x]$
+
+  Observe that the polynomial functions $g, h$ satisfy $g(r), h(r) > 0$ for $r\in\mathbb{r}$ and that
+  $g(a_i) = h(a_i) = 1$. Suppose $k < l$ then the polynomial $g$ has the value $1$ then for $n$ distinct
+  values $a_1, \ldots, a_n$ and, because it has degree $k < n$, that the polynomial is the constant $1$, and
+  the factorization is trivial which is a contradiction. When $k = l = n$, then $f = g^2 \Rightarrow 1 =
+  [g(x)] + (x - a_1)\cdots(x - a_n)[g(x)] - (x - a_1)\cdots(x - a_n)$, which is again trivial
+  factorization. In both the cases the assumed non-triviality of factorization leads to contradiction, and
+  thus $f$ is actullay irreducible.
 \item For roots to be equal the discriminant has to be zero.
 
    $D = 4(1 + 3m)^2 - 4(1 + m)(1 + 8m) = 0\Rightarrow 4(1 + 9m^2 + 6m - 1 - 9m -8m^2) = 0\Rightarrow m^2 -
