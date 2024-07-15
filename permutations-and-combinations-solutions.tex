@@ -1265,5 +1265,37 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
 
   If all cards are not from same suit then no.\ of ways of making selections $= 10\times4^5 - 10\times4 =
   10,200$ because there aree $4$ suits.
-\item
+\item Let $A = {a_1, a_2, \ldots, a_n}$. Consider element $a_1$. Either it is in $P_1$ or it is not. So
+  total no.\ of ways for $a_1$ and $P_1 = 2$. No.\ of ways in which $a_1$ is in $P_1 = 1$, and same for not
+  belonging i.e. in $1$ way.
+
+  Total no. of ways for $a_1$, and $m$ subsets $= 2^m$. No.\ of ways in which $a_1$ belongs to $m$ subsets
+  $= 1^m = 1$. No.\ of ways in which $a_1$ belongs to none of the subsets $= 1^m = 1$.
+
+  Thus, total no.\ of ways in which $a_1\notin(P_1\cap P_2\cap\ldots\cap P_m) = 2^m - 1,
+  a_1\notin(P_1\cup P_2\cup\ldots\cup P_m) = 1^m$, and $a_1\in(P_1\cup P_2\cup\ldots\cup P_m) = 2^m - 1$.
+
+  \startitemize[i]
+  \item Here exactly $r$ elements of $A$ belongs to $P_1\cup P_2\cup\ldots\cup P_m$, and $n - r$ elements do
+    not belong to $P_1\cup P_2\cup\ldots\cup P_m$.
+
+    $\therefore$ Required number $= C_r^^n(2^m - 1)^r(1)^{n - r}= C_r^^n(2^m - 1)^r$.
+  \item Here exactly $r$ elements of $A$ belongs to $P_1\cap P_2\cap\ldots\cap P_m$, and $n - r$ elements do
+    not belong to $P_1\cap P_2\cap\ldots\cap P_m$.
+
+    $\therefore$ Required number $= C_r^^n(2^m - 1)^{n - r}(1)^r = C_r^^n(2^m - 1)^{n -r}$.
+  \item Let $P_{m + 1} = A - (P_1\cup P_2\cup\ldots\cup P_m)$. Since $P_i\cap P_i = \phi, i\neq j$, where
+    $i, j = 1, 2, \ldots, m$.
+
+    Each element of $A$ should belong to exactly one of the $(m + 1)$ subsets $P_1, P_2, \ldots, P_m, P_{m +
+      1}$. For one element there are $m + 1$ ways so for $n$ elements there are $(m + 1)^n$ ways.
+  \stopitemize
+\item Given that number of boxes is $2m$, and number of identical balls is $m$. Number of ways to select $m$
+  boxes out of $2m$ is $C_m^^{2m}$. Because $m$ balls are identical they can be arranged in $\frac{m!}{m!} =
+  1$ way.
+
+  $\therefore$ Required number $= C_m^^{2m} = \frac{2m!}{m!m!}$.
+
+  We will make use of mathematical induction to show that $\frac{4^m}{2\sqrt{m}}\leq \frac{2m!}{m!m!}\leq
+  \frac{4^m}{\sqrt{2m + 1}}$.
 \stopitemize
