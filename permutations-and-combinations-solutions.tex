@@ -1081,23 +1081,23 @@
   select $3$ out of $12$ are $C_3^^{12}$, no.\ of selections for $3$ out of remaining $9$ are $C_3^^9$ and
   so on.
 
-  Thus, total no. of ways of distributing the books are $C_3^^{12}\times C_3^^9\times C_3^^6\times C_3^^3 =
+  Thus, total no.\ of ways of distributing the books are $C_3^^{12}\times C_3^^9\times C_3^^6\times C_3^^3 =
   \frac{12!}{(3!)^4}$.
-\item No. of ways distributing $n$ identical things among $r$ people, where any person can get any no. of
-  things is $C_{r - 1}^^{n + r - 1}$. Therefore, required no. of ways are $C_3^^{13}$.
+\item no.\ of ways distributing $n$ identical things among $r$ people, where any person can get any no.\ of
+  things is $C_{r - 1}^^{n + r - 1}$. Therefore, required no.\ of ways are $C_3^^{13}$.
 \item $3$ constants can be selected out of $10$ consonants in $C_3^^{10}$ ways. $2$ vowels out of $4$ can be
-  selected in $C_2^^4$ ways. Now we have $5$ alphabets which be arranged in $5!$ ways. Thus, total no. of
+  selected in $C_2^^4$ ways. Now we have $5$ alphabets which be arranged in $5!$ ways. Thus, total no.\ of
   words formed are $C_3^^{10}\times C_2^^4\times5!$.
 \item We seat $X, Y, Z$ on the side facing the window. Now from remaining $4$ one has to sit on this side,
   which is $C_1^^4$ ways of selection. From remaining $3$ all $3$ have to sit on the other side, which is
-  $C_3^^3$ ways of selection. Thus, total no. of selections are $4$.
+  $C_3^^3$ ways of selection. Thus, total no.\ of selections are $4$.
 
-  For each selection no. of arrnagements are $4!\times3!$. Hence, total no. of ways of seating are
+  For each selection no.\ of arrnagements are $4!\times3!$. Hence, total no.\ of ways of seating are
   $4!\times3!\times4 = 576$.
-\item Since two women are to be seated on seats numbered $1$ to $4$, the no. of arrangements are $P_2^^4 =
-  12$. Now, three men are to be seated on $5$ remaining chairs; the no. of arrangements are $P_3^^6 = 120$.
+\item Since two women are to be seated on seats numbered $1$ to $4$, the no.\ of arrangements are $P_2^^4 =
+  12$. Now, three men are to be seated on $5$ remaining chairs; the no.\ of arrangements are $P_3^^6 = 120$.
 
-  Thus, total no. of arrangements are $12\times120 = 1440$.
+  Thus, total no.\ of arrangements are $12\times120 = 1440$.
 \item Consider $\frac{C_r^^{2n}}{C_{r - 1}^^{2n}} = \frac{2n - r + 1}{r}$, which has to be greater than $1$
   if $C_r^^{2n}$ has to be greatest. $\therefore 2n - r + 1 \geq r \Rightarrow r\leq n + \frac{1}{2}$.
 
@@ -1105,5 +1105,165 @@
 
   Combining the results $n - \frac{1}{2}\leq r\leq n + \frac{1}{2}$, but $r$ has to be an integer. Thus, $r
   = n$.
+\item In a seven digit number there are four odd places. There are two $1$'s, and two $3$'s, which can
+  occupy these places. no.\ of such ways are $\frac{4!}{2!2!} = 6$.
+
+  For three even places, we have one $4$, and two $2$'s. no.\ of ways in which three even places can be
+  filled are $\frac{3!}{2!} = 3$.
+
+  Thus, total no.\ of required no.\ are $6\times3 = 18$.
+\item There are $10$ letters, and the words have five of these. no.\ of words where any letter can be
+  repeated are $10^5$. no.\ of letters where none of the letters are repeated are $^{10}P_5$.
+
+  Thus, no.\ of words where at least one letter is repeated are $10^5 - \ ^{10}P_5$.
+\item Ternary no.\ include $0, 1, 2$. First we consider the case when the required seuqence begins with
+  $210$. We have six vacant places, which can be filled in $3^6 = 729$ ways. Similarly, no.\ of sequences
+  which end with $210$ will be $729$.
+
+  However, there will be common sequences between these two which start with $210$ and end with
+  $210$. no.\ of such sequences will be $3^3 = 27$ (Hint: we will have only three empty places).
+
+  Thus, no.\ of required numbers are $729 + 729 - 27 = 1431$.
+\item A seven digit no.\ will be a no.\ ranging from $1,000,000$ to $9,999,999$. If units place is odd then
+  sum of remaining six digits must be odd or if units place is even then sum of remaining six digits
+  must be even to satisfy the condition given. Thus, half the no.\ will satisfy the given condition.
+
+  $\therefore $ Required number $= 9\times10\times10\times10\times10\times10\times5 = 45\times10^5$.
+\item Treating $10$ Indians as one person, we have $1 + 4 + 5 = 10$ persons. These can be seated in $10!$
+  ways. However, $10$ Indians can be seated among themselves in $10!$ ways.
+
+  Thus, total no.\ of seating arrangements are $10!10!$.
+\item Total no.\ of letters are $7$; of which $2$ are \quote{A}, and $2$ are \quote{R}. Total no.\ of
+  arrangements when there is no restriction $=\frac{7!}{2!2!} = 1260$.
+
+  (a) Treating two \quote{R} as one i.e. we are considering words when both \quote{R}s are together. no.\ of
+  such words $=\frac{6!}{2!} = 360$. Thus, no.\ of words where \quote{R} are never together $= 1260 - 360 =
+  900$.
+
+  (b) Number of arrangements when two \quote{A}s are together is $360$ like previous case. Treating both
+  \quote{A}s and \quote{R}'s as one i.e. when both are together, no.\ of words $=5! = 120$.
+
+  Thus, required no.\ of words $= 360 - 120 = 240$.
+
+  (c) From (a) and (b) it follows that required number $= 900 - 240 = 660$.
+\item no.\ of ways of dividing $m + n$ persons into two groups such that one has $m$ persons, and the other
+  has $n$ persons is $C_m^^{m + 1}.C_n^^n = \frac{(m + n)!}{m!n!}$.
+
+  Now, $m$ persons can be seated around a round table in $(m - 1)!$ ways; similarly $n$ persons can be
+  seated in $(n - 1)!$ ways.
+
+  Thus, total no.\ of ways is $\frac{(m + n)!(m - 1)!(n - 1)!}{m!n!} = \frac{(m + n)!}{mn}$.
+\item The signal can be made by using any no.\ of flags. Thus, required no.\ of signals is $P_1^^5 + P_2^^5
+  + P_3^^5 + P_4^^5 + P_5^^5 = 325$.
+\item There are $5$ letters in the word \quote{Ought}, which are all different. The alphabetical order of
+  letters are G, H, O,T, U.
+
+  no.\ of words beginning with G, H, O are $4!\times3 = 24\times3 = 72$. no.\ of words beginning with TG are
+  $3! = 6$, and same for $TH$. no.\ of words beginning with TOG and TOH are $2! = 2$. TOUGH is the first word
+  beginning with $TOU$. Thus, rank of the word \quote{TOUGH} in the dictionary will be $24\times3 + 6\times2
+  + 2\times2 + 1 = 89$.
+\item Let the city be represented by a rectangle, whose sides are of length $a$ and $b$ North-South and
+  East-West respectively.
+  \startplacefigure[location={left,none}]
+    \startMPcode
+      draw (0, 0) -- (0, 2.5cm);
+      draw (0.5cm, 0) -- (0.5cm, 2.5cm);
+      draw (1cm, 0) -- (1cm, 2.5cm);
+      draw (1.5cm, 0) -- (1.5cm, 2.5cm);
+      draw (2cm, 0) -- (2cm, 2.5cm);
+      draw (2.5cm, 0) -- (2.5cm, 2.5cm);
+      draw (0, 0) -- (2.5cm, 0cm);
+      draw (0, 0.5cm) -- (2.5cm, 0.5cm);
+      draw (0, 1cm) -- (2.5cm, 1cm);
+      draw (0, 1.5cm) -- (2.5cm, 1.5cm);
+      draw (0, 2cm) -- (2.5cm, 2cm);
+      draw (0, 2.5cm) -- (2.5cm, 2.5cm);
+      label.ulft("$P$", (0cm, 2.5cm));
+      label.lrt("$Q$", (2.5cm, 0cm));
+      label.lft("$W$", (0cm, 1.25cm));
+      label.rt("$E$", (2.5cm, 1.25cm));
+      label.top("$N$", (1.25cm, 2.5cm));
+      label.bot("$S$", (1.25cm, 0cm));
+    \stopMPcode
+  \stopplacefigure
+Man has to go from $P$ to $Q$. For this he has to travel $a$ vertically downward and $b$ horizontally
+Eastward. There are $m - 1$ horizontal segments and $n - 1$ vertical segments. Thus, from $P$ to $Q$ there
+are $m + n - 2$ segments total. We have to choose $m - 1$, and $n - 1$ segments from these. This can be done
+in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
+\vskip 1.1cm
+\item Let the $n$ letters be denoted by $1, 2, 3, \ldots, n$. Let $A_i$ denote the set of distribution of
+  letters in envelopes so that only $i$th letter is put in the corresponding envelope. Then $n(A_i) = (n -
+  1)!$, because rest $n - 1$ letters can be put in $n - 1$ envelopes in $(n - 1)!$ ways.
+
+  Similarly, $n(A_i\cap A_j)$ i.e. putting two letters in correct envelopes is $(n - 2)!$. Required number
+  $= n(A_1'\cap A_2' \cap A_3' \cap\ldots\cap A_n') = n(A_1\cup A_2\cup A_3\cup\ldots \cup A_n)' = n! -
+  n(A_1\cup A_2\cup A_3\cup \ldots \cup A_n)'$
+
+  $= n! - [\sum n(A_i) - \sum n(A_i\cap A_j) + \sum n(A_i\cap A_j\cap A_k) - \cdots + (-1)^nn(A_1\cap
+    A_2\cap \ldots \cap A_n)]$
+
+  $= n! - \left[C_1^^n (n - 1)! - C_2^^n (n - 2)! \cdots\right] = n!\left[\frac{1}{2!} - \frac{1}{3!} +
+    \frac{1}{4!} + \cdots\right]$.
+\item Number of non-congruent squares is $8$ as they are of size $1\times 1, 2\times2, 3\times3, \ldots,
+  8\times8$. Number of non-congruent rectanges, which are not squares $= C_2^^8 = 28$.
+
+  Thus, required number $= 28 + 8 = 36$.
+\item Let the three numbers selected from are $a, b, c$, which have to be in A.P. i.e. $a + c = 2b$. This
+  implies that both $a, c$ are either even or odd as sum has to be even.
+
+  {\bf Case I:} When $n$ is even.
+
+  Let $n = 2m$, then no.\ of odd and even numbers are same i.e. $m$. Thus, no.\ of ways in which $a$ and $c$ can
+  be selected is $2\times C_2^^m = m(m - 1) = \frac{1}{4}n(n - 2)$.
+
+  {\bf Case II:} When $n$ is odd.
+
+  Let $n = 2m + 1$, then no.\ of odd numbers is $m +1$, and no.\ of even numbers is $m$. Thus, $a$ and $c$
+  can be selected in $C_2^^{m + 1} + C_2^^m = \frac{1}{4}(n - 1)^2$ ways.
+\item Since there are two packs of $52$ cards, therefore, number of cards from same suit and denomination is
+  $2$ for each card.
+
+  No. of ways of selecting $26$ cards out of $52$ cards $= C_{26}^^{52}$, however, each card can be selected
+  in $2$ ways. $\therefore $ Required numbers $= C_{26}^^{52}.2^{26}$.
+\item For $n$ sides there will be $n$ vertices. Selection of any $3$ vertices will give us a
+  triangle. No. of ways of selecting $3$ vertices out of $n$ vertices i.e. no. of triangles $= C_3^^n =
+  \frac{n(n - 1)(n - 2)}{6}$.
+\item (a) If the $n$ objects are $o_1, o_2, o_3, \ldots, o_n$, then possible solutions will be $o_1o_2o_3,
+  o_2o_3o_4, o_3o_4o_5, \ldots, o_{n - 2}o_{n - 1}o_n$.
+
+  $\therefore$ Required number $= n - 2$.
+
+  (b) No. of ways to select $3$ objetcs out of $n$ objects without restriction $= C_3^^n$. Thus, following
+  from (a) required number $C_3^^n - n + 2 = \frac{(n - 3)(n^2 - 4)}{6}$.
+\item Let $a$ be the no.\ of stations before stop $1, b$ be the no. of stations before stop $2, c$ be the
+  no. of stations before stop $3, d$ be the no.\ of stations before stop $4$, and $e$ be the no.\ of stations
+  after stop $4$. Then, $a + b + c + d + e = 8$, where $a\geq 0, b, c, d \geq 1, e\geq 0$.
+
+  Let $x = a, y = b - 1, z = c - 1, t = d - 1, w = e$, then $x + y + z + t + w = 5$.
+
+  $\therefore$ Required no.\ = Number of non-negative integral solutions of the above equation $= C_r^^{n + r
+    - 1} = C_5^^9 = 126$.
+\item No. of straight lines formed by given $m$ points $= C_2^^m = n$ (let). Total no.\ of points of
+  intersections of these lines $= C_2^^n$ under given conditions.
+
+  Consider a point $A_1$. No.\ of lines passing through $A_1 = m - 1$. No.\ of pair of lines intersecting at
+  $A_1 = C_2^^{m - 1}$. Similarly, this will be the case for other points.
+
+  Hence, required no.\ of points of intersections $= C_2^^n - m.C_2^^{m - 1} = \frac{m!}{8(m - 4)!}$.
+\item The word BAC cannot be spelled if the $m$ selected coupons do not contain at least one of A, B or C.
+
+  No. of ways of selecting m coupon which are $A$ or $B = 2^m$. This also includes when all $m$ coupons are
+  all A or all B. Similarly for B or C and for A and C. No. of ways of selecting $m$ coupons where all are
+  $A = 1$. Similarly for B and C.
+
+  Thus, required no. $= 2^m + 2^m + 2^m - 1 - 1 - 1 = 3(2^m - 1)$.
+\item The staight cards can be $1-5, 2-6, 3-7, \ldots, 6-10, 7-J, 8-Q, 9-K, 10-A$. Thus, we see there are
+  $10$ such straight hands. One card of any denomination can be picked from any of the suits in $4$
+  ways. Thus, $5$ cards of five different denominations can be selected from $4$ suits in $4^5$ ways.
+
+  Thus, number of ways of making selections $= 10\times4^5 = 10,240$.
+
+  If all cards are not from same suit then no.\ of ways of making selections $= 10\times4^5 - 10\times4 =
+  10,200$ because there aree $4$ suits.
 \item
 \stopitemize
