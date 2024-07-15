@@ -19,3 +19,8 @@ The PDF version is set to `PDF/X-4p` and it is not recommended to change this un
 know what you are doing.
 
 `Emacs` was used to write this books using `Auctex` with `ConTeXt`-mode.
+
+## Download Link
+
+If you do not want to build then you can download a built copy from https://ashtavakra.org
+The link is at home page.
