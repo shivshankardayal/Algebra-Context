@@ -6,7 +6,8 @@ You need ConTeXt installed for this. I have used standalone version of ConTeXt o
 You can download one from https://wiki.contextgarden.net/
 
 To build PDF you can simply execute `context algebra.pdf` or `make`. To make used of
-`make` you will need the GNU Make installed.
+`make` you will need the GNU Make installed. The reason for not giving PDF is that it is
+a binary file, and makes the `.git` file bloat.
 
 To change font or pagesize look at `algebra_env.tex` file. Default font is Latin Modern
 font family and page size is B5, which you can passibly change to A4/US Letter for use
@@ -23,4 +24,6 @@ know what you are doing.
 ## Download Link
 
 If you do not want to build then you can download a built copy from https://ashtavakra.org
-The link is at home page.
+The link is at home page or simply click https://www.ashtavakra.org/A%20Variable%20in%20Algebra.pdf
+
+Note that this build will almost always lag the sources till we reach a stable release.
