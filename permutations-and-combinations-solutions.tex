@@ -1094,6 +1094,11 @@
 
   For each selection no.\ of arrnagements are $4!\times3!$. Hence, total no.\ of ways of seating are
   $4!\times3!\times4 = 576$.
+\item Six men have preferences. Suppose on one side we seat $4$ men who wish to sit together then to fill
+  remaining $4$ positions we have to choose from $10$ i.e. $C_4^^{10}$. Now for the remaining $6$ free seats
+  we have $6$ people, which can seated in $1$ way. Both sides can be arranged in $8!$ ways.
+
+  Thus, no.\ of ways of seating them is $C_4^^{10}.8!.8!$.
 \item Since two women are to be seated on seats numbered $1$ to $4$, the no.\ of arrangements are $P_2^^4 =
   12$. Now, three men are to be seated on $5$ remaining chairs; the no.\ of arrangements are $P_3^^6 = 120$.
 
@@ -1223,27 +1228,27 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
 \item Since there are two packs of $52$ cards, therefore, number of cards from same suit and denomination is
   $2$ for each card.
 
-  No. of ways of selecting $26$ cards out of $52$ cards $= C_{26}^^{52}$, however, each card can be selected
+  no.\ of ways of selecting $26$ cards out of $52$ cards $= C_{26}^^{52}$, however, each card can be selected
   in $2$ ways. $\therefore $ Required numbers $= C_{26}^^{52}.2^{26}$.
 \item For $n$ sides there will be $n$ vertices. Selection of any $3$ vertices will give us a
-  triangle. No. of ways of selecting $3$ vertices out of $n$ vertices i.e. no. of triangles $= C_3^^n =
+  triangle. no.\ of ways of selecting $3$ vertices out of $n$ vertices i.e. no.\ of triangles $= C_3^^n =
   \frac{n(n - 1)(n - 2)}{6}$.
 \item (a) If the $n$ objects are $o_1, o_2, o_3, \ldots, o_n$, then possible solutions will be $o_1o_2o_3,
   o_2o_3o_4, o_3o_4o_5, \ldots, o_{n - 2}o_{n - 1}o_n$.
 
   $\therefore$ Required number $= n - 2$.
 
-  (b) No. of ways to select $3$ objetcs out of $n$ objects without restriction $= C_3^^n$. Thus, following
+  (b) no.\ of ways to select $3$ objetcs out of $n$ objects without restriction $= C_3^^n$. Thus, following
   from (a) required number $C_3^^n - n + 2 = \frac{(n - 3)(n^2 - 4)}{6}$.
-\item Let $a$ be the no.\ of stations before stop $1, b$ be the no. of stations before stop $2, c$ be the
-  no. of stations before stop $3, d$ be the no.\ of stations before stop $4$, and $e$ be the no.\ of stations
+\item Let $a$ be the no.\ of stations before stop $1, b$ be the no.\ of stations before stop $2, c$ be the
+  no.\ of stations before stop $3, d$ be the no.\ of stations before stop $4$, and $e$ be the no.\ of stations
   after stop $4$. Then, $a + b + c + d + e = 8$, where $a\geq 0, b, c, d \geq 1, e\geq 0$.
 
   Let $x = a, y = b - 1, z = c - 1, t = d - 1, w = e$, then $x + y + z + t + w = 5$.
 
   $\therefore$ Required no.\ = Number of non-negative integral solutions of the above equation $= C_r^^{n + r
     - 1} = C_5^^9 = 126$.
-\item No. of straight lines formed by given $m$ points $= C_2^^m = n$ (let). Total no.\ of points of
+\item no.\ of straight lines formed by given $m$ points $= C_2^^m = n$ (let). Total no.\ of points of
   intersections of these lines $= C_2^^n$ under given conditions.
 
   Consider a point $A_1$. No.\ of lines passing through $A_1 = m - 1$. No.\ of pair of lines intersecting at
@@ -1252,11 +1257,11 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
   Hence, required no.\ of points of intersections $= C_2^^n - m.C_2^^{m - 1} = \frac{m!}{8(m - 4)!}$.
 \item The word BAC cannot be spelled if the $m$ selected coupons do not contain at least one of A, B or C.
 
-  No. of ways of selecting m coupon which are $A$ or $B = 2^m$. This also includes when all $m$ coupons are
-  all A or all B. Similarly for B or C and for A and C. No. of ways of selecting $m$ coupons where all are
+  no.\ of ways of selecting m coupon which are $A$ or $B = 2^m$. This also includes when all $m$ coupons are
+  all A or all B. Similarly for B or C and for A and C. no.\ of ways of selecting $m$ coupons where all are
   $A = 1$. Similarly for B and C.
 
-  Thus, required no. $= 2^m + 2^m + 2^m - 1 - 1 - 1 = 3(2^m - 1)$.
+  Thus, required no.\ $= 2^m + 2^m + 2^m - 1 - 1 - 1 = 3(2^m - 1)$.
 \item The staight cards can be $1-5, 2-6, 3-7, \ldots, 6-10, 7-J, 8-Q, 9-K, 10-A$. Thus, we see there are
   $10$ such straight hands. One card of any denomination can be picked from any of the suits in $4$
   ways. Thus, $5$ cards of five different denominations can be selected from $4$ suits in $4^5$ ways.
@@ -1269,7 +1274,7 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
   total no.\ of ways for $a_1$ and $P_1 = 2$. No.\ of ways in which $a_1$ is in $P_1 = 1$, and same for not
   belonging i.e. in $1$ way.
 
-  Total no. of ways for $a_1$, and $m$ subsets $= 2^m$. No.\ of ways in which $a_1$ belongs to $m$ subsets
+  Total no.\ of ways for $a_1$, and $m$ subsets $= 2^m$. No.\ of ways in which $a_1$ belongs to $m$ subsets
   $= 1^m = 1$. No.\ of ways in which $a_1$ belongs to none of the subsets $= 1^m = 1$.
 
   Thus, total no.\ of ways in which $a_1\notin(P_1\cap P_2\cap\ldots\cap P_m) = 2^m - 1,
@@ -1298,4 +1303,156 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
 
   We will make use of mathematical induction to show that $\frac{4^m}{2\sqrt{m}}\leq \frac{2m!}{m!m!}\leq
   \frac{4^m}{\sqrt{2m + 1}}$.
+
+  Let $P(m): \frac{4^m}{2\sqrt{m}}\leq \frac{2m!}{(m!)^2}$.
+
+  When $m = 1$, L.H.S. $= 2$, and R.H.S. $= 2$. The equality holds, and hence, $P(1)$ is true.
+
+  Let $P(k)$ be true $\Rightarrow \frac{4^k}{2\sqrt{k}}\leq \frac{2k!}{(k!)^2}$.
+
+  We have to prove that $P(k + 1)$ is true i.e. $\frac{4^{k + 1}}{2\sqrt{k + 1}}\leq\frac{2(k + 1)!}{[(k +
+      1)!]^2} = \alpha$ (say).
+
+  Multiplying both sides of $P(k)$ with $\frac{(2k + 1)(2k + 2)}{(k + 1)^2} = \frac{2(2k + 1)}{k + 1}$, we
+  have
+
+  $\frac{(2k + 2)!}{[(k + 1)!]^2}\geq \frac{2(2k + 1)4^k}{2\sqrt{k(k + 1)}} = \frac{(2k + 1)4^k}{\sqrt{k(k +
+      1)}} = \beta$ (say).
+
+  Now $\frac{\beta}{\alpha} = \frac{(2k + 1)4^k}{\sqrt{k(k + 1)}}.\frac{2\sqrt{k + 1}}{4^{k + 1}} = \frac{2k
+  + 1}{2\sqrt{k(k + 1)}} = \frac{2k + 1}{\sqrt{4k^2 + 4k}} = \frac{\sqrt{4k^2 + 4k + 1}}{\sqrt{4k^2 + 4k}} >
+  1 \Rightarrow \beta > \alpha$.
+
+  Hence, $P(k + 1)$ is true whenever $P(k)$ is true. Thus, $P(m)$ si true for all natural numbers $m$.
+
+  Let $Q(m): \frac{2m!}{(m!)^2}\leq \frac{4^m}{\sqrt{2m + 1}}$
+
+  When $m = 1$, L.H.S. $= 2$, and R.H.S. $= \frac{4}{\sqrt{3}}$, so L.H.S. $<$ R.H.S. making $Q(1)$ true.
+
+  Let $Q(k)$ be true i.e. $\frac{2k!}{(m!)^2}\leq \frac{4^k}{\sqrt{2k + 1}}$
+
+  We have to prove that $Q(k + 1)$ i.e. $\frac{(2k + 2)!}{[(k + 1)!]^2}\leq\frac{4^{k + 1}}{\sqrt{2k + 3}} =
+  x$ (let).
+
+  Multiplying $Q(k)$ with $\frac{(2k + 1)(2k + 2)}{(rk + 1)^2}$, we have $\frac{(2k + 2)!}{[(k + 1)!]^2}\leq
+  \frac{4^{k + 1}}{\sqrt{2k + 1}}.\frac{(2k + 1)(2k + 2)}{(k + 1)^2} = \frac{4^k.2\sqrt{2k + 1}}{k + 1} = y$
+  (say).
+
+  $\therefore \frac{y}{x} = \frac{4^k.2\sqrt{2k + 1}}{k + 1}.\frac{\sqrt{2k + 3}}{4^{k + 1}} =
+  \frac{\sqrt{4k^2 + 8k + 3}}{4k^2 + 8k + 4}\Rightarrow y < x$.
+
+  Thus, $Q(k + 1)$ is true, and hence $Q(m)$ is true for all $m$.
+
+  Hence, we have our proof using induction.
+\item To form a parallelogram we need to select $2$ lines from one set, and $2$ from the other set. Thus,
+  no.\ of parallelograms formed is $C_2^^m\times C_2^^n = \frac{1}{4}mn(m - 1)(n - 1)$.
+\item \starttabulate[|c|c|l|]
+  \NC Number of ladies\NC Number of men\NC Number of committees\NC\NR
+  \NC $1$\NC $4$\NC $C_1^^4C_4^^6 = 60$\NC\NR
+  \NC $2$\NC $3$\NC $(C_2^^4 - C_0^^2).C_3^^6 = 100$\NC\NR
+  \NC $3$\NC $1$\NC $(C_3^^4 - C_1^^2).C_2^^6 = 30$\NC\NR
+  \NC $4$\NC $1$\NC Not possible\NC\NR
+\stoptabulate
+\item {\bf Case I:} $3$ men from husband's side, and $3$ ladies from wife's side. no.\ of ways to do this is
+  $C_0^^4\times C_3^^3\times C_3^^3\times C_0^^4 = 1$
+
+  {\bf Case II:} $2$ men, and $1$ lady from husband's side, and $1$ man and $2$ ladies from wife's
+  side. no.\ of ways to do this is $C_1^^4\times C_2^^3\times C_2^^3\times C_1^^4 = 144$
+
+  {\bf Case III:} $1$ man, and $2$ ladies from husband's side, and $2$ men and $1$ lady from wife's
+  side. no.\ of ways to do this is $C_2^^4\times C_1^^3\times C_1^^3\times C_2^^4 = 324$
+
+  {\bf Case IV:} $3$ ladies from husband's side, and $3$ men from wife's side. no.\ of ways to do this is
+  $C_3^^4\times C_0^^3\times C_0^^3\times C_3^^4 = 16$
+
+  $\therefore$ Required number $= 1 + 144 + 324 + 16 = 485$.
+\item For an intersection we need two lines such that they have one point on each of the given lines. Thus,
+  total no.\ of ways to select these four points is $C_2^^m\times C_2^^n = \frac{1}{4}mn(m - 1)(n - 1)$.
+\item Let $y$ be the no.\ of children born after John and Mary marry. Then $x + x + 1 + y = 24 \Rightarrow
+  2x + y = 23$.
+
+  Let $z$ be the no.\ of fights, then $z = C_1^^x.C_1^^y + C_1^^x.C_1^^{x + 1} + C_1^^y.C_1^^{x + 1}
+  \Rightarrow z = xy + x(x + 1) + y(x + 1) = x(23 - 2x) + x^2 + x + (23 - 2x)(x + 1) = -3x^2 + 45x + 23$
+
+  $\Rightarrow 3x^2 - 45x + z - 23 = 0$, now, because $x$ is read $D\geq 0 \Rightarrow 45^2 - 12(z - 23)
+  \geq 0 \Rightarrow z \leq \frac{2301}{12} = 191.75$.
+
+  So, greatest value of $z$ is $191$.
+\item Doing prime factorization, we have $2520 = 2^3\times3^2\times5\times7$. Each term of the product $(1 +
+  2 + 2^2 + 2^3)(1 + 3 + 3^2)(1 + 5)(1 + 7)$ is a divisor of $2520$. Total no.\ of divisors is equal to total
+  no.\ of terms in the product $= 48$. Sum of divisors $= (1 + 2 + 2^2 + 2^3)(1 + 3 + 3^2)(1 + 5)(1 + 7) =
+  9360$.
+\item There can be two sets of three positive integers whose sum is $5$. These sets would be $\{1, 1, 3\}$
+  and $\{1, 2, 2\}$. Elements of both the set can be arranged in $\frac{3!}{2!}$ i.e. $3$ ways.
+
+  $\therefore$ Required no.\ $=3\times C_3^^5\times C_1^^2\times C_1^^1 + 3\times C_2^^5\times C_2^^3\times
+  C_1^^1 = 150$.
+\item Let $m = (n - 1)!$, then $n! = mn$. Now $\frac{(n!)!}{(n!)^{(n - 1)!}} = \frac{(mn)!}{(n!)^m}$, which
+  is no.\ of ways of distributing $mn$ things among $m$ persons each having $n$ things.
+\item $\frac{{(ab)!}}{a!{(b!)}^{a}}$ is no.\  of ways of distributing $ab$ different things in $a$ sets each
+  having $b$ things, which is an integer.
+\item Number of ways of distributing $n$ identical objects in $r$ groups, where each group can contain any
+  number of objects, and the ordering matters $= P_r^^{n + r - 1} = P_6^^{206}$.
+\item {\bf Method I:} Since each person has to get at least $3$ things, if $3$ persons get $3$ things $4$th
+  can get at most $7$ things. Thus,
+
+  Required numbers = coeff. of $x^{16}$ in $(x^3 + x^4 + \cdots + x^7)^4 = $ coeff. of $c^{16}$ in $x^{12}(1
+  + x + \cdots + x^4)^4 =$ coeff. of $x^4$ in $\left(\frac{1 - x^5}{1 - x}\right)^4 = C_4^^7 = 35$.
+
+  {\bf Method II:} Let the four persons be give $a, b, c, d$ no.\ of things. Then, $a + b + c + d = 16$,
+  where $a, b, c, d\geq 3$, then $w + x + y + z = 4, w, x, y, z\geq 0$, and $w = a - 3, x = b - 3, y = c -
+  3, z = d - 3$.
+
+  Required no.\ is solution of any of the above equations, which is number of ways of distributing $4$
+  identical things among $4$ persons, where each person can get any no.\ of things $= C_r^^{n + r - 1} =
+  C_4^^7 = 35$.
+
+  {\bf Method III}: Sets of four posiitve integers each greater than or equal to $3$ whose sum is $16$ are
+  $\{7, 3, 3, 3\}, \{6, 4, ,3, 3\}, \{5, 5, 3, 3\}, \{5, 4, 4, 3\}, \{4, 4, 4, 4\}$.
+
+  Elements of first set can be arranged in $\frac{4!}{3!} = 4$ ways. Elements of second set can be arranged
+  in $\frac{4!}{2!} = 12$ ways. Elements of third set can be arranged in $\frac{4!}{2!2!} = 6$
+  ways. Elements of fourth set can be arranged in $\frac{4!}{2!} = 12$ ways. Elements of fifth set can be
+  arranged in $\frac{4!}{4!} = 1$ way.
+
+  Required no.\ $= 4 + 12 + 6 + 12 + 1 = 35$.
+\item Let no.\ of red, white, blue, and green balls be $w, x, y$ and $z$ respectively. From question, $w + x
+  + y + z = 10$, where $w, x, y, z\geq 0$.
+
+  This is no. of ways of distributing $10$ identical things among four persons where each can get any no.\
+  of things $= C_r^^{n + r - 1} = C_{10}^^13 = 286$.
+
+  When the selections contain balls of each color the equation remains same, but $w, x, y, z\geq 1$. So $a +
+  b + c + d = 6$, where, $a = w - 1, b = x - 1$ and so on.
+
+  In this case, the method is same but $n = 4, r = 6$, so the answer is $C_6^^9 = 84$.
+\item Let the questions contain $x_1, x_2, \ldots, x_8$ marks, then, from question $x_1 + x_2 + \cdots + x_8
+  = 30$, where $x-1, x_2, \ldots, x_8\geq 2$.
+
+  $\Rightarrow y_1 + y_2 + \cdots + y_8 = 14$, where $y_1 = x_1 - 2$, and so on.
+
+  Required number is no.\ of solutions of above equations $= C_8^^{n + r - 1} = C_{14}^^{21} = 116,280$.
+\item Total marks is $3\times50 + 100 = 250$, and the student must score $60\%$ i.e. $150$ marks.
+
+  Required number = coeff. of $x^{150}$ in $(1 + x + \cdots + x^{50})^3(1 + x + \cdots + x^{100}) =$
+  coeff. of $x^{150}$ in $\left(\frac{1 - x^{15}}{1 - x}\right)^3\frac{1 - x^{101}}{1 - x} =$ coeff. of
+  $x^{150}$ in $(1 - x^{51})^3(1 - x^{101})(1 - x)^{-4}= $ coeff. of $x^{150}$ in $(1 - 3x^{51} + 3x^{102} -
+  x^{101})(1 - x)^{-4}$ (leaving powers greater than $160$)
+
+  $=$ coeff.of $x^{150}$ in $(1 - x)^{-4} - 3.$coeff. of $x^{99}$ in $(1 - x)^{-4} + 3.$coeff. of $x^{48}$
+  in $(1 - x)^{-4} -$ coeff. of $x^{49}$ in $(1 - x)^{-4}$
+
+  $= C_{150}^^{153} - 3.C_{90}^^{102} + 3.C_{48}^^{51} - C_{49}^^{52} = 110,556$.
+\item Given, $x_1 + x_2 + \cdots + x_k = n$. Let $y_1 = x_1 - 1, y_2 = x_2 - 2, \ldots, y_k = x_k - k$, then
+  $y_1 + y_2 + \cdots + y_k = n - (1 + 2 + \cdots + k) = n - \frac{k(k + 1)}{2} = m$.
+
+  Then no. of solutions $\displaystyle = C_m^^{m + k - 1} = \frac{\left(n + k - \frac{k(k + 1)}{2} -
+    1\right)!}{\left(n - \frac{k(k + 1)}{2}\right)!(k - 1)!}$.
+\item Given $x + y + z + w = 29$, where $x\geq 1, y\geq 2, \geq 3, w\geq 0$. Putting $p = x - 1, q = y - 2,
+  r = z - 3$,
+
+  $p + q + r + w = 23$, where $p, q, , r, w\geq 0$.
+
+  Following like previous problems, required no. $= C_{23}^^{26} = 2,600$.
+\item {\bf Method I:}
 \stopitemize
