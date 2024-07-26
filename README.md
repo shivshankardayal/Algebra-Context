@@ -27,3 +27,7 @@ If you do not want to build then you can download a built copy from https://asht
 The link is at home page or simply click https://www.ashtavakra.org/A%20Variable%20in%20Algebra.pdf
 
 Note that this build will almost always lag the sources till we reach a stable release.
+
+## LICENSE
+All the files in this repository are licensed under GNU FDL 1.3 or later. The `TeX` sources are
+present in the root folder. In the built PDF it is appended at the end.
