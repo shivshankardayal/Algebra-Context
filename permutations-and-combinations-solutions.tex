@@ -1469,7 +1469,105 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
 
   Clearly, $0\leq a\leq 8$. If $a = k$, then $b + c + d = 25 - 3k$.
 
-  No. of non-negative solutions of this equation is $C_{25 - 3k}^^{27 - 3k} = C_2^^{27 - 3k}$
+  No. of non-negative solutions of this equation is $C_{25 - 3k}^^{27 - 3k} = C_2^^{27 - 3k} =
+  \frac{3}{2}(3k^2 - 53k + 234)$
 
-  $\therefore$
+  $\therefore$ Required numbers $= \frac{3}{2}\sum_{k = 0}^k(3k^2 - 53k + 234) = 1215$.
+\item Given $a + b + c + d = 20,$ where $a, b, c, d \geq 1$. Let us assume that $a < b < c < d$. Also let,
+  $x = a, y = b - a, z = c - b, w = d - c \therefore a = x, b = y + x, c = x + y + z, d = x + y + z + w$
+
+  $\therefore 4x + 3y + 2z + w = 20. \therefore $ Sum of minimum values of $4x, 3y, 2z$ and $w = 4 + 3 + 2 +
+  1 = 10$.
+
+  Required number $=$ number of positive unequal integral solutions of above equation
+
+  $=$ coeff. of $x^{10}$ in $(1 - x^4)^{-1}(1 - x^3)^{-1}(1 - x^2)^{-1}(1 - x)^{-1} = $ coeff. of $x^{10}$
+  in $[(1 + x^4 + x^8)(1 + x^3 + x^6 + x^9)(1 + x^2 + x^4 + \cdots + x^{10})(1 + x + x^2 + \cdots +
+    x^{10})]$(leaving terms greater than $x^{10}$)
+
+  $=$ coeff. of $x^{10}$ in $[(1 + x^3 + x^4 + x^6 + x^7 + x^8 + x^9 + x^{10})(1 + x + 2x^2 + 2x^3 + 3x^4 +
+    3x^5 + 4x^6 + 4x^7 + 5x^8 + 4x^9 + 6x^{10})] = 23$
+
+  But $a, b, c, d$ can be arranged in $4!$ ways among themselves. Thus, total no. of unique solutions is
+  $23\times4! = 552$.
+\item Any no. between $1$ and $1,000,000$ must be of less than seven digits. Thus, $a_1 + a_2 + a_3 + a_4 +
+  a_5 + a_ 6 = 18$, where $a_1, a_2, \ldots, a_5\in{0, 1, 2, \ldots, 9}$, and the number is of the form
+  $a_1a_2a_3a_4a_5a_6$.
+
+  $\therefore$ Required number $=$ coefficient of $x^{18}$ in $(1 + x + x^2 + \cdots + x^9)^6 =$ coeff. of
+  $x^{18}$ in $\left(\frac{1 - x^{10}}{1 - x}\right)^6$
+
+  $=$ coeff. of $x^{18}$ in $(1 - x^{10})^6(1 - x)^{-6} =$ coeff. of $x^{18}$ in $(1 - 6x^{10})(1 -
+  x)^{-6}$(leaving out powers greater than $x^{18}$)
+
+  $= C_{18}^^{6 + 18 - 1} - 6.C_8^^{6 + 8 - 1} = 25,927$.
+\item Required number $=$ coefficient of $x^n$ in $(1 + x + x^2 + \cdots + x^n)^2(1 + x)^n =$ coeff. of
+  $x^n$ in $\left(\frac{1 - x^{n + 1}}{1 - x}\right)^2(1 + x)^n =$ coeff. of $x^n$ in $(1 - 2x^{n + 1} +
+  x^{2n + 2})(1 - x)^{-2}(1 + x)^n =$ coeff. of $x^n$ in $(1 - x)^{-2}(1 + x)^n$(leaving powers greater than
+  $n$)
+
+  $=$ coeff. of $x^n$ in $(1 - x)^{-2}{2 - (1 - x)}^n =$ coeff. of $x^n$ in $(1 - x)^{-2}[2^n - C_1^^n2^{n -
+  1}(1 - x) + C_2^^n2^{n - 2}(1 - x)^2 - \cdots + (-1)^nC_n^^n(1 - x)^n] =$ coeff. of $x^n$ in $[2^n(1 -
+    x)^{-2} - C_1^^n2^{n - 1}(1 - x)^{-1}]$(other terms will not contain $x^n$)
+
+  $= 2^n.C_n^^{2 + n - 1} - C_1^^n.2^{n - 1}C_n^^{1 + n - 1} = 2^{n - 1}(2n + 2)$.
+\item No. of ways in which one crew out of $3$ can be arranged on the steering is $P_1^^3$.
+
+  Since $2$ particular sailors are always to remain on bow side, therefore, $2$ more sailors for bow side
+  can be selected out of remaining $6$ sailors in $C_2^^6$, and $4$ sailors for stroke side can be selected
+  out of remaining $4$ in $C_4^^4$ ways.
+
+  Now $4$ sailors on bow side can be arranged among themselves in $4!$ ways. Again $4$ sailors on stroke
+  side can be arranged among themselves in $4!$ ways.
+
+  $\therefore$ Required no. $= P_1^^3.C_2^^6.4!4! = 25,920$.
+\item Total no. of letters is $11$. E and N occurs thrice, D occurs twice, and rest occur once.
+
+  {\bf Case I:} When three letters are identical, and remaining two are identical. We can select three
+  E\symbol[rightquote]s and two N\symbol[rightquote]s or three E\symbol[rightquote]s and two
+  D\symbol[rightquote]s or three N\symbol[rightquote]s and two E\symbol[rightquote]s or three
+  N\symbol[rightquote]s and two D\symbol[rightquote]s. Thus, there are total $4$ ways.
+
+  {\bf Case II:} When three letters are identical, and remaining two are different. Letters selected can be
+  three E\symbol[rightquote]s and two out of I, N, D, P, T or three N\symbol[rightquote]s and two out of I,
+  E, D, P, T.
+
+  No. of ways to select is $1\times C_2^^5 + 1\times C_2^^5 = 20$.
+
+  {\bf Case III:} When a two letters are identical, and there are two such letters, and the fifth letter is
+  different. Letter selected can be two E\symbol[rightquote]s, two N\symbol[rightquote]s, and one out of I,
+  D, P, T or two E\symbol[rightquote]s, two D\symbol[rightquote]s, and one out of I, N, P, T or two
+  N\symbol[rightquote]s, two D\symbol[rightquote]s, and one out of I, E, P, T.
+
+  No. of ways to make these selections is $3\times C_1^^4 = 12$.
+
+  {\bf Case IV:} When two letters are same, and remaining three are different. Letters selected can be two
+  E\symbol[rightquote]s and three out of I, N, P, D, T or two N\symbol[rightquote]s and three out of I, E,
+  P, D, T or two D\symbol[rightquote]s and three out of I, E, P, N, T.
+
+  No. of ways to make these selections is $3\times C_3^^5 = 30$.
+
+  {\bf Case V:} When all five letters are different. No. of ways to make these selections is $C_5^^6 = 6$.
+
+  Adding all these we get $72$ as the answer.
+
+  {\bf Second Method:} Previous method is direct, however, for bigger and more complex problems it becomes
+  tedious.
+
+  Required number $=$ coeff. of $x^5$ in $(1 + x + x^2 + x^3)^2(1 + x + x^2)(1 + x)^3 =$ coeff. of $x^5$ in
+  $(1 + x^2 + x^4 + x^6 + 2x + 2x^3 + 2x^3 + 2x^4 + 2x^5)(1 + x + x^2)(1 + x)^3$
+
+  $=$ coeff. of $x^5$ in $(1 + 2x + 3x^2 + 4x^3 + 3x^4 + 2x^5)(1 + x + x^2)(1 + 3x + 3x^2 + x^3) =$
+  coeff. of $x^5$ in $(1 + 2x + 3x^2 + 4x^3 + 3x^4 + 2x^5)(1 + 4x + 7x^2 + 7x^3 + 4x^4 + x^5) = 1 + 8 + 21 +
+  28 + 12 + 2 = 72$.
+\item Here a occurs twice, l thrice, and p, r, e once.
+
+  No. of combinations $=$ coeff. of $x^4$ in $(1 + x + x^2 + x^3)(1 + x + x^2)(1 + x)^3 =$ coeff. of $x^4$
+  in $(1 - x)^{-5}(1 - x^2)^3(1 - x^3)(1 - x^4) = 22$
+
+  No. of permutations $=$ coeff. of $x^4$ in $4!\left(1 + x + \frac{x^2}{2!} + \frac{x^3}{3!}\right)\left(1 + x +
+  \frac{x^2}{2!}\right)(1 + x)^3$
+
+  $= 286$.
+\item L.H.S. $= \displaystyle\sum_{n = 1}^n(n^2 + 1)n! = (1^2 + 1).1! + (2^2 + 1).2! + \cdots + (n^2 + 1). n!$
 \stopitemize
