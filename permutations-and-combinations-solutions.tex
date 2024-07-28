@@ -2018,4 +2018,162 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
   \item All $n$ elements are in $P_1\cup P_2\cup \ldots \cup P_m$ i.e. no.\ of ways is $(2^m - 1^m)^n$.
   \item All $n$ elements are not in $P_1\cap P_2\cap \ldots \cap P_m$ i.e. no.\ of ways is $(2^m - 1^m)^n$.
   \stopitemize
+\item No.\ of possible choices are $(3,1,1),(1,3,1),(1,1,3),(2,2,1),(2,1,2),(1,2,2)$ where each number
+  represents no. of choices from a paper.
+
+  For $(3, 1, 1)$ no.\ of choices $= C_3^^5\times C_1^^5\times C_1^^5 = 250$.
+
+  For three such sets no.\ of choices $= 750$.
+
+  For $(2, 1, 2)$ no.\ of choices $= C_2^^5\times C_2^^5\times C_1^^5 = 500$.
+
+  For three such sets no.\ of choices $= 1,500$.
+
+  $\therefore$ Total no.\ of choices in which the questions can answered $= 2,250$.
+\item The product will be divisible by $3$ if one of the numbers is divisible by $3$.
+
+  {\bf Case I:} When one of the numbers is divisible by $3$.
+
+  Total no.\ of ways $= 33\times 67 = 2,211$
+
+  {\bf Case II:} When both the numbers are divisible by $3$.
+
+  Total no.\ of ways $= C_2^^{33} = 528$.
+
+  Thus, total no.\ of ways of selecting two numbers is $2,211 + 528 = 2,739$.
+\item No.\ of ways of choosing two husbands $= C_2^^5 = 10$. After selecting two husbands, we have $3$ wives
+  to choose from. No. of ways of choosing two wives out of three is $C_2^^3 = 3$.
+
+  However, wives can be part of either side, thus, total no.\ of ways $= 10\times3\times2 = 60$.
+\item The line which is parallel to nn concurrent line has to be part of all triangles. Also, the line which
+  is parallel to it will be part of no triangle. Thus, total no. of possible triangles $= C_2^^{n - 1}$.
+\item Total no. of points of intersection $= C_2^^n = m$(say). If these points are not collinear then total
+  no. of triangles formed $= C_3^^m$.
+
+  One line will have $n - 1$ collinear points. These lines will not form any triangle among
+  themselves. Thus, no.\ of ways to select $3$ out of them $C_2^^{n - 1}$.
+
+  However, there are $n$ such lines, therefore, no.\ of triangles, which will not be formed is $n.C_2^^{n -
+    1}$.
+
+  Thus, required answer $= C_3^^m - n.C_3^^{n - 1}$.
+\item There can be $3, 4$ or $5$ bowlers in the team.
+
+  Thus, total no.\ of ways of selecting team $= C_3^^5\times C_8^^{10} + C_4^^5\times C_7^^{10} +
+  C_5^^5\times C_6^^{10}$.
+\item From each bag $1, 2, 3, \ldots, m$ balls can be selected.
+
+  No.\ of ways selecting $1$ ball from both the bags $= C_1^^m\times C_1^^m = \left(C_1^^m\right)^2$.
+
+  No.\ of ways selecting $2$ ball from both the bags $= C_2^^m\times C_2^^m = \left(C_2^^m\right)^2$.
+
+  $\cdots$
+
+  No.\ of ways selecting $m$ ball from both the bags $= C_m^^m\times C_m^^m = \left(C_m^^m\right)^2$.
+
+  $\therefore$ Total no.\ of ways $= \left(C_1^^m\right)^2 + \left(C_2^^m\right)^2 + \left(C_3^^m\right)^2 +
+  \cdots + \left(C_m^^m\right)^2 = C_m^^{2m} - 1$.
+\item There can be $5, 6, 7$ or $8$ men in the committee. So no.\ of ways to form the committee is
+  $C_5^^8\times C_7^^9 + C_6^^8\times C_6^^9 + C_7^^8\times C_5^^9 + C_8^^8\times C_4^^9$.
+
+  For women to be in majority there must be at least $7$ women, which means $5$ men, and only one such
+  committee is possible. No.\ of such committees is $_5^^8\times C_7^^9$.
+
+  For men to be in majority there must be at least $7$ men. No.\ of such committees is $C_7^^8\times C_5^^9
+  + C_8^^8\times C_4^^9$.
+\item Let the distance between lines be $1$ unit. For squares with side $1$ unit: Along $m$ horizontal lines
+  $m - 1$ squares can be formed, and along $n$ vertical lines $n - 1$ squares can be formed. Thus, total
+  no.\ of such squares is $(m - 1)(n - 1)$.
+
+  For squares of $2$ units, no.\ of such squares is $(m - 2)(n - 2)$.
+
+  Since $m < n$, total no.\ of squares is $\displaystyle = \sum_{i = 1}^^{m - 1}(m - i)(n - i) =
+  \sum_{i=1}^^{m - 1}[mn - (m + n)i + i^2]$
+
+  $= mn(m - 1) - (m + n)\frac{m(m - 1)}{2}  +\frac{m(m - 1)(2m - 1)}{6} = \frac{1}{6}m(m - 1)[6n - 3(m +
+    n) + 2m - 1] = \frac{1}{6}m(m - 1)(2n - m  - 1)$.
+\item This problem is same as previous problem, and has same answer.
+\item Total no.\ of ways of dividing $3n$ elements in three groups which contain equal no.\ of elements
+  $\displaystyle= \frac{3n!}{3!(n!)^3}$.
+\item No.\ of ways in which $50$ different things can be divided $5$ sets three of them having $12$ things
+  and two of them having $7$ things each $= \frac{50!}{(12!)^3(7!)^23!2!}$.
+\item No.\ of ways of distributing $n$ things in groups such that they contain $a, b, c, \ldots, k$ things
+  is $\frac{n!}{a!b!c!\ldots k!}$, which is an integer.
+\item $\frac{(n^2!)}{(n!)^{n + 1}}$ can be rewritten as $\frac{(n^2)!}{n!(n!)^n}$, which is distributing
+  $n^2$ different things in $n$ groups such that each group contains $n$ things.
+\item No.\ of ways of dividing $n$ different things $a$ groups each containing $b$ things $=
+  \frac{n!}{(b!)^aa!}$, which is an integer. Thus, $(n - 1)!$ is divisible by both $a$ and $b$.
+\item No.\ of ways dividing $kn$ different things in $k$ groups each containing $n$ things is
+  $\frac{(kn)!}{k!(n!)^k}$, which is an integer.
+\item Let $r = 20, n = 5$, then required number $= C_r^^{n + r - 1} = C_{20}^^{24}$.
+\item $C_r^^{n + r - 1}$.
+\item Given, $x, y, z\geq 1$, and $x + y + z = n$. Let $a = x - 1, b = y - 1, c = z -1$, then $a + b + c = n
+  - 3$, where $a, b, c\geq 0$.
+
+  No.\ of solutions of the equation $a + b + c = n - 3$ is $C_n^^{n + 3 - 1} = C_n^^{n + 2} = C_2^^{n + 2}$.
+\item $x + y + z = 0\;\forall x, y, z\geq -5$ can be rewritten as $a + b + c = 15\;\forall a, b, c\geq
+  0$. Thus, no.\ of solutions of the above equation $C_2^^{15 + 3 - 1} = 136$.
+\item Required answer is coeff. of $x^{3n}$ in $\left(1 + x + x^2 + \cdots + x^n\right)^3\left(1 + x + x^2 + \cdots +
+  x^{2n}\right)$
+
+  $= \left(1 - x^{n + 1}\right)^3\left(1 - x^{2n + 1}\right)(1 - x)^{-4} = \left(1 - 3x^{n + 1} + 3x^{2n + 2} -
+  x^{3n + 3}\right)\left(1 - x^{2n + 1}\right)\left(1 + C_1^^4x + C_2^^5 x^2 + \cdots + C_3^^{n + 3} +
+  \cdots \infty\right)$
+
+  $= C_3^^{3n + 3} - 3.C_{3}^^{2n + 2} + 3.C_3^^{n + 1} - C_3^^{n + 2} = \frac{n + 1}{6}.(5n^2 + 10n + 6)$.
+\item Here $n = 10, r = 3$ so no. of non-negative solutions is $C_2^^9 = 36$.
+\item Clearly, $0\leq x\leq 8$. If $x = k$, then $y + z = 24 - 3k$.
+
+  No.\ non-negative integral solutions of the above equation $= C_{24 - 3k}^^{2 + 24 - 3k - 1} = C_1^^{25 -
+    3k} = 25 - 3k$.
+
+  $\therefore$ Required number $\displaystyle= \sum_{k=0}^8(25 - 3k) = 225 - 108 = 117$
+\item Given, $w + x + y + z = 29$, where $x\geq 1, y\geq 2, z\geq 3, w\geq 0$. Let $a = x - 1, b = y - 2, c
+  = z - 3$
+
+  $\Rightarrow w + a + b + c = 23$. Hence, total no.\ of solutions $= C_{4 - 1}^^{23 + 4 - 1} = 2,600$.
+\item No.\ of non-negative solutions of the equation $a + b + c + d = 20$ is $C_{4 - 1}^^{20 + 4 - 1} =
+  C_3^^{23} = 1,771$.
+\item Possible equations are $x_1 + x_2 + \cdots + x_k = 0, 1, 2, 3, \ldots, n$, which has no.\ of solutions
+  $1 = C_0^^{k - 1} = C_0^^k, k = C_1^^k, C_2^^{k + 1}\ldots, C_n^^{n + k - 1}$.
+
+  Now, applying $C_r^^n + C_{r + 1}^^n = C_{r + 1}^^{n + 1}$, repeatedly, we have $C_n^^{n + k}$ as the
+  answer.
+\item $x + y = \frac{10 - z}{2} \therefore x + y \leq 10$. Let $x + y + t = 10$, then $x, y, t\geq 0$
+
+  $\therefore$ Required numbers $= C_{10}^^{12} = C_2^^{12} = 66$.
+\item {\bf Case I:} We consider set of $2$ numbers. Let the numbers be $a$ and $b$.
+
+  Given, $\frac{a + b}{2} = 60 \Rightarrow a + b = 120$. Both $a$ and $b$ cannot be $60$, because $60$ cannot
+  be used twice. Let $0\leq a\leq 59$, and $61\leq b\leq 120$.
+
+  Total no.\ of ways in which $a$ can be chosen $= 60$. Value of $b$ depends on chosen value of $a$. Thus,
+  total no.\ of ways of choosing two numbers is $60$.
+
+  {\bf Case II:} We consider set of $3$ numbers. Let the numbers be $a, b$ and $c$. Given, $\frac{a + b +
+    c}{3} = 60 \Rightarrow a + b + c = 180$
+
+  {\bf Case a:} Let $0\leq a\leq 59, 0\leq b\leq 59$, and $c\geq 60$.
+
+  $a$ can be chosen in $60$ ways, and $b$ can be chosen in $59$ remaining ways. Value of $c$ will depend on
+  values of $a$ and $b$. No.\ of ways of choosing $a, b, c = 60\times59 = 3,540$.
+
+  {\bf Case b:} $a = 60, b + c = 120$. Like {\bf case I}, the no.\ of ways to select $a, b, c$ is $60$.
+
+  {\bf Case c:} $61\leq a\leq 90, 61\leq b\leq 90$ and $c < 60$.
+
+  $a$ and $b$ can be selected in $30\times29 = 870$ ways. $c$ depends on $a$, and $b$.
+
+  $\therefore$ Total no.\ of ways of making selection is $4,530$.
+\item There are $11$ letters, \quote{}S comes twice, and others once. Since we have to select \quote{T}, we
+  have $4$ letters to select.
+
+  {\bf Case I:} $2$ S, and $2$ others. No.\ of ways to select $C_2^^2.C_2^^8 = 28$.
+
+  {\bf Case II:} No.\ of ways of selecting $1$ S, and $3$ others $C_3^^8 = 56$.
+
+  {\bf Case III:} No.\ of ways of selecting no $S$ $C_4^^8 = 70$.
+
+  Thus, total no.\ of ways of making the required word is $154$.
+\item
 \stopitemize
