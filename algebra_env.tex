@@ -4,7 +4,7 @@
    intent={ISO Coated v2 (ECI)},
    profile={sRGB.icc,default_gray.icc}]
   %\mainlanguage[en] % Main language = English
-  \setupbodyfont[9pt] % The document's main (body) font
+  \setupbodyfont[10pt] % The document's main (body) font
   \setupmathematics[autopunctuation=yes]
 
   % Page layout
@@ -25,9 +25,9 @@
   \usemodule[tikz]
   \usemodule[newmat]
   \setuppapersize[B5]
-  \setupexternalfigures [directory=images, location=global] % Image directory
+  \setupexternalfigures [directory=images, location=global]
 
-  \setupwhitespace[big] % Larger vertical space
+  \setupwhitespace[big]
   \def\startequation{%
     \placeformula
     \startformula}
@@ -40,13 +40,11 @@
   \expandafter\def\csname stopequation*\endcsname{%
     \stopformula}
 
-  %\setupitemize [indenting=none] % First line of paragraphs not indented
-  %\setupitemize [color=maincolor]
-  \setupcaptions [headstyle=\bfx, style=\tfx] % Style of table and image titles
+  \setupcaptions [headstyle=\bfx, style=\tfx]
 
-  \definecolor [maincolor] [r=,g=.5,b=.7] % Title colour
+  \definecolor [maincolor] [r=,g=.5,b=.7]
 
-  \definecolor [purple] [r=0,g=0.5,b=.7] % Cover colour
+  \definecolor [purple] [r=0,g=0.5,b=.7]
 
   % Writing commands and code snippets
   \setuptype [color=maincolor]
@@ -74,11 +72,6 @@
   % Empty initial footers
   \setupfootertexts[]
 
-  % CONFIGURATION OF PARTS, CHAPTERS, SECTIONS, ETC.
-
-  % This snippet defines a footer with page numbers. A name is assigned
-  % to it, and then, when section commands are configured, this name is
-  % assigned to the first page of part and chapter.
   \definetext[ChapterFirstPage]
     [footer]
     [pagenumber]
@@ -95,13 +88,12 @@
       header=high,
       footer=ChapterFirstPage,
     ]
-
   \setuphead
     [title, chapter]
     [
       style={\switchtobodyfont[20pt, ss]\bf},
       align=flushright,
-      before={\blank[big, force]\hrule},
+      before={\blank[big, force]},
       after={\blank[2*big]},
       color=maincolor,
       sectionsegments=2:2,
@@ -111,7 +103,6 @@
       after=\hrule\vskip .5cm,
       text=empty
     ]
-
   \setuphead
     [section, subject]
     [
