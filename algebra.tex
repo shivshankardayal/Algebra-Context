@@ -4,13 +4,12 @@
 
   % Date of the last time modifications were introduced:
   \def\RevisionDate{\date}
-
   \placebookmarks[part, chapter, section, subsection, subsubsection]
   \component cover_page.tex
-  \setupheadertexts
-    [\tfx Preface]
-    [\tfx\pagenumber]
-  \component preface.lmtx
+  %\setupheadertexts
+  %  [\tfx Preface]
+  %  [\tfx\pagenumber]
+  \component preface.tex
   % First Part: What is ConTeXt
   \startpart
      [title=Theory and Problems]
@@ -92,7 +91,7 @@
 
      \setupheadertexts
        []
-       [{\tfx\hbox to 2em{\hss\pagenumber}}]
+       [{\tfx\hbox to 2em{\hss\userpagenumber}}]
 
   %     % We set chapter counter to zero.
        \setupheadnumber[chapter][0]

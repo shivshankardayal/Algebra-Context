@@ -106,10 +106,11 @@
   \starttitle
     [title={Table of Contents}]
 
+    \setcounter[userpage][1]
 %     % Header
-    \setupheadertexts
-      [\tfx Table of Contents]
-      [\tfx\pagenumber]
+%    \setupheadertexts
+%      [\tfx Table of Contents]
+%      [\tfx\userpagenumber]
 
     % Format of entries in the ToC
     \setuplist
@@ -147,7 +148,7 @@
     % and insert it in the context of smaller interline space
     \start
       \setupwhitespace[none]
-      \switchtobodyfont[9pt]
+      \switchtobodyfont[10pt]
       \setupinterlinespace[small]
       \placeToc
     \stop

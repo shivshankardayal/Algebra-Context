@@ -1,5 +1,9 @@
 # Algebra-Context
 
+## Help wanted
+If you can create new and difficult problems to the topics then please help by
+doing so. Please create a PR or send me text of the problem and I will add it.
+
 ## This book is written as a way to give back to the world for what I have received.
 
 You need ConTeXt installed for this. I have used standalone version of ConTeXt on Linux.

@@ -2310,4 +2310,53 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
 \item Partitioning $S$ according to given condition we have following for $A, \{1, 2, 4, 8\}, \{3, 6\},$ $\{5,
   10\}, \{7\}, \{9\}$. Now for each of these we have $n + 1$ choices if $n$ is the no.\ of elements because
   once we include a no.\ the larger one must be included. Thus, total no.\ of subsets is $5.3.3.2.2 = 180$.
+\item Each card can be dealt to two persons in two ways. Thus, $n$ cards can be dealt in $2^n$
+  ways. However, in two of the ways each person will receive no card. Thus, total no.\ of ways of dealing
+  cards in required manner is $2^n - 2 = 2(2^{n - 1} - 1)$.
+\item We can choose $0\;A$ to $4\;A$ i.e. in $5$ ways. Similarly, we can choose $B$ in $4$ ways, $C, D, E$ in
+  $2$ ways. Thus, total no.\ of ways is $5\times4\times2^3 = 160$.
+
+  However, in one of these ways no letter is selected. Thus, required answer is $160 - 1 = 159$.
+\item We can have a factor by picking zero \quote{a}, and up to seven \quote{a} i.e. in $8$ ways. Similarly,
+  $b$ can be chosen in $5$ ways, and so on.
+
+  Thus, total no. of ways is $8\times\5\times4\times2^3 = 1,280$. However, in one way all are selected, and in
+  another none(factor is $1$ in this case). Thus, required answer is $1,280 - 2 = 1,278$.
+\item Following like previous problem, $b_i$ can be chosen in $p_i + 1$ ways.
+  Thus, total no.\ of positive divisors is $\displaystyle\prod_{i = 1}^n(p_i + 1)$.
+\item First square can be selected in $64$ ways. Once we have selected a square we cannot choose from same
+  row and column. Thus, the second square can be chosen from remaining seven rows and seven columns
+  i.e. from $49$ squares.
+
+  Thus, total no.\ of ways chosing squares is $64\times 49 = 3,136$. However, in choosing these squares there are
+  duplicates in the sense that squares are chosen twice. Thus, required answer is $\frac{3,136}{2} = 1,568$.
+\item Let $A = \{1, 2, 3, \ldots, 2n - 1, 2n\}$. If we pick $1$ as one of the elements of the pair then the
+  second can be obtained in $2n - 1$ ways. Similarly, if we pick $2$ as one of the elements of the pair then
+  second can be obtained in $2n - 3$ ways because $2$ elements have been already chosen for first pair, and
+  so on.
+
+  Thus, number of pairings is $(2n - 1)(2n - 3)\cdots 3.1$.
+\item Let $A$ be a onsisting of $5$ concyclic points, and $B$ be the set consisting of $7$ points.
+
+  {\bf Case I:} Circle passes through $3$ points of $B$. Number of circles is $C_3^^7$.
+
+  {\bf Case II:} Circle passes through $2$ points of $B$, and $1$ point of $A$. Number of circles is
+  $C_2^^7.C_1^^5$.
+
+  {\bf Case III:} Circle passes through $1$ point of $B$, and $2$ points of $A$. Number of circles is
+  $C_1^^7.C_2^^5$.
+
+  {\bf Case IV:} Circle passes through no points of $B$. Number of circles is $1$.
+
+  Thus, total no.\ of circles is $211$.
+\item From $37$ lines we get no. of intersections as $C_2^^{37}$. However, for $13$ lines we get one point
+  $A$ instead of $C_2^^{13}$, and similarly for $B$, we get one point instead of $C_2^^{11}$.
+
+  Hence, total no. of points of intersection is $C_2^^{37} - C_2^^{13} - C_2^^{11} + 2 = 535$.
+\item If we pick $2$ points from $m$ points then third can be picked in $n$ ways giving us $C_2^^m\times n$
+  triangles. If we pick $2$ points from $n$ points then third can be picked in $m$ ways giving us
+  $C_2^^n\times m$ triangles.
+
+  Thus, total no.\ of triangles is $n.C_2^^m + m.C_2^^n = \frac{m^2n - mn + mn^2 - mn}{2} = \frac{mn(m + n -
+    2)}{2}$.
 \stopitemize
