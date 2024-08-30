@@ -1,5 +1,5 @@
 % -*- mode: context; -*-
-\chapter{Permutations and Combinations}
+\chapter{Combinatorics}
 \startitemize[n, 1*broad]
 \item Given, $P_4^^n = 360 \Rightarrow n(n - 1)(n - 2)(n - 3) = 3\times 4\times 5\times 6\Rightarrow n = 6$.
 \item Given, $P_3^^n = 9240 \Rightarrow n(n - 1)(n - 2) = 20\times21\times22 \Rightarrow n = 22$.
@@ -2359,4 +2359,187 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
 
   Thus, total no.\ of triangles is $n.C_2^^m + m.C_2^^n = \frac{m^2n - mn + mn^2 - mn}{2} = \frac{mn(m + n -
     2)}{2}$.
+\item Since this is a regular polygon with odd no.\ of vertices no two of the vertices are places diagonally
+  opposite, so there are no right-angled triangles. Let \m{A} be the no.\ of acute angled triangles, and
+  \m{O} be the no.\  of obtuse angled triangles. To form a triangle we need to choose \m{3} vertices out of
+  \m{21} which can be done in \m{C_3^^{21} = 1330} ways. Since the triangles are either actue or obtuse, we
+  have \m{A + O = 1330}. Draw a diameter through point \m{P-1}. Now we consider point only on one side of
+  diameter including \m{P_1}. So we need to select \m{2} out of \m{10}. All these will be obtuse-angled
+  triangles. No.\ of such triangles on both side is \m{21*C_2^^{10} = 945}. Thus, no.\ of acute-angled
+  triangels is \m{A = 1330 - 945 = 385}.
+  \startplacefigure[location={left,none}]
+    \startMPcode
+      vardef polygon_with_side(expr n, s) =
+      save a, b, r; numeric a, b, r;
+      a * n = 360; a + 2b = 180; r = s * sind(b) / sind(a);
+      for i = 0 upto n-1: (0, r) rotated (a * i) -- endfor cycle
+      enddef;
+
+
+      path p; p = polygon_with_side(21, 12);
+      draw p;
+
+
+      pair m; numeric o, r;
+      m = origin; % median point of polygon
+      o = 10; % offset
+      r = abs(point 0 of p - m);  % radius
+
+      for i=1 upto 21:
+      draw point i of p withpen pencircle scaled dotlabeldiam;
+      label(textext("$P_{" & decimal i & "}$"), (1 + o / r)[m, point i of p]);
+      endfor
+      pair q;
+      q = point 1 of p;
+      pair r;
+      r = q - origin;
+      pair s;
+      s = origin - r;
+      draw q -- s;
+      pair t;
+      t = point 5 of p;
+      pair u;
+      u = point 8 of p;
+      draw q -- t -- u -- cycle;
+      drawdot (0, 0) withpen pencircle scaled dotlabeldiam;
+      label.lft("$O$", (0,0));
+    \stopMPcode
+  \stopplacefigure
+  A triangle \m{P_iP_jP_k} is equilateral if these points are equispaced. Out of \m{21} points we have \m{7}
+  such triplets. Thus, we have only \m{7} equilateral triangles.
+
+  Consider the diameter \m{P_1OB}, where \m{B} is the point, where \m{P_1O} meets the polygon. If we have an
+  isosceles triangle at \m{P_1} as its vertex then \m{P_1B} is the altitude, and the base is bisected by
+  \m{P_1B}. This means that other two vertices are equally spaces from \m{B}. Clearly, there are \m{10} such
+  pairs of vertices giving us \m{10} isosceles triangles for each vertes. But one of these is equilateral so
+  we have \m{9} such triangles. For \m{21} points we will have \m{189} such isosceles triangles. Since we
+  can consider equilateral triangles as isosceles triangles, total no.\ of isosceles triangles is \m{189 + 7
+    = 196}.
+\item \m{S\cup T} has \m{r} elements. This means that out of \m{n} elements \m{r} elements are present in
+  either of \m{S} and \m{T} or in both. Thus, each element has \m{3} choices. No.\ of ways to select
+  elements for \m{S} and \m{T = 3^r}.
+
+  Remaining \m{n - r} elements have only \m{1} choice, and that is to be not in either of \m{S} and
+  \m{T}. Total no.\ of ways of selecting \m{n - r} elements is \m{1^{n - r} = 1}.
+
+  The \m{r} elements can be selected from \m{n} elements in \m{C_r^^n} ways.
+
+  Thus, total no.\ of ways is \m{C_r^n.3^r}.
+\item Given, \m{S = \overline{T}}. This means an element is present in either \m{P} or \m{Q}. Thus, for each
+  element we have \m{2} choices. Hence, total no.\ of ways to select is \m{2^n}.
+\item Let \m{U = \{a_1, a_2, \ldots, a_n\}} be a set of \m{n} elements. Let \m{S} be the set of all subsets
+  and \m{B} be the set of all binary sequences of \m{n} elements.
+
+  Let \m{A\in S}. Let \m{f:S\rightarrow B} be a function that associates a binary sequence with \m{B} as
+  follows: \m{a_i\in B}, iff \m{i}th term of sequence is \m{1}.
+
+  For example, subset \m{\{a_2, a_4, \ldots, a_{n - 1}\}} corresponds to binary sequence \m{010101\ldots10}.
+
+  Observe that for every subset \m{B}, there is a binary sequence of \m{n} terms, and for every binary
+  sequence of \m{n} terms as stated above, there is a subset \m{B} of \m{U}. Therefore, \m{f} is a bijection
+  between \m{S} and \m{B}. Hence, no.\ of subsets \m{=} no.\ of binary sequences \m{= 2^n}.
+\item Assign \m{h} for horizontal movement and \m{v} for vertical movement of \m{1} unit. One such path
+  would be \m{h, h, h, v, v, v, h, h, v, h}.
+
+  Note that there are \m{7} horizontal, and \m{6} vertical line segments, of one unit each, from \m{A} to
+  \m{B}.
+
+  Since for every path between \m{A}, and \m{B}, there is a sequence of \m{7 h}'s and \m{6 v}'s, and for
+  every sequence we have corresponding one path made up of horizontal and vertical lines. Therefore, there
+  is a bijection between the set of all paths from \m{A} to \m{B}, and the set of all sequences of \m{7 h}'s,
+  and \m{6 v}'s. Thus, number of paths from \m{A} to \m{B} \m{=} Number of sequences \m{=} Number of ways to
+  select \m{7} places to put \m{h} out of \m{13} different places \m{= C_7^^{13} = \frac{13!}{7!6!}}.
+
+  Number of path through \m{C =} Number of paths from \m{A} to \m{C} \times~Number of paths from \m{C} to
+  \m{B =} Number of ways to select \m{4} placces to put \m{h} out of \m{8} different places \times~Number of
+  ways to select \m{3} places to put \m{3} out of \m{5} dfferent places \m{= C_4^^8\times C_3^^5}.
+
+  Similarly, number of paths from \m{D} to \m{B = \frac{4!}{2!2!}}. Number of paths including \m{CD =
+    \frac{8!}{4!4!}.\frac{4!}{2!2!}}.
+\item A square chessboard is an \m{8\times8} board as shown.
+    \startplacefigure[location={left,none}]
+    \startMPcode
+      for i = 0 upto 8:
+          draw (i*10, 0) -- (i*10, 80);
+      endfor
+      for i = 0 upto 8:
+          draw (0, i*10) -- (80, i*10);
+      endfor
+      for i = 0 upto 2:
+          draw (i*10, -10) -- (i*10, -30);
+      endfor
+      for i = 0 upto 3:
+          draw (0, -i*10) -- (20, -i*10);
+      endfor
+      label("$1$", (5, -15));
+      label("$2$", (15, -15));
+      label("$3$", (5, -25));
+      label("$4$", (15, -25));
+
+      draw (30, -10) -- (60, -10) -- (60, -20) -- (30, -20) -- cycle;
+      draw (40, -10) -- (40, -20); draw (50, -10) -- (50, -20);
+      draw (70, -10) -- (80, -10) -- (80, -40) -- (70, -40) -- cycle;
+      draw (70, -20) -- (80, -20); draw(70, -30) -- (80, -30);
+    \stopMPcode
+  \stopplacefigure
+  For two sides to be common first we have \m{L} shaped possibilities. Consider the \m{2\times2} square
+  shown. In this case if we take \m{1, 2, 4} or \m{2, 4, 3} or \m{4, 3, 1} or \m{3, 1, 2} then we will have
+  one square whose two sides are common with others i.e. we will have \m{4} such squares. Now if we fit this
+  square block along two rows we will have \m{7} such blocks, and then \m{7} along columns. Thus, total no.\
+  of required squares would be \m{4\times7\times = 196}.
+
+  Now, the other possibility is a continuous block of three squares either horizontally or vertically as
+  shown. We will get one required square in the middle of the blocks. Along the rows and columns we can fit
+  \m{6} such blocks. Thus, no.\ of required squares \m{= 2\times 6\times\8 = 96}.
+
+  Thus, total no.\ of required squares is \m{292}.
+\item We will prove this by negation. Since we have to make \m{10} exact predictions this implies that we
+  have to make \m{10} wrong predictions. No.\ of ways to select \m{10} matches out of \m{20} is
+  \m{C_{10}^^{20}}. Now we can make mistake in \m{2} ways. Thus, total no.\ of ways of making mistakes is
+  \m{2^{10}}.
+
+  Thus, total no.\ of ways of making \m{10} exact correct predictions is \m{C_{10}^^{20}.2^{10}}.
+\item A forecast for a match can be done in \m{3} ways. So for five matches total no.\ of forecasts is
+  \m{3^5 = 243}. Following like previous problem total no.\ of making \m{0, 1, 2, 3, 4} and \m{5} errors is
+  \m{C_0^^5.2^0, C_1^^5.2, C_2^^5.2^2, C_3^^5.2^3, C_4^^5.2^4} and \m{C_5^^5.2^5}.
+\item The votes has to vote for at least \m{1} candidate and at most \m{n - 1} candidates. Here, \m{n} is
+  the number of candidates. For each candidate, the votes has \m{2} options: either vote for the candidate
+  or not vote for the candidate. So number of ways \m{= 2^n}. But we have to subtract \m{2} for two cases:
+  one when the voter does not vote for any candidate, and one when the voter votes for every candidate.
+
+  Hence, \m{2^n -2 = 62 \Rightarrow n = 6}.
+\item Every lamp can have two states: on or off. Thus, total no.\ of states is \m{2^{10} = 1024}. However,
+  in one of these cases all the lapms will be off, and the hall will not be illuminated.
+
+  Thus, no.\ of ways of illuminating the hall is \m{= 1024 - 1 = 1013}.
+\item We observe that last when India wins the last match the series is over. So first case is when India
+  wins all \m{5} matches, and there is only one way this can happen. Second case is when India loses one
+  match. In this case we exclude last match to get total no.\ of matches as \m{5}. Now we can choose to make
+  India win remaining \m{4} in \m{C_5^^4 = 1} way. Similarly, for remaining cases it would be \m{C_4^^6,
+    C_4^^7, C-4^^8}.
+
+  Adding these, we get \m{126} as desired answer.
+\item For each book \m{0} or more copies can be selected. So there are \m{p + 1} ways for each book. Thus,
+  for \m{n} books we have \m{p + 1}^n ways. But in one of these ways no book is selected.
+
+  Thus, total no. of selecting books is \m{(p + 1)^n - 1}.
+\item We have to have at least \m{2} students and at most we can have \m{n - 2} students in the team.
+
+  Thus, total no.\ of ways of selecting them is \m{C_2^^n + C_3^^n + C_4^^n + \cdots + C_{n - 2}^^n}.
+
+  We know that \m{C_0^^n + C_1^^n + C_2^^n + \cdots + C_n^^n = 2^n}, and thus, \m{C_2^^n + C_3^^n + C_4^^n +
+    \cdots + C_{n - 2}^^n = 2^n - C_0^^n - C_1^^n - C_{n - 1}^^n - C_n^^n = 2^n - 2n - 2}.
+\item No.\ of elements in \m{a_2, a_3, \ldots, a_{n + 1} = n}. We can choose \m{a_1 0} or more times up to
+  \m{m} times. Thus, no.\ of ways of choosing \m{a_1} is \m{m + 1}.
+
+  We can pick a combination of \m{a_1} with all others in \m{0} to \m{n} numbers, giving us a total of
+  \m{2^n}.
+
+  Thus, total no.\ of prime factors is \m{(m + 1)2^n}. However, one of these factors is \m{1}. Thus,
+  required no.\ of factors is \m{(m + 1)2^n - 1}.
+\item In a polygon \m{4} points make \m{2} sides and produce one point of intersection of \m{2}
+  diagonals. Thus, no.\ of points is \m{C_4^^n = 70 \Rightarrow n = 8}.
+
+  Thus, no.\ of diagonals is \m{C_2^^8 - 8 = 20}(\m{8} is subtracted because that is the no.\ of sides
+  formed when two points are joined).
 \stopitemize
