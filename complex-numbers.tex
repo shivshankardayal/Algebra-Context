@@ -164,22 +164,27 @@ as their counterparts will be zero.
 The modulus is given by the length of segment $OP$ which is equal to $OP=\sqrt{x^2+y^2}=|z|$. This, $|z|$ si the length of the
 $OP$. Given below is the graphical representation of the complex number.
 
-\placefigure[force]{Complex number in argand plane or complex plane.}{\hbox{\starttikzpicture
-      \draw[->] (-.5,0) -- (3,0);
-      \draw[->] (0,-.5) -- (0,3);
-      \draw (0, 3.5) node {$Y$};
-      \draw (3.5, 0) node {$X$};
-      \draw (2.5,0) -- (2.5,2.5);
-      \draw (0,0) -- (2.5, 2.5);
-      \draw (.5,0) arc(0:45:.5);
-      \draw (.7,.3) node{$\theta$};
-      \draw (1.5, 0.2) node {$x$};
-      \draw (2.7, 1.5) node {$y$};
-      \draw (3.4, 1.1) node {$OP=|z|$};
-      \draw (3.5, 0.7) node {$\arg(z)=\theta$};
-      \draw (2.5, 2.7) node{$P=x+iy$};
-\stoptikzpicture}}
-
+\startplacefigure[title=Complex number in argand plane or complex plane.]
+  \startMPcode
+    drawarrow (-0.5cm, 0) -- (3cm, 0);
+    drawarrow (0, -0.5cm) -- (0, 3cm);
+    label("$X$", (3.5cm, 0));
+    label("$Y$", (0, 3.5cm));
+    draw (2.5cm, 0) -- (2.5cm, 2.5cm);
+    draw (0, 0) -- (2.5cm, 2.5cm);
+    label("$\theta$", (0.7cm, 0.3cm));
+    label("$x$", (1.5cm, 0.2cm));
+    label("$y$", (2.7cm, 1.5cm));
+    label("$OP=|z|$", (3.4cm, 1.1cm));
+    label("$\arg(z)=\theta$", (3.5cm, 0.7cm));
+    label("$P = x + iy$", (2.5cm, 2.7cm));
+    vardef angle_mark(expr P, O, Q, r) =
+      fullcircle scaled 2r rotated angle (P - O)
+      shifted O cutafter (O -- Q)
+    enddef;
+    draw angle_mark((2.5cm, 0), (0, 0), (2.5cm, 2.5cm), 16);
+  \stopMPcode
+\stopplacefigure
 In the diagram, $\theta$ is known as the {\it argument} of $z$. This is nothing but angle made with positive direction
 (i.e. counter-clockwise) of real axis. Now, this argument is not unique. If $\theta$ is an argument of a complex number $z$ then,
 $2n\pi + theta$, where $n\in I$, where I is the set of integers. The value of argument for which $-\pi<\theta\leq \pi$ is called

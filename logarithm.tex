@@ -116,13 +116,20 @@ The logarithm series is given below:
 
 \startformula\log(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \ldots\stopformula
 
-\placefigure[force][fig:myfig]{Graph of $\log 2$.}{\hbox{\starttikzpicture
-    \draw [help lines] (0,-4) grid [step=1] (10,4);
-    \draw (0,0) -- (10,0);
-    \draw[->] (0, 0) -- (11, 0) node[right] {$x$};
-    \draw[->] (0, -3) -- (0, 5) node[above] {$\log x$};
-    \draw plot [domain=0.1:10,samples=1000] (\x,{log2(\x)});
-\stoptikzpicture}}
+\startplacefigure[title=Graph of $\log 2$.]
+\startMPcode
+draw function(1,"x", "log(x)/log(2)", .05, 10, .01) scaled 1cm;
+for i = 0 upto 10:
+    draw (i*cm, -5cm) -- (i*cm, 5cm) withpen pencircle scaled 0.05mm;
+endfor;
+for i = -5 upto 5:
+    draw (0, i*cm) -- (10cm, i*cm) withpen pencircle scaled 0.05mm;
+endfor;
+draw (0, -5cm) -- (0, 5cm) -- (10cm, 5cm) -- (10cm, -5cm) -- cycle;
+drawarrow (0, 0) -- (11cm, 0);
+drawarrow (0, 0) -- (0, 6cm);
+\stopMPcode
+\stopplacefigure
 
 So we can see that rate of increment of logarithm function decreases. Rate of increment of logarithm function is given by
 $\frac{1}{x}$ at any point $x$, as we will learn when we study Calculus and derivatives.

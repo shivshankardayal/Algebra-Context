@@ -2542,4 +2542,77 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
 
   Thus, no.\ of diagonals is \m{C_2^^8 - 8 = 20}(\m{8} is subtracted because that is the no.\ of sides
   formed when two points are joined).
+\item The plot of given lines is shown below:
+  \startplacefigure[location={left, none}]
+  \startMPcode
+    pair z, x, xn, y, yn;
+    x = (-3cm, 0);
+    xn = (3cm, 0);
+    y = (0, -1cm);
+    yn = (0, 5cm);
+    drawdblarrow x--xn;
+    drawdblarrow y--yn;
+    draw function(1,"x","-x",-2.5, 0.01,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","-x",.01, 0.5,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","x",-.5, 0.01,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","x",.01, 2.5,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","-x+1",-2, 0.01,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","-x+1",.01, 1,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","x+1",-1, 0.01,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","x+1",.01, 2,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","-x+2",-1.5, 0.01,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","-x+2",.01, 1.5,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","x+2",-1.5, 0.01,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","x+2",.01, 1.5,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","-x+3",-1, 0.01,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","-x+3",.01, 2,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","x+3",-2, 0.01,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","x+3",.01, 1,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","-x+4",-0.5, 0.01,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","-x+4",.01, 2.5,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","x+4",-2.5, 0.01,.01) xyscaled(1cm, 1cm);
+    draw function(1,"x","x+4",.01, 0.5,.01) xyscaled(1cm, 1cm);
+    def angletoright(expr P, Q) =
+      begingroup save ang;
+        ang := angle(P-Q);
+        if (ang <=-90) or (ang > 90): ang+180 else: ang fi
+      endgroup
+    enddef;
+    label.bot("y = x", origin) rotated angletoright((0, 0), (3cm, 3cm)) shifted 9/10[(0, 0),(3cm, 3cm)];
+    label.bot("y = x+1", origin) rotated angletoright((0, 1cm), (3cm, 4cm)) shifted 8/10[(0, 1cm),(3cm, 4cm)];
+    label.bot("y = x+2", origin) rotated angletoright((0, 2cm), (3cm, 5cm)) shifted 6.3/10[(0, 2cm),(3cm, 5cm)];
+    label.bot("y = x+3", origin) rotated angletoright((0, 3cm), (3cm, 6cm)) shifted 4.8/10[(0, 3cm),(3cm, 6cm)];
+    label.bot("y = x+4", origin) rotated angletoright((0, 4cm), (3cm, 7cm)) shifted 3/10[(0, 4cm),(3cm, 7cm)];
+    label.bot("y = -x", origin) rotated angletoright((0, 0), (-3cm, 3cm)) shifted 9/10[(0, 0),(-3cm, 3cm)];
+    label.bot("y = -x+1", origin) rotated angletoright((0, 1cm), (-3cm, 4cm)) shifted 8/10[(0, 1cm),(-3cm, 4cm)];
+    label.bot("y = -x+2", origin) rotated angletoright((0, 2cm), (-3cm, 5cm)) shifted 6.3/10[(0, 2cm),(-3cm, 5cm)];
+    label.bot("y = -x+3", origin) rotated angletoright((0, 3cm), (-3cm, 6cm)) shifted 4.8/10[(0, 3cm),(-3cm, 6cm)];
+    label.bot("y = -x+4", origin) rotated angletoright((0, 4cm), (-3cm, 7cm)) shifted 3/10[(0, 4cm),(-3cm, 7cm)];
+  \stopMPcode
+\stopplacefigure
+If you observe carefully, you will find that side of one square in the diagram is \m{\sqrt{0.5^2 + 0.5^2} =
+  \frac{1}{\sqrt{2}}}. So the diagonal would be \m{1}. However, we want squares with diagonal \m{2}. So we
+have to combine four squares into \m{1}. No.\ of such square is \m{9}.
+\vskip 3.5cm
+\item Total no.\ of triangles formed is \m{C_3^^8 = 56}. When two sides are common with octagon the no.\ of
+  triangles formed will be \m{8} as you can find by choosing any two adjacent sides of octagon and then
+  shifting them around octagon. When we pick one side with octagon we cannot choose the third vertex of
+  triangle with adjacent sides, thus, we will have only four points to choose from, and there are \m{8}
+  sides. So no.\ of such triangles is \m{8\times4 = 32}.
+
+  Thus, required no.\ of triangles is \m{56 - 8 - 32 = 16}.
+\item An intersection point requires four points on the circle. Thus, total no.\ of such points is \m{C_4^^9
+  = 126}.
+\item For each element of set \m{A} we can have \m{n} elements in set \m{B}. Thus, total no.\ of functions
+  would be \m{n^m}.
+\item The set is \m{A = \{2, 3, 5, 7, 11, 13, 17, 19, 23, 29\}} i.e. having \m{10} elements. We can form a
+  rational number of the form \m{\frac{p}{q}}. Thus, we can choose these numbers in \m{C_2^^{10}} ways. But
+  the rational number can be also of the form \m{\frac{q}{p}}. Thus, no.\ of rational numbers is
+  \m{C_2^^{10}\times2 = 90}. One of the rational numbers will be \m{1} when \m{p = q}.
+
+  Thus, total no.\ of rational numbers is \m{91}.
+\item In the subset we put \m{a_3} so now we have to choose \m{2} more elements out of remaining \m{n - 1}
+  elements of the given set.
+
+  This can be done in \m{C_2^^{n - 1}} ways.
 \stopitemize
