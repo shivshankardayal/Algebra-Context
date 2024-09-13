@@ -2592,7 +2592,7 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
 \stopplacefigure
 If you observe carefully, you will find that side of one square in the diagram is \m{\sqrt{0.5^2 + 0.5^2} =
   \frac{1}{\sqrt{2}}}. So the diagonal would be \m{1}. However, we want squares with diagonal \m{2}. So we
-have to combine four squares into \m{1}. No.\ of such square is \m{9}.
+have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 \vskip 3.5cm
 \item Total no.\ of triangles formed is \m{C_3^^8 = 56}. When two sides are common with octagon the no.\ of
   triangles formed will be \m{8} as you can find by choosing any two adjacent sides of octagon and then
@@ -2615,4 +2615,116 @@ have to combine four squares into \m{1}. No.\ of such square is \m{9}.
   elements of the given set.
 
   This can be done in \m{C_2^^{n - 1}} ways.
+\item Clearly, no.\ of \m{m} element subsets is \m{C_m^^n}. Now if we follow previous problem then no.\ of
+  subsets containing \m{a_4} is \m{C_{m - 1}^^{n - 1}}.
+
+  Given, \m{C_m^^n} = \m{k.C_{m - 1}^^{n - 1}\Rightarrow \frac{n!}{m!(n - m)!} = k.\frac{(n - 1)!}{(n - 1)!(m
+      - n)!} \Rightarrow n = mk}.
+\item Let no.\ of subsets is \m{C_0^^{2n + 1} + C-1^^{2n + 1} + C_2^^{2n + 2} + \cdots + C_n^^{2n + 1}
+  = N}.
+
+  From binomial theorem we know that \m{C_0^^{2n + 1} + C-1^^{2n + 1} + C_2^^{2n + 2} + \cdots + C_{2n +
+    }^^{2n + 1} = 2^{2n + 1}}. We also know that \m{C_r^^n = C_{n - r}^^n}.
+
+  \m{\therefore 2N = 2^{2n + 1} \Rightarrow N = 2^{2n}}.
+\item Total no.\ of subsets is \m{2^n}. Half of these will contain even no.\ of elements i.e. \m{2^{n - 1}}.
+\item When \m{x = n + 1; x, y} can be chosen in \m{n^2} ways. When \m{z = n; x, y} can be chosen in \m{(n -
+  1)^2} ways and so on.
+
+  Thus, total no.\ of ways is \m{1^2 + 2^2 + \cdots + n^2 = \frac{n(n + 1)(2n + 1)}{6}}.
+\item This is same as selecting \m{6} numbers from \m{1} to \m{9} (\m{0} is excluded because if zero is
+  selected, that makes it the least and should be paced at the first place that makes it a \m{5} digit
+  number) i.e. \m{C_6^^9 = 84}.
+\item If \m{y = n} then \m{x} can take \m{n - 1} values from \m{1} to \m{n - 1} and \m{z} can take \m{n + 1}
+  values from \m{0} to \m{n + 1}. \m{y} can vary between \m{2} to \m{9}.
+
+  Hence, required answer is \m{\displaystyle\sum_2^9(n - )(n + 1) = 276}.
+\item \m{x_1 < x_2 \leq x_3 < x_4 < x_5 \leq x_6} can be broken into four cases. These are \m{x_1 < x_2 <
+  x_3 < x_4 < x_5 < x_6, x_1 < x_2 = x_3 < x_4 < x_5 < x_6, x_1 < x_2 < x_3 < x_4 < x_5 = x_6,} and \m{x_1 <
+  x_2 = x_3 < x_4 < x_5 = x_6}.
+
+  Thus, required no.\ of numbers is \m{C_6^^9 + C_5^^9 + C_5^^9 + C_4^^9 = C_6^^{11}}.
+\item First we consider numbers starting with \m{12}. Rest of the \m{4} positions can be filled in \m{C_4^^7
+  = 35} ways. Next we consider \m{13}. In this case we can fill remaining places in \m{C_4^^6 = 15}
+  ways. Next we consider \m{14}, which gives us \m{C_4^^5 = 5} numbers. Next we choose \m{15}, which gives
+  us \m{C_4^^4 = 1} number. Next we have \m{23}, which gives us \m{C_4^^6 = 15}. Till now we have \m{71}
+  numbers.
+
+  So \m{72}nd number will be \m{245678} and the sum of the digits is \m{32}.
+\item For a radical center \m{3} circles are required. The total no.\ of radical centers is \m{C_3^^n}. The
+  total no.\ of radical axes is \m{C_2^^n}.
+
+  Thus, \m{C_2^^n = C_3^^n \Rightarrow n = 5}.
+\item No.\ of ways = No.\ of one-to-one mappings + No.\ of mappings in which \m{0} and \m{1} map to the same
+  element and \m{2} maps to a different element + \m{0} maps to a different element and \m{1} and \m{2} maps
+  to same element + No.\ of constant functions
+
+  \m{= C_3^^8 + C_2^^8 + C_2^^8 + C_1^^8 = C_3^^{10}}.
+\item We can choose \m{0} to \m{n} objects from \m{n} identical objects in \m{1} way. However, we can choose
+  from \m{0} to \m{n} objects from \m{2n} different objects in \m{C_0^^{2n}, C_1^^{2n}, \ldots, C_n^^{2n}}.
+
+  We know that \m{C_0^^{2n} + C_1^^{2n} + \cdots + C_n^^{2n} + C_{n + 1} + \cdots + C_{2n}^^{2n} = 2^{2n}}
+
+  \m{\Rightarrow C_0^^{2n} + C_1^^{2n} + \cdots + C_n^^{2n} = 2^{2n - 1} + C_n^^{2n}}.
+\item Let the no.\ of players be \m{n}. For \m{n - 2} participants no.\ of games would be \m{C_2^^{n - 2}}.
+
+  The two players played \m{3} games each, therefore, \m{C_2^^{n - 2} + 6 = 84\Rightarrow \frac{(n - 2)(n -
+      3)}{2} = 78\Rightarrow n^2 - 5n - 150 = 0\Rightarrow n = 15}
+\item For \m{1} digit no.\ we have \m{C-1^^9} numbers. For \m{2} digits, we have \m{C_2^^9} and so on. So
+  the total no.\ of numbers is \m{2^9 - 1}.
+\item There is a total of \m{8!} ways possible. For each legal way we can reorder within each column in
+  \m{3!, 2!} and \m{3!} ways to obtain any of the \m{8!} orderings (legal or illegal). Thus, the number of
+  ways to shoot the targets is \m{\frac{8!}{3!3!2!} = 560}.
+\item Consider a vertex \m{A}. Suppose \m{A} is not a vertex of hexagon. Arrange nine balls in the form of a
+  circle of which one is \m{A}. We choose six out of nine gaps in which to place a green ball(a vertex of
+  hexagon) to ensure that no two green balls are adjacent(this ensures that no side of hexagon coincides
+  with quindecagon). Now we label the vertics in alphabetical order as we go clockwise around the circle.
+  There are \m{C_6^^9} ways to do this.
+
+  Now suppose \m{A} is a vertex of hexagon. We color it green. We arrange nine blue balls around \m{A} for
+  form a circle which includes this ball. Doing this creates \m{10} gaps in which to place green balls but
+  two of them are adjacent to \m{A}, leaving \m{8} gaps. We can choose \m{5} out of the remaining \m{8} in
+  \m{C_5^^8} ways.
+
+  Thus, total no.\ of hexagons possible is \m{C_6^^9 + C_5^^8}.
+\item Required no.\ of triplets \m{=} No.\ of triplets without repetition \m{-} No.\ of triplets with
+  repetition \m{= n^3 - n(n - 1)(n - 2) = 3n^2 - 2n}.
+\item Maximum can be chosen in \m{m} ways, and minimum can be chosen in \m{m - 1} ways or vice-versa. Then
+  we havev \m{n - 5} no.\ remaining of which \m{m - 2} are to be chosen with repetition, which can be done
+  in \m{(n - 5)^{m - 2}}.
+
+  Thus, required answer is \m{m(m - 1)(n - 5)^{m - 2}}.
+\item First rook can be places in \m{8^2} ways. Then second can be places in \m{7^2} and so on. However, the
+  rooks are identical so no.\ of ways is \m{\frac{(8!)^2}{8!} = 40,320}.
+\item First position can be filled in \m{3} ways, and rest in \m{2}. Thus, no.\ of words is \m{3.2^6 = 192}.
+\item Since we have to find numbers, which are not equivalent we need to consider combinations and not
+  permutations because permutations will give equivalent numbers.
+
+  When all digits are different; no.\ of numbers is \m{C_5^^{10}}. When \m{3} digits are different, and \m{2}
+  digits are identical; no.\ of numbers is \m{C_1^^{10}\times C_3^^9}. When \m{2} digits are different, and
+  \m{3} digits are identical; no.\ of number is \m{C_1^^{10}\times C_2^^9}. Similarly, when \m{4} digits are
+  identical, and fifth is different; no.\ of numbers is \m{C_1^^{10}\times C_1^^9}. When 2 pairs of \m{2} digits
+  are identical, and fifth is different; no.\ of numbers is \m{C_1^^{10}\times C_1^^9\times C_1^^8}. When \m{3}
+  digits are identical, and \m{2} digits are also identical but a different digit; no.\ of numbers is
+  \m{C_1^^{10}\times C_1^^9}.
+
+  Adding these we get desired answer.
+\item Let the \m{n} objects be \m{o_1, o_2, o_3, \ldots, o_n}.
+
+  Total no.\ of ways of selecting three objects so that no two of them are consecutive \m{=} Total no. of
+  ways of selecting three objects \m{-} No.\ of ways of selecting three consecutive objects \m{-} No.\ of
+  ways of selecting three objects in which two are consecutive and one is separate
+
+  Total no.\ of ways of selecting \m{3} objects out of \m{n} is \m{C_3^^n}.
+
+  The three consecutive objects can be selected in the pattern: \m{o_1o_2o_3, o_2o_3o_4, \ldots,
+    o_{n-1}o_no_1, o_no_1o_2}. So no.\ of ways in which three consecutive objects can be selected is \m{n}.
+
+  Now we select two consecutive objects and one separated. We can pick \m{o_1o_2} and third can be \m{o_4}
+  to \m{o_{n - 1}}. Now there can be \m{n} such pairs. So no.\ of ways is \m{n(n - 4)}.
+
+  Thus, required no.\ is \m{C_3^^n - n - n(n - 4) = \frac{n}{6}(n - 4)(n - 5)}.
+\item Let us seat the \m{18} persons in \m{17!} ways. Now we seat the two brothers around a person in \m{2!}
+  ways. Now there are \m{18} persons around which the two brothers can be seated. Thus, total no.\ of ways
+  is \m{2.18!}.
 \stopitemize
