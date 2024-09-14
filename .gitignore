@@ -1,6 +1,7 @@
 *.tuc
 *.pgf
 *.log
+*.tua
 /info
 algebra.pdf
 algebra-cc.pdf
