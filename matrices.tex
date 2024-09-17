@@ -1,3 +1,4 @@
+% -*- mode: context; -*-
 \chapter{Matrices}
 Matrices are an important concept which has numerous real life usage in various mathematical branches. Also, it has huge importance
 in modern computer science. It has its applications in computer graphics, artificial intelligence, data structures leading to
@@ -370,18 +371,17 @@ graphics or geometry. It will require some knowledge of coordinate geometry.
 Consider a point $P(x, y)$ and its reflection $Q(x_1, y_1)$ along
 x-axis.
 
-\placefigure[force]{Reflection of a point along x-axis.}{\hbox{\starttikzpicture
-      \draw[->] (-.5,0) -- (3,0);
-      \draw[->] (0, -0.5) -- (0,3);
-
-      \draw (2, 2) -- (2, -2);
-      \draw (2, 2.2) node{$P(x, y)$};
-      \draw (2, -2.2) node{$Q(x_1, y_1)$};
-      \draw[dashed] (2, 2) -- (2, -2);
-      \draw  (0, 3.2) node{$x$};
-      \draw  (3.2, 0) node{$y$};
-\stoptikzpicture}}
-
+\startplacefigure
+  \startMPcode
+    drawarrow (-0.5cm, 0) -- (3cm, 0);
+    drawarrow (0, -0.5cm) -- (0, 3cm);
+    draw (2cm, 2cm) -- (2cm, -2cm);
+    label("$P(x, y)$", (2cm, 2.2cm));
+    label("$Q(x_1, y_1)$", (2cm, -2.2cm));
+    label("$x$", (0, 3.2cm));
+    label("$y$", (3.2cm, 0));
+  \stopMPcode
+\stopplacefigure
 This may be written as $x_1 = x + 0; y_1 = 0 - y$. This system of equation can be written in matrix form as
 
 \startformula\startbmatrix\NC x_1\NR\NC y_1\NR\stopbmatrix  = \startbmatrix\NC 1 \NC 0 \NR\NC 0 \NC

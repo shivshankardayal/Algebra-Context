@@ -165,6 +165,12 @@ The modulus is given by the length of segment $OP$ which is equal to $OP=\sqrt{x
 $OP$. Given below is the graphical representation of the complex number.
 
 \startplacefigure[title=Complex number in argand plane or complex plane.]
+  \startMPcalculation
+        vardef angle_mark(expr P, O, Q, r) =
+      fullcircle scaled 2r rotated angle (P - O)
+      shifted O cutafter (O -- Q)
+    enddef;
+\stopMPcalculation
   \startMPcode
     drawarrow (-0.5cm, 0) -- (3cm, 0);
     drawarrow (0, -0.5cm) -- (0, 3cm);
@@ -178,10 +184,6 @@ $OP$. Given below is the graphical representation of the complex number.
     label("$OP=|z|$", (3.4cm, 1.1cm));
     label("$\arg(z)=\theta$", (3.5cm, 0.7cm));
     label("$P = x + iy$", (2.5cm, 2.7cm));
-    vardef angle_mark(expr P, O, Q, r) =
-      fullcircle scaled 2r rotated angle (P - O)
-      shifted O cutafter (O -- Q)
-    enddef;
     draw angle_mark((2.5cm, 0), (0, 0), (2.5cm, 2.5cm), 16);
   \stopMPcode
 \stopplacefigure
@@ -234,28 +236,30 @@ following diagrams.
 
 \subsection{Addition}
 Now, as we know that $z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)$. Let us see how it looks using geometrically:
-\placefigure[force]{Complex numbers addition.}{\hbox{\starttikzpicture
-      \draw[->, >=stealth] (-.5,0) -- (5.5,0);
-      \draw[->, >=stealth] (0,-.5) -- (0,5.5);
-      \draw (5.7, 0) node {$X$};
-      \draw (0,5.7) node {$Y$};
-      \draw (0,0) -- (4,1);
-      \draw (0,0) -- (1,4);
-      \draw (1,4) -- (5,5);
-      \draw (4,1) -- (5,5);
-      \draw[dashed] (4,1) -- (4,0);
-      \draw[dashed] (1,4) -- (1,0);
-      \draw[dashed] (5,5) -- (5,0);
-      \draw[dashed] (4,1) -- (5,1);
-      \draw (-.5,-.5) node {$O$};
-      \draw (1,-.5) node {$L$};
-      \draw (4,-.5) node {$M$};
-      \draw (5,-.5) node {$N$};
-      \draw (5.2,1) node {$K$};
-      \draw (3, 1.2) node {$P1(x_1+iy_1)$};
-      \draw (1.3, 4.3) node {$P2(x_2+iy_2)$};
-      \draw (5, 5.2) node {$P(x+iy)$};
-\stoptikzpicture}}
+\startplacefigure[title=Complex numbers addition]
+  \startMPcode
+    drawarrow (-0.5cm, 0) -- (5.5cm, 0);
+    drawarrow (0, -0.5cm) -- (0, 5.5cm);
+    label("$X$", (5.7cm, 0));
+    label("$Y$", (0, 5.7cm));
+    draw (0,0) -- (4cm,1cm);
+    draw (0,0) -- (1cm,4cm);
+    draw (1cm,4cm) -- (5cm,5cm);
+    draw (4cm,1cm) -- (5cm,5cm);
+    draw (4cm,1cm) -- (4cm,0) dashed evenly;
+    draw (1cm,4cm) -- (1cm,0) dashed evenly;
+    draw (5cm,5cm) -- (5cm,0) dashed evenly;
+    draw (4cm,1cm) -- (5cm,1cm) dashed evenly;
+    label("$O$", (-0.5cm, -0.5cm));
+    label("$L$", (1cm, -0.5cm));
+    label("$M$", (4cm, -0.5cm));
+    label("$N$", (5cm, -0.5cm));
+    label("$K$", (5.2cm, 1cm));
+    label("$P_1(x_1 + iy_1)$", (3cm, 1.2cm));
+    label("$P_2(x_2 + iy_2)$", (1.3cm, 4.3cm));
+    label("$P(x + iy)$", (5cm, 5.2cm));
+  \stopMPcode
+\stopplacefigure
 Clearly, $z = z_1 + z_2 = x_1 + x_2 + i(y_1 + y_2)$. Let $P_1M, P_2L$ and $PN$ be parallel to the $y$-axis; $P_1K$ be parallet to
 the $x$-axis. This implied that triangle $OP_2L$ and $PP_1K$ are congruent.
 
@@ -269,23 +273,23 @@ We also see that this obeys vector addition i.e. $OP_1 + OP_2 = OP_1 + P_1P = OP
 
 \subsection{Subtraction}
 \startplacefigure[title={Complex numbers subtraction},reference=fig:cns]
-\startMPcode
-drawarrow (-1cm, 0cm)--(3cm, 0cm);
-drawarrow (0cm, -1cm)--(0cm, 3cm);
-draw (0cm, 0cm)--(2cm, 1cm);
-draw (0cm, 0cm)--(1cm, 2cm);
-draw (0cm, 0cm)--(-1cm, -2cm);
-draw (0cm, 0cm)--(1cm, -1cm);
-draw (1cm, 2cm)--(2cm, 1cm);
-draw (2cm, 1cm)--(1cm, -1cm);
-draw (-1cm, -2cm)--(1cm, -1cm);
-label.rt("$x$", (3cm, 0));
-label.top("$y$", (0, 3cm));
-label.urt("$P_1(x_1, y_1)$", (2cm, 1cm));
-label.top("$P_2(x_2, y_2)$", (1cm, 2cm));
-label.lrt("$P(x_1 - x_2, y_1 - y_2)$", (1cm, -1cm));
-label.bot("$P_2'(-x_2,- y_2)$", (-1cm, -2cm));
-\stopMPcode
+  \startMPcode
+    drawarrow (-1cm, 0cm)--(3cm, 0cm);
+    drawarrow (0cm, -1cm)--(0cm, 3cm);
+    draw (0cm, 0cm)--(2cm, 1cm);
+    draw (0cm, 0cm)--(1cm, 2cm);
+    draw (0cm, 0cm)--(-1cm, -2cm);
+    draw (0cm, 0cm)--(1cm, -1cm);
+    draw (1cm, 2cm)--(2cm, 1cm);
+    draw (2cm, 1cm)--(1cm, -1cm);
+    draw (-1cm, -2cm)--(1cm, -1cm);
+    label.rt("$x$", (3cm, 0));
+    label.top("$y$", (0, 3cm));
+    label.urt("$P_1(x_1, y_1)$", (2cm, 1cm));
+    label.top("$P_2(x_2, y_2)$", (1cm, 2cm));
+    label.lrt("$P(x_1 - x_2, y_1 - y_2)$", (1cm, -1cm));
+    label.bot("$P_2'(-x_2,- y_2)$", (-1cm, -2cm));
+  \stopMPcode
 \stopplacefigure
 In \in {Figure} [fig:cns], we first represent $-z_2$ by $P_2'$ so that  $P_2P_2'$ is bisected at $O.$ Complete the parallelogram $OP_1PP_2'.$ Then it can be
 easily seen that $P$  representd the difference $z_1 - z_2.$
@@ -587,15 +591,27 @@ rewrite the abobe result as
   \item Refer \in{Figure}[fig:flbee], if $k > |z - z_2|,$ then $|z - z_1| + |z - z_2| = k$ represents an ellipse with foci at $A(z_1)$ and $B(z_2)$ and length
     of major axis $= k$.
     \startplacefigure[title={Locus of an Ellipse}, reference=fig:flbee]
-      {\hbox{\starttikzpicture
-          \draw (0, 0) ellipse (2 and 1.5);
-          \draw (-2, 0) node[anchor=east] {$C$} (2, 0) node[anchor=west] {$D$};
-          \draw (-2, 0) -- (2, 0);
-          \draw (-1, 0) node[anchor=north] {$A(z_1)$} (1, 0)
-          node[anchor=north] {$B(z_2)$};
-          \draw (-1, 0) circle(1pt) (1, 0) circle(1pt) (2, -.4)
-          node[anchor=west] {$CD = k$};
-        \stoptikzpicture}}
+      \startMPcode
+        vardef elliptic_path(expr a, b, minor_radius) =
+          fullcircle xscaled abs(a-b) yscaled 2 minor_radius
+               rotated angle (a-b) shifted 1/2[a,b]
+        enddef;
+
+        pair P, Q; numeric r;
+        P = origin; Q = 120 dir 0;
+        r = 34;
+
+        draw elliptic_path(P, Q, r);
+
+        label.lft("$C$", P);
+        label.rt("$D$", Q);
+        draw P -- Q;
+        drawdot (P + (0.8cm, 0)) withpen pencircle scaled 2pt;
+        drawdot (Q - (0.8cm, 0)) withpen pencircle scaled 2pt;
+        label.bot("$A(z_1)$", P + (0.8cm, 0));
+        label.bot("$B(z_2)$", Q - (0.8cm, 0));
+        label.lrt("$CD = k$", (Q - (0, 0.2cm)));
+      \stopMPcode
     \stopplacefigure
   \item If $k = |z - z_2|$, then it represents the line segment joining $z_1$ and $z_2$.
   \item If $k < |z - z_2|$, thne it does not represent any curve/line in Argand plane.
@@ -604,85 +620,99 @@ rewrite the abobe result as
   \startitemize[i]
   \item Refer \in{Figure}[fig:flbep], if $k\neq |z - z_2|$, then it represnts a parabola with foci at $A(z_1)$ and $B(z_2)$.
     \startplacefigure[title={Locus of a Parabola}, reference=fig:flbep]
-      {\hbox{\starttikzpicture
-          \draw plot[variable=\t,samples=100,domain=-50:50]
-          ({2*sec(\t)},{.7*tan(\t)});
-          \draw plot[variable=\t,samples=100,domain=-50:50]
-          ({-2*sec(\t)},{.7*tan(\t)});
-          \draw (-2.7,0) -- (2.7, 0);
-          \draw (-2.7, 0) circle(1pt) (2.7, 0) circle(1pt);
-          \draw (-2.7, 0) node[anchor=east] {$A(z_1)$} (2.7, 0)
-          node[anchor=west] {$B(z_2)$};
-        \stoptikzpicture}}
+      \startMPcode
+        vardef f(expr t) = t^2 + 3 enddef;
+        vardef g(expr t) =  -t^2 - 3 enddef;
+
+        u = 1mm;
+        path curve;
+        curve = ((-2, f(-2)) for t =  -2 upto 2: .. (t, f(t)) endfor) scaled u;
+        draw curve scaled u rotated 90;
+        path c;
+        c = ((-2, -f(-2)) for t =  -2 upto 2: .. (t, -f(t)) endfor) scaled u;
+        draw c scaled u rotated 90;
+        drawdot (-15mm, 0) withpen pencircle scaled 2pt;
+        drawdot (15mm, 0) withpen pencircle scaled 2pt;
+        draw (-15mm, 0) -- (15mm, 0);
+        label.lft("$A(z_1)$", (-15mm, 0));
+        label.rt("$B(z_2)$", (15mm, 0));
+      \stopMPcode
     \stopplacefigure
   \item If $k = |z_1 - z_2|$, then it represents the straight line joining $A(z_1)$ and $B(z_2)$ but excluding the segment $AB$
     \startplacefigure[location=force]
-      {\hbox{\starttikzpicture
-          \draw[dashed] (-1, 0) -- (1, 0);
-          \draw[->, >= stealth] (-1, 0) -- (-2, 0);
-          \draw[->, >= stealth] (1, 0) -- (2, 0);
-          \draw (-1, 0) node[anchor=north] {$A(z_1)$} (1, 0) node[anchor=north] {$B(z_2)$};
-        \stoptikzpicture}}
+      \startMPcode
+        draw (-1cm, 0) -- (1cm, 0) dashed evenly;
+        drawarrow (-1cm, 0) -- (-2cm, 0);
+        drawarrow (1cm, 0) -- (2cm, 0);
+        label.bot("$A(z_1)$", (-1cm, 0));
+        label.bot("$B(z_2)$", (1cm, 0));
+      \stopMPcode
     \stopplacefigure
   \stopitemize
 \item $|z - z_1|^2 + |z - z_2|^2 = |z_1 - z_2|^2$. If $z_1$ and $z_2$ are two fixed points then it represents a circle with $z_1$
   and $z_2$ as the endpoints of one of the diameters.
-  \startplacefigure[location=force]
-    {\hbox{\starttikzpicture
-        \draw (0, 0) circle(2);
-        \draw (-2, 0) -- (2, 0) (-2, 0) node[anchor=east] {$A(z_1)$}
-        (2, 0) node[anchor=west] {$B(z_2)$};
-        \draw (0, 0) circle(1pt) (0,0) node[anchor=north] {$O$};
-      \stoptikzpicture}}
+  \startplacefigure
+    \startMPcode
+      draw fullcircle scaled (2cm);
+      draw (-1cm, 0) -- (1cm, 0);
+      drawdot origin withpen pencircle scaled 2pt;
+      label.lft("$A(z_1)$", (-1cm, 0));
+      label.rt("$B(z_2)$", (1cm, 0));
+      label.bot("$O(z)$", origin);
+    \stopMPcode
   \stopplacefigure
 \item $\arg\left(\frac{z - z_1}{z - z_2}\right) = \alpha$. Let $z_1$ and $z_2$ be any two fixed points and $\alpha$ be a real
   number such that $0\leq \alpha \leq \pi$.
   \startitemize[i]
   \item If $0 < \alpha < \pi$ and $\alpha \neq \pi/2$, then it represents a segment of a circle passing through $A(z_1)$ and
     $B(z_2)$.
-    \startplacefigure[location=force]
-      {\hbox{\starttikzpicture
-          \draw (0, 0) circle(2);
-          \draw (-1.414, -1.414) -- (1.414, -1.414);
-          \draw (-1.414, -1.414) -- (1.414, 1.414) (1.414, -1.414) -- (1.414,
-          1.414);
-          \draw (1.414, 1.114) arc(270:225:.3);
-          \draw (-1.414, -1.414) node[anchor=north east] {$A(z_1)$} (1.414,
-          -1.414) node[anchor=north west] {$B(z_2)$};
-          \draw (1.214, 1.114) node[anchor=north] {$\alpha$};
-        \stoptikzpicture}}
+    \startplacefigure
+      \startMPcode
+        draw fullcircle scaled 4cm;
+        draw (-1.414cm, -1.414cm) -- (1.414cm, -1.414cm);
+        draw (-1.414cm, -1.414cm) -- (1.414cm, 1.414cm) -- (1.414cm, -1.414cm) -- cycle;
+        draw angle_mark((-1.414cm, -1.414cm), (1.414cm, 1.414cm), (1.414cm, -1.414cm), 10);
+        label.llft("$A(z_1)$", (-1.414cm, -1.414cm));
+        label.lrt("$B(z_1)$", (1.414cm, -1.414cm));
+        label.bot("$\alpha$", (1.214cm, 1.114cm));
+      \stopMPcode
     \stopplacefigure
   \item If $\alpha = \pi/2$, then it represents a circle with diameter as the line segment joining $A(z_1)$ and $B(z_2)$.
-    \startplacefigure[location=force]
-      {\hbox{\starttikzpicture
-          \draw (0, 0) circle(2);
-          \draw (-2, 0) -- (2, 0);
-          \draw (-2, 0) -- (1.414, 1.414) (2, 0) -- (1.414, 1.414) (-2, 0) --
-          (0, -2) (2, 0) -- (0, -2);
-          \draw (-2, 0) node[anchor=east] {$A(z_1)$} (2,
-          0) node[anchor=west] {$B(z_2)$};
-          \draw (1.53, 1.15) arc(300:210:.3);
-          \draw(.2121, -1.7979) arc(45:135:.3);
-          \draw (1.2, 1.15) node[anchor=north] {$\pi/2$} (0, -1.7)
-          node[anchor=south] {$\pi/2$};
-        \stoptikzpicture}}
+    \startplacefigure
+      \startMPcode
+        draw fullcircle scaled 4cm;
+        draw (-2cm, 0) -- (2cm, 0);
+        draw (-2cm, 0) -- (1.414cm, 1.414cm);
+        draw (2cm, 0) -- (1.414cm, 1.414cm);
+        draw (-2cm, 0) -- (0, -2cm);
+        draw (2cm, 0) -- (0, -2cm);
+        label.lft("$A(z_1)$", (-2cm, 0));
+        label.rt("$B(z_2)$", (2cm, 0));
+        draw unitsquare scaled 5 rotated angle ((-2cm, 0) - (1.414cm, 1.414cm)) shifted (1.414cm, 1.414cm);
+        draw unitsquare scaled 5 rotated angle ((2cm, 0) - (0, -2cm)) shifted (0, -2cm);
+        label.bot("$\pi/2$", (1.2cm, 1.15cm));
+        label.top("$\pi/2$", (0, -1.7cm));
+      \stopMPcode
     \stopplacefigure
   \item If $\alpha = \pi$, then it represents the straight line joining $A(z_1)$ and $B(z_2)$ but excluding the line segment $AB$.
-    \startplacefigure[location=force]
-      {\hbox{\starttikzpicture
-          \draw[dashed] (-1, 0) -- (1, 0);
-          \draw[->, >= stealth] (-1, 0) -- (-2, 0);
-          \draw[->, >= stealth] (1, 0) -- (2, 0);
-          \draw (-1, 0) node[anchor=north] {$A(z_1)$} (1, 0) node[anchor=north] {$B(z_2)$};
-        \stoptikzpicture}}
+    \startplacefigure
+      \startMPcode
+        draw (-1cm, 0) -- (1cm, 0) dashed evenly;
+        drawarrow (-1cm, 0) -- (-2cm, 0);
+        drawarrow (1cm, 0) -- (2cm, 0);
+        label.bot("$A(z_1)$", (-1cm, 0));
+        label.bot("$B(z_2)$", (1cm, 0));
+      \stopMPcode
     \stopplacefigure
   \item If $\alpha = 0,$ then it represents the straight line joining $A(z_1)$ and $B(z_2)$.
-    \startplacefigure[location=force]
-      {\hbox{\starttikzpicture
-          \draw (-1, 0) -- (1, 0);
-          \draw (-1, 0) node[anchor=north] {$A(z_1)$} (1, 0) node[anchor=north] {$B(z_2)$};
-          \draw (-1, 0) circle(1pt) (1, 0) circle(1pt);
-        \stoptikzpicture}}
+    \startplacefigure
+      \startMPcode
+        draw (-1cm, 0) -- (1cm, 0);
+        label.bot("$A(z_1)$", (-1cm, 0));
+        label.bot("$B(z_2)$", (1cm, 0));
+        drawdot (-1cm, 0) withpen pencircle scaled 2pt;
+        drawdot (1cm, 0) withpen pencircle scaled 2pt;
+      \stopMPcode
     \stopplacefigure
   \stopitemize
 \stopitemize

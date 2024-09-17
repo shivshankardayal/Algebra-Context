@@ -211,28 +211,30 @@ formula for permutation becomes valid even for $r > n.$
 Let us consider arranging objects along a circle. Let us consider that four persons $A, B, C,$ and $D$ are sitting around a table. We
 can have following arrangements:
 
-\placefigure[force]{}{\hbox{\starttikzpicture
-    \draw (0,0) circle (1cm);
-    \draw (3cm,0) circle (1cm);
-    \draw (6cm,0) circle (1cm);
-    \draw (9,0) circle (1cm);
-    \draw (1cm, 0) node[anchor=east] {$A$};
-    \draw (0, 1cm) node[anchor=north] {$B$};
-    \draw (-1cm, 0) node[anchor=west] {$C$};
-    \draw (0, -1cm) node[anchor=south] {$D$};
-    \draw (4cm, 0) node[anchor=east] {$D$};
-    \draw (3cm, 1cm) node[anchor=north] {$A$};
-    \draw (2cm, 0) node[anchor=west] {$B$};
-    \draw (3cm, -1cm) node[anchor=south] {$C$};
-    \draw (7cm, 0) node[anchor=east] {$C$};
-    \draw (6cm, 1cm) node[anchor=north] {$D$};
-    \draw (5cm, 0) node[anchor=west] {$A$};
-    \draw (6cm, -1cm) node[anchor=south] {$B$};
-    \draw (10cm, 0) node[anchor=east] {$B$};
-    \draw (9cm, 1cm) node[anchor=north] {$C$};
-    \draw (8cm, 0) node[anchor=west] {$D$};
-    \draw (9cm, -1cm) node[anchor=south] {$A$};
-\stoptikzpicture}}
+\startplacefigure[location=force]
+  \startMPcode
+    draw fullcircle scaled 2cm;
+    draw fullcircle scaled 2cm shifted (3cm, 0);
+    draw fullcircle scaled 2cm shifted (6cm, 0);
+    draw fullcircle scaled 2cm shifted (9cm, 0);
+    label.lft("$A$", (1cm, 0));
+    label.bot("$B$", (0, 1cm));
+    label.rt("$C$", (-1cm, 0));
+    label.top("$D$", (0, -1cm));
+    label.lft("$D$", (4cm, 0));
+    label.bot("$A$", (3cm, 1cm));
+    label.rt("$B$", (2cm, 0));
+    label.top("$C$", (3cm, -1cm));
+    label.lft("$C$", (7cm, 0));
+    label.bot("$D$", (6cm, 1cm));
+    label.rt("$A$", (5cm, 0));
+    label.top("$C$", (6cm, -1cm));
+    label.lft("$B$", (10cm, 0));
+    label.bot("$C$", (9cm, 1cm));
+    label.rt("$D$", (8cm, 0));
+    label.top("$A$", (9cm, -1cm));
+  \stopMPcode
+\stopplacefigure
 As shown four persons are sitting around a round table, and four anticlockwise rotations have lead to four arrangements. But if
 $A,B,C,D$ are sitting in a row, and then are shiftedd such that last occupies the place of first, then the four arrangements will be
 different. Thus, if there are $n$ objects then for each circular arrangement there are nn linear arrangements. But for $n$ different
