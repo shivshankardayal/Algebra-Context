@@ -1,3 +1,4 @@
+% -*- mode: context; -*-
 \chapter{Mathematical Induction}
 Any reasoning involving passage from particular assertions to general assertions, which derive their validity from the validity of
 particular assertions is called {\it induction}. {\it Mathematical induction} is a mathematical proof technique which enables us to
@@ -40,14 +41,42 @@ The proposition $P(n)$ is assumed to be true for all natural numbers if the foll
 \item Show that $1^2 + 2^2 + \ldots + n^2 = \frac{n(n + 1)(2n + 1)}{6}$.
 \item Show that $\frac{1}{1.2} + \frac{1}{2.3} + \ldots + \frac{1}{n(n + 1)} = \frac{n}{n + 1}$.
 \item Show that $1^3 + 2^3 + \ldots + n^3 = \left[\frac{n(n + 1)}{2}\right]^2$.
+\item Show that \m{\frac{1}{a + d} + \frac{a}{(a + d)(a + 2d)} + \cdots + \frac{a}{[a + (n - 1)d](a + nd)} =
+    \frac{n}{a + nd}}.
+\item Show that \m{\frac{1}{1.2.3} + \frac{1}{2.3.4} + \cdots + \frac{1}{n(n + 1)(n + 2)} = \frac{n(n +
+      3)}{4(n + 1)(n + 2)}\forall n\in \mathbb{N}}.
+\item Show that \m{1.3 + 2.3^2 + 3.3^3 + \cdots + n.3^n = \frac{(2n - 1)3^{n + 1} + 3}{4}}.
+\item Show that \m{1 + 4 + 7 + \cdots + 3n - 2 = \frac{n(3n - 1)}{2}}.
+\item Show that \m{1^2 + 3^2 + 5^2 + \cdots + (2n - 1)^2 = \frac{n(2n - 1)(2n + 1)}{3}}.
+\item Show that \m{1 - 3^2 + 5^2 - 7^2 + \cdots + (4n - 3)^2 - (4n - 1)^2 = -8n^2}.
+\item Show that \m{3.6 + 6.9 + 9.12 + \cdots + 3n(3n + 3) = 3n(n + 1)(n + 2)}.
+\item Prove the theorem of Nicomachus: \m{1^3 = 1, 2^3 = 3 + 5, 3^3 = 7 + 9 + 11, 4^3 = 13 + 15 + 17 + 19}
+  and so on.
+\item Show that \m{\displaystyle\sum_{r = 0}^nr.C_r^^n = n.2^{n - 1}}.
+\item Show that \m{\displaystyle\sum_{r = 1}^nr(2r + 1) = \frac{n(n + 1)(4n + 5)}{6}}.
+\item Show that \m{1.2.3 + 2.3.4 + 3.4.5 + \cdots + n(n + 1)(n + 2) = \frac{n(n + 1)(n + 2)(n + 3)}{4}}.
+\item Show that \m{\frac{1}{1.4} + \frac{1}{4.7} + \frac{1}{7.10} + \cdots + \frac{1}{(3n - 2)(3n + 1)} =
+    \frac{n}{3n + 1}}.
+\item \m{7 + 77 + 777 + \cdots + \underbrace{7\ldots77}_{n~\text{digits}} = \frac{7}{81}(10^{n + 1} - 9n -
+    10)}.
+\item Show that \m{1 + \frac{1}{1 + 2} + \frac{1}{1 + 2 + 3} + \cdots + \frac{1}{1 + 2 + 3 + \cdots + n} =
+    \frac{2n}{n + 1}}.
+\item Show that \m{\left(1 - \frac{1}{2^2}\right)\left(1 - \frac{1}{3^2}\right)\cdots\left(1 - \frac{1}{(n +
+        1)^2}\right) = \frac{n + 2}{2n + 2}}.
 \item Show that $1.3 + 2.3^2 + \ldots + n.3^n = \frac{(2n - 1)3^{n + 1} + 3}{4}$.
-\item Show that $\cos\alpha + \cos2\alpha + \ldots + \cos n\alpha = \sin\frac{n\alpha}{2}\csc\frac{\alpha}{2}\cos\frac{(n + 1)\alpha}{2}$.
+\item Show that $\cos\alpha + \cos2\alpha + \ldots + \cos n\alpha =
+  \sin\frac{n\alpha}{2}\csc\frac{\alpha}{2}\cos\frac{(n + 1)\alpha}{2}$.
+\item Show that \m{\tan\alpha + 2\tan2\alpha + 2^2\tan2^2\alpha + \cdots + 2^{n - 1}\tan2^{n - 1}\alpha =
+    \cot\alpha - 2^n\cot2^n\alpha}.
 \item Show that $\tan^{-1}\frac{1}{3} + \tan^{-1}\frac{1}{7} + \ldots + \tan^{-1}\frac{1}{n^2 + n + 1} = \tan^{-1}\frac{n}{n + 2}$.
 \item Show that ${}^nC_1 + 2.{}^nC_2 + \ldots + n.{}^nCn = n.2^{n - 1}$.
 \item If $u_1 = 1, u_2 = 1$ and $u_{n + 2} = u_{n + 1} + u)n,\;n\geq 1. u_n = \frac{1}{\sqrt{5}}\left[\left(\frac{1 +
     \sqrt{5}}{2}\right)^n - \left(\frac{1 - \sqrt{5}}{2}\right)^n\right]\;\forall\;n\geq 1$.
 \item If $p\in\mathbb{N}$, show that $p^{n + 1} + p^{2n - 1}$ is divisible by $p^2 + p + 1$ for every positive integer $n$.
 \item Show that $2^n > 2n + 1\;\forall\;n > 2$.
+\item Show that \m{2^n > n^3} if \m{n\geq 10}.
+\item Show that \m{\tan n\alpha > n\tan\alpha}, where \m{0<\alpha < \frac{\pi}{4(n - 1)}\forall
+    n\in\mathbb{N} > 1}.
 \item Show that $n^4 < 10^n\;\forall\;n\geq 2$.
 \item Show that $1^3 + 3^3 + \ldots + (2n - 1)^3 = n^2(2n^2 - 1)$.
 \item Show that $3.2^2 + 3^3.2^3 + \ldots + 3^n.2^{n + 1} = \frac{12}{5}(6^n - 1)$.
@@ -85,6 +114,33 @@ The proposition $P(n)$ is assumed to be true for all natural numbers if the foll
 \item Show that if \m{n\in\mathbb{N}, 10^{2n - 1} + 1} is divisible by \m{11}.
 \item Show that if \m{n\in\mathbb{N}, 7^n - 3^n} is divisible by \m{4}.
 \item Show that if \m{n\in\mathbb{N}, 2.7^n + 3.5^n - 5} is divisible by \m{24}.
+\item Show that if \m{n\in\mathbb{N}, 3^{2n} - 1} is divisible by \m{8}.
+\item Show that if \m{n\in\mathbb{N}, 10^n + 3.4^{n + 2} + 5} is divisible by \m{9}.
+\item Show that if \m{n\in\mathbb{N}, 5^{2n + 1} + 2^{n + 4} + 2^{n + 1}} is divisible by \m{23}.
+\item Show that if \m{n\in\mathbb{N}, 7^{2n} - 1} is divisible by \m{8}.
+\item Show that if \m{n\in\mathbb{N}, 3^{2n + 2} - 8n - 9} is divisible by \m{8}.
+\item Show that if \m{n\in\mathbb{N}, 41^n - 14^n} is divisible by \m{27}.
+\item Show that if \m{n\in\mathbb{N}, 15^{2n - 1} + 1} is divisible by \m{16}.
+\item Show that if \m{n\in\mathbb{N}, 5^{2n + 1} + 3^{n + 2}.2^{n - 1}} is divisible by \m{19}.
+\item Show that if \m{n\in\mathbb{N}, 10^n + 3.4^{n + 2} + 5} is divisible by \m{9}.
+\item Show that if \m{n\in\mathbb{N}, 9^n - 8n - 1} is divisible by \m{64}.
+\item Show that if \m{n\in\mathbb{N}, n^3 + 3n^2 + 5n + 3} is divisible by \m{3}.
+\item Show that if \m{n\in\mathbb{N}, n^3 + (n + 1)^3 + (n + 2)^3} is divisible by \m{9}.
+\item Show that if \m{n\in\mathbb{N}, n(n + 1)(n + 5)} is divisible by \m{3}.
+\item Show that if \m{n\in\mathbb{N}, (n + 1)(n + 2)(n + 3)(n + 4)(n + 5)} is divisible by \m{120}.
+\item Show that if \m{n\in\mathbb{N}, n(n + 1)(n + 2)} is divisible by \m{6}.
+\item Show that if \m{n\in\mathbb{N}, n(n + 1)(2n + 1)} is divisible by \m{6}.
+\item Show that if \m{n\in\mathbb{N}, n^5 - n} is divisible by \m{5}.
+\item Show that if \m{n\in\mathbb{N}, (1 + x)^n - nx - 1} is divisible by \m{x^2}, where \m{x\neq 0}.
+\item Show that \m{n(n^2 - 1)} is divisible by \m{24}, where \m{n\in} odd positive integers.
+\item Show that \m{n(n^2 + 20)} is divisible by \m{48}, where \m{n\in} even positive integers.
+\item Show that \m{2^{2n} + 1} or \m{2^{2n} - 1} is divisible by \m{5} according as \m{n} is odd or even
+  positive integer.
+\item Prove that \m{5^{2n} + 1} is divisible by \m{13} if \m{n} is odd. Hence, deduce that \m{5^{99}} leaves
+  a remainder \m{8} when divided by \m{13}.
+\item Show that \m{4.6^n + 5^{n + 1}} leaves remainder \m{9} when divided by \m{20}.
+\item Show that if \m{n\in\mathbb{N}, 3^n + 8^n} is not divisible by \m{8}.
+\item Prove that \m{2^{2^n} + 1} has last digit as \m{7} for \m{n > 1}.
 \item Show that if $n\in\mathbb{N}, \frac{n^3}{3} + n^2 + \frac{5}{3}n + 1$ is a natural number.
 \item Show that $x^n + y^n$ is divisible by $x + y$, where $n$ is any odd integer.
 \item Show that $x^n - y^n$ is divisible by $x - y$, where $n\in\mathbb{N}$.
@@ -95,11 +151,30 @@ The proposition $P(n)$ is assumed to be true for all natural numbers if the foll
 \item Show that $1 + 2 + \ldots + n\leq \frac{1}{8}(2n + 1)^2$.
 \item Show that $n^n < (n!)^2,\;n>2$.
 \item Show that $n! > 2^n,\;n>3$.
+\item Show that \m{n! < \left(\frac{n + 1}{2}\right)^2, n > 1}.
 \item Show that $\frac{1}{n + 1} + \frac{1}{n + 2} + \ldots + \frac{1}{2n} > \frac{13}{24},\;n>1$.
+\item Show that \m{\frac{1}{n + 1} + \frac{1}{n + 2} + \cdots + \frac{1}{3n + 1} > 1\forall n\in\mathbb{N}}.
+\item Show that \m{1 + \frac{1}{4} + \cdots + \frac{1}{n^2} < 2 - \frac{1}{n}\forall n\in\mathbb{N}} greater
+  than \m{1}.
+\item Show that if $n\in\mathbb{N}, (2n + 7) < (n + 3)^2$.
+\item Show that if $n\in\mathbb{N}, 2^n > n$.
+\item Show that if $n\in\mathbb{N}, 1 + 2 + 3 + \cdots + n < \frac{(2n + 1)^2}{8}$.
+\item Show that if $n\in\mathbb{N}, 1^2 + 2^2 + \cdots + n62 > \frac{n^3}{3}$.
+\item Show that if $n\in\mathbb{N}, 2^n > n^2$ for $n\geq 5$.
+\item Show that if $n\in\mathbb{N}, \frac{(2n)!}{(n!)^2} > \frac{4^n}{n + 1}$ for $n > 1$.
+\item Show that if $n\in\mathbb{N}, \frac{1}{n + 1} + \frac{1}{n + 2} + \cdots + \frac{1}{2n} >
+  \frac{13}{24}\forall n > 1$.
+\item Show that if $n\in\mathbb{N}, (1 + x)^n > 1 + nx, n > 1$ and $n > -1, x\neq 0$.
+\item In a sequence $1, 4, 10, \ldots, t_1 = 1, t_2 = 4$, and $t_n = 2t_{n - 1 } + 2t_{n - 2}$ for $n\geq
+  3$. Show that $t_n = \frac{1}{2}\left[(1 + \sqrt{3})^n + (1 - \sqrt{3})^n\right]\forall n\in\mathbb{N}$.
+\item If $x + y = a + b, x^2 + y^2 = a^2 + b^2$, prove that $x^n + y^2 = a^n + b^2\forall n\in\mathbb{N}$.
 \item Prove that $\frac{1}{2}.\frac{2}{3}.\cdots.\frac{2n - 1}{2n}\leq \frac{1}{\sqrt{3n + 1}}$, where $n\in\mathbb{N}$.
 \item Prove that $\frac{1}{n + 1} + \frac{1}{n + 2} + \cdots + \frac{1}{2n} < \frac{25}{36}$, where $n\geq 2, n\in\mathbb{N}$.
 \item Prove that $\sqrt{a + \sqrt{a + \sqrt{a + \cdots n\text{~terms~}}}}\leq \frac{1 + \sqrt{4a + 1}}{2}$, where $a\geq 0$.
 \item Prove that $\sqrt{2\sqrt{3\sqrt{4\ldots\sqrt{n}}}} < 3$, where $n\geq 2, n\in\mathbb{N}$.
+\item For $x^3 = x + 1, a_n = a_{n - 1} + b_{n - 1}, b_n = a_{n - 1} + b_{n - 1} + c_{n - 1}, c_n = a_{n -
+    1} + c_{n - 1}$ prove that $x^{3n} = a_nx + b_n + c_nx^{-1}\forall n\in\mathbb{N}$, and $a=0, b_0 = 1,
+  c_0 = 0$.
 \item Prove that $x_1^2 + 3x_2^2 + 5x_3^2 + \cdots + (2n - 1)x_n^2\leq(x_1 + x_2 + \cdots + x_n)^2$, where $x_1\geq x_2\geq \cdots
   \geq x_n\geq 0$.
 \item Prove that $|\sin(x_1 + x_2 + \cdots + x_n)|\leq |\sin x_1| + |\sin x_2| + \cdots + |\sin x_n|$, where $x_1, x_2, \ldots, x_n

@@ -27,7 +27,6 @@
 \setupitemize[symalign=left, distance=5pt, color=maincolor]
 
   \usemodule[tikz]
-  \usemodule[newmat]
   \setuppapersize[B5]
   \setupexternalfigures [directory=images, location=global]
 
@@ -54,13 +53,13 @@
     [color=maincolor,style={\switchtobodyfont[small,tt]}]
 
   % Labels
-  \setuplabeltext
-    [en]
-    [
-      chapter=Chapter~,
-      appendix=Appendix~,
-      part=Part~
-    ]
+%  \setuplabeltext
+%    [en]
+%    [
+%      chapter=Chapter~,
+%      appendix=Appendix~,
+%      part=Part~
+%    ]
 
   % Footnotes
   \setupnotation
@@ -88,7 +87,7 @@
       color=maincolor,
       before={\ \godown[4cm]},
       header=high,
-      footer=ChapterFirstPage,
+      footer=\empty,
     ]
   \setuphead
     [title, chapter]

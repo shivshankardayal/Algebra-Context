@@ -2758,4 +2758,38 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
   as we need.
 
   So number of ways is \m{n\times n\times(n - 1)\times\frac{(n - 1)!}{2} = n!C_2^^n}.
+\item Any of the $x_i$s can have a value of $0$ through $8$ to satisfy the sum i.e. if one of these have the
+  value of $8$ remaining four will have a value of $0$. Thus, it is an arrangement
+  of $12$ objects, $8$ of which are of one type, and $4$ of which are of another type.
+
+  Total no.\ of such arrangements is $\frac{12!}{8!4!} = 495$.
+\item Following like previous problem $x_i$s can occupy value from $1$ to $4$ i.e. if one of these have the
+  value of $4$ remaining four will have value of $1$. Thus, it is an arrangement of $7$ objects, $4$ of
+  which are of one type, and $3$ of another type.
+
+  Total no.\ of such arrangements is $\frac{7!}{4!3!} = 35$.
+\item Let $x_1 = -2 + x_1', x_2 = 1 + x_2', x_3 = 2 + x_3'$. Then, we can rewrite the given equation as
+  $x_1' + x_2' + x_3' + x_4 = 13$, where $x_1', x_2', x_3', x_4\geq 0$.
+
+  Thus, no.\ of integral solutions is $\frac{16!}{13!3!} = 560$.
+\item Let $u = x - 1, v = y - 2, w = z - 3$, then $u, v, w \geq 0$.
+
+  Thus, we have $u + v + w + t = 23$. Thus, total no.\ of solutions is $C_{4 - 1}^^{23 + 4 - 1} = C_3^^{26}
+  = 2600$.
+\item We can write the given equations as $x_1 + x_2 + x_3 = 5$, and $x_4 + x_5 = 15$.
+
+  The no.\ of solutions of the given system of equations is combinaiton of the solutions of these two
+  equations, which is $C_1^^{16}\times C_2^^7 = 336$.
+\item Let $x-1, x_2, x_3, x_4$ be the no.\ of red, black, white, and yellow balls selected by the child
+  respectively. No.\ of ways to select $4$ balls is equal to number of integeral solutions of $x_1 + x_2 +
+  x_3 + x_4 = 4$. Clearly, $\max(x_i) = 5 - i$.
+
+  Number of ways to select balls is coeff. of $x^4$ in $(1 + x + x^2 + x^3 + x^4)(1 + x + x^2 + x^3)(1 + x +
+  x^2)(1 + x) =$ coeff. of $x^4$ in $(1 - x^5)(1 - x^4)(1 - x^3)(1 - x^2)(1 - x)^{-4}$
+
+  $=$ coeff. of $x^4$ in $(1 - x^2 - x^3 - x^4)(1 - x)^{-4} =$ coeff. of $x^4$ in $(1 - x)^{-4} -$ coeff. of
+  $x^2$ in $(1 - x)^{-4} -$ coeff. of $x$ in $(1 - x)^{-4} -$ constant term in $(1 - x)^{-4}$
+
+  $= C_4^^7 - C_2^^5 - C_1^^4 - C_0^^3 = 20$.
+\item
 \stopitemize
