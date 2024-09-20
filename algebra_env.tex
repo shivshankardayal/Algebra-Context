@@ -254,4 +254,20 @@
   \setupalign[hz,lesshyphenated,verytolerant,stretch]
 
   \setuplanguage[en][spacing=packed]% This avoids an extra space after full stops (periods) which is no longer 'de rigeur' in printed material in English.
+  \startMPcalculation
+    vardef drawarrow_withtext(expr A, B, str) =
+        save mylabel, mid;
+        pair mid; mid = 0.5[A, B];
+        picture mylabel; mylabel = thelabel(str, mid)
+            rotatedaround (mid, if xpart(B-A) >= 0: angle(B-A) else: angle(A-B) fi);
+        drawarrow A -- B; unfill bbox mylabel; draw mylabel;
+    enddef;
+    vardef drawdblarrow_withtext(expr A, B, str) =
+        save mylabel, mid;
+        pair mid; mid = 0.5[A, B];
+        picture mylabel; mylabel = thelabel(str, mid)
+            rotatedaround (mid, if xpart(B-A) >= 0: angle(B-A) else: angle(A-B) fi);
+        drawdblarrow A -- B; unfill bbox mylabel; draw mylabel;
+    enddef;
+  \stopMPcalculation
 \stopenvironment
