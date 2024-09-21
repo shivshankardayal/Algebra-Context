@@ -3084,4 +3084,189 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 
   and we see that \m{a_n = \frac{\alpha^{n + 1} - \beta^{n + 1}}{\alpha - \beta}} and hence we have general
   solution for Fibonacci series.
+\item Let $m_n$ be the minimum no.\ of moves that will transfer from one peg to the other peg under given
+  restrictions. By basic enumeration, we see that $m_1 = 1$ and $m_2 = 3$.
+
+  We first transfer $n - 1$ smaller disks to peg $3$ in $m_{n - 1}$ moves. Then move the largest disk to peg
+  $2$, and finally transfer $n - 1$ disks from peg $3$ to peg $2$ using same $m_{n - 1}$ moves.
+
+  Thus, $m_n = 2m_{n - 1} + 1\Rightarrow m_n + 1= 2(m_{n - 1} + 1) = 2^{n - 1}(a_1 + 1) = 2^n \Rightarrow
+  m_n = 2^n - 1$.
+\item Using the formulal for derangements $D_5 = 5!\left[1 - \frac{1}{1!}+ \frac{1}{2!} - \frac{1}{3!} +
+  \frac{1}{4!} - \frac{1}{5!}\right] = 44$.
+\item Let $A_k$ be the set of integers from $1$ to $1000$, which are divisible by $k$. We have to find
+  $n(A_2\cup A_3\cup A_5)$.
+
+  $n(A_2) = \left\lfloor\frac{1000}{2}\right\rfloor = 500, n(A_3) = \left\lfloor\frac{1000}{3}\right\rfloor
+  = 333, n(A_5) = \left\lfloor\frac{1000}{5}\right\rfloor = 200$.
+
+  $n(A_2\cap A_3) = \left\lfloor\frac{1000}{6}\right\rfloor = 166$. Similarly, $n(A_3\cap A_5) = 66,
+  n(A_1\cap A_5) = 100, n(A_2\cap A_3\cap A_5) = 33$.
+
+  Hence, $n(A_2\cup A_3\cup A_5) = 500 + 333 + 200 - 166 - 66 - 100 + 33 = 734$.
+
+  Hence, numbers not divisible by given numbers is $1000 - 734 = 266$.
+\item There are seven persons altogether. No.\ of ways of arranging them around the table is $6!$.
+
+  $n(A) =$ when two Americans are together $= 5!2! = 240, n(B) =$ when two Britishers are together $= 240$.
+
+  $\Rightarrow n(A\cap B) = n(A) + n(B) - n(A\cap B) = 384$
+
+  Hence $n(\bar{A}\cap \bar{B}) = $ Total $- n(A\cup B) = 336$.
+\item Let $C$ denote the selection of cards in which clubs are absent; $D$ denote the selection of cards
+  in which diamonds are absent; $H$ denote the selection of cards in which hearts are absent; and, $S$
+  denote the selection of cards in which spades are absent. Then,
+
+  $|C| = |D| = |H| = |S| = C_5^^{39}, |C\cap D| = \ldots = C_5^^{26}, |C\cap D\cap H| = \ldots = C_5^^{13}$
+  and $|C\cap D\cap H\cap S| = 0$.
+
+  $\therefore |C\cup D\cup H\cup S| = 4.C_5^^{39} - 6.C_5^^{26} + 4.C_5^^{13}$.
+
+  Hence, required answer is $C_5^^{52} - 4.C_5^^{39} + 6.C_5^^{26} - 4.C_5^^{13}$.
+\item Total no.\ of distributions when there are no conditions is $4^6$. No.\ of distributions when one box
+  is empty is $C_1^^4.3^6$; no.\ of distributions when two boxes are empty is $C_2^^4.2^6$; and, no.\ of
+  distributions when three boxes are empty is $C_3^^4.1^6$.
+
+  Thus, required no.\ is $4^6 - C_1^^4.3^6 + C_2^^4.2^6 - C_3^^4 = 2260$.
+
+  Similarly, when exactly one box is empty is $C_1^^4(3^6 - C_1^^3.2^6 + C_2^^3) = 2160$.
+\item Total no.\ of ways without any condition is $10^2 = 100$. Let $b - a\geq 6 \Rightarrow 1\leq a<b\leq
+  10\Rightarrow 1\leq a< b - 5\leq 5\Rightarrow C_2^^5 = 10$.
+
+  Similarly, $a - b\geq 6$ will give $10$ ways. Thus, required answer is $100 - 10 - 10 = 80$.
+\item Let $H, I$ and $D$ represent the set of people who read The Hindu, Indian Express and Deccan Herald,
+  respectively.
+
+  According to question, $|H\cap I\cap D|\leq 150, |H| = 70, |I| = 80, |D| = 50, |H\cap I| = 30, |H\cap D| =
+  20, |I\cap D| = 25$.
+
+  $|H\cap I\cap D| = |H| + |I| + |D| - |H\cap I| - |I\cap D| - |H\cap D| + |H\cap I\cap D|$
+
+  In order to maximize $|H\cap I\cap D|$ we have to maximize $|H\cup I\cup D|$ i.e. $150$.
+
+  Hence, $|H\cap I\cap D| = 25$.
+\item Let $n(S)$ be $100$. $\therefore n(S)\geq n(E\cup H) = n(E) + n(H) - n(E\cap H) \Rightarrow n(E\cap
+  H)\geq 45$.
+
+  Similarly, $n(S)\geq n(L\cup A) = n(L) + n(A) - n(L\cap A) \Rightarrow n(L\cap A)\geq 65$.
+
+  $n(S) = 100\geq n[(E\cap H)\cup (L\cap A)]\Rightarrow n(E\cap H\cap L\cap A)\geq 10$.
+
+  That is there is at least $10\%$ of the people must have lost all four.
+\item $A\cap B\subset A \Rightarrow n(A\cap B)\leq n(A) \Rightarrow d \leq a$. Also, $n(A\cap B)\leq B
+  \Rightarrow n(A\cap B)\leq n(B) \Rightarrow d\leq b$.
+
+  $n(A\cup B) = n(A) + n(B) - n(A\cap B) \Rightarrow c + d = a + b$.
+\item When there is no restriction and repetition allowed, each of $n$ digits can be filled in $3$ ways
+  using one of $1, 2$ or $3$.
+
+  Thus, no.\ of ways is $3^n$.
+
+  The number of $n$-digit numbers all of whose digits are $1, 2$ or $3$ is $3^n$. The number of $n$-digit
+  all of whose digits are $1$ and $2$, each occurring at least once is $2^n - 2$.
+
+  Thus, total no.\ of digits is $3^n - 3(2^n - 2) - 3 = 3^n - 3.2^n + 3$.
+\item $10^{60} = 2^{60}\times5^{60}$, therefore, $n(A) = 61^2$. $20^{50} = 2^{100}\times5^{50}$, therefore,
+  $n(B) = 101\times51$, and similarly, $n(C) = 41^3$.
+
+  Clearly, $n(A\cap B) = 61\times51$, where $61$ is the no.\ of ways of selecting $2$ and $51$ is the no.\
+  of ways of selecting $5$. Similarly, $n(B\cap C) = n(A\cap C) = 41^2$ and $n(A\cap B\cap C) = 41^2$.
+
+  $\therefore n(A\cap B\cap C) = n(A) + n(B) + n(C) - n(A\cap B) - n(A\cap B) - n(B\cap C) + n(A\cap B\cap
+  C) = 73,001$.
+\item First we assign $3$ for $x_1$, and $7$ for $x_3$. Now the problem remains of assigning remaining $18$
+  among $x_1, x_2$, and $x_3$ such that $x_1$ has at most $6, x_2$ at most $8$, and $x_3$ at most $10$.
+
+  The number of ways of distributing $18$ to these three is $C_{3 - 1}^^{18 + 3 - 1} = C_2^^{20} = 190$.
+
+  Let $d_1$ be the set of distributions, where $x_1$ gets at least $7; d_2$ be the set of distributions,
+  where $x_2$ gets at least $9$, and $d_3$ be the set of distributions, where $x_3$ gets at least $11$.
+
+  $|d_1| = C_{3 - 1}^^{18 - 7 + 3 - 1} = C_2^^{13} = 78. |d_2| = C_{3 - 1}^^{18 - 9 + 3 - 1} = C_2^^{11} =
+  55. |d_3| = C_{3 - 1}^^{18 - 11 + 3 - 1} = C_2^^9 = 36$.
+
+  $|d_1\cap d_2| = C_{3 - 1}^^{18 - 7 - 9 + 3 - 1} = 6. |d_2\cap d_3| = C_2^^{18 - 9 - 11 + 3 - 1} = C_2^^0
+  = 0. |d_1\cap d_3| = 1$.
+
+  Also, $|d_1\cap d_2\cap d_3| = 0\Rightarrow |d_1\cup d_2\cup d_3| = 162$.
+
+  So required no.\ of solutions is $190 - 162 = 28$.
+\item Let $A_i$ be the set of days on which $i$th friend is present, where $i = 1, 2, 3, \ldots, 6$.
+
+  Given, $n(A_i) = 7$, and $n(A_i') = 7$. Also given, $|A_i\cap A_j| = 5, |A_i\cap A_j\cap A_k| = 4,
+  |A_i\cap A_j\cap A_k\cap A_l| = 3, |A_i\cap A_j\cap A_k\cap A_l\cap A_m| = 2$, and $|A_1\cap A_2\cap
+  A_3\cap A_4\cap A_5\cap A_6| = 1$, where $i, j, k, l, m$ are distinct between $1$ and $6$.
+
+  $\therefore |A_1\cup A_2\cup \ldots \cup A_6| = 13$. This is total no.\ of dinners, where at least one
+  friend is present.
+
+  Total no.\ of dinners is $|A_i| + |A_i'| = 14$. Therefore, total no.\ of dinners, where I was along is
+  $1$.
+\item Let $M_r$ denote the set of morning rainy days, and $A_r$ be the set of afternoon rainy days. Then
+  $M_r'$ will represet clear mornings, and $A_r'$ will represnet clear afternoons.
+
+  Given, $M_r\cap A_r = \phi, M_r' = 6, A_r' = 5$, and $M_r\cup A_r = 7$. Also, given that $M_r$ and $A_r$
+  are disjoint sets, and $n(M_r) = d - 6, n(A_r) = d - 5$.
+
+  Applying PIE, we get $n(M_r\cup A_r) = n(M_r) + n(A_r) - n(M_r\cap A_r) \Rightarrow d = 9$.
+\item This is a straight problem of derangements. Applying the formula, we get
+
+  $D_n = n!\left[1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \cdots + \frac{(-1)^n}{n!}\right]$.
+\item We can choose one number in $C_1^^5 = 5$ ways. Rest $4$ numbers are a case of derangements, which is
+  $D_4 = 9$.
+
+  Thus, total no.\ of ways is $45$.
+\item First part is direct application of derangements. Using derangement formula, we have
+
+  $D_5 = 5!\left[1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \frac{1}{4!} - \frac{1}{5!}\right] = 44$.
+
+  No.\ of ways to place $2$ balls in correct box $=$ Total no.\ of ways $-$ No.\ of ways to place all balls
+  in wrong boxes $-$ No.\ of ways to place $1$ ball in correct box
+
+  $= 5! - 44 -$ No.\ of ways to place $1$ ball in correct box
+
+  To put one ball in correct box we can choose the ball in $C_1^^5$ ways, and then apply derangement formula
+  for remaining $4$ i.e. $D_4 = 9$. So no.\ of ways to put one ball correctly is same as previous problem
+  i.e. $9\times C_1^^5 = 45$.
+
+  Thus, required answer is $120 - 44 - 45 = 31$.
+\item First part is a direct derangement question. $D_6 = 6!\left[1 - \frac{1}{1!} + \frac{1}{2!} - \ldots +
+  \frac{1}{6!}\right] = 265$.
+
+  No.\ of ways to place at least $4$ letters correctly $= 4$ letters placed correctly $+ 5$ letters placed
+  correctly $+ 6$ letters placed correctly $= C_4^^6\times 1 + 0 + 1 = 16$.
+
+  No.\ of ways to place at most $3$ letters correctly $= 6$ letters placed correctly $+ $ 5 letters placed
+  correctly $+ 4$ letters placed correctly $+ 3$ letters placed correctly
+
+  $= 1 + 0 + C_4^^6 + C_3^^6.3!\left[1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!}\right] = 56$.
+\item Let $A$ denote the set of no.\ divisible by $2$, $B$ by $3$, and $C$ by $7$.
+
+  $n(A) = 50, n(B) = 33, n(C) = 14, n(A\cap B) = 16, n(A\cap C) = 7, n(B\cap C) = 4, n(A\cap B\cap C) = 2$.
+
+  $n(A\cup B\cup C) = n(A) + n(B) + n(C) - n(A\cap B) - n(A\cap C) - n(B\cap C) + n(A\cap B\cap C) = 50 + 33
+  + 14 - 16 - 7 - 4 + 2 = 72$.
+
+  $\therefore |\overline{A\cup B\cup C}| = 100 - 72 = 28$.
+\item Let $A$ denote the set of no.\ divisible by $2$, $B$ by $3$, and $C$ by $5$.
+
+  $n(A) = 250, n(B) = 166, n(C) = 100, n(A\cap B) = 83, n(A\cap C) = 50, n(B\cap C) = 33, n(A\cap B\cap C) =
+  16$.
+
+  $n(A\cup B\cup C) = n(A) + n(B) + n(C) - n(A\cap B) - n(A\cap C) - n(B\cap C) + n(A\cap B\cap C) = 250 +
+  166 + 100 - 83 - 50 - 33 + 16 = 366$
+
+  $\therefore |\overline{A\cup B\cup C}| = 500 - 366 = 134$.
+\item When least element is $3$, remaining $2$ can be chosen from $7$ in $C_2^^7$ ways. When $7$ is greatest
+  then remaining $2$ can be chosen from $6$ in $C_2^^6$ ways. No.\ of subsets satisfying both conditions is
+  $3$ because elements remaining are $4, 5, 6$.
+
+  Then from PIE, the answer is $C_2^^6 + C_2^^7 - 3 = 33$.
+\item Optional digits are $3, 4, 5, 6$. Number of $n$-digit numbers made from $2, 3, 4, 5, 6, 7$ is $6^n$.
+
+  Number of $n$-digit numbers containing $3, 4, 5, 6, 7$ is $5^n$, and similarly for $2, 3, 4, 5, 6$.
+
+  Number of $n$-digit numbers containing only $3, 4, 5, 6$ is $4^n$.
+
+  Thus, required answer is $6^n - 2\times5^n - 4^n$.
 \stopitemize

@@ -505,7 +505,7 @@ The last integer amongst $1, 2, \ldots, [n/p]$ which is divisible by $p$ is \sta
 Proceeding similarly, \startformula E_p(n!) = \left[\frac{n}{p}\right] + \left[\frac{n}{p^2}\right] + \ldots \left[\frac{n}{p^s}\right]\stopformula
 where $p^s\leq n\leq p^{s+1}$
 
-\section{Inclusion-Exclusion Principle}
+\section{Inclusion-Exclusion Principle(PIE)}
 We have seen examples of subtraction principle. Inclusion exclusion principle is an extension of subtraction principle. In this
 type of problems, it is easier to make an indect coutnt of object in a set rather than to count the objects directly. Consder
 following examples:
@@ -562,12 +562,37 @@ given by \startformula |A_1\cup A_2\cup \ldots\cup A_m| = \sum|Ai| - \sum|A_i\ca
   1}|A_1\cap A_2\cap \ldots\cap A_m|\stopformula
 
 The set $A_1\cup A_2\cup \ldots\cup A_m$ consiste of all those objects in $S$ which possess at least one of the
-properties. Also, \startformula |A_1\cup A_2\cup \ldots\cup A_m| = |S| - |\bar{A_1\cup A_2\cup \ldots\cup A_m}|.\stopformula
+properties. Also, \startformula |A_1\cup A_2\cup \ldots\cup A_m| = |S| - |\overline{A_1\cup A_2\cup \ldots\cup A_m}|.\stopformula
 
-From Demorgan's law \startformula \bar{|A_1\cup A_2\cup \ldots\cup A_m|} = \bar{A_1}\cap\bar{A_2}\cap\ldots\cap\bar{A_m}\stopformula
+From Demorgan's law \startformula |\overline{A_1\cup A_2\cup \ldots\cup A_m}| = \bar{A_1}\cap\bar{A_2}\cap\ldots\cap\bar{A_m}\stopformula
 
 Following result from previous definition, we have the required equality.
 
+\subsection{A Special Case of PIE}
+For any set $A$ having $n\geq 2$ element, $|A_1 + A_2 + \cdots + A_n = \displaystyle\sum_{i=0}^n|A_i| -
+\sum_{i<j}A_iA_j + \sum_{i,j<k}A_iA_jA_k| - \cdots +(-1)^n|A_1A_2\ldots A_n|$
+
+In some problems we deal with properties $a_1, a_2, \ldots, a_n$ and numerical values associated with
+properties i.e. $n(a_1), n(a_2), \ldots, n(a_n), n(a_1a_2), \ldots, n(a_{n-1}a_n) \ldots$ and so on.
+
+We can have
+
+\startitemize[n]
+\item $n(a_1) = n(a_2) = \cdots = n(a_n)$
+\item $n(a_1a_2) = n(a_2a_3) = \cdots = n(a_1a_n) = n(a_2a_3) = \cdots = n(a_{n - 1}a_n)$
+\item $n(a_1a_2a_3) = n(a_1a_2a_4) = \cdots = n(a_ia_ja_k)$, where $i\neq j\neq k$
+\stopitemize
+and so on.
+
+Let $N(r)$ denote the common properties of $a_1, a_2, \ldots, a_n$ when taken $r$ at a time. $N(0)$ is the
+value of $n(a_1'a_2'\ldots a_n')$, where $a_i'$ is the complementary property of $a_i$, and $N$ is the value
+of collection of zero property or at least one property.
+
+Now we can rewrite the PIE in the form of
+
+\startformula
+  N(0) = N - C_1^^nN(1) + C_2^^nN(2) - C_3^^nN(3) + \cdots + (-1)^nC_n^^nN(n)
+\stopformula
 \section{Derangements}
 Consider following problems. At a party $14$ gentlemen check their overcoats. In how many ways can their overcoats be returned so
 that no gentleman get their own overcoat? In a cricket team there are $11$ players who bat in a certain order. In how many ways
@@ -1266,7 +1291,7 @@ bijective function \m{n = m}.
   example, \m{2368} and \m{147} are strictly ascending but \m{xml43679} is not. Find the number of strictly
   ascending numbers \m{< 10^9}.
 \item Consider the image given below:
-  \startplacefigure[location={left,none}]
+  \startplacefigure
     \startMPcode
       draw (-0.5cm, 0) -- (5.5cm, 0);
       draw (0, 0) -- (0, -1cm);
@@ -1290,7 +1315,6 @@ bijective function \m{n = m}.
   There are \m{8} clay targets, arranged in \m{3} columns, to be shot by \m{8} bullets. Find the number of
   ways in which they can be shot, such that no target is shot before all the targets below it, if any, are
   first shot.
-  \vskip 4cm
 \item How many hexagons can be constructed by joining the vertices of a quindecagon (\m{15} sides) if none
   of the sides of the hexagon is also the side of the quindecagon?
 \item Let A be a set of \m{n(\geq 3)} distinct elements. Find the number of triplets \m{(x, y, z)} of the
@@ -1406,4 +1430,68 @@ bijective function \m{n = m}.
   distinct points.
 \item Determine number of ways to perfectly cover a \m{2\times n} board with dominoes (domino means a tile
   of size \m{2\times1}).
+\item Tower of Brahma (or Tower of Hanoi) is a puzzle consisting of three pegs mounted on a board and n
+  discs of different sizes. Initially all the $n$ discs are stacked on the first peg so that any disc is
+  always above a larger disc. The problem is to transfer all these discs to peg 2, with minimum number of
+  moves, each move consisting of transferring one disc from any peg to another so that on the new peg the
+  transferred disc will be on top of a larger disc (i.e., keeping a disc on a smaller one is not
+  allowed). Find the total (minimum) number of moves required to do this.
+\item Five letters are written to five different persons and their addresses are written on five envelopes
+  (one address on each envelope). In how many ways can the letters be placed in the envelopes so that no
+  letter is placed in the correct envelope?
+\item Find the number of positive integers from $1$ to $1000$, which are divisible by at least one of $2, 3$
+  or $5$.
+\item Find the number of ways in which two Americans, two Britishers, one Chinese, one Dutch and one
+  Egyptian can sit on a round table so that persons of the same nationality are separated.
+\item In how many ways can $5$ cards be drawn from a complete deck (of $52$ cards) so that all the suites
+  are present?
+\item In how many ways can $6$ distinguishable objects be distributed in four distinguishable boxes such
+  that there is no empty box? If exactly one box is empty?
+\item Find the number of ways to choose an ordered pair $(a, b)$ of numbers from the set $\{1, 2,…, 10\}$
+  such that $|a – b| \leq 5$.
+\item Suppose that in a poll made of $150$ people, the following information was obtained: $70$ of them read
+  The Hindu, $80$ read The Indian Express and $50$ read Deccan Herald. $30$ read both The Hindu and The
+  Indian Express; $20$ read both The Hindu and the Deccan Herald and $25$ read both The Indian Express and
+  Deccan Herald. Find at most how many of them read all the three.
+\item Lewis Carroll, the famous author of Alice in Wonderland, Through the Looking Glass, The hunting of the
+  Shark and other wonderful works, was a mathematician whose real name was Charles Lutwidge Dodgson
+  (1832–1898). Here is a problem from his book \quote{A Tangled Tale}.
+
+  Let $S$ be the set of pensioners, $E$ the set of those who lost an eye, $H$ those who lost an ear, $A$
+  those who lost an arm and $L$ those who lost a leg. Given that $n(E) = 70\%, n(H ) = 75\%, n(A) = 80\%$
+  and $n(L) = 85\%$. Find what percentage at least must have lost all the four.
+\item $a, b, c, d$ be integers $\geq 0, d \leq a, d \leq b$, and $a + b = c + d$. Prove that there exist
+  sets $A$ and $B$ satisfying $n(A) = a, n(B) = b, n(A \cup B) = c, n(A \cap B) = d$.
+\item How many positive integers of $n$ digits exist such that each digit is $1, 2$ or $3$? How many of
+  these contain all three of the digits $1, 2$ and $3$ at least once?
+\item $A, B$ and $C$ are the set of all the positive divisors of $10^{60}, 20^{50}$ and $30^{40}$
+  respectively. Find $n(A\cup B\cup C)$.
+\item Find the number of integer solutions to the equation $x_1 + x_2 + x_3 = 28$, where $3 \leq x_1 \leq 9,
+  0 \leq x_2 \leq 8$ and $7 \leq x_3 \leq 17$.
+\item I have six friends and during a certain vacation, I met them during several dinners. I found that I
+  dined with all the six exactly on $1$ day, with every five of them on $2$ days, with every four of them on
+  $3$ days, with every three of them on $4$ days and with every two of them on $5$ days. Further every
+  friend was present at $7$ dinners, and every friend was absent at $7$ dinners. How many dinners did I have
+  alone?
+\item A student on vacation for $d$ days observed that it rained seven times morning or afternoon; when it
+  rained in the afternoon, it was clear in the morning; there were five clear afternoon, and there were six
+  clear mornings. Find $d$.
+\item On a rainy day $n$ people go to a party. Each of them leaves his raincoat at the counter of the
+  gate. Find the number of ways in which the raincoats are handed over to the guests after the function is
+  over so that no one receives his/her own raincoat.
+\item Find the number of permutations of $1, 2, 3, 4, 5$ in which exactly one number occupies its natural
+  position.
+\item There are $5$ boxes of $5$ different colors. Also there are $5$ balls of colors same as those of the
+  boxes. In how many ways we can place $5$ balls in $5$ boxes such that all balls are placed in the boxes of
+  colors not same as those of the ball. At least $2$ balls are placed in boxes of the same color.
+\item In how many ways $6$ letters can be placed in 6 envelopes such that no letter is placed in its
+  corresponding envelope. At least $4$ letters are placed in correct envelopes. At most $3$ letters are
+  placed in wrong envelopes.
+\item Find the numbers from $1$ to $100$ which are neither divisible by $2$ nor by $3$ nor by $7$.
+\item Find the number of numbers, from amongst $1, 2, 3, \ldots, 500$, which are divisible by none of $2, 3,
+  5$.
+\item Find the number of $3$ element subsets of the set $\{1, 2, \ldots, 10\}$, in which the least element
+  is $3$ or the greatest element is $7$.
+\item Find the number of $n$ digit numbers, which contain the digits $2$ and $7$, but not the digits $0, 1,
+  8, 9$.
 \stopitemize
