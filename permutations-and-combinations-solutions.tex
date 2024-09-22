@@ -2738,6 +2738,12 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 
   \m{52} cards in \m{4} groups is a division problem. The answer according to formula is
   \m{\frac{52!}{(13!)^44!}}.
+\item There are two mutually exclusive cases. In first case, $2$ children get none, one child gets three and
+  remaining get one each. In second case, $2$ chidlren get none, two get two toys each and remaining get one
+  each.
+
+  In first case, no.\ of ways is $\frac{10!}{2!3!7!}.10!$, and in second case it is
+  $\frac{10!}{2!(2!)^22!6!}10!$.
 \item There are three possible distributions. When divided in \m{4, 2, 1} way; the no.\ of ways is
   \m{\frac{7!}{4!2!1!}.3! = 630}. When divided in \m{2, 2, 3} way; the no.\ of ways is
   \m{\frac{7!}{2!2!3!}.\frac{1}{2!}.3! = 630}. When divided in \m{3, 3, 1} way; the no.\ of ways is
@@ -3269,4 +3275,68 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
   Number of $n$-digit numbers containing only $3, 4, 5, 6$ is $4^n$.
 
   Thus, required answer is $6^n - 2\times5^n - 4^n$.
+\item If the integer is of one digit then there are no repeated digits. If the integer is of two digits then
+  we can fill first position in $9$ ways excluding $0$, and second position in $9$ ways excluding first
+  digit; this gives us $81$ integers. Similarly, for $3$ digit integer we have $648$ digits wiithout
+  repetition.
+
+  Thus, we have $738$ integers without repetition.
+\item No.\ of perfect squares is $10^4$. No.\ of perfect cubes is $464$. No.\ of fifth powers is
+  $39$. Squares, which are also cubes is $21$. Fifth powers, which are also squares is $6$. Fifth powers,
+  which are also cubes is $2$(excluding $1^5$, which is already accounted for).
+
+  Thus, no.\ of such powers is $10^4 + 464 + 39 − 21 − 6 − 2=10474$.
+
+  Thus, required answer is $10^8 - 10474 = 99,989,526$
+\item Zero letters can be chosen in $1$ way. One letter can be chosen in $26$ ways. Two letters can be
+  chosen in $26^2$, and three in $26^3$ ways. Similarly, digits can be chosen in $(1 + 10 + 10^2 + 10^3 +
+  10^4)$ ways.
+
+  Thus, no.\ of licenses which can be produced is $(1 + 26 + 26^2 + 26^3).(1 + 10 + 10^2 + 10^3 +
+  10^4)$. However, one of these contain neither a digits nor a letter i.e. it is empty, which is not
+  allowed. Hence, the answer is $(1 + 26 + 26^2 + 26^3).(1 + 10 + 10^2 + 10^3 + 10^4) - 1$.
+
+  If $85$ combinations of letters is not allowed then the answer would be $(1 + 26 + 26^2 + 26^3 - 85).(1 +
+  10 + 10^2 + 10^3 + 10^4)$.
+\item $MAT$ caannot be spelled if only one of the letters or two of them is chosen. No.\ of ways of chossing
+  one letter is $C_1^^3 = 3$.
+
+  No.\ of ways in which any two can be chosen is $C_2^^3(2^k - 2)$. Thus, $3 + C_2^^3(2^k - 2) = 93
+  \Rightarrow K = 5$.
+\item $10^{40} = 2^{40}.5^{40}$. Thus, it has $41\times41 - 1 = 1680$ factors. Factors of $20^{30} =
+  2^{60}.5^{30}$ not dividing $10^{40}$ have the form $2^m5^n$ with $41\leq m\leq 60$, and $0\leq n\leq 30$
+  i.e. no.\ of such numbers is $20.31 = 620$.
+\item Total no.\ of permutations is $7! = 5040$. Let $A$ be the set of words in which $\quote{beg}$
+  appear. Treating it as one letter we have $n(A) = 5! = 120$, and we have same for $\quote{cad}$ i.e. $n(B)
+  = 120$, where $B$ is the set of words where $\quote{cad}$ appears.
+
+  However, both can also come together, which is $n(A\cap B) = 3! = 6$ by treating both of them as one
+  letter.
+
+  Thus, $n(A\cup B) = 120 + 120  - 6 = 234$, and hence, $n(\overline{A\cup B}) = 5040 - 234 = 4806$.
+\item Total no.\ of permutations is $\frac{9!}{2!} = 181,440$.
+
+  Let $A$ represent the set of words in which $\quote{HIN}$ comes together. Treating $\quote{HIN}$ as one
+  letter, we have $n(A) = 7!$ permutations. Similarly, if we $\quote{DUS}$ treat as one, and $B$ is the set
+  in which it comes together,we have $n(B) = \frac{7!}{2!}$ permutations as $N$ comes twice. If $C$ is the
+  corresponding set for $\quote{TAN}$ then $n(C) = 7!$.
+
+  $\therefore n(A\cap B) = n(A\cap C) = n(B\cap C) = 5! = 120, n(A\cap B\cap C) = 3!= 6$.
+
+  $\Rightarrow n(A\cup B\cup C) = n(A) + n(B) + n(C) - n(A\cap B) - n(A\cap C) - n(B\cap C) + n(A\cap B\cap
+  C) = 5040 + 5040 + 2520 − 120 − 120 − 120 + 6$.
+
+  Hence, $n(\overline{A\cup B\cup C}) = 181440 - (5040 + 5040 + 2520 − 120 − 120 − 120 + 6) = 169,194$.
+\item Total no.\ of permutatiosn is $N = \frac{8!}{2!2!2!2!} = 2520$.
+
+  Let $\alpha$ represent the sets, where one of the letters come toegther then $n(\alpha) =
+  \frac{7!}{2!2!2!} = 630$.
+
+  Let $\alpha\beta$ represent the sets, where two of the letters come together then $n(\alpha\beta) =
+  \frac{6!}{2!2!} = 180$.
+
+  Similarly, $n(\alpha\beta\gamma) = \frac{5!}{2!} = 60$, and $n(\alpha\beta\gamma\delta) = 4! = 24$.
+
+  Applying PIE, we get the desired result as $N - 4n(\alpha) + 6(\alpha\beta) - 4(\alpha\beta\gamma) +
+  n(\alpha\beta\gamma\delta) = 864$.
 \stopitemize
