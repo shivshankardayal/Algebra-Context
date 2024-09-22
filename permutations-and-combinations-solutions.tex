@@ -3188,11 +3188,11 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
   Let $d_1$ be the set of distributions, where $x_1$ gets at least $7; d_2$ be the set of distributions,
   where $x_2$ gets at least $9$, and $d_3$ be the set of distributions, where $x_3$ gets at least $11$.
 
-  $|d_1| = C_{3 - 1}^^{18 - 7 + 3 - 1} = C_2^^{13} = 78. |d_2| = C_{3 - 1}^^{18 - 9 + 3 - 1} = C_2^^{11} =
-  55. |d_3| = C_{3 - 1}^^{18 - 11 + 3 - 1} = C_2^^9 = 36$.
+  $|d_1| = C_{3 - 1}^^{18 - 7 + 3 - 1} = C_2^^{13} = 78, |d_2| = C_{3 - 1}^^{18 - 9 + 3 - 1} = C_2^^{11} =
+  55,$ and $ |d_3| = C_{3 - 1}^^{18 - 11 + 3 - 1} = C_2^^9 = 36$.
 
-  $|d_1\cap d_2| = C_{3 - 1}^^{18 - 7 - 9 + 3 - 1} = 6. |d_2\cap d_3| = C_2^^{18 - 9 - 11 + 3 - 1} = C_2^^0
-  = 0. |d_1\cap d_3| = 1$.
+  $|d_1\cap d_2| = C_{3 - 1}^^{18 - 7 - 9 + 3 - 1} = 6, |d_2\cap d_3| = C_2^^{18 - 9 - 11 + 3 - 1} = C_2^^0
+  = 0, $ and $ |d_1\cap d_3| = 1$.
 
   Also, $|d_1\cap d_2\cap d_3| = 0\Rightarrow |d_1\cup d_2\cup d_3| = 162$.
 
@@ -3339,4 +3339,92 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 
   Applying PIE, we get the desired result as $N - 4n(\alpha) + 6(\alpha\beta) - 4(\alpha\beta\gamma) +
   n(\alpha\beta\gamma\delta) = 864$.
+\item Since we have to find non-negative values, it implies that values can be zero also.
+
+  No.\ of ways of distributing $15$ among three variables is $C_2^^{17} = 136$.
+
+  Let $d_1$ be the no.\ of distributions, where $x_1$ gets at least $6; d_2$ be the set of distributions,
+  where $x_2$ gets at least $7$; and $d_3$ be the set of distributions, where $x_3$ gets at least $8$.
+
+  $|d_1| = C_{3 - 1}^^{15 - 6 + 3 - 1} = C_2^^{11}, |d_2| = C_2^^{10}$, and $|d_3| = C_2^^9$.
+
+  $|d_1\cap d_2| = C_{3 - 1}^^{15 - 6 - 7 + 3 - 1} = C_2^^4, |d_1\cap d_3| = C_2^^3,$ and $|\d_2\cap d_3| =
+  C_2^^2$.
+
+  Also, $|d_1\cap d_2\cap d_3| = 0 \Rightarrow |d_1\cup d_2\cup d_3| = 55 + 45 + 36 - 6 - 3 - 1 = 126$.
+
+  $\Rightarrow |\overline{d_1\cup d_2\cup d_3}| = 136 - 126 = 10$.
+\item No.\ of years divisible by $4$ between $1000$ and $3000$(both inclusive) is $501$. No.\ of years
+  divisible by $100$ between $100$ between given range is $21$, and no.\ of years divisible by $400$ is $5$.
+
+  Thus applying PIE, we have $501 - 21 + 5 = 485$ as the answer.
+\item Let $S$ denote all the onto functions. Total no.\ of ways of mapping elements is $|S| = 3^6$. For $i =
+  1, 2, 3$ let $S_i\subset S$ denote the functions that have $i$ not in their image.
+
+  So the answer is $|S| - |S_1\cup S_2\cup S_3| = 3^6 - |S_1\cup S_2\cup S_3|$. Now $|S_1\cup S_2\cup S_3|$
+  can be found using PIE, to be equal to $C_1^^3|S_1| - C_2^^3|S_1\cap S_2| = 3.2^6 - 3.1^6$.
+
+  Thus, answer is $3^6 - 3.2^6 + 3$.
+\item There are two possible ways to construct these $6$-digit numbers.
+
+  First, three digts of one kind, and remaining three of different kind. No.\ of such numbers is
+  $C_1^^{10}.C_3^^9.\frac{6!}{3!} = 100,800$.
+
+  Second, two digits of one kind and remaining two of different kind. No.\ of such numbers is
+  $C_2^^{10}.C_2^^{8}.\frac{6!}{2!2!} = 226,800$.
+
+  However, one-tenth of these numbers will start with $0$. So the answer is $\frac{9(100800 + 226800)}{10} =
+  294,840$.
+
+\item R.H.S. $= (n - 1)(D_{n _ 1} + D_{n - 2}) = (n - 1)(n - 2)!\left[(n- 1)\left(1 - \frac{1}{1!} +
+  \frac{1}{2!} - \cdots + \frac{(-1)^{n - 1}}{(n - 1)!}\right) + \left(1 - \frac{1}{1!} + \frac{1}{2!} -
+  \cdots + \frac{(-1)^{n - 2}}{(n - 2)!}\right)\right]$
+
+  $= (n - 1)!\left[n - 1 + 1 - \frac{1}{1!}(n - 1 + 1) + \frac{1}{2!}(n - 1 + 1) - \cdots + \frac{(-1)^{n -
+      2}}{(n - 2)!}(n - 1 + 1) + \frac{(-1)^{n - 1}(n - 1)}{(n - 1)!}\right]$
+
+  $= n!\left[1 - \frac{1}{1!} + \frac{1}{21} - \cdots + \frac{(-1)^n}{n!}\right] = D_n =$ L.H.S.
+\item $\displaystyle\lim_{x\to\infty}\frac{D_n}{n!} = 1 - \frac{1}{1!} + \frac{1}{2!} - \cdots$.
+
+  We know that $e^x = 1 + \frac{x}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots$, and hence,
+
+  $\frac{1}{e} = 1 - \frac{1}{1!} + \frac{1}{2!} - \cdots =$ L.H.S.
+\item We can pick a glove either left or right in $5$ ways, and a person in $5$ ways as well. Thus, no.\ of
+  ways to give a glove is $25$. Once we have given a glove our choice for the matching pair is only one
+  because one person has to get a correct pair of gloves.
+
+  Now we have to distribute remaining gloves in such a way that no one gets a correct pair. We pick all left
+  gloves and distribute them in $4!$ ways. Now distributing the right gloves is a derangement problem, which
+  is equal to $4!\left[1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \frac{1}{4!}\right] = 9$.
+
+  Thus, total no.\ of ways is $25\times4!\times 9 = 5400$.
+\item L.H.S. $=\displaystyle\sum_{r = 1}^nr!r = \sum_{r = 1}^n[(r + 1)! - r!] = 2! - 1! + 3! - 2! + \cdots +
+  (n + 1)! - n! = (n + 1)! - 1 =$ R.H.S.
+\item When all matches are correct the condition is satisfied, which can be done in $1$ way. There is no way
+  to answer with $5$ correct matches and $1$ incorrect match because if $5$ are correct then $6$th is
+  automatically correct.
+
+  When $4$ are correct, and $2$ are incorrect. $4$ can be selected in $C_4^^6$ ways. $2$ incorrect matches
+  can be done in $1$ way. Thus, total is $C_4^^6 = 15$.
+
+  Finally, we can have $3$ correct, and $3$ incorrect matches. This can be done in $C_3^^6\times2 = 40$
+  ways.
+
+  Thus, total no.\ of ways to pass is $56$.
+\item Let $R(n)$ be the number of regions formed by $n$ parabolas. When there are $n - 1$ parabolas, $n$th
+  parabola will be intersected at $2(n - 1)$ points, so it will be divided into $2n - 1$ arcs. Each arc adds
+  a region. So $R(n) = R(n - 1) + 2n - 1$. We have base case as $R(1) = 2$.
+
+  Hence, $R(n) = n^2 + 1 \Rightarrow R(10) = 101$.
+\item Let there be $n$ staircases. We can reach $n$th stair from $(n - 1)$th or $(n - 2)$th stair. Thus,
+  $f(n) = f(n - 1) + f(n - 2)$.
+
+  Our base case is $f(1) = 1, f(2) = 2$, and hence $f(12) = 233$.
+\item Like previous problem the recurrence relation is same, and hence, $f(10) = 144$.
+\item Every paving of $1\times n$ is paving of $1\times(n - 1)$ with $1\times1$ at the end or $1\times(n -
+  2)$ with $1\times2$ at the end or $1\times(n - 3)$ with $1\times3$ at the end.
+
+  Hence, the recurrence relation is $f(n) = f(n - 1) + f(n - 2) + f(n - 3)\forall n\geq 3$.
+
+  The base cases are $f(0) = 1, f(1) = 1, f(2) = 2$, and hence, $f(7) = 44$.
 \stopitemize

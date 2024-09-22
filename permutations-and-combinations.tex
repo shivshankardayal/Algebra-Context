@@ -622,6 +622,21 @@ Let \m{P = \{a_1, a_2, \ldots, a_n\}}, and \m{Q = \{b_1, b_2, \ldots, b_n\}}. If
 injective function then \m{n\leq m}. If \m{f:P\rightarrow Q} is a surjective function then \m{n\geq m}. If
 \m{f: P\rightarrow Q} is injective and surjective then \m{f} is known to be a bijective function. For a
 bijective function \m{n = m}.
+
+\section{Occupancy Problems}
+The problems related to distribution of balls into cells are called occupancy problems. We can have
+following cases:
+\subsection{Distinguishable Balls and Distinguishable Cells}
+Number of ways to divide $n$ non-identical balls in $r$ different cells such that each cell gets $0$ or more
+number of balls (empty cells allowed) $= r^n$.
+
+If no cell is empty, then the number is found by the inclusion/exclusion principle or by recurrence relation
+or by generating function method. Using any one of them number of ways, to divide $n$ non-identical balls in
+$r$ different cells such that each cell gets at least one object, can be found.
+$= r^n - C_1^^r(r - 1)^n + C_2^^r(r - 2)^n - \cdots + (-1)^rC_{r-1}^^r1^n$.
+
+\subsection{Identical Balls and Distinguishable Cells}
+If an empty cell is allowed, then the number of distributions is $C_{r - 1}C^^{n + r - 1}$.
 \section{Problems}
 \startitemize[n, 1*broad]
 \item If ${}^{n}P_4 = 360$, find $n$.
@@ -1510,4 +1525,29 @@ bijective function \m{n = m}.
   pattern $\quote{HIN}$ nor $\quote{DUS}$ nor $\quote{TAN}$ appears.
 \item Find the number of permutations of the $8$ letters $AABBCCDD$, taken all at a time, such that no two
   adjacent letters are alike.
+\item Find the number of non-negative integer solutions of $x_1 + x_2 + x_3 =15$, subject to $x_1 \leq 5,
+  x_2 \leq 6$, and $x_3 \leq 7$.
+\item According to the Gregorian calendar, a leap year is defined as a year $n$ such that (i) $n$ divides
+  $4$ but not $100$; or (ii) $n$ divides $400$. Find the number of leap years from the year $1000$ to the
+  year $3000$, inclusive.
+\item Find the number of onto functions from a set containing $6$ elements to a set containing $3$ elements.
+\item How many $6$-digit numbers contain exactly three different digits?
+\item Let $D_n$ be the nth derangement number. Prove that $D_n = (n - 1)(D_{n - 1} + D_{n - 2}), n > 2$.
+\item Let $D_n$ be the nth derangement number. Prove that $\displaystyle\lim_{n\to\infty}\frac{D_n}{n!} =
+  \frac{1}{e}$.
+\item Five pairs of hand gloves of different colours are to be distributed to each of five people. Each
+  person must get a left glove and a right glove. Find the number of distributions so that,exactly one
+  person gets a proper pair.
+\item Prove (combinatorially) that $\displaystyle\sum_{r = 1}^n r ! r = ( n + 1)! − 1$.
+\item In maths paper there is a question on \quote{Match the column} in which column A contains $6$ entries
+  and each entry of column A corresponds to exactly one of the $6$ entries given in column B written
+  randomly. $2$ marks are awarded for each correct matching and $1$ mark is deducted from each incorrect
+  matching. A student having no subjective knowledge decides to match all the 6 entries randomly. Find the
+  number of ways in which he can answer, to get atleast $25\%$ marks in this question.
+\item Ten parabolas are drawn in a plane. Any two parabola intersect in four real, and distinct, points. No
+  three parabola are concurrent. Find the total number of disjoint regions of the plane.
+\item In how many ways can a $12$ step staircase be climbed taking $1$ step or $2$ steps at a time?
+\item A coin is tossed $10$ times. Find the number of outcomes in which $2$ heads are not successive.
+\item Find the number of ways to pave a $1\times7$ rectangle by $1\times1, 1\times2, 1\times3$ tiles, if
+  tiles of the same size are indistinguishable
 \stopitemize
