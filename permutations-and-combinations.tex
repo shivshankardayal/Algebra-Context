@@ -624,19 +624,82 @@ injective function then \m{n\leq m}. If \m{f:P\rightarrow Q} is a surjective fun
 bijective function \m{n = m}.
 
 \section{Occupancy Problems}
-The problems related to distribution of balls into cells are called occupancy problems. We can have
+The problems related to distribution of balls into boxes are called occupancy problems. We can have
 following cases:
-\subsection{Distinguishable Balls and Distinguishable Cells}
-Number of ways to divide $n$ non-identical balls in $r$ different cells such that each cell gets $0$ or more
-number of balls (empty cells allowed) $= r^n$.
+\subsection{Distinguishable Balls and Distinguishable Boxes}
+Number of ways to divide $n$ non-identical balls in $r$ different boxes such that each box gets $0$ or more
+number of balls (empty boxes allowed) $= r^n$.
 
-If no cell is empty, then the number is found by the inclusion/exclusion principle or by recurrence relation
+If no box is empty, then the number is found by the inclusion/exclusion principle or by recurrence relation
 or by generating function method. Using any one of them number of ways, to divide $n$ non-identical balls in
-$r$ different cells such that each cell gets at least one object, can be found.
-$= r^n - C_1^^r(r - 1)^n + C_2^^r(r - 2)^n - \cdots + (-1)^rC_{r-1}^^r1^n$.
+$r$ different boxes such that each box gets at least one object, can be found.
+\startformula
+= r^n - C_1^^r(r - 1)^n + C_2^^r(r - 2)^n - \cdots + (-1)^rC_{r-1}^^r1^n
+\stopformula
 
-\subsection{Identical Balls and Distinguishable Cells}
-If an empty cell is allowed, then the number of distributions is $C_{r - 1}C^^{n + r - 1}$.
+\subsection{Identical Balls and Distinguishable Boxes}
+\starttheorem[th:ibdc:1]
+  If an empty box is allowed, then the number of distributions is $C_{r - 1}^^{n + r - 1}$.
+\stoptheorem
+\startproof
+  Let $x_1, x_2, \ldots, x_r$ be the numnber of objects given to groups $1, 2, \ldots, r$ respectively.
+
+  Clearly, $x_1 + x_2 + \cdots + x_r = n$.
+
+  As each group can get zero or more, we have $0\leq x_i\leq n~i=1, 2, 3, \ldots, r$.
+
+  We observe that the number of integral solutions ofthe above equation is equal to number of ways of
+  distributing $n$ identical objects among $r$ groups such that each gets zero or more
+
+  $= C_n^^{n + r - 1} = C_{r - 1}^^{n + r - 1}$.
+
+  If no box is allowed to remain empty then the no.\ of ways become $C_{r - 1}^^{n - 1}$.
+\stopproof
+
+\subsection{Distinguishable Balls and Identical Boxes}
+We mark the balls by $n$ natural numbers $1, 2, \ldots, n$. A partition of $\{1, 2, \ldots, n\}$ in $r$ part
+is a set if $r$ non-empty subsets $A_1, A_2, \ldots, A_r$ of $\{1, 2, \ldots, n\}$ such that $A_1\cup
+A_2\cup \ldots\cup A_r = \{1, 2, \ldots, n\}$ and any two of the sets $A_1, A_2, \ldots, A_r$ are disjoint.
+
+We denote the number of partitions of $\{1, 2, \ldots, n\}$ by $S(n, r)$, which is called a Stirling number
+of the second kind.
+
+We can easily verify that $S(n, 1) = 1, S(n, n) = 1, S(n, r) = 0$, if $r > n$.
+
+Now we will find $S(n, r)$ for $1 < r < n$. First possibility is that the number $n$ is by itself a
+partition, which implies that the number $1, 2, \ldots, n - 1$ must form a $r - 1$ partition. The number of
+such partitions is $S(n - 1, r - 1)$.
+
+Second case is that, the number $n$ is along with at least one of $1, 2, \ldots, n - 1$ in a partition,
+which implies that the numbers $1, 2, \ldots, n - 1$ must form a $r$ partition, and $n$ must be inserted in
+anyone of the $r$ subsets. So $n$ can be put in $r$ ways. The number of such partitions is $rS(n - 1, r)$.
+
+Hence, $S(n, r) = S(n - 1, r - 1) + rS(n - 1, r) \Rightarrow S(n, 2) = 2^{n - 1} - 1$.
+
+In general, we can easily find
+\startformula
+  S(n, r) = \frac{1}{r!}\left[r^n - C_1^^r(r - 1)^n + C_2^^r(r - 2)^n - \cdots + (-1)^{r - 1}C_{r - 1}^^r1^n\right].
+\stopformula
+
+\subsection{Identical Balls and Identical Boxes}
+We find distribution of $n$ identical balls in $r$ identical boxes so that no box remains empty.
+
+The number of distributions $=$ The number of ways of writing $n$ as the sum $x_1 + x_2 + \cdots + x_r$,
+where $x_i\in\mathbb{P}, i = 1, 2, \ldots, r =$ Number of partitions of $n$ in $r$ parts.
+
+This is same as finding number of integral solutions of $x_1 + x_2 + \cdots + x_r = n$ with $1\leq x_1\leq
+x_2\leq \cdots \leq x_r$, which is equal to coeff. of $x^n$ in $\frac{x^r}{(1 - x)(1 - x^2)\cdots(1 -
+  x^r)}$. Let us denote this number by $P_r(n)$.
+
+We see that $P_1(n) = P_n(n) = 1, P_2(n) \left\lfloor \frac{n}{2}\right\rfloor, P_r(n) = 0, r > n$. Now we
+will find $P_r(n), 1< r < n$. We divide all partition in two types. (i) At least one partition of size $1$
+(ii) Nopartition of size $1$.
+
+Number of partitions of in case (i) is $P_{r - 1}(n - 1)$. Number of partitions in case (ii) is $P_r(n -
+r)$. Now we add one ball in each part so that each part will have size of at least $2$.
+
+Hence, $P_r(n) = P_{r - 1}(n - 1) | P_r(n - r), 1 < r\leq \left\lfloor \frac{n}{2}\right\rfloor$.
+
 \section{Problems}
 \startitemize[n, 1*broad]
 \item If ${}^{n}P_4 = 360$, find $n$.
