@@ -700,6 +700,31 @@ r)$. Now we add one ball in each part so that each part will have size of at lea
 
 Hence, $P_r(n) = P_{r - 1}(n - 1) | P_r(n - r), 1 < r\leq \left\lfloor \frac{n}{2}\right\rfloor$.
 
+\section{Dirichlet Drawer Principle or Pigeonhole Principle}
+The simplest form of the pigeonhole principle is the following quite obvious statement.
+
+\starttheorem
+  If $n + 1$ objects are distributed into $n$ boxes, then at least one box contains two or more of the objects.
+\stoptheorem
+
+\startproof
+  We will prove this by contradiction. If each box contains at most one object, then the total number of
+  objects is $1 + 1 + \ldots + 1(n 1s) = n$. Since we have $n + 1$ objects for distribution, some box will
+  contain at least two of the obect.
+\stopproof
+
+\subsection{Pigeonhole Principle: Strong Form}
+\starttheorem
+  Let $x_1, x_2, \ldots, x_n\in\mathbb{P}$. If $x_1+ x_2 + \cdots + x_n - n + 1$ objects are distributed
+  into $n$ boxes, then at least one of the $i$th boxes contain at least $x_i$ objects.
+\stoptheorem
+
+\startproof
+  Suppose that we distribute $x_1 + x_2 + \cdots + x_n - n + 1$ objects among $n$ boxes. Let $i$th box
+  contain $x_i - 1$ objects, then total would be $\displaystyle\sum_{i=1}^n(xi - 1) = x_1 + x_2 + \cdots +
+  x_n - n$ objects. And hence, at least one of the $i$th box will contain at least $x_i$ objects.
+\stopproof
+
 \section{Problems}
 \startitemize[n, 1*broad]
 \item If ${}^{n}P_4 = 360$, find $n$.
