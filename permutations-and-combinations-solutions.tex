@@ -3585,17 +3585,87 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
   $2$cm. Join midpoints and sides as shown which will yield $24$ equilateral triangles, each of side
   $1cm$.
 
-  \startplacefigure
+  \startplacefigure[location=none]
     \externalfigure[images/permutation-combination-hexgon.pdf]
   \stopplacefigure
 
   We have to place $25$ points in these $24$ triangles so as to violate the required condition, which is not
   possible. Hence, the result.
 \item Draw the circle and divide it into six equal parts as shown.
-  \startplacefigure
+  \startplacefigure[location=none]
     \externalfigure[images/permutation-combination-circle.pdf]
   \stopplacefigure
 
   We have to place $7$ points in these $6$ equal parts so as to violate the required condition, which is not
   possible. Hence, the result.
+\item Draw the equilateral triangle and join the mid-points of every side.
+  \startplacefigure[location=none]
+    \startMPinclusions
+      vardef triangle_fractal(expr a, b, c)=
+      draw a -- b -- c -- cycle;
+      enddef
+    \stopMPinclusions
+    \startMPcode
+      pair a; pair b; pair c; pair d;
+      a := (-2cm, 0); b := (2cm, 0); c := (0, 3.464cm);
+      triangle_fractal(a, b, c);
+      for i:=0 step 1 until 8:
+      d := a;
+      a := (a + b)/2; b := (b + c)/2; c := (c + d)/2;
+      triangle_fractal(a, b, c);
+      endfor;
+    \stopMPcode
+  \stopplacefigure
+  We have initial triangle of side $1$ cm. Upon joining mid-points we get $4$ equilateral triangles of side
+  $\frac{1}{2}$ cm futher reduced by same factor on further joining of mid-points of reulting triangles.
+
+  Now as we can see that we cannot place $5 = 4^1 + 1$ points without violating the required condition it
+  propagates to smaller triangles as well. Hence, the result.
+\item There are $34$ integers in the progression. We consider the pairs whose sum is $104$ i.e. $(4, 100),
+  (7, 97), (10, 94), \ldots, (49, 55)$. Thus we have $16$ pairs. In these pairings we leave out $1$ and $52$
+  as they do not have a correpoding pairing element.
+
+  Thus, we can pick $1$ element out of $16$ pairs along with $1$ and $52$, which will not have a sum of
+  $104$. However, the moment we pick $19$th number it will form at least one pair with one of the $16$
+  chosen numbers from pairs. Hence, the result is proven.
+\item Since $n(X) = 10$, the number of non-empty, proper subsets of $X$ is $2^{10} - 2 = 1022$.
+
+  The sum of the elements of the proper subsets of $X$ can possibly range from $1$ to
+  $\displaystyle\sum_{i=1}^9(90 + i)$ i.e. $1$ to $855$.
+
+  Thus, the $1022$ subsets can have sums from $1$ to $855$. Thus, by Piegonhole principle, at least two
+  subsets $B$ and $C$ will have the same sum. If $B$ and $C$ are not disjoint, then let
+
+  $X = B - (B\cap C)$ and $Y = C - (B\cap C)$.
+
+  Clearly, $X$ and $Y$ are disjoint, non-empty, and have the same sum of their elements.
+
+  We define $s(A) =$ sum of the elements $A$. We have $B$ and $C$ not necessarily disjoint such that $s(B) =
+  s(C)$.
+
+  Clealrly, $s(X) = s(B) - s(B\cap C)$ and $s(Y) = s(C) - s(B\cap C)$. However, $s(B) = s(C)$, and hence
+  $s(X) = s(Y)$.
+\item In base-$10$ or decimal number system we have $10$ digits; $0$ through $9$. For $3$ numbers of
+  $4$-digits not to have common numbers we need $12$ digits. Thus, by Pigeonhole principle at least two must
+  have a common digit.
+
+  Similarly, in base-$7$ we have $7$ digits(not a correct word for base-$7$ symbols, possible word is {\it
+    heptit}); $0$ through $7$. For $2$ numbers of $4$-digit we need at least $8$-digits for no repetition
+  which is not possible as we have only $7$ available for use. Hence, the result.
+\item To represent $3$ numbers of $k$-digits such that there is no common digit between them and without
+  repetition we need $3k$ digits. However, we have only $2k$ available to us. Now $k\geq 1$ so $3k - 2k\geq
+  1$, and hence, the result.
+
+  Similarly, for $3k + 1$ digit numbers will have $3k + 3$ digits in all, but we have only $2k + 1$ base
+  i.e. $2k + 1$ different digits. And hence, the result.
+\item Pairs which have the sum $2n + 2nd$ are $[a, a + 2nd], [a + d, a + (2n - 1)d], \ldots, [a + (n - 1)d,
+  a + (n + 1)d]$.
+
+  Now since, we cannot have sum equal to $2a + 2nd$ so we drop one element from each pair leaving us $n$
+  terms and we also include $a + nd$ to this giving us $n + 1$ terms, giving us the required result for part
+  one.
+
+  In the second part of the problem $S = \{a, a + d, \cdots + a + (2n + 1)d\}$. Pairs which give $2a + (2n +
+  1)d$ as sum are $[a, a + (2n + 1)d], [a + d, a + 2nd], \ldots, [a + nd, a + (n + 1)d]$. Thus, we have $n +
+  1$ pairs. If we pick one from each pair we get $n + 1$ terms of $A$, which satisfy required condition.
 \stopitemize
