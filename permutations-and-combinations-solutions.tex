@@ -3427,4 +3427,175 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
   Hence, the recurrence relation is $f(n) = f(n - 1) + f(n - 2) + f(n - 3)\forall n\geq 3$.
 
   The base cases are $f(0) = 1, f(1) = 1, f(2) = 2$, and hence, $f(7) = 44$.
+\item For first part, the no.\ of ways are $3^5 = 243$. For second part, the no. of ways are $r^n - C_1^^r(r
+  - 1)^n + C_2^^r(r - 2)^n - \cdots $
+
+  Putting $n = 5$, and $r = 3$ in the above equation, we get
+
+  No.\ of ways $= 3^5 - C_1^^32^5 + C_1^^3.1^5 = 150$.
+\item The terms of the exxpansion $(a + b + c + d)^{24}$ will have the form
+  $k.a^{e_1}b^{e_2}c^{e_3}d^{e_4}$, where $k$ is a constant, and $e_i, 0\leq e_i\leq 24$ are integers such
+  that $e_1 + e_2 + e_3 + e_4 = 24$.
+
+  The problem is equivalent to ditributing $24$ identical balls in $4$ distinguishable boxes, where empty
+  boxes are allowed. The no.\ is $C_{24}^^{24 + 4 - 1} = C_{24}^^{27}$.
+\item The number of ways of dividing $n$ identical balls into $r$ boxes so that no box remains empty is
+  $C_{r - 1}^^{n - 1} = C_2^^4 = 6$.
+\item No.\ of ways of distributing balls is equal to no.\ of integral solutions of the equation $x_1 + x_2 +
+  x_3 = 10$, where $2\leq x_i\leq 4, i = 1, 2, 3$.
+
+  No.\ of ways is coeff.\ of $x^{10}$ in $(x^2 + x^3 + x^4)^3 =$ coeff.\ of $x^4$ in $(1 - x^3)^3(1 - x)^{-3}
+  = C_4^^{4 + 3 - 1} - 3.C_1^^{3 + 1 - 1} = 6$.
+\item Let the boys get $a, a + b, a + b + c$ toys respectively such that $a, b, c\geq 1$. Thus, we have $3a
+  + 2b + c = 14$.
+
+  Therefore, no.\ of solutions $=$ coeff.\ of $x^{14}$ in $(x^3 + x^6 + x^9 + \cdots)(x^2 + x^4 + \cdots)(x
+  + x^2 + x^3 + \cdots)$
+
+  $=$ coeff.\ of $x^8$ in $(1 + x^2 + x^3 + x^4 + x^5 + 2x^6 + x^7 + 2x^8)(1 + x + x^2 + \cdots + x^8) =
+  10$.
+
+  Since these numbers can be assigned in $3!$ ways, so, total no.\ of ways is $60$.
+\item Required answer is $S(5, 1) + S(5, 2) + S(5, 3). S(5, 1) = 1, S(5, 2) = 2^{5 - 1} - 1 = 15$.
+
+  $S(5, 3) = S(4, 2) + 3S(4, 3) = 25$. So the answer is $41$.
+\item The answer is $P_3(6n) + P_2(6n) + P_1(6n)$.
+
+  We know that $P_k(b) - P_k(n - k) = P_{k - 1}(n - 1)\Rightarrow P_3(6n) - P_3(6n - 3) = P_2(6n - 1) =
+  \left\lfloor\frac{6n - 1}{2}\right\rfloor = 3n - 1$
+
+  and $P_3(6n - 3) - P_3(6n - 6) = P_2(6n - 4) = \left\lfloor\frac{6n - 4}{2}\right\rfloor = 3n - 2$
+
+  $\Rightarrow P_3(6n) - P_3(6(n - 1)) = 3(2n - 1)\Rightarrow P_3(6n) - P_3(6) = 3(n^2 - 1)$
+
+  As $P_3(6) = 3 \Rightarrow P_3(6n) = 3n^2 \Rightarrow P_2(6n) = 3n$ and $P_1(6n) = 1$.
+
+  Hence, answer is $3n^2 + 3n + 1$.
+\item Total no.\ of ways is $2^n$. However, in $2$ of the ways all the balls go in each box but the question
+  says that boxes cannot remain empty.
+
+  Thus, answer is $2^n - 2$.
+\item $S(n, 2) = 2^{n - 1} - 1$.
+\item {\bf Case I:} When no box is empty. No.\ of ways of distributing the balls is $C_4^^9 = 126$.
+
+  {\bf Case II:} When one box is empty. No.\ of ways $=$ Selection of one box $\times$ Distribution of $10$
+  balls into $4$ boxes $= C_1^^5\times C_3^^9 = 420$.
+
+  {\bf Case III:} When two boxes are empty. No. of ways $=$ (Selection of two boxes $-$ Adjacent
+  boxes)$times$ Distribution of $10$ balls into $3$ boxes $= (C_2^^5 - 4)\times C_2^^9 = 216$.
+
+  {\bf Case IV:} When three boxes are empty. There is only one way to select three boxes when adjacent boxes
+  are not empty. No.\ of ways is $1\times C_1^^9 = 9$.
+
+  Thus, total no.\ of ways is $126 + 420 + 216 + 9 = 771$.
+\item The answer is equivalent to integral solution of $x_1 + x_2 + x_3 + x_4 + x_5 + x_6 = 12$ such that
+  $1\leq x_i\leq 3, i = 1, 2, 3, 4, 5, 6$.
+
+  No.\ of integral solutions is coeff. of $x^{12}$ in $(x + x^2 + x^3)^6 =$ coeff.\ of $x^6$ in $(1 + x +
+  x^2)^6$
+
+  $=$ coeff. of $x^6$ in $(1 - x^3)^6(1 - x)^{-6} =$ coeff. of $x^6$ in $(1 - 6x^3 + 15x^6 - ...)(1 + 6x +
+  C_2^^7x^2 + C_3^^8x^3 + C_4^^9x^4 + C_5^^{10}x^5 + C_6^^{11}x^6 + \cdots)$
+
+  $= C_6^^{11} - 6.C_3^^8 + 3 = 141$.
+\item Following like previous problem, maximum a person can get is $10$ rupees when five others get the
+  minimum of $4$ rupees.
+
+  Thus, the answer is coeff.\ of $x^{30}$ in $(x^4 + x^ 5 + x^6 + x^7 + x^8 + x^9 + x^{10})^6 =$ coeff.\ of
+  $x^6$ in $(1 - x^7)^6(1 - x)^{-6} = C_6^^{11} = 462$.
+\item Consider following: $rr|rr|rr|r|r$, where $r$ represents the rings and $|$ represents the empty space. We
+  have $8$ rings(different) and $4$ empty space(same), which can be arranged in $\frac{12!}{4!}$ ways.
+\item This is equivalent to no.\ of integeral solutions of the equation $x_1 + x_2 + x_3 + x_5 = 15$ such
+  that $x_i\geq 2, i = 1, 2, 3, 4, 5$.
+
+  $\Rightarrow y_1 + y_2 + y_3 + y_4 + y_5 = 5$, where $y_i\geq 0$.
+
+  No.\ of integral solution of this equation is $C_4^^9$.
+\item No.\ of ways of distributing $n$ identical objects into $r$ different groups is $C_{r - 1}^^{n + r -
+  1}$.
+
+  So no.\ of ways to distribute $3$ blue balls is $C_3^^{6} = 20$. No.\ of ways to distribute $4$ red balls
+  is $C_3^^7 = 35$. No. of ways to distribure $2$ red balls is $C_3^^5 = 10$.
+
+  Thus, total no.\ of ways is $7000$.
+\item First we give Manya $2$ candy bars, which will leave us with $13$ of those. No.\ of ways to distribute
+  $13$ candy bars among $4$ people is $C_3^^{13} = 560$.
+
+  These include the cases where Tanya gets more than $5$. Let us calculate the cases where Tanya gets at
+  least $6$. In this case we give $8$ candy bars to Tanya and Manya, which will leave us with $7$ of
+  those. No.\ of ways to distribute $7$ candy bars is $C_3^^{10} = 120$.
+
+  Thus, required answer is $560 - 120 = 440$.
+\item Total no. of such sequences is $4^n$. No.\ of sequences where $2$ does not appear is $3^n$ and same is
+  the case when $3$ dpes not appear. However, these include cases where both do not appear and those are
+  $2^n$.
+
+  Hence, the answer is $4^n - 2.3^n + 2^n$.
+\item This is the case of putting $n$ distinguishable balls into $r$ boxes, which is $3^{15} - C_1^^32^{15}
+  + C_2^^{3}.1^{15}$.
+
+  He can choose in two ways $3, 1, 1$ and $2, 2 1$, which are $C_3^^5\times C_1^^5\times C_1^^5 = 250$ and
+  $500$. However, for the first case there are $3$ ways to choose the box from which $3$ balls can be chosen
+  so it becomes $750$ and same for second case which is $1500$.
+
+  Thus, total no.\ of ways is $2250$.
+\item No.\ of ways of selecting boxes will remain constant $3!$.
+
+  {\bf Case I:} The balls are distributed in $5~2~2$. No.\ ways of selecting balls is $C_5^^9\times
+  C_2^^4\times C_2^^2 = 378$.
+
+  {\bf Case II:} The balls are distributed in $4~2~3$. No.\ of ways is $C_4^^9\times C_2^^5\times C_3^^3 =
+  1260$.
+
+  {\bf Case III:} The balls are distributed in $3~3~3$. No.\ of ways is $C_3^^6\times C_3^^6\times C_3^^3 =
+  280$.
+
+  Thus, total no.\ of ways is $(378+ 1260 + 280)6 = 11508$.
+\item $5$ balls can be selected out of $12$ in $C_5^^{12}$ ways. Remaining balls can be put into two boxes
+  in $2^7$ ways.
+
+  Thus, total no.\ of ways is $C_5^^{12}.2^7$.
+\item Let the daughters get $x, y$ and $z$ coins. Then, $x + y + z = 101$ and $x\leq y + z = 101 - x
+  \Rightarrow x\leq 50$.
+
+  Thus, $x, y, z\leq 50$ because any daughter can have this larger share. This is equivalent to coeff.\ of
+  $x^{101}$ in $(1 + x + \cdots + x^{50})^3$
+
+  $= C_2^^{103} - 3.C_{50}^^{52}$.
+\item Let the two sets be $A$ and $B$. $2$ cannot be in the same set as $1$ and $4$. Because if $2$ and $1$
+  are in the same set then the difference $2 - 1 = 1$ violates the given condition. Same is true for $2$ and
+  $4$. Let $2$ be in set $A$ and $1, 4$ in set $B$.
+
+  Clearly, $3$ has to be in set $A$ as $4 -3 = 1$. So the sets now are $A = \{2, 3, \_\}$ and $B = \{1, 4,
+  \_\}$. Now we cannot put $5$ in either of these sets, and hence, the result.
+\item We divide the square into $9$ unit squares. Out of the $10$ points distributed in the big square at
+  least one of the small squares must have at least two points by the Pigeonhole principle. Since these two
+  points lie in the same unit square maximum distance between them can be $\sqrt{2}$ units.
+  \startplacefigure
+    \startMPcode
+      for i = 0 upto 3:
+          draw (i*15, 0) -- (i*15, 45);
+      endfor
+      for i = 0 upto 3:
+          draw (0, i*15) -- (45, i*15);
+      endfor
+    \stopMPcode
+  \stopplacefigure
+\item Let $ABCDEF$ represet the hexagon and $G, H, I, J, K, L$ be midpoints of the sides, each side being
+  $2$cm. Join midpoints and sides as shown which will yield $24$ equilateral triangles, each of side
+  $1cm$.
+
+  \startplacefigure
+    \externalfigure[images/permutation-combination-hexgon.pdf]
+  \stopplacefigure
+
+  We have to place $25$ points in these $24$ triangles so as to violate the required condition, which is not
+  possible. Hence, the result.
+\item Draw the circle and divide it into six equal parts as shown.
+  \startplacefigure
+    \externalfigure[images/permutation-combination-circle.pdf]
+  \stopplacefigure
+
+  We have to place $7$ points in these $6$ equal parts so as to violate the required condition, which is not
+  possible. Hence, the result.
 \stopitemize
