@@ -273,7 +273,16 @@
   Thus, number of digits is $13$.
 \item We can use the fact that the number of positive integers having base $b$ and characteristics $n$ is $b^{n + 1} - b^n$.
 
-  Thus, number of integer with base $3$ and characteristics $2$ is $3^3 - 3^3 = 18$.
+  Thus, number of integer with base $3$ and characteristics $2$ is $3^3 - 3^2 = 18$.
+\item L.H.S. $=\log_ax\log_by = \frac{\log x}{\log a}.\frac{\log y}{\log b} = \frac{\log x}{\log b}.\frac{\log y}{\log x}$
+
+  $= \log_bx\log_ay =$ R.H.S.
+\item Given $a, b, c$ are in G.P. $\Rightarrow \frac{b}{a} = \frac{c}{b}$. Taking $\log_x$ of these
+
+  $\log_xb - \log_xa = \log_xc - \log_xb \Rightarrow 2\log_xb = \log_xa + \log_xa$. Thus, $\log_xa, \log_xb, \log_xc$
+  are in A.P., and hence,
+
+  $\log_ax, \log_bx, \log_cx$ are in H.P.
 \item Let $y = (0.0504)^{10} \Rightarrow \log_{10}y = 10\log_{10}(0.504) = 10\log_{10}(504\times10^-4)$
 
   $= -10\log_{10}[-4 + \log(2^3.3^2.7)] = -12.98$.
@@ -862,7 +871,10 @@
   $x + y + z = 0$, now substituting the original values,
 
   $\log abc = 0 \Rightarrow abc = 1$.
-\item Since $n$ is a natural number and $p1_p2, \ldots, p_k$ are distinct primes, therefore $a_1, a_2, \ldots, a_k$ are also natural
+\item Give, $y = 10^{\frac{1}{1 - \log x}} \Rightarrow \log y = \frac{1}{1 - \log x}$, and similarly, $\log z = \frac{1}{1 - \log y}$
+
+  $\Rightarrow z = \frac{1}{1 - \frac{1}{1 - \log x}} = \frac{1 - \log x}{-\log x} = -\frac{1}{\log x} + 1\Rightarrow x = 10^{\frac{1}{1 - \log z}}$.
+\item Since $n$ is a natural number and $p_1, p2, \ldots, p_k$ are distinct primes, therefore $a_1, a_2, \ldots, a_k$ are also natural
   numbers.
 
   Now $n = p_1^{a_1}p_2^{a_2}\ldots p_k^{a_K}$
