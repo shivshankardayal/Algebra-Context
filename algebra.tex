@@ -1,19 +1,22 @@
 \environment algebra_env.tex
 
 \startproduct algebra.tex
-
+  \setupuserpagenumber[numberconversion=romannumerals]
   % Date of the last time modifications were introduced:
   \def\RevisionDate{\date}
-  \placebookmarks[part, chapter, section, subsection, subsubsection]
+  \startromanpages
+  \placebookmarks[Toc, part, chapter, section, subsection, subsubsection]
   \component cover_page.tex
   %\setupheadertexts
   %  [\tfx Preface]
   %  [\tfx\pagenumber]
   \component preface.tex
-  % First Part: What is ConTeXt
+  \stopromanpages
+  \startbodymatter
   \startpart
      [title=Theory and Problems]
 
+  \setupuserpagenumber[numberconversion=n]
   %% defining matrix with brackets
   \definemathmatrix[bmatrix]
   	                 [matrix:brackets]
@@ -141,6 +144,6 @@
 
       \component fdl-1.3.tex
   \stoppart
-
+  \stopbodymatter
 
 \stopproduct

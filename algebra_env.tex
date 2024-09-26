@@ -18,11 +18,9 @@
       header=1cm,
       headerdistance=.5cm,
       footer=1.5cm
-%      marking=empty,
-%      location=middle
     ]
-  \definecolor [maincolor] [r=,g=.5,b=.7]
-  \definecolor [purple] [r=0,g=0.5,b=.7]
+  \definecolor [maincolor] [r=.3,g=.6,b=.9]
+  \definecolor [purple] [r=.3,g=0.6,b=.9]
 
   \setupitemize[symalign=left, distance=5pt, color=maincolor]
 
@@ -215,12 +213,6 @@
   \define[1]\cmd
    {{\en\tt\color[darkmagenta]{\backslash #1}}}
 
-  % PalClave:  tt and guillemets (angle quotes)
-  % \define[1]\PalClave{«{\tt #1}»}
-
-  % MyKey: tt and double inverted commas
-  \define[1]\MyKey{\quotation{\tt #1}}
-
   % Partial chapter table of contents:
   \def\Separate#1{#1;}
   \def\TocChap
@@ -270,4 +262,14 @@
         drawdblarrow A -- B; unfill bbox mylabel; draw mylabel;
     enddef;
   \stopMPcalculation
+
+  \definesectionblock[roman][romanpages]
+\definestructureconversionset [roman:pagenumber] [] [romannumerals]
+
+\startsectionblockenvironment [bodypart]
+  \setcounter [userpage] [1]
+\stopsectionblockenvironment
+\startsectionblockenvironment [bodypart]
+  \setcounter [userpage] [1]
+\stopsectionblockenvironment
 \stopenvironment

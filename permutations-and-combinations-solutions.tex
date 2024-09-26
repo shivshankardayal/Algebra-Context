@@ -3668,4 +3668,72 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
   In the second part of the problem $S = \{a, a + d, \cdots + a + (2n + 1)d\}$. Pairs which give $2a + (2n +
   1)d$ as sum are $[a, a + (2n + 1)d], [a + d, a + 2nd], \ldots, [a + nd, a + (n + 1)d]$. Thus, we have $n +
   1$ pairs. If we pick one from each pair we get $n + 1$ terms of $A$, which satisfy required condition.
+\item Let $a = \tan A$ in $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$. The reason for choosing this is
+  because in the given range the $\tan$ function is strictly increasing and covers the complete
+  $\mathbb{R}$.
+
+  We divide the interval into four equal intervals, each of length $\frac{\pi}{4}$. Now using Pigeonhole
+  principle we find that at least two of the values lie in one interval such that it falls in one of
+  these. Let us call these $x$ and $y$ then $0 < \tan^{-1}x - \tan^{-1}y < \frac{\pi}{4}\Rightarrow 0 <
+  \frac{x - y}{1 + xy} < 1$.
+\item Let the two numbers be $x$ and $y$. According to question $x^2 - y^2 = 100k$, such that
+  $k\in\mathbb{N}$ and $x, y \in\{0, 1, 2, \ldots, 100\}$.
+
+  Clearly, $(x + y)(x - y) = 100k$. Since numbers are between $0$ and $100$ so the sum is going to be
+  divisible by $100$. Let us pick these pairs $(0, 0), (1, 99), \ldots, (49, 51)$, which is $50$ pairs. So
+  we can pick one of these $50$ and the extra $50$, which is not part of any pair.
+
+  The moment we choose $52$nd number it has to be part of a pair, whose other member is already
+  chosen. Hence, the result.
+\item {\bf Case I:} When each person has at least one acquaintance. In this case a person can have $1, 2, 3,
+  \ldots, 6$ acquaintances, but we have $7$ people. Hence, the result from Pigeonhole principle.
+
+  {\bf Case II:} When a person can have zero acquaintances. Assume that one person has zero
+  acquaintances. So effectively we can remove him from group. Thus, we are left with $6$ and like case I,
+  from Pigeonhole principle we have the same result.
+\item This problem is similar to the square problem of $3$ units, which we solves earlier and can be solved
+  similarly.
+\item If we try to add smallest differences $11$ times then we have $(1 + 2 + 3 + 4)\times11 + 5\times6 =
+  140$ The difference $5$ occurs only six times because we have takes $44$ differences already. Thus, if we
+  pick $51$st number then one of the differences, which we have already taken will reappear making it $12$th
+  one from Pigeonhole principle. Hence, result.
+\item Let the sticks be $s_1, s_2, \ldots, s_{10}$. According to question, $1 < s_1 \leq s_2\leq s_3\leq
+  \cdots s_{10} < 55$.
+
+  Let us assume that triangles are not possible, then $2 + 2 \leq s_1 + s_2\leq s_3 \Rightarrow s_3\geq
+  4$. Similarly, we find $s_4, s_5, \ldots, S_{10}$. We find that $s_{10} > 55$, which is a
+  contradiction. Hence, the result.
+\item The sums are that of three row, columns, and two diagonals. Minimum value of these sums is $1 + 1 + 1
+  = 3$ and maximum is $3 + 3 + 3 = 9$. Thus, we have only $7$ values for $8$ sums.
+
+  Hence, from Pigeonhole principle at least two sums must be equal.
+\item Consider a lattice point $(x, y, z)$.  Classify it according to the parity (oddness or evenness) of
+  its entries. There are exactly eight different ordered triples of even and odd.  Thus two of the nine
+  given points must have the same parity. Suppose that $(x, y, z)$ and $(a, b, c)$ are two points such that
+  each coordinate has the same parity.  Then $\frac{x + a}{2}, \frac{y + b}{2}, \frac{z + c}{2}$ are all
+  integers and are the coordinates of the midpoint of the line joining $(x, y, z)$ and xm
+  (a, b, c). This midpoint is a lattice point on the interior of the line segment joining $(x, y, z)$ and
+  $(a, b, c)$.
+\item Let us assume that first two numbers are $1$ and $2$. Then, we apply the rule $x\rightarrow x - 1$,
+  which gives next numbers as $7, 21, 107, 427, 1707$. If this is the case then triplets cannot found but
+  such is not the case, and hence, the result.
+\item We draw a ring of given radii around every points. These rings can be contained within a circle of
+  radius $19$ and area $19^2\pi$. The sum of all the rings is $650.(3^2 - 2^2)\pi$, which is more than
+  $9.19^2\pi$.
+
+  Hence, from Pigeonhole principle, the result.
+\item Proceeding like previous problem we put the cyclinder around all of $14001$ marbles, giving us a total
+  area of $14001\times\frac{25}{4}\pi$.
+
+  These would be contained in a rectangle of $125\times155$ which is more than $12$ times the area covered
+  by cyclinders. Hence, the result.
+\item Consider any $12$ points on the line. Since we have only $11$ colors, at least two points must be of
+  the same color, whose distance apart is integral.
+\item mod $11$ will divide the difference into $11$ equivalence classes. Two number are of same equialence
+  $a\equiv b = m\Rightarrow m|(a - n)$. So when we will choose $12$ numbers two of them will fall in the
+  same equivalence class.
+
+  In other words, the remainder can be $0, 1, 2, 3, \ldots, 10$. Out of these only
+  $10$ remainders will satisfy the criterion, which we can get by using $11$ numbers. $12$th will always
+  fall in one of these $11$ classes, and thus, difference will be divisible by $11$.
 \stopitemize
