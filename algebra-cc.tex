@@ -1,11 +1,11 @@
 \environment algebra_env.tex
 
 \startproduct algebra.tex
-
   % Date of the last time modifications were introduced:
   \def\RevisionDate{\date}
 
   \placebookmarks[part, chapter, section, subsection, subsubsection]
+  \setupbodyfont[10pt,mf,ss] % The document's main (body) font
   \component cover_page.tex
   \setupheadertexts
     [\tfx Preface]
@@ -97,12 +97,12 @@
        \setupheadnumber[chapter][0]
 
        % Chapters making up this part
-       \component logarithm.tex
+       %\component logarithm.tex
        %\component progressions.tex
        %\component complex-numbers.tex
        %\component theory-of-equations.tex
        %\component permutations-and-combinations.tex
-       %\component mathematical-induction.tex
+       \component mathematical-induction.tex
        %\component binomial-multinomial-expansions.tex
        %\component determinants.tex
        %\component matrices.tex
@@ -123,12 +123,12 @@
 
       \setuplabeltext[en][chapter=Answers of Chapter ]
 
-      \component logarithm-solutions.tex
+      %\component logarithm-solutions.tex
       %\component progressions-solutions.tex
       %\component complex-numbers-solutions.tex
       %\component theory-of-equations-solutions.tex
       %\component permutations-and-combinations-solutions.tex
-      %\component mathematical-induction-solutions.tex
+      \component mathematical-induction-solutions.tex
   \stoppart
   %\startpart
   %  [title=License]

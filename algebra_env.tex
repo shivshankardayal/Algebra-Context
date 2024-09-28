@@ -4,7 +4,11 @@
    intent={ISO Coated v2 (ECI)},
    profile={sRGB.icc,default_gray.icc}]
   %\mainlanguage[en] % Main language = English
-\setupbodyfont[10pt] % The document's main (body) font
+  \definefontfamily[mf][rm][roman]
+  \definefontfamily[mf][ss][roboto]
+  \definefontfamily[mf][tt][modern]
+  \definefontfamily[mf][mm][modern]
+  \setupbodyfont[10pt,mf] % The document's main (body) font
   \setupmathematics[autopunctuation=yes]
 
   % Page layout
@@ -19,8 +23,8 @@
       headerdistance=.5cm,
       footer=1.5cm
     ]
-  \definecolor [maincolor] [r=.3,g=.6,b=.9]
-  \definecolor [purple] [r=.3,g=0.6,b=.9]
+  \definecolor [maincolor] [r=.2,g=.5,b=.7]
+  \definecolor [purple] [r=.2,g=0.5,b=.7]
 
   \setupitemize[symalign=left, distance=5pt, color=maincolor]
 
@@ -50,13 +54,13 @@
     [color=maincolor,style={\switchtobodyfont[small,tt]}]
 
   % Labels
-%  \setuplabeltext
-%    [en]
-%    [
-%      chapter=Chapter~,
-%      appendix=Appendix~,
-%      part=Part~
-%    ]
+  \setuplabeltext
+    [en]
+    [
+      chapter=Chapter~,
+      appendix=Appendix~,
+      part=Part~
+    ]
 
   % Footnotes
   \setupnotation
