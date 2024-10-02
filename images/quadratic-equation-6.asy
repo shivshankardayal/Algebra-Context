@@ -16,7 +16,7 @@ draw(graph(f,0,5,n=400),0.7*green);
 xaxis(Label("$x$",position=EndPoint, align=NE),xmin=-1,xmax=xmax, Arrow);
 
 label("$D = b^2- 4ac>0$", (2.5, -3), align=N);
-label("$a,0$", (2.5, -3.3), align=N);
+label("$a<0$", (2.5, -3.3), align=N);
 label("$y = f(x)$", (5,-2));
 label("$A(-b/2a, (4ac-b^2)/4a)$", (0.5,1.5), align=E);
 draw((2.5, 0) -- (2.5,1.25), dashed);
