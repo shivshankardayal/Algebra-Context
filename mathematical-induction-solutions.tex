@@ -1147,5 +1147,314 @@
   divided by $20$.
 
   Hence, by mathematical induction, the result.
-\item
+\item Let $P(n) = 3^n + 8^n$. $P(1) = 3 + 8 = 11$, which is not divisiible by $8$, so the statement is true
+  for $n = 1$. Quick observation tells us that $3^m$ will be odd, while $8^n$ will be even so sum would be
+  odd, which will not be divisible by $8$. We will prove this by induction.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = 3^m + 8^m = 8k + s$, where $k,s\in\mathbb{N}$ such that $s\in\{1,2,3, \ldots, 7\}$.
+
+  $P(m + 1) = 3.3^m + 8.8^m = 8k + s + 5.8^m$, which will leave remainder $s$ when divided by $8$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = 2^{2^n} + 1$. If this has last digit as $7$ then it will leave remainder $7$ when divided
+  by $10$. $P(2) = 2^4 + 1 = 17$, which leaves remainder $7$, so the statement is true for $n = 2$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = 2^{2^m} + 1 = 10k + 7$, where $k\in\mathbb{N}$.
+
+  $P(m + 1) = 2^{2^{m + 1}} + 1 = 2^{2.2^m} + 1 = (10 k + 6)^2 + 1 = 100k^2 + 120k + 37$, which leaves
+  remainder $7$, when divided by $10$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = \frac{n^3}{3} + n^2 + \frac{5}{3}n + 1$. $P(1) = \frac{1}{3} + 1 + \frac{5}{3} + 1 = 4$, which
+  is a natural number, so the statement is true for $n = 1$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = \frac{m^3}{3} + m^2 + \frac{5m}{3} + 1 = k$, where $k\in\mathbb{N}$.
+
+  $\Rightarrow P(m + 1) = \frac{(m + 1)^3}{3} + (m + 1)^2 + \frac{5m + 5}{3} + 1 = \frac{m^3}{3} + m^2 +
+  \frac{5m}{3} + 1 + m^2 + m + \frac{1}{3} + 2m + 1 + \frac{5}{3} + 1$
+
+  $= k + m^2 + 3m + 4$, which is a ntural number.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = x^n + y^n$. $P(1) = x + y$, which is divisible by $x + y$, so the statement is true for $n
+  = 1$. Similarly, $x^3 + y^3$ is divisible by $x + y$.
+
+  Let it be true for $n = 2m - 1, 2m + 1$, where $m\in\mathbb{N}$
+
+  $\Rightarrow P(2m - 1) = x^{2m - 1} + y^{2m - 1} = f(x, y)(x + y)$, where $f(x, y)$ is a polynomial in $x,
+  y$.
+
+  $\Rightarrow P(2m + 1) = x^{2m + 1} + y^{2m + 1} = g(x, y)(x + y)$, where $g(x, y)$ is a polynomial in $x,
+  y$.
+
+  $P(2m + 3) = x^{2m + 3} + y^{2m + 3} = (x^2 + y^2)(x^{2m + 1} + y^{2m + 1}) - x^2y^2(x^{2m - 1} + y^{2m -
+    1}) = (x^2 + y^2)(x + y)g(x, y) - x^2y^2(x + y)f(x, y)$, which is divisible by $x + y$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = x^n - y^n$. $P(1) = x - y$, which is divisible by $x - y$, so the statement is true for $n
+  = 1$. Similarly, it is true for $n = 2$.
+
+  Let it be true for $n = m, m - 1$.
+
+  $P(m - 1) = x^{m - 1} - y^{m - 1} = f(x, y)(x - y)$, where $f(x, y)$ is a polynomial in $x$ and $y$.
+
+  $\Rightarrow P(m) = x^m - y^m = g(x, y)(x - y)$, where $g(x, y)$ is a polynomial in $x$ and $y$.
+
+  $P(m + 1) = x^{m + 1} - y^{m + 1} = (x^m - y^m)(x + y) - xy(x^{m - 1} - y^{m - 1})$, which is divisible by
+  $x - y$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = x(x^{n - 1} - na^{n - 1}) + a^n(n - 1)$. $P(2) = x(x - 2a) + a^2 = (x - a)^2$, which is
+  divisible by $(x - a)^2$, so the statement is true for $n = 2$.
+
+  Let it be true for $n = m$
+
+  $\Rightarrow P(m) = x(x^{m - 1} - ma^{m - 1}) + a^m(m - 1) = f(x, y)(x - a)^2$, where $f(x, y)$ is a
+  polynomial in $x, y$.
+
+  $P(m + 1) = x(x^m - (m + 1)a^m) + ma^{m + 1} = x.f(x, y)(x - a)^2 + ma^{m - 1}(x - a)^2$, which is
+  divisible by $(x - a)^2$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = \frac{n^5}{5} + \frac{n^3}{3} + \frac{7n}{15}$. $P(1) = \frac{1}{5} + \frac{1}{3} +
+  \frac{7}{15} = 1$, which is true for $n = 1$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = \frac{m^5}{5} + \frac{m^3}{3} + \frac{7m}{15} = k$, where $k\in\mathbb{N}$.
+
+  $P(m + 1) = \frac{(m + 1)^5}{5} + \frac{(m + 1)^3}{3} + \frac{7m + 7}{15} = \frac{m^5}{5} + \frac{m^3}{3}
+  + \frac{7m}{15} + m^4 + 2m^3 + 2m^2 + m + m^2 + m + \frac{1}{5} + \frac{1}{3} + \frac{1}{15} = k + 1 + m^4
+  + 2m^3 + 3m^2 + 2m$, which is a natural number.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = \frac{n^7}{7} + \frac{n^5}{5} + \frac{2n^3}{3} - \frac{n}{105}$. $P(1) = \frac{1}{7} +
+  \frac{1}{5} + \frac{2}{3} - \frac{1}{105} = 1$, so the statement is true for $n = 1$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = \frac{m^7}{7} + \frac{m^5}{5} + \frac{2m^3}{3} - \frac{m}{105} = k$, where
+  $k\in\mathbb{N}$.
+
+  $P(m + 1) = \frac{(m + 1)^7}{7} + \frac{(m + 1)^5}{5} + \frac{2(m + 1)^3}{3} - \frac{m + 1}{105} =
+  \frac{m^7}{7} + \frac{m^5}{5} + \frac{2m^3}{3} - \frac{m}{105} + \frac{1}{7} + \frac{1}{5} + \frac{2}{3} -
+  \frac{1}{105} + \frac{C_1^^7m^6 + C_2^^7m^5 + C_3^^7m^4 + C_4^^7m^3 + C_5^^7m^2 + C_6^^7m}{7} + \frac{C_1^^5m^4 +
+  C_2^^5m^3 + C_3^^5m^2 + C_4^^5m}{5} + \frac{2C_1^^3m^2 + 2C_2^^3m}{3}$
+
+  $= k + 1  + \frac{C_1^^7m^6 + C_2^^7m^5 + C_3^^7m^4 + C_4^^7m^3 + C_5^^7m^2 + C_6^^7m}{7} + \frac{C_1^^5m^4 +
+    C_2^^5m^3 + C_3^^5m^2 + C_4^^5m}{5} + \frac{2C_1^^3m^2 + 2C_2^^3m}{3}$, which is a natural numebr.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = 2^n > n^2,\;n\geq 5$. $P(5) = 32 > 25$, so the statement is true for $n = 5$.
+
+  Let it be true for $n = m$, where $m\in\mathbb{N}$, and $m \geq 5$.
+
+  $\Rightarrow P(m) = 2^m > m^2$.
+
+  $P(m + 1) = 2^{m + 1} > (m + 1)^2 \Rightarrow 2.2^m > m^2 + 2m + 1$.
+
+  Now, $2m^2 - (m^2 + 2m + 1) = m^2 - 2m - 1 = (m - 1)^2 - 2$. Let $k = 5 + a$, where $a \geq 0$.
+
+  $(4 + a)^2 - 2 = a^2 + 8a + 14 \geq 0$
+
+  $\Rightarrow 2m^2 > (m + 1)^2 \Rightarrow 2(m + 1)^2 > (m + 1)^2$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = 1 + 2 + \cdots + n\leq \frac{1}{8}(2n + 1)^2$. $P(1) = 1 \leq \frac{9}{8}$,
+  so the statement is true for $n = 1$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = 1 + 2 + \cdots + m\leq \frac{1}{8}(2m + 1)^2$
+
+  $P(m + 1) = 1 + 2 + \cdots + m + (m +1)\leq \frac{1}{8}(2m + 1)^2 + m + 1 = \frac{1}{8}(2m + 3)^2$, which
+  is true.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = n^n < (n!)^2,\;n>2$. $P(3) = 3^3 < (3!)^2 = 27 < 36$, so the statement is true for $n =
+  3$.
+
+  Let it be true for $n = m$, where $m\in\mathbb{N}$, and $m > 2$.
+
+  $\Rightarrow P(m) = m^m < (m!)^2$.
+
+  $P(m + 1) = (m + 1)^{m + 1} < [(m + 1)!]^2$. Dividing $P(m + 1)$ by $P(m)$, we get
+
+  $\left(\frac{(m + 1)^{m + 1}}{m^m}\right) <\left(\frac{(m + 1)!}{m!}\right)^2 = \frac{m}{(m +
+    1)^2}\left(\frac{m + 1}{m}\right)^{m + 1} < 1
+
+  \Rightarrow (m + 1)^{m  + 1} < [(m + 1)!]^2$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = n! > 2^n,\;n>3$. $P(4) = 24 > 16$, so the statement is true for $n = 4$.
+
+  Let it be true for $n = m$, sich that $m > 3$, and $m\in\mathbb{N}$.
+
+  $\Rightarrow P(m) = m! > 2^m$.
+
+  $P(m + 1) = (m + 1)! > 2^{m + 1}$. Dividing $P(m + 1)$ by $P(m)$, we get
+
+  $m + 1 > 2$, which is true.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = n! < \left(\frac{n + 1}{2}\right)^n, n > 1$. $P(2) = 2! < \left(\frac{3}{2}\right)^2 =
+  \frac{9}{4}$, so the statement is true for $n = 2$.
+
+  Let it be true for $n = m$.
+
+  Also, let $F(m) = \left(\frac{m + 1}{2}\right)^2$ and $G(m) = m!$.
+
+  So $F(m) > G(m)$. $\frac{F(m + 1)}{F(m)}.\frac{G(m)}{G(m + 1)} = \frac{1}{2}.\frac{(m + 2)^{m + 1}}{(m +
+    1)^m}.\frac{m!}{(m + 1)!}$
+
+  $= \frac{1}{2\left(\frac{n + 2}{n + 1}\right)}^{n + 1}> 1 \Rightarrow F(m + 1) > G(m + 1)$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = \frac{1}{n + 1} + \frac{1}{n + 2} + \cdots + \frac{1}{2n} > \frac{13}{24},\;n>1$. $P(2) =
+  \frac{1}{3} + \frac{1}{4} = \frac{7}{12} > \frac{13}{24}$, so the statement is true for $n = 2$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = \frac{1}{m + 1} +\frac{1}{m + 2} + \frac{1}{m + 3} + \cdots + \frac{1}{2m} >
+  \frac{13}{24}$.
+
+  Adding $\frac{1}{2m + 2} + \frac{1}{2m + 1} - \frac{1}{m + 1}$ to both sides
+
+  $P(m + 1) = \frac{1}{m + 2}  + \frac{1}{m + 3} + \cdots + \frac{1}{2m} + \frac{1}{2m + 1} + \frac{1}{2m +
+    2} > \frac{13}{24}$.
+
+  Now $\frac{1}{2m + 2} + \frac{1}{2m + 1} - \frac{1}{m + 1} = \frac{2m + 1 + 2m + 2 - 4m - 2}{(2m + 1)(2m + 2)} =
+  \frac{1}{(2m + 1)(2m + 2)} > 0$.
+
+  Thus, $P(m + 1)$ is also true.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = \frac{1}{n + 1} + \frac{1}{n + 2} + \cdots + \frac{1}{3n + 1} > 1\forall
+  n\in\mathbb{N}$. $P(1) = \frac{1}{2} + \frac{1}{3} + \frac{1}{4} = \frac{13}{12} > 2$, so the statement is
+  true for $n = 1$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = \frac{1}{m + 1} + \frac{1}{m + 2} + \cdots + \frac{1}{3m + 1} > 1$.
+
+  Adding $\frac{1}{3m + 2} + \frac{1}{3m + 3} + \frac{1}{3m + 4} - \frac{1}{m + 1}$, to L.H.S., we get
+
+  $P(m + 1) = \frac{1}{m + 1} + \frac{1}{m + 2} + \frac{1}{m + 3} + \frac{1}{3m + 2} + \frac{1}{3m + 3} +
+  \frac{1}{3m + 4} - \frac{1}{m + 1}$
+
+  Now, $\frac{1}{3m + 2} + \frac{1}{3m + 3} + \frac{1}{3m + 4} - \frac{1}{m + 1}$
+
+  $= \frac{(3m + 4)(3m + 3) +
+    (3m + 2)(2m + 4) + (3m + 2)(3m + 3) - 3(3m + 2)(3m + 4)}{(3m + 2)(3m + 3)(3m + 4)} > 0$
+
+  Thus, $P(m + 1) > 1$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = 1 + \frac{1}{4} + \cdots + \frac{1}{n^2} < 2 - \frac{1}{n}$. $P(2) = \frac{5}{4} < 2 -
+  \frac{1}{2} = \frac{3}{2}$, so the statement is true for $n = 2$.
+
+  Let it be true for $n = m$.
+
+  $P(m) = 1 + \frac{1}{4} + \cdots + \frac{1}{m^2} < 2 - \frac{1}{m}$.
+
+  $P(m + 1) = 1 + \frac{1}{4} + \cdots + \frac{1}{(m + 1)^2} < 2 - \frac{1}{m} + \frac{1}{(m + 1)^2}$.
+
+  Now $\frac{1}{(m + 1)^2} - \frac{1}{m} = \frac{m - m^2 - 2m - 1}{m(m + 1)^2} < \frac{1}{m + 1}$.
+
+  Thus, $P(m + 1) < 2 - \frac{1}{m + 1}$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = (2n + 7) < (n + 3)^2$. $P(1) = 8 < 16$, so the statement is true for $n = 1$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = 2m + 7 < (m + 3)^2$.
+
+  $P(m + 1) = 2m + 9 < (m + 4)^2$. Subtracting $P(m + 1) - P(m)$, we get
+
+  $2 < 2m + 7$, which is true for $m\in\mathbb{N}$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = 2^n > n\forall n\in\mathbb{N}$. $P(1) = 2 > 1$, so the statement is true for $n = 1$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = 2^m > m$.
+
+  $P(m + 1) = 2^{m + 1} > m + 1$. Dividing $P(m + 1)$ by $P(m)$, we get
+
+  $2 > \frac{m + 1}{m}$, which is true for $m\in\mathbb{N}$.
+
+  Thus, $P(m + 1)$ is true if $P(m)$ is true.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = 1 + 2 + 3 + \cdots + n < \frac{(2n + 1)^2}{8} \Rightarrow \frac{n(n + 1)}{2} < \frac{(2n +
+  1)^2}{8} \Rightarrow n(n + 1) < \frac{(2n + 1)^2}{4}$. $P(1) = 2 < \frac{9}{4}$, so the statement is true
+  for $n = 1$.
+
+  Let it be true for $n = m$.
+
+  $P(m) = m(m + 1) < \frac{(2m + 1)^2}{4}$, where $m\in\mathbb{N}$.
+
+  Adding $m + 1$ to both sides we get
+
+  $P(m + 1) = 1 + 2 + \cdots + m + m + 1 < \frac{(2m + 1)^2}{8} + (m + 1)$
+
+  $= \frac{4m^2 + 4m + 1 + 8m + 8}{8}
+  = \frac{(2m + 3)^2}{8}$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = 1^2 + 2^2 + \cdots + n^2 > \frac{n^3}{3}$. $P(1) = 1 > \frac{1}{3}$, so the statement is
+  true for $n = 1$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = 1^2 + 2^2 + \cdots + m^2 > \frac{m^3}{3}$, where $m\in\mathbb{N}$.
+
+  Adding $(m + 1)^2$ to both sides
+
+  $P(m + 1) = 1^2 + 2^2 + \cdots + m^2 + (m + 1)^2 > \frac{m^3}{3} + (m + 1)^2 = \frac{m^3 + 3m^2 + 6m +
+    3}{3} > \frac{(m + 1)^3}{3}$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = 2^n > n^2$, where $n \geq 5$. $P(5) = 2^5 > 5^2 = 32 > 25$, so the statement is true for
+  $n = 1$.
+
+  Let it be true for $n = m$, where $m\geq 5$.
+
+  $P(m) = 2^m > m^2$.
+
+  $P(m + 1) = 2^{m + 1} > (m + 1)^2 = 2.m^2 > (m + 1)^2 \Rightarrow m^2 -2m - 1 > 0$, which is true for $m >
+  5$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = \frac{(2n)!}{(n!)^2} > \frac{4^n}{n + 1}$, where $n > 1$. $P(2) = 12 > \frac{16}{3}$, so
+  the statement is true for $n = 2$.
+
+  Let it be true for $n = m$.
+
+  $\Rightarrow P(m) = \frac{2m!}{(m!)^2} > \frac{4^m}{m + 1}$.
+
+  $P(m + 1) = \frac{(2m + 2)!}{[(m+ 1)!]^2} > \frac{4^{m + 1}}{m + 2} > \frac{(2m + 2)(2m + 1)}{(m +
+    1)^2}.\frac{4^m}{m + 1} > \frac{4^{m + 1}}{m + 2}$
+
+  $= \frac{2(2m + 1)}{(m + 1)} > \frac{4}{m + 2}$, which is true for $m > 1$.
+
+  Hence, by mathematical induction, the result.
+\item Let $P(n) = (1 + x)^n > 1 + nx$. $P(2) = 1 + 2x + x^2 > 1 + 2x$, which is true for $x > -1$.
+
+  Let it be true for $n = m$
+
+  $\Rightarrow P(m) = (1 + x)^m > 1 + mx$
+
+  $P(m + 1) = (1 + x)^{m + 1}> 1 + (m + 1)x = (1 + x)(1 + mx) > 1 + (m + 1)x = mx^2 > 0$, which is true for
+  $n > 1$, $x > -1$.
+
+  Hence, by mathematical induction, the result.
 \stopitemize
