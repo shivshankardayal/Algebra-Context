@@ -1,0 +1,297 @@
+% -*- mode: context; -*-
+\chapter{Binomials, Multinomials and Expansions}
+\startitemize[n, 1*broad]
+\item Using binomial theorem, $\left(x + \frac{1}{x}\right)^5 = C_0^^5x^5 + C_1^^5x^4.\frac{1}{x} +
+  C_2^^5x.\frac{1}{x^2} + C_3^^5x^2.\frac{1}{x^3} + C_4^^5x.\frac{1}{x^4} + C_5^^5.\frac{1}{x^5}$
+
+  $= C_0x^5 + C_1^^5x^3 + C_2^^5x + C_3^^5.\frac{1}{x} + C_4^^5.\frac{1}{x^3} + C_5^^5.\frac{1}{x^5}$.
+\item $(10.1)^5 = (10 + 0.1)^5$, so we proceed like previous problem to get
+
+  $(10.1)^5 = C_0^^510000 + C_1^^51000 + C_2^^510 + C_3^^5\frac{1}{10} + C_4^^5\frac{1}{1000} +
+  C_5^^5\frac{1}{100000}$
+
+  $= 100000 + 5000 + 100 + 1 + .005 + .00001 = 15101.00501$.
+\item $(x + \sqrt{x - 1})^6 + (x - \sqrt{x - 1})^6 = C_0^^6x^6 + C_1^^6x^5\sqrt{x - 1} + C_2^^6x^4\sqrt{(x -
+    1)^2} + C_3^^6x^3\sqrt{(x - 1)^3} + C_4^^6x^2\sqrt{(x - 1)^4} + C_5^^6x\sqrt{(x - 1)^5} + C_6^^6\sqrt{(x
+    - 1)^6} + C_0^^6x^6 - C_1^^6x^5\sqrt{x - 1} + C_2^^6x^4\sqrt{(x - 1)^2} - C_3^^6x^3\sqrt{(x - 1)^3} +
+  C_4^^6x^2\sqrt{(x - 1)^4} - C_5^^6x\sqrt{(x - 1)^5} + C_6^^6\sqrt{(x - 1)^6}$
+
+  $= 2x^6 + 30x^4(x - 1) + 30x^2(x - 1)^2 + 2(x - 1)^3$.
+\item Consider the expansion of $(x + a)^n$ and $(x - a)^n$. The sum of real terms will be $A$ and the sum
+  of imaginary terms will be $B$.
+
+  $(x + a)^n = C_0^^nx^n + C_1^^nx^{n - 1}.a + C_2^^nx^{n - 2}a^2 + \cdots + C_n^^na^n = A + B$, and
+  $(x - a)^n = C_0^^nx^n - C_1^^nx^{n - 1}.a + C_2^^nx^{n - 2}a^2 + \cdots + C_n^^n(-a)^n = A - B$
+
+  Multiplying, we get
+
+  $(x^2 - a^2)^n = A^2 - B^2$.
+\item Let $(7 + 4\sqrt{3})^n = \alpha + \beta$, where $\alpha$ is a positive integer and $\beta$ is a proper
+  fraction.
+
+  Cleaerly, $0 < 7 - 4\sqrt{3} < 1\left[\because 7 - 4\sqrt{3} = \frac{49 - 48}{7 + 4\sqrt{3}} = \frac{1}{7
+      + 4\sqrt{3}}\right]$
+
+  $\therefore 0 < (7 - 4\sqrt{3})^n < 1 = \beta_1$(let), then $0 < \beta_1 < 1$.
+
+  $\alpha + \beta + \beta_1 = 2[7^n + C_2^^n7^{n - 2}.48 + \cdots] = $ an even number.
+
+  $\Rightarrow \beta + \beta_1 =$ an even number $- \alpha = $ an integer.
+
+  $\because 0 < \beta < 1$ and $0 < \beta_1 < 1\therefore 0 < \beta + \beta_1 < 2$. Thus, $\beta + \beta_1 =
+  1$.
+
+  $\therefore \alpha + 1 =$ an even number $\Rightarrow \alpha = $ an odd number.
+\item Proceeding from previous problem, $(\alpha + \beta)(1 - \beta) = (\alpha + \beta)\beta_1 = (7 +
+  4\sqrt{3})^n(7 - 4\sqrt{3})^n = 1$.
+\item $t_{r} = C_{r}^^{10}y^{10 - r}.\left(\frac{c^3}{y^2}\right)^r$. We have to find coefficient of
+  $\frac{1}{y^2}$, hence, $10 - r - 2r = -2 \Rightarrow r = 4$.
+
+  Thus, coefficient is $C_4^^{10}.c^{12}$.
+\item We have to find coefficient of $x^9$ in $(1 + 3x + 3x^2 + x^3)^{15} = (1 + x)^{45}$. Therefore,
+  coefficient is $C_9^^{45}$.
+\item We have to find term independent of $x$ in $\left(\frac{3}{2}x^2 - \frac{1}{3x}\right)^9$. The general term
+  will be $t_r = C_{r - 1}^^9.\left(\frac{3}{2}x^2\right)^{9 - r + 1}\left(-\frac{1}{3x}\right)^{r - 1}$.
+
+  $\Rightarrow 21 - 3r = 0 \Rightarrow r = 7$. So coefficient is $(-1)^6.C_6^^9\left(\frac{3}{2}\right)^{10
+    - 7}.\frac{1}{3^6} = \frac{7}{18}$.
+\item $(1 + x)^m\left(1 + \frac{1}{x}\right)^n = x^{-n}(1 + x)^{m + n}$. We have to find term independent of
+  $x$ in the expansion, which is coefficient of $x^n$ in $(1 + x)^{m + n}$.
+
+  Coeff. is $C_n^^{m + n} = \frac{(m + n)!}{m!n!}$.
+\item Coeff. of $x^{-1}$ in $(1 + 3x^2 + x^4)\left(1 + \frac{1}{x}\right)^8 =$ coeff. of $x^{-1}$ in
+  $\left(1 + \frac{1}{x}\right)^8 +$ coeff. of $x^{-1}$ in $3x^2\left(1 + \frac{1}{x}\right)^8 +$ coeff. of
+  $x^{-1}$ in $x^4\left(1 + \frac{1}{x}\right)^8$
+
+  = coeff. of $x^{-1}$ in $\left(1 + \frac{1}{x}\right)^8$ + coeff. of $x^{-3}$ in $3\left(1 +
+    \frac{1}{x}\right)^8 +$ coeff. of $x^{-5}$ in $\left(1 + \frac{1}{x}\right)^8$
+
+  General term is given by $t_r = C_{r - 1}^^n\left(\frac{1}{x}\right)^{r - 1} = C_{r - 1}^^nx^{1 - r}$.
+
+  When $r - 1 = 1\Rightarrow r = 2$, we have coeff. as $C_1^^8$. When $r - 1 = 3 \Rightarrow r = 4$, we have
+  coeff. as $C_3^^8$, and similarly coeff. of $x^{-5}$ is $C_5^^8$.
+
+  Thus, required coeff. of $x^{-1}$ is $C_1^^8 + 3.C_3^^8 + C_5^^8 = 232$.
+\item $r$th term in the expansion of $(1 - x)^n$ is $C_{r - 1}^^{2n - 1}(-1)^{r - 1}x^{r - 1}$, so $(r + 1)$th
+  term will have the term $x^r$.
+
+  $\Rightarrow a_{r - 1} = (-1)^{r - 1}C_{r - 1}^^{2n - 1}$ and $a_{2n - r} = (-1)^{2n - r}C_{2n - r}^^{2n -
+    1}$.
+
+  We know that $C_r^^n = C_{n - r}^^n$ and $(-1)^{2n} = 1$. Hence, $a_{2n - r} = (-1)^{-r}C_{r - }^^{2n -
+    1}$.
+
+  Thus, $a_{r - 1} + a_{2n - r} = 0$.
+\item Let the $r$th term be independent of $x$. $t_r = C_{r - 1}^^{10}(\sqrt{x})^{10 - r +
+    1}\left(\frac{k}{x^2}\right)^{r - 1} =  C_{r - 1}^^{10}x^{\frac{11 - r}{2} - 2r + 2}k^{r - 1}$.
+
+  Since the term is independent of $x\Rightarrow 15 - 5r = 0 \Rightarrow r = 3$.
+
+  So the term is $C_2^^{10}k^2 = 405 \Rightarrow k = \pm 3$.
+\item $k$th term in the expansion is given by $t_k = C_{k - 1}^^{n - 3}x^{n - 3 - k + 1}(x^{-2})^{k - 1}$
+
+  $= C_{k - 1}^^{n - 3}x^{n - 3k}$. Let this term contain $x^{2r} \Rightarrow 2r = n - 3k \Rightarrow k =
+  \frac{n - 2r}{3}$.
+
+  Since $n - 2r$ is not a multiple of $3$, $k$ cannot be an integer. So no term will contain $x^{2r}$.
+\item Let $r$th term be independent of $x$. $t_r = C_{r - 1}^^n(x^a)^{n - r + 1}(x^{-b})^{r - 1}$.
+
+  This will be independent of $x$ if $an - ar + a - br + b = 0 \Rightarrow an = (a + b)(r - 1) \Rightarrow r
+  = 1 + \frac{an}{a + b}$.
+
+  Clearly, $r$ will be an integer only if $an$ is a multiple of $a + b$.
+\item $\left(x + \frac{1}{x}\right)^7 = C_0^^7x^7 + C_1^^7x^6.\frac{1}{x} + C_2^^7x^5.\frac{1}{x^2} +
+  C_3^^7x^4.\frac{1}{x^3} + C_4^^7x^3.\frac{1}{x^4} + C_5^^7x^2.\frac{1}{x^5} + C_6^^7x.\frac{1}{x^6} +
+  C_7^^7.\frac{1}{x^7}$
+
+  $= C_0^^7x^7 + C_1^^7x^5 + C_2^^7x^3 + C_3^^7x + C_4^^7.\frac{1}{x} + C_5^^7.\frac{1}{x^3} +
+  C_6^^7.\frac{1}{x^5} + C_7^^7.\frac{1}{x^7}$
+
+  $= x^7 + 7x^5 + 21x^3 + 35x + \frac{35}{x} + \frac{21}{x^3} + \frac{7}{x^5} + \frac{1}{x^7}$.
+\item $\left(\frac{2x}{3} - \frac{3}{2x}\right)^6 = C_0^^6\left(\frac{2x}{3}\right)^6 +
+  C_1^^6\left(\frac{2x}{3}\right)^5.\left(-\frac{3}{2x}\right) +
+  C_2^^6\left(\frac{2x}{3}\right)^4\left(-\frac{3}{2x}\right)^2 +
+  C_3^^6\left(\frac{2x}{3}\right)^3\left(-\frac{3}{2x}\right)^3 +
+  C_4^^6\left(\frac{2x}{3}\right)^2\left(-\frac{3}{2x}\right)^4 +
+  C_5^^6\left(\frac{2x}{3}\right)\left(-\frac{3}{2x}\right)^5 +
+  C_6^^6\left(-\frac{3}{2x}\right)^6$
+
+  $= \frac{64}{729}x^6 - \frac{32}{2x}x^4 + \frac{20}{3}x^2 - 20 + \frac{135}{4}x^2 - \frac{243}{8}x^4 +
+  \frac{729}{64}x^6$.
+\item Given, $(1 + ax)^n = 1 + 8x + 24x^2 + \cdots \Rightarrow 1 + nax + \frac{n(n - 1)}{2}a^2x^2 + \cdots =
+  1 + 8x + 24x^2 + \cdots$
+
+  Comparing coefficients of powers of $x$
+
+  $an = 8, \frac{n(n - 1)}{2}a^2 = 24 \Rightarrow 32n^2 - 32n = 24n^2 \Rightarrow n = 4 \Rightarrow a = 2$.
+\item $7$th term in the expansion of $\left(\frac{4x}{5} - \frac{5}{2x}\right)^9$ is
+  $C_6^^9\left(\frac{4x}{5}\right)^3\left(-\frac{5}{2x}\right)^6 = \frac{10500}{x^3}$.
+\item $(\sqrt{2} + 1)^6 + (\sqrt{2} - 1)^6 = C_0^^62^3 + C_1^^64\sqrt{2} + C_2^^62^2 + C_3^^62\sqrt{2} +
+  C_4^^62 + C_5^^6\sqrt{2} + C_6^^6 + C_0^^62^3 - C_1^^64\sqrt{2} + C_2^^62^2 - C_3^^62\sqrt{2} +
+  C_4^^62 - C_5^^6\sqrt{2} + C_6^^6$
+
+  $=2.C_0^^62^3 + 2.C_2^^62^2 + 2.C_4^^62 + 2.C_6^^6 = 198$.
+\item According to questions $(x + a)^n = A + B$, because $A$ is the sum of odd terms and $B$ is the sum of
+  even terms. From Binomial theorem $(x - a)^n = A - B$.
+
+  $\Rightarrow (x + a)^{2n} = A^2 + B^2 + 2AB$ and $(x - a)^{2n} = A^2 + B^2 - 2AB$.
+
+  Subtracting, we get $(x + a)^{2n} - (x - a)^{2n} = 4AB$.
+\item Let $(5 + 2\sqrt{6})^n = \alpha + \beta$, where $\alpha$ is a positive integer and $\beta$ is a proper
+  fraction.
+
+  Cleaerly, $0 < 5 - 2\sqrt{6} < 1\left[\because 5 - 2\sqrt{6} = \frac{25 - 24}{5 + 2\sqrt{6}} = \frac{1}{5
+      + 2\sqrt{6}}\right]$
+
+  $\therefore 0 < (5 - 2\sqrt{6})^n < 1 = \beta_1$(let), then $0 < \beta_1 < 1$.
+
+  $\alpha + \beta + \beta_1 = 2[5^n + C_2^^n5^{n - 2}.24 + \cdots] = $ an even number.
+
+  $\Rightarrow \beta + \beta_1 =$ an even number $- \alpha = $ an integer.
+
+  $\because 0 < \beta < 1$ and $0 < \beta_1 < 1\therefore 0 < \beta + \beta_1 < 2$. Thus, $\beta + \beta_1 =
+  1$.
+
+  $\therefore \alpha + 1 =$ an even number $\Rightarrow \alpha = $ an odd number.
+\item Proceeding from previous problem, $(\alpha + \beta)(1 - \beta) = (\alpha + \beta)\beta_1 = (3 +
+  \sqrt{8})^n(3 - \sqrt{8})^n = 1$.
+\item Let $r$th term contains the term $x$. Then $t_r = C_{r - 1}^^9(2x)^{10 -
+    r}\left(-\frac{3}{x}\right)^{r - 1}$
+
+  Since the term contains $x$, therefore $10 - r - r + 1 = 1 \Rightarrow r = 5$.
+
+  Thus, coefficient is $C_4^^92^5.3^4 = 2592.C_4^^9$.
+\item Let $r$th term contain $x^7$ in the expansion of $(3x^2 + (5x)^{-1})^{11}$. $t_r = C_{r -
+    1}^^{11}(3x^2)^{12 - r}.(5x^{-1})^{r - 1}$.
+
+  Since the term contains $x^7$, therefore $24 - 2r - r + 1 = 7 \Rightarrow r = 6$.
+
+  Thus, coefficient is $C_5^^{11}.\frac{3^6}{5^5}$.
+\item Let $r$th term contain $x^9$ in the expansion of $(2x^2 - x^{-1})^{20}$. Then $t_r = C_{r -
+    1}^^{20}(2x^2)^{21 - r}(-x^{-1})^{r - 1}$.
+
+  Since the term contains $x^9$, therefore $42 - 2r - r + 1 = 9$, which does not yield an integral value for
+  $r$. Therefore, coefficient is $0$.
+\item Let $r$th term contain $x^{24}$ in the expansion of $(x^2 + 3ax^{-1})^{15}$. Then $t_r = C_{r -
+    1}^^{15}(x^2)^{16 - r}(3ax^{-1})^{r - 1}$.
+
+  Since the term contains $x^{24}$, therefore $32 - 2r - r + 1 = 24 \Rightarrow r = 3$.
+
+  Therefore, the coefficient is $C_2^^{16}9a^2$.
+\item Let $r$th term contain $x^9$ in the expansion of $(x^2 - (3x)^{-1})^9$. Then $t_r = C_{r -
+    1}^^9(x^2)^{10 - r}\left(-\frac{1}{3x}\right)^{r - 1}$.
+
+  Since the term contains $x^9$, therefore $20 - 2r - r + 1 = 9 \Rightarrow r = 4$.
+
+  Therefore, the coefficient is $C_3^^9.\frac{-1}{3^3} = -\frac{28}{9}$.
+\item Let $r$th term contain $x^{-7}$ in the expansion of $\left(2x - \frac{1}{3x^2}\right)^{11}$.
+  Then $t_r = C_{r - 1}^^{11}(2x)^{12 - r}\left(-\frac{1}{3x^2}\right)^{r - 1}$.
+
+  Since the term contains $x^{-7}$, therefore, $12 - r - 2r + 2 = -7 \Rightarrow r = 7$.
+
+  Therefore, coefficient is $C_6^^{11}\frac{2^5}{3^6}$.
+\item Let $r$th term contain $x^7$ in the expansion of $\left(ax^2 + \frac{1}{bx}\right)^{11}$. $t_r = C_{r
+    - 1}^^{11}(ax^2)^{12 - r}.\left(\frac{1}{bx}\right)^{r - 1}$.
+
+  Since the term contains $x^7$, therefore $24 - 2r - r + 1 = 7 \Rightarrow r = 6$.
+
+  Therefore, coefficient is $C_5^^{11}a^6b^{-5}$.
+  Let $s$th term contain $x^{-7}$ in the expansion of $\left(ax - \frac{1}{bx^2}\right)^{11}$. Then $t_r =
+  C_{r - 1}^^{11}(ax)^{12 - r}\left(-\frac{1}{bx^2}\right)^{r - 1}$.
+
+  Since the term contains $x^{-7}$, therefore $12 - r - 2r + 2 = -7 \Rightarrow r = 7$.
+
+  Therefore, the coefficient is $C_6^^{11}a^5b^{-6}$.
+
+  Since the coefficients are equal $ab = 1[\because C_5^^{11} = C_6^^{11}]$.
+\item Let $r$th term contain $x^p$ in the expansion of $\left(x^2 + \frac{1}{x}\right)^{2n}$. Then $t_r =
+  C_{r - 1}^^{2n}(x^2)^{2n + 1 - r}\frac{1}{x^{r - 1}}$.
+
+  Since the term contains $x^p$, therefore $4n + 2 - 2r - r + 1 = p \Rightarrow r = \frac{4n - p}{3} + 1$.
+
+  Therefore, the coefficient is $\frac{2n!}{\left(\frac{4n - p}{3}\right)!\left(\frac{2n + p}{3}\right)!}$.
+\item The problems are solved below:
+  \startitemize[i]
+\item Let $r$th term be indnependent of $x$ in the expansion of $\left(x + \frac{1}{x}\right)^{2n}$. Then
+  $t_r = C_{r - 1}^^{2n}x^{2n + 1 - r}.\frac{1}{x^{r - 1}}$
+
+  Since the term is independent of $x$, therefore $2n + 1 - r - r + 1 = 0 \Rightarrow r = n + 1$.
+
+  Therefore, the coefficient is $C_n^^{2n} = \frac{(2n)!}{n!n!}$.
+\item Let $r$th term be independent of $x$ in the expansion of $\left(2x^2 + \frac{1}{x}\right)^{15}$. Then
+  $t_r = C_{r - 1}^^{15}(2x^2)^{16 - r}\left(\frac{1}{x}\right)^{r - 1}$.
+
+  Since the term is independent of $x$, therefore $32 - 2r -r + 1 = 0 \Rightarrow r = 11$.
+
+  Therefore, the coefficient is $C_{10}^^{15}.2^5 = 32.C_{10}^^{15}$.
+\item Let $r$th term be independent of $x$ in the expansion of $\left(\sqrt{\frac{x}{3}} +
+  \frac{3}{2x^2}\right)^{10}$. Then $t_r = C_{r - 1}^^{10}\left(\sqrt{\frac{x}{3}}\right)^{11 -
+    r}\left(\frac{3}{2x^2}\right)^{r - 1}$.
+
+  Since the term is independent of $x$, therefore $\frac{11 - r}{2} - 2r + 2 = 0 \Rightarrow r = 3$.
+
+  Therefore, the coefficient is $C_2^^{10}.\left(\frac{1}{3^4}\right).\left(\frac{3^2}{2^2}\right) =
+  \frac{5}{4}$.
+\item Let $r$th term be independent of $x$ in the expansion of $\left(2x^2 - \frac{1}{x}\right)^{12}$. Then
+  $t_r = C_{r - 1}^^{12}(2x^2)^{13 - r}\left(\frac{1}{x}\right)^{r - 1}$.
+
+  Since the term is independent of $x$, therefore $26 - 2r - r + 1 = 0 \Rightarrow r = 9$.
+
+  Therefore, the coefficient is $C_8^^{12}.2^4 = 7920$.
+\item Let $r$th term be independent of $x$ in the expansion of $\left(2x^^2 - \frac{3}{x^3}\right)^{25}$. Then
+  $t_r = C_{r - 1}^^{25}(2x^2)^{26 - r}\left(-\frac{3}{x^^3}\right)^{r - 1}$.
+
+  Since the term is independent of $x$, therefore $52 - 2r - 3r + 3 = 0 \Rightarrow r = 11$.
+
+  Therefore, the coefficient is $C_{10}^^{25}.2^{15}3^{10}$.
+\item Let $r$th term be independent of $x$ in the expansion of $\left(x^3 - \frac{3}{x^2}\right)^{15}$. Then
+  $t_r = C_{r - 1}^^{15}(x^3)^{16 - r}\left(-\frac{3}{x^2}\right)^{r - 1}$.
+
+  Since the term is independent of $x$, therefore $48 - 3r - 2r + 2 = 0 \Rightarrow r = 10$.
+
+  Therefore, the coefficient is $C_9^^{15}\left(-3\right)^9 = -3^9.C_{0}^^{15}$.
+\item Let $r$th term be independent of $x$ in the expansion of $\left(x^2 - \frac{3}{x^3}\right)^{10}$. Then
+  $t_r = C_{r - 1}^^{10}(x^2)^{11 - r}\left(-\frac{3}{x^3}\right)^{r - 1}$.
+
+  Since the term is independent of $x$, therefore $22 - r - 3r + 3 = 0 \Rightarrow r = 5$.
+
+  Therefore, the coefficient is $C_4^^{10}.(-3)^4 = 3^4.C_{4}^^{10}$.
+\item Let $r$th term be independent of $x$ in the expansion of $\left(\frac{1}{2}x^{1/3} +
+  x^{-1/3}\right)^8$. Then $t_r = C_{r - 1}^^{8}\left(\frac{1}{2}x^{1/3}\right)^{9 - r}(x^{-1/3})^{r - 1}$.
+
+  Since the term is independent of $x$, therefore $9 - r - r + 1= 0 \Rightarrow r = 5$.
+
+  Therefore, the coefficient is $C_4^^8.\frac{1}{2^4} = \frac{35}{8}$.
+\stopitemize
+\item Let $r$th term be independent of $x$ in the expansion of $\left(x + \frac{1}{x^2}\right)^n$. Then $t_r
+  = C_{r - 1}^^nx^{n + 1 - r}\frac{1}{(x^2)^{r - 1}}$.
+
+  Since the term is independent of $x$, therefore $n + 1 - r - 2r + 2 = 0 \Rightarrow r = \frac{n}{3} + 1$.
+
+  Therefore, the coefficient is $C_{\frac{n}{3}}^^{n} =
+  \frac{n!}{\left(\frac{n}{3}\right)!\left(\frac{2n}{3}\right)!}$.
+\item First we will find coefficient of $x^m$ and then of $x^n$ in the expansion of $(1 + x)^{m + n}$. Let
+  $p$th term contain $x^m$.
+
+  Then $t_P = C_{p - 1}^^{m + n}x^{p - 1}$. Since it contains $x^m$, therefore $p = m + 1$.
+
+  Thus coefficient is $C_m^^{m + n}$. Similarly, we find the coefficient of term containing $x^n$ as
+  $C_n^^{m + n}$. We know that $C_r^^n = C_{n - r}^^n$.
+
+  Therefore, $C_m^^{m + n} = C_n^^{m + n}$. Hence, proved.
+\item $4$th term in the expansion of $\left(px + \frac{1}{x}\right)^n$ is given by $t_4 = C_3^^n(px)^{n + 1
+  - 4}\frac{1}{x^{3}}$.
+
+  Since the term is independent of $x$, therefore $n - 3 - 3 = 0 \Rightarrow n = 6$.
+
+  So the term is $C_3^^6p^3 = \frac{5}{2}\Rightarrow p = \frac{1}{2}$.
+\item There are $13$ terms in the expansion of $\left(x - \frac{1}{2x}\right)^{12}$. So $7$th term will be
+  the middle term.
+
+  $t_7 = C_6^^{12}.x^6\left(-\frac{1}{2x}\right)^6 = C_6^^{12}.\frac{1}{2^6} = \frac{231}{16}$.
+\item There are $8$ terms in the expansion of $\left(2x^2 - \frac{1}{x}\right)^7$. These are $4$th and $5$th
+  terms.
+
+  $t_4 = C_3^^7(2x^2)^4\left(-\frac{1}{x}\right)^3 = -560x^5,\;t_5 =
+  C_4^^7(2x^2)^3\left(-\frac{1}{x}\right)^4 = 280x^2$.
+\stopitemize
