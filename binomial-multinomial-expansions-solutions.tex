@@ -212,7 +212,7 @@
   Therefore, the coefficient is $\frac{2n!}{\left(\frac{4n - p}{3}\right)!\left(\frac{2n + p}{3}\right)!}$.
 \item The problems are solved below:
   \startitemize[i]
-\item Let $r$th term be indnependent of $x$ in the expansion of $\left(x + \frac{1}{x}\right)^{2n}$. Then
+  \item Let $r$th term be indnependent of $x$ in the expansion of $\left(x + \frac{1}{x}\right)^{2n}$. Then
   $t_r = C_{r - 1}^^{2n}x^{2n + 1 - r}.\frac{1}{x^{r - 1}}$
 
   Since the term is independent of $x$, therefore $2n + 1 - r - r + 1 = 0 \Rightarrow r = n + 1$.
@@ -294,4 +294,181 @@
 
   $t_4 = C_3^^7(2x^2)^4\left(-\frac{1}{x}\right)^3 = -560x^5,\;t_5 =
   C_4^^7(2x^2)^3\left(-\frac{1}{x}\right)^4 = 280x^2$.
+\item There are $2n + 1$ terms in the expansion of $\left(x + \frac{1}{x}\right)^{2n}$. So the middle term
+  is $(n + 1)$th term.
+
+  $t_{n + 1} = C_n^^{2n}x^{2n - n}.\frac{1}{x^n} = C_n^^{2n} = \frac{2n!}{n!n!} = \frac{1.3.5\ldots (2n -
+    1).2^n}{n!}$.
+\item There are $2n + 1$ terms in the expansion of $(1 + x)^{2n}$. So the middle term is $(n + 1)$th term.
+
+  $t_{n + 1} = C_n^^{2n}x^n$. So the ccoefficient is $C_n^^{2n}$.
+
+  There are $2n$ temrs in the expansion of $(1 + x)^{2n - 1}$. So the middle terms are $n$th and $(n + 1)$th
+  terms.
+
+  Coefficients are $C_{n - 1}^^{2n - 1}$ and $C_n^^{2n - 1}$.
+
+  Clearly, $C_{n - 1}^^{2n - 1} + C_n^^{2n - 1} = C_n^^{2n}$. Hence, proved.
+\item The solutions are given below:
+  \startitemize[i]
+  \item There will be $21$ terms in the expansions of $\left(\frac{2x}{3} - \frac{3y}{2}\right)^{20}$. So
+    $11$th term will be the middle term.
+
+    $t_{11} = C_{10}^^{20}\left(\frac{2x}{3}\right)^{21 - 10}.\left(-\frac{3y}{2}\right)^{10} =
+    C_{10}^^{20}x^{10}y^{10}$.
+  \item There will be $7$ terms in the expansions of $\left(\frac{2x}{3} - \frac{3}{2x}\right)^6$. So $4$th
+    term will be the middle term.
+
+    $t_4 = C_3^^6\left(\frac{2x}{3}\right)^3\left(-\frac{3}{2x}\right)^3 = -20$.
+  \item There will be $8$ terms in the expansion of $\left(\frac{x}{y} - \frac{y}{x}\right)^7$. So $4$th and
+    $5$th termss will be the middle terms.
+
+    $t_4 = C_3^^7.\left(\frac{x}{y}\right)^4\left(-\frac{y}{x}\right)^3 = -\frac{35x}{y},\;t_5 =
+    C_4^^7\left(\frac{x}{y}\right)^3\left(-\frac{y}{x}\right)^3 = \frac{35y}{x}$.
+  \item The middle term of the expansion $(1 + x)^{2n}$ will be the $(n + 1)$th term.
+
+    $t_{n + 1} = C_n^^{2n}x^n = \frac{2n!}{n!n!}x^n$.
+  \item $(1 - 2x + x^2)^n = (1 - x)^{2n}$ so $(n + 1)$th term will be the middle term.
+
+    $t_{n + 1} = C_n^^{2n}(-x^n) = (-1)^n\frac{2n!}{n!n!}x^n$
+  \stopitemize
+\item The general $r$th term will be given by $t_r = C_{r - 1}^^{2n + 1}\left(\frac{x}{y}\right)^{2n + 1 + 1
+  - r}.\left(\frac{y}{x}\right)^{r - 1}$.
+
+  Since it will $2n + 2$ terms there will be two middle terms. $(n + 1)$th and $(n + 2)$th terms will be
+  middle terms. Since the powers of $x$ and $y$ are symmetric if any term has to be free of $x$ and $y$ then
+  it has to be middle terms.
+
+  $t_{n + 1} = C_n^^{2n + 1}\left(\frac{x}{y}\right)^{2n + 1 + 1 - n - 1}\left(\frac{y}{x}\right)^n =
+  C_n^^{2n + 1}\frac{x}{y}$
+
+  $t_{n + 2} = C_{n + 1}^^{2n + 1}\frac{y}{x}$. Both of these terms are not free of $x$ and $y$.
+
+  We also prove that no term is free of $x$ and $y$ by considering general term. Since the term has to be
+  independent of $x$ and $y$, we consider the general term.
+
+  $2n + 2 - r - - r + 1 = = \Rightarrow r = \frac{2n + 1}{2}$, which cannot be an integer. So no terms is
+  free of both $x$ and $y$.
+\item There will be $2n + 1$ terms in the expansion of $\left(x - \frac{1}{x}\right)^{2n}$. So the middle
+  term would be $(n + 1)$th term.
+
+  $t_{n + 1} = C_n^^{2n}x^{2n + 1 - n - 1}\frac{-1^n}{x^{n}} = (-1)^n\frac{2n!}{n!n!} = \frac{1.3.5\ldots
+    (2n -1)}{n!}.(-2)^n$.
+\item $t_{2r + 1} = C_{2r}^^{43}x^{2r}$ and $t_{r + 2} = C_{r + 1}^^{43}x^{r + 1}$.
+
+  Given that coefficients are equal. $\therefore C_{2r}^^{43} = C_{r + 1}^^43 \Rightarrow 2r + r + 1 = 43
+  \Rightarrow r = 14$.
+\item Coefficient of $r$th term in the expansion of $(1 + x)^{20}$ is $C_{r - 1}^^20$, and the coefficient
+  of $(r + 4)$th term is $C_{r + 3}^^{20}$.
+
+  Clearly, for coefficients to be equal $r - 1 + r + 3 = 20 \Rightarrow r = 9$.
+\item Following like previous problem, $r - 3 + 2r + 3 = 18 \Rightarrow r = 6$.
+\item Following like previous problem, $2r + 4 + r - 7 = 39 \Rightarrow r = 14$. So $C_{12}^^r = 91$.
+\item Following like previous problem, $3r - 1 + r + 1 = 2n \Rightarrow r = \frac{n}{2}$.
+\item Following like previous problem, $p + p + 2 = 2n \Rightarrow p = n - 1$.
+\item Coefficient of $(r + 1)$th term in the expansion of $(1 + x)^{n + 1}$ is $C_r^^{n + 1}$. Coefficients
+  of $r$th and $(r + 1)$th terms in the expansion of $(1 + x)^n$ are $C_{r - 1}^^n$ and $C_r^^n$
+  respectively.
+
+  Clearly, $C_{r - 1}^^n + C_r^^{n} = C_r^^{n + 1}$. Hence, proved.
+\item Since we have to find numerically greatets term we can replaced $-$ sign with $+$. Let $r$th term be
+  the greatest term in the expansion of $\left(7 + \frac{10}{3}\right)^{11}$. $t_r =
+  C_{r - 1}^^{11}7^{12 - r}\left(\frac{10}{3}\right)^{r - 1}$. We consider $(r + 1)$th term as well. $t_{r
+    + 1} = C_r^^{11}7^{11 - r}\left(\frac{10}{3}\right)^r$
+
+  $\frac{t_r}{t_{r + 1}} = \frac{21r}{(12 - r)10}\geq 1 \Rightarrow r\geq 3\frac{27}{31}$.
+
+  Replacing $r$ with $r - 1$, $\frac{t_{r - 1}}{t_r} = \frac{21r - 21}{130 - 10r}\Rightarrow r\leq
+  4\frac{27}{31}\therefore r = 4$.
+
+  So the greatest term will be $C_3^^{11}7^8\frac{10^3}{3^3} = \frac{440}{9}7^85^3$.
+\item In any binomial expansion, the middle terms have the greatest coefficient. Therefore, $(n + 1)$th term
+  will have greatest coefficient.
+
+  $t_n = C_{n - 1}^^{2n}x^{n - 1},\;t_{n + 1} = C_n^^{2n}x^n,\;t_{n + 2} = C_{n + 1}^^{2n}x^{n + 1}$
+
+  $\therefore \frac{t_{n + 1}}{t_{n + 2}} = \frac{n + 1}{n}.\frac{1}{x}$. Since $t_{n + 1}$ is the greatest
+  term $\frac{t_{n + 1}}{t_{n + 2}} > 1 \Rightarrow x < \frac{n + 1}{n}$.
+
+  Similarly, considering $t_n$ and $t_{n + 1},\;x > \frac{n}{n + 1}$.
+\item The greatest terms are calculated below:
+  \startitemize[i]
+  \item $\left(2 + \frac{9}{5}\right)^{10}$ will have $6$th term as the middle term, which will be greatest.
+
+    $t_6 = C_5^^{10}.2^5.\left(\frac{9}{5}\right)^5 = C_5^^{10}\left(\frac{18}{5}\right)^5$.
+  \item For $(4 - 2)^7$ let $t_r$ is the greatest term. Then $\frac{t_r}{t_{r + 1}} > 1$ and
+    $\frac{t_r}{t_{r - 1}} > 1$. Substituting and evaluating, we find $r = 3$.
+
+    $t_3 = C_2^^7.4^5.2^2 = 86016$.
+  \item For $(5 + 2)^{10}$ let $t_r$ is the greatest term. Then $\frac{t_r}{t_{r + 1}} > 1$ and
+    $\frac{t_r}{t_{r - 1}} > 1$. Substituting and evaluating, we find $r = 4$.
+
+    $t_4 = C_3^^{13}5^{10}2^3$.
+  \stopitemize
+\item In any binomial expansion, the middle terms have the greatest coefficient. Therefore, $(15 + 1)$th term
+  will have greatest coefficient.
+
+  $t_{15} = C_{14}^^{30}x^{14},\;t_{16} = C_{15}^^{30}x^{15},\;t_{17} = C_{16}^^{30}x^{16}$
+
+  $\therefore \frac{t_{16}}{t_{17}} = \frac{16}{15}.\frac{1}{x}$. Since $t_{16}$ is the greatest
+  term $\frac{t_{16}}{t_{17}} > 1 \Rightarrow x < \frac{16}{15}$.
+
+  Similarly, considering $t_{15}$ and $t_{16},\;x > \frac{15}{16}$.
+\item Given, $6^{2n} - 35n - 1 = 36^n - 35n - 1 = (1 + 35)^n - 35n - 1 = 35^2[C_2^^n + 35.C_3^^n + \cdots +
+  35^{n - 2}]$
+
+  $= 1225[C_2^^n + 35.C_3^^n + \cdots + 35^{n - 2}] = 1225\times$ a positive integer if $n\geq 2$.
+
+  If $n = 1$, given expression becomes $0$. Hence, for all positive integral values of $n$, $6^{2n} - 35n -
+  1$ is divisible by $1225$.
+\item $2^{4n} - 2^n(7n + 1) = 16^n - 2^n(7n + 1) = (2 + 14)^n - 2^n(7n + 1) = 14^2[C_2^^n.2^{n - 2} +
+  C_3^^n.2^{n - 3}.14 + \cdots + 14^{n - 2}]$, which is divisible by $196$ for all positive values of
+  $n$. If $n = 1$, given expression becomes $0$, which is also divisible by $196$.
+\item $3^{4n + 1} + 16n - 3 = 3(3^{4n} - 1) + 16n = 3[81^n - 1] + 16n = 3[(1 + 80)^n - 1] + 16n$
+
+  $= 3[80n + C_2^^n80^2 + C_3^^n80^3 + \cdots + 80^n] + 16n = 256[n + 75(C_2^^n + C_3^^n.80 + \cdots + 80^{n
+    - 2})]$,
+
+  which is divisible by $256$ for all $n\in\mathbb{N}$.
+\item The problems are solved below:
+  \startitemize[i]
+  \item $4^n - 3n - 1 = (1 + 3)^n - 3n - 1 = C_2^^n3^2 + C_3^^n3^3 + \cdots + 3^n$
+
+    $= 9[C_2^^n + C_3^^n.3 + \cdots + 3^{n - 2}]$,
+
+    which is divisible by $9$ for $n\geq 2$. When $n = 1$, the given expression becomes $0$, and hence
+    divisible by $9$. Thus, given expression is divisible by $9$ for all $n\in\mathbb{P}$.
+  \item $2^{5n} - 31n - 1 = (1 + 31)^n - 31n - 1 = C_2^^n31^2 + C_3^^n31^3 + \cdots + 31^n$
+
+    $= 961[C_2^^n + C_3^^n.31 + \cdots + 31^{n - 2}]$,
+
+    which is divisible by $961$ for $n\geq 2$. When $n = 1$, the given expression becomes $0$, and hence
+    divisible by $961$. Thus, given expression is divisible by $961$ for all $n\in\mathbb{P}$.
+  \item $3^{2n + 2} - 8n - 9 = 9(1 + 8)^n - 8n - 9 = 9[1 + 8n + C_2^^n.8^2 + C_3^^n.8^3 + \cdots + 8^n] - 8n
+    - 9 = 64[n + 9(C_2^^n + C_3^^n8 + \cdots + 8^{n - 2})]$,
+
+    which is divisible by $64$ for $n\geq 2$.
+  \item $2^{5n + 5} - 31n - 32 = 32(1 + 31)^n - 31n - 32 = 32[1 + 31n + C_2^^n.31^2 + C_3^^n.31^3 + \cdots +
+    31^n] - 31n - 32 = 961[n + 32(C_2^^n + C_3^^n31 + \cdots + 31^{n - 2})]$,
+
+    which is divisible by $961$ for $n > 1$.
+  \item $3^{2n} - 1 + 24n - 32n^2 = (1 + 8)^n - 1 + 24n - 32n^2 = 1 + 8n + 32n^2 - 32n + 8^3(C_3^^n +
+    C_4^^n.8 + \cdots + 8^{n - 3}) - 1 + 24n - 32n^2 = 8^3(C_3^^n +
+    C_4^^n.8 + \cdots + 8^{n - 3})$,
+
+    which is divisible by $512$ for $n > 2$.
+  \stopitemize
+\item Let the three consecutive coefficients in the expansion of $(1 + x)^n$ be the $r$th, $(r + 1)$th and
+  $(r + 2)$th, which are given to be $165, 330$ and $462$ respectively.
+
+  $\therefore C_{r - 1}^^n = 165 \Rightarrow \frac{n!}{(r - 1)!(n - r + 1)!} = 165$
+
+  $C_r^^n = 330 \Rightarrow \frac{n!}{r!(n - r)!} = 330$, and $C_{r + 1}^^n = \frac{n!}{(r + 1)!(n - r -
+  1)!} = 462$.
+
+  From first two, we have $\frac{r}{n - r + 1}= \frac{1}{2} \Rightarrow 3r = n + 1$.
+
+  From last two, we have $\frac{r + 1}{n - r} = \frac{5}{7}\Rightarrow 12r = 5n - 7$
+
+  Thus, $n = 11, r = 4$. So positions of coefficients are the $4$th, $5$th and $6$th respectively.
 \stopitemize
