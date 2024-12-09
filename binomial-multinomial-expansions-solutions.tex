@@ -596,7 +596,7 @@
 \item Given series is $C_1 + 2.C_2 + 3.C_3 + \cdots + n.C_n$. Its $r$th term $t_r = r.C_r^^n = n.C_{r -
   1}^^{n - 1}[\because r.C_r^^n = n.C_{r - 1}^^{n - 1}]$
 
-  Now $C_1 + 2.C_2 + 3.C_3 + \cdots + n.C_n = \displaystyle\sum_{r = 1}^nr.C_r^^n = sum_{r = 1}^nn.C_{r -
+  Now $C_1 + 2.C_2 + 3.C_3 + \cdots + n.C_n = \displaystyle\sum_{r = 1}^nr.C_r^^n = \sum_{r = 1}^nn.C_{r -
     1}^^{n - 1}$
 
   $= n[C_0^^{n - 1} + C_1^^{n - 1} + C_2^^{n - 1} + \cdots + C_{n - 1}^^{n - 1}] = n(1 + 1)^{n - 1} = n.2^{n
@@ -676,4 +676,165 @@
 \item Given series is $C_0 + \frac{C_1}{2} + \frac{C_3}{3} + \cdots + \frac{C_n}{n + 1}$.
 
   Its $r$th term is $t_r = \frac{C_{r - 1}^^n}{r}$.
+
+  $C_0 + \frac{C_1}{2} + \frac{C_2}{3} + \cdots + \frac{C_n}{n + 1} = \displaystyle\sum_{r = 1}^{n +
+    1}\frac{C_{r - 1}^^n}{r} = \sum_{r = 1}^^{n + 1}\frac{C_r^^{n + 1}}{n + 1}\left[\because \frac{C_{r -
+        1}^^n}{r} = \frac{C_r^^{n + 1}}{n + 1}\right]$
+
+  $= \frac{1}{n + 1}(C_1^^{n + 1} + C_2^^{n + 2} + \cdots + C_{n + 1}^^{n + 1}) = \frac{2^{n + 1} - 1}{n +
+    1}[\because$ we add and subtract $C_0^^{n + 1}]$.
+
+  {\bf Calculus Method:} $(1 + x)^n = C_0 + C_1x + C_2x^2 + \cdots + C_nx^n$
+
+  Integrating within limits $0$ and $1$, we have
+
+  $\left[\frac{(1 + x)^n}{n}\right]_0^1 = \left[C_0x + C_1\frac{x^2}{2} + C_3\frac{x^3}{3} + \cdots +
+    C_n\frac{x^{n + 1}}{n + 1}\right]_0^1$
+
+  $\Rightarrow \frac{2^{n + 1} - 1}{n + 1} = C_0 + \frac{C_1}{2} + \frac{C_2}{3} + \cdots + \frac{C_n}{n + 1}$.
+\item Given series is $C_0 - \frac{C_1}{2} + \frac{C_2}{3} - \cdots + (-1)^n\frac{C_n}{n + 1} = \frac{1}{n +
+  1}$.
+
+  Its $r$th term $t_r = (-1)^r\frac{C_{r - 1}^^n}{r}$
+
+  Now $C_0 - \frac{C_1}{2} + \frac{C_2}{3} - \cdots + (-1)^n\frac{C_n}{n + 1} = \displaystyle\sum_{r = 1}^{n
+    + 1}(-1)^{r - 1}\frac{C_{r - 1}^n}{r}$
+
+  $\displaystyle= \sum_{r = 1}^^{n + 1}(-1)^{r - 1}\frac{C_r^^{n + 1}}{n +
+  1}\left[\because \frac{C_{r - 1}^^n}{r} = \frac{C_r^^{n + 1}}{n + 1}\right]$
+
+  $= \frac{1}{n + 1}[C_1^^{n + 1} - C_2^^{n + 1} + C_3^^{n + 1} - \cdots + (-1)^nC_{n + 1}^^{n + 1}]$
+
+  $= \frac{1}{n + 1}[-(1 - 1)^{n + 1} + C_0^^{n + 1}] = \frac{1}{n + 1}$.
+
+  {\bf Calculus Method:} $(1 + x)^n = C_0 + C_1x + C_2x^2 + \cdots + C_nx^n$
+
+  Integrating within limits $0$ and $-1$, we have
+
+  $\left[\frac{(1 + x)^n}{n}\right]_0^{-1} = \left[C_0x + C_1\frac{x^2}{2} + C_3\frac{x^3}{3} + \cdots +
+    C_n\frac{x^{n + 1}}{n + 1}\right]_0^{-1}$
+
+  $\Rightarrow -\frac{1}{n + 1} = -\left[C_0 - \frac{C_1}{2} + \frac{C_2}{3} - \cdots + (-1)^n\frac{C_n}{n +
+      1}\right]$
+
+  $\Rightarrow C_0 - \frac{C_1}{2} + \frac{C_2}{3} - \cdots + (-1)^n\frac{C_n}{n + 1} = \frac{1}{n + 1}$.
+\item Given series is $\frac{C_1}{2} + \frac{C_3}{4} + \frac{C_5}{6} + \cdots$
+
+  $t_r = \frac{C_{2r - 1}^^n}{2r} = \frac{C_{2r}^^{n  + 1}}{n + 1}$
+
+  Now, $\frac{C_1}{2} + \frac{C_3}{4} + \frac{C_5}{6} + \cdots = \frac{1}{n + 1}\displaystyle\sum_{r =
+    1}C_{2r}^^{n + 1} = \frac{1}{n + 1}[C_2^^{n + 1} + C_4^^{n + 1} + C_6^^{n + 1} + \cdots]$
+
+  $= \frac{2^n - 1}{n + 1}[\because C_0^^n + C_2^^n + C_4^^n + \cdots = 2^{n - 1}]$.
+
+  {\bf Calculus Method:} Adding the results of last two problems, we have
+
+  $2\left[\frac{C_1}{2} + \frac{C_3}{4} + \frac{C_5}{6} + \cdots\right] = \frac{2^{n + 1} - 1 - 1}{n + 1} =
+  \frac{2(2^n - 1)}{n +1}$
+
+  $\Rightarrow \frac{C_1}{2} + \frac{C_3}{4} + \frac{C_5}{6} + \cdots = \frac{2^n - 1}{n + 1}$.
+\item Given series is $2.C_0 + 2^2.\frac{C_1}{2} + 2^3.\frac{C_2}{3} + \cdots + 2^{n + 1}.\frac{C_n}{n + 1}$
+
+  $t_r = 2^r.\frac{C_{r - 1}^^n}{r} = 2^r.\frac{C_r^^{n + 1}}{n + 1}$.
+
+  Now, $2.C_0 + 2^2.\frac{C_1}{2} + 2^3.\frac{C_2}{3} + \cdots + 2^{n + 1}.\frac{C_n}{n + 1} =
+  \frac{1}{n + 1}\displaystyle\sum_{r = 1}^^{n + 1}C_r^^{n + 1}.2^r$
+
+  $= \frac{1}{n + 1}[C_1^^{n + 1}.2 + C_2^^{n + 1}.2^2 + C_3^^{n + 1}.2^3 + \cdots + C_{n + 1}^^{n + 1}.2^{n
+      + 1}]$
+
+  $=\frac{1}{n + 1}[(1 + 2)^{n + 1} - 1] = \frac{3^{n + 1} - 1}{n + 1}$.
+
+  {\bf Calculus Method:} $(1 + x)^n = C_0 + C_1x + C_2x^2 + \cdots + C_nx^n$
+
+  Integrating within the limits of $0$ and $2$, we have
+
+  $\left[C_0x + C_1.\frac{x^2}{2} + C_2.\frac{x^3}{3} + \cdots + C_n..\frac{x^{n + 1}}{n + 1}\right]_0^2 =
+  \left[\frac{(1 + x)^{n + 1}}{n + 1}\right]_0^2$
+
+  $\Rightarrow C_0.2 + \frac{C_1}{2}.2^2 + \frac{C_2}{3}.2^3 + \cdots + \frac{C_n}{n + 1}.2^{n + 1} =
+  \frac{3^{n + 1} - 1}{n + 1}$.
+\item $(1 + x)^n = C_0 + C_1x + C_2x^2 + \cdots + C_nx^n$, and $(x + 1)^n = C_0x^n + C_1x^{n - 1} + C_2x^{n
+  - 2} + \cdots + C_n$
+
+  Multiplying these two, we have $(1 + x)^{2n} = (C_0 + C_1x + C_2x^2 + \cdots + C_nx^n)(C_0x^n + C_1x^{n -
+    1} + C_2x^{n - 2} + \cdots + C_n)$
+
+  Coeff.\ of $x^{n + r}$ on R.H.S.\ $= C_0c_r + C_1C_{r + 1} + \cdots + C_{n - r}C_n$, and on L.H.S.\ $=
+  C_{n + r}^^{2n} = \frac{(2n)!}{(n + r)!(n - r)!}$.
+\item $(1 + x)^{2n} = (C_0 + C_1x + C_2x^2 + \cdots + C_nx^n)(C_0x^n + C_1x^{n - 1} + C_2x^{n - 2} + \cdots
+  + C_n)$
+
+  Equating the coeff. of $x^n$, we have
+
+  $C_0^2 + C_1^2 + C_2^2 + \cdots + C_n^2 = C_n^^{2n} = \frac{2n!}{n!n!}$.
+\item $t_r = r.\frac{C_r^^n}{C_{r - 1}^^n} = n - r + 1$
+
+  L.H.S.\ $= t_1 + t_2 + t_3 + \cdots + t_n = n + (n - 1) + (n - 2) + \cdots + 1 = \frac{n(n + 1)}{2}$.
+\item $[(1 + x)^n]^2 = (C_0 + C_1.x + C_2.x^2 + \cdots + C_n.x^n)^2$, and $(1 + x)^{2n} = (C_0^^{2n} +
+  C_1^^{2n}.x + C_2^^{2n}.x^2 + \cdots + C_{2n}^^{2n}.x^{2n})$
+
+  Putting $x = 1$, it is trivial to see that
+
+  $(1 + C_1 + C_2 + \cdots + C_n)^2 = 1 + C_1^^{2n} + C_2^^{2n} + \cdots + C_{2n}^^{2n}$.
+\item $[(1 + x)^n]^5 = (C_0 + C_1.x + C_2.x^2 + \cdots + C_n.x^n)^5$, and $(1 + x)^{5n} = (C_0^^{5n} +
+  C_1^^{5n}.x + C_2^^{5n}.x^2 + \cdots + C_{5n}^^{5n}.x^{5n})$
+
+  Putting $x = 1$, it is trivial to see that
+
+  $(1 + C_1 + C_2 + \cdots + C_n)^5 = 1 + C_1^^{5n} + C_2^^{5n} + \cdots + C_{5n}^^{5n}$.
+\item We have to prove that $C_0 + 5.C_1 + 9.C_2 + \cdots + (4n + 1).C_n = (2n + 1)2^n$.
+
+  L.H.S.\ $= 4.0.C_0 + 4.1.C_1 + 4.2.C_2 + \cdots + 4nC_n + C_0 + C_1 + C_2 + \cdots + C_n$
+
+  We know that $C_0 + C_1 + C_2 + \cdots + C_n = 2^n$.
+
+  $C_1 + 2.C_2 + 3.C_3 + \cdots + n.C_n$. Its $r$th term $t_r = r.C_r^^n = n.C_{r -
+  1}^^{n - 1}[\because r.C_r^^n = n.C_{r - 1}^^{n - 1}]$
+
+  Now $C_1 + 2.C_2 + 3.C_3 + \cdots + n.C_n = \displaystyle\sum_{r = 1}^nr.C_r^^n = \sum_{r = 1}^nn.C_{r -
+    1}^^{n - 1}$
+
+  $= n[C_0^^{n - 1} + C_1^^{n - 1} + C_2^^{n - 1} + \cdots + C_{n - 1}^^{n - 1}] = n(1 + 1)^{n - 1} = n.2^{n
+    - 1}$
+
+  Multiplying with $4$, we have
+
+  $4.0.C_0 + 4.1.C_1 + 4.2.C_2 + \cdots + 4nC_n = 2n.2^n$.
+
+  Thus, $C_0 + 5.C_1 + 9.C_2 + \cdots + (4n + 1).C_n = (2n + 1)2^n$.
+\item We have to prove that $1 - (1 + x)C_1 + (1 + 2x)C_2 - (1 + 3x)C_3 + \cdots = 0$.
+
+  $\Rightarrow 1 - 1 + 1 - 1 + \cdots - x[C_1 - 2.C_2 + 3.C_3 - \cdots] = 0$
+
+  That is we have to prove that $C_1 - 2.C_2 + 3.C_3 - \cdots = 0$, which has been proven earlier.
+\item We have to prove that $3.C_1 + 7.C_2 + \cdots + (4n - 1).C_n = (2n - 1)2^n$.
+
+  L.H.S.\ $= 4.0.C_0 + 4.1.C_1 + 4.2.C_2 + \cdots + 4nC_n - [C_0 + C_1 + C_2 + \cdots + C_n]$
+
+  We know that $C_0 + C_1 + C_2 + \cdots + C_n = 2^n$.
+
+  $C_1 + 2.C_2 + 3.C_3 + \cdots + n.C_n$. Its $r$th term $t_r = r.C_r^^n = n.C_{r -
+  1}^^{n - 1}[\because r.C_r^^n = n.C_{r - 1}^^{n - 1}]$
+
+  Now $C_1 + 2.C_2 + 3.C_3 + \cdots + n.C_n = \displaystyle\sum_{r = 1}^nr.C_r^^n = \sum_{r = 1}^nn.C_{r -
+    1}^^{n - 1}$
+
+  $= n[C_0^^{n - 1} + C_1^^{n - 1} + C_2^^{n - 1} + \cdots + C_{n - 1}^^{n - 1}] = n(1 + 1)^{n - 1} = n.2^{n
+    - 1}$
+
+  Multiplying with $4$, we have
+
+  $4.0.C_0 + 4.1.C_1 + 4.2.C_2 + \cdots + 4nC_n = 2n.2^n$.
+
+  Thus, $3.C_1 + 7.C_2 + \cdots + (4n - 1).C_n = (2n - 1)2^n$.
+\item We have to prove that $C_0 + \frac{C_2}{3} + \frac{C_4}{5} + \cdots = \frac{2^n}{n + 1}$.
+
+  $t_r = \frac{C_{2r - 2}^^n}{2r - 1} = \frac{C_{2r - 1}^^{n + 1}}{n + 1}$
+
+  Now $C_0 + \frac{C_2}{3} + \frac{C_4}{5} + \cdots = \frac{2^n}{n + 1} = \frac{1}{n + 1}[C_0^^{n + 1} +
+    C_3^^{n + 1} + C_{5}^^{n + 1} + \cdots]$
+
+  $= \frac{2^n}{n + 1}$.
+\item
 \stopitemize
