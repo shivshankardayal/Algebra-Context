@@ -929,6 +929,23 @@
   Putting $x = 1$, we arrive at
 
   $1^2.C_1 + 2^2.C_2 + 3^2C_3 + \cdots + n^2.C_n = n[2^{n - 1} + (n - 1)2^{n - 2}] = n(n + 1)2^{n - 2}$.
+\item Given series is $C_0 - 2^2.C_1 + 3^2.C_2 - \cdots + (-1)^n(n + 1)^2C_n = 0,\;n>2$.
+
+  $t_{r + 1} = (-1)^{r}r^2C_r = (-1)^{r}[r^2 + 2r + 1]C_r$
+
+  $\displaystyle\sum_{r = 0}^n(-1)^r.C_r^^n = C_0 - C_1 + C_2 - \cdots + (-1)^n.C_n = 0$
+
+  $\displaystyle\sum_{r = 0}^n(-1)^r.rC_{r} = \sum_{r = 0}^n(-1)^r.nC_{r - 1}^^{n - 1} = -n[C_0^^{n - 1} -
+  C_1^^{n - 1} + C-2^^{n - 1} - \cdots + (-1)^{n - 1}C_{n - 1}^^{n - 1}]$
+
+  $= -n(1 - 1)^{n - 1} = 0$.
+
+  $\displaystyle\sum_{r = 0}^{n}(-1)^r.r^2C_r^^n = \sum_{r = 0}^n(-1)^r.r.nC_{r - 1}^^{n - 1} = n\sum_{r =
+  0}^n(-1)^r(r - 1)C_{r - 1}^^{n - 1} + n\sum_{r = 0}^nC_{r - 1}^^{n - 1}$
+
+  $= n(n - 1)\displaystyle\sum_{r = 0}^^n(-1)^{r}.C_{r - 2}^^{n - 2} + n.0 = 0$.
+
+  Thus, $\displaystyle\sum_{r = 0}^nt_r = 0$.
 \item Given series is $C_0.abc - C_1(a - 1)(b - 1)(c - 1) + C_2(a - 2)(b - 2)(c -2)- \cdots +
   (-1)^n.C_n(a - n)(b - n)(c - n) = 0$.
 
@@ -999,6 +1016,7 @@
 
   $= \frac{3^{n + 2}}{(n + 1)(n + 2)} - \frac{2}{n + 1} - \frac{1}{(n + 2)(n + 2)} = \frac{3^{n + 2} - 2n
     -5}{(n + 1)(n + 2)}$.
+\item
 \item Let $(1 + x - 3x^2)^{2163} = a_0 + a_1x + a_2x^2 + \cdots + a_{6489}x^{6489}$.
 
   Putting $x = 1$, we get sum of coefficients as
