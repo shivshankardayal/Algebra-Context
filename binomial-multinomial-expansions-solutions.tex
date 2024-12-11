@@ -1016,12 +1016,124 @@
 
   $= \frac{3^{n + 2}}{(n + 1)(n + 2)} - \frac{2}{n + 1} - \frac{1}{(n + 2)(n + 2)} = \frac{3^{n + 2} - 2n
     -5}{(n + 1)(n + 2)}$.
+\item Let $S_n = C_1 - \frac{C_2}{2} + \frac{C_3}{3} - \cdots + \frac{(-1)^nC_n}{n} = n -
+  \frac{1}{2}.\frac{n(n - 1)}{2!} + \frac{1}{3}.\frac{n(n - 1)(n - 2)}{3!} - \cdots$
+
+  $= (n - 1 + 1) - \frac{1}{2}.\frac{(n - 1)(n - 2 + 2)}{2!} + \frac{1}{3}.\frac{(n - 1)(n - 2)(n - 3 +
+    3)}{3!} - \cdots$
+
+  $= \left[(n - 1) - \frac{1}{2}.\frac{(n - 1)(n - 2)}{2!} + \frac{1}{3}.\frac{(n - 1)(n - 2)(n - 3)}{3!} -
+    \cdots\right] + \left[1 - \frac{n - 1}{2!} + \frac{(n - 1)(n - 2)}{3!} - \cdots\right]$
+
+  $= S_{n - 1} + \frac{1}{n}[C_1 - C_2 + C_3 - \cdots] = S_{n - 1} + \frac{1}{n}\Rightarrow S_n - S_{n - 1}
+  = \frac{1}{n}$
+
+  And thus, $S_{n - 1} - S_{n - 2} = \frac{1}{n - 1}, S_{n - 2} - S_{n - 3} = \frac{1}{n - 2}, \ldots, S_2 -
+  S_1 = \frac{1}{2}, S_1 = 1$.
+
+  Adding, we get $S_n = 1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n}$.
+
+  {\bf Calculus Method:} $1 - C_1x + C_2x^2 - C_3x^3 + \cdots + (-1)^nC_nx^n = (1 - x)^n$
+
+  $\Rightarrow C_1 - C_2x + C_3x^2 - \cdots + (-1)^{n - 1}C_nx^{n - 1} = \frac{1 - (1 - x)^n}{x}$
+
+  Integrating between the limits of $0$ and $1$, we arrive at
+
+  $\left[C_1x - C_2.\frac{x^2}{2} + C_3.\frac{x^3}{3} - \cdots + (-1)^{n - 1}C_n.\frac{x^n}{n}\right]_0^1 =
+  \displaystyle\int_0^1\frac{1 - (1 - x)^n}{x}dx$
+
+  Now $\displaystyle\int_0^1\frac{1 - (1 - x)^n}{x}dx = \int_0^1\frac{1 - z^n}{1 - z}dz$, where $z = 1 - x$
+
+  $= \displaystyle\int_0^1(1 + z + z^2 + \cdots + z^n)dz = 1 + \frac{1}{2} + \frac{1}{3} + \cdots +
+  \frac{1}{n}$.
+\item $(1 - x)^n = C_0 - C_1x + C_2x^2 - \cdots + (-1)^nC_nx^n$
+
+  Substituting $x = x^4$, we have
+
+  $(1 - x^4)^n = C_0 - C_1x^4 + C_2x^8 - \cdots + (-1)^nC_nx^{4n}$
+
+  Integrating within the limits of $0$ and $1$, we deduce
+
+  $\left[C_0x - C_1\frac{x^5}{5} + C_2.\frac{x^9}{9} - \cdots + (-1)^nC_n\frac{x^{4n + 1}}{4n + 1}\right] =
+  \displaystyle\int_0^1(1 - x^4)^ndx$
+
+  Now we will evaluate the R.H.S. Let $I_n = \displaystyle\int_0^n(1 - x^4)^ndx = [x(1 - x^4)^n]_0^1 -
+  \int_0^1x.n(1 - x^4)^{n - 1}.(-4x^3)dx$
+
+  $= -4n\displaystyle\int_0^1(1 - x^4)^{n - 1}(1 - x^4 - 1)dx = -4nI_n + 4nI_{n - 1} \Rightarrow
+  \frac{I_n}{I_{n - 1}} = \frac{4n}{4n + 1}$
+
+  Now, $\frac{I_n}{I_0} = \frac{I_n}{I_{n - 1}}.\frac{I_{n - 1}}{I_{n -
+      1}}\cdots\frac{I_3}{I_2}.\frac{I_2}{I_1}.\frac{I_1}{I_0}$
+
+  $= \frac{4n}{4n + 1}.\frac{4n - 4}{4n - 3}.\frac{4n - 8}{4n - 7}\cdots \frac{4}{5} =
+  \frac{4^n.n!}{5.9.\cdots(4n + 1)}$.
+
+  {\bf Aliter:} Putting $x^2 = \sin\theta, 2xdx = \cos\theta d\theta \therefore dx = \frac{\cos\theta
+    d\theta}{\sqrt{\sin\theta}}$
+
+  When $x = 0, \theta = 0$ and when $x = 1, \theta = \frac{\pi}{2}$.
+
+  $I_n = \displaystyle\int_0^{\frac{\pi}{2}}\frac{\cos^{2n + 1}\theta}{2\sqrt{\sin\theta}}d\theta =
+  \int_0^{\frac{\pi}{2}}\cos^{2n}\theta.\frac{\cos\theta}{2\sqrt{\sin\theta}}d\theta$
+
+  $= [\cos^{2n}\theta.\sqrt{\sin\theta}]_0^{\frac{\pi}{2}} - 2n\displaystyle\int_0^{\frac{\pi}{2}}\cos^{2n -
+    1}\theta(-\sin\theta)\sqrt{\sin\theta}d\theta$
+
+  $= 0 + 2n\displaystyle\int_0^{\frac{\pi}{2}}\frac{\cos^{2n -
+      1}\theta.\sin^2\theta}{\sqrt{\sin\theta}}d\theta =
+  4n\int_0^{\frac{\pi}{2}}\cos^{2n- 2}\theta(1 - \cos^2\theta).\frac{\cos\theta}{2\sqrt{\sin\theta}}d\theta$
+
+  $= \displaystyle 4n\int_0^{\frac{\pi}{2}}\cos^{2n - 2}\theta.\frac{\cos\theta}{2\sqrt{\sin\theta}}d\theta
+  - 4n\int_0^{\frac{\pi}{2}}\cos^{2n}\theta.\frac{\cos\theta}{2\sqrt{\sin\theta}}d\theta$
+
+  $= 4I_{n - 1} - 4nI_n \Rightarrow \frac{I_n}{I_{n - 1}} = \frac{4n}{4n + 1}$
+
+  And now we can proceed like earlier.
+\item $(1 - x)^n = C_0 - C_1x + C_2x^2 - \cdots + C_nx^n$
+
+  Multiply both sides with $x^{n - 1}$ to get
+
+  $x^{n - 1}(1 - x)^n = C_0x^{n - 1} - C_1x^n + C_2x^{n + 1} - \cdots + (-1)^nC_nx^{2n - 1}$
+
+  Integrate both sides between limits $0$ and $1$ to get
+
+  $\displaystyle\int_0^1x^{n - 1}(1 - x)^ndx = \left[C_0.\frac{x^n}{n} - C_1.\frac{x^{n + 1}}{n + 1} +
+    C_2.\frac{x^{n + 2}}{n + 2} - \cdots + C_n\frac{x^{2n}}{2n}\right]_0^1$
+
+  $\Rightarrow \frac{C_0}{n} - \frac{C_1}{n+ 1} + \frac{C_2}{n + 2} - \cdots + (-1)^n\frac{C_n}{2n} =
+  \displaystyle\int_0^1x^{n - 1}(1 - x)^ndx$
+
+  Now we evaluate $\displaystyle\int_0^1x^{n - 1}(1 - x)^ndx$.
+
+  Let $I_{n - 1, n} = \displaystyle\int_0^1x^{n - 1}(1 - x)^ndx = \left[x^{n - 1}.\frac{(1 - x)^{n + 1}}{-(n
+      + 1)}\right]_0^1 - \int_0^1(n - 1)x^{n - 2}\frac{(1 - x)^{n + 1}}{-((n + 1)}dx$
+
+  $= 0 + \frac{n - 1}{n + 1}\displaystyle\int_0^1x^{n - 1}(1 - x)^{n + 1}dx = \frac{n - 1}{n + 1}I_{n - 2, n
+    + 1}$
+
+  $= \frac{n - 1}{n + 1}.\frac{n - 2}{n + 2}I_{n - 3, n + 2} = \frac{n - 1}{n + 1}.\frac{n - 2}{n +
+    2}.\frac{n - 3}{n + 3}I_{n - 4, n + 3} = \cdots = \frac{n - 1}{n + 1}.\frac{n - 2}{n + 2}.\frac{n - 3}{n
+    + 3}\cdots \frac{1}{2n - 1}I_{0, 2n - 1}$
+
+  $=\frac{n - 1}{n + 1}.\frac{n - 2}{n + 2}.\frac{n - 3}{n + 3}\cdots \frac{1}{2n -
+    1}\displaystyle_int_0^1x^0(1 - x)^{2n - 1}dx = \frac{n - 1}{n + 1}.\frac{n - 2}{n + 2}.\frac{n - 3}{n
+    + 3}\cdots \frac{1}{2n - 1}.\frac{1}{2n}$
+
+  $= \frac{n!(n - 1)!}{2n!}$.
 \item
+\item L.H.S.\ $= \left(\frac{C_0}{n} - \frac{C_0}{n + 1}\right) - \left(\frac{C_1}{n + 1} - \frac{C_1}{n +
+  2}\right) + \cdots + (-1)^n\left(\frac{C_n}{2n} - \frac{C_n}{2n + 1}\right)$
+
+  $= \frac{C_0}{n} - \frac{C_1}{n + 1} + \frac{C_2}}{n + 2} - \cdots + (-1)^n\frac{C_n}{2n} -
+  \left[\frac{C_0}{n + 1} - \frac{C_1}{n + 2} + \cdots + (-1)^n\frac{C_n}{2n + 2}\right]$
+
+  Now the problem is similar to previous one and we proceed similarly to arrive at the answer.
 \item Let $(1 + x - 3x^2)^{2163} = a_0 + a_1x + a_2x^2 + \cdots + a_{6489}x^{6489}$.
 
   Putting $x = 1$, we get sum of coefficients as
 
-  $a_0 + a_1 + a_2 + \cdots + a_{6489} = (1 + 1 - 3) = (-1)^{2163} = -1$.
+  $a_0 + a_1 + a_2 + \cdots + a_{6489} = (1 + 1 - 3)^{2163} = (-1)^{2163} = -1$.
 \item Putting $x = 1, \omega, \omega^2$ in the given equation, and adding we get the desired result.
 
 \stopitemize
