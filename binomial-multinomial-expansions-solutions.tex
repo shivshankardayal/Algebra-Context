@@ -1349,4 +1349,255 @@
   $f + f_1 = $ even number $- p =$ an integer. Also, $0 < f + f_1 < 2$ and thus, $f + f_1 = 1$.
 
   Hence, integer just above $(\sqrt{3} + 1)^{2n}$ i.e. $p + 1$ is divisible by $2^{n + 1}$.
+\item Clearly $0 < f < 1$. $R = (5\sqrt{5} + 11)^{2n + 1}$
+
+  Let $f' = (5\sqrt{5} - 11)^{2n + 1}$. $\because 0 < 5\sqrt{5} - 11 < 1 \therefore 0 < (5\sqrt{5} - 11)^{2n
+    + 1} <1$.
+
+  $R - f' = 2[C_1^^{2n + 1}.(5\sqrt{5})^{2n}.11 + C_3^^{2n + 1}(5\sqrt{5})^{2n - 2}.11^3 + \cdots] =$ an
+  even number
+
+  $f - f' =$ an even number $- [R] =$ an integer. But $-1 < f - f' < 1$.
+
+  Thus, $f - f' = 0 \Rightarrow f = f'$. $\Rightarrow Rf' = ((5\sqrt{5} + 11)^{2n + 1})((5\sqrt{5} - 11)^{2n
+    + 1}) = 4^{2n + 1} = Rf[\because f = f']$.
+\item $101^{50} - 99^{50} = (100 + 1)^{50} - (100 - 1)^{50}$
+
+  $= 2[C_1^^{50}.100^{49} + C_3^^{50}100^{47} + \cdots + C_{49}^^{50}100]$
+
+  $= 100^{50} + 2[C_3^^{50}100^{47} + \cdots + C_{49}^^{50}100]$
+
+  $\therefore 101^{50} - 99^{50} > 100^{50} \Rightarrow 101^{50} > 100^{50} + 99^{50}$.
+\item $t_1 = \displaystyle\sum_{r = 0}^nC_r\left(\frac{1}{2}\right)^r = \left(1 - \frac{1}{2}\right)^r =
+  \frac{1}{2^n}$, $t_2 = \displaystyle\sum_{r = 0}^nC_r\left(\frac{3}{4}\right)^r = \left(1 -
+  \frac{3}{4}\right)^r = \frac{1}{2^{2n}}, \ldots$ and so on.
+
+  Therefore, required sum $= \frac{1}{2^n} + \frac{1}{2^{2n}} + \cdots + \frac{1}{2^{mn}} =
+  \frac{1}{2^n}\left[\frac{1 - \left(\frac{1}{2^n}\right)^m}{1 - \frac{1}{2^n}}\right] = \frac{1 -
+    \frac{1}{2^{mn}}}{2^n - 1}$.
+\item $32^{32} = (2 + 3\times10)^{32} = 2^{32} + 10k$, where $k\in\mathbb{N}$. Therefore last digit in
+  $32^{32}$ is same as last digit in $2^{32}$.
+
+  $2^{32} = (2^5)^6.2^2 = 32^6.4 = (2 + 10)^6.4 = 4.(2^6 + 10r)$, where $r\in\mathbb{N}$.
+
+  Therefore, last digit in $2^{32}$ is same as last digit in $4.2^6 =$ last digit in $16 = 6$.
+\item Let $n = 2m$, where $m\in\mathbb{P}$, then $k = 3n$.
+
+  Now, L.H.S.\ $= \displaystyle\sum_{r = 1}^^{3m}(-3)^{r - 1}C_{2r - 1}^^{6m} = C_1^^{6m} - C_3^^{6m}.3 +
+  C_5^^{6m}.3^2 - \cdots + (-1)^{3m - 1}C_{6m - 1}^^{6m}3^{3m - 1}$
+
+  $= \frac{1}{\sqrt{3}}[C_1^^{6m}\sqrt{3} - C_3^^{6m}(\sqrt{3})^3 + C_5^^{6m}(\sqrt{3})^5 - \cdots +
+    (-1)^{3m - 1}C_{6m - 1}^^{6m}(\sqrt{3})^{6m - 1}]$
+
+  We observe that $(-1)^{3m - 1} = i^{6m - 2} = -i.i^{6m - 1}$.
+
+  Now $(1 + \sqrt{3}i)^{6m} = 1 + C_1^^{6m}\sqrt{3}i + C_2^^{6m}(\sqrt{3}i)^2 + C_3^^{6m}(\sqrt{3}i)^3 +
+  \cdots + C_{6m - 1}^^{6m}(\sqrt{3}i)^{6m - 1} + C_{6m}^^{6m}(\sqrt{3}i)^{6m}$
+
+  $= [1 - C_2^^{6m}.3 + C_4^^{6m}.3^2 - \cdots] + i[C_1^^{6m}\sqrt{3} - C_3^^{6m}(\sqrt{3})^3 + \cdots +
+    C_{6m - 1}^^{6m}.i^{6m - 2}(\sqrt{3})^{6m - 1}]$
+
+  However, $(1 + \sqrt{3}i)^{6m} = \left[2\left(\cos\frac{\pi}{3} + i\sin\frac{\pi}{3}\right)\right]^{6m} =
+  2^{6m}$.
+
+  Equating coeff.\ of imaginary parts yields
+
+  $C_1^^{6m}\sqrt{3} - C_3^^{6m}(\sqrt{3})^3 + \cdots + C_{6m - 1}^^{6m}.i^{6m - 2}(\sqrt{3})^{6m - 1} = 0$.
+\item $(a + x)^n = a^n + C_1^^na^{n - 1}x + C_2^^na^{n - 2}x^2 + \cdots + x^n$
+
+  Thus, $t_0 = a^n, t_1 = C_1^^na^{n - 1}x, t_2 = C_2^^na^{n - 2}x^2, \ldots$
+
+  Now we replace $x$ with $ix$ to get
+
+  $(a + ix)^n = a^n + C_1^^na^{n - 1}ix - C_2^^na^{n - 2}x^2 + \cdots + (ix)^n$
+
+  $= (a^n - C_2^^na^{n - 2}x^2 + \cdots) + i(C_1^^na^{n - 1}x - C_3^^na^{n - 3}x^3 + \cdots)$
+
+  $= (t_0 - t_2 + t_4 - \cdots) + i(t_1 - t_3 + t_5 - \cdots)$
+
+  Taking modulus and squaring yields
+
+  $(a^2 + x^2)^n = (t_0 - t_2 + t_4 - \cdots)^2 + i(t_1 - t_3 + t_5 - \cdots)^2$.
+\item Given, $(1 + x + x^2)^n = a_0 + a_1x + a_2x^2 + \cdots + a_{2n}x^{2n}$.
+
+  Putting $x = 1$ yields
+
+  $a_0 + a_1 + a_2 + \cdots + a_{2n} = 3^n$.
+
+\item Putting $x = -1$ yields
+
+  $a_0 - a_1 + a_2 - \cdots + a_{2n} = 1$.
+
+\item Putting $x = 1, \omega, \omega^2$ yields
+
+  $a_0 + a_1 + a_2 + \cdots + a_{2n} = 3^n$,
+
+  $a_0 + a_1\omega + a_2\omega^2 + \cdots + a_{2n}\omega^{2n} = 0$, and
+
+  $a_0 + a_1\omega^2 + a_2\omega^4 + \cdots + a_{2n}\omega^{4n} = 0$.
+
+  Adding we get $3(a_0 + a_3 + a_6 + \cdots) = 3^n$
+
+  $\Rightarrow a_0 + a_3 + a_6 + \cdots = 3^{n - 1}$.
+
+\item $S_n = 1 + q + q^2 + \cdots + q^n = \frac{1 - q^{n + 1}}{1 - q}$ and $S_n' = 1 + \left(\frac{q +
+  1}{2}\right) + \left(\frac{q + 1}{2}\right)^2 + \cdots + \left(\frac{q + 1}{2}\right)^n = \frac{1 -
+  \left(\frac{q + 1}{2}\right)^{n + 1}}{1 - \frac{q + 1}{2}} = \frac{2^{n + 1} - (q + 1)^{n + 1}}{(1 -
+  q).2^n}$.
+
+  Now $C_1^^{n + 1} + C_2^^{n + 1}.S_1 + C_3^^{n + 1}.S_2 + \cdots + C_{n + 1}^^{n + 1}.S_n = C_1^^{n +
+    1}\left(\frac{1 - q}{1 - q}\right) + C_2^^{n + 1}\left(\frac{1 - q^2}{1 - q}\right) + C_3^^{n +
+    1}\left(\frac{1 - q^3}{1 - q}\right) + \cdots + C_{n + 1}^^{n + 1}\left(\frac{1 - q^{n + 1}}{1 -
+    q}\right)$
+
+  $= \frac{1}{1 - q}[(C_1^^{n + 1} + C_2^^{n + 1} + C_3^^{n + 1} + \cdots + C_{n + 1}^^{n + 1}) - (C_1^^{n +
+      1}q + C_2^^{n + 1}q^2 + C_3^^{n + 1}q^3 + \cdots + C_{n + 1}^^{n + 1}q^{n + 1})]$
+
+  $= \frac{1}{1 - q}[2^{n + 1} - 1 - \{(1 + q)^{n + 1} - 1\}] = \frac{1}{1 - q}[2^{n + 1} - (1 + q)^{n + 1}]
+  = 2^nS_n'$.
+
+\item $(r + 1)$th term in the given expansion is given by $t_{r + 1} = C_r^{1000}9^{\frac{1000 -
+    r}{4}}.8^{\frac{r}{6}}$, where $r = 0, 1, 2, \ldots, 1000$.
+
+  For rational terms $r$ has to be a multile of $6 = 0, 6, 12, 18, \ldots, 996$ and $1000 - r =$ a multiple
+  of $4 = 0, 4, 8, 12, \ldots, 1000$.
+
+  From both of these the common values are multiple of $12$, which is L.C.M.\ of $4$ and $6$. Thus, sum
+  of rational terms would be $84$.
+
+\item $(r + 1)$th term in the given expansion is given by $t_{r + 1} = C_r^^{15}2^{\frac{15 -
+    r}{3}}3^{\frac{r}{5}}$, where $r = 0, 1, 2, \ldots, 15$.
+
+  For rational terms $r$ has to be a multiple of $5 = 0, 5, 10, 15$ and $15 - r =$ a multiple of $3 = 0, 3,
+  6, 9, 12, 15$.
+
+  The common values will depend on the L.C.M.\ of $3$ and $5$ which is $15$. So there are two terms which
+  will satisfy the criteria; first terms and last term.
+
+  Sum would be $= C_0^^{15}2^5 + C_{15}^^{15}3^3 = 32 + 27 = 59$.
+
+\item $t_3$ in the expansion of $(x + x\log_{10}x)^5$ is $C_2^^5x^3.x^2(\log_{10}x)^2 = 1,000,000$
+
+  $\Rightarrow x^5(\log_{10}x)^2 = 100,000 \Rightarrow x = 10$.
+\item Replacing $x - \frac{1}{x} = y$ we have $(1 + y)^3 = 1 + 3y + 3y^2 + y^3$. Substituting back we get
+
+  $\left(x + 1 - \frac{1}{x}\right)^3 = 1 + 3\left(x - \frac{1}{x}\right) + 3\left(x^2 + \frac{1}{x^2} -
+  2\right) + \left(x - \frac{1}{x}\right)^3 = 1 + 3x - \frac{3}{x} + 3x^2 + \frac{3}{x^2} - 6 + x^3 -3x +
+  \frac{3}{x} - \frac{1}{x^3}$
+
+  $= x^3 + 3x^2 - 5 + \frac{3}{x^2} - \frac{1}{x^3}$.
+\item It is given that coefficients of second, third and fourth terms are the first, third and fifth terms
+  of an A.P. i.e. they are in A.P.
+
+  $\therefore 2.C_2^^m = C_1^^m + C_3^^m\Rightarrow 2.\frac{m(m - 1)}{2} = m + \frac{m(m - 1)(m - 2)}{6}$
+
+  $\Rightarrow m - 1 = 1 + \frac{(m - 1)(m - 2)}{6} \Rightarrow m^2 - 9m + 14 = 0$
+
+  $\Rightarrow m = 2, 7$ but it cannot be $2$ as we have more than $3$ terms, so $m = 7$.
+
+  $t_6 = C_5^^7[2^{\log(10-3^x) + (x - 2)\log3}] = 21 \Rightarrow 2^{\log(10-3^x) + \log3^{x - 2}} = 1 =
+  2^0$
+
+  $\Rightarrow \log(10 - 3^x) + \log3^{x - 2} = 0 \Rightarrow (10 - 3^x)3^{x - 2} = 1$
+
+  $\Rightarrow 3^{2x} - 10.3^x + 9 = 0 \Rightarrow 3^x = 9, 1 \Rightarrow x = 2, 0$.
+\item Sixth term of the expansion $\left[2^{\log_2\sqrt{9^{x - 1} + 7}} +
+  \frac{1}{2^{\tfrac{1}{5}\log_2(3^{x -1} + 1)}}\right]^7$ is given by $t_6 = C_5^^7(\sqrt{9^{x -
+      1} + 7})^2.\frac{1}{(3^{x - 1} + 1)} = 84$
+
+  $\Rightarrow \frac{9^{x - 1} + 7}{3^{x - 1} + 1} = 4\Rightarrow x = 1, 2$.
+\item We have to prove that $\frac{1}{(81)^n} - \frac{10}{(81)^n}.C_1^^{2n} +
+  \frac{10^2}{(81)^n}.C_2^^{2n} - \frac{10^3}{(81)^n}.C_3^^{2n} + \cdots + \frac{10^{2n}}{(81)^n} = 1$.
+
+  $\Rightarrow \frac{1}{81^n}[C_0^^{2n} - C_1^^{2n}10 + C_2^^{2n}10^2 - C_3^^{2n}10^3 + \cdots +
+    C_{2n}^^{2n}10^{2n}] = 1$
+
+  $\Rightarrow \frac{1}{81^n}(1 - 10)^{2n} = \frac{1}{81^n}.(-9)^{2n} = 1$.
+\item We know that $C_r = C_{n - r}$. Thus we can rewrite the given series as
+
+  $\displaystyle\lim_{n\to\infty} = C_0 - C_1.\frac{2}{3} + C_2.\left(\frac{2}{3}\right)^2 -
+  C_3.\left(\frac{2}{3}\right)^3 + \cdots + (-1)^nC_n.\left(\frac{2}{3}\right)^n$
+
+  $= \left(1 - \frac{2}{3}\right)^n = \frac{1}{3^n} = 0$.
+\item Given, $E = (6\sqrt{6} + 14)^{2n + 1} = [E] + F$. Let $F' = (6\sqrt{6} - 14)^{2n + 1} =
+  \frac{20^{2n + 1}}{(6\sqrt{6} + 14)^{2n + 1}}$
+
+  $E - F' = C_1^^{2n + 1}(6\sqrt{6})^{2n}.14 + C_3^^{2n + 1}(6\sqrt{6})^{2n - 2}.14^3 + ... =$ an even
+  number.
+
+  $F - F' =$ an even number $- [E] =$ an integer. But $0 < F < 1$ and $0 < F' < 1\Rightarrow -1 < F - F' <
+  1$
+
+  $\Rightarrow F - F' = 0 \Rightarrow F = F'$.
+
+  $\therefore EF = EF' = 20^{2n + 1}$.
+\item $(17)^{256} = (289)^{128} = (290 - 1)^{128} = C_0.290^{128} - C_1.290^{127} + \cdots +
+  (-1)^{128}C_{128}$
+
+  Clearly, all the terms except last term would be multiple of $10$. So at unit's place last term will occur
+  which is $1$.
+
+  Similarly for ten's place only second last term will matter which is $-C_{127}.290 = -128\times290 =
+  -37120$. This is a negative term and the highest term is positive and multiple of $100$ so the tens place
+  unit will be $10 - 2 = 8$.
+
+  Similarly for hundred's place third last term will matter which is $C_{126}.290^2 = 683564800$ and thus
+  the digit will be $6$ after adjusting with second last term.
+\item We have to prove that for $n\geq 3,\;n^{n + 1} > (n + 1)^n,\;forall\;n\in\mathbb{P}$.
+
+  Rewriting $\Rightarrow n > \left(1 + \frac{1}{n}\right)^n$.
+
+  Now $\left(1 + \frac{1}{n}\right)^n = 1 + n.\frac{1}{n} + \frac{n(n - 1)}{2!}.\frac{1}{n^2} + \frac{n(n -
+    1)(n - 2)}{3!}.\frac{1}{n^3} + \frac{n(n - 1)(n - 2)\cdots [n - (n - 1)]}{n!}.\frac{1}{n^n}$
+
+  $= 1 + 1 + \frac{1}{2!}\left(1 - \frac{1}{n}\right) + \frac{1}{3!}\left(1 - \frac{1}{n}\right)\left(1 -
+  \frac{2}{n}\right) + \cdots + \frac{1}{n!}\left(1 - \frac{1}{n}\right)\left(1 -
+  \frac{2}{n}\right)\cdots\left(1 - \frac{n - 1}{n}\right)$
+
+  $< 1 + 1 + \frac{1}{2!} + \frac{1}{3!} + \cdots + \frac{1}{n!} < 1 + 1 + \frac{1}{2} + \frac{1}{2^2} +
+  \cdots + \frac{1}{2^{n - 1}}$
+
+  $= 1 + 2\left[1 - \frac{1}{2^n}\right] = 3 - \frac{1}{2^{n - 1}} < 3$.
+
+  Now we have been given that $n\geq 3$ and hence $n^{n + 1} > (n + 1)^n$.
+\item We have to prove that $2<\left(1 + \frac{1}{n}\right)^n < 3\;\forall\;n\in\mathbb{N}$.
+
+  Proceeding like previous problem we obtain $2 \leq \left(1 + \frac{1}{n}\right)^n < 3$.
+\item We have to prove that $1992^{1998} - 1955^{1998} - 1938^{1998} + 1901^{1998}$ is divisible by $1998$.
+
+  Rewriting as $(1992^{1998} - 1955^{1998}) - (1938^{1998} - 1901^{1998})$. We know that $a^n - b^n$ is
+  divisible by $a - b$. Thus given expression is divisible by $37$.
+
+  Rewriting again as $(1992^{1998} - 1938^{1998}) - (1955^{1998} - 1901^{1998})$, which is divisible by
+  $54$.
+
+  Since $37$ is a prime number there will be no common factor with $54$. Hence, given expression is
+  divisible by $37\times 54 = 1998$.
+\item $53^{53} = (50 + 3)^{53} = 50k + 3^{53}$ and $33^{33} = (30 + 3)^{33} = 30k + 3^{33}$.
+
+  So if the difference $3^{53} - 3^{33}$ is divisible by $10$ then our proof will be complete.
+
+  We observe the powers of $3$. $3^1 = 3, 3^2 = 9, 3^3 = 27, 3^4 = 81, 3^5 = 243, \ldots$. Thus we see that
+  it repeats in the fashion of $3, 9, 7, 1, 3, 9, 7, 1, \ldots$ as far as last digits are concerned.
+
+  $53 = 4*13 + 1$ and $33 = 4*8 + 1$ so the last digits of both will be same i.e. $9$. Hence, the given
+  difference is divisible by $10$.
+\item $(1 + x)^{m + 1} = C_0^^{m + 1} + C_1^^{m + 1}x + C_2^^{m + 1}x^2 + \cdots + C_{m + 1}^^{m + 1}x^{m +
+  1}$
+
+  $\Rightarrow[(1 + x)^{m + 1} - 1 - x^{m + 1}] = C_1^^{m + 1}x + C_2^^{m + 1}x^2 + \cdots + C_m^^{m +
+  1}x^{m + 1}$.
+
+  Putting $x = 1, 2, 3, \ldots, n$ and adding we get the desired result.
+\item $\displaystyle\sum_{i=1}^k\sum_{k=1}^nC_k^^nC_i^^k = \sum_{k = 1}^n(C_k^^nC_1^^k + C_k^^nC_2^^k +
+  C_k^^nC_3^^k + \cdots + C_k^^nC_k^^k)$
+
+  $= (C_1^^nC_1^^1 + C_2^^nC_1^^2 + C_3^^nC_1^^3 + \cdots + C_n^^nC_1^^n) + (C_2^^nC_2^^2 + C_3^^nC_2^^3 +
+  \cdots + C_n^^nC_2^^n) + (C_3^^nC_3^^3 + \cdots + C_n^^nC_n^^nC_3^^n) + \cdots + C_n^^nC_n^^n$
+
+  $= C_1^^n(C_1^^1 + C_0^^1) - C_1^^nC_0^^1 + C_2^^n(C_0^^2 + C_1^^2 + C_2^^2) - C_2^^nC_0^^2 +
+  C_3^^n(C_0^^3 + C_1^^3 + C_2^^3 + C_3^^3) - C_3^^nC_0^^3 + \cdots$
+
+  $= C_1^^n2 + C_2^^n2^2 + C_3^^n2^3 + \cdots + C_n^^n2^n - 1 - [C_0^^n + C_1^^n + C_2^^n + \cdots + C_n^^n
+    - 1] = (1 + 2)^n - (1 + 1)^n = 3^n - 2^n$.
 \stopitemize
