@@ -1600,4 +1600,222 @@
 
   $= C_1^^n2 + C_2^^n2^2 + C_3^^n2^3 + \cdots + C_n^^n2^n - 1 - [C_0^^n + C_1^^n + C_2^^n + \cdots + C_n^^n
     - 1] = (1 + 2)^n - (1 + 1)^n = 3^n - 2^n$.
+\item We have to prove that $\displaystyle\sum_{r=0}^n(-1)^r.{}^nC_r\frac{1 + r\log_e10}{(1 + \log_e10^n)^r}
+  = 0$. Note that this equality will hold for positive $n$ but not for $n = 0$ for which L.H.S.\ is equal to
+  $1$.
+
+  $\displaystyle\sum_{r=0}^n(-1)^r.{}^nC_r\frac{1 + r\log_e10}{(1 + \log_e10^n)^r} =
+  \sum_{r=0}^n(-1)^rC_r^^n\frac{1}{(1 + \log10^n)^r} + \sum_{r=0}^n(-1)^rC_{r - 1}^{n - 1}\frac{n\log 10}{(1
+    + \log 10^n)^r}$
+
+  $= 1 + \displaystyle\sum_{r = 1}^{n - 1}(C_r^^{n - 1} + C_{r - 1}^^{n - 1})\frac{1}{(1 + \log10^n)^r} +
+  (-1)^n\frac{1}{(1 + \log10^n)^r} - \sum_{r = 0}^{n - 1}(-1)^rC_{r}^^{n - 1}\frac{\log10^n}{(1 +
+    \log10^n)^{r + 1}}$
+
+  $= 1+\displaystyle\sum_{r=1}^{n-1}(-1)^rC_r^^{n - 1}\frac{1}{\left(1+\log 10^n\right)^r}
+  -\sum_{r=0}^{n-2}(-1)^rC_r^^{n - 1}\frac{1}{\left(1+\log 10^n\right)^{r+1}}\\
+  +(-1)^n\frac{1}{(1+\log 10^n)^r}-\sum_{r=0}^{n-1}(-1)^rC_r^^{n - 1}\frac{\log 10^n}{\left(1+\log
+    10^n\right)^{r+1}}$
+
+  $=1+\displaystyle\sum_{r=1}^{n-1}(-1)^rC_r^^{n - 1}\frac{1}{\left(1+\log 10^n\right)^r}+(-1)^n\frac{1}{(1+\log 10^n)^r}\\
+  -\sum_{r=0}^{n-2}(-1)^rC_r^^{n - 1}\frac{1}{\left(1+\log 10^n\right)^{r}}+(-1)^n\frac{\log
+    10^n}{(1+\log 10^n)^n}$
+
+  $=1+(-1)^{n-1}\frac{1}{(1+\log 10^n)^{n-1}}+(-1)^n\frac{1}{(1+\log 10^n)^{n-1}}\\
+  -1+(-1)^n\frac{\log 10}{(1+\log 10^n)^n} = 0$.
+\item $32^{32} = 2^{160} = (3 - 1)^{160} = 3m + 1$, where $m\in\mathbb{N}$.
+
+  $32^{32^{32}} = 32^{3m + 1} = 2^{3(5m + 1)}.2^2 = 23(8^{5m}) = 32(1 + 7)^{5m}$
+
+  $= 32(1 + 7k), k\in\mathbb{N} = 4 + 28 + 7(32k) = 4 + 7r$, where $r\in\mathbb{N}$.
+
+  Thus, remainder would be $4$.
+\item Let $t = x - 3$, then $x - 2 = 1 + t$. Now $\displaystyle\sum_{r = 0}^{2n}a_r(x - 2)^r = \sum_{r =
+  0}^{2n}b_r(x - 3)^r$
+
+  $\Rightarrow \displaystyle\sum_{r = 0}^{2n}a_r(1 + t)^r = \sum_{r=0}^{2n}b_rt^r$
+
+  $\Rightarrow a_0 + a_1(1 + t) + \cdots + a_{n - 1}(1 + t)^{n - 1} + 1.(1 + t)^n + 1.(1 + t)^{n + 1} +
+  \cdots + 1.(1 + t)^{2n} = b_0 + b_1t + b_2t^2 + \cdots + b_{2n}t^{2n}$
+
+  Equating the coefficients of $t^n$ gives us
+
+  $b_n = C_n^^n + C_n^^{n + 1} + C_n^^{n + 2} + \cdots + C_n^^{2n} = C_{n + 1}^^{n + 2} + C_n^^{n + 2} +
+  \cdots + C_n^^{2n}[\because C_n^^n = C_{n + 1}^^{n + 1} = 1]$
+
+  $\cdots$
+
+  $= C_{n + 1}^^{2n + 1}$.
+\item Given, $x^{50}$ in $(1 + x)^{1000} + 2x(1 + x)^{999} + 3x^2(1 + x)^{998}+ \cdots + 1001x^{1000}$.
+
+  Rewriting, $(1 + x)^{1000}\left[1 + 2\frac{x}{1 + x} + 3\left(\frac{x}{1 + x}\right)^2 + \cdots +
+    1001\left(\frac{x}{1 + x}\right)^{1000}\right]$
+
+  $= (1 + x)^{1000}[1 + 2k + 3k^2 + \cdots + 1001k^{1000}]$, where $k = \frac{x}{1 + x}$
+
+  \startformula\startalign[n=3]
+    \NC S \NC = 1 + \NC 2k + 3k^2 + \cdots + 1001k^{1000}\NR
+    \NC kS\NC =  \NC\;\; k + 2k^2 + \cdots + 1000k^{1000} + 1001k^{1001}\NR
+  \stopalign\stopformula
+
+  Subtracting $(1 - k)S = 1 + k + k^2 + \cdots + k^{1000} - 1001k^{1001} = \frac{1 - k^{1001}}{1 - k} -
+  1001k^{1001}$
+
+  $S = (1 + x)^2\left[1 - \frac{x^{1001}}{(1 + x)^{1001}}\right] - 1001.\frac{x^{1001}}{(1 + x)^{1000}}$
+
+  So given expression becomes $(1 + x)^{1002} - x^{1001}(1 + x) - 1001x^{1001}$, and hence, coefficient of
+  $x^{50}$ is $C_{50}^^{1002}$.
+\item L.H.S.\ $=$ coeff.\ of $x^n$ in $(1 + x)^n + (1 + x)^{n + 1} + (1 + x)^{n + 2} + \cdots + (1 + x)^{n +
+  k}$
+
+  Now, $(1 + x)^n + (1 + x)^{n + 1} + (1 + x)^{n + 2} + \cdots + (1 + x)^{n + k} = (1 + x)^n\left[\frac{(1 +
+      x)^{k + 1} - 1}{x}\right]$
+
+  $= \frac{1}{x}(1 + x)^{n + k + 1} - \frac{1}{x}(1 + x)^n$
+
+  Equating coefficient of $x^n$ gives us
+
+  $C_n^n + C_n^^{n + 1} + C_n^^{n + 2} + \cdots + C_n^^{n + 1} = C_{n + 1}^^{n + k + 1}$(there is no power
+  of $x^n$ in second term).
+\item Let $S = x + 2x^2 + 3x^3 + \cdots + nx^n$ then $xS = x^2 + 2x^3 + \cdots + (n - 1)x^n + nx^{n
+  + 1}$
+
+  Subtracting yields $(1 - x)S = x + x^2 + x^3 + \cdots + x^n - nx^{n + 1} \Rightarrow S = x\frac{(1 -
+    x^n)}{(1 - x)^2} - \frac{nx^{n + 1}}{1 - x}$
+
+  $\Rightarrow (1 + x + 2x^2 + 3x^3 + \cdots + nx^n)^2 = \left[1 + x\frac{(1 - x^n)}{(1 - x)^2} -
+    \frac{nx^{n + 1}}{1 - x}\right]^2$
+
+  Coefficient of $x^n =$ coefficient of $x^n$ in $\left[1 + \frac{x}{(1 - x)^2}\right]^2$(leaving terms
+  containing powers of $x$ greater than $n$)
+
+  $=$ coefficient of $x^n$ in $2x(1 - x)^{-2} + x^2(1 - x)^{-4} = 2.C_{n - 1}^^n + C_{n - 2}^^{n + 1} =
+  2.C_1^^n + C_3^^{n + 1}$
+
+  $= \frac{n(n^2 + 11)}{6}$.
+\item $1 + (1 + x) + (1 + x)^2 + \cdots + (1 + x)^n = \frac{(1 + x)^{n + 1} - 1}{x}$.
+
+  Clearly, coefficient of $x^k$ in $\frac{(1 + x)^{n + 1} - 1}{x}$ is equal to the coefficient of $x^{k +
+    1}$ in $(1 + x)^{n + 1} = C_{k + 1}^^{n + 1}$.
+\item $(x + 1)^n + (x + 1)^{n- 1}(x + 2) + (x + 1)^{n - 2}(x + 2)^2 + \cdots + (x + 2)^n$ is a G.P.\ with
+  first term $(x + 1)^n$ and common ratio $\frac{x + 2}{x + 1}$.
+
+  Thus, sum of the series is $\frac{(x + 1)^n\left[\frac{(x + 2)^n}{(x + 1)^n} - 1\right]}{\frac{x + 2}{x +
+      1} - 1} = \frac{(x + 2)^n - (x + 1)^n}{\frac{1}{x + 1}} = (x + 1)[(x + 2)^n - (x + 1)^n]$.
+
+  Thus, coefficient of $x^3$ in $(x + 1)[(x + 2)^n - (x + 1)^n]$ is equal to coefficient of $x^2$ in $(x +
+  2)^n - (x + 1)^n + $ coefficient of $x^3$ in $[(x + 2)^n - (x + 1)^n]$
+
+  $= C_{n - 2}^^n.2^{n - 2} - C_{n - 2}^^n + C_{n - 3}^^n.2^{n - 3} - C_{n - 3}^^n = C_3^^{n + 1}(2^{n - 2}
+  - 1)$.
+\item $\left(\frac{a + 1}{a^{2/3} - a^{1/3} + 1} - \frac{a - 1}{a - a^{1/2}}\right)^{10} = \left(a^{1/3} + 1
+  - \frac{\sqrt{a} + 1}{\sqrt{a}}\right)^{10} =(a^{1/3} - a^{-1/2})^{10}$.
+
+  Let $(r + 1)$th term be independent of $a$, then $t_{r + 1} = C_r^^{10}a^{(10 - r)/3}(-a)^{-r/2}$.
+
+  For this term to be independent of $a, \frac{10 - r}{3} - \frac{r}{2} = 0 \Rightarrow 20 - 5r = 0
+  \Rightarrow r = 4$.
+
+  So $5$th term is independent of $a$. $t_5 = C_4^^{10} = 210$.
+\item Coefficient of $x^2$ in $\left(x + \frac{1}{x}\right)^{10}(1 - x + 2x^2) =$ coefficient of $x^2$ in
+  $\left(x + \frac{1}{x}\right)^{10} -$ coefficient of $x$ in $\left(x + \frac{1}{x}\right)^{10} + 2.$
+  coefficient of term independeng of $x$ in $\left(x + \frac{1}{x}\right)^{10}$.
+
+  Consider $(r + 1)$th term in the expansion of $\left(x + \frac{1}{x}\right)^{10}$.
+
+  $t_{r + 1} = C_r^^{10}.x^{10 - r}.x^{-r}$ so power of $x$ is $10 - 2r$.
+
+  If $10 - 2r = 2 \Rightarrow r = 4$; for $10 - 2r = 1$ we do not have an integral $r$; and for $10 - 2r = 0
+  \Rightarrow r = 5$.
+
+  So final answer is $C_4^^{10} + 2.C_5^^{10} = 714$.
+\item $(1 + x - 2x)^6 = (1 - x)^6(1 + 2x)^6 = (1 - 6x + 15x^2 - 20x^3 + 15x^4 - 6x^5 + x^6)(1 + 12x + 60x^2
+  + 160x^3 + 140x^4 + 192x^5 + 64x^6)$
+
+  Hence, coefficient of $x^4$ is $240 - 6\times160 + 15\times60 - 20\times12 + 15 = -45$.
+\item We have to find the term independent of $x$ in $(1 + x + 2x^3)\left(\frac{3}{2}x^2 -
+  \frac{1}{3x}\right)^9$.
+
+  We consider $(r + 1)$th term in the expansion of $\left(\frac{3}{2}x^2 - \frac{1}{3x}\right)^9$.
+
+  $t_{r + 1} = C_r^^9\left(\frac{3}{2}x^2\right)^{9 - r}\left(-\frac{1}{3x}\right)^r$
+
+  So the power of $x$ would be $18 - 3r$. This term is multiplied with $1 + x + 2x^3$ so for $1$ the value
+  of $18 - 3r = 0$ for the term to be independent of $x$ i.e. $r = 6$. For $x$ there will be no such term
+  because $18 - 3r = -1$ does not give an integral $r$. For $2x^3$ the term would be $18 - 3r = -3
+  \Rightarrow r = 7$.
+
+  So the final term would be $C_6^^9\left(\frac{3}{2}x^2\right)^3\left(-\frac{1}{3x}\right)^6 +
+  2x^3.C_7^^9\left(\frac{3}{2}x^2\right)^2\left(-\frac{1}{3x}\right)^7$
+
+  $= \frac{17}{54}$.
+\item We have to find the term independent of $x$ in $\left(x^2 + \frac{1}{x^3}\right)^7(2 - x)^{10}$.
+
+  The terms in $(2 - x)^{10}$ will have terms in which powers of $x$ will vary from $0$ to $10$ increasing
+  by $1$.
+
+  We consider $(r + 1)$th term in $\left(x^2 + \frac{1}{x^3}\right)^7$.
+
+  $t_{r + 1} = C_r^^7(x^2)^{7 - r}.\left(\frac{1}{x^3}\right)^r$. So the power of $x$ would be $14 - 5r$. We
+  vary $r$ which gives us $14, 9, 4, -1, -6, -11$ for $r = 0, 1, 2, 3, 4, 5$ and so on. Out of these only
+  powers of $-1$ and $-6$ can be neutralized by the second expansion. Thus, $r = 3, 4$.
+
+  Corresponding terms in the expansion of $(2 - x)^{10}$ are $-C_1^^{10}2^9x$ and $C_6^^{10}2^4x^6$.
+
+  Corresponding terms in the expansion of $\left(x^2 + \frac{1}{x^3}\right)^{7}$ are $C_3^^7x^{-1}$ and
+  $C_4^^7x^{-6}$. Now it is trivial to obtain the final answer.
+\item We have to find the term independent of $x$ in $(1 + x + x^{-2} + x^{-3})^{10}$. Rewriting
+
+  $(1 + x + x^{-2} + x^{-3})^{10} = \frac{1}{x^{30}}(x^3 + x^4 + x + 1) = \frac{1}{x^{30}}[(1 + x)(1 +
+  x^3)]^{10}$.
+
+  Powers of $x$ in first expansion are $0, 1, 2, 3, \ldots, 10$ and in the second expansion are $0, 3, 6, 9,
+  \ldots, 30$. We need to add powers such that the sum is $30$. Such powers are $(0, 30), (3, 27), (6, 24),
+  (9, 21)$.
+
+  Thus, the term is $C_0^^{10}C_{10}^^{10} + C_3^^{10}C_9^^{10} + C_6^^{10}C_8^^{10} + C_9^^{10}C_7^^{10}$.
+\item Powers of $x$ would be $1, 2, 3$ for $a_1, a_2, a_3$ respectively as we observe from the given series.
+
+  Now we consider $(r + 1)$th term of $(1 + x^2)^2(1 + x)^n = (1 + 2x^2 + x^4)(1 + x)^n$.
+
+  Coeff.\ of term containing $x$ would be $c_1 = C_1^^n$. Coeff.\ of term containing $x^2$ would be $c_2 =
+  C_2^^n + 2.C_0^^n$ and coeff.\ of term containing $x^3$ would ve $c_3 = C_3^^n + 2.C_1^^n$.
+
+  Given that $c_1, c_2, c_3$ are in A.P. $\Rightarrow C_3^^n + 3C_1^^n = 2C_2^^n + 4$
+
+  $\Rightarrow \frac{n(n - 1)(n - 2)}{3!} + 3n = n(n - 1) + 4\Rightarrow n = 2, 3, 4$.
+\item We have to show that $C_1^^m + C_2^^{m + 1} + C_3^^{m + 2} + \cdots + C_n^^{m + n - 1} = C_1^^n +
+  C_2^^{n + 1} + C_3^^{n + 2} + \cdots + C_n^^{m + n - 1}$.
+
+  L.H.S.\ $= C_1^^m + C_2^^{m + 1} + C_3^^{m + 2} + \cdots + C_n^^{m + n - 1}$
+
+  Adding and subtracting $C_0^^m$ and applying $C_r^^n + C_{r + 1}^^n = C_{r + 1}^^{n + 1}$ repeatedly
+
+  $\Rightarrow C_0^^m + C_1^^m + C_2^^{m + 1} + C_3^^{m + 2} + \cdots + C_n^^{m + n - 1}$
+
+  $= C_1^^{m + 1} + C_2^^{m + 1} + C_3^^{m + 2} + \cdots + C_n^^{m + n - 1} = C_2^^{m + 2} + C_3^^{m + 2} +
+  \cdots + C_n^^{m + n - 1}$
+
+  $\ldots$
+
+  $= C_{n - 1}^^{m + n - 1} + C_n^^{m + n - 1} = C_n^^{m + n}$
+
+  Doing similar steps, R.H.S.\ $= C_m^^{m + n}$ and thus, L.H.S.\ = R.H.S.
+\item We have $\displaystyle(1 + x + x^2)^n = \sum_{r=0}^{2n}a_rx^r$.
+
+  (a) Putting $x = \frac{1}{x}$, we have $\left(1 + \frac{1}{x} + \frac{1}{x^2}\right)^n = \displaystyle\sum_{r
+    = 0}^na_r\frac{1}{x^r}$
+
+  $\Rightarrow (1 + x + x^2)^n = \displaystyle\sum_{r = 0}^na_rx^{2n - r}$.
+
+  Putting $r = 2n - r$ we see that $a_r = a_{2n - r}$.
+
+  (b) Putting $x = 1$ gives us $3^n = a_0 + a_1 + a_2 + a_3 + \cdots + a_{n - 1} + a_n + a_{n + 1} + \cdots
+  + a_{2n}$
+
+  Using the result obtained in first section we see that $a_0 = a_{2n}, a_1 = a_{2n - 1}, \ldots, a_{n - 1}
+  = a_{n + 1}$, and thus,
+
+  $2(a_0 + a_1 + \cdots + a_{n _ 1}) + a_n = 3^n\Rightarrow a_0 + a_1 + \cdots + a_{n _ 1} = \frac{1}{2}(3^n
+  - a_n)$
 \stopitemize
