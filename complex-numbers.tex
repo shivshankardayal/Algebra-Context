@@ -189,23 +189,24 @@ $OP$. Given below is the graphical representation of the complex number.
 \stopplacefigure
 In the diagram, $\theta$ is known as the {\it argument} of $z$. This is nothing but angle made with positive direction
 (i.e. counter-clockwise) of real axis. Now, this argument is not unique. If $\theta$ is an argument of a complex number $z$ then,
-$2n\pi + theta$, where $n\in I$, where I is the set of integers. The value of argument for which $-\pi<\theta\leq \pi$ is called
+$2n\pi + \theta$, where $n\in I$, where I is the set of integers. The value of argument for which $-\pi<\theta\leq \pi$ is called
 the {\it principal value} of {\it argument} or {\it principal argument}.
 
 \subsection{Different Arguments of a Complex Number}
 In the diagram, the argument is given as $\arg(z) = \tan^{-1}\left(\frac{y}{x}\right)$, this value is for when $z$ in first
 quadrant. When $z$ will lie in second, third and fourth quadrants the arguments will be
-\startformula \\arg(z) = \pi - \tan^{-1}\left(\frac{y}{|z|}\right), \arg(z)= -\pi + \tan^{-1}\left(\frac{|y|}{|z|}\right)\;\text{and}\; \arg(z) =
--\tan^P{-1}\left(\frac{|y|}{x}\right)\stopformula
+\startformula \\arg(z) = \pi - \tan^{-1}\left(\frac{y}{|x|}\right), \arg(z)= -\pi + \tan^{-1}\left(\frac{|y|}{|x|}\right)\;\text{and}\; \arg(z) =
+-\tan^{-1}\left(\frac{|y|}{x}\right)\stopformula
 respecticely.
 
 \subsection{Polar Form of a Complex Number}
 If $z$ is a non-zero complex number, then we can write $z = r(\cos\theta + i\sin\theta)$, where $r = |z|$ and $\theta = \arg(z)$.
 
-In this case, $z$ is also given by $z = r[\cos(2n\pi  \theta) + i\sin(2n\pi + \theta)]$, where $n\in I$.
+In this case, $z$ is also given by $z = r[\cos(2n\pi + \theta) + i\sin(2n\pi + \theta)]$, where $n\in I$.
 
 \subsubsection{Euler's Formula}
-The complex number $\cos\theta + i\sin\theta$ is denoted by $e^{i\theta}$ or $c$ is $\theta$, where $c$ is the complex number.
+The complex number $\cos\theta + i\sin\theta$ is denoted by $e^{i\theta}$ or
+$\arg(c)$ is $\theta$, where $c$ is the complex number.
 
 \subsection{Important Results Involving Arguments}
 If $z, z_1$ and $z_2$ are complex numbers, then
@@ -215,11 +216,11 @@ If $z, z_1$ and $z_2$ are complex numbers, then
   argument will get a -ve sign as $y$ gets one.
 \item $\arg(z_1z_2) = \arg(z_1)  + \arg(z_2) + 2n\pi$, where
   \startformula n = \startmathcases
-   \NC 0 \;\text{if}\; \NC -\pi<\arg(z_1)+\arg(z_2)\leq-\pi\NR
+   \NC 0 \;\text{if}\; \NC -\pi<\arg(z_1)+\arg(z_2)\leq\pi\NR
    \NC 1 \;\text{if}\; \NC -2\pi<\arg(z_1)+\arg(z_2)\leq-\pi\NR
-   \NC -1 \;\text{if}\; \NC -\pi<\arg(z_1)+\arg(z_2)\leq2\pi\NR\stopmathcases\stopformula
+   \NC -1 \;\text{if}\; \NC \pi<\arg(z_1)+\arg(z_2)\leq2\pi\NR\stopmathcases\stopformula
  \item Similarly, $\arg(z_1\overline{z_2}) = \arg(z_1) - \arg(z_2)$.
- \item $|z_1 + z_2| = |z_2 - z_2| \Leftrightarrow \arg(z_1) - \arg(z_2) = \pi/2$.
+ \item $|z_1 + z_2| = |z_1 - z_2| \Leftrightarrow \arg(z_1) - \arg(z_2) = \pi/2$.
  \item $|z_1 + z_2| = |z_1| + |z_2| \Leftrightarrow \arg(z_1) = \arg(z_2)$.
  \item $|z_1 + z_2|^2 = r_1^2 + r_2^2 + 2r_1r_2\cos(\theta_1 - \theta_2)$.
  \item $|z_1 - z_2|^2 = r_1^2 +r_2^2 + 2r_1r_2\cos(\theta_1 + \theta_2)$.
@@ -327,7 +328,7 @@ $z_1 - z_2 = \overrightarrow{OP} - \overrightarrow{OQ} = \overrightarrow{QP}$
 
 $\therefore |z_1 - z_2| = |\overrightarrow{QP}| = QP$ which is nothing but distance between $P$ and $Q.$
 
-$\arg(z_1 - z_2)$ is the angle made by $\overrightarrow{QP}$ with $x$-axis whis is nothing but $\theta.$
+$\arg(z_1 - z_2)$ is the angle made by $\overrightarrow{QP}$ with $x$-axis which is nothing but $\theta.$
 
 \startplacefigure[title={Angle relation between three complex numbers}, reference=fig:arbtcn]
 \externalfigure[angle-three-complex-numbers.pdf]
@@ -423,7 +424,8 @@ Thus, it is proven for negative numbers as well. Proof for fractional powers is 
 
 \section{Some Important Geometrical Results}
 \subsection{Section Formula}
-Let $z_1 = x_1 + iy_1, z_2 = x_2 + iy_2$ then $z = x + iy$, which divides the previous two points in the ratio m;nm;n can be given
+Let $z_1 = x_1 + iy_1, z_2 = x_2 + iy_2$ then $z = x + iy$, which divides the
+previous two points in the ratio $m:n$ can be given
 by using the results from coordinate geometry as below:
 \startformula x = \frac{mx_2 + nx_1}{m + n}, y = \frac{my_2 + ny_1}{m + n} \;\text{and}\;z = \frac{mz_2 + nz_1}{m + n}\stopformula
 Extending this section formula, we can say that if there is a point which is mid-point i.e. divides a line in two equal parts, then
@@ -492,7 +494,7 @@ concurrence of the medians of all three sides and is given by
 \stopplacefigure
 
 \subsection{Incenter of a Triangle}
-Let $A(z_1), B(z_2)$ and $C(z_3)$ be the vertices of a $\triangle ABC.$ inceneter $I(z)$ of the $\triangle ABC$ is the point of
+Let $A(z_1), B(z_2)$ and $C(z_3)$ be the vertices of a $\triangle ABC.$ Incenter $I(z)$ of the $\triangle ABC$ is the point of
 concurrence of the internal bisectors of and is given by
 \startformula z = \frac{az_1 + bz_2 + cz_3}{a + b + c}\stopformula
 where $a, b, c$ are the lengths of the sides.
@@ -511,10 +513,10 @@ Also,
 
 \subsection{Orthocenter of a Triangle}
 The orthocenter $H(z)$ of the $\triangle ABC$ is the point of concurrence of altitudes of the side. It is given by
-\startformula z = \frac{\startdeterminant\NC z_1^2 \NC \overline{z_1} NC 1\NR\NC z_2^2 \NC \overline{z_2}
-  \NC 1\NR\NC z_3^2 \NC \overline{z_3} \NC 1\NR\stopdeterminant + \startdeterminant \NC|z_1|^2 NC z_1 NC
+\startformula z = \frac{\startdeterminant\NC z_1^2 \NC \overline{z_1} \NC 1\NR\NC z_2^2 \NC \overline{z_2}
+  \NC 1\NR\NC z_3^2 \NC \overline{z_3} \NC 1\NR\stopdeterminant + \startdeterminant \NC|z_1|^2 \NC z_1 \NC
   1\NR\NC|z_2|^2 \NC z_2 \NC 1\NR\NC|z_3|^2 \NC z_3 \NC
-  1\NR\stopdeterminant}{\startdeterminant\NC\overline{z_1} \NC z_1 NC 1\NR\NC\overline{z_2} \NC z_2 \NC
+  1\NR\stopdeterminant}{\startdeterminant\NC\overline{z_1} \NC z_1 \NC 1\NR\NC\overline{z_2} \NC z_2 \NC
   1\NR\NC\overline{z_3} \NC z_3 \NC 1\NR\stopdeterminant}\stopformula
 \startformula = \frac{z_1\tan A + z_2\tan B + z_3\tan C}{\tan A + \tan B + \tan C}\stopformula
 \startformula = \frac{z_1a\sec A + bz_2\sec B + cz_3\sec C}{a\sec A + b\sec B + c\sec C}\stopformula
