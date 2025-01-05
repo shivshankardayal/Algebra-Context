@@ -1898,8 +1898,220 @@
 
   Given that sum of coefficients is equal so $(t - 1)^n = (-1)^n(t - 1)^n$.
 
-  Consider $n$ to be odd then $(-1)^n = -1$ so there is no way these will be equal if $t - 1$ is not
+  Consider $n$ to be odd; then $(-1)^n = -1$ so there is no way these will be equal if $t - 1$ is not
   zero. So the only possible value of $(t - 1)^n = 0$, which gives $t = 1$.
 
-  Similarly, if $n$ is even then $(t - 1)^n = (1 - t)^n$ for all values of $n$.
+  Similarly, if $n$ is even; then $(t - 1)^n = (1 - t)^n$ for all values of $n$.
+\item Given, $(1 + x)^n = a_0 + a_1x + a_2x^2 + a_3x^3 + \cdots + a_nx^n$
+
+  Putting $x = 1$ gives us $a_0 + a_1 + a_2 + a_3 + \cdots + a_n = 2^n$
+
+  Putting $x = i$ gives us $(1 + i)^n = a_0 + a_1i - a_2 - a_3i + \cdots + a_ni^n$
+
+  Taking modulus and squaring yields
+
+  $2^n = (a_0 - a_2 + a_4 - \ldots)^2 + (a_1 - a_3 + a_5 - \ldots)^2$.
+
+  Q.E.D.
+\item Let $r$th term be the greatest term, which is given by $t_r = \sqrt{3}\left[C_{r -
+    1}^^{20}\left(\frac{1}{\sqrt{3}}\right)^{r - 1}\right]$. Similarly $t_{r + 1} =
+  \sqrt{3}\left[C_r^^{20}\left(\frac{1}{\sqrt{3}}\right)^r\right]$
+
+  $\frac{t_r}{t_{r + 1}} = \frac{C_{r - 1}^^20}{C_r^^{20}}\sqrt{3} = \frac{r}{21 - r}\sqrt{3} \geq 1$
+
+  $\Rightarrow \sqrt{3}r geq 21 - r \Rightarrow r\geq = 7.69$(approximately).
+
+  Similarly $\frac{t_r}{t_{r - 1}}\geq 1 \Rightarrow r\leq 8.5$(approximately).
+
+  The only integer between these limits is $8$. Hence, $t_8 = \frac{25840}{9}$ is the greatest term.
+\item Let $t_r$ represent the $r$th term of the expansion of $(x + a)^{15}$.
+
+  Now, $t_{11} = C_{10}^^{15}x^5a^{10}, t_8 = C_7^^{15}x^8a^7$, and $t_{12} = C_{11}^^{15}x^4a^{11}$
+
+  Given, that $t_{11}$ is G.M.\ of $t_8$ and $t_{12}$, thus
+
+  $\left(C_{10}^^{15}x^5a^{10}\right)^2 = C_7^^{15}x^8a^7.C_{11}^^{15}x^4a^{11}$
+
+  Solving this gives us, $\frac{x}{a} = \sqrt{\frac{77}{75}}$.
+
+  Let $t_r$ be the greatest term. Then $\frac{t_r}{t_{r + 1}} = \frac{r}{16 - r}.\frac{x}{a} \geq 1$
+
+  $\Rightarrow r\geq 7.947 \Rightarrow r = 8$.
+
+  $\Rightarrow t_8 = \frac{15!}{7!8!}\left(\frac{77}{75}\right)^4a^{15}$.
+\item $t_{n + 1} = C_n^^{2n}x^n, t_{n + 2} = C_{n + 1}^^{2n}x^{n + 1}$, and $t_n = C_{n - 1}^^{2n}x^{n - 1}$.
+
+  $\frac{t_{n + 1}}{t_{n + 2}} = \frac{n + 1}{n}.\frac{1}{x}$, and $\frac{n + 1}{n}x$.
+
+  Since $t_{n + 1}$ is the only greatest term popssible here.
+
+  $\Rightarrow \frac{t_{n + 1}}{t_{n + 2}} > 1\Rightarrow x < \frac{n + 1}{n}$, and similarly $\frac{t_{n +
+      1}}{t_n} > 1 \Rightarrow x > \frac{n}{n + 1}$.
+
+  Thus, $x\in\left(\frac{n}{n + 1}, \frac{n + 1}{n}\right)$, which is given as $x\in\left(\frac{10}{11},
+  \frac{11}{10}\right)$, and thus $n = 10$.
+
+  Given that $t_4$ in the expansion of $\left(kx + \frac{1}{x}\right)^m$ is $\frac{n}{4}$.
+
+  $t_4 = \frac{n}{4} = \frac{5}{2} =  C_3^^m(kx)^{m - 3}.\frac{1}{x^3} \Rightarrow C_3^^mk^{m - 3}x^{m - 6} =
+  \frac{5}{2}$
+
+  Since the term is independent of $x \Rightarrow m = 6 \Rightarrow C_3^^6k^3 = \frac{5}{2}\Rightarrow k =
+  \frac{1}{2}\Rightarrow mk = 3$.
+\item $t_4 = C_3^^{10}2^7\left(\frac{3}{8}x\right)^3, t_3 = C_2^^{10}2^8\left(\frac{3}{8}x\right)^2$, and
+  $t_5 = C_4^^{10}2^6\left(\frac{3}{8}x\right)^4$.
+
+  Given that $4$th term has greatest numerical value, so $\frac{t_4}{t_3} > 1 \Rightarrow
+  \frac{2!8!}{3!7!}\frac{3}{16}x > 1 \Rightarrow \frac{x}{2} > 1$, and
+
+  $\frac{t_4}{t_5} > 1 \Rightarrow \frac{4!6!}{3!7!}\frac{16}{3x} > 1 \Rightarrow x < \frac{64}{21}$
+
+  $\Rightarrow 2 < x < \frac{64}{21}$.
+\item Let the binomial expansion be $(x + y)^n$ and $a, b,$ and $c$ be the coefficients of $r$th, $(r +
+  1)$th, and $(r + 2)$th terms respectively. Then,
+
+  $a = C_{r - 1}^^n, b = C_r^^n, c = C_{r + 1}^^n$.
+
+  Discriminant of the quadratic equation $ax^2 + 2bx + c = 0$ is $D = 4b^2 - 4ac = 4b^2\left(1 -
+  \frac{a}{b}.\frac{c}{b}\right)$
+
+  $= 4(C_r^^n)^2\left(1 - \frac{C_{r - 1}^^n}{C_r^^n}.\frac{C_{r + 1}^^n}{C_r^^n}\right) =
+  4(C_r^^n)^2\left(1 - \frac{r}{n - r + 1}.\frac{n - r}{r + 1}\right)$
+
+  $= 4(C_r^^n)^2.\frac{n + 1}{(n - r + 1)(r + 1)} > 0$.
+
+  Hence, roots of the quadratic equation are real and unequal.
+\item $9^n + 7 = (1 + 8)^n + 7 = C_0^^n + C_1^^n.8 + C_2^^n.8^2 + \cdots + C_n^^n.8^n + 7$
+
+  $= 8\left(1 + C_1^^n + C_2^^n.8 + C_3^^n.8^2 + \cdots + C_n^^n.8^{n - 1}\right)$
+
+  $= 8.$an integer.
+
+  Thus, $9^n + 7$ is divisible by $8$.
+\item For $n = 1, 3^{2n+ 1} + 2^{n + 2} = 3^3 + 2^3 = 27 + 8 = 35$, which is divisible by $7$.
+
+  Let it be true for $n = m$ i.e. $3^{2m + 1} + 2^{m + 2} = 7k$, where $k\in\mathbb{N}$.
+
+  For $n = m + 1, 9.3^{2m + 1} + 2.2^{m + 2} = 7.3^{2m + 1} + 2(3^{2m + 1} + 2^{m + 2}) = 7.3^{2m + 1} +
+  7k$, which is divisible by $7$.
+
+  Q.E.D.
+\item Let $C_{r - 1}^^n, C_r^^n, C_{r + 1}^^n$ be in G.P. $\therefore \frac{C_r^^n}{C_{r - 1}^^n} =
+  \frac{C_{r + 1}^^n}{C_r^^n}$
+
+  $\Rightarrow \frac{n - r + 1}{r} = \frac{n - (r + 1) + 1}{r + 1} \Rightarrow n = -1$, which is not
+  possible.
+
+  Let $C_{r - 1}^^n, C_r^^n, C_{r + 1}^^n$ be in H.P. $\Rightarrow \frac{2}{C_r^^n} = \frac{1}{C_{r - 1}^^n}
+  + \frac{1}{C_{r + 1}^^n}$
+
+  $\Rightarrow 2 = \frac{n - r + 1}{r} + \frac{r + 1}{n - r}\Rightarrow (n - 2r)^2 + n = 0$, whihc is not
+  possible.
+\item $a_n =$ coefficient of $x^n$ in $(1 + x + x^2)^n =$ coefficient of $y^n$ in $(1 + y + y^2)^n$.
+
+  Given, $(1 + x + x^2)^n = a_0 + a_1x + a_2x^2 + a_3x^3 + \cdots + a_{2n}x^{2n}$.
+
+  Putting $x = -\frac{1}{x}$, we get $(x^2 - x + 1)^n = a_0x^{2n} - a_1x^{2n - 1} + a_2x^{2n - 2} - \cdots +
+  a_{2n}$
+
+  $\therefore a_0^2 -a_1^2 + a_2^2 - \cdots + a_{2n}^2 =$ coefficient of $x^{2n}$ in $(1 + x + x^2)^n(x^2 -
+  x + 1) = (x^4 + x^2 + 1)$
+
+  $=$ coefficient of $y^n$ in $(1 + y + y^2)^n$, where $y = x^2$
+
+  $= a_n$.
+\item We have $(1 + x + x^2)^n = a_0 + a_1x + a_2x^2 + a_3x^3 + \cdots + a_{2n}x^{2n}$ and we have proved
+  that
+
+  $a_0^2 -a_1^2 + a_2^2 - \cdots + a_{2n}^2 = a_n$.
+
+  Putting $x = \frac{1}{x}$, we have
+
+  $(x^2 + x + 1) = a_0x^{2n} + a_1x^{2n - 1} + \cdots + a_{2n}$.
+
+  Equating the coefficients of same powers of $x$ gives us $a_0 = a_{2n}, a_1 = a_{2n - 1}, \cdots$. This
+  also follows from earlier result where we proved $a_r = a_{2n - r}$.
+
+  Thus, $a_0^2 - a_1^2 + a_2^2 - \cdots + (-1)^{n - 1}a_{n - 1}^2 + (-1)^na_n^2 + (-1)^{n + 1}a_{n + 1}^2 +
+  \cdots + a_{2n}^2 = 0$
+
+  $\Rightarrow a_0^2 -a_1^2 + a_2^2 - \cdots + (-1)^na_{n - 1}^2 = \frac{1}{2}a_n[1 - (-1)^na_n]$.
+
+  Q.E.D.
+\item Let $E = \displaystyle\sum_{0\leq i< j}\sum_{0\leq j\leq n}(C_i + C_j)^2$, where $i = 0, 1, 2, \ldots,
+  (n - 1)$, and $j = 1, 2, 3, \ldots, n$ and $i < j$.
+
+  $E = \displaystyle n(C_0^2 + C_1^2 + \cdots + C_n^2) + 2\sum_{0\leq i< j}\sum_{0\leq j\leq n}C_iC_j$
+
+  $= n.C_n^^{2n} + [(C_0 + C_1 + C_2 + \ldots + C_n)^2 - (C_0^2 + C_1^2 + \cdots + C_n^2)]$
+
+  $= n.C_n^^{2n} + (2^n)^2 - C_n^^{2n} = (n - 1)C_n^^{2n} + 2^{2n}$.
+\item Let $E = \displaystyle\sum_{0\leq i<j}\sum_{0\leq j\leq n}(i + j)C_iC_j$, where $i = 0, 1, 2, \ldots,
+  (n - 1)$, and $j = 1, 2, 3, \ldots, n$ and $i < j$. Clearly, $n - i = n, (n - 1), (n - 2), \ldots, 3, 2,
+  1$ and $n - j = n - 1, n - 2, n - 3, \ldots, 2, 1, 0$.
+
+  Thus, we see that $n - j$ behaves as $i$ and $n - i$ behaves as $j$.
+
+  $\Rightarrow E = \displaystyle\sum_{0\leq i<j}\sum_{0\leq j\leq n} (n - j + n - i)C_{n - j}C_{n - i} =
+  \displaystyle\sum_{0\leq i<j}\sum_{0\leq j\leq n}[2n - (i + j)]C)iC_j[\because C_r = C_{n - r}]$
+
+  $= 2n.\displaystyle\sum_{0\leq i<j}\sum_{0\leq j\leq n}C_iC_j - E \Rightarrow 2E =
+  2n\displaystyle\sum_{0\leq i<j}\sum_{0\leq j\leq n}C_iC_j$
+
+  $E = n[(C_0 + C_1 + \cdots + C_n)^2 - (C_0^2 + C_1^2 + \cdots + C_n^2)] = n(2^{2n} - C_n^^{2n})$.
+\item L.H.S.\ $= \frac{n!}{(m + n)!}\left[\frac{(m + n)!}{m!n!}C_0 + \frac{n(m + n)!}{(m + 1)!n!}C_1 +
+  \cdots + \frac{n!(m + n)!}{(m + n)!n!}C_n\right]$
+
+  $= \frac{n!}{(m + n)!}[C_n^^{m + n}C_0^^n + C_{n - 1}^^{m + n}C_1^^n + \cdots + C_0^^{m + n}C_n^^n]$
+
+  We know that $(1 + x)^{m + n} = C_0^^{m + n} + C_1^^{m + n}x + C_2^^{m + n}x^2 + \cdots + C_{m + n}^^{m +
+    n}x^{m + n}$
+
+  and $(1 + x)^n = C_0^^n + C_1^^nx + C_2^^nx^2 + \cdots + C_n^^nx^n$
+
+  Coefficient of $x^n$ in $(1 + x)^{m + n}(1 + x)^n = C_n^^{m + n}C_0^^n + C_{n - 1}^^{m + n}C_1^^n + \cdots
+  + C_0^^{m + n}C_n^^n = C_n^^{m + 2n}$
+
+  $\therefore$ L.H.S.\ $= \frac{n!}{(m + n)!}C_n^^{m + 2n} = \frac{(m + 2n)!}{(m + n)!(m + n)!} =$ R.H.S.
+\item $r$th factor of $(C_0 + C_1)(C_1 + C_2)(C_2 + C_3)\cdots (C_{n- 1} + C_n)$ is given by
+
+  $t_r = C_{r - 1} + C_r = C_r^^{n + 1} = \frac{n + 1}{r}.C_{r - 1}$.
+
+  Now, $(C_0 + C_1)(C_1 + C_2)(C_2 + C_3)\cdots (C_{n- 1} + C_n) = t_1.t_2.t_3\ldots t_n$
+
+  $= \left(\frac{n + 1}{1}C_0\right)\left(\frac{n + 1}{2}C_1\right)\left(\frac{n +
+    1}{3}C_2\right)\cdots\left(\frac{n + 1}{n}C_{n - 1}\right)$
+
+  $= \frac{(n + 1)^n}{n!}C_1C_2\ldots C_n$.
+\item L.H.S.\ $= \frac{1}{n!}\left[\frac{n!}{1!(n - 1)!} + \frac{n!}{3!(n - 3)!} + \frac{n!}{5!(n - 5)!} +
+  \cdots + \frac{n!}{(n - 1)!1!}\right]$
+
+  $= \frac{1}{n!}(C_1 + C_3 + C_5 + \cdots + C_{n - 1}) = \frac{2^{n - 1}}{n!}$.
+\item R.H.S.\ $= \displaystyle\sum_{r = 0}^n(-1)^r\frac{C_r^^n}{C_r^^{r + 3}} = \sum_{r =
+  0}^n(-1)^r\frac{n!}{r!(n - r)!}.\frac{r!3!}{(r + 3)!}$
+
+  $= 3!\displaystyle\sum_{r = 0}^n(-1)^r\frac{n!}{(n - r)!(r + 3)!} = \frac{3!}{(n + 1)(n + 2)(n +
+  3)}\sum_{r = 0}^n(-1)^r\frac{(n + 3)!}{(r + 3)!(n - r)!}$
+
+  $= \frac{3!}{(n + 1)(n + 2)(n + 3)}\displaystyle\sum_{r = 0}^n(-1)^rC_{r + 3}^^{n + 3}$
+
+  $= \frac{3!}{(n + 1)(n + 2)(n + 3)}[C_3^^{n + 3} - C_4^^{n + 3} + C_5^^{n + 3} - \cdots + (-1)^nC_{r +
+    3}^^{n + 3}]$
+
+  $\because C_0^^{n + 3} - C_1^^{n + 3} + C_2^^{n + 3} - C_3^^{n + 3} + \cdots + (-1)^{n + 3}C_{n + 3}^^{n +
+  3} = (1 - 1)^{n + 3} = 0$
+
+  $\Rightarrow C_3^^{n + 3} - C_4^^{n + 3} + C_5^^{n + 3} - \cdots + (-1)^nC_{r + 3}^^{n + 3} = C_0^^{n + 3}
+  - C_1^^{n + 3} + C_2^^{n + 3}$.
+
+  $\Rightarrow \frac{3!}{(n + 1)(n + 2)(n + 3)}[C_3^^{n + 3} - C_4^^{n + 3} + C_5^^{n + 3} - \cdots + (-1)^nC_{r +
+    3}^^{n + 3}] = \frac{3!}{(n + 1)(n + 2)(n + 3)}\left[1 - (n + 3) + \frac{(n + 3)(n + 2)}{2}\right] =
+  \frac{3!}{2(n + 3)}$.
+\item $C_0^^n = C_0^^{n - 1}, -C_1^^n = -C_0^^{n - 1} - C_1^^{n - 1}, C_2^^n = C_1^^{n - 1} + C_2^^{n - 1},
+  \ldots, (-1)^{m - 1}C_{m - 1}^^n = (-1)^{m - 1}C_{m - 2}^^{n - 1} + (-1)^{m - 1}C_{m - 1}^^{n - 1}$
+
+  Adding gives us
+
+  $C_0 - C_1 + C_2 - \cdots + (-1)^{m - 1}C_{m - 1} = (-1)^{m - 1}C_{m - 1}^^{n - 1} = (-1)^{m - 1}\frac{(n
+    - 1)!}{(m - 1)!(n - m)!} = (-1)^{m - 1}\frac{(n - 1)(n - 2)\cdots (n - m + 1)}{(m - 1)!}$.
 \stopitemize
