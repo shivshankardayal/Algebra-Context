@@ -2053,12 +2053,13 @@
   Thus, we see that $n - j$ behaves as $i$ and $n - i$ behaves as $j$.
 
   $\Rightarrow E = \displaystyle\sum_{0\leq i<j}\sum_{0\leq j\leq n} (n - j + n - i)C_{n - j}C_{n - i} =
-  \displaystyle\sum_{0\leq i<j}\sum_{0\leq j\leq n}[2n - (i + j)]C)iC_j[\because C_r = C_{n - r}]$
+  \displaystyle\sum_{0\leq i<j}\sum_{0\leq j\leq n}[2n - (i + j)]C_iC_j[\because C_r = C_{n - r}]$
 
   $= 2n.\displaystyle\sum_{0\leq i<j}\sum_{0\leq j\leq n}C_iC_j - E \Rightarrow 2E =
   2n\displaystyle\sum_{0\leq i<j}\sum_{0\leq j\leq n}C_iC_j$
 
-  $E = n[(C_0 + C_1 + \cdots + C_n)^2 - (C_0^2 + C_1^2 + \cdots + C_n^2)] = n(2^{2n} - C_n^^{2n})$.
+  $E = \frac{n}{2}[(C_0 + C_1 + \cdots + C_n)^2 - (C_0^2 + C_1^2 + \cdots + C_n^2)] = \frac{n}{2}(2^{2n} -
+  C_n^^{2n})$.
 \item L.H.S.\ $= \frac{n!}{(m + n)!}\left[\frac{(m + n)!}{m!n!}C_0 + \frac{n(m + n)!}{(m + 1)!n!}C_1 +
   \cdots + \frac{n!(m + n)!}{(m + n)!n!}C_n\right]$
 
@@ -2148,4 +2149,238 @@
   + 3^2C_3 - \cdots]$
 
   All three series' have been proven equal to zero earlier, and thus, sum is zero.
+\item Given that $a_0, a_1, a_2, \ldots, a_n$ form an A.P. Let $d$ be the common difference of this
+  A.P. Then
+
+  $a_1 = a_0 + d, a_2 = a_0 + 2d, \ldots, a_n = a_0 + nd$.
+
+  We have to prove that $a_0 - a_1.C_1 + a_2C_2 - \cdots + (-1)^na_nC_n = 0$
+
+  L.H.S.\ $= a_0 - (a_0 + d)C_1 + (a_0 + 2d)C_2 - \cdots + (-1)^n(a_0 + nd)C_n$
+
+  $= a_0(C_0 - C_1 + C_2 - \cdots + (-1)^nC_n) - d(C_1 - 2C_2 + \cdots - (-1)^nnC_n)$
+
+  We have proven the two series in question equal to be zero. Q.E.D.
+\item We have to prove that $\displaystyle\sum_{r=0}^n(-1)^r(a - r)(b - r)C_r = 0$.
+
+  $\displaystyle\sum_{r=0}^n(-1)^r(a - r)(b - r)C_r = \sum_{r = 0}^n(-1)^r[ab - (a + b)r + r^2]C_r$
+
+  This will lead to three series $[C_0 - C_1 + C_2 - \cdots + (-1)^nC_n], [C_1 - 2C_2 - \cdots +
+    (-1)^nnC_n]$ and $[C_1 - 2^2C_2 + 3^2C_3 - \cdots + (-1)^nn^2C_n]$.
+
+  We have proven the three series in question equal to be zero. Q.E.D.
+\item We have to prove that $\displaystyle\sum_{r=0}^n(-1)^r(a - r)(b - r)(c - r)C_r = 0$.
+
+  $\Rightarrow \displaystyle\sum_{r=0}^n(-1)^r(a - r)(b - r)(c - r)C_r = 0 = \sum_{r = 0}^n(-1)^r[abc -(ab +
+  bc + ca)r + (a^2 + b^2 + c^2)r^2 - r^3]C_r = 0$.
+
+  Out of these four series first three have been proven to be equal to zero. Now we will prove that
+  $\displaystyle\sum_{r = 0}^n(-1)^rr^3C_r = 0$.
+
+  Consider $(1 - x)^n = C_0 - C_1x + C_2x^2 - \cdots + (-1)^nC_nx^n$
+
+  Differentiating w.r.t. $x$ gives us
+
+  $-n(1- x)^{n - 1} = -C_1 + 2C_2x - 3C_3x^2 + \cdots + (-1)^nnC_nx^{n - 1}$
+
+  Now we multiply with $x$ and differentiate again to get
+
+  $-n(1 - x)^{n - 1} + n(n - 1)x(1 - x)^{n - 2} = -C_1 + 2^2C_2x - 3^2C_3x^2 + \cdots + (-1)^nn^2C_nx^{n -
+    1}$
+
+  Repeating previous step and putting $x = 1$ gives us
+
+  $-C_1 + 2^3C_2 - 3^3C_3 + \cdots + (-1)^nn^3C_n= 0$. Q.E.D.
+\item We have to prove that $\frac{C_0}{2^n} + \frac{2.C_1}{2^n} + \cdots + \frac{(n + 1)C_n}{2^n} = 16$.
+
+  Earlier we have proven that $C_0 + 2C_1 + 3C_2 + \cdots + (n + 1)C_n = (n + 2)2^{n - 1}$
+
+  Substituting this result gives us
+
+  $\frac{n + 2}{2} = 16 \Rightarrow n = 30$.
+\item Clearly, $a_2 = a_1 + d, a_3 = a_1 + 2d, \ldots, a_{n + 1} = a_1 + nd$, where $d$ is the common difference
+  of the A.P.
+
+  We have to prove that $\displaystyle\sum_{k=0}^na_{k + 1}C_k = 2^{n - 1}(a_1 + a_{n +1})$.
+
+  L.H.S.\ $= a_1C_0 + a_2C_1 + a_3C_2 + \cdots + a_{n + 1}C_n = a_1(C_0 + C_1 + C_2 + \cdots + C_n) + d(C_1
+  + 2C_2 + \cdots + nC_n) = a_1.2^n + d.n.2^{n - 1}$
+
+  $= 2^{n - 1}(2a_1 + nd) = 2^{n - 1}(a_1 + a_{n + 1}) =$ R.H.S.
+\item $S = a + (a + d)C_1 +(a+ 2d)C_2 + \cdots + (a +nd)C_n = a(C_0 + C_1 + C_2 + \cdots + C_n) + d(C_1
+  + 2C_2 + \cdots + nC_n) = a.2^n + d.n.2^{n - 1} = 2^{n - 1}[2a + nd] = 2^n\frac{2a + nd}{2} =
+  2^n.\frac{s}{n + 1}$
+
+  $\Rightarrow (n + 1)S = 2^n.s$
+\item Given that $(1 + x + x^2 + \cdots + x^p)^n = a_0 + a_1x + a_2x^2 + \cdots + a_{np}x^{np}$
+
+  Differentiating w.r.t.\ $x$ and putting $x = 1$ gives us
+
+  $n(1 + 2 + 3 + \cdots + p)(p + 1)^{n - 1} = a_1 + 2a_2 + 3a_3 + \cdots + npa_{np}$
+
+  $\Rightarrow \frac{1}{2}np(p + 1)^n = a_1 + 2a_2 + 3a_3 + \cdots + npa_{np}$.
+\item We have to prove that $\displaystyle\sum_{k=0}^{15}\frac{C_k^^{15}}{(k + 1)(k + 2)} = \frac{2^{17} -
+  18}{16.17}$.
+
+  Consider $(1 + x)^{15} = C_0^^{15} + C_1^^{15}x + C_2^^{15}x^2 + \cdots + C_{15}^^{15}x^{15}$
+
+  Integrating w.r.t.\ $x$ with limits $0$ and $x$ gives us
+
+  $\left[\frac{(1 + x)^{16}}{16}\right]_0^x = \left[C_0^^{15} + \frac{C_{1}^^{15}}{2}x^2 + \cdots +
+    \frac{C_{15}^^{15}x^{16}}{16}\right]_0^x$
+
+  $\Rightarrow \frac{(1 + x)^{16}}{16} - \frac{1}{16} = C_0^^{15} + \frac{C_{1}^^{15}}{2}x^2 + \cdots +
+  \frac{C_{15}^^{15}x^{16}}{16}$
+
+  Integrating again w.r.t.\ $x$ with limits $0$ and $1$ we get
+
+  $\displaystyle\sum_{k=0}^{15}\frac{C_k^^{15}}{(k + 1)(k + 2)} = \left[\frac{(1 + x)^{17}}{16.17} -
+    \frac{x}{16}\right]_0^1$
+
+  $= \frac{2^{17}}{16.17} - \frac{1}{16.17} - \frac{1}{16} = \frac{2^{17} - 18}{16.17}$.
+
+  Q.E.D.
+\item $(1 - x)^n = C_0 - C_1x + C_2x^2 - \cdots + (-1)^nC_nx^n$
+
+  Substituting $x = x^3$, we have
+
+  $(1 - x^3)^n = C_0 - C_1x^3 + C_2x^6 - \cdots + (-1)^nC_nx^{3n}$
+
+  Integrating within the limits of $0$ and $1$, we deduce
+
+  $\left[C_0x - C_1\frac{x^4}{4} + C_2.\frac{x^7}{7} - \cdots + (-1)^nC_n\frac{x^{3n + 1}}{3n + 1}\right] =
+  \displaystyle\int_0^1(1 - x^3)^ndx$
+
+  Now we will evaluate the R.H.S. Let $I_n = \displaystyle\int_0^n(1 - x^3)^ndx = [x(1 - x^3)^n]_0^1 -
+  \int_0^1x.n(1 - x^3)^{n - 1}.(-3x^2)dx$
+
+  $= -3n\displaystyle\int_0^1(1 - x^3)^{n - 1}(1 - x^3 - 1)dx = -3nI_n + 3nI_{n - 1} \Rightarrow
+  \frac{I_n}{I_{n - 1}} = \frac{3n}{3n + 1}$
+
+  Now, $\frac{I_n}{I_0} = \frac{I_n}{I_{n - 1}}.\frac{I_{n - 1}}{I_{n -
+      1}}\cdots\frac{I_3}{I_2}.\frac{I_2}{I_1}.\frac{I_1}{I_0}$
+
+  $= \frac{3n}{3n + 1}.\frac{3n - 3}{3n - 2}.\frac{3n - 6}{3n - 5}\cdots \frac{3}{4} =
+  \frac{3^n.n!}{4.7.\cdots(3n + 1)}$.
+\item We have proven earlier that $\frac{C_0}{1.2} - \frac{C_1}{2.3} + \frac{C_2}{3.4} - \cdots +
+  (-1)^n\frac{C_n}{(n + 1)(n + 2)} = \frac{1}{n + 2}$.
+
+  Thus, $\displaystyle\sum_{r=0}^n\frac{(-1)^rC_r}{(r + 1)(r + 2)} = \frac{1}{n + 2}$.
+\item We have to prove that $\displaystyle\sum_{r=0}^n\frac{C_r.3^{r + 3}}{(r + 1)(r + 2)(r + 3)} =
+  \frac{4^{n + 3} - 1 - \frac{3}{2}(n + 3)(3n + 8)}{(n + 1)(n + 2)(n + 3)}$.
+
+  $(1 + x)^n = C_0 + C_1x + C_2x^2 + \cdots + C_nx^n$
+
+  Integrating within limits $0$ and $x$ gives us
+
+  $\frac{(1 + x)^{n + 1}}{n + 1} - \frac{1}{n + 1} = C_0x + \frac{C_1}{2}x^2 + \frac{C_2}{3}x^3 + \cdots +
+  \frac{C_n}{n + 1}x^{n + 1}$
+
+  Integrating again with limits $0$ and $x$ gives us
+
+  $\frac{(1 + x)^{n + 2}}{(n + 1)(n + 2)} - \frac{1}{(n + 1)(n + 2)} - \frac{x}{n + 1} = \frac{C_0}{2}x^2 +
+  \frac{C_1}{2.3}x^3 + \frac{C_2}{3.4}x^4 + \cdots + \frac{C_n}{(n + 1)(n + 2)}x^{n + 2}$
+
+  Integrating again with limits $0$ and $3$ gives us
+
+  $\frac{4^{n + 3}}{(n + 1)(n + 2)(n + 3)} - \frac{1}{(n + 1)(n + 2)(n + 3)} - \frac{3}{(n + 1)(n + 2)} -
+  \frac{9}{2(n + 1)} = \displaystyle\sum_{r=0}^n\frac{C_r.3^{r + 3}}{(r + 1)(r + 2)(r + 3)}$
+
+  $\displaystyle\sum_{r=0}^n\frac{C_r.3^{r + 3}}{(r + 1)(r + 2)(r + 3)} = \frac{4^{n + 3} - 1 -
+    \frac{3}{2}(n + 3)(3n + 8)}{(n + 1)(n + 2)(n + 3)}$.
+\item $(1 + x)^n = C_0 + C_1x + C_2x^2 + \cdots + C_nx^n$
+
+  Integrating within limits $0$ and $x$ gives us
+
+  $\frac{(1 + x)^{n+ 1}}{n + 1} - \frac{1}{n + 1} = C_0x + \frac{C_1}{2}x^2 + \frac{C_2}{3}x^3 + \cdots +
+  \frac{C_n}{n + 1}x^{n + 1}$
+
+  Multiplying with $x$ and differentiang w.r.t.\ $x$ gives us
+
+  $\frac{(1 + x)^{n + 1} + (n + 1)x(1 + x)^{n}}{n + 1} - \frac{1}{n + 1} = 2C_0x + \frac{3}{2}C_1x^2 +
+  \frac{4}{3}C_2x^3 + \cdots + \frac{n + 2}{n + 1}C_nx^{n + 1}$
+
+  Putting $x = 1$ gives us
+
+  $\displaystyle\sum_{r=0}^n\frac{r + 2}{r + 1}C_r = \frac{2^n(n + 3) - 1}{n + 1}$.
+\item Proceeding like previous to previous problem and adjusting last step with integration between $0$ and
+  $x$ and integrating once more for the fourth time and putting $x = 3$ we get the desired result.
+\item $(1 + x)^n = C_0 + C_1x + C_2x^2 + \cdots + C_nx^n$ and $(x + 1)^n = C_0x^{n} + C_1x^{n - 1} + C_2x^{n
+  - 2} + \cdots + C_n$
+
+  Multiplying and equating the power of $x^{n - 3}$ gives us
+
+  $C_0C_3 + C_1C_4 + C_2C_5 + \cdots + C_{n - 3}C_n =$ coefficient of $x^{n - 3}$ in $(1 + x)^{2n}$
+
+  $\Rightarrow \displaystyle\sum_{r=0}^{n - 3}C_rC_{r + 3} = \frac{(2n)!}{(n + 3)!(n - 3)!}$.
+\item We have to find $\displaystyle\sum_{0\leq i< j}\sum_{0\leq j\leq n}C_iC_j$.
+
+  $\displaystyle\left(\sum C_k\right)^2 = \sum C_k^2 + 2\sum_{0\leq i< j}\sum_{0\leq j\leq n}C_iC_j$.
+
+  We know that $\left(\sum C_k\right)^2 = (2^n)^2 = 2^{2n}$ and $\sum C_k^2 = \frac{2n!}{n!n!}$
+
+  $\therefore \displaystyle\sum_{0\leq i< j}\sum_{0\leq j\leq n}C_iC_j = 2^{2n - 1} - \frac{(2n - 1)!}{n!(n -
+    1)!}$.
+\item Given that $S_n = C_0C_1 + C_1C_2 + \cdots + C_{n - 1}C_n$.
+
+  $(1 + x)^n = C_0 + C_1x + C_2x^2 + \cdots + C_nx^n$ and $(x + 1)^n = C_0x^{n} + C_1x^{n - 1} + C_2x^{n
+  - 2} + \cdots + C_n$
+
+  Multiplying and equating power of $x^{n - 1}$ gives us
+
+  $S_n = C_0C_1 + C_1C_2 + \cdots + C_{n - 1}C_n =$ coefficient of $x^{n - 1}$ in $(1 + x)^{2n} = C_{n -
+    1}^^{2n}$
+
+  $\Rightarrow \frac{S_{n + 1}}{S_n} = \frac{(2n + 2)!}{n!(n + 2)!}.\frac{(n - 1)!(n + 1)!}{(2n)!} =
+  \frac{(2n + 2)(2n + 1)}{n(n +2)} = \frac{15}{4}\Rightarrow n = 2, 4$.
+\item $(1 + x)^n = C_0 + C_1x + C_2x^2 + \cdots + C_nx^n$ and $(x + 1)^n = C_0x^{n} + C_1x^{n - 1} + C_2x^{n
+  - 2} + \cdots + C_n$.
+
+  Multiplying first equation with $x$ and differentiating first equation w.r.t.\ $x$ gives us
+
+  $(1 + x)^n + nx(1 + x)^{n - 1} = C_0 + 2C_1x + 3C_2x^2 + \cdots + (n + 1)C_nx^n$.
+
+  Multiplying this with second equation and then equating coefficient of $x^n$ gives us
+
+  $C_0^2 + 2.C_1^2 + 3.C_2^2 + \cdots + (n + 1)C_n^2 =$ coefficient of $x^n$ in $(1 + x)^{2n} + nx(1 +
+  x)^{2n - 1}$
+
+  $= C_n^^{2n} + n.C_{n - 1}^^{2n - 1} = \frac{(n + 2)(2n - 1)!}{n!(n - 1)!}$.
+\item We have $x^n(2 + x)^n = (2x + x^2)^n = [(x + 1)^2 - 1]^n$
+
+  $\Rightarrow x^n(2^n + C_1^^n.2^{n - 1}+ \cdots + C_n^^nx^n) = C_0^^n(x + 1)^{2n} - C_1^^n(x + 1)^{2n - 2}
+  + C_2^^n(x + 1)^{2n - 4} - \cdots$
+
+  Equating coefficients of $x^n$ gives us
+
+  $C_0.C_n^^{2n} - C_1.C_n^^{2n - 2} + C_2.C_n^^{2n - 4} - \cdots = 2^n$.
+\item We have to find $\displaystyle\sum_{0\leq i\leq j}\sum_{0\leq j\leq n}(i + j)(C_i + C_j + C_iC_j)$.
+
+  Earlier we have proven that $\displaystyle\sum_{0\leq i\leq j}\sum_{0\leq j\leq n}(i + j)(C_iC_j) =
+  \frac{n}{2}\left(2^{2n1} - \frac{2n!}{(n!)^2}\right)$
+
+  Now $\displaystyle\sum_{0\leq i\leq j}\sum_{0\leq j\leq n}(i + j)(C_i + C_j)$ we proceed similarly to get
+
+  $\displaystyle\sum_{0\leq i\leq j}\sum_{0\leq j\leq n}(i + j)(C_i + C_j) = \sum_{0\leq i\leq j}\sum_{0\leq
+    j\leq n}(2n - i - j)(C_i + C_j) = E$
+
+  $\Rightarrow 2E = \sum_{0\leq i\leq j}\sum_{0\leq j\leq n}2n(C_i + C_j) = 2n\sum_{0\leq j\leq n}[(C_0+
+    C_j) + (C_1 + C_j) + \cdots + (C_{j - 1} + C_j)]$
+
+  $= 2n[(2C_0 + C_1 + C_2 + \cdots + C_n) + (C_0+ 2C_1 + C_2 + \cdots + C_n) + \cdots + (C_0 + C_1 + \cdots +
+  2C_{n - 1}) + C_n]$
+
+  $= 2n^2[C_0 + C_1 + C_2 + \cdots + C_n] \Rightarrow E = n^2.2^n$
+\item Given that $(1 + x + x^2)^n = a_0 + a_1x + a_2x^2 + \cdots + a_{2n}x^{2n}$.
+
+  Putting $x = -x$ gives us $(1 - x + x^2)^n = a_0x^{2n} - a_1x^{2n - 1} + a_2x^{2n - 2} - \cdots + a_{2n}$
+
+  Multiplying and equating coefficients of $x^{2n - 2r}$ gives us
+
+  $a_0a_{2r} - a_1a_{2r + 1} + a_2a_{2r + 2} - \cdots + a_{2n - 2r}a_{2n} =$ coefficient of $x^{2n - 2r}$
+  in $(x^4 + x^2 + 1)^{n}$
+
+  Putting $x^2 = y$ it is coefficient of $y^{n - 2}$ in $(1 + y + y^2) = a_{n - r}$.
+
+  Earlier we have proven that for the given series $a_r = a_{2n - r}\Rightarrow a_{n - r} = a_{n + r}$.
 \stopitemize
