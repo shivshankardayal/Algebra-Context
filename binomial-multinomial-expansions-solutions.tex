@@ -2114,4 +2114,38 @@
 
   $C_0 - C_1 + C_2 - \cdots + (-1)^{m - 1}C_{m - 1} = (-1)^{m - 1}C_{m - 1}^^{n - 1} = (-1)^{m - 1}\frac{(n
     - 1)!}{(m - 1)!(n - m)!} = (-1)^{m - 1}\frac{(n - 1)(n - 2)\cdots (n - m + 1)}{(m - 1)!}$.
+\item Let $d$ be the common divisor of $C_1^^{2n}, C_3^^{2n}, C_5^^{2n}, \ldots, C_{2n - 1}^^{2n}$.
+
+  We know that $C_1^^{2n} + C_3^^{2n} + C_5^^{2n} + \cdots + C_{2n - 1}^^{2n} = 2^{2n - 1}$.
+
+  Thus, because $d$ is a common divisor so it will have a form of $2^k$ because it has to divide $2^{2n -
+    1}$. Thus, $0 < k\leq 2n - 1$.
+
+  Let $n = 2^m.r$, where $r$ is an odd positive integer. $\Rightarrow 2n = 2^{m + 1}.r\Rightarrow C_1^^{2n}
+  = 2n = 2^{m + 1}.r$
+
+  Thus, common divisor $\leq 2^{m + 1}$. We claim that $2^{m + 1}$ divides all of $C_1^^{2n}, C_3^^{2n},
+  C_5^^{2n}, \ldots, C_{2n - 1}^^{2n}$.
+
+  For odd positive integer $p, C_p^^{2n} = \frac{2n}{p}C_{p - 1}^^{2n - 1} = \frac{2^{m + 1}r}{p}C_{p -
+    1}^^{2n - 1} = 2^{m + 1}\left(\frac{r.C_{p - 1}^^{2n - 1}}{p}\right)$.
+\item $2\displaystyle\sum_{r=0}^nC_r^^n.\sin rx\cos(n - r)x = (C_0^^n\sin0x \cos nx + C_n^^n\sin nx \cos0x)
+  + (C_1^^n\sin x\cos(n - 1)x + C_{n - 1}^^n\sin(n - 1)x\cos x) + \cdots + (C_n^^n\sin nx\cos0x +
+  C_0^^n\sin0x\cos nx)$
+
+  $=(C_0 + C_1 + C_2 + \cdots + C_n)\sin nx = 2^n\sin nx$
+
+  $\Rightarrow \displaystyle\sum_{r=0}^nC_r^^n.\sin rx\cos(n - r)x = 2^{n- 1}\sin nx$.
+\item We have proven earlier that $C_1 + 2C_2 + 3C_3 + \cdots + nC_n = n.2^{n - 1}$.
+
+  Rewriting $a.C_0 + (a - b).C_1 + (a - 2b).C_2 + \cdots + (a - nb).C_n = a(C_0 + C_1 + C_2 + \cdots + C_n)
+  - b(C_1 + 2C_2 + 3C_3 + \cdots + nC_n)$
+
+  $= a.2^n - bn2^{n - 1} = 2^{n - 1}(2a - nb)$.
+\item Given, $a^2.C_0 - (a - 1)^2.C_1 + (a - 2)^2.C_2 - \cdots + (-1)^n(a - n)^2.C_n = 0,\;n>3$.
+
+  $= a^2[C_0 - C_1 + C_2 - \cdots + (-1)^nC_n] + 2a[C_1 - 2C_2 + 3C_3 - \cdots + (-1)^nC_n] - [C_1 - 2^2C_2
+  + 3^2C_3 - \cdots]$
+
+  All three series' have been proven equal to zero earlier, and thus, sum is zero.
 \stopitemize
