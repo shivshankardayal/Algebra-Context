@@ -257,4 +257,205 @@
 
   $= \startdeterminant\NC  a \NC a^2 \NC a^3\NR\NC b \NC b^2 \NC b^3\NR\NC c \NC c^2 \NC
   c^3\NR\stopdeterminant$(exchanging columns twice).
+\item Let $x$ be the first term and $y$ the common ratio of the G.P. then
+
+  $a = xy^{p - 1}\Rightarrow \log a = \log x + (p - 1)\log y; b = xy^{q - 1}\Rightarrow \log b = \log x + (q
+  - 1)\log y; c = xy^{r - 1}\Rightarrow \log c = \log x + (r - 1)\log(r - 1)$
+
+  $\Rightarrow \startdeterminant\NC \log a \NC p \NC 1\NR\NC \log b \NC q \NC 1\NR\NC \log c \NC r \NC
+  1\NR\stopdeterminant = \startdeterminant\NC \log x + (p - 1)\log y \NC p \NC 1\NR\NC \log x + (q -
+  1)\log y \NC q \NC 1\NR\NC \log x + (r - 1)\log y \NC r \NC 1\NR\stopdeterminant$
+
+  $= \startdeterminant\NC (p - 1)\log y \NC p \NC 1\NR\NC (q - 1)\log y \NC q \NC 1\NR\NC (r - 1)\log y \NC
+  r \NC 1\NR\stopdeterminant[C_1\rightarrow C_1 - \log x.C_3]$
+
+  $= \log y\startdeterminant\NC p - 1\NC p\NC 1\NR\NC q - 1\NC q\NC 1\NR\NC r - 1\NC r\NC
+  1\NR\stopdeterminant = \log y\startdeterminant\NC p\NC p\NC 1\NR\NC q\NC q\NC 1\NR\NC r\NC r\NC
+  1\NR\stopdeterminant = 0[C_1\rightarrow C_1 + C_3]$.
+\item $\Delta = \startdeterminant\NC 1\NC 0\NC 0\NR\NC 1\NC x\NC 0\NR\NC 1\NC 0\NC
+  y\NR\stopdeterminant[C_2\rightarrow C_2 - C_1; C_3\rightarrow C_3 - C_1]$
+
+  $= xy$.
+\item $\Delta = \startdeterminant\NC 0 \NC 0 \NC 1\NR\NC a - b\NC b - c\NC c\NR\NC a^3 - b^3\NC b^3 - c^3\NC
+  c^3\NR\stopdeterminant[C_1\rightarrow C_1 - C_2; C_2\rightarrow C_2 - C_3]$
+
+  $= (a - b)(b - c)\startdeterminant\NC 0 \NC 0 \NC 1\NR\NC 1\NC 1\NC c\NR\NC a^2 + ab + b^2\NC b^2 + bc +
+  c^2\NC c^3\NR\stopdeterminant$
+
+  $= (a - b)(b - c)[b^2 + bc + c^2 - a^2 - ab - b^2] = (a - b)(b - c)[(c - a)(a + b + c)]$.
+\item $\Delta = \startdeterminant\NC 0\NC b - a\NC b^2 - a^2\NR\NC 0\NC c - b\NC b^2 - c^2\NR\NC 1\NC a +
+  b\NC a^2 + b^2\NR\stopdeterminant[R_1\rightarrow R_1 - R_2; R_2\rightarrow R_2 - R_3]$
+
+  $= (b - a)(c - b)\startdeterminant\NC 0 \NC 1\NC b + a\NR\NC 0 \NC 1\NC c + b\NR\NC 1\NC a + b\NC a^2 +
+  b^2\NR\stopdeterminant$
+
+  $= (b - a)(c - b)(c + b - b - a) = (a - b)(b - c)(c - a)$.
+\item $\Delta = \startdeterminant\NC 0 \NC a - b\NC a^2 - b^2 + ca - bc\NR\NC 0\NC b - c\NC b^2 - c^2 + ab -
+  ca\NR\NC 1\NC c\NC c^2 - ab\NR\stopdeterminant[R_1\rightarrow R_1 - R_2; R_2\rightarrow R_2 - R_3]$
+
+  $= (a - b)(b - c)\startdeterminant\NC 0\NC 1\NC a + b + c\NR\NC 0 \NC 1\NC a + b + c\NR\NC 1\NC c\NC c^2 -
+  ab\NR\stopdeterminant$
+
+  $= 0$(two rows are identical).
+\item $\Delta = \frac{1}{abc}\startdeterminant\NC a\NC abc \NC abc(b + c)\NR\NC b \NC abc\NC abc(c + a)\NR\NC c \NC
+  abc\NC abd(a + b)\NR\stopdeterminant[R_1\rightarrow aR_1; R_2\rightarrow bR_2; R_3\rightarrow cR_3]$
+
+  $= \frac{a^2b^2c^2}{abc}\startdeterminant\NC a\NC 1\NC b + c\NR\NC b\NC 1\NC c + a\NR\NC c\NC 1 \NC a +
+  b\NR\stopdeterminant= abc\startdeterminant\NC a - b\NC 0 \NC b - a\NR\NC b - c\NC 0\NC c - b\NR\NC c\NC
+  1\NC a + b\NR\stopdeterminant[R_1\rightarrow R_1 - R_2; R_2\rightarrow R_2 - R_3] = 0$.
+\item Check previous problem.
+\item Let $x$ be the first term and $d$ be the common difference of the corresponding A.P. Then4
+
+  $\frac{1}{a} = x + (p - 1)d; \frac{1}{b} = x + (q - 1)d; \frac{1}{c} = x + (r - 1)d$
+
+  $\Rightarrow \frac{1}{a} - \frac{1}{b} = \frac{b - a}{ab} = (p - q)d; \frac{c - b}{bc} = (q - r)d$.
+
+  $\Delta = \startdeterminant\NC c(b - a) \NC p - q \NC 0\NR\NC a(c - b)\NC q - r\NC 0\NR\NC ab\NC r\NC
+  1\NR\stopdeterminant[R_1\rightarrow R_1 - R_2; R_2\rightarrow R_2 - R_3]$
+
+  $= \startdeterminant\NC c(b - a) \NC \frac{b - a}{abd} \NC 0\NR\NC a(c - b)\NC \frac{c - b}{bcd}\NC 0\NR\NC
+  ab\NC r\NC 1\NR\stopdeterminant = (b - a)(c - b)\startdeterminant\NC c \NC \frac{1}{abd} \NC 0\NR\NC a\NC
+  \frac{1}{bcd}\NC 0\NR\NC ab\NC r\NC 1\NR\stopdeterminant = 0$
+\item $\Delta = \startdeterminant\NC 0\NC -1\NC 3\NR\NC 1\NC 1\NC -4\NR\NC -2 \NC 4\NC
+  0\NR\stopdeterminant$(putting $x = 0$) $= \startdeterminant\NC 0\NC -1\NC 0\NR\NC 1\NC 1\NC -1\NR\NC -2\NC
+  4\NC 12\NR\stopdeterminant[C_3\rightarrow C_3 + 3C_2]$
+
+  $=10 = t$
+\item $\Delta = abc\startdeterminant\NC 1 \NC 1 \NC 1\NR\NC a \NC b \NC c\NR\NC a^2 \NC b^2 \NC
+  c^2\NR\stopdeterminant$
+
+  We have evaluated this new determinant equal to $(a - b)(b - c)(c - a)$ earlier and thus our required
+  result is proven.
+\item We can write $b = a + d$ and $c = a + 2d$, where $d$ is the common difference of the A.P. Then,
+
+  $\Delta = \startdeterminant\NC  x + 1 \NC x + 2 \NC x + a\NR\NC  1 \NC 1 \NC d \NR\NC  1 \NC 1 \NC
+  d\NR\stopdeterminant[R_3\rightarrow R_3 - R_2; R_2\rightarrow R_2 - R_1]$
+
+  $= 0$(because two rows are equal).
+\item $\Delta = \startdeterminant\NC  1 + \omega + \omega^2 \NC 1 + \omega + \omega^2 \NC 1 + \omega +
+  \omega^2\NR\NC \omega \NC \omega^2 \NC 1\NR\NC \omega \NC 1 \NC
+  \omega^2\NR\stopdeterminant[R_1\rightarrow R_1 + R_2 + R_3]$
+
+  $= 0$(because $1 + \omega + \omega^2 = 0$).
+\item $\Delta = k\startdeterminant\NC  1 \NC 1 \NC 1\NR\NC 1 \NC 2 \NC 3\NR\NC  1\NC 3 \NC
+  6\NR\stopdeterminant = \startdeterminant\NC  1 \NC 1 \NC 1\NR\NC 0 \NC 1 \NC 2\NR\NC  0\NC 1 \NC
+  3\NR\stopdeterminant[R_3\rightarrow R_3 - R_2; R_2\rightarrow R_2 - R_1]$
+
+  $= k$.
+\item $\Delta = \startdeterminant\NC  a^2 + b^2 + c^2 + x \NC b^2 \NC c^2\NR\NC a^2 + b^2 + c^2 + x \NC b^2
+  + x \NC c^2\NR\NC a^2 + b^2 + c^2 + x \NC b^2 \NC c^2 + x\NR\stopdeterminant[C_1\rightarrow C_1 + C_2 +
+  C_3]$
+
+  $= (a^2 + b^2 + c^2 + x)\startdeterminant\NC  1\NC b^2 \NC c^2\NR\NC 1\NC b^2
+  + x \NC c^2\NR\NC 1\NC b^2 \NC c^2 + x\NR\stopdeterminant = \startdeterminant\NC  1\NC b^2 \NC c^2\NR\NC 0
+  \NC x\NC 0\NR\NC 0\NC 0\NC x\NR\stopdeterminant[R_3\rightarrow R_3 - R_1; R_2\rightarrow R_2 - R_1]$
+
+  $= (a^2 + b^2 + c^2 + x)x^2$.
+\item $\Delta = \startdeterminant\NC a - b \NC b - c\NC a^2 - b^2\NR\NC b  - c\NC c - b\NC b^2 - c^2\NR\NC
+  c\NC a + b\NC c^2\NR\stopdeterminant[R_1\rightarrow R_1 - R_2; R_2\rightarrow R_2 - R_3]$
+
+  $= (a - b)(b - c)\startdeterminant\NC 0 \NC 0 \NC a - c\NR\NC 1\NC -1\NC b + c\NR\NC c\NC a + b\NC
+  c^2\NR\stopdeterminant[R_1\rightarrow R_1 - R_2] = -(a - b)(b - c)(c - a)(a + b + c)$.
+\item $\Delta = \startdeterminant\NC  a + b + c \NC a - b \NC a\NR\NC b + c + a \NC b - c \NC b\NR\NC c +a +
+  b \NC c - a \NC c\NR\stopdeterminant[C_1\rightarrow C_1 + C_3]$
+
+  $= (a + b + c)\startdeterminant\NC 0\NC a + c - 2b\NC a - b\NR\NC 0\NC b + a - 2c\NC b - c\NR\NC 1\NC c -
+  a\NC c\NR\stopdeterminant[R_1\rightarrow R_1 - R_2; R_2\rightarrow R_2 - R_3]$
+
+  $= (a + b + c)(ab + bc + ca - a^2 - b^2 - c^2) = 3abc - a^3 - b^3 - c^3$.
+\item $\Delta = 2(a + b + c)\startdeterminant\NC 1 \NC b + c \NC c + a\NR\NC 1 \NC c + a \NC a + b\NR\NC 1
+  \NC a + b \NC b + c\NR\stopdeterminant[C_1\rightarrow C_1 + C_2 + C_3]$
+
+  $= 2(a + b + c)\startdeterminant\NC 0\NC b - a\NC c - b\NR\NC 0\NC c - b\NC a - c\NR\NC 1\NC a + b\NC a +
+  c\NR\stopdeterminant[R_1\rightarrow R_1 - R_2; R_2\rightarrow R_2 - R_3]$
+
+  $= 2(a + b + c)(ab + bc + ca - a^2 - b^2 - c^2) = -2(a^3 + b^3 + c^3 - 3abc)$.
+\item $\Delta = \startdeterminant\NC a - b \NC b - c\NC x + c\NR\NC a - b\NC b - c\NC x + b\NR\NC a - b\NC b
+  - c\NC x + c\NR\stopdeterminant[C_1\rightarrow C_1 - C_2; C_2\rightarrow C_2 - C_3]$
+
+  $= 0$(because two columns are equal).
+\item Multiplying each row with $-1$ gives us
+
+  $\Delta = -\startdeterminant\NC  0 \NC q - p \NC r - p\NR\NC  p - q \NC 0 \NC r - q\NR\NC  p - r \NC q - r
+  \NC 0\NR\stopdeterminant$
+
+  Changing rows into corresponding columns
+
+  $\Delta = -\startdeterminant\NC  0 \NC p - q \NC p - r\NR\NC  q - p \NC 0 \NC q - r\NR\NC  r - p \NC r - q
+  \NC 0\NR\stopdeterminant = -\Delta \Rightarrow \Delta = 0$.
+\item Let L.H.S.\ $= \Delta = (3a + 3b)\startdeterminant\NC 1\NC a + b\NC a + 2b\NR\NC 1\NC a\NC a + b\NC\NR 1\NC a +
+  2b\NC a\NR\stopdeterminant[C_1\rightarrow C_1 + C_2 + C_3]$
+
+  $= (3a + 3b)\startdeterminant\NC 0\NC b\NC b\NR\NC 0\NC -2b\NC b\NC\NR 1\NC a + 2b\NC
+  a\NR\stopdeterminant[R_1\rightarrow R_1 - R_2; R_2\rightarrow R_2 - R_3]$
+
+  $= 9b^2(a + b) =$ R.H.S.
+\item $\Delta = \frac{1}{a}\startdeterminant\NC a^2 + b^2 + c^2\NC b - c\NC c + b\NR\NC a^2 + b^2 + c^2\NC
+  b\NC c - a\NR\NC a^2 + b^2 + c^2\NC b + c\NC c\NR\stopdeterminant[C_1\rightarrow aC_1 + bC_2 + cC_3]$
+
+  $= \frac{a^2 + b^2 + c^2}{a}\startdeterminant\NC 0\NC -c\NC a + b\NR\NC 0\NC -a\NC -a\NR\NC 1\NC b + a\NC
+  \NR\stopdeterminant[R_1\rightarrow R_1 - R_2; R_2\rightarrow R_2 - R_3]$
+
+  $= \frac{a^2 + b^2 + c^2}{a}(ac + a^2 + ab) = (a^2 + b^2 + c^2)(a + b + c)$.
+
+  Thus, given determinant has the same sign as $a + b + c$ because $a^2 + b^2 + c^2$ is always positive for
+  real values of $a, b, c$.
+\item $\Delta = \frac{1}{ab}\startdeterminant\NC 0\NC a(bc' + b'c) - b(ca' + c'a) \NC ab'c' - bc'a'\NR\NC
+  0\NC b(ca' + c'a) - c(ab' - ab)\NC bc'a' - ca'b'\NR\NC ab \NC ab' + a'b\NC
+  a'b'\NR\stopdeterminant[R_1\rightarrow aR_1 - bR_2; R_2\rightarrow bR_2 - cR_3]$
+
+  $= \frac{ab}{ab}(ab' - a'b)(b'c - bc')(a'c - c'a) = (ab' - a'b)(b'c - bc')(a'c - c'a)$.
+\item $\Delta = \frac{1}{abc}\startdeterminant\NC a(b^2 + c^2)\NC a^2b\NC a^2c\NR\NC ab^2\NC b(c^2 + a^2)\NC b^2c\NR\NC
+  ac^2\NC c^2b\NC c(a^2 + b^2)\NR\stopdeterminant[R_1\rightarrow aR_1; R_2\rightarrow bR_2; R_3\rightarrow
+  cR_3]$
+
+  $= \frac{abc}{abc}\startdeterminant\NC b^2 + c^2\NC a^2\NC a^2\NR\NC b^2\NC c^2 + a^2\NC b^2\NR\NC c^2\NC
+  c^2\NC a^2 + b^2\NR\stopdeterminant$
+
+  $= \startdeterminant\NC 0 \NC -2c^2 \NC -2b^2\NR\NC 0 \NC c^4 + c^2a^2 - b^2c^2 \NC b^2c^2 - a^2b^2 -
+  b^4\NR\NC c^2\NC c^2\NC a^2 + b^2\NR\stopdeterminant[R_1\rightarrow R_1 - R_2 - R_3; R_2\rightarrow c^2R_2
+  - b^2R_3]$
+
+  $= 4a^2b^2c^2$.
+\item $\Delta = \frac{1}{a^2b^2c^2}\startdeterminant\NC(\alpha + \gamma)^2 \NC\beta^2\NC\beta^2 \NR\NC
+  \gamma^2 \NC(\alpha + \beta)^2 \NC \gamma^2\NR\NC \alpha^2\NC\alpha^2\NC (\beta +
+  \gamma)^2\NR\stopdeterminant[C_1\rightarrow a^2C_1; C_2\rightarrow b^2C_2; C_3\rightarrow c^2C_3$ and then
+  applying $ab = \alpha, bc = \beta, ca = \gamma]$
+
+  We have evaluated this determinant earlier to be equal to $2\alpha\beta\gamma(\alpha + \beta + \gamma)^3$
+  and $\alpha\beta\gamma = a^2b^2c^2$.
+
+  Thus, $\Delta = 2(ab + bc + ca)^3$.
+\item $\Delta = \frac{1}{abc}\startdeterminant\NC c(a + b)^2\NC c^2a \NC bc^2\NR\NC ca^2\NC a(b +
+  c)^2\NC a^2b\NR\NC b^2c\NC ab^2 \NC b(c + a)^2\NR\stopdeterminant[R_1\rightarrow cR_1; R_2\rightarrow
+  aR_2; R_3\rightarrow bR_3]$
+
+  $=\startdeterminant\NC (a + b)^2\NC c^2\NC c^2\NR\NC a^2\NC (b + c)^2\NC a^2\NR\NC b^2\NC\b^2\NC (c +
+  a)^2\NR\stopdeterminant$
+
+  We have evaluated this determinant to be equal to $2abc(a + b + c)^3$ earlier.
+
+  $\therefore \Delta = 2abc(a + b + c)^3$.
+\item $\Delta = \frac{1}{abc}\startdeterminant\NC a^2 + b^2\NC c^2\NC c^2\NR\NC a^2\NC b^2 + c^2 \NC
+  a^2\NR\NC b^2\NC b^2\NC c^2 + a^2\NR\stopdeterminant[R_1\rightarrow cR_1; R_2\rightarrow
+  aR_2; R_3\rightarrow bR_3]$
+
+  We have evaluated this determinant to be equal to $4a^2b^2c^2$.
+
+  $\therefore \Delta = 4abc$.
+\item $\Delta = \startdeterminant\NC 0\NC 0\NC x - a\NR\NC a\NC a\NC a\NR\NC b\NC x\NC
+  b\NR\stopdeterminant[R_1\rightarrow R_1 - R_2]$
+
+  $= (x - a)(ax - ab) = 0 \Rightarrow x = a, b$.
+\item $\Delta = \startdeterminant\NC x \NC 2\NC 1\NR\NC 6 \NC x + 4\NC -x\NR\NC 7 \NC 8\NC
+  x\NR\stopdeterminant[C_3\rightarrow C_3 - C_2] = \startdeterminant\NC x \NC 2\NC 1\NR\NC 13\NC x + 12\NC
+  0\NR\NC 7 \NC 8\NC x\NR\stopdeterminant[R_2\rightarrow R_2 + R_3]$
+
+  $=\startdeterminant\NC 0\NC 0\NC 1\NR\NC 13\NC x + 12\NC 0\NR\NC 7 - x^2 \NC 8 - 2x\NC
+  x\NR\stopdeterminant[C_1\rightarrow C_1 - xC_3; C_2\rightarrow C_2 - 2C_3]$
+
+  $= x^3 + 12x^2 - 33x + 20 = 0$
+
+  We observe that sum of coefficients is zero so $1$ would be a factor. The other factor is $x^2 + 13x - 20
+  = 0$; whose roots are $\frac{-13\pm\sqrt{249}}{2}$.
 \stopitemize
