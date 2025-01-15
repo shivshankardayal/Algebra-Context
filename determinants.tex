@@ -541,7 +541,7 @@ Solve the following equations:
 Show without expanding at any stage that:
 
 \startitemize[n, continue, 1*broad]
-\item $\startdeterminant\NC  a + b \NC b + c \NC c + a\NR\NC b + c \NC c + a \NC a + b\NR\NC b + c \NC c + a \NC a + b\NR\stopdeterminant = 2\startdeterminant\NC  a \NC b \NC
+\item $\startdeterminant\NC  a + b \NC b + c \NC c + a\NR\NC b + c \NC c + a \NC a + b\NR\NC c + a \NC a + b \NC b + c\NR\stopdeterminant = 2\startdeterminant\NC  a \NC b \NC
   c\NR\NC b \NC c \NC a\NR\NC  c \NC a \NC b\NR\stopdeterminant$.
 \item $\startdeterminant\NC  b + c \NC c + a \NC a + b\NR\NC q + r \NC r + p \NC p + q \NR\NC  y + z \NC  z + x \NC x + y\NR\stopdeterminant = 2\startdeterminant\NC  a \NC b
   \NC c\NR\NC p \NC q \NC r\NR\NC x \NC y \NC z\NR\stopdeterminant$.
@@ -556,10 +556,10 @@ Show without expanding at any stage that:
   1\NR\stopdeterminant$.
 \item $\startdeterminant\NC  a \NC b \NC c\NR\NC  x \NC y \NC z\NR\NC  p \NC q \NC r\NR\stopdeterminant = \startdeterminant\NC  y \NC b \NC q\NR\NC x \NC a \NC p\NR\NC  z \NC c \NC r\NR\stopdeterminant
     = \startdeterminant\NC  x \NC y \NC z\NR\NC  p \NC q \NC r\NR\NC  a \NC b \NC c\NR\stopdeterminant$.
-\item find the value of the following determinant $\startdeterminant\NC  m! \NC (m + 1)! \NC (m + 2)!\NR\NC (m + 1)! \NC (m + 2)! \NC (m + 3)!\NR\NC (m +
-  2)! \NC (m + 3)! \NC (m + 4)!\NR\stopdeterminant$.
+\item find the value of the following determinant $\Delta = \startdeterminant\NC  m! \NC (m + 1)! \NC (m + 2)!\NR\NC (m + 1)! \NC (m + 2)! \NC (m + 3)!\NR\NC (m +
+  2)! \NC (m + 3)! \NC (m + 4)!\NR\stopdeterminant$, then prove that $\frac{\Delta}{(m!)^3} - 4$ is divisible by $m$.
 \item Solve the following system of equations using Cramer'r rule: $x + y = 4,\;2x - 3y = 9$.
-\item Solve the following system of equations using Cramer'r rule: $2x - y + 3z = 0,\;x + y + z = 6,\;x - y + z = 2$.
+\item Solve the following system of equations using Cramer'r rule: $2x - y + 3z = 9,\;x + y + z = 6,\;x - y + z = 2$.
 \item Determine the nature of solution for the equations: $2x + 3y = 6,\;4x + 6y = 10$.
 \item Show that the following system of equations is consistent $x + y - z = 1,\;2x + 3x + z = 4,\;4x + 3y + z = 16$.
 \item Determine the nature of solution for the equations: $x + y = 2,\;2x + 2y = 4$.
