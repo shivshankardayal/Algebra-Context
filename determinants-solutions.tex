@@ -823,17 +823,319 @@
 
   $= (a^2 + b^2 + c^2)(x^2 + y^2 + z^2)(ax + by + cz)$
 \item $\Delta = \startdeterminant\NC 2 + 4\sin 4\theta \NC \sin^2\theta \NC 4\sin\theta \NR\NC2 +
-    4\sin 4\theta \NC 1 + \sin^2\theta \NC 4\sin\theta \NR\NC 2 + 4\sin 4\theta \NC
-    \sin^2 \theta \NC 1 + 4\sin 4\theta\NR\stopdeterminant = 0[C_1\rightarrow C_1 + C_2
+  4\sin 4\theta \NC 1 + \sin^2\theta \NC 4\sin\theta \NR\NC 2 + 4\sin 4\theta \NC
+  \sin^2 \theta \NC 1 + 4\sin 4\theta\NR\stopdeterminant = 0[C_1\rightarrow C_1 + C_2
     + C_3]$
 
-    $= (2 + 4\sin 4\theta)\startdeterminant\NC 1 \NC \sin^2\theta \NC
-    4\sin 4\theta \NR\NC 0 \NC 1 \NC 0 \NR\NC 0 \NC 0 \NC 1\NR\stopdeterminant = 0[R_2\rightarrow R_2
+  $= (2 + 4\sin 4\theta)\startdeterminant\NC 1 \NC \sin^2\theta \NC
+  4\sin 4\theta \NR\NC 0 \NC 1 \NC 0 \NR\NC 0 \NC 0 \NC 1\NR\stopdeterminant = 0[R_2\rightarrow R_2
     - R_1; R_3\rightarrow R_3 - R_1]$
 
-    $\Rightarrow 2(2 + 4\sin 4\theta) = 0$
+  $\Rightarrow 2(2 + 4\sin 4\theta) = 0$
 
-    $\sin 4\theta = -\frac{1}{2} \Rightarrow 4\theta = \frac{7\pi}{6},
-    \frac{11\pi}{6}\Rightarrow \theta = \frac{7\pi}{24}, \frac{11\pi}{24}$
+  $\sin 4\theta = -\frac{1}{2} \Rightarrow 4\theta = \frac{7\pi}{6},
+  \frac{11\pi}{6}\Rightarrow \theta = \frac{7\pi}{24}, \frac{11\pi}{24}$
+\item $\Delta = \frac{1}{abc}\startdeterminant\NC a[a^2 + (b^2 + c^2)\cos\phi] \NC
+  ba^2[1 - \cos\phi] \NC ca^2(1 - cos\phi) \NR\NC ab^2(1 - \cos\phi) \NC b[b^2 + (c^2
+    + a^2)\cos\phi] \NC cb^2(1 - \cos\phi) \NR\NC ac^2(1 - \cos\phi) \NC bc^2(1 -
+  \cos\phi) \NC c[c^2 + (a^2 + b^2)\cos\phi]\NR\stopdeterminant[R_1\rightarrow aR_1
+    + bR_2 + cR_3]$
 
+  $= \startdeterminant\NC a^2 + (b^2 + c^2)\cos\phi \NC a^2(1 - \cos\phi) \NC
+  a^2(1 - \cos\phi) \NR\NC b^2(1 - \cos\phi) \NC b^2 + (c^2 + a^2)\cos\phi \NC b^2(1 -
+  \cos\phi) \NR\NC c^2(1 - \cos\phi) \NC c^2(1 - \cos\phi) \NC c^2 + (a^2 +
+  b^2)\cos\phi\NR\stopdeterminant$
+
+  $= (a^2 + b^2 + c^2)\startdeterminant\NC 1 \NC 1 \NC 1 \NR\NC \NR\NC b^(1 - \cos\phi) \NC
+  b^2 + (c^2 + a^2)\cos\phi \NC b^2(1 - \cos\phi) \NR\NC c^2(1 - \cos\phi) \NC
+  c^2(1 - \cos\phi) \NC c^2 + (a^2 + b^2)\cos\phi\NR\stopdeterminant[R_1\rightarrow
+    R_1 + R_2 + R_3]$
+
+  Performing $C_1\rightarrow C_1 - C_2; C_2\rightarrow C_2 - C_3$, we
+  get
+
+  $= (a^2 + b^2 + c^2)\startdeterminant\NC 0 \NC 0 \NC 1 \NR\NC -(a^2 + b^2 +
+  c^2)\cos\phi \NC (a^2 + b^2 + c^2)\cos\phi \NC b^2(1 - \cos\phi) \NR\NC 0 \NC -(a^2 +
+  b^2 + c^2)\cos\phi \NC c^2 + (a^2 + b^2)\cos\phi\NR\stopdeterminant$
+
+  $= (a^2 + b^2 + c^2)(a^2 + b^2 + c^2)^2\cos^2\phi = \cos^2\phi$
+\item $\Delta = \frac{1}{abc}\startdeterminant\NC -abc \NC ab^2 + abc \NC ac^2 + abc
+  \NR\NC a^2b \NC -abc \NC bc^2 + abc \NR\NC a^c + abc \NC b^2c + abc \NC
+  -abc\NR\stopdeterminant[R_1\rightarrow aR_1; R-2 \rightarrow bR_2; R_3\rightarrow
+    cR_3]$
+
+  $= \startdeterminant\NC -bc \NC ab + ac \NC ac + ab \NR\NC ab + bc \NC -ac \NC bc + ab
+  \NR\NC ac + bc \NC bc + ac \NC ab\NR\stopdeterminant$
+
+  $= (ab + bc + ca)\startdeterminant\NC 1 \NC 1 \NC 1 \NR\NC ab + bc \NC -ac \NC bc + ab
+  \NR\NC ac + bc \NC bc + ac \NC ab\NR\stopdeterminant[R_1\rightarrow R_1 + R_2 + R_3]$
+
+  $= (ab + bc + ca)\startdeterminant\NC 1 \NC 0 \NC 0 \NR\NC ab + bc \NC -(ab + bc +
+  ca) \NC 0 \NR\NC ac + bc \NC 0 \NC -(ab + bc + ca)\NR\stopdeterminant[C_2\rightarrow C_2 -
+    C_1; C_3\rightarrow C_3 - C_1]$
+
+  $= (ab + bc + ca)^3$
+\item Given $y = \frac{u}{v},\; \frac{dy}{dx} = \frac{vu' - uv'}{v^2}
+  \Rightarrow v^2\frac{dy}{dx} = vu' - uv'$
+
+  $= v^3\frac{dy}{dx} = v^2u' - uvv'$
+
+  Again differentiating w.r.t.\ $x$, we get
+
+  $v^3\frac{d^2y}{dx^2} + 3v^2v'\frac{dy}{dx} = 2vv'u' + v^2u'' - uvv'' -
+  (uv' + u'v)v'$
+
+  $v^3\frac{dy^2}{dx^2} = -2u'vv' + 2uv'^2 + v^2u'' - uvv'' = \Delta$
+\item $\Delta = \startdeterminant\NC x  \NC x \NC x \NR\NC x \NC x + a \NC x \NR\NC x \NC x \NC x +
+  a^2\NR\stopdeterminant + \startdeterminant\NC 1 \NC x \NC x \NR\NC 0 \NC x + a \NC x \NR\NC 0 \NC x \NC
+  x + a^2\NR\stopdeterminant$
+
+  $= \startdeterminant\NC x \NC x \NC x \NR\NC 0 \NC a \NC 0 \NR\NC 0 \NC 0 \NC
+  a^2\NR\stopdeterminant[R_2\rightarrow R_2 - R_1; R_3\rightarrow R_3 - R_1] + (x +
+  a)(x + a^2) - x^2$
+
+  $= xa^3 + x(a + a^2) + a^3 = a^3\left[1 + x\left(1 + \frac{1}{a} + \frac{1}{a^2}\right)\right]$
+
+  $= a^3\left[1 + \frac{x(a^3 - 1)}{a^2(a - 1)}\right]$
+\item L.H.S.\ $= pa(qra^2 - p^2bc) - qb(q^2ca - prb^2) + rc(pqc^2 - r^2ab) = pqra^3 - abcp^3 - abcq^3 +
+  pqrb^3 + pqrc^3 - abcr^3$
+
+  $= pqr(a^3 + b^3 + c^3) - abc(p^3 + q^3 + r^3) = pqr(a^3 + b^3 + c^3 - 3abc) - abc(p^3 + q^3 + r^3 -
+  3pqr)$
+
+  $= pqr(a^3 + b^3 + c^3 - 3abc) - 0[\because p + q + r = 0]$
+
+  R.H.S.\ $= pqr \startdeterminant\NC a \NC b \NC c \NR\NC c \NC a \NC b \NR\NC b \NC c \NC
+  a\NR\stopdeterminant$
+
+  $= pqr(a + b + c)\startdeterminant\NC 1 \NC b \NC c \NR\NC 1 \NC a \NC b \NR\NC 1 \NC c \NC
+  a\NR\stopdeterminant[C_1\rightarrow C_1 + C_2 + C_3]$
+
+  $= pqr(a + b + c)\startdeterminant\NC o \NC b- a \NC c - b \NR\NC 0 \NC a - c \NC b -
+  a \NR\NC 1 \NC c \NC a\NR\stopdeterminant[R_1\rightarrow R_1-R_2;R_2\rightarrow R_2 -
+    R_3]$
+
+  $= pqr(a^3 + b^3 + c^3 - 3abc) =$ L.H.S
+\item R.H.S.\ $= \frac{1}{abc}\startdeterminant\NC a \NC abc \NC a(b + c) \NR\NC b \NC abc
+  \NC b(c + a) \NR\NC c \NC abc \NC c(a + b) \NR\stopdeterminant[R_1\rightarrow aR_1;
+    R_2\rightarrow bR_2; R_3\rightarrow cR_3]$
+
+  $= -\frac{abc}{abc}\startdeterminant\NC 1 \NC a \NC ab + ac \NR\NC 1 \NC b \NC bc + ba
+  \NR\NC 1 \NC c \NC ca + cb\NR\stopdeterminant$ Taking $abc$ out and then applying
+  $C_1\leftrightarrow C_2$
+
+  $= -\startdeterminant\NC 1 \NC a \NC -bc \NR\NC 1 \NC b \NC - ca \NR\NC 1 \NC c \NC -ab
+  \NR\stopdeterminant[C_3\rightarrow C_3 - (ab + bc + ca)C_1]$
+
+  $= \startdeterminant\NC 1 \NC a \NC bc \NR\NC 1 \NC b \NC ca \NR\NC 1 \NC c \NC
+  ab\NR\stopdeterminant = \frac{1}{abc}\startdeterminant\NC a \NC a^2 \NC abc \NR\NC b \NC b^2 \NC
+  abc \NR\NC c \NC c^2 \NC abc\NR\stopdeterminant[R_1\rightarrow aR_1; R_2\rightarrow
+    bR_2; R_3\rightarrow cR_3]$
+
+  $= \frac{abc}{abc}\startdeterminant\NC a \NC a^2 \NC 1 \NR\NC b \NC b^2 \NC 1 \NR\NC c \NC
+  c^2 \NC 1\NR\stopdeterminant= \startdeterminant\NC 1 \NC a \NC a^2 \NR\NC 1 \NC b \NC b^2 \NR\NC 1 \NC c
+  \NC c^2\NR\stopdeterminant[C_2\leftrightarrow C_3; C_1\leftrightarrow C_2]$
+\item $\Delta = \startdeterminant\NC x^2 \NC x + 1 \NC x - 2 \NR\NC 2x^2 \NC 3x \NC 3x - 3
+  \NR\NC x^2 \NC 2x - 1 \NC 2x - 1\NR\stopdeterminant + \startdeterminant\NC x \NC x + 1 \NC x - 2
+  \NR\NC 3x - 1 \NC 3x \NC 3x - 3 \NR\NC 2x + 3 \NC 2x - 1 \NC 2x - 1\NR\stopdeterminant$
+
+  $= \startdeterminant\NC 2x^2 \NC 3x \NC 3x - 3 \NR\NC 2x^2 \NC 3x \NC 3x - 3 \NR\NC x^2 \NC
+  2x - 1 \NC 2x - 1\NR\stopdeterminant[R_1\rightarrow R_1 + R_3] + \\\startdeterminant\NC 2
+  \NC 3 \NC x - 2 \NR\NC 2 \NC 3 \NC 3x - 3 \NR\NC 4 \NC 0 \NC 2x -1\NR\stopdeterminant[C_1\rightarrow
+    C_1-C_3;C_2\rightarrow C_2 - C_3]$
+
+  $= 0 + \startdeterminant\NC 2 \NC 3 \NC x \NR\NC 2 \NC 3 \NC 3x \NR\NC 4 \NC 0 \NC
+  2x\NR\stopdeterminant + \startdeterminant\NC 2 \NC 3 \NC -2 \NR\NC 2 \NC 3 \NC -3 \NR\NC 4 \NC 0 \NC
+  -1\NR\stopdeterminant$
+
+  $= xA + B$, where $A = \startdeterminant\NC 2 \NC 3 \NC 1 \NR\NC 2 \NC 3 \NC 3 \NR\NC
+  4 \NC 0 \NC 2\NR\stopdeterminant$ and $B = \startdeterminant\NC 2 \NC 3 \NC -2 \NR\NC 2 \NC 3
+  \NC -3 \NR\NC 4 \NC 0 \NC -1\NR\stopdeterminant$ which are determinants of 3rd order
+  independent of $x$.
+\item $\displaystyle\sum_{r = 1}^n D_r = D_1 + D_2 + \cdots + D_n$
+
+  $= \startdeterminant\NC\displaystyle\sum_{r=1}^nr \NC x \NC \frac{n(n + 1)}{2} \NR\NC
+  \displaystyle\sum_{r=1}^n(2r - 1) \NC y \NC n^2 \NR\NC\displaystyle \sum_{r=1}^n(3r - 2) \NC z \NC
+  \frac{n(3n - 1)}{2}\NR\stopdeterminant = \startdeterminant\NC\frac{n(n + 1)}{2} \NC x \NC \frac{n(n +
+    1)}{2} \NR\NC n^2 \NC y \NC n^2 \NR\NC \frac{n(3n - 1)}{2} \NC z \NC \frac{n(3n -
+    1)}{2}\NR\stopdeterminant$
+
+  $= 0$ because first and third columns are identical.
+\item $\Delta = \startdeterminant\NC -5 \NC 3 + 5i \NC \frac{3}{2} - 4i \NR\NC 3 - 5i \NC
+  8 \NC 4 + 5i \NR\NC \frac{3}{2} + 4i \NC 4 - 5i \NC 9\NR\stopdeterminant$
+
+  $\overline{\Delta} = \startdeterminant\NC -5 \NC 3 - 5i \NC \frac{3}{2} + 4i \NR\NC 3 + 5i \NC 8 \NC 4 -
+  5i \NR\NC \frac{3}{2} - 4i \NC 4 + 5i \NC 9\NR\stopdeterminant$
+
+  Exchanging rows and columns
+
+  $\overline{\Delta} = \Delta. \therefore \Delta$ is purely real.
+\item Putting $b = -c$, we have
+
+  $\Delta = \startdeterminant\NC -2a \NC a - c \NC a + c \NR\NC -c + a \NC 2c \NC 0 \NR\NC c
+  + a \NC 0 \NC -2c\NR\stopdeterminant$
+
+  $= \startdeterminant\NC c - a \NC a - c \NC a - c \NR\NC a - c \NC 2c \NC 0 \NR\NC c + a \NC
+  0 \NC -2c\NR\stopdeterminant[R_1 \rightarrow R_1 + R_3]$
+
+  $= \startdeterminant\NC c - a \NC 0 \NC 0 \NR\NC a - c \NC a + c \NC a - c \NR\NC c + a \NC
+  a + c \NC a - c\NR\stopdeterminant[C_2\rightarrow C_2 + C_1; C_3\rightarrow C_3 +
+    C_1]$
+
+  $= (c - a)[(a ^2 - c^2) - (a^2 - c^2)] = 0$
+
+  Hence, $b + c$ is a factor of $\Delta$. Similarly it can be
+  proven that $a + b$ and $c + a$ are factors of $\Delta$.
+
+
+  We see that, upon expansion of determinant, each term of the L.H.S.\ and
+  R.H.S.\ is a homogeneous expression in $a,b,c$ of 3rd degree.
+
+  Let $\startdeterminant\NC -2a \NC a + b \NC b + c \NR\NC b + a \NC -2b \NC b +
+  c \NR\NC c + a \NC c + b \NC -2c\NR\stopdeterminant = k(b + c)(c + a)(a + b)$, where
+  $k$ is independent of $a,b,c$
+
+  Putting $a = 0, b = 1, c = 1$ we get
+
+  $\startdeterminant\NC 0 \NC 1 \NC 1  \NR\NC 1 \NC -2 \NC 2 \NR\NC 1 \NC 2 \NC -2 \NR\stopdeterminant
+  = 2k$
+
+  $k = 4$.
+
+  Thus, we have proven the required condition.
+\item $F'(a) = \startdeterminant\NC f_1'(a) \NC f_2'(a) \NC f_3'(x) \NR\NC g_1(a) \NC
+  g_2(x) \NC g_3(a) \NR\NC h_1(a) \NC h_2(a) \NC h_3(a)\NR\stopdeterminant +
+  \startdeterminant\NC f_1(a) \NC f_2(a) \NC f_3(x) \NR\NC g_1'(a) \NC
+  g_2'(x) \NC g_3'(a) \NR\NC h_1(a) \NC h_2(a) \NC h_3(a)\NR\stopdeterminant +
+  \startdeterminant\NC f_1(a) \NC f_2(a) \NC f_3(x) \NR\NC g_1(a) \NC g_2(x) \NC g_3(a) \NR\NC
+  h_1'(a) \NC h_2'(a) \NC h_3'(a)\NR\stopdeterminant$
+
+  $= 0 + 0 + 0$
+
+  $\because f_r(a)=g_r(a)=h_r(a), r=1,2,3$ in the first determinant
+  last two, in the second determinant first and third, in the third
+  determinant first two, rows are identical. Therefore, all determinants are
+  zero.
+\item Since $f(x) = 0$ is a quadratic equation with repeated root
+  $\alpha, \therefore f(x) = a_r(x - \alpha)^2$, where $a_r$ is a
+  constant.
+
+  Clearly $\Delta(x)$ is a polynomial of degree having a maximum value
+  of $5$.
+
+  $\Delta(\alpha) = \startdeterminant\NC A(\alpha) \NC B(\alpha) \NC C(\alpha)
+  \NR\NC A(\alpha) \NC B(\alpha) \NC C(\alpha) \NR\NC A'(\alpha) \NC B'(\alpha) \NC
+  C'(\alpha)\NR\stopdeterminant$
+
+  $\Delta(\alpha) = 0 [\because R_1$ and $R_2$ are identical$]$.
+
+  $\Delta'(\alpha) = \startdeterminant\NC A'(\alpha) \NC B'(\alpha) \NC
+  C'(\alpha) \NR\NC A(\alpha) \NC B(\alpha) \NC C(\alpha) \NR\NC A'(\alpha) \NC B'(\alpha)
+  \NC C'(\alpha)\NR\stopdeterminant = 0 [\because R_1$ and $R_3$ are
+    identical$]$.
+
+  Thus, we can say that $\Delta(x) = 0$ has two roots equal to $\alpha$.
+
+  $\Rightarrow \Delta(x) = (x - \alpha)^2g(x)$, where $g(x)$ is a polynomial of degree $3$ at most.
+
+  $\Delta(x) = a(x - \alpha)^2\frac{g(x)}{a} = a(x - \alpha)^2.h(x)$, where $h(x) = \frac{g(x)}{a_1}$.
+
+  Thus, $\Delta(x) = f(x).h(x)$, where $h(x)$ is a polynomial in $x$. Hence, $\Delta(x)$ is divisible by
+  $f(x)$.
+\item Let $\Delta$ be the determinant. Then,
+
+  $\frac{d\Delta}{d\theta} = \startdeterminant\NC-\sin(\theta + \alpha) \NC
+  -\sin(\theta + \beta) \NC -\sin(\theta + \gamma) \NR\NC \sin(\theta + \alpha) \NC
+  \sin(\theta + \beta) \NC \sin(\theta + \gamma) \NR\NC \sin(\beta + \gamma) \NC
+  \sin(\gamma - \alpha) \NC \sin(\alpha - \beta)\NR\stopdeterminant +
+  \startdeterminant\NC\cos(\theta + \alpha) \NC cos(\theta + \beta) \NC \cos(\theta +
+  \gamma) \NR\NC \cos(\theta + \alpha) \NC cos(\theta + \beta) \NC \cos(\theta +
+  \gamma) \NR\NC \sin(\beta + \gamma) \NC \sin(\gamma - \alpha) \NC \sin(\alpha -
+  \beta)\NR\stopdeterminant + \\ \startdeterminant\NC\cos(\theta + \alpha) \NC
+  cos(\theta + \beta) \NC \cos(\theta + \gamma) \NR\NC \cos(\theta + \alpha) \NC
+  cos(\theta + \beta) \NC \cos(\theta + \gamma) \NR\NC 0 \NC 0 \NC 0\NR\stopdeterminant$
+
+  $= 0 + 0 + 0$
+
+  Thus, $\Delta$ is a constant, which will be independent of $\theta$.
+\item $\Delta = \startdeterminant\NC f \NC g \NC h \NR\NC xf' + f \NC xg' + g \NC xh' + h \NR\NC
+  x^2f'' + 4xf' + 2f \NC x^2g'' + 4xg' + 2g \NC x^2h'' + 4xh' + 2h\NR\stopdeterminant$
+
+  $= \startdeterminant\NC f \NC g \NC h \NR\NC xf' \NC xg' \NC xh' \NR\NC x^2f'' + 4xf' \NC
+  x^2g'' + 2xg' \NC x^2h'' + 2xh'\NR\stopdeterminant[R_2\rightarrow R_2 - R_1;
+    R_3\rightarrow R_3 - 2R_1]$
+
+  $= \startdeterminant\NC f \NC g \NC h \NR\NC xf' \NC xg' \NC xh' \NR\NC x^2f'' \NC x^2g'' \NC
+  x^2h''\NR\stopdeterminant[R_3 \rightarrow R_3 - 4R_2]$
+
+  $= x^3\startdeterminant\NC f \NC g \NC h\NR\NC f' \NC g' \NC h' \NR\NC f'' \NC g'' \NC
+  h''\NR\stopdeterminant$
+
+  $\Delta' = \startdeterminant\NC f' \NC g ' \NC h' \NR\NC f' \NC g ' \NC h' \NR\NC x^3f'' \NC
+  x^3g'' \NC x^3h''\NR\stopdeterminant + \startdeterminant\NC f \NC g \NC h \NR\NC f'' \NC g'' \NC h''
+  \NR\NC x^3f'' \NC x^3g'' \NC x^3h''\NR\stopdeterminant + \startdeterminant\NC f \NC g \NC h \NR\NC f'
+  \NC g' \NC h' \NR\NC (x^2f'')' \NC (x^2g'')' \NC (x^2h'')'\NR\stopdeterminant$
+
+  $= 0 + 0 + \startdeterminant\NC f \NC g \NC h \NR\NC f' \NC g' \NC h' \NR\NC
+  (x^2f'')' \NC (x^2g'')' \NC (x^2h'')'\NR\stopdeterminant$ because two rows of first
+  two determinants are equal.
+\item $\frac{d^n\{f(x)\}}{dx^n} =
+  \startdeterminant\NC \frac{d^nx^n}{dx^n} \NC \frac{d^n\sin x}{dx^n} \NC
+  \frac{d^n\cos x}{dx^n} \NR\NC n! \NC \sin \frac{n\pi}{2} \NC \cos \frac{n\pi}{2}
+  \NR\NC a \NC a ^2 \NC a^2\NR\stopdeterminant$
+
+  $y = x^n, y_1 = \frac{dy}{dx} = nx^{n - 1}, y_2 =
+  \frac{d^2y}{dy^2} = n(n - 1)x^{n - 1}, \ldots y_n = n(n - 1)\ldots 3.2.1 =
+  n!$
+
+  $y = \sin x, y_1 = \cos x = \sin\left(\frac{\pi}{2} + x\right), y_2
+  = \cos\left(\frac{\pi}{2} + x\right) = \sin\left(\frac{\pi}{2} +
+  \frac{\pi}{2} + x\right)$
+
+  Proceeding in the same way $y_n = \sin\left(\frac{n\pi}{2} + x\right)$
+
+  Now $y = \cos x, y_1 = -\sin x = \cos \left(\frac{\pi}{2} + x\right),
+  y_2 = -sin\left(\frac{\pi}{2} + x\right) = \cos\left(2\frac{\pi}{2} +
+  x\right)$
+
+  Proceeding in the same way $y_n = \cos\left(n\frac{\pi}{2} + x\right)$
+
+  $\frac{d^n\{f(x)\}}{dx^n} = \startdeterminant\NC n!
+  \NC\sin\left(\frac{n\pi}{2} + x\right) \NC \cos\left(\frac{n\pi}{2} + x\right)
+  \NR\NC n! \NC \sin\frac{n\pi}{2} \NC \cos\frac{n\pi}{2} \NR\NC a \NC a^2 \NC a^3\NR\stopdeterminant$
+
+  $f^n(0) = \startdeterminant\NC n! \NC\sin\frac{n\pi}{2} \NC
+  \cos\frac{n\pi}{2} \NR\NC n! \NC \sin\frac{n\pi}{2} \NC \cos\frac{n\pi}{2} \NR\NC a \NC
+  a^2 \NC a^3\NR\stopdeterminant = 0$ because first two rows are identical.
+\item $\Delta = \startdeterminant\NC\cos A\cos P + \sin A\sin P \NC \cos A\cos
+  Q + \sin A\sin Q \NC \cos A\cos R + \sin A\sin R \NR\NC \cos B\cos P + \sin
+  B\sin P \NC \cos B\cos Q + \sin B\sin Q \NC \cos B\cos R + \sin B\sin R \NR\NC
+  \cos C\cos P + \sin C\sin P \NC \cos C\cos Q + \sin C\sin Q \NC \cos C\cos R +
+  \sin C\sin R \NR\stopdeterminant$
+
+  $= \startdeterminant\NC\cos A \NC \sin A \NC 0 \NR\NC \cos B \NC \sin B \NC 0 \NR\NC \cos
+  C \NC \sin C \NC 0\NR\stopdeterminant + \startdeterminant\NC\cos P \NC \sin P \NC 0 \NR\NC \cos Q
+  \NC \sin Q \NC 0 \NR\NC \cos R \NC \sin R \NC 0\NR\stopdeterminant$
+
+  $= 0 + 0 = 0$.
+
+  As an alternative we can expand the determinant along first column and then split the addition taking
+  $\cos P$ and $\sin P$ common and repeat it for others to get the desired result.
+\item We know that $\startdeterminant\NC a \NC b \NC c \NR\NC b \NC c \NC a \NR\NC c \NC a \NC
+  b\NR\stopdeterminant = 3abc - a^3 - b^3 - c^3$
+
+  $\Rightarrow (a^3 + b^3 + c^3 - 3abc)^2 = \startdeterminant\NC a \NC b \NC c \NR\NC b \NC c \NC a
+  \NR\NC c \NC a \NC b\NR\stopdeterminant^2$
+
+  $= \startdeterminant\NC a \NC b \NC c \NR\NC b \NC c \NC a \NR\NC c \NC a \NC
+  b\NR\stopdeterminant\startdeterminant\NC -a \NC c \NC b \NR\NC -b \NC a \NC c \NR\NC -c \NC b \NC
+  a\NR\stopdeterminant[C_1\rightarrow -C_1; C_2\leftrightarrow C_3]= \startdeterminant\NC 2bc - a^2 \NC c^2
+  \NC b^2 \NR\NC c^2 \NC 2bc - b^2 \NC
+  a^2 \NR\NC b^2 \NC a^2 \NC 2bc - c^2\NR\stopdeterminant$
+\item L.H.S.\ $= \startdeterminant\NC\sin\alpha \NC \cos\alpha \NC 0 \NR\NC \sin\beta \NC
+  \cos\beta \NC 0 \NR\NC \sin\gamma \NC \cos\gamma \NC 0 \NR\stopdeterminant \startdeterminant\NC
+  \sin\alpha \NC \cos\alpha \NC 0 \NR\NC \sin\beta \NC \cos\beta \NC 0 \NR\NC \sin\gamma \NC
+  \cos\gamma \NC 0 \NR\stopdeterminant$
+
+  $=0.0 = 0$.
 \stopitemize
