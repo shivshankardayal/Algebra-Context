@@ -1607,4 +1607,383 @@
   $= \sin x - a\sin 2x + a^2\sin x$
 
   $= (a^2 -2a\cos x + 1)\sin x$.
+\item $\Delta = \startdeterminant\NC2 \NC \cos^2x \NC 4\sin 2x \NR\NC 2 \NC 1 + \cos^2x \NC
+  4\sin 2x \NR\NC 1 \NC \cos^2x \NC 1 + 4\sin 2x\NR\stopdeterminant[C_1 \rightarrow C_1 +
+    C_2]$
+
+  $= \startdeterminant\NC0 \NC -1 \NC 0 \NR\NC 2 \NC 1 + \cos^2x \NC 4\sin 2x \NR\NC 1 \NC
+  \cos^2x \NC 1 + 4\sin 2x\NR\stopdeterminant[R_1 \rightarrow R_1 - R_2]$
+
+  $= 2 - 4\sin 2x$
+
+  The above expression has maximum value for $0 < x < \frac{\pi}{2}$ when $x = \frac{\pi}{4}$.
+\item Expanding the determinant we get $\Delta = -1 + 2\cos A\cos B \cos C
+  + \cos^2 A + \cos^2 B + \cos^2 C$
+
+  Consider the expression $2(\cos^2 A + \cos^2 B + \cos^2 C)$
+
+  $= 1 + \cos 2A + 1 + \cos 2B + 1 + \cos 2C = 2 + 2\cos(A + B)\cos(A - B) + 2\cos^2 C$
+
+  $= 2 + 2\cos(\pi - C)\cos(A - B) + 2\cos^2C = 2 - 2\cos C[\cos(A - B) - \cos C]$
+
+  $= 2 - 2\cos C[\cos(A - B) 0 \cos (\pi - (A + B))] = 2 - 4\cos A\cos B\cos C$
+
+  Thus, $\Delta = 0$.
+\item Since $A, B, C$ are angles of an isosceles triangle, let $A = B$
+
+  Thus, first two columns become equal leading determinant to be zero.
+\item $\Delta = \startdeterminant\NC1 \NC \frac{\log y}{\log x} \NC \frac{\log
+  z}{\log x} \NR\NC \frac{\log x}{\log y} \NC 1 \NC \frac{\log z}{\log y} \NR\NC
+  \frac{\log x}{\log z} \NC \frac{\log y}{\log z} \NC 1\NR\stopdeterminant$
+
+  $= \frac{1}{\log x\log y\log z}\startdeterminant\NC\log x \NC \log y \NC \log
+  z \NR\NC \log x \NC \log y \NC \log z \NR\NC \log x \NC \log y \NC \log x\NR\stopdeterminant$
+
+  $= 0$ because all three rows are identical.
+\item $\Delta = \startdeterminant\NC a^{2x} + a^{-2x} + 2 \NC a^{2x} + a^{-2x} - 2
+  \NC 1 \NR\NC b^{2x} + b^{-2x} + 2 \NC b^{2x} + b^{-2x} - 2 \NC 1 \NR\NC c^{2x} +
+  c^{-2x} + 2 \NC c^{2x} + c^{-2x} - 2 \NC 1\NR\stopdeterminant$
+
+  $= \startdeterminant\NC a^{2x} + a^{-2x} \NC a^{2x} + a^{-2x} \NC 1 \NR\NC
+  b^{2x} + b^{-2x} \NC b^{2x} + b^{-2x} \NC 1 \NR\NC c^{2x} + c^{-2x} \NC c^{2x} +
+  c^{-2x} \NC 1\NR\stopdeterminant[C_1\rightarrow C_1 - 2C_3; C_2\rightarrow C_2 +
+    2C_3]$
+
+  $= 0$ because first two columns are identical.
+\item Considering first determinant only:
+
+  $\Delta = \startdeterminant\NC115 \NC 114 \NC 103 \NR\NC 108 \NC 106 \NC 111 \NR\NC 113 \NC
+  116 \NC 104\NR\stopdeterminant[C_1\leftrightarrow C_2; C_2\leftrightarrow C_3]$
+
+  Performing $R_1\leftrightarrow R_3$
+
+  $\Delta = -\startdeterminant\NC113 \NC 116 \NC 104 \NR\NC 108 \NC 106 \NC 111 \NR\NC
+  115 \NC 114 \NC 103\NR\stopdeterminant$
+
+  Thus, given condition is satisfied.
+\item $\displaystyle\sum_{n = 1}^N U_n = \startdeterminant\NC\displaystyle\sum_{n = 1}^N n \NC 1 \NC 5
+  \NR\NC \displaystyle\sum_{n = 1}^N n^2 \NC 2N + 1 \NC 2N + 1 \NR\NC \displaystyle\sum_{n = 1}^N n^3 \NC
+  3N^2 \NC 3N\NR\stopdeterminant$
+
+  $= \startdeterminant\NC\frac{N(N + 1)}{2} \NC 1 \NC 5 \NR\NC \frac{N(N + 1)(2N +
+    1)}{6} \NC 2N + 1 \NC 2N + 1 \NR\NC \left\{\frac{N(N + 1)}{2}\right\}^2 \NC 3N^2 \NC
+  3N\NR\stopdeterminant$
+
+  Taking $\frac{N(N + 1)}{2}$ common from first column and then
+  performing $C_1\rightarrow C_1 - \frac{1}{6}(C_2 + C_3)$
+
+  $= \frac{N(N + 1)}{2}\startdeterminant\NC0 \NC 1 \NC 5 \NR\NC 0 \NC 2N + 1 \NC 2N + 1
+  \NR\NC 0 \NC 3N^2 \NC 3N\NR\stopdeterminant$
+
+  Since first column has only $0$ as element, therefore, the sum of determinants
+  is zero.
+\item $\because A, B, C$ are angles of a triangle, therefore $A +
+  B + C = \pi; \sin(A + B + C) = 0; \cos(A + B) = -\cos C$
+
+  $\therefore \Delta = \startdeterminant\NC0 \NC \sin B \NC \cos C \NR\NC -\sin B
+  \NC 0 \NC \tan A \NR\NC -\cos C \NC -\tan A \NC 0 \NR\stopdeterminant$
+
+  Changing rows into corresponding columns
+
+  $= \startdeterminant\NC0 \NC -\sin B \NC -\cos C \NR\NC \sin B \NC 0 \NC -\tan A \NR\NC
+  \cos C \NC \tan A \NC 0\NR\stopdeterminant$
+
+  Taking $-1$ common from second and third columns, we have
+
+  $= \startdeterminant\NC0 \NC \sin B \NC \cos C \NR\NC \sin B \NC 0 \NC \tan A \NR\NC
+  \cos C \NC -\tan A \NC 0\NR\stopdeterminant = -\Delta$
+
+  $\Rightarrow 2\Delta = 0 \Rightarrow \Delta = 0$.
+\item Taking $b - a$ common from first and third columns
+
+  $\Delta = (b - a)^2 \startdeterminant\NC b \NC b - c \NC c \NR\NC a \NC a - b \NC b \NR\NC
+  c \NC c - a \NC a\NR\stopdeterminant$
+
+  $= (b - a)^2 \startdeterminant\NC b - c \NC b - c \NC c \NR\NC a - b \NC a - b \NC b
+  \NR\NC c - a \NC c - a \NC a\NR\stopdeterminant[C_1 \rightarrow C_1 - C_3]$
+
+  Since the first two columns are same; the determinant is zero.
+\item We can rewrite it as $\displaystyle\sum_{j = 0}^{n - 1}\Delta_j =
+  \startdeterminant\NC\displaystyle\sum_{j = 0}^{n - 1} j \NC n \NC 6 \NR\NC \displaystyle\sum_{j = 0}^{n - 1} j^2
+  \NC 2n^2 \NC 4n - 2 \NR\NC \displaystyle\sum_{j = 0}^{n - 1}j^3 \NC 3n^3 \NC 3n^2 - 3n\NR\stopdeterminant$
+
+  $= \startdeterminant\NC\frac{n(n - 1)}{2} \NC n \NC 6 \NR\NC \frac{n(n - 1)(2n -
+    1)}{6} \NC 2n^2 \NC 4n - 2 \NR\NC \left\{\frac{n(n - 1)}{2}\right\}^2 \NC 3n^3 \NC
+  3n^2 - 3n\NR\stopdeterminant$
+
+  $= \frac{n(n - 1)}{2}\startdeterminant\NC1 \NC n \NC 6 \NR\NC \frac{2n - 1}{3} \NC
+  2n^2 \NC 4n - 2 \NR\NC \frac{n(n - 1)}{2} \NC 3n^3 \NC 3n^2 - 3n\NR\stopdeterminant$
+
+  $= \frac{n(n - 1)}{2}\startdeterminant\NC0 \NC n \NC 6 \NR\NC 0 \NC 2n^2 \NC 4n - 2
+  \NR\NC 0 \NC 3n^3 \NC 3n^2 -3n\NR\stopdeterminant[C_1\rightarrow C_1 - \frac{C_3}{6}]$
+
+  Since first column is entirely made up of zeros the value of determinant
+  is zero, which is a constant as desired.
+\item $\displaystyle\sum_{r = 0}^m(2r - 1) = \frac{1}{2}(m + 1)(2m - 1 - 1) = m^2 - 1$
+
+  $\displaystyle\sum_{r = 0}^m({}^nC_r) = 2^m$
+
+  $\displaystyle\sum_{r = 0}^m1 = m + 1$
+
+  Thus, first two rows of determinant become zero leading the desired sum to
+  be $0$.
+\item $\Delta = \startdeterminant\NC C_r^^x \NC C_{r + 1}^^{x + 1} \NC C_{r +
+  2}^^{x + 1} \NR\NC C_r^^y \NC C_{r + 1}^^{y + 1} \NC C_{r + 2}^^{y + 1} \NR\NC C_r^^z \NC
+  C_{r + 1}^^{z + 1} \NC C_{r + 2}^^{z + 1}\NR\stopdeterminant[C_3 \rightarrow
+    C_3 + C_2; C_2\rightarrow C_2 + C_1]$
+
+  Performing $C_3\rightarrow C_3 + C_2$ we get the determinant on R.H.S.
+\item $\displaystyle\sum_{r = 1}^n \Delta_r = \startdeterminant\NC\displaystyle\sum_{r = 1}^nr \NC n + 1 \NC
+  1 \NR\NC \displaystyle\sum_{r = 1}^nr^2 \NC 2n - 1 \NC \frac{2n + 1}{3} \NR\NC \displaystyle\sum_{r =
+    1}^nr^3 \NC 3n + 2 \NR\NC \frac{n(n + 1)}{2}\NR\stopdeterminant$
+
+  $= \startdeterminant\NC\frac{n(n + 1)}{2} \NC n + 1 \NC 1 \NR\NC \frac{n(n +
+    1)(2n + 1)}{6} \NC 2n - 1 \NC \frac{2n + 1}{3} \NR\NC \left\{\frac{n(n +
+    1)}{2}\right\}^2 \NC 3n + 2 \NC \frac{n(n + 1)}{2}\NR\stopdeterminant$
+
+  If we take $\frac{n(n + 1)}{2}$ common from first column then first
+  and third column become same. Thus, $\sum_{r = 1}^n \Delta_r = 0$.
+\item $\displaystyle\sum_{r = 1}^n 2^{r - 1} = 1 + 2 + \ldots + 2^{n - 1} = \frac{2^n -
+  1}{2 - 1} = 2^n - 1$
+
+  $\displaystyle\sum_{r = 1}^n 2.3^{r - 1} = 2.\frac{3^n - 1}{3 - 1} = 3^n - 1$
+
+  $\displaystyle\sum_{r = 1}^n 4.5^{r - 1} = 4.\frac{35^n - 1}{5 - 1} = 5^n - 1$
+
+  Thus, we see that first row and third rows are equal leading the sum of
+  the determinants to zero.
+\item $\Delta = \startdeterminant\NC 2x - 1 \NC 2x - 3 \NC x^2 - 4x + 4 \NR\NC 2x - 3 \NC
+  2x - 5 \NC x^2 - 6x + 9 \NR\NC 2x -5 \NC 2x -7 \NC x^2 - 8x + 16\NR\stopdeterminant[C_1
+    \rightarrow C_1 - C_1; C_2\rightarrow C_2 - C_3]$
+
+  $= \startdeterminant\NC 2x - 1 \NC 2x - 3 \NC x^2 \NR\NC 2x - 3 \NC 2x - 5 \NC x^2 \NR\NC
+  2x - 5 \NC 2x - 7 \NC x^2\NR\stopdeterminant + \startdeterminant\NC2x - 1 \NC 2x - 3
+  \NC -4x \NR\NC 2x - 3 \NC 2x - 5 \NC -6x \NR\NC 2x - 5 \NC 2x - 7 \NC -8x\NR\stopdeterminant +
+  \startdeterminant\NC2x - 1 \NC 2x - 3 \NC 4 \NR\NC 2x - 3 \NC 2x - 5 \NC 9 \NR\NC 2x - 5 \NC 2x -
+    7 \NC 16\NR\stopdeterminant$
+
+  Clearly, if we perform $R_1\rightarrow R_1- R_2; R_2\rightarrow
+  R_2 - R_3$ will make $R_1$ and $R_3$ same in the first
+  determinant.
+
+  This is also true for second determinant.
+
+  $= \startdeterminant\NC2 \NC 2 \NC -5 \NR\NC 2 \NC 2 \NC -7 \NR\NC 2x - 5 \NC 2x -
+  7 \NC 16\NR\stopdeterminant$
+
+  Clearly, the determinant is independent of $x$.
+\item $\Delta = \startdeterminant\NC2 \NC 1 + i \NC 3 \NR\NC 1 - i \NC
+  0 \NC 2 + i \NR\NC 3 \NC 2 - i \NC 1\NR\stopdeterminant$
+
+  Taking complex conjugate and exchanging rows into corresponding columns
+
+  $\overline{\Delta} = \startdeterminant\NC2 \NC 1 + i \NC 3 \NR\NC 1 - i \NC
+  0 \NC 2 + i \NR\NC 3 \NC 2 - i \NC 1\NR\stopdeterminant = \Delta$
+
+  Since $\overline{\Delta} = \Delta,$ the determinant is purely real.
+\item $\Delta = \startdeterminant\NC x - 3 \NC 2x \NC 2 \NR\NC 3x + 2 \NC x \NC 1 \NR\NC 5x + 1
+  \NC 5x \NC 5\NR\stopdeterminant + \startdeterminant\NC x - 3 \NC 1 \NC 2 \NR\NC 3x + 2 \NC 2 \NC 1 \NR\NC
+  5x + 1 \NC 4 \NC 5\NR\stopdeterminant$
+
+  If we take out $x$ common from second column of first determinant
+  then second and third columns are same, making it zero. Now expandng
+  second determinant
+
+  $= \startdeterminant\NC x \NC 1 \NC 2 \NR\NC 3x \NC 2 \NC 1 \NR\NC 5x \NC 4 \NC 5
+  \NR\stopdeterminant +$ a determinant of constants(say $k$)
+
+  $= x \startdeterminant\NC0 \NC 1 \NC 2 \NR\NC 1 \NC 2 \NC 1 \NR\NC 1 \NC 4 \NC 5\NR\stopdeterminant
+  [C_1\rightarrow C_1 - C_2] + k$
+
+  $= x \startdeterminant\NC0 \NC 1 \NC 2 \NR\NC 1 \NC 2 \NC 1 \NR\NC 0 \NC 2 \NC 4\NR\stopdeterminant
+  [R_3\rightarrow R_3 - R_2] + k$
+
+  $= x\startdeterminant\NC0 \NC 1 \NC 2 \NR\NC 1 \NC 2 \NC 1 \NR\NC 0 \NC 0 \NC 0\NR\stopdeterminant
+  [C_3\rightarrow C_3 - 2C_1] + k$
+
+  $= k$.
+\item $\Delta = \startdeterminant\NC a^n - x \NC a^{n+ 1} - x \NC a^{n + 2} - x \NR\NC
+  a^{n + 3} - a^n \NC a^{n + 4} - a^{n + 1} \NC a^{n + 5} - a^{n + 2} \NR\NC a^{n + 6} - a^{n + 3} \NC
+  a^{n + 7} - a^{n + 4} \NC a^{n + 8} - a^{n + 5}\NR\stopdeterminant[R_2\rightarrow R_2 - R_1;
+    R_3\rightarrow R_3 - R_2]$
+
+  $=a^{n(n + 3)}\startdeterminant\NC a^n - x \NC a^{n + 1} - x \NC a^{n + 2} - x \NR\NC a^{3} -
+  1 \NC a^4 - a \NC a^5 - a^2 \NR\NC a^{3} - 1 \NC a^4 - a \NC a^5 - a^2\NR\stopdeterminant = 0$
+
+  Since second and third rows are same, the edterminant is zero.
+\item $\Delta = \displaystyle\sum_{r = 2}^n (-2)^r \startdeterminant\NC C_r^^{n- 2} \NC C_{r - 1}^^{n - 2}
+  \NC C_r^^{n - 2} \NR\NC 0 \NC 1 \NC 1 \NR\NC 0 \NC -1 \NC 9\NR\stopdeterminant[C_1\rightarrow C_1 + 2C_2 +
+    C_3]$
+
+  $= \sum_{r = 0}^n (-2)^rC_r^^n - (C_0^^n -2C_1^^n)$
+
+  $= 2n - 1 + (-1)^n$.
+\item Performing $R_1\rightarrow aR_1, R_2\rightarrow bR_2, R_3\rightarrow
+  cR_3$ and then taking out $abc$ out from first two columns,
+
+  $\Delta = abc\startdeterminant\NC bc \NC 1 \NC a(b + c) \NR\NC ca \NC 1 \NC b(c + a)
+  \NR\NC ab \NC 1 \NC c(a + b)\NR\stopdeterminant$
+
+  Performing $C_3\rightarrow C_3 + C_1$ and then taking $ab + bc + ca$ out
+
+  $= abc(ab + bc + ca)\startdeterminant\NC bc \NC 1 \NC 1 \NR\NC ca \NC 1 \NC 1 \NR\NC ab \NC
+  1 \NC 1\NR\stopdeterminant$
+
+  Since last two columns are same, the determinant is zero.
+\item Putting $b = c$, we see that the determinant reduces to $0$. Similarly, $c = a$ or $a = b$ or $a = d$
+  or $b = d$ or $c = d$ also reduces the determinant to zero.
+
+  We also see that the degree of polynomial of the determinant is six, and thus,
+
+  $\startdeterminant\NC  b + c - a - d \NC bc - ad \NC bc(a + d) - ad(b + d)\NR\NC c + a - b - d \NC ca - bd
+  \NC ca(b + d) - bd(c + a)\NR\NC  a + b - c - d \NC ab - cd \NC ab(c + d) - cd(a + b)\NR\stopdeterminant =
+  k(b - c)(c - a)(a - b)(a - d)(b - d)(c - d)$
+
+  Putting $a = 0, b = 1, c = 2, d = 3$ we evaluate $k = -2$, and thus, we have proven the desired equality.
+\item Putting $b = c$, we see that the determinant reduces to zero. Similarly, $c = a$ or $a = b$ also
+  reduced the determinant to zero. Also, putting $a = -b - c$ or $ab = -bc - ca$ makes the determinant zero.
+
+  We also see that the degree of polynomial of the determinant is six, and thus,
+
+  $\startdeterminant\NC  bc - a^2 \NC ca - b^2 \NC ab - c^2\NR\NC ca + ab - bc \NC bc + ab - ca \NC bc + ca
+  - ab\NR\NC (a + b)(a + c) \NC (b + c)(b + a) \NC (c + a)(c + b)\NR\stopdeterminant= k(b - c)(c - a)(a -
+  b)(a + b + c)(ab + bc + ca)$
+
+  Putting $a = 0, b = 1, c = 2$ we evaluate $k = 3$.
+\item Putting $l = m$ we see that the determinant reduces to zero. Similarly $l = n, n = p, m = n, m = p, n
+  = p$ also reduce the determinant to zero.
+
+  We also see that the degree of polynomial of the determinant is six, and thus,
+
+  $\startdeterminant\NC 1 \NC (m + n - l - p)^2 \NC (m + n - l - p)^4\NR\NC 1 \NC (n + l - m - p)^2 \NC (n +
+  l - m - p)^4\NR\NC 1 \NC (l + m - n - p)^2 \NC (l + m - n - p)^4\NR\stopdeterminant = k(l - m)(l - n)(l -
+  p)(m - n)(m -p)(n - p)$
+
+  Putting $l = 0, m = 1, n = 2, p = 3$ we find that $k = 64$, and hence we prove the required equality.
+\item $\frac{d}{dt}\startdeterminant\NC  u_1 \NC v_1 \NC w_1\NR\NC u_2 \NC v_2 \NC w_2\NR\NC u_3 \NC v_3 \NC
+  w_3\NR\stopdeterminant = \startdeterminant\NC u_2\NC v_2\NC w_2\NR\NC u_2\NC v_2\NC w_2\NR\NC u_3\NC
+  v_3\NC w_3\NR\stopdeterminant \\ + \startdeterminant\NC u_1\NC v_1\NC w_1\NR\NC u_3\NC v_3\NC w_3\NR\NC
+  u_3\NC v_3\NC w_3\NR\stopdeterminant + \startdeterminant\NC u_1\NC v_1\NC w_1\NR\NC u_2\NC v_2\NC
+  w_2\NR\NC u_4\NC v_4\NC w_4\NR\stopdeterminant$
+
+  First two determinants are zero because two rows are identical. Hence,
+
+  $\frac{d}{dt}\startdeterminant\NC  u_1 \NC v_1 \NC w_1\NR\NC u_2 \NC v_2 \NC w_2\NR\NC u_3 \NC v_3 \NC
+  w_3\NR\stopdeterminant = \startdeterminant\NC  u_1 \NC v_1 \NC w_1\NR\NC u_2\NC v_2 \NC w_2\NR\NC u_4 \NC
+  v_4 \NC w_4\NR\stopdeterminant$.
+\item Given $Y = sX \Rightarrow Y_1 = s_1X + sX_1 \Rightarrow Y_2 = s_2X + s_1X_1 + s_1X_1 + sX_2 = sX_2 +
+  2s_1X_1 + s_2X$, and similarly $Z = tX \Rightarrow Z_1 = t_1X + tX_1 \Rightarrow Z_2 = tX_2 + 2t_1X_1 +
+  t_2X$.
+
+  L.H.S.\ $= \startdeterminant\NC  X \NC Y \NC Z\NR\NC X_1\NC Y_1 \NC Z_1\NR\NC X_2 \NC Y_2 \NC
+  Z_2\NR\stopdeterminant = \startdeterminant\NC X\NC sX\NC tX\NR\NC X_1\NC s_1X + sX_1\NC t_1X + tX_1\NR\NC
+  X_2\NC s_2X + 2s_1X_1 + sX_2\NC t_2X + 2t_1X_1 + tX_2\NR\stopdeterminant$
+
+  $=X\startdeterminant\NC 1\NC s\NC t\NR\NC X_1\NC s_1X + sX_1\NC t_1X + tX_1\NR\NC
+  X_2\NC s_2X + 2s_1X_1 + sX_2\NC t_2X + 2t_1X_1 + tX_2\NR\stopdeterminant$
+
+  $= X\startdeterminant\NC 1\NC s\NC t\NR\NC 0\NC s_1X\NC t_1X\NR\NC 0\NC s_2X + 2s_1X_1\NC t_2X +
+  2t_1x_1\NR\stopdeterminant[R_2\rightarrow R_2 - R_1X_1; R_3\rightarrow R_3 - R_1X_2]$
+
+  $= X^3\startdeterminant\NC  s_1 \NC t_1\NR\NC s_2 \NC t_2\NR\stopdeterminant$.
+\item Let $F(x) = \startdeterminant\NC  f(x) \NC g(x) \NC h(x)\NR\NC f(\alpha) \NC
+  g(\alpha) \NC h(\alpha)\NR\NC  f(\beta) \NC g(\beta) \NC h(\beta)\NR\stopdeterminant$
+
+  Clearly, $F(\alpha) = 0$ because first two rows become equal. $F'(x) = \startdeterminant\NC  f'(x) \NC g'(x)
+  \NC h'(x)\NR\NC f(\alpha) \NC
+  g(\alpha) \NC h(\alpha)\NR\NC  f(\beta) \NC g(\beta) \NC h(\beta)\NR\stopdeterminant$
+
+  If $F'(x) = 0$ then $F'(\alpha) = 0$ making $\alpha$ a repeated root.
+
+  $F(\beta) = 0$ because first and last rows are identical. Thus, $(x - \alpha)^2(x - \beta)$ is a factor of
+  $F(x)$ so the required condition is $\startdeterminant\NC  f'(x) \NC g'(x)
+  \NC h'(x)\NR\NC f(\alpha) \NC
+  g(\alpha) \NC h(\alpha)\NR\NC  f(\beta) \NC g(\beta) \NC h(\beta)\NR\stopdeterminant = 0$
+\item We see that $\frac{d\Delta}{dx} = 0$ and hence it is a constant, independent of $x$.
+\item Applying $C_1\rightarrow C_1 - 2\sin xC_3; C_2\rightarrow C_2 + 2\cos xC_3$
+
+  $\Delta = \startdeterminant\NC 2\NC 0\NC -\sin x\NR\NC 0\NC 2\NC \cos x\NR\NC \sin x\NC -\cos x\NC
+  0\NR\stopdeterminant = 2\sin^2x + 2\cos^2x = 2$.
+
+  $\Rightarrow f'(x) = 0$.
+
+  $\therefore \displaystyle\int_0^{\frac{\pi}{2}}[f(x) + f'(x)]dx = \int_0^{\frac{\pi}{2}}2dx = \pi$.
+\item L.H.S.\ $=\startdeterminant\NC a_1\NC b_1\NC 0\NR\NC a_2\NC b_2\NC 0\NR\NC a_3\NC b_3\NC
+  0\NR\stopdeterminant\startdeterminant\NC \alpha_1\NC \beta_1\NC 0\NR\NC \alpha_2\NC \beta_2\NC 0\NR\NC
+  \alpha_3\NC \beta_3\NC 0\NR\stopdeterminant = 0$.
+\item Let $\vec{V_r} = l_r\vec{i} + m_r\vec{j} + n_r\vec{k}$. Then for $r = 1$ let $\vec{V_1} = \pm\vec{i}$,
+  for $r = 2, \vec{V_2} = \pm\vec{j},$ and $r = 3, \vec{V_3}= \pm\vec{k}$.
+
+  Thus, we get determinant as $\startdeterminant\NC1\NC 0\NC 0\NR\NC 0 \NC 1\NC 0\NR\NC 0\NC 0\NC
+  1\NR\stopdeterminant$ or $\startdeterminant\NC-1\NC 0\NC 0\NR\NC 0 \NC -1\NC 0\NR\NC 0\NC 0\NC
+  -1\NR\stopdeterminant$
+
+  Hence, $\Delta = \pm 1$.
+\item Let $A = \startbmatrix\NC a_1\NC b_1\NC c_1\NR\NC a_2\NC b_2\NC c_2\NR\NC a_3\NC b_3\NC
+  c_3\NR\stopbmatrix$
+
+  Cofactor matrix $C = \startbmatrix\NC A_1\NC B_1\NC C_1\NR\NC A_2\NC B_2\NC C_2\NR\NC A_3\NC B_3\NC
+  C_3\NR\stopbmatrix$
+
+  $\adj(A) = C^{T}$ but $A(\adj(A)) = |A|I \Rightarrow |A||\adj(A)| = |A|^3 \Rightarrow |\adj(A)| = |A|^2$
+
+  $\therefore |C| = |A|^2 \Rightarrow \startbmatrix\NC A_1\NC B_1\NC C_1\NR\NC A_2\NC B_2\NC C_2\NR\NC
+  A_3\NC B_3\NC C_3\NR\stopbmatrix$
+
+  We can proceed similarly for second level of cofactors whose determinant will be $\Delta^4$.
+
+  Thus, $\startdeterminant\NC  A_1 \NC B_1 \NC C_1\NR\NC A_2 \NC B_2 \NC C_2\NR\NC A_3 \NC B_3 \NC
+  C_3\NR\stopdeterminant\startdeterminant\NC \alpha_1 \NC \beta_1 \NC \gamma_1\NR\NC \alpha_2 \NC \beta_2
+  \NC \gamma_2\NR\NC \alpha_3 \NC \beta_3 \NC \gamma_3\NR\stopdeterminant = \Delta^6$.
+\item Using Cramer's rule, $\Delta = \startdeterminant\NC 1\NC 2\NC 3\NR\NC 2\NC 4\NC 1\NR\NC 3\NC 2\NC
+  9\NR\stopdeterminant = 34 - 20 - 24 = -20$
+
+  $\Delta_x = \startdeterminant\NC 17\NC 4\NC 1\NR\NC 2\NC 2\NC 9\NR\NC 1\NC 6\NC 3\NR\stopdeterminant = 204
+  - 302 + 78 = -20$
+
+  $\Delta_y = \startdeterminant\NC 1\NC 6\NC 3\NR\NC 2\NC 17\NC 1\NR\NC 3\NC 2\NC 9\NR\stopdeterminant = 151
+  - 90 - 141 = -80$
+
+  $\Delta_z = \startdeterminant\NC1\NC2\NC6\NR\NC 2\NC 4\NC 17\NR\NC 3\NC 2\NC 2\NR\stopdeterminant = -26 +
+  94 - 48 = 20$
+
+  $\Rightarrow x = \frac{\Delta_x}{\Delta} = 1, y = \frac{\Delta_y}{\Delta} = 4, z = \frac{\Delta_z}{\Delta}
+  = -1$.
+\item $\Delta = \startdeterminant\NC a\NC b\NC c\NR\NC a^2\NC b^2\NC c^2\NR\NC a^3\NC b^3\NC
+  c^3\NR\stopdeterminant = abc(a - b)(b - c)(c - a)$.
+
+  Similarly, $\Delta_x = dbc(d - b)(b - c)(c - d)$, $\Delta_y = acd(a - d)(d - c)(c - a)$, and $\Delta_z =
+  abd(a - b)(b - d)(d - a)$
+
+  $\Rightarrow x = \frac{d(d - b)(c - d)}{a(a - b)(c - a)}, y = \frac{d(a - d)(d - c)}{b(a - b)(b - c)}, z =
+  \frac{d(b - d)(d - a)}{c(b - c)(c - a)}$.
+
+  If only two of $a, b, c$ are zero the given system of equations has no solution. If $a = b = c$ and any of
+  $a, b, c$ is zero then the system of equations has infinite number of solutions.
+\item Given $f(1) = 0 \Rightarrow a + b + c = 0; f(2) = -2 \Rightarrow 4a + 2b + c = -2; f(3) = -6
+  \Rightarrow 9a + 3b + c = -6$
+
+  $\Delta = \startdeterminant\NC 1\NC 1\NC 1\NR\NC 4\NC 2\NC 1\NR\NC 9\NC 3\NC 1\NR\stopdeterminant = -1 + 5
+  - 6 = -2$
+
+  $\Delta_a = \startdeterminant\NC 0\NC 1\NC 1\NR\NC -2\NC 2\NC 1\NR\NC -6\NC 3\NC 1\NR\stopdeterminant = -4
+  + 6 = 2$
+
+  $\Delta_b = \startdeterminant\NC 1\NC 0\NC 1\NR\NC 4\NC -2\NC 1\NR\NC 9\NC -6\NC 1\NR\stopdeterminant = 4
+  - 6 = -2$
+
+  $\Delta_c = \startdeterminant\NC 1\NC 1\NC 0\NR\NC 4\NC 2\NC -2\NR\NC 9\NC 3\NC -6\NR\stopdeterminant = 0$
+
+  $\Rightarrow a = -1, b = 1, c = 0$.
+\item $f(0) = 6 \Rightarrow c = 6, f(2) = 11\Rightarrow 4a + 2b + c = 11, f(-3) = 6 \Rightarrow 9a - 3b + c
+  = 6$.
+
+  $\Delta = \startdeterminant\NC 0\NC 0\NC 1\NR 4\NC 2\NC 1\NR\NC 9\NC -3\NC 1\NR\stopdeterminant = -30$
+
+  $\Delta_a = \startdeterminant\NC 6\NC 0\NC 1\NR\NC 11\NC 2\NC 1\NR\NC 0\NC 6\NC 1\NR\stopdeterminant =
+  -15$
+
+  $\Delta_b =\startdeterminant\NC 0\NC 6\NC 1\NR\NC 4\NC 11\NC 1\NR\NC 9\NC 6\NC 1\NR\stopdeterminant = -45$
+
+  $\Rightarrow a = \frac{1}{2}, b = \frac{3}{2}, c = 6\Rightarrow f(1) = a + b + c = 8$.
 \stopitemize
