@@ -1138,4 +1138,473 @@
   \cos\gamma \NC 0 \NR\stopdeterminant$
 
   $=0.0 = 0$.
+\item $\Delta = \startdeterminant\NC3 \NC m \NR\NC 2 \NC -5\NR\stopdeterminant = -(15 + 2m)$
+
+  {\bf Case I:} When $\Delta = 0, m = \frac{-15}{2}$
+
+  $\Delta_1 = \startdeterminant\NC m \NC m \NR\NC 20 \NC -5\NR\stopdeterminant = -25m\neq 0$
+
+  Hence, given system of equation has no solution when $m = \frac{-15}{2}$
+
+  {\bf Case II:} When $m \neq \frac{-15}{2}$
+
+  $\Delta_2 = \startdeterminant\NC2 \NC m \NR\NC 2 \NC 20\NR\stopdeterminant = 2(30 - m)$
+
+  $x = \frac{\Delta_1}{\Delta} = \frac{25m}{15 + 2m} > 0[\because x >0]$
+
+  $\Rightarrow -\infty < m < \frac{-15}{2}$ or $0 < m < \infty$
+
+  $y = \frac{\Delta_2}{\Delta} = \frac{2(m - 30)}{15 + 2m} > 0[\because y > 0]$
+
+  $\Rightarrow -\infty < m < \frac{-15}{2}$ or $30 < m < \infty$
+
+  Combining both we get, $-\infty < m < \frac{-15}{2}$ or $30 < m < \infty$.
+\item $\Delta = \startdeterminant\NC3 \NC -1 \NC 4 \NR\NC 1 \NC 2 \NC -3 \NR\NC 6 \NC 5 \NC
+  \lambda\NR\stopdeterminant = 7(\lambda + 5)$
+
+  {\bf Case I:} When $\lambda \neq 5 \Rightarrow \Delta \neq 0$ which
+  means the system of equations has unique solution.
+
+  {\bf Case II:} When $\lambda = -5 \Rightarrow \Delta = 0$
+
+  Also, $\Delta_1 = \startdeterminant\NC3 \NC -1 \NC 4 \NR\NC -2 \NC 2 \NC -3 \NR\NC 3 \NC 5
+  \NC -5\NR\stopdeterminant = 0, \Delta_2 = \startdeterminant\NC3 \NC 3 \NC 4 \NR\NC 1 \NC -2 \NC -3
+  \NR\NC 6 \NC -3 \NC -5\NR\stopdeterminant = 0$
+
+  $\Delta_3 = \startdeterminant\NC3 \NC -1 \NC 3 \NR\NC 1 \NC 2 \NC -2 \NR\NC 6 \NC 5 \NC
+  -3\NR\stopdeterminant = 0$
+
+  Since all the determinants are zero, in this case we have infinite solutions for given system of equations.
+
+  Putting the value of $\lambda$ the set of equation becomes
+
+  $3x - y + 4z = 3; x + 2y - 3z = -2; 6x + 5y - 5z = -3$
+
+  From first two equations we get, $z = \frac{4 - 7x}{5}$
+
+  Substituting this in first we get $y = \frac{1 - 13x}{5}$
+
+  Thus the set of solutions is $x = t, y = \frac{1 - 13t}{5}, z = \frac{4 - 7t}{5}$.
+\item $\Delta = \startdeterminant\NC2 \NC p \NC 6 \NR\NC 1 \NC 2 \NC q \NR\NC 1 \NC 1 \NC
+  3\NR\stopdeterminant = (p - 2)(q - 3)$
+
+  $\Delta_1 = \startdeterminant\NC8 \NC p \NC 8 \NR\NC 5 \NC 2 \NC q \NR\NC 4 \NC 1 \NC
+  3\NR\stopdeterminant = (p - 2)(4q - 15)$
+
+  $\Delta_2 = \startdeterminant\NC 2 \NC 8 \NC 6 \NR\NC 1 \NC 5 \NC 1 \NR\NC 1 \NC 4 \NC
+  3\NR\stopdeterminant = 0$
+
+  $\Delta_3 = \startdeterminant\NC2 \NC p \NC 8 \NR\NC 1 \NC 2 \NC 5 \NR\NC 1 \NC 1 \NC
+  4\NR\stopdeterminant = p -2$
+
+  {\bf Case I:} When $\Delta \neq 0$ i.e. $p \neq 2, q\neq 3$, given system of equations has unique
+  solution.
+
+  {\bf Case II:} When $\Delta = 0, p = 2,$ or $q = 3$
+
+  When $p = 2 \Rightarrow \Delta_1 = 0, \Delta_2 = 0, \Delta_3 = 0$
+
+  Thus, given system of equations has inifinite solutions.
+
+  When $q = 3\Rightarrow \Delta_1\neq 0$
+
+  Thus, given system of equations has no solutions.
+\item For non-trivial solution
+
+  $\Delta = 0$ or $\startdeterminant\NC\lambda \NC \sin\alpha \NC
+  \cos\alpha \NR\NC 1 \NC \cos\alpha \NC \sin\alpha \NR\NC -1 \NC \sin\alpha \NC \cos\alpha
+  \NR\stopdeterminant = 0$
+
+  $\Rightarrow \lambda = \sin 2\alpha + \cos 2\alpha$
+
+  If $\lambda = 1, \sin 2\alpha + \cos 2\alpha = 1$
+
+  $\Rightarrow \sin 2\alpha = 1 - \cos 2\alpha = 2\sin^2\alpha$
+
+  $\Rightarrow 2\sin\alpha(\cos\alpha - \sin\alpha) = 0$
+
+  $\therefore \sin\alpha = 0$ or $\tan\alpha = 1$
+
+  $\therefore \alpha = n\pi$ or $\alpha = n\pi + \frac{\pi}{4}, n\in I$.
+\item $\Delta = (a + b + c)\startdeterminant\NC 1 \NC b + c \NC a^2 \NR\NC 1 \NC c + a \NC b^2 \NR\NC 1
+  \NC a + b \NC c^2\NR\stopdeterminant[C_1\rightarrow C_1 + C_2]$
+
+  $=(a + b + c)\startdeterminant\NC 1 \NC b + a \NC a^2 \NR\NC 0 \NC a - b \NC b^2 - a^2
+  \NR\NC 0 \NC a - c \NC c^2 - a^2\NR\stopdeterminant[R_3\rightarrow R_3 - R_1; R_2\rightarrow R_2 - R_1]$
+
+  $= (a + b + c)[(a - b)(c^2 - a^2) - (a - c)(b^2 - a^2)] = (a + b + c)(a - b)(c - a)(c + a - b - a)$
+
+  $= -(a + b + c)(a - b)(b - c)(c - a)$.
+\item $\Delta = \startdeterminant\NC\sqrt{13} + \sqrt{3} \NC 2\sqrt{5} \NC \sqrt{5}
+  \NR\NC \sqrt{15} - \sqrt{6} \NC 5 - 2\sqrt{10}  \NC 0 \NR\NC 3 - \sqrt{15} \NC \sqrt{15}
+  - 10 \NC 0\NR\stopdeterminant[R_2\rightarrow R_2 - \sqrt{2}R_1;R_3\rightarrow
+    R_3 - \sqrt{5}R_1]$
+
+  $= 15\sqrt{2} - 25\sqrt{3}$.
+\item $\Delta = \startdeterminant\NC x \NC x(x^2 + 1) \NC x \NR\NC y \NC y(y^2 + 1) \NC
+  y \NR\NC z \NC z(z^2 + 1) \NC z\NR\stopdeterminant + \startdeterminant\NC x \NC x(x^2 + 1) \NC 1
+  \NR\NC y \NC y(y^2 + 1) \NC 1 \NR\NC z \NC z(z^2 + 1) \NC 1\NR\stopdeterminant$
+
+  Observe that first and third columns of first determinant are identical.
+
+  $\Rightarrow \Delta = \startdeterminant\NC x \NC x(x^2 + 1) \NC 1
+  \NR\NC y \NC y(y^2 + 1) \NC 1 \NR\NC z \NC z(z^2 + 1) \NC 1\NR\stopdeterminant$
+
+  $= \startdeterminant\NC x \NC x^3 \NC 1 \NR\NC y \NC y^3 \NC 1 \NR\NC z \NC z^3 \NC
+  1\NR\stopdeterminant + \startdeterminant\NC x \NC x^3 \NC x \NR\NC y \NC y^3 \NC y \NR\NC z \NC z^3 \NC
+  z\NR\stopdeterminant$
+
+  Again second and third columns are identical in second determinant.
+
+  $\Delta = \startdeterminant\NC x \NC x^3 \NC 1 \NR\NC y \NC y^3 \NC 1 \NR\NC z \NC z^3 \NC
+  1\NR\stopdeterminant$
+
+  $= (x - y)(y - z)(z - x)(x + y + z)$.
+\item Let $a$ and $d$ be the first term and common difference of
+  corresponding A.P.
+
+  $\frac{1}{x} = a + (l - 1)d, \frac{1}{y} = a + (2m - 1)d,
+  \frac{1}{z} = a + (3n - 1)d$
+
+  $\Delta = \frac{1}{xyz}\startdeterminant\NC \frac{1}{x} \NC \frac{1}{y} \NC \frac{1}{z} \NR\NC l \NC 2m
+  \NC 3n \NR\NC 1 \NC 1 \NC 1\NR\stopdeterminant$
+
+  $= \frac{1}{xyz}\startdeterminant\NC a + (l - 1)d \NC a + (2m - 1)d \NC a +
+  (3n - 1)d\NR\NC l \NC 2m \NC 3n \NR\NC 1 \NC 1 \NC 1\NR\stopdeterminant$
+
+  $= \frac{1}{xyz}\startdeterminant\NC ld - d \NC 2md - 2d \NC 3nd - 3d \NR\NC l \NC
+  2m \NC 3n \NR\NC 1 \NC 1 \NC 1\NR\stopdeterminant[R_1\rightarrow R_1 - aR_3]$
+
+  $= \frac{1}{xyz}\startdeterminant\NC 0 \NC 0 \NC 0 \NR\NC l\NC 2m \NC 3n \NR\NC 1 \NC 1 \NC
+  1\NR\stopdeterminant[R_1\rightarrow R_1 - (R_2 - 1)d]$
+
+  $=0$.
+\item $\Delta = \startdeterminant\NC 1 \NC a^2 \NC a^3 \NR\NC 0 \NC b^2 - a^2 \NC b^3 - a^3
+  \NR\NC 0 \NC c^2 -a^2\NC c^3 - a^3\NR\stopdeterminant[R_2 \rightarrow R_2 - R_1; R_3
+    \rightarrow R_3 - R_1]$
+
+  $= (b^2 - a^2)(c^3 - a^3) - (c^2 - a^2)(b^3 - a^3)$
+
+  $= (b - a)(c - a)[(b + a)(c^2 + ac + a^2) - (c + a)(b^2 + ab + a^2)]$
+
+  $= (b - a)(c - a)(bc^2 + abc + a^2b + ac^2 + a^2c + a^3 - b^2c - abc - a^2c - ab^2 - a^2b - a^3)$
+
+  $= (b - a)(c - a)(bc^2 + ac^2 - b^2c - ab^2) = (b - a)(c - a)[bc(c - b) + a(c^2 - b^2)]$
+
+  $= (b - a)(c - a)(c - b)(ab + bc + ca)$
+
+  We know that $\startdeterminant\NC 1 \NC a \NC a^2 \NR\NC 1 \NC b \NC b^2
+  \NR\NC 1 \NC c \NC c^2\NR\stopdeterminant = (b - a)(c - a)(c - b)$
+
+  Hence, L.H.S.\ $=$ R.H.S.
+\item $\Delta = \startdeterminant\NC b^2 + c^2 \NC a^2 \NC bc \NR\NC c^2 + a^2 \NC b^2 \NC
+  ca \NR\NC a^2 + b^2 \NC c^2 \NC ab\NR\stopdeterminant[C_1\rightarrow -2C_3]$
+
+  $= (a^2 + b^2 + c^2)\startdeterminant\NC 1 \NC a^2 \NC bc \NR\NC 1 \NC b^2 \NC ca \NR\NC 1
+  \NC c^2 \NC ab\NR\stopdeterminant[C_1\rightarrow C_1 + C_2 + C_3]$
+
+  We know that $\startdeterminant\NC1 \NC a^2 \NC bc \NR\NC 1 \NC b^2 \NC ca \NR\NC 1
+  \NC c^2 \NC ab\NR\stopdeterminant = (a - b)(b - c)(c - a)(a + b + c)$
+
+  $\Delta = (a^2 + b^2 + c^2)(a + b + c)(a - b)(b - c)(c - a)$.
+\item Perform $C_2\rightarrow C_2 - C_1$, take out $-1$ common then $C_1\rightarrow C_1 + C_2 + 2C_3$, take
+  out $x^2 + y^2 + z^2$ commong then $R_3\rightarrow R_3 - R_2$ and $R_2\rightarrow R_2 - R_1$ will give two
+  zeroes in first column which upon expansion gives the result.
+\item Let $a_1b_1c_1 = 100\times a_1 + 10\times b_1 + c_1 = pk$, where
+  $p\in I$
+
+  $a_2b_2c_2 = 100\times a_2 + 10\times b_2 + c_2 = qk$, where
+  $q\in I$
+
+  $a_3b_3c_3 = 100\times a_3 + 10\times b_3 + c_3 = rk$, where
+  $r\in I$
+
+  $\Delta = \startdeterminant\NC a_1 \NC b_1 \NC pk \NR\NC a_2 \NC b_2 \NC qk \NR\NC a_3 \NC
+  b_3 \NC rk\NR\stopdeterminant[C_3\rightarrow 100C_1 + 10C_2 + C_3]$
+
+  Thus, given determinant is divisible by $k$.
+\item $\Delta = \startdeterminant\NC a_1 \NC a_1x + b_1 \NC c_1 \NR\NC a_2 \NC a_2x + b_2
+  \NC c_2 \NR\NC a_3 \NC a_3x + b_3 \NC c_3\NR\stopdeterminant + \startdeterminant\NC b_1x \NC
+  a_1x + b_1 \NC c_1 \NR\NC b_2x \NC a_2x + b_2 \NC c_2 \NR\NC b_3x \NC a_3x + b_3 \NC
+  c_3\NR\stopdeterminant$
+
+  $= \startdeterminant\NC a_1 \NC a_1x + b_1 \NC c_1 \NR\NC a_2 \NC a_2x + b_2
+  \NC c_2 \NR\NC a_3 \NC a_3x + b_3 \NC c_3\NR\stopdeterminant + x\startdeterminant\NC b_1 \NC
+  a_1x + b_1 \NC c_1 \NR\NC b_2 \NC a_2x + b_2 \NC c_2 \NR\NC b_3 \NC a_3x + b_3 \NC
+  c_3\NR\stopdeterminant$
+
+  $= x\startdeterminant\NC a_1 \NC a_1 \NC c_1 \NR\NC a_2 \NC a_2 \NC c_2 \NR\NC a_3 \NC a_3
+  \NC c_3\NR\stopdeterminant + \startdeterminant\NC a_1 \NC b_1 \NC c_1 \NR\NC a_2 \NC b_2 \NC c_3 \NR\NC
+  a_3 \NC b_3 \NC c_3\NR\stopdeterminant + \\ x\startdeterminant\NC b_1 \NC a_1x \NC c_1 \NR\NC b_2
+  \NC a_2x \NC c_2 \NR\NC b_3 \NC a_3x \NC c_3 \NR\stopdeterminant + \startdeterminant\NC b_1 \NC b_1 \NC
+  c_1 \NR\NC b_2 \NC b_2 \NC c_2 \NR\NC b_3 \NC b_3 \NC c_3\NR\stopdeterminant$
+
+  Clearly, first and last determinants are zero as they have identical columns.
+
+  $= \startdeterminant\NC a_1 \NC b_1 \NC c_1 \NR\NC a_2 \NC b_2 \NC c_3 \NR\NC a_3 \NC b_3 \NC
+  c_3\NR\stopdeterminant + x^2\startdeterminant\NC b_1 \NC a_1 \NC c_1 \NR\NC b_2 \NC a_2 \NC c_2 \NR\NC
+  b_3 \NC a_3 \NC c_3\NR\stopdeterminant$
+
+  Exchanging first two columns of second determinant
+
+  $= (1 - x^2)\startdeterminant\NC a_1 \NC b_1 \NC c_1 \NR\NC a_2 \NC b_2 \NC c_2 \NR\NC a_3
+  \NC b_3 \NC c_3\NR\stopdeterminant$.
+\item $\Delta = abc\startdeterminant\NC\frac{1}{a} + 1 \NC \frac{1}{a}
+  \NC \frac{1}{a} \NR\NC \frac{1}{b} \NC \frac{1}{b} + 1 \NC \frac{1}{b} \NR\NC
+  \frac{1}{c} \NC \frac{1}{c} \NC \frac{1}{c} + 1\NR\stopdeterminant$
+
+  $= abc\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + 1\right)
+  \startdeterminant\NC 1 \NC 1 \NC 1 \NR\NC \frac{1}{b} \NC \frac{1}{b} + 1 \NC \frac{1}{b}
+  \NR\NC \frac{1}{c} \NC \frac{1}{c} \NC \frac{1}{c} + 1\NR\stopdeterminant$
+
+  $= abc\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + 1\right)
+  \startdeterminant\NC1 \NC 0 \NC 0 \NR\NC \frac{1}{b} \NC 1 \NC 0 \NR\NC \frac{1}{c} \NC 0 \NC
+  1\NR\stopdeterminant[C_2 \rightarrow C_2 - C_1; C_3\rightarrow C_3 - C_1]$
+
+  $= abc\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + 1\right)$
+
+  Now since $a, b, c$ are roots of $px^3 + qx^2 + rx + s = 0$
+
+  $\therefore px^3 + qx^2 + rx + s = (x - a)(x - b)(x - c)$
+
+  Comparing coefficients, $a + b + c = \frac{-q}{p}$
+
+  $ab + bc + ca = \frac{r}{p}; abc = \frac{-s}{p}$
+
+  Thus, $abc\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + 1\right) =
+  \frac{r - s}{p}$.
+\item $\Delta = \startdeterminant\NC 1 \NC a \NC a^4 \NR\NC 0 \NC b - a \NC b^4 - a^4 \NR\NC 0 \NC
+  c - a \NC c^4 - a^4\NR\stopdeterminant[R_2\rightarrow R_2 - R_1; R_3 \rightarrow
+    R_3 - R-1]$
+
+  $= (b - a)(c^4 - a^4) - (c - a)(b^4 - a^4)$
+
+  $= (b - a)(c - a)[(c + a)(c^2 + a^2) - (b + a)(b^2 + a^2)] >
+  0\;\forall\;a<b<c$
+\item $\Delta = \startdeterminant\NC a \NC a^3 \NC a^4 \NR\NC b \NC b^3 \NC b^4 \NR\NC c \NC c^3 \NC
+  c^4\NR\stopdeterminant - \startdeterminant\NC a \NC a^3 \NC 1 \NR\NC b \NC b^3 \NC 1 \NR\NC c \NC c^3 \NC
+  1\NR\stopdeterminant$
+
+  $= abc \startdeterminant\NC 1 \NC a^2 \NC a^3 \NR\NC 1 \NC b^2 \NC b^3 \NR\NC 1 \NC c^2 \NC
+  c^3\NR\stopdeterminant - \startdeterminant\NC a \NC a^3 \NC 1 \NR\NC b \NC b^3 \NC 1 \NR\NC c \NC c^3 \NC
+  1\NR\stopdeterminant$
+
+  $= abc \startdeterminant\NC 0 \NC a^2 - b^2 \NC a^3 - b^3\NR\NC 0 \NC b^2 - c^2 \NC
+  b^3 - c^3 \NR\NC 1 \NC c^2 \NC c^3\NR\stopdeterminant - \startdeterminant\NC0 \NC a - b \NC a^3 -
+  b^3 \NR\NC 0 \NC b - c \NC b^3 - c^3 \NR\NC 1 \NC c \NC c^3\NR\stopdeterminant[R_1 \rightarrow
+    R_1 - R_2; R_2 \rightarrow R_2 -R_3]$
+
+  $\Rightarrow abc[(a^2 - b^2)(b^3 - c^3) - (b^2 - c^2)(a^3 - b^3)] - [(a -
+    b)(b^3 - c^3) - (b - c)(a^3 - b^3)] = 0$
+
+  $abc(a - b)(b - c)[(a + b)(b^2 + bc + c^2) - (b + c)(a^2 + ab + b^2)] =\NR\NC
+  (a - b)(b - c)(b^2 + bc + c^2 - a^2 - ab - b^2)$
+
+  Becasue $a, b, c$ are distinct we $a - b \neq 0; b - c \neq 0;
+  c - a\neq 0$
+
+  $abc(a + b)(b^2 + bc + c^2) - (b + c)(a^2 + ab + b^2) = (b^2 + bc +
+  c^2 - a^2 - ab - b^2)$
+
+  $abc(ab^2 + abc + ac^2 + b^3 + b^2c + bc^2 - a^2b - ab^2 - b^3 -
+  a^2c - abc - b^2c) = bc + c^2 - a^2 -ab$
+
+  $abc(ac^2 + bc^2 - a^2b - a^2c) = b(c - a) + (c^2 - a^2)$
+
+  $abc[ac(c - a) + b(c^2 - a^2)] = (c - a)(a + b + c)$
+
+  $abc(ab + bc + ca) = a + b + c$
+\item Taking $b_1, b_2, b_3$ common from columns and multiplying rows with
+  them, we get
+
+  $\Delta = \startdeterminant\NC x_1 + a_1b_1 \NC a_1b_1 \NC a_1b_1 \NR\NC a_2b_2 \NC
+  x_2 + a_2b_2 \NC a_2b_2 \NR\NC a_3b_3 \NC a_3b_3 \NC x + a_3b_3\NR\stopdeterminant$
+
+  Taking $x_1,x_2,x_3$ common from rows
+
+  $= x_1x_2x_3\startdeterminant\NC1 + \frac{a_1b_1}{x_1} \NC \frac{a_1b_1}{x_1} \NC
+  \frac{a_1b_1}{x_1} \NR\NC \frac{a_2b_2}{x_2} \NC 1 + \frac{a_2b_2}{x_2} \NC
+  \frac{a_2b_2}{x_2} \NR\NC \frac{a_3b_3}{x_3} \NC \frac{a_3b_3}{x_3} \NC 1 +
+  \frac{a_3b_3}{x_3}\NR\stopdeterminant$
+
+  $= x_1x_2x_3\left(1 + \frac{a_1b_1}{x_1} + \frac{a_2b_2}{x_2} +
+  \frac{a_3b_3}{c_3}\right) \startdeterminant\NC1 \NC 1 \NC 1 \NR\NC \frac{a_2b_2}{x_2} \NC
+  1 + \frac{a_2b_2}{x_2} \NC \frac{a_2b_2}{x_2} \NR\NC \frac{a_3b_3}{x_3} \NC
+  \frac{a_3b_3}{x_3} \NC 1 + \frac{a_3b_3}{x_3}\NR\stopdeterminant[R_1 \rightarrow
+    R_1 + R_2 + R_3]$
+
+  $= x_1x_2x_3\left(1 + \frac{a_1b_1}{x_1} + \frac{a_2b_2}{x_2} +
+  \frac{a_3b_3}{c_3}\right)\startdeterminant\NC1 \NC 0 \NC 0 \NR\NC \frac{a_2b_2}{x_2} \NC
+  1 \NC 0 \NR\NC \frac{a_3b_3}{x_3} \NC 0 \NC 1\NR\stopdeterminant[C_2\rightarrow C_2 - C_1;
+    C_3 \rightarrow C_3 - C_1]$
+
+  $= x_1x_2x_3\left(1 + \frac{a_1b_1}{x_1} + \frac{a_2b_2}{x_2} +
+  \frac{a_3b_3}{c_3}\right)$.
+\item This problem is similar to problem $90$ and can be solved similarly.
+\item $\Delta = abc\startdeterminant\NC a \NC c \NC a + c \NR\NC a + b \NC b \NC a \NR\NC b \NC
+  b + c \NC c\NR\stopdeterminant$
+
+  $= abc \startdeterminant\NC-2a \NC -2b \NC 0 \NR\NC a + b \NC b \NC a \NR\NC b \NC
+  b + c \NC c\NR\stopdeterminant[R_1 \rightarrow R_1 - R_2 - R_3]$
+
+  $= 4a^2b^2c^2$.
+\item $\Delta = \startdeterminant\NC 1 + a^2 + b^2 \NC 0 \NC -2b \NR\NC 0 \NC 1 + a^2 +
+  b^2 \NC 2a \NR\NC b(1 + a^2 + b^2) \NC -a(1 + a^2 + b^2) \NC 1 - a^2 -
+  b^2\NR\stopdeterminant[C_1\rightarrow C_1 - bC_3; C_2\rightarrow C_2 + aC_3]$
+
+  $= (1 + a^2 + b^2)^2(1 -a^2 - b^2 + 2a^2) + 2b^2(1 + a^2 + b^2)^2$
+
+  $= (1 + a^2 + b^2)^3$.
+\item We know that $P = \frac{a + b + c}{a}; A = \sqrt{s(s - a)(s - b)(s -
+  c)}$
+
+  After that this problem is same as $91$, and we just need to
+  substitute for the values of $A$ and $P$.
+\item Taking $a, b, c$ common from rows and multiplying with columns gives is
+  the same determinant as in problem $88$ and can be solved in same fashion.
+\item $\Delta = \startdeterminant\NC x^3 \NC 6x^2a + 2a^3 \NC (x - a)^3 \NR\NC y^3 \NC
+  6y^2a + 2a^3 \NC (y - a)^3 \NR\NC z^3 \NC 6z^2a + 2a^3 \NC (z - a)^3\NR\stopdeterminant
+  [C_2 \rightarrow C_2 - C_3]$
+
+  $= 2\startdeterminant\NC x^3 \NC 3x^2a + a^3 \NC (x - a)^3 \NR\NC y^3 \NC 3y^2a + a^3
+  \NC (y - a)^3 \NR\NC z^3 \NC 3z^2a + a^3 \NC (z - a)^3\NR\stopdeterminant$
+
+  $= 2 \startdeterminant\NC x^3 \NC 3x^2a + a^3 \NC 3xa^2 \NR\NC y^3 \NC 3y^2a + a^3 \NC
+  3ya^2 \NR\NC z^3 \NC 3z^2a + a^3 \NC 3za^2\NR\stopdeterminant [C_3 \rightarrow C_3 - C_1
+    - C_2]$
+
+  $= 2a^3 \startdeterminant\NC x^3 \NC 3x^2 + a^2 \NC 3x \NR\NC y^3 - x^3 \NC 3(y^2 -
+  x^2) \NC 3(y - x) \NR\NC z^3 - x^3 \NC 3(z^2 - x^2) \NC 3(z - x)\NR\stopdeterminant
+  [R_2\rightarrow R_2 - R_1; R_3 \rightarrow R_2 - R_1]$
+
+  Now we can take $y - x$ and $z - x$ common followed by expasion so that desired condition can be proven
+  easily.
+\item $\Delta = \startdeterminant\NC 1- x \NC a \NC 0 \NR\NC a \NC a^2 - x \NC x \NR\NC a^2 \NC
+  a^3 \NC -x\NR\stopdeterminant[C_3 \rightarrow C_3 -aC_2]$
+
+  $= x\startdeterminant\NC 1 - x \NC a \NC 0 \NR\NC a + a^2 \NC a^2 - x + a^3 \NC 0 \NR\NC
+  a^2 \NC a^3 \NC -1\NR\stopdeterminant[R_2 \rightarrow R_2 + R_3]$
+
+  $= x[a(a + a^2) - (1 - x)(a^2 + a^3 - x)]$
+
+  $= x(a^2 + a^3 - a^2 - a^3 + x + xa^2 + xa^3 - x^2)$
+
+  $= x^2(1 + a ^2 + a^3)- x^3$.
+\item $y_1 = p\cos px, y_2 = -p^2\sin px, y_3 = -p^3\cos px, y_4 = p^4
+  \sin px$
+
+  $y_5 = p^5 \cos px, y_6 = -p^6\sin px, y_7 = -p^7\cos px, y_8 =
+  p^8\sin px$
+
+  $\Delta = -p^6 \startdeterminant\NC\sin px \NC p\cos px \NC -p^2 \sin px \NR\NC
+  -p^3\cos px \NC p^4 \sin px \NC p^5 \cos px \NR\NC \sin px \NC p\cos px \NC -p^2 \sin
+  px\NR\stopdeterminant$
+
+  Clearly first and last rows are identical.
+
+  $\Delta = 0$.
+\item $\Delta = \startdeterminant\NC 1 \NC 0 \NC -\sin\theta \NR\NC 0 \NC 1 \NC \cos\theta
+  \NR\NC \sin\theta \NC -\cos\theta \NC 0\NR\stopdeterminant[C_1 \rightarrow C_1
+    - \sin\theta C_3; C_2 \rightarrow C_2 + \cos\theta C_3]$
+
+  $= \cos^2\theta + \sin^2\theta = 1$.
+\item $\Delta = \startdeterminant\NC\cos\alpha \NC \sin\alpha\cos\beta \NC 0 \NR\NC
+  -\sin\alpha \NC \cos\alpha\cos\beta \NC 0 \NR\NC 0 \NC -\sin\beta \NC \frac{1}{\cos\beta}
+  \NR\stopdeterminant[C_3 \rightarrow C_3 - \tan\beta C_2]$
+
+  $= \frac{1}{\cos\beta}[\cos\beta(\cos^2\alpha + \sin^2\alpha)] = 1$.
+\item Multiplying columns with $a, b, c,$ we get
+
+  $\Delta = \frac{1}{abc}\startdeterminant\NC a(a^2 + x) \NC ab^2 \NC ac^2 \NR\NC
+  a^2b \NC b(b^2 + x) \NC bc^2 \NR\NC a^2c \NC b^2c \NC c(c^2 + x)\NR\stopdeterminant$
+
+  Now taking out $a, b, c$ from rows, we have
+
+  $= \startdeterminant\NC a^2 + x \NC b^2 \NC c^2 \NR\NC a^2 \NC b^2 + x \NC c^2 \NR\NC a^2
+  \NC b^2 \NC c^2 + x\NR\stopdeterminant$
+
+  $= \startdeterminant\NC x \NC 0 \NC -x \NR\NC 0 \NC x \NC -x \NR\NC a^2 \NC b^2 \NC c^2 +
+  x\NR\stopdeterminant[R_1\rightarrow R_1 - R_3; R_2\rightarrow R_2 - R_3]$
+
+  $= \startdeterminant\NC x \NC 0 \NC 0 \NR\NC 0 \NC x \NC -x \NR\NC a^2 \NC b^2 \NC a^2 + c^2 +
+  x\NR\stopdeterminant[C_3 \rightarrow C_3 + C_1]$
+
+  $\Rightarrow x^2(a^2 + b^2 + c^2 + x) = 0$
+
+  $\Rightarrow x=0, -(a^2 + b^2 + c^2)$.
+\item By observation if $x = n - 1$ then first two columns are same. Similarly, if $x = n$ then first column
+  is equal to sum of two other columns. Thus, $x = n, n - 1$ are two possible solutions.
+
+  If we take $\frac{x!}{r!(x - r)!}$ common from first column and similarly for second and third, then
+  we get a quadratic equation which will have two roots and we have found both of them.
+\item $\Delta = \frac{1}{a^2}\startdeterminant\NC u + a^2x \NC aw' - bu \NC av' - cu
+  \NR\NC w' + abx \NC av - bw' \NC au' - cw' \NR\NC v' + acx \NC au' - bv' \NC aw -
+  cv'\NR\stopdeterminant[C_2\rightarrow aC_2 - bC_1; C_3\rightarrow aC_3 - cC_1]$
+
+  $\Rightarrow x = - \startdeterminant\NC u \NC  aw' - bu \NC av' - cu
+  \NR\NC w' \NC av - bw' \NC au' - cw' \NR\NC v' \NC au' - bv' \NC aw -
+  cv' \NR\stopdeterminant \div \startdeterminant\NC a^2 \NC  aw' - bu \NC av' - cu
+  \NR\NC ab \NC av - bw' \NC au' - cw' \NR\NC ac \NC au' - bv' \NC aw -
+  cv'\NR\stopdeterminant$.
+\item We know that value of the determinant in denominator is $(a - b)(b -
+  c)(c - a) = k$ (say)
+
+  $f(a, b, c) = \startdeterminant\NC f(a) - f(b)\NC f(b) - f(c) \NC f(c)
+  \NR\NC 0 \NC 0 \NC 1 \NR\NC a - b \NC b - c \NC c\NR\stopdeterminant[C_1\rightarrow C_1 - C_2;
+    C_2\rightarrow C_2 - C_3] \div k$
+
+  $= -(b - c)(f(a) - f(b)) - (a - b)(f(b) - f(c))\div k$
+
+  $= -(a - b)(b - c)\left[\frac{f(a) - f(b)}{a - b} - \frac{f(b) -
+      f(c)}{(b - c)}\right]\div k$
+
+  $= -(a - b)(b - c)(f(a, b) - f(b, c))\div k$
+
+  $= (a - b)(b - c)(c - a)\frac{f(b, c) - f(a, b)}{c - a} = (a -
+  b)(b - c)(c - a)f(a, b, c)\div (a - b)(b - c)(c - a)$
+
+  $= f(a, b, c)$.
+\item Becasue $A, B, C$ are angles of a triangle. $A + B + C = \pi$
+
+  Also, $e^{i\pi} = \cos\pi + i\sin\pi = -1$
+
+  Taking $e^{iA}, e^{iB}, e^{iC}$ common from $R_1, R_2, R_3,$
+  we get
+
+  $\Delta = e^{i(A + B + C)}\startdeterminant\NC e^{iA} \NC e^{-i(A +C)} \NC
+  e^{-i(A + B)} \NR\NC e^{-i(B + C)} \NC e^{iB} \NC e^{-i(A + B)} \NR\NC e^{-i(B + C)} \NC
+  e^{-i(A + C)} \NC e^{iC}\NR\stopdeterminant$
+
+  $= -\startdeterminant\NC e^{iA} \NC -e^{iB} \NC -e^{iC} \NR\NC -e^{iA} \NC e^{iB} \NC
+  -e^{iC} \NR\NC -e^{iA} \NC -e^{iB} \NC e^{iC}\NR\stopdeterminant$
+
+  Taking $e^{iA}, e^{iB}, e^{iC}$ common from $C_1, C_2, C_3,$
+  we get
+
+  $= \startdeterminant\NC 1 \NC -1 \NC -1 \NR\NC -1 \NC 1 \NC -1 \NR\NC -1 \NC -1 \NC
+  1\NR\stopdeterminant = -4$, which is purely real.
+\item $\Delta = \startdeterminant\NC1 \NC \sin A\cos A \NC \cos^2 A \NR\NC 1 \NC \sin
+  B\cos B \NC \cos^2 B \NR\NC 1 \NC \sin C\cos C \NC \cos^2 C \NR\stopdeterminant[C_1
+    \rightarrow C_1 + C_3]$
+
+  Performing $R_3\rightarrow R_3 - R_1; R_2\rightarrow R_2 - R_1,$ we get
+
+  $= \sin(A - B)\sin(B - C)\sin(C - A)\geq 0$.
+
+  Now it is trivial to prove the second part.
+\item Performing $C_1 \rightarrow C_1 - aC_2; C_2\rightarrow C_2 -aC_3]$
+
+  $\Delta = \startdeterminant\NC 0 \NC 0 \NC 1 \NR\NC \cos nx - a\cos(n + 1)x \NC
+  \cos(n + 1)x - a\cos(n + 2)x \NC \cos(n + 2)x \NR\NC \sin nx - a\sin(n + 1)x \NC
+  \sin(n + 1)x - a\sin(n + 2)x \NC \sin(n + 2)x\NR\stopdeterminant$
+
+  $= \sin(n+1)x\cos nx - a\sin(n+1)x\cos(n+1)x - a\sin(n+2)x\cos nx \NR\NC
+  + a^2\sin(n+2)x\cos(n+1)x -\sin nx\cos(n+1)x +a\sin nx\cos(n + 2)x \NR\NC
+  + a\sin(n + 1)x\cos(n + 1)x - a^2\sin(n + 1)x\cos(n + 2)x$
+
+  $= \sin(n + 1 - n)x - a\sin(n + 2 - n)x + a^2\sin(n + 2 - n - 1)x$
+
+  $= \sin x - a\sin 2x + a^2\sin x$
+
+  $= (a^2 -2a\cos x + 1)\sin x$.
 \stopitemize

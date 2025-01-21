@@ -714,8 +714,9 @@ Determine whether the following system of equations have no solution, unique sol
 \item Evaluate $\startdeterminant\NC \cos\alpha \NC \sin\alpha\cos\beta \NC \sin\alpha\sin\beta\NR\NC -\sin\alpha \NC \cos\alpha\cos\beta \NC
   \cos\alpha\sin\beta\NR\NC 0 \NC -\sin\beta \NC \cos\beta\NR\stopdeterminant$.
 \item Solve the equation $\startdeterminant\NC  a^2 + x \NC ab \NC ac\NR\NC ab \NC b^2 + x \NC bc\NR\NC ac \NC bc \NC c^2 + x\NR\stopdeterminant = 0$.
-\item Solve the equation for $x, \startdeterminant\NC {}^xC_r \NC {}^{n - 1}C_r \NC {}^{n - 1}C_{r - 1}\NR\NC {}^{x + 1}C_r \NC {}^nC_r * {}^nC_{r -
-    1}\NR\NC {}^{x + 2}C_r \NC {}^{n + 1}C_r \NC {}^{n + 1}C_{r - 1}\NR\stopdeterminant = 0\ \forall n,r > 1$.
+\item Solve the equation for $x, \startdeterminant\NC C_r^^x \NC C_r^^{n - 1} \NC C_{r - 1}^^{n - 1}\NR\NC
+  C_r^^{x + 1} \NC C_r^^n \NC C_{r -
+    1}^^n\NR\NC C_r^^{x + 2} \NC C_r^^{n + 1} \NC C_{r - 1}^^{n + 1}\NR\stopdeterminant = 0\ \forall n,r > 1$.
 \item Solve the equation $\startdeterminant\NC  u + a^2x \NC w' + abx \NC v' + acx\NR\NC w' + abx \NC v + b^2x \NC u' + bcx\NR\NC  v' + acx \NC u' + bcx \NC w
   + c^2x\NR\stopdeterminant = 0$ expressing the result by means of determinants.
 \item If $f(a,\ b) = \frac{f(b) - f(a)}{b - a}$ and $f(a, b, c) = \frac{f(b, c) - f(a, b)}{c - a}$, show that \startformula f(a, b, c)
