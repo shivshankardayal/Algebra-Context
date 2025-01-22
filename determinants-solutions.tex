@@ -1986,4 +1986,39 @@
   $\Delta_b =\startdeterminant\NC 0\NC 6\NC 1\NR\NC 4\NC 11\NC 1\NR\NC 9\NC 6\NC 1\NR\stopdeterminant = -45$
 
   $\Rightarrow a = \frac{1}{2}, b = \frac{3}{2}, c = 6\Rightarrow f(1) = a + b + c = 8$.
+\item $\Delta = \startdeterminant\NC -a\NC b + c\NC b + c\NR\NC c + a\NC -b\NC c + a\NR\NC a + b\NC a + b\NC
+  -c\NR\stopdeterminant = \startdeterminant\NC a + b + c\NC a + b + c\NC a + b + c\NR\NC c + a\NC -b\NC c +
+  a\NR\NC a + b\NC a + b\NC -c\NR\stopdeterminant[R_1\rightarrow R_1 + R_2 + R_3]$
+
+  $= (a + b + c)\startdeterminant\NC 0\NC 1\NC 1\NR\NC 0\NC -b\NC c + a\NR\NC a + b + c\NC a + b\NC
+  -c\NR\stopdeterminant[C_1\rightarrow C_1 - C_3]$
+
+  $= (a + b + c)^3$
+
+  $\Delta_x = \startdeterminant\NC b - c\NC b + c\NC b + c\NR\NC c - a\NC -b\NC c + a\NR\NC a - b\NC a +
+  b\NC -a\NR\stopdeterminant = \startdeterminant\NC b - c\NC 0\NC b + c\NR\NC c - a\NC -(a + b + c)\NC c +
+  a\NR\NC a - b\NC a + b + c\NC -c\NR\stopdeterminant[C_2\rightarrow C_2 - C_3]$
+
+  $=(a + b + c)\startdeterminant\NC b - c\NC 0\NC b + c\NR\NC c - b\NC 0\NC a\NR\NC a - b\NC 1\NC -
+  c\NR\stopdeterminant[R_2\rightarrow R_2 + R_3]$
+
+  $= (c - b)(a + b + c)^2$
+
+  $\Rightarrow x = \frac{c - b}{a + b + c}$. Since the given system of equations is cyclic, therefore, $y =
+  \frac{a - c}{a + b + c}, z = \frac{b - a}{a + b + c}$.
+\item $\Delta = \startdeterminant\NC 7\NC -7\NC 5\NR\NC 3\NC 1\NC 5\NR\NC 2\NC 3\NC 5\NR\stopdeterminant =
+  -70 + 35 + 35 = 0$
+
+  $\Delta_x = \startdeterminant\NC 3\NC -7\NC 5\NR\NC 7\NC 1\NC 5\NR\NC 5\NC 3\NC 5\NR\stopdeterminant =
+  -30 -70 + 80 = -20$
+
+  Therefore, the system of equations is inconsistent and has no solution.
+\item For system of equations to be consistent $\Delta = \startdeterminant\NC 1\NC 1\NC 3\NR\NC 1 + k\NC 2 +
+  k\NC 8\NR\NC 1\NC -(1 + k)\NC -(2 + k)\NR\stopdeterminant = 0$
+
+  $\Rightarrow 3k^2 + 2k - 5 = 0 \Rightarrow k = 1, -\frac{5}{3}$.
+\item $\Delta = \startdeterminant\NC(k + 1)^3\NC(k + 2)^2\NC(k + 3)^3\NR\NC k + 1\NC k + 2\NC k + 3\NR\NC 1\NC
+  1\NC 1\NR\stopdeterminant$
+
+  $\Rightarrow k = -2$.
 \stopitemize
