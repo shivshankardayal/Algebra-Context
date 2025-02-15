@@ -1,0 +1,164 @@
+% -*- mode: context; -*-
+\chapter{Matrices}
+\startitemize[n, 1*broad]
+\item The matrix will be any one of the following type $1\times12, 12\times1, 2\times6, 6\times2, 3\times4,
+  4\times3$. So the answer is $6$.
+\item $a_{11} = 2.1 - 3.1 = -1, a_{12} = 2.1 - 3.2 = -4, a_{13} = 2.1 - 3.3 = -7$
+
+  $a_{21} = 2.2 - 3.1 = 1, a_{22} = 2.2 - 3.2 = -2, a_{23} = 2.2 - 3.3 = -5$
+
+  $\therefore A = \startbmatrix\NC-1\NC-4\NC-7\NR\NC1\NC -2\NC -5\NR\stopbmatrix$.
+\item $A + B = \startbmatrix\NC a - a\NC b + b\NR\NC -b - b \NC a - a\NR\stopbmatrix = \startbmatrix\NC0\NC
+  2b\NR\NC -2b \NC0\NR\stopbmatrix$.
+\item $2X = (2X + Y) - Y = \startbmatrix\NC 1\NC 0\NR\NC -3 \NC 2\NR\stopbmatrix - \startbmatrix\NC 3\NC
+  2\NR\NC 1\NC 4\NR\stopbmatrix = \startbmatrix\NC1 - 3\NC 0 - 2\NR\NC -3 -1\NC 2 - 4\NR\stopbmatrix
+  = \startbmatrix\NC -2\NC -2\NR\NC -4\NC -2\NR\stopbmatrix$
+
+  $\Rightarrow X = \startbmatrix\NC -1\NC -1\NR\NC -2\NC -1\NR\stopbmatrix$.
+\item $x^2 - 4x = -3 \Rightarrow x = 1, 3$. $x^2 = 1 \Rightarrow x = \pm 1$. $x^2 = -x + 2 \Rightarrow x =
+  -2, 1$. $x^3 = 1 \Rightarrow x = 1, \omega, \omega^2$.
+
+  Common value of $x$ is $1$.
+\item $x + 3 = 0 \Rightarrow x = -3$. $2y + x = -7 \Rightarrow 2y = -4 \Rightarrow y = -2$. $z - 1 =
+  3\Rightarrow z = 4$. $4a - 6 = 2a \Rightarrow 2a = 6\Rightarrow a = 3$.
+\item $4A - 3B = 4\startbmatrix\NC 1 \NC 2 \NC 3\NR\NC-1 \NC 0 \NC 2\NR\NC1 \NC -3 \NC 1\NR\stopbmatrix -
+  3\startbmatrix\NC 4 \NC 5 \NC 6\NR\NC -1 \NC 0 \NC 1\NR\NC 2 \NC 1 \NC 2\NR\stopbmatrix = \startbmatrix\NC
+  4\NC 8\NC 12\NR\NC -4\NC 0\NC 8\NR\NC 4\NC -12\NC 4\NR\stopbmatrix - \startbmatrix\NC
+  12\NC 15\NC 18\NR\NC -3\NC 0\NC 3\NR\NC 6\NC 3\NC 6\NR\stopbmatrix$
+
+  $=\startbmatrix\NC-8\NC -7\NC -6\NR\NC -1\NC 0\NC 5\NR\NC -2\NC -15\NC -2\NR\stopbmatrix$.
+\item $A$ is a $2\times3$ matrix and $B$ is a $3\times2$ matrix. $AB$ is defined and will be a $2\times2$
+  matrix.
+
+  $AB = \startbmatrix\NC 1 \NC -2 \NC 3 \NR\NC -4 \NC 2 \NC 5\NR\stopbmatrix\startbmatrix\NC 2 \NC 3 \NR\NC
+  4 \NC 5 \NR\NC 2 \NC 1\NR\stopbmatrix = \startbmatrix\NC 2 - 8 + 6\NC 3 - 10 + 3\NR\NC -8 + 8 + 10\NC
+  -12 + 10 + 5\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 0\NC -4\NR\NC 10\NC 3\NR\stopbmatrix$.
+
+  $BA$ is also defined and will be a $3\times3$ matrix.
+
+  $BA = \startbmatrix\NC 2 \NC 3 \NR\NC 4 \NC 5 \NR\NC 2 \NC 1\NR\stopbmatrix\startbmatrix\NC 1 \NC -2 \NC 3
+  \NR\NC -4 \NC 2 \NC 5\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 2 - 12\NC -4 + 6\NC 6 + 15\NR\NC 4 - 20\NC -8 + 10\NC 12 + 25\NR\NC 2 - 4\NC -4 + 2\NC
+  6 + 5\NR\stopbmatrix = \startbmatrix\NC -10\NC 2\NC 21\NR\NC -16\NC 2\NC 37\NR\NC -2\NC -2\NC
+  11\NR\stopbmatrix$.
+
+  Clearly, $AB\neq BA$.
+\item Because associative law holds for matrix multiplication, therefore, $A(BC) = (AB)C$.
+
+  $BC = \startbmatrix\NC a \NC h \NC g\NR\NC h \NC b \NC f \NR\NC g \NC f \NC
+  c\NR\stopbmatrix\startbmatrix\NC x \NR\NC y \NR\NC z\NR\stopbmatrix = \startbmatrix\NC ax + by + gz\NR\NC
+  hx + by + fz\NC gx + fy + zc\NR\stopbmatrix$
+
+  $ABC = [x y z]\startbmatrix\NC ax + by + gz\NR\NC hx + by + fz\NR\NC gx + fy + zc\NR\stopbmatrix$
+
+  $= x(ax + by + gz) + y(hx + by + fz) + z(gx + fy + zc) = ax^2 + by^2 + cz^2 + 2hxy + 2gzx + 2fyz$.
+\item $A' = \startbmatrix\NC 1\NC 0\NC 2\NR\NC 2\NC 5\NC 4\NR\NC 3\NC 0\NC 3\NR\stopbmatrix$
+
+  Let $B$ be the matrix whose elements are cofactors of the corresponding elements of the matrix $A$. Then
+  $B = \startbmatrix\NC 15\NC 0\NC -10\NR\NC 6\NC -3\NC 0\NR\NC -15\NC 0\NC 5\NR\stopbmatrix$
+
+  $\therefore \adj(A) = B' = \startbmatrix\NC 15\NC 6\NC -15\NR\NC 0\NC -3\NC 0\NR\NC -10\NC 0\NC
+  5\NR\stopbmatrix$.
+\item Let $B$ be the matrix whose elements are cofactors of the corresponding elements of $A$. Then
+
+  $B = \startbmatrix\NC -1\NC 8\NC 5\NR\NC 1\NC -6\NC 3\NR\NC -1\NC 2\NC -1\NR\stopbmatrix\therefore \adj(A)
+  = B' = \startbmatrix\NC -1 \NC 1\NC -1\NR\NC 8\NC -6\NC 2\NR\NC -5\NC 3\NC
+  -1\NR\stopbmatrix$
+
+  $|A| = \startdeterminant\NC 0 \NC 1 \NC 2\NR\NC1 \NC 2 \NC 3\NR\NC3 \NC 1 \NC 1\NR\stopdeterminant =
+  -2\therefore A^{-1} = \frac{\adj(A)}{|A|} = \startbmatrix\NC\frac{1}{2}\NC-\frac{1}{2}\NC\frac{1}{2}\NR\NC
+  -4\NC 3\NC -1\NR\NC\frac{5}{2}\NC-\frac{3}{2}\NC\frac{1}{2}\NR\stopbmatrix$.
+\item Let $B$ be the matrix whose elements are cofactors of the corresponding elements of $A$. Then
+
+  $B = \startbmatrix\NC 2\NC -3\NC 5\NR\NC 3\NC 6\NC -3\NR\NC -13\NC 9\NC -1\NR\stopbmatrix\therefore
+  \adj(A) = B' = \startbmatrix\NC 2\NC 3\NC -13\NR\NC -3\NC 6\NC 9\NR\NC 5\NC -3\NC -1\NR\stopbmatrix$
+
+  $|A| = \startdeterminant\NC 1 \NC 2 \NC 5\NR\NC2 \NC 3 \NC 1\NR\NC-1 \NC 1 \NC 1\NR\stopdeterminant =
+  21\therefore A^{-1} = \frac{\adj(A)}{|A|} = \frac{1}{21}\startbmatrix\NC 2\NC 3\NC -13\NR\NC -3\NC 6\NC
+  9\NR\NC 5\NC -3\NC -1\NR\stopbmatrix$.
+
+  $A^{-1}A = \frac{1}{21}\startbmatrix\NC 2 + 6 + 13\NC 4 + 9 - 13\NC 10 + 3 - 13\NR\NC -3 + 12 - 9\NC -6 +
+  18 + 9\NC -15 + 6 + 9\NR\NC 5 - 6 + 1\NC 10 -9 - 1\NC 25 - 3 - 1\NR\stopbmatrix = \startbmatrix\NC 1\NC
+  0\NC 0\NR\NC 0\NC 1\NC 0\NR\NC 0\NC 0\NC 1\NR\stopbmatrix = I$
+\item $A^2 = A.A = \startbmatrix\NC 1 \NC 2 \NC 2\NR\NC2 \NC 1 \NC 2\NR\NC2 \NC 2 \NC
+  1\NR\stopbmatrix \startbmatrix\NC 1 \NC 2 \NC 2\NR\NC2 \NC 1 \NC 2\NR\NC2 \NC 2 \NC 1\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 1 + 4 + 4\NC 2 + 2 + 4\NC 2 + 4 + 2\NR\NC 2 + 2 + 4\NC 4 + 1 + 4\NC 4 + 2 + 2\NR\NC 2
+  + 4 + 2\NC 4 + 2 + 2\NC 4 + 4 + 1\NR\stopbmatrix = \startbmatrix\NC 9\NC 8\NC 8\NR\NC 8\NC 9\NC 8\NR\NC
+  8\NC 8\NC 9\NR\stopbmatrix$
+
+  $A^2 - 4A - 5I = \startbmatrix\NC 9\NC 8\NC 8\NR\NC 8\NC 9\NC 8\NR\NC 8\NC 8\NC 9\NR\stopbmatrix
+  - \startbmatrix\NC 4\NC 8\NC 8\NR\NC 8\NC 4\NC 8\NR\NC 8\NC 8\NC 4\NR\stopbmatrix - \startbmatrix\NC 5\NC
+  0\NC 0\NR\NC 0\NC 5\NC 0\NR\NC 0\NC 0\NC 5\NR\stopbmatrix$
+
+  $=\startbmatrix\NC 0\NC 0\NC 0\NR\NC 0\NC 0\NC 0\NR\NC 0\NC 0\NC 0\NR\stopbmatrix = O$
+
+  $A^2 - 4A - 5I = O\Rightarrow A^{-1}A^2 - 4A^{-1}A - 5A^{-1}I = A^{-1}O = O$
+
+  $(A^{-1}A)A - 4(A^{-1}A) - 5A^{-1}I = O \Rightarrow IA - 4I - 5A^{-1} = O$
+
+  $\Rightarrow 5A^{-1} = A - 4I = \startbmatrix\NC 1 \NC 2 \NC 2\NR\NC2 \NC 1 \NC 2\NR\NC2 \NC 2 \NC
+  1\NR\stopbmatrix - \startbmatrix\NC 4\NC 0\NC 0\NR\NC 0\NC 4\NC 0\NR\NC 0\NC 0\NC 4\NR\stopbmatrix$
+
+  $= \startbmatrix\NC -3\NC 2\NC 2\NR\NC 2\NC -3\NC 2\NR\NC 2\NC 2\NC -3\NR\stopbmatrix\Rightarrow A^{-1} =
+  \frac{1}{5}\startbmatrix\NC -3\NC 2\NC 2\NR\NC 2\NC -3\NC 2\NR\NC 2\NC 2\NC -3\NR\stopbmatrix$.
+\item Let $A = \startbmatrix\NC 5\NC 3\NC 1\NR\NC 2\NC 1\NC 3\NR\NC 1\NC 2\NC 4\NR\stopbmatrix, X
+  = \startbmatrix\NC x\NR\NC y\NR\NC z\NR\stopbmatrix$ and $B = \startbmatrix\NC 16\NR\NC 19\NR\NC
+  25\NR\stopbmatrix$.
+
+  Then the matrix equation of the gives system of equation becomes $AX = B$.
+
+  Now $A = \startdeterminant\NC 1 \NC 2 \NC 2\NR\NC2 \NC 1 \NC 2\NR\NC2 \NC 2 \NC 1\NR\stopdeterminant =
+  -22\neq 0$
+
+  Hence, $A$ is non-singular. Therefore, the given system of equations will have the unique solution given
+  by $X = A^{-1}B$.
+
+  Let $C$ be the matrix whose elements are cofactors of the corresponding elements of $A$, then
+
+  $C = \startbmatrix\NC -2\NC -5\NC 3\NR\NC -10\NC 19\NC -7\NR\NC 8\NC -13\NC -1\NR\stopbmatrix\therefore
+  \adj(A) = C' = \startbmatrix\NC -2\NC -10\NC 8\NR\NC -5\NC 19\NC -13\NR\NC 3\NC -7\NC -1\NR\stopbmatrix$
+
+  $A^{1-} = \frac{\adj(A)}{|A|} = -\frac{1}{22}\startbmatrix\NC -2\NC -10\NC 8\NR\NC -5\NC 19\NC -13\NR\NC
+  3\NC -7\NC -1\NR\stopbmatrix$
+
+  $\Rightarrow X = A^{-1}B = \startbmatrix\NC 1\NR\NC 2\NR\NC 5\NR\stopbmatrix\therefore x = 1, y = 2, z =
+  5$.
+\item $AB = \startbmatrix\NC -5 \NC 1 \NC 3\NR\NC7 \NC 1 \NC -5\NR\NC1 \NC -1 \NC 1
+  \NR\stopbmatrix \startbmatrix\NC 1 \NC 1 \NC 2\NR\NC 3 \NC 2 \NC 1\NR\NC 2 \NC 1 \NC 3\NR\stopbmatrix$
+
+  $=\startbmatrix\NC -5 + 3 + 6\NC -5 + 2 + 3\NC -10 + 1 + 9\NR\NC 7 + 3 - 10\NC 7 + 2 - 5\NC 14 + 1 - 15\NR
+  \NC 1 - 3 + 2\NC 1 - 2 + 1\NC 2 - 1 + 3\NR\stopbmatrix = \startbmatrix\NC 4\NC 0\NC 0\NR\NC 0\NC 4\NC
+  0\NR\NC 0\NC 0\NC 4\NR\stopbmatrix = 4I_3$
+
+  Given system of equations in matrix form is $BX = C$, where $x = \startbmatrix\NC x\NR\NC y\NR\NC
+  z\NR\stopbmatrix$ and $C = \startbmatrix\NC 1\NR\NC 7\NR\NC 2\NR\stopbmatrix$
+
+  We have $BX = C$. Multiplying both sides with $B^{-1}$, $B^{-1}BX = B^{-1}C \Rightarrow IX = X = B^{-1}C$.
+
+  However, $AB = 4I_3 \Rightarrow \frac{A}{4}B = I_3\Rightarrow B^{-1} = \frac{A}{4}\Rightarrow X
+  = \startbmatrix\NC 2\NR\NC 1\NR\NC -1\NR\stopbmatrix$
+
+  $\therefore x = 2, y = 1, z = -1$.
+\item $x + y = 3, x - y = 7 \Rightarrow x = 5, y = -2$.
+\item $x - y = -1, 2x - y = 0 \Rightarrow x = 1, y = 2$. $2x + x_1 = 5 \Rightarrow x_1 = 3, 3x + y_1 = 13
+  \Rightarrow y_1 = 10$
+
+  So $P$ is $(1, 2)$ and $Q$ is $(3, 10)$. $PQ = \sqrt{(1 - 3)^2 + (2 - 10)^2} = \sqrt{68} = 2\sqrt{17}$.
+\item $2X = \startbmatrix\NC 10\NC 0\NR\NC 2\NC 8\NR\stopbmatrix \Rightarrow X = \startbmatrix\NC 5\NC
+  0\NR\NC 1\NC 4\NR\stopbmatrix$
+
+  $2Y = \startbmatrix\NC 4\NC 0\NR\NC 2\NC 2\NR\stopbmatrix\Rightarrow Y = \startbmatrix\NC 2\NC 0\NR\NC
+  1\NC 1\NR\stopbmatrix$.
+\item $C = B - A = \startbmatrix\NC 3 \NC -1 \NC 2 \NR\NC 4 \NC 2 \NC 5 \NR\NC 2 \NC 0 \NC 3\NR\stopbmatrix -
+  \startbmatrix\NC  1 \NC 2 \NC -3 \NR\NC 5 \NC 0 \NC 2 \NR\NC 1 \NC -1 \NC 1\NR\stopbmatrix
+    = \startbmatrix\NC 2\NC -3\NC 5\NR\NC -1\NC 2\NC 3\NR\NC 1\NC 1\NC 2\NR\stopbmatrix$.
+\item $X = 2A + 3B - C = \startbmatrix\NC 4\NC 6\NC 8\NR\NC -6\NC 0\NC 4\NR\stopbmatrix + \startbmatrix\NC 9
+ \NC -12\NC -15\NR\NC 3\NC 6\NC 3\NR\stopbmatrix - \startbmatrix\NC  5 \NC -1 \NC 2 \NR\NC 7 \NC 0 \NC
+ 3\NR\stopbmatrix$
+
+ $= \startbmatrix\NC 8\NC -5\NC -9\NR\NC -10\NC 6\NC 4\NR\stopbmatrix$.
+\stopitemize
