@@ -157,8 +157,30 @@
   \startbmatrix\NC  1 \NC 2 \NC -3 \NR\NC 5 \NC 0 \NC 2 \NR\NC 1 \NC -1 \NC 1\NR\stopbmatrix
     = \startbmatrix\NC 2\NC -3\NC 5\NR\NC -1\NC 2\NC 3\NR\NC 1\NC 1\NC 2\NR\stopbmatrix$.
 \item $X = 2A + 3B - C = \startbmatrix\NC 4\NC 6\NC 8\NR\NC -6\NC 0\NC 4\NR\stopbmatrix + \startbmatrix\NC 9
- \NC -12\NC -15\NR\NC 3\NC 6\NC 3\NR\stopbmatrix - \startbmatrix\NC  5 \NC -1 \NC 2 \NR\NC 7 \NC 0 \NC
- 3\NR\stopbmatrix$
+  \NC -12\NC -15\NR\NC 3\NC 6\NC 3\NR\stopbmatrix - \startbmatrix\NC  5 \NC -1 \NC 2 \NR\NC 7 \NC 0 \NC
+  3\NR\stopbmatrix$
 
- $= \startbmatrix\NC 8\NC -5\NC -9\NR\NC -10\NC 6\NC 4\NR\stopbmatrix$.
+  $= \startbmatrix\NC 8\NC -5\NC -9\NR\NC -10\NC 6\NC 4\NR\stopbmatrix$.
+\item $A - 2B + 3C = \startbmatrix\NC  1 \NC 2 \NC 3 \NR\NC -1 \NC 0 \NC 2 \NR\NC 1 \NC -3 \NC
+  1\NR\stopbmatrix - \startbmatrix\NC 8 \NC 10 \NC 12 \NR\NC -2 \NC 0 \NC 2 \NR\NC 4 \NC 2 \NC
+  4\NR\stopbmatrix + \startbmatrix\NC -3 \NC 6 \NC 3 \NR\NC -3 \NC 6 \NC 9 \NR\NC -3 \NC -6 \NC
+  6\NR\stopbmatrix$
+
+  $= \startbmatrix\NC -10\NC -14\NC -6\NR\NC -2\NC 6\NC 9\NR\NC -6 \NC -11\NC 3\NR\stopbmatrix.$
+\item $P(x).P(y) = \startbmatrix\NC \cos x \NC \sin x \NR\NC -\sin x \NC \cos x\NR\stopbmatrix
+  . \startbmatrix\NC \cos y \NC \sin y \NR\NC -\sin y \NC \cos y\NR\stopbmatrix$
+
+  $= \startbmatrix\NC \cos x\cos y - \sin x\sin y\NC \cos x\sin y + \sin x\cos y\NR\NC -\sin x\cos y - cos
+  x\sin y\NC -\sin x\sin y + \cos x\cos y\NR\stopbmatrix = \startbmatrix\NC \cos (x + y) \NC \sin (x + y)
+  \NR\NC -\sin (x + y) \NC \cos (x + y)\NR\stopbmatrix$.
+
+  Similarly, it can be proven to be equal to $P(y).P(x)$.
+\item $A^2 = \startbmatrix\NC 1 \NC 0 \NC 0 \NR\NC 0 \NC 1 \NC 0 \NR\NC a \NC b \NC -1\NR\stopbmatrix
+  . \startbmatrix\NC 1 \NC 0 \NC 0 \NR\NC 0 \NC 1 \NC 0 \NR\NC a \NC b \NC -1\NR\stopbmatrix$
+
+  $=\startbmatrix\NC 1*1 + 0*0 + 0*a\NC 1*0 + 0*1 + 0*b\NC 1*0 + 0*0 + 0*-1\NR\NC 0*1 + 1*0 + 0*a\NC 0*0 +
+  1*1 + 0*b\NC 0*0 + 1*0 + 0*-1\NR\NC a*1 + b*0 + -1*a\NC a*0 + b*1 + -1*b\NC a*0 + b*0 +
+  -1*-1\NR\stopbmatrix$
+
+  $=\startbmatrix\NC 1\NC 0\NC 0\NR\NC 0\NC 1\NC 0\NR\NC 0\NC 0\NC 1\NR\stopbmatrix = I_3$.
 \stopitemize
