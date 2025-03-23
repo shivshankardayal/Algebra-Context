@@ -183,4 +183,114 @@
   -1*-1\NR\stopbmatrix$
 
   $=\startbmatrix\NC 1\NC 0\NC 0\NR\NC 0\NC 1\NC 0\NR\NC 0\NC 0\NC 1\NR\stopbmatrix = I_3$.
+\item $A^2 = \startbmatrix\NC -1 \NC 1 \NC -1 \NR\NC 3 \NC -3 \NC 3 \NR\NC 5 \NC -5 \NC 5 \NR\stopbmatrix
+  \startbmatrix\NC -1 \NC 1 \NC -1 \NR\NC 3 \NC -3 \NC 3 \NR\NC 5 \NC -5 \NC 5 \NR\stopbmatrix$
+
+  $= \startbmatrix\NC -1*-1 + 1*3 + -1*5\NC -1*1 + 1*-3 + -1*-5\NC -1*-1 + 1*3 + -1*5\NR\NC 3*-1 + -3*3 +
+    3*5\NC 3*1 + -3*-3 + 3*-5\NC 3*-1 + -3*3 + 3*5\NR\NC 5*-1 + -5*3 + 5*5\NC 5*1 + -5*-3 + 5*-5\NC 5*-1 +
+    -5*3 + 5*5\NR\stopbmatrix$
+
+  $= \startbmatrix\NC -1\NC 1\NC -1\NR\NC 3\NC -3\NC 3\NR\NC 5\NC -5\NC 5\NR\stopbmatrix = A$
+
+  $B^2 = \startbmatrix\NC 0 \NC 4 \NC 3 \NR\NC 1 \NC -3 \NC -3 \NR\NC -1\NC 4 \NC
+    4\NR\stopbmatrix \startbmatrix\NC 0 \NC 4 \NC 3 \NR\NC 1 \NC -3 \NC -3 \NR\NC -1\NC 4 \NC
+    4\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 0*0 + 4*1 + 3*-1\NC 0*4 + 4*-3 + 3*4\NC 0*3 + 4*-3 + 3*4\NR\NC 1*0 + -3*1 + -3*-1\NC
+    1*4 + -3*-3 + -3*4\NC 1*3 + -3*-3 + -3*4\NR\NC -1*0 + 4*1 + 4*-1\NC -1*4 + 4*-3 + 4*4\NC -1*3 + 4*-3 +
+    4*4\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 1\NC 0\NC 0\NR\NC 0\NC 1\NC 0\NR\NC 0\NC 0\NC 1\NR\stopbmatrix = I$
+
+  $\therefore A^2B^2 = A$
+\item Given, $A = \startbmatrix\NC 2 \NC 3 \NC 4 \NR\NC 1\NC 2 \NC 3 \NR\NC -1 \NC 1 \NC 2\NR\stopbmatrix ,
+  B = \startbmatrix\NC 1 \NC 3 \NC 0\NR\NC -1 \NC 2 \NC 1 \NR\NC 0 \NC 0 \NC 2\NR\stopbmatrix$.
+
+  $AB = \startbmatrix\NC 2*1 + 3*-1 + 4*0\NC 2*3 + 3*2 + 4*0\NC 2*0 + 3*1 + 4*2\NR\NC 1*1 + 2*-1 + 3*0\NC
+  1*3 + 2*2 + 3*0\NC 1*0 + 2*1 + 3*2\NR\NC -1*1 + 1*-1 + 2*0\NC -1*3 + 1*2 + 2*0\NC -1*0 + 1*1 +
+  2*2\NR\stopbmatrix$
+
+  $= \startbmatrix\NC -1\NC 12\NC 11\NR\NC -1\NC 7\NC 8\NR\NC -2\NC -1\NC 5\NR\stopbmatrix$
+
+  $\BA = \startbmatrix\NC 1*2 + 3*1 + 0*-1\NC 1*3 + 3*2 + 0*1\NC 1*4 + 3*3 + 0*2\NR\NC -1*2 + 2*1 + 1*-1\NC
+  -1*3 + 2*2 + 1*1\NC -1*4 + 2*3 + 1*2\NR\NC 0*2 + 0*1 + 2*-1\NC 0*3 + 0*2 + 2*1\NC 0*4 + 0*3 +
+  2*2\NR\stopbmatrix$
+
+
+  $= \startbmatrix\NC 5\NC 9\NC 13\NR\NC -1\NC 2\NC 4\NR\NC -2\NC 2\NC 4\NR\stopbmatrix$.
+
+
+  Clearly, $AB\neq BA$.
+\item Let $A = \startbmatrix\NC 0 \NC c \NC -b \NR\NC -c \NC 0 \NC a \NR\NC b \NC -a \NC 0\NR\stopbmatrix$
+  and $B = \startbmatrix\NC a^2 \NC ab \NC ac \NR\NC ab \NC b^2 \NC bc \NR\NC ac \NC bc \NC
+  c^2\NR\stopbmatrix$
+
+  $AB = \startbmatrix\NC 0*a^2 + c*ab + -b*ac\NC  0*ab + c*b^2 + -b*bc\NC  0*ac + c*bc + -b*c^2\NR\NC
+  -c*a^2 + 0*ab + a*ac\NC  -c*ab + 0*b^2 + a*bc\NC  -c*ac + 0*bc + a*c^2\NR\NC  b*a^2 + -a*ab + 0*ac\NC
+  b*ab + -a*b^2 + 0*bc\NC  b*ac + -a*bc + 0*c^2\NR\stopbmatrix$
+
+  $=$ a zero matrix.
+\item Given $A = \startbmatrix\NC 3 \NC -5 \NR\NC -4 \NC 2\NR\stopbmatrix\therefore A^2 = \startbmatrix\NC
+  3*3 + -5*-4\NC 3*-5 + -5*2\NR\NC -4*3 + 2*-4\NC -4*-5 + 2*2\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 29\NC -25\NR\NC -20\NC 24\NR\stopbmatrix$
+
+  $\therefore A^2 - 5A - 14I = \startbmatrix\NC 0\NC 0\NR\NC 0\NC 0\NR\stopbmatrix$
+\item Given $A = \startbmatrix\NC 2 \NC 3\NR\NC 1 \NC 2\NR\stopbmatrix\therefore A^2 = \startbmatrix\NC 2*2
+  + 3*1\NC 2*3 + 3*2\NR\NC 1*2 + 2*1\NC 1*3 + 2*2\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 7\NC 12\NR\NC 4\NC 7\NR\stopbmatrix$
+
+  $\therefore A^3 = \startbmatrix\NC 7*7 + 12*4\NC 7*12 + 12*7\NR\NC 4*7 + 7*4\NC 4*12 + 7*7\NR\stopbmatrix
+  = \startbmatrix\NC 97\NC 168\NR\NC 56\NC 97\NR\stopbmatrix$
+
+  Clearly, $A^3 - 4A^2 + A = \startbmatrix\NC 71\NC 123\NR\NC 41\NC 71\NR\stopbmatrix$, which can be easily
+  shown to be an orthogonal matrix.
+\item $A^2 = \startbmatrix\NC 0.8*0.8 + 0.6*-0.6\NC 0.8*0.6 + 0.6*0.8\NR\NC -0.6*0.8 + 0.8*-0.6\NC -0.6*0.6
+  + 0.8*0.8\NR\stopbmatrix$
+
+  Similarly we proceed for $A^3$ which turns out to be $\startbmatrix\NC -0.352\NC 0.936\NR\NC -0.936\NC
+  -0.352\NR\stopbmatrix$.
+\item $f(A) = A^2 - 5A + 7I$, where $A = \startbmatrix\NC 3 \NC 1 \NR\NC -1 \NC 2\NR\stopbmatrix$
+
+  $A^2 = \startbmatrix\NC 3*3 + 1*-1\NC 3*1 + 1*2\NR\NC -1*3 + 2*-1\NC -1*1 + 2*2\NR\stopbmatrix
+  = \startbmatrix\NC 8\NC 5\NR\NC -5\NC 3\NR\stopbmatrix$
+
+  Thus, $A^2 - 5A + 7I$ is a $2\times2$ zero matrix, which is trivial to prove.
+\item $AB = \startbmatrix\NC \cos\theta*\cos\phi + \sin\theta*\sin\phi\NC \cos\theta*\sin\phi +
+  \sin\theta*\cos\phi\NR\NC \sin\theta*\cos\phi + \cos\theta*\sin\phi\NC \sin\theta*\sin\phi +
+  \cos\theta*\cos\phi\NR\stopbmatrix$
+
+  $= \startbmatrix\NC \cos(\theta - \phi)\NC \sin(\theta + \phi)\NR\NC \sin(\theta + \phi)\NC \cos(\theta -
+  \phi)\NR\stopbmatrix$
+
+  Similarly $BA = \startbmatrix\NC \cos(\theta - \phi)\NC \sin(\theta + \phi)\NR\NC \sin(\theta + \phi)\NC
+  \cos(\theta - \phi)\NR\stopbmatrix$
+
+  Thus, $AB = BA$.
+\item $f(A) = A^2 - 5A + 6,\;A^2 = \startbmatrix\NC 2*2 + 0*2 + 1*1\NC 2*0 + 0*1 + 1*-1\NC 2*1 + 0*3 +
+  1*0\NR\NC 2*2 + 1*2 + 3*1\NC 2*0 + 1*1 + 3*-1\NC 2*1 + 1*3 + 3*0\NR\NC 1*2 + -1*2 + 0*1\NC 1*0 + -1*1 +
+  0*-1\NC 1*1 + -1*3 + 0*0\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 5\NC -1\NC 2\NR\NC 9\NC -2\NC 5\NR\NC 0\NC -1\NC -2\NR\stopbmatrix$
+
+  Thus, $A^2 - 5A + 6 = \startbmatrix\NC 1\NC -1\NC -3\NR\NC -1\NC -1\NC -10\NR\NC -5\NC 4\NC
+  4\NR\stopbmatrix$.
+\item Given $A = \startbmatrix\NC 5 \NC 3 \NR\NC 12 \NC 7\NR\stopbmatrix\;\therefore A^2 = \startbmatrix 5*5
+  + 3*12\NC 5*3 + 3*7\NR\NC 12*5 + 7*12\NC 12*3 + 7*7\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 61\NC 36\NR\NC 144\NC 85\NR\stopbmatrix$
+
+  $\therefore A^2 - 12 A - I = 0$
+\item We have $\startpmatrix\NC\startbmatrix\NC 1 \NC \omega \NC \omega^2 \NR\NC\omega \NC \omega^2 \NC 1 \NR\NC
+  \omega^2 \NC 1 \NC \omega \NR\stopbmatrix + \startbmatrix\NC  \omega \NC \omega^2 \NC 1 \NR\NC \omega^2
+  \NC 1 \NC \omega \NR\NC \omega \NC \omega^2 \NC 1\NR\stopbmatrix\NR\stoppmatrix \startbmatrix\NC 1 \NR\NC
+  \omega \NR\NC \omega^2 \NR\stopbmatrix = \startbmatrix\NC 1 + \omega\NC \omega + \omega^2\NC \omega^2 +
+  1\NR\NC \omega + \omega^2\NC \omega^2 + 1\NC 1 + \omega\NR\NC \omega^2 + \omega\NC 1 + \omega^2\NC\omega +
+  1\NR\stopbmatrix\startbmatrix\NC 1\NR\NC \omega \NR\NC \omega^2 \NR\stopbmatrix$
+
+  $= \startbmatrix1 + \omega + \omega^2 + \omega^3 + \omega^4 + \omega^2\NR\NC \omega + \omega^2 + \omega^3
+  + \omega + \omega^4 + \omega^3\NR\NC \omega^2 + \omega + \omega + \omega^3 + \omega^3 +
+  \omega^2\NR\stopbmatrix = 2\startbmatrix\NC 1 + \omega + \omega^2\NR\NC 1 + \omega + \omega^2\NR\NC 1 +
+  \omega + \omega^2\NR\stopbmatrix = \startbmatrix\NC 0\NR\NC 0\NR\NC 0\NR\stopbmatrix$.
 \stopitemize
