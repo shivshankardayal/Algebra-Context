@@ -293,4 +293,36 @@
   + \omega + \omega^4 + \omega^3\NR\NC \omega^2 + \omega + \omega + \omega^3 + \omega^3 +
   \omega^2\NR\stopbmatrix = 2\startbmatrix\NC 1 + \omega + \omega^2\NR\NC 1 + \omega + \omega^2\NR\NC 1 +
   \omega + \omega^2\NR\stopbmatrix = \startbmatrix\NC 0\NR\NC 0\NR\NC 0\NR\stopbmatrix$.
+\item $I + A = \startbmatrix\NC 1\NC -\tan\frac{\alpha}{2}\NR\NC \tan\frac{\alpha}{2}\NC 1\NR\stopbmatrix$
+
+  $(I - A)\startbmatrix\NC\cos\alpha\NC -\sin\alpha\NR\NC \sin\alpha\NC
+  \cos\alpha\NR\stopbmatrix= \startbmatrix\NC 1\NC \tan\frac{\alpha}{2}\NR\NC -\tan\frac{\alpha}{2}\NC
+  1\NR\stopbmatrix\startbmatrix\NC\cos\alpha\NC -\sin\alpha\NR\NC \sin\alpha\NC \cos\alpha\NR\stopbmatrix$
+
+  $= \startbmatrix\NC\cos\alpha + \tan\frac{\alpha}{2}.\sin\alpha\NC \tan\frac{\alpha}{2}\cos\alpha -
+  \sin\alpha\NR\NC \sin\alpha - \tan\frac{\alpha}{2}\cos\alpha\NC \tan\frac{\alpha}{2}\sin\alpha +
+  \cos\alpha\NR\stopbmatrix$
+
+  Substituting $\cos\alpha = \cos^2\frac{\alpha}{2} - \sin^2\frac{\alpha}{2}$ and $\sin\alpha =
+  2\sin\frac{\alpha}{2}\cos\frac{\alpha}{2}$ we get the desired result.
+\item If we multiply two matrices on left-hand side and compare the terms with right-hand side then we will
+  get four equations in $x, y, z$ and $u$. We also have four unknowns, which is a solvable system of linear
+  equations. The solution is left as an exercise.
+\item We have $\startbmatrix\NC 1 \NC x \NC 1\NR\stopbmatrix\startbmatrix\NC  1 \NC 3 \NC 2 \NR\NC 0 \NC 5
+  \NC 1 \NR\NC 0 \NC 3 \NC 2 \NR\stopbmatrix \startbmatrix\NC 1 \NR\NC 1 \NR\NC x\NR\stopbmatrix = 0$
+
+  $\Rightarrow \startbmatrix\NC 1\NC 3 + 5x + 3\NC 2 + x + 2\NR\stopbmatrix\startbmatrix\NC 1 \NR\NC 1
+  \NR\NC x\NR\stopbmatrix = 0$
+
+  $1 + 6 + 5x + 4x + x^2 = 0 \Rightarrow x^2 + 9x + 7 = 0 \Rightarrow x = \frac{-9 \pm\sqrt{53}}{2}$.
+\item Product is $\startbmatrix\NC \cos^2\theta\cos^2\phi + \sin\theta\cos\theta\cos\phi\sin\phi\NC
+  \cos^2\theta\cos\phi\sin\phi + \sin\theta\cos\theta\sin^2\phi\NR\NC \cos^2\theta\sin\theta\cos\theta +
+  \sin^2\theta\cos\phi\sin\phi\NC \cos\theta\sin\theta\cos\phi\sin\phi +
+  \sin^2\theta\sin^2\phi\NR\stopbmatrix$
+
+  $= \startbmatrix\NC\cos\theta\cos\phi\cos(\theta - \phi)\NC \sin\phi\sin\theta\cos(\theta - \phi)\NR\NC
+  \cos\phi\sin\theta\cos(\theta - \phi)\NC \sin\theta\sin\phi\cos(\theta - \phi)\NR\stopbmatrix$
+
+  Clearly the above matrix is a zero matrix of the difference of angles is an odd multiple of
+  $\frac{\pi}{2}$.
 \stopitemize
