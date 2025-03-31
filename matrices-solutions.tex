@@ -325,4 +325,63 @@
 
   Clearly the above matrix is a zero matrix of the difference of angles is an odd multiple of
   $\frac{\pi}{2}$.
+\item This we will prove by mathematical induction. We have $A = \startbmatrix\NC \cos\theta \NC -\sin\theta
+  \NR\NC \sin\theta \NC \cos\theta \NR\stopbmatrix$.
+
+  $A^2 = \startbmatrix\NC \cos\theta \NC -\sin\theta\NR\NC \sin\theta \NC \cos\theta
+  \NR\stopbmatrix.\startbmatrix\NC \cos\theta \NC -\sin\theta \NR\NC \sin\theta \NC \cos\theta
+  \NR\stopbmatrix$
+
+  $= \startbmatrix\NC \cos^2\theta - \sin^2\theta\NC -\cos\theta\sin\theta - \sin\theta\cos\theta\NR\NC
+  \sin\theta\cos\theta + \cos\theta\sin\theta\NC -\sin^2\theta + \cos^2\theta\NR\stopbmatrix =
+  \startbmatrix\NC\cos2\theta\NC-\sin2\theta\NR\NC \sin2\theta\NC \cos2\theta\NR\stopbmatrix$
+
+  Thus, the result is true for $n = 2$. Let it be true for $n = k$ i.e. $A^k = \startbmatrix\NC \cos k\theta
+  \NC -\sin k\theta \NR\NC \sin k\theta \NC  \cos k\theta\NR\stopbmatrix$.
+
+  $A^{k + 1} = \startbmatrix\NC\cos k\theta\cos\theta -\sin k\theta\sin\theta\NC -\cos k\theta\sin\theta -
+  \sin k\theta\cos\theta\NR\NC \sin k\theta\cos\theta + \cos k\theta\sin\theta\NC -\sin k\theta\sin\theta +
+  \cos k\theta\cos\theta\NR\stopbmatrix$
+
+  $= \startbmatrix\NC\cos(k + 1)\theta\NC -\sin(k + 1)\theta\NR\NC \sin(k + 1)\theta\NC \cos(k +
+  1)\theta\NR\stopbmatrix$, which is true for $n = k + 1$.
+
+  Thus, we have proven the required result by mathematical induction.
+\item We have $A = \startbmatrix\NC  0 \NC 1 \NR\NC 0 \NC 0\NR\stopbmatrix$. We will prove this by
+  mathematical induction like last problem.
+
+  $A^2 = \startbmatrix\NC 3*3 - 4*1\NC 3*-4 - 4*-1\NR\NC 1*3 - 1*1\NC 1*-4 - 1*-1\NR\stopbmatrix =
+  \startbmatrix\NC 1 + 2*2\NC -4*2\NR\NC 2\NC 1 - 2*2\NR\stopbmatrix$, which is true for $n = 2$. Let it be
+  true for $n = k$ i.e. $A^k = \startbmatrix\NC 1 + 2k \NC -4k \NR\NC k \NC 1 -
+  2k\NR\stopbmatrix$
+
+  $A^{k + 1} =\startbmatrix\NC(1 + 2k)*3 - 4k*1\NC (1 + 2k)*-4 - 4k*-1\NR\NC k*3 + (1 - 2k)*1\NC k*-4 + (1 -
+  2k)*-1\NR\stopbmatrix = \startbmatrix\NC 1 + 2(k + 1)\NC -4(k + 1)\NR\NC k + 1\NC 1 - 2(k + 1)\NR\stopbmatrix$,
+  which is true for $n = k + 1$.
+
+  Thus, we have proven the required result by mathematical induction.
+\item $(aI + bA)^1 = aI + 1a^{1 - 1}bA = aI + bA$, thus the statement holds true for $n = 1$.
+
+  Let it be true for $n = k$ i.e. $(aI + bA)^k = a^kI + ka^{k - 1}bA$
+
+  For $n = k + 1, (aI + bA)^{k + 1} = (a^kI + ka^{k - 1}bA)(aI + bA) = a^{k + 1}I + ka^{k - 1}abA + a^kbA +
+  ka^{k - 1}bA*bA$
+
+  However, $A^2 = 0$, so$a^{k + 1}I + ka^kbA + a^kbA = a^{k + 1}I + (k + 1)a^kbA$.
+
+  Thus, the statement is true for $n = k + 1$, and, hence proved.
+\item We know that for matrix multiplication it is not neccessary that $AB = BA$. However, $(A + B)(A - B) =
+  A^2 - AB + BA - B^2$, which will be equal to $A^2 - B^2$ if $AB = BA$.
+\item We can represent quanitity bought using a row matrix, for example, $Q = \startbmatrix\NC 8\NC 10\NC
+  4\NR\stopbmatrix$ and rate as $R = \startbmatrix\NC18\NR\NC 9\NR\NC 6\NR\stopbmatrix$.
+
+  Total cost would be product of these two matrices i.e. $8*18 + 10*9 + 4*6 = 144 + 90 + 24 = 258$.
+\item Let the amount invested in first fund is USD $x$, and in second fund USD $30000 - x$. Then we can
+  represent interest as
+
+  $\startbmatrix\NC x\NC 30000 - x\NR\stopbmatrix.\startbmatrix\NC 0.05\NR\NC 0.07\NR\stopbmatrix = 2000$
+
+  $\Rightarrow 0.05x + 2100 - 0.07x = 2000 \Rightarrow 0.02x = 100 \Rightarrow x = 5000$. Thus, amount to be
+  invested in first fund is USD $5000$, and in second fund USD $25000$ should be invested.
+\item 
 \stopitemize
