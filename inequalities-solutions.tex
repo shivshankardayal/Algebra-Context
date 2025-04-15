@@ -187,4 +187,386 @@
   \frac{2}{5}$.
 
   Thus, in all cases the inequality holds.
+\item For $n = 1$, we have $(1!)^2 = 1^2 = 1$ and $1^1 = 1$. So $1\geq 1$, the inequality holds for $n = 1$.
+
+  For $n = 2$, we have $(2!)^2 = 4$ and $2^2 = 4$, so the inequality holds true for $n = 2$.
+
+  Let the inequality holds for $n = k$ i.e. $(k!)^2\geq k^k$.
+
+  For $n = k + 1$, we have to prove that $[(k + 1)!]^2\geq (k + 1)^{k + 1}$.
+
+  Now $[(k + 1)!]^2 = [(k + 1)k!]^2 = (k + 1)^2(k!)^2$ and $(k + 1)^{k + 1} = (k + 1)^k.(k + 1)$.
+
+  So we have to show that $(k + 1)^2(k!)^2\geq (k + 1)^k.(k+ 1)$ $\Rightarrow (k + 1).k^k\geq (k + 1)^k$
+
+  $\Rightarrow k + 1\geq \left(\frac{k + 1}{k}\right)^k$
+
+  Now $\left(1 + \frac{1}{k}\right)^k$ has an upper bound of $e$, while $k + 1$ is an increasing
+  sequence. We can prove again by induction that $k + 1\geq \left(1 + \frac{1}{k}\right)^k$.
+
+  Hence the inequality is proved.
+\item We can rewrite given expression as $\left(x^3 + \frac{x^2}{2}\right)^2 + \left(x^2 -
+  \frac{x}{2}\right)^2 + (1 + x + x^2)$.
+
+  Now we know that $1 + x + x^2 = \left(x + \frac{1}{2}\right)^2+ \frac{3}{4}$, and thus, the inequality is
+  proved.
+\item Given $\alpha^2\geq \beta\gamma$. Taking log of both sides $2\log\alpha\geq \log\beta + \log\gamma$.
+
+  From A.M.-G.M. inequality we have $\log\beta + \log\gamma\geq 2\sqrt{\log\beta\log\gamma}$
+
+  $\therefore \log\alpha\geq \sqrt{\log\beta\log\gamma}$. Squaring we prove the inequality.
+\item $\log_45 > 1.1$ because $4^{1.1} \approx 4.86$. $\log_56 > 1.1$ because $5^{1.1}\approx
+  5.59$. $\log_67 > 1.1$ because $6^{1.1}\approx 7.32$, and $\log_78 > 1.1$ because $7^{1.1} \approx 8.48$.
+
+  Thus, $\log_45 + \log_56 + \log_67 + \log_78> 4.4$.
+\item $\frac{n}{3.5\ldots(2n + 1)} = \frac{1}{2}.\frac{2n}{3.5\ldots(2n + 1)} =
+  \frac{1}{2}\left(\frac{1}{3.5\ldots(2n - 1) - \frac{1}{3.5\ldots(2n + 1)}}\right)$
+
+  Let $S = \frac{1}{3} + \frac{2}{3.5} + \cdots + \frac{n}{3.5\ldots(2n + 1)} = \frac{1}{2}\left[\left(1 -
+    \frac{1}{3}\right) + \left(\frac{1}{3} - \frac{1}{3.5}\right) + \cdots + \left(\frac{1}{3.5.\ldots(2n -
+      1)} - \frac{1}{3.5\ldots(2n + 1)}\right)\right]$
+
+  $= \frac{1}{2}\left(1 - \frac{1}{3.5\ldots(2n + 1)}\right) < \frac{1}{2}$. Hence proved.
+\item $\displaystyle\prod_{i = 2}^n\frac{i^3 + 1}{i^3 - 1} = \prod_{i = 2}^n\frac{i + 1}{i - 1}.\frac{i^2 -
+  i + 1}{i^2 + i + 1}$
+
+  Now $\displaystyle\prod_{i = 2}^n\frac{i + 1}{i - 1} = \frac{n(n + 1)}{2}$ and $\displaystyle\prod_{i =
+    2}^n\frac{i^2 - i + 1}{i^2 + i + 1} = \frac{3}{n^2 + n + 1}$
+
+  If $P$ is the given product then $P = \frac{3n(n + 1)}{2(n^2 + n + 1)}$
+
+  Now $\displaystyle\lim_{n\to \infty} \frac{3n(n + 1)}{2(n^2 + n + 1)}= \frac{3}{2}$. Thus, $P <
+  \frac{3}{2}$.
+\item For $n = 1, 1.1! < (1 + 1)!$, which is true. Let the inequality be true for $n = k$ i.e. $1.1! + 2.2!
+  + \cdots + k.k! < (k + 1)!$
+
+  Now, for $n = k + 1$ the inequality becomes $1.1! + 2.2! + \cdots + k.k! + (k + 1)(k + 1)! < (k + 1)! + (k
+  + 1)(k + 1)! = (k + 1)![k + 1 + 1] = (k + 2)!$
+
+  Thus, the inequality is proven by mathematical induction.
+\item $1 + \frac{1}{k^2} = \frac{k^2 + 1}{k^2} = \frac{k^2 - 1}{k^2} + \frac{2}{k^2}$.
+
+  $\displaystyle\prod_{k = 2}^n\frac{k^2 - 1}{k^2} =
+  \frac{1.3}{2^2}.\frac{2.4}{3^2}\cdots.\frac{(n - 1)(n + 1)}{n^2}$
+
+  $= \frac{1.2.3\ldots(n - 1)}{2.3.4\ldots n}.\frac{3.4.5\ldots(n + 1)}{2.3.4\ldots n} = \frac{n + 1}{2n} =
+  \frac{1}{2} + \frac{1}{2n}$
+
+  Now $\frac{1}{2} + \frac{1}{2n}\leq \frac{1}{2} + \frac{1}{4}$ because for $n\geq 2,\;\frac{1}{2n} \leq
+  \frac{1}{4}$.
+
+  Now $\displaystyle\sum_{k=1}^{\infty}\frac{2}{k^2} = \frac{\pi^2}{3}$, which is upper bound of the
+  sum. $\displaystyle\Rightarrow \sum_{k = 2}^{\infty}\frac{2}{k^2} = \frac{\pi^2}{3} - \frac{2}{1^2}$. We
+  see that the sum of two components is less than $2$.
+
+  Thus, the inequality is proven.
+\item We have proven in previous example that $\displaystyle\prod_{k = 2}^n\frac{k^2 - 1}{k^2} = \frac{1}{2}
+  + \frac{1}{2n}$. If we want to maximize L.H.S. then we pick continuous natural numbers starting from
+  $2$. For $n\geq 2,\;\frac{1}{2n} \leq \frac{1}{4}$, however, sum is greater than $\frac{1}{2}$.
+\item We can rewrite the inequality as $\frac{1}{2} - \left(\frac{1}{3} - \frac{1}{4}\right) - \cdots -
+  \left(\frac{1}{999} - \frac{1}{1000}\right)$. Considering first three terms we have $\frac{1}{2} -
+  \frac{1}{12} - \frac{1}{30} = \frac{23}{60}$, which is less than $\frac{2}{5}$ and further terms will make
+  it lesser. Hence proved.
+\item Given $\frac{a + b}{1 + a + b}\leq \frac{a}{1 + a} + \frac{b}{1 + b} \Rightarrow \frac{a}{1 + a + b} -
+  \frac{a}{1 + a} + \frac{b}{1 + a + b} - \frac{b}{1 + b}\leq 0$
+
+  $\Rightarrow \frac{a + a^2 - a - a^2 - ab}{(1 + a + b)(1 + a)} + \frac{b + b^2 - b - b^2 - ab}{(1 + a +
+    b)(1 + b)}\leq 0$, which is clearly true.
+\item Multiplying both sides by $2(1 + a)(1 + b)(2 + a + b)$, we get
+
+  $2(a + b)(1 + a)(1 + b)\geq [a(1 + b) + b(1 + a)](2 + a + b)\Rightarrow (a - b)^2\geq 0$, which proves the
+  inequality.
+\item Let $\displaystyle S_i = \sum_{j = 1}^ia_j$ and $b_i = \frac{S_i}{i}$, which makes
+  L.H.S. $\displaystyle \sum_{i=1}^n\frac{b_i}{i}$.
+
+  Clearly, $a_i = b_i - \frac{i - 1}{i}b_{i - 1}$.
+
+  $\displaystyle\sum_{i = 1}^na_i = b_1 + \left(b_2 - \frac{b_1}{2}\right) +\cdots + \left(b_n - \frac{n-
+    1}{n}b_{n - 1}\right)$
+
+  $= b_n + \frac{b_{n - 1}}{n} + \frac{b_{n - 2}}{n - 1} + \cdots + \frac{b_1}{2} = b_n +
+  \displaystyle\sum_{i = 1}^n\frac{b_i}{i + 1}$
+
+  Now $2\displaystyle\sum_{i = 1}^na_i - \sum_{i=1}^n\frac{b_i}{i} = \left(2 - \frac{1}{n}\right) +
+  \sum_{i=1}^n\left(\frac{2}{i + 1} - \frac{1}{i}\right)b_i$
+
+  $\frac{2}{i + 1} - \frac{1}{i} = \frac{i - 1}{i(i + 1)}$ so the sum $2\displaystyle\sum_{i = 1}^na_i -
+  \sum_{i=1}^n\frac{b_i}{i} \geq 0$
+
+  Hence proved.
+\item We observe that if $a = 2, b = 3$ and $c = 7$ then $\frac{1}{a} +
+  \frac{1}{b} + \frac{1}{c} = \frac{41}{42}$. If $a = 2, b = 3, c > 7$, then $\frac{1}{a} + \frac{1}{b} +
+  \frac{1}{c} < \frac{41}{42}$, if $a = 2, b > 3, c > 4$, then $\frac{1}{a} + \frac{1}{b} + \frac{1}{c} <
+  \frac{41}{42}$, and if $a > 2, b > 3, c > 4$, then $\frac{1}{a} + \frac{1}{b} + \frac{1}{c} <
+  \frac{41}{42}$.
+
+  Thus, we see that maximum value of $\frac{1}{a} + \frac{1}{b} + \frac{1}{c}$ is $\frac{41}{42}$.
+\item {\bf{\it Nesbitt's inequality:}} From A.M.-H.M. inequality $\frac{(x + y) + (y + z) + (z + x)}{3}\geq
+  \frac{3}{\frac{1}{x + y} + \frac{1}{y + z} + \frac{1}{z + x}}$
+
+  $\Rightarrow \left[(x + y) + (y + z) + (z + x)\right]\left(\frac{1}{x + y} + \frac{1}{y + z} + \frac{1}{z
+  + x}\right)\geq 9$
+
+  $\Rightarrow 2\frac{x + y + z}{x + y} + 2\frac{x + y + z}{y + z} + 2\frac{x + y + z}{z + x}\geq 9$
+
+  $\Rightarrow \frac{x}{y + z} + \frac{y}{z + x} + \frac{z}{x + y}\geq \frac{3}{2}$.
+
+  Now $\frac{4x}{y + z} + \frac{y}{x + z} + \frac{z}{x + y} > 2$ is to be proven.
+
+  $\Rightarrow \frac{3x}{y + z}\geq \frac{1}{2}$
+
+  If $x = y = z$ then it is greater than $\frac{1}{2}$.
+
+  If we make $y >> x$ and $z >> x$ to so that it is less than $\frac{1}{2}$ then the other terms of the
+  inequality becomes greater than $2$.
+
+  If $x >> y = z$ then it is greater than $\frac{1}{2}$.
+
+  Thus, inequality holds in all cases.
+\item Since $a, b, c, d > 0$ we can write $a + b + c, a + b + d, a + c + d, b + c + d > a + b + c + d$.
+
+  So $\frac{a}{a + b + d} > \frac{a}{a + b + c + d}, \frac{b}{a + b + c} > \frac{b}{a + b + c + d},
+  \frac{c}{b + c + d} > \frac{c}{a + b + c + d}$, and $\frac{d}{a + c + d} > \frac{d}{a + b + c + d}$
+
+  Adding we get $\frac{a}{a + b + d} + \frac{b}{a + b + c} + \frac{c}{b + c + d} + \frac{d}{a + c + d} > 1$.
+
+
+  Similarly, $\frac{a}{a + b + d} < \frac{a}{a + b}$, and $\frac{b}{a + b + c} < \frac{b}{a + b}$. Adding
+  $\frac{a}{a + b + d} + \frac{b}{a + b + c} < 1$.
+
+  Also, $\frac{c}{b + c + d} < \frac{c}{c + d}$, and $\frac{d}{a + c + d} < \frac{d}{c + d}$. Adding
+  $\frac{c}{b + c + d} + \frac{d}{c + d} < 1$.
+
+  Adding all these we prove the required inequality.
+\item If $a + b\leq c + d$ then $a\leq c$ or $b\leq d$. If $a\leq c$ then from first condition $b - d> (c -
+  d)(c + a) > c - a \Rightarrow a + b > c + d$.
+
+  Similarly for other condition same can be proved. And thus, the inequality is proven.
+\item $(b - a)(9 - a^2) + (c - a)(9 - b^2) + (c - b)(9 - c^2) = 9b + c(9 - b^2) + (c - b)(9 - c^2) = 18c -
+  c^3 + bc(c - b)\leq 18 c - c^3 + \frac{1}{4}c^3= 18c - \frac{3}{4}c^2$
+
+  We can use calculus to apply maxima and minima to prove the inequality.
+\item We assume that all of them are greater than $\frac{1}{4}$ so $abc(1 - a)(1 - b)(1 - c) >
+  \frac{1}{16}$.
+
+  From A.M.-G.M. inequality $\frac{a + 1 - a}{1}\geq \sqrt{a(1 - a)}\Rightarrow a(1 - a)\leq
+  \frac{1}{4}$. Similarly, $b(1 - b)\leq \frac{1}{4}$ and $c(1 - c)\leq \frac{1}{4}$.
+
+  Multiplying $abc(1 - a)(1 - b)(1 - c)\leq \frac{1}{16}$, which leads to a contradiction. Thus, at least
+  one of the assumed numbers is less that $\frac{1}{4}$.
+\item $\sqrt{a + \frac{1}{4}(b - c)^2}\leq a + \frac{b + c}{2}$ if $a, b, c > 0$ and $a + b + c = 1$.
+
+  Adding for all the terms we get $2(a + b + c) = 2$.
+\item Using Cauchy-Schwarz inequality $\left(\sqrt{a + \frac{1}{4}(b - c)^2} + \sqrt{b} +
+  \sqrt{c}\right)^2\leq (1^2 + 1^2 + 1^2)\left(a + \frac{1}{4}(b - c)^2 + b + c\right) = 3\left(1 +
+  \frac{1}{4}(b^2 + c^2 - 2bc)\right) = 4\left(1 + \frac{1}{4}[(1 - a)^2 - 4bc]\right)$
+
+  From A.M.-G.M. inequality $bc\leq \frac{(b + c)^2}{4}\Rightarrow bc\leq \frac{(1 - a)^2}{4}$.
+
+  Thus above inequality becomes $\left(\sqrt{a + \frac{1}{4}(b - c)^2} + \sqrt{b} +
+  \sqrt{c}\right)^2\leq 3\left(1 + \frac{1}{4}[(1 - a)^2 - (1 - a)^2]\right) = 3$.
+
+  Hence proved.
+\item We know that $\frac{x}{y} + \frac{y}{x}\geq 2$. Given expression is $\frac{a^4}{b^4} + \frac{b^4}{a^4}
+  - \frac{a^2}{b^2} - \frac{b^2}{a^2} + \frac{a}{b} + \frac{b}{a}$
+
+  $= \left(\frac{a^2}{b^2} + \frac{b^2}{a^2}\right) - 2 - \left(\frac{a}{b} + \frac{b}{a}\right)^2 + 2 +
+  \frac{a}{b}+ \frac{b}{a}$
+
+  Substityting $\frac{a}{b} + \frac{b}{a} = y$ we have the expression as $y^4 - 5y^2 + y + 4$. Applying
+  maxima-minima we find the minimum value as $2$.
+\item Since $x_1 + x_2 + \cdots + x_n = 1$, it follows by problem $9$ that there are two numbers such that
+  one of them is not greater than $\frac{1}{n}$, and the other one is not less than $\frac{1}{n}$. WLOG we
+  can assume that $x_1\leq x_2$. Substituting $x_1$ by $\frac{1}{n}, x_2$ by $x_1 + x_2 - \frac{1}{n}$. Then
+  we obtain numbers $\frac{1}{n}, x_1 + x_2 - \frac{1}{n}, x_3, \ldots, x_n$ such that
+
+  $\frac{(1 - x_1)\cdots(1 - x_n)}{x_1\cdots x_n}\geq \frac{\left(1 - \frac{1}{n}\right)\left(1 - x_1 - x_2
+    + \frac{1}{n}\right)\cdots(1 - x_n)}{\frac{1}{n}\left(x_1 + x_2 - \frac{1}{n}\right)\cdots
+    x_n}$ from problem $16$. $\frac{(1 - x_1)(1 - x_2)}{x_1x_2} = 1 + \frac{1 - (x_1 +
+    x_2)}{x_1x_2}$. Repeating this step, we obtain $n$ numbers less than $\frac{1}{n}$. For these numbers
+  L.H.S. of the inequality is equal to $(n - 1)^n$ and is not greater than $\frac{(1 - x)1)\cdots(1 -
+    x_n)}{x_1\cdots x_n}$.
+\item Let $\sqrt[n]{x_1\ldots x_n} = y$. According to problem $11$, WLOG one can assume that $x_1\leq y\leq
+  x_2$, and therefore, for numbers $y, \frac{x_1x_2}{y}, x_3, \ldots, x_n$
+
+  $\frac{1}{x_1} + \cdots + \frac{1}{1 + x_n}\geq \frac{1}{1 + y} + \frac{1}{1 + \frac{x_1x_2}{y}} + \cdots
+  + \frac{1}{1 + x_n}$. Since $\frac{1}{1 + x_1} + \frac{1}{1 + x_2}\geq \frac{1}{1 + y} + \frac{1}{1 +
+    \frac{x_1x_2}{y}}$ and $\frac{1}{1 + x_1} + \frac{1}{1 + x_2} = 1 + \frac{1 - x_1x_2}{1 + x_1 + x_2 +
+    x_1x_2}$.
+
+  After a finite numbere of steps, we deduce that $\frac{1}{1 + x_1} + \frac{1}{1 + x_2} + \cdots +
+  \frac{1}{1 + x_n}\geq \frac{1}{1 + y} + \cdots \frac{1}{1 + y} = \frac{n}{1 + \sqrt[n]{x_1\ldots x_n}}$.
+\item If $a = b = c = d = \frac{1}{4}$, then we have equality. Let $a < \frac{1}{4} < b$, then
+
+  If $c + d - \frac{176}{27}cd < 0$, then $A = ab\left(c + d - \frac{176}{27}cd\right) + cd(a + b)\leq cd(a
+  + b)\leq \left(\frac{a + b + c + d}{3}\right)^3 = \frac{1}{27}$
+
+  If $c + d - \frac{176}{27}cd \geq 0$, then $A\leq \frac{1}{4}\left(a + b - \frac{1}{4}\right)\left(c + d -
+  \frac{176}{27}cd\right) + cd\left(\frac{1}{4} + a + b - \frac{1}{4}\right)$
+
+  Hence, we must prove inequality for numbers $a_1 = \frac{1}{4}, b_1 = a + b - \frac{1}{4}, c_1 = d, d_1 =
+  d$.
+
+  Similarly, either one can prove the inequality for numbers $a_1, b_1, c_1, d_2$ or it will be sufficient
+  to prove the inequality for the case among $a_1, b_1, c_1, d_1$ two numbers are equaal to
+  $\frac{1}{4}$. Continuing in this way we obtain that it is sufficient to prove the inequality for numbers
+  $\frac{1}{4}, \frac{1}{4}, \frac{1}{4}, \frac{1}{4}$. In this case the inequality holds.
+\item Let $x\geq y\geq z$, then $y\leq \frac{1}{2}$. Therefore, $0\leq y(x + z) + xz(1 - 2y)\leq
+  y\left(\frac{1}{3} + x + z - \frac{1}{3}\right) + \frac{1}{3}\left(x + z - \frac{1}{3}\right)(1 - 2y)$
+
+  Therefore, if we substitute the numbers $x, y, z$ by the numbers $\frac{1}{3}, y, x + z - \frac{1}{3}$ in
+  the expression $xy + yz + xz - 2xyz$, then its value does not decrease. Continuing similarly, we can
+  substitute the numbers $\frac{1}{3}, y, x + z - \frac{1}{3}$ by $\frac{1}{3}, \frac{1}{3},
+  \frac{1}{3}$. Hence, we deduce that $xy + yz + zx - 2xyz\leq \frac{1}{9} + \frac{1}{9} + \frac{1}{9} -
+  \frac{2}{27} = \frac{7}{27}$.
+\item Let us first prove the following lemma.
+
+  {\bf Lemma} If $a\leq b$ and $x > 0$, then $(a - x)^{12} + (b + x)^{12} > a^{12} + b^{12}$
+
+  $(a - x)^{12} + (b + x)^{12} - a^{12} - b^{12} = C_{1}^^{12}x(b^{11} - a^{11}) + C_2^^{12}x^2(b^{10} - a^{10})
+  + \cdots + 2x^{12} > 0$
+
+  Let $y_i = \sqrt{3}x_i, i = 1, 2, \ldots, 1997$. We have $-1\leq y_i\leq 3$ and $y_1 + \cdots + y_{1997} =
+  -954$ and $x_1^{12} + \cdots + x_{1997}^{12} = \frac{y_1^{12} + \cdots + y_{1997}^{12}}{3^6}$
+
+  If any two numbers among the numbers $y_1, \ldots, y_{1997}$ belong to $(-1, 3)$ then aaccording to lemma,
+  we can substitute these two numbers such that one of them is equal to $-1$ or $3$, then first two
+  conditions hold, and $y_1^{12} + \cdots + y_{1997}^{12}$ increases.
+
+  Therefore, the sum $y_1^{12} + \cdots + y_{1997}^{12}$ is maximum if we substitute these by either $-1,
+  \ldots, -1, 3,\ldots, 3$ or $-1, \ldots, -1, 3, \ldots, 3, a$ where $a\in(-1, 3)$.
+
+  Taking into consideration the second condition, we obtain that only the second case is possible so that $k
+  = \frac{a + 2}{4} + 1735$, where $k$ is the number of $-1$\symbol[rightquote]s. Since $\frac{a + 2}{4}\in\mathbb{Z}$
+  and $a\in(-1, 3)$ we must have $a = 2$.
+
+  Therefore, the greatest value of $x_1^{12} + \cdots + x_{1997}^{12}$ is $\frac{1736 + 260.3^{12} +
+    2^{12}}{3^6} = 189548$.
+\item Let $\frac{\alpha_1 + \cdots + \alpha_n}{n} = \phi$. If $\alpha_1 = \cdots = \alpha_n = \phi$ then
+
+  $\cos\alpha_1\cos\alpha_2\cdots\cos\alpha_n(\tan\alpha_1 + \tan\alpha_2 + \cdots + \tan\alpha_n) =
+  \cos^n\phi.n.\tan\phi = n\sin\phi\cos^{n - 1}\phi$
+
+  $= n\sqrt{(n - 1)^{n - 1}\sin^2\phi\left(\frac{\cos^2\phi}{n - 1}\right)^{n - 1}}\leq n\sqrt{(n - 1)^{n -
+      1}\left(\frac{\sin^2\phi + \frac{\cos^2\phi}{n - 1} + \cdots + \frac{\cos^2\phi}{n - 1}}{n}\right)^n} =
+  n\sqrt{(n - 1)^{n - 1}\frac{1}{n^nn}} = \frac{(n - 1)^{\frac{n - 1}{2}}}{n^{\frac{n - 2}{2}}}$.
+
+  Let there be two numbers $\alpha_1$ and $\alpha_2$ such that $\alpha_1 < \phi < \alpha_2$.
+
+  $\cos\alpha_1\cos\alpha_2 = \frac{1}{2}[\cos(\alpha_1 + \alpha_2) + \cos(\alpha_1 - \alpha_2)] <
+  \frac{1}{2}[\cos(\alpha_1 + \alpha_2) + \cos(2\phi - (\alpha_1 + \alpha_2))]$
+
+  $=\cos\phi\cos(\alpha_1 + \alpha_2 - \phi)$
+
+  We have $\cos\alpha_1\cos\alpha_2\cdots\cos\alpha_n(\tan\alpha_1 + \tan\alpha_2 + \cdots + \tan\alpha_n)$
+
+  $= \sin(\alpha_1 + \alpha_2)\cos\alpha_3 \ldots \cos\alpha_n + \cos\alpha_1\cos\alpha_2\cos\alpha_3 \ldots
+  \cos\alpha_n(\tan\alpha_3 + \cdots + \tan\alpha_n) < \sin(\alpha_1 + \alpha_2)\cos\alpha_3 \ldots
+  \cos\alpha_n + \cos\phi\cos(\alpha_1 + \alpha_2 - \phi)\cos\alpha_3 \ldots \cos\alpha_n(\tan\alpha_3 +
+  \cdots + \tan\alpha_n)$
+
+  $=\cos\phi\cos(\alpha_1 + \alpha_2 - \phi)\cos\alpha_3\ldots\cos\alpha_n(\tan\phi + \tan(\alpha_1 +
+  \alpha_2 - \phi)+ \tan\alpha_3 + \ldots + \tan\alpha_n)$
+
+  Continuing similarly for the numbers $\phi, \alpha_1 + \alpha_2 - \phi, \alpha_3, \ldots, \alpha_n$ we
+  obtain a new sequence, two of whose terms are equal to $\phi$. Repeating these steps $n - 1$ times, we
+  obtain a sequence, $n - 1$ of whose terms are equal to $\phi$ and the $n$th term is equalt to $n\phi - (n
+  - 1)\phi = \phi$. Hence, we have
+
+  $\cos\alpha_1\cos\alpha_2\cdots\cos\alpha_n(\tan\alpha_1 + \tan\alpha_2 + \cdots + \tan\alpha_n) <
+  \cos^n\phi.n.\tan\phi\leq\frac{(n - 1)^{\frac{n - 1}{2}}}{n^{\frac{n - 2}{2}}}$.
+
+  Equallity holds if and only if $\alpha_1 = \cdots = \alpha_n = \phi$, where $\phi =
+  \tan^{-1}\frac{1}{\sqrt{n - 1}}$.
+\item Consider $x\geq 0, y\geq 0, x + y\leq \frac{2}{3}$ and $k\geq 2, k\in\mathbb{N}$, then
+
+  $x^k(1 - x) + y^k(1 - y)\leq(x + y)^k(1 - x - y)$
+
+  If $x + y = 0$, then above inequality holds, while if $x + y\neq 0$, then
+
+  $\frac{x^k}{(1 + x)^k}(1 - x) + \frac{y^k}{(x + y)^k}(1 - y)\leq \left(\frac{x}{x + y}\right)^2(1 - x) +
+  \left(\frac{y}{x + y}\right)^2(1 - y) = \frac{(x + y)^2(1 - x - y) + xy[3(x + y) - 2]}{(x + y)^2}\leq 1 -
+  x - y$.
+
+  Let $x_{i + 1}\geq x_i\geq 0, i = 1, \ldots, n - 1, x_1 + \cdots + x_n = 1$ and $n\geq 3$. Then $(n -
+  2)x_1 + (n - 2)x_2\leq (x_3 + \cdots + x_n) + (x_3 + \cdots + x_n) = 2 - 2x_1 - 2x_2$, and therefore,
+
+  $x_1 + x_2\leq \frac{2}{n}\leq \frac{2}{3}$.
+
+  Therefore, if we substitute the numbers $x_1, \ldots, x_n$ by $0, x_1 + x_2, x_3, \ldots, x_n$ then their
+  sum will be equal to $1$. Note that
+
+  $\displaystyle\sum_{i=1}^kx_i^k(1 - x_i)\leq (x_1 + x_2)^k(1 - x_1 - x_2) + x_3^k(1 - x_3) + \cdots +
+  x_n^k(1 - x_n)$.
+
+  Repeating this step a finite number of times, we end ip with case $n = 2$, i.e.,
+  $\displaystyle\sum_{i=1}^nx_i^k(1 - x_i)\leq x^k(1 - x) + (1 - x)^kx$, and therefore,
+  $\displaystyle\sum_{i = 1}^nx_i^k(1 - x_i)\leq a_k$.
+
+  Note that $a_1 = \displaystyle\max_{[0;1]}[2x(1 - x)] = \frac{1}{2}, a_2 = \max_{[0;1]}[x(1 - x)] =
+  \frac{1}{2}, a_3 = \max_{[0;1]}[x(1 - x)(1 - 2x(1 - x))] = \frac{1}{8}$ and so on.
+\item Let $x_1\leq x_2\leq \cdots\leq x_n, n\geq 3$. Now if $x_2\cdots x_{n - 1} = \frac{2(n - 1)}{n^{n -
+    1}}$, then we have
+
+  $2(n - 1)(x_2x_3 + x_1x_3 + \cdots + x_1x_n + x_2x_3 + \cdots + x_2x_n + \cdots + x_{n - 1}x_n) - n^{n -
+  1}x_1x_2\ldots x_n= 2(n - 1)[(x_1 + x_n)(x_2 + \cdots + x_{n - 1}) + x_2x_3 + \cdots + x_2x_{n - 1}] +
+  x_1x_n[2(n - 1) - n^{n - 1}x_2\ldots x_{n - 1}]\leq 2(n - 1)[x(1 - x) + x_2x_3 + \cdots + x_2x_{n - 1} +
+    \cdots + x_{n - 2}x_{n - 1}]$, where $x = x_2 + \cdots + x_{n - 1}$.
+
+  From R.M.S. inequality, it follows that $\frac{x_2^2 + \cdots + x_{n - 1}^2}{n - 2}\geq \left(\frac{x}{n -
+  2}\right)^2$, and therefore, $x_2x_3 + \cdots + x_2x_{n - 1} + \cdots + x_{n - 2}x_{n - 1}\leq \frac{n -
+    3}{2(n - 2)}x^2$, whence
+
+  $A\leq 2(n - 1)\left[x(1 - x) + \frac{n - 3}{2(n - 2)x^2}\right] = 4(n - 2).\frac{n - 1}{2(n - 2)}x\left(1
+  - \frac{n - 1}{2(n - 2)}x\right)\leq n - 2$.
+
+  If $x_2\ldots x_{n - 1}\leq \frac{2(n - 1)}{n^{n - 1}}$, then for $x_1 = x_2 = \cdots = x_n =
+  \frac{1}{n}$, we have $A = n - 2$.
+
+  Otherwise if $x_i \neq \frac{1}{n}$ for some value of $i$, then $x_1 < \frac{1}{n} < x_n$.
+
+  Substituting $x_1$ by $\frac{1}{n}$ and $x_n$ by $x_1 + x_n - \frac{1}{n}$, we see that the value of the
+  given expression increases.
+
+  Continuing similalry, either we can end the proof of inequality or it will be sufficient to prove the
+  inequality for $x_1 = \cdots = x_n = \frac{1}{n}$.
+\item If $y_1, y_2, \ldots, y_n\geq 0$ and $y_1 + y_2 + \cdots + y_n > 0$ then according to problem $67$,
+  for $x_i = \frac{y_i}{y_1 + y_2 + \cdots + y_n}, i = 1, 2, \ldots, n$ we have
+
+  $2(n - 1)q_np_n^{n - 2} - n^{n - 1}y_1y_2\ldots y_n\leq (n - 2)p_n^n$, where $p_n = y_1 + y_2 + \cdots +
+  y_n, q_n = y_1y_2 + y_1y_3 + \cdots + y_1y_n + \cdots + y_{n - 1}y_n$. Therefore, $y_1y_2\ldots y_n = 1$
+  we have
+
+  $$q_n\leq \frac{(n - 1)p_n^n + n^{n - 1}}{2(n - 1)p_n^{n - 2}}$$
+
+  If $x_1 = 0$, then we have following inequality
+
+  $$\frac{x_1 + \cdots + x_n}{n}\leq \frac{(\sqrt{x_2} - \sqrt{x_3})^2 + \cdots + (\sqrt{x_2} -
+    \sqrt{x_n})^2 + \cdots + (\sqrt{x_{n - 1}} - \sqrt{x_n})^2 + x_2 + \cdots + x_n}{n}$$
+
+  or $2\sqrt{x_2x_3} + 2\sqrt{x_2x_4} + \cdots + 2\sqrt{x_2x_n} + \cdots + 2\sqrt{x_{n - 2}x_n}\leq (n -
+  2)(x_2 + \cdots + x_n)$.
+
+  The last ineqeuality can be proved using $2\sqrt{ab}\leq a + b(a, b)\geq 0$.
+
+  If $x_i > 0$, let $y_i = \frac{\sqrt{x_i}}{\sqrt[2n]{x_1x_2\ldots x_n}}, i = 1, 2, \ldots, n$, then
+  $y_1y_2\ldots y_n = 1$, and we need to prove that $\frac{p_n^2 - 2q_n}{n} - 1\leq \frac{(n - 1)(p_n^2 -
+    2q_n) - 2q_n}{n}$, or $q_n\leq \frac{(n - 2)p_n^2 + n}{2(n - 1)}$.
+
+  It follows that $q_n\leq \frac{(n - 2)P_n^n + n^{n - 1}}{2(n - 1)p_n^{n - 1}}\leq \frac{(n - 2)p_n^2 +
+    n}{2(n - 1)}$.
+\item For numbers $y_1 = x_1^2, \ldots, y_n = x_n^2$, using the inequality of problem $68$, we deduce that
+
+  $\frac{x_1^2 + \cdots + x_n^2}{n} - \sqrt[n]{x_1^2\cdots x_n^2}\leq \frac{(|x_1| - |x_2|)^2 + \cdots +
+  (|x_1| - |x_n|)^2 + \cdots + (|x_{n - 1}| - |x_n|)^2}{n}$
+
+  or $(n - 1)(x_1^2 + \cdots + x_n^2) + n\sqrt[n]{x_1^2\ldots x_n^2}\geq (|x_1| + \cdots + |x_n|)^2\geq (x_1
+  + \cdots + x_n)^2$.
+\item WLOG we can assume that $c\geq a, c\geq b$. From A.M.-G.M. inequality $\frac{a + b}{2}\geq \sqrt{ab}$
+  and we know that $\frac{a}{b} + \frac{b}{a}\geq 2$.
+
+  Note that $\frac{b}{c} + \frac{c}{a} - \frac{b}{a} - 1 = \frac{(c - a)(c - b)}{ac}\geq 0$, whence
+  $\frac{b}{c} + \frac{c}{a} - \frac{b}{a} -1\geq 0$.
+
+  Adding the inequalities we obtain $\frac{a}{b} + \frac{b}{c} + \frac{c}{a}\geq 3$.
 \stopitemize

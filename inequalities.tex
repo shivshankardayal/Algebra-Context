@@ -1,5 +1,10 @@
 % -*- mode: context; -*-
 \chapter{Inequalities}
+Till now we have used formulas and methods to prove results. Now we will study inequalities which may
+require original thinking to (dis)prove them. This makes them fun and at times irritating. There is no
+set method to solve them. Certainly there are techniques and with time and practice you will learn these
+techniques to get better at solving these.
+
 Ineuqalities come up in different branches of mathematics; for example in algebra, geometry and trigonometry. They are very
 useful in establishing many relations among various quantities. Certain inequalities are very useful in studying properties of
 many common expressions which lead to interesting observations. In this chapter we will only study algebraic inequalitites. The
@@ -1133,7 +1138,7 @@ Prove the following inequalities:
   real number $x$.
 \item $(n!)^2 \geq n^n$, where $n\in\mathbb{N}$.
 \item $x^6 + x^5 + 4x^4 - 12x^3 + 4x^2 + x + 1\geq 0$.
-\item $\log^2\alpha\geq \log\beta\log\gamma$, where $\alpha>1, \beta>1, \gamma>1, \alpha^@\geq\beta\gamma$.
+\item $\log^2\alpha\geq \log\beta\log\gamma$, where $\alpha>1, \beta>1, \gamma>1, \alpha^2\geq\beta\gamma$.
 \item $\log_45 + \log_56 + \log_67 + \log_78> 4.4$.
 \item $\frac{1}{3} + \frac{2}{3.5} + \cdots + \frac{n}{3.5\ldots(2n + 1)} < \frac{1}{2}$, where $n\in\mathbb{N}$.
 \item $\frac{2^3 + 1}{2^3 - 1}\cdots\frac{n^3 + 1}{n^3 - 1}< \frac{3}{2}$, where $n\geq 2, n\in\mathbb{N}$.
@@ -1161,7 +1166,8 @@ Prove the following inequalities:
   \frac{a}{b} + \frac{b}{a}$, where $a, b > 0$.
 \item $\frac{(1 - x_1)(1 - x_2)\ldots(1 - x_n)}{x_1x_2\ldots x_n}\geq (n - 1)^n$, where $n\geq 2, x_i>0,  i = 1, 2, \ldots, n$ and
   $x_1 + x_2 + \cdots + x_n = 1$.
-\item $\frac{1}{1 + x_1} + \frac{1}{1 + x_2} + \cdots + \frac{1}{1 + x_n}$, where $n\geq 2, x_1\geq 1, x_2\geq 1, \ldots, x_n\geq
+\item $\frac{1}{1 + x_1} + \frac{1}{1 + x_2} + \cdots + \frac{1}{1 + x_n}\geq \frac{n}{1 +
+  \sqrt[n]{x_1\ldots x_n}}$, where $n\geq 2, x_1\geq 1, x_2\geq 1, \ldots, x_n\geq
   1$.
 \item $abc + bcd + cda + dab\leq \frac{1}{27} + \frac{176}{27}abcd$, where $a, b, c, d\geq 0$, and $a + b + c + d = 1$.
 \item $0\leq xy + yz + zx - 2xyz\leq \frac{7}{27}$, where $x, y, z\geq 0$, and $x + y + z = 1$.
@@ -1170,7 +1176,8 @@ Prove the following inequalities:
   expression $x_1^{12} + x_2^{12} + \cdots + x_{1997}^{12}$.
 \item Prove that $\cos\alpha_1\cos\alpha_2\cdots\cos\alpha_n(\tan\alpha_1 + \tan\alpha_2 + \cdots + \tan\alpha_n)\leq \frac{(n-
   1)^{(n - 1)/2}}{n^{(n - 2)/2}}$, where $n\geq 2$ and $0\leq \alpha_i<\frac{\pi}{2}, i = 1, 2, \ldots, n$.
-\item Prove that $\displaystyle\sum_{i=1}^nx_i^k(1 - x_i)\leq a_k$, where $k\geq 2, k\in\mathbb{N}$, and $a_k = {\rm \max}[x^k(1 -
+\item Prove that $\displaystyle\sum_{i=1}^nx_i^k(1 - x_i)\leq a_k$, where $k\geq 2, k\in\mathbb{N}$, and
+  $a_k = \displaystyle\max_{[0;1]}[x^k(1 -
   x) + (1 - x)^kx], x_i\geq 0, i=1, 2, \ldots, n, x_1 + x_2 + \cdots + x)n = 1, n\geq 2$.
 \item $2(n - 1)(x_2x_3 + x_1x_3 + \cdots + x_1x_n + x_2x_3 + \cdots + x_2x_n + \cdots + x_{n - 1}x_n) - n^{n - 1}x_1x_2\ldots
   x_n\leq n - 2$, where, $n\geq 2, x_1, x_2, \ldots x_n\geq 0$ and $x_1 + x_2 + \cdots + x_n = 1$.
@@ -1181,6 +1188,7 @@ Prove the following inequalities:
   \ldots, x_n\geq 0$.
 \item {\it Turkevici's Inequality}: $(n - 1)(x_1^2 + x_2^2 + \cdots + x_n^2) + \sqrt[n]{x_1^2x_2^2\ldots x_n^2}\geq (x_1 + x_2 +
   \cdots + x_n)^2$, where $n\geq 2, x_2, x_2, \ldots, x_n\geq 0$.
+\item Prove that $\frac{a}{b} + \frac{b}{c} + \frac{c}{a}\geq 3$, where $a > 0, b > 0, c > 0$.
 \item $(a + b)(b + c)(c + a)\geq 8abc$, where $a>0, b>0, c>0$.
 \item $(a + b + c - d)(b + c + d - a)(c + d + a - b)(d + a + b - c)\leq (a + b)(b + c)(c + d)(d + a)$, where $a > 0, b > 0, c > 0,
   d > 0$.
