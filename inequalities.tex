@@ -318,7 +318,7 @@ Prove that if the product of positive numbers $x_1, x_2, \cdots, x_n (n\geq 2)$ 
 \startproof
   Taking $\log$ of L.H.S. $\log\left(\frac{a^p}{p} + \frac{b^q}{q}\right)$
 
-  Notice that, since $\dfrac{1}{p} + \frac{1}{q} = 1$, so the L.H.S. is just a convext combination of $a^p$ and $b^q$. Since $\log
+  Notice that, since $\dfrac{1}{p} + \frac{1}{q} = 1$, so the L.H.S. is just a convex combination of $a^p$ and $b^q$. Since $\log
   x$ is a concave function, we have
   \startformula \log\left(\frac{a^p}{p} + \frac{b^q}{q}\right)\geq \dfrac{\log a^p}{p} + \dfrac{b^q}{q} = \log a + \log b = \log(ab).\stopformula
   Hence, the inequality is proved(since $\log x$ is strictly increasing).
@@ -326,6 +326,14 @@ Prove that if the product of positive numbers $x_1, x_2, \cdots, x_n (n\geq 2)$ 
   {\it Alternative Proof.}
 
   Using generalized AM-GM inequality, \startformula \dfrac{x^p}{p} + \frac{b^q}{q}\geq \left[(x^p)^{1/p}(y^q)^{1/q}\right] = xy.\stopformula
+\stopproof
+
+\startproof
+  {\bf Aliter:} Since $\frac{1}{p} + \frac{1}{q}= 1$, we can write $p = \frac{m + n}{m}, q = \frac{m + n}{n}$, where $m, n\in\mathbb{P}$.
+
+  Let $a = x^{1/p}$ and $b = y^{1/q}$, then $\frac{a^p}{p} + \frac{b^q}{q} = \frac{mx + ny}{m + n}$.
+
+  However, from A.M.-G.M. inequality, $\frac{mx + ny}{m + n}\geq (x^my^n)^{\frac{1}{m + n}} = ab$.
 \stopproof
 
 \section{H\"{o}lder's Inequality}
@@ -415,7 +423,7 @@ Thus,
 This property is the defining property of a convex function. The family of convex functions obey a class of inequalities known as
 Jensen's inequality.
 
-Let $I$ be an interval in $\mathbb{R}$. A function $f:I\rightarrow\mathbb{R}$ is said to be convext if for all $x, y$ in $I$ and
+Let $I$ be an interval in $\mathbb{R}$. A function $f:I\rightarrow\mathbb{R}$ is said to be convex if for all $x, y$ in $I$ and
 $k$ in the interval $[0, 1]$, the following inequality holds:
 \placeformula[eq:convex]\startformula
   f(kx + (1 - k)y)\leq kf(x) + (1 - k)f(y).
@@ -1087,7 +1095,7 @@ Some special cases are given below:
 
   So we see that these can be written in SOS form recursively. Hence proved.
 \stopproof
-
+\pagebreak
 \section{Problems}
 Prove the following inequalities:
 
@@ -1189,6 +1197,8 @@ Prove the following inequalities:
 \item {\it Turkevici's Inequality}: $(n - 1)(x_1^2 + x_2^2 + \cdots + x_n^2) + \sqrt[n]{x_1^2x_2^2\ldots x_n^2}\geq (x_1 + x_2 +
   \cdots + x_n)^2$, where $n\geq 2, x_2, x_2, \ldots, x_n\geq 0$.
 \item Prove that $\frac{a}{b} + \frac{b}{c} + \frac{c}{a}\geq 3$, where $a > 0, b > 0, c > 0$.
+\item Prove that $\sqrt{\frac{a}{b + c}} + \sqrt{\frac{b}{c + a}} + \sqrt{\frac{c}{a + b}} > 2$, where $a >
+  0, b > 0, c > 0$.
 \item $(a + b)(b + c)(c + a)\geq 8abc$, where $a>0, b>0, c>0$.
 \item $(a + b + c - d)(b + c + d - a)(c + d + a - b)(d + a + b - c)\leq (a + b)(b + c)(c + d)(d + a)$, where $a > 0, b > 0, c > 0,
   d > 0$.
@@ -1205,7 +1215,7 @@ Prove the following inequalities:
 \item $x^2 + y^2 \geq 2\sqrt{2}(x - y)$, if $xy = 1$.
 \item $\sqrt{6a_1 + 1} + \sqrt{6a_2 + 1} + \sqrt{6a_3 + 1} + \sqrt{6a_4 + 1} + \sqrt{6a_5 + 1}\leq \sqrt{55}$, if $a_1 > 0, \ldots,
   a_5 > 0$ and $a_1 + \cdots + a_5 = 1$.
-\item $6a + 4b + 5c\geq 5\sqrt{ab} + 3\sqrt{bc + 7\sqrt{ca}}$, where $a\geq 0, b\geq 0, c\geq 0$.
+\item $6a + 4b + 5c\geq 5\sqrt{ab} + 3\sqrt{bc} + 7\sqrt{ca}$, where $a\geq 0, b\geq 0, c\geq 0$.
 \item $2(a^4 + b^4) + 17 > 16 ab$.
 \item $\left(\frac{1 + nb}{n + 1}\right)^{n + 1}\geq b^n$, where $n\in\mathbb{N}, b > 0$.
 \item $\left(1 + \frac{1}{n}\right)^n < \left(1 + \frac{1}{n + 1}\right)^{n + 1}$, where $n\in\mathbb{N}$.
@@ -1228,9 +1238,7 @@ Prove the following inequalities:
   $\leq\sqrt[n]{(a_1 + b_1 + \cdots + k_1)(a_2 + b_2 + \cdots + k_2)\cdots(a_n + b_n + \cdots + k_n)}$ where
 
   $a_1, a_2,\ldots, a_n, b_1, b_2, \ldots, b_n, \ldots, k_1, k_2, \ldots, k_n > 0$.
-\item $a_1 + \sqrt{a_1a_2} + \cdots + \sqrt[n]{a_1a_2\ldots a_n}\leq e(a_1 + a_2 + \cdots + a_n)$, where $n\geq 2, a_1, a_2,
-  \ldots, a_n\geq 0$.
-\item $na^k - ka^n\leq n - 1$, where $n > k, n, k\in\mathbb{N}, a > 0$.
+\item $na^k - ka^n\leq n - k$, where $n > k, n, k\in\mathbb{N}, a > 0$.
 \item $\frac{x_1^2}{x_2} + \frac{x_2^3}{x_3^2} + \cdots + \frac{x_n^{n + 1}}{x_1^n}\geq x_1 + x_2 + \cdots + x_n$, where $n\geq 2,
   n\in\mathbb{N}, x_1 = {\rm min}(x_1, x_2, \ldots, x_n) > 0$.
 \item $\frac{a^{x_1 - x_2}}{x_1 + x_2} + \frac{a^{x_2 - x_3}}{x_2 + x_3} + \cdots + \frac{a^{x_n - x_1}}{x_n +
@@ -1262,6 +1270,7 @@ Prove the following inequalities:
   x_1 > 0, x_2 > 0, \cdots, x_n > 0, \alpha > \beta \geq 0$, and $x_1x_2\ldots x_n = 1$.
 \item Prove that $x_1^\alpha + x_2^\alpha + \cdots + x_n^\alpha\geq x_1^\beta + x_2^\beta + \cdots + x_n^\beta$, where $n\geq 2,
   x_1 > 0, x_2 > 0, \cdots, x_n > 0, \alpha\geq (n - 1)|\beta|$, and $x_1x_2\ldots x_n = 1$.
+\item Prove that $x^2y + y^2z + z^2x\leq \frac{4}{27}$, where $x, y, z\geq 0$ and $x + y + z = 1$.
 \item Prove that $\frac{1 + a}{1 + ab} + \frac{1 + b}{1 + bc} + \frac{1 + c}{1 + cd} + \frac{1 + d}{1 + da}\geq 4$, where $a, b, c,
   d > 0$ and $abcd = 1$.
 \item Prove that $\frac{1 + ab}{1 + a} + \frac{1 + bc}{1 + b} + \frac{1 + cd}{1 + c} + \frac{1 + da}{1 + d}\geq 4$, where $a, b, c,
@@ -1271,8 +1280,6 @@ Prove the following inequalities:
 \item Prove that $\frac{a + \sqrt{ab} + \sqrt[3]{abc} + \sqrt[4]{abcd}}{4}\leq \sqrt[4]{a.\frac{a + b}{2}.\frac{a + b +
     c}{3}. \frac{a + b + c + d}{4}}$, where $a > 0, b > 0, c > 0, d > 0$.
 \item Prove that $a^{12} + (ab)^6 + (abc)^4 + (abcd)^3\leq 1.43(a^{12} + b^{12} + c^{12} + d^{12})$.
-\item $ab\leq \frac{a^p}{p} + \frac{b^q}{1}$, if $\frac{1}{p} + \frac{1}{q} =1, a, b, p, q >0$, where $p$ and $q$ are rational
-  numbers.
 \item $\left(1 + \frac{1}{n}\right)^n > 2$, where $n\in\mathbb{N}$.
 \item $(1 + a_1)(1 + a_2)\cdots(1 + a_n)\leq 1 + \frac{S}{1!} + \cdots + \frac{S^n}{n!}$, where $n\geq 2, S = a_1 + a_2 + \cdots +
   a_n, a_i > 0, i = 1, 2, \ldots, n$.
