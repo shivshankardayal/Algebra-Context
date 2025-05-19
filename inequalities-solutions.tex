@@ -905,4 +905,190 @@
     c} + \frac{12c}{a + b + c + d}\right) +$
 
   $\frac{1}{4}\left(1 + \frac{2b}{a + b} + \frac{3c}{a + b + c} + \frac{4d}{a + b + c + d}\right) = 4$.
+\item WLOG we assume that $a, b, c, d\geq 0$. Let $x, y, z$ be arbitrary positive numbers. Then using
+  A.M.-G.M. inequality, we observe that
+
+  $a^{12} + (ab)^6 + (abc)^4 + (abcd)^3 = a^{12} + \frac{1}{x^6}(xab)^6 + \frac{1}{x^4y^8}(xya.yb.c)^4 +
+  \frac{1}{x^3y^6z^9}(xyza.yzb.zc.d)^3\leq a^{12} + \frac{1}{2x^6}(x^{12}a^{12} + b^{12}) +
+  \frac{1}{3x^4y^8}(x^{12}y^{12}a^{12} + y^{12}b^{12} + c^{12}) +
+  \frac{1}{4x^3y^6z^9}(x^{12}y^{12}z^{12}a^{12} + y^{12}z^{12}b^{12} + z^{12}c^{12} + d^{12}) = A(a^{12} +
+  b^{12} + c^{12} + d^{12})$.
+
+  We take numbers $x, y, z$ such that $1 + \frac{x^6}{2} + \frac{x^8y^4}{3} + \frac{x^9y^6z^3}{4} =
+  \frac{1}{2x^6} + \frac{y^4}{3x^4} + \frac{y^6z^3}{4x^3} = \frac{1}{4x^3y^4z^9} = A$.
+
+  Therefore, $x^{12} = 1 - \frac{1}{A}, y^{12} = 1 - \frac{1}{2\sqrt{A(A - 1)}}, z^{12} = 1 -
+  \frac{1}{3\sqrt[3]{A[\sqrt{A(A - 1)} - 0.5]^2}}$, and $\frac{256}{27}A\left(3\sqrt[3]{A[A(A - 1) - 0.5]^2}
+  - 1\right)^3 = 1$.
+
+  Let $f(A) = \frac{256}{27}A\left(3\sqrt[3]{A[A(A - 1) - 0.5]^2} - 1\right)^3 - 1$
+
+  By applying limits on this function between the limits $1.42$ and $1.43$ we find a value such that $f(A) =
+  0$ and thus the equality is proven.
+\item Observing the first two terms $C_0^^n.1^n + C_1^^n.1^{n - 1}.\frac{1}{n} = 2$. Thus, first two terms
+  only are enough to set the bound to $2$. Rest of the terms make it definitely greater than $2$.
+\item We see that L.H.S.\ will have terms $E_1 = 1, E_2 = \sum a_i, E_3 = \sum a_ia_j$ and so on. All these
+  terms are square-free i.e.\ $a_i$ does not repeat and power is always one.
+
+  Using multinomial theorem $S_k^2 = (a_1 + a_2 + \cdots + a_k)^2 = \sum \frac{k!}{i_1!i_2!\ldots
+    i_n!}a_1^{i_1}\ldots a_k^{i_n}$
+
+  Thus, $\frac{S_k^2}{k!}$ will have all terms on L.H.S.\ and also more terms which won't be square-free
+  making R.H.S.\ greater than L.H.S.
+\item From A.M.-G.M. inequality we have $1 + a\geq 2\sqrt{a}, 1 + b\geq 2\sqrt{b}, 1 + c\geq
+  2\sqrt{c}\Rightarrow (1 + a)(1 + b)(1 + c)\geq 8\sqrt{abc}$.
+
+  Also $\left(1 + \frac{1}{a}\right)\left(1 + \frac{1}{b}\right)\left(1 + \frac{1}{c}\right) = \frac{1 +
+    a}{a}.\frac{1 + b}{b}.\frac{1 + c}{c}\geq \frac{8\sqrt{abc}}{abc} = \frac{8}{\sqrt{abc}}$.
+
+  Also $\frac{a + b + c}{3}\geq \sqrt{abc}\Rightarrow \frac{1}{3}\geq \sqrt[3]{abc}\Rightarrow
+  \frac{1}{27}\geq abc$.
+
+  Now $\left(1 + \frac{1}{a}\right)\left(1 + \frac{1}{b}\right)\left(1 + \frac{1}{c}\right) = 1 + \frac{ab +
+    bc + ca + 2}{abc}$, and $\frac{ab + bc + ca}{3}\geq \sqrt[3]{(abc)^2}$
+
+  $\Rightarrow \left(1 + \frac{1}{a}\right)\left(1 + \frac{1}{b}\right)\left(1 + \frac{1}{c}\right) \geq
+  \Rightarrow 1 + \frac{3.\frac{1}{9} + 2}{\frac{1}{27}} = 64$.
+\item $\frac{a^n - 1}{a - 1} = 1 + a + a^2 + \cdots + a^{n - 1}$.
+
+  Thus, $\frac{a^n - 1}{a^n(a - 1)} = \displaystyle\sum_{k = 1}^na^{-k}$.
+
+  Applying A.M.-G.M. inequality for $\displaystyle\sum_{k = 1}^na^{-k}$ and $a^{\frac{n(n + 1)}{2}}$, we have
+
+  $\frac{\displaystyle\sum_{k = 1}^na^{-k} + a^{\frac{n(n + 1)}{2}}}{n + 1}\geq
+  (a^{-1}.a^{-2}.\ldots.a^{-n}.a^{\frac{n(n + 1)}{2}}) = 1$
+
+  $\Rightarrow \displaystyle\sum_{k = 1}^na^{-k} + a^{\frac{n(n + 1)}{2}}\geq n + 1$, and hence, the
+  inequality is proven.
+\item Using A.M.-G.M. inequality, we have
+
+  $\displaystyle\frac{a^{n + 1} + a^{n + 1} + \cdots + a^{n + 1} + 1}{n + 1}\geq \sqrt[n + 1]{a^{(n +
+    1)n}.1} = a^n$
+
+  $\Rightarrow \displaystyle na^{n + 1} + 1\geq (n + 1)a^n$.
+\item We observe that $\displaystyle\sqrt{i} + \sqrt{i + 1} = \frac{1}{\sqrt{i + 1} - \sqrt{i}}$
+
+  L.H.S.\ $= \displaystyle\prod_{i = 1}^n\frac{1}{\sqrt{i + 1} - \sqrt{i}}$
+
+  Using A.M.-G.M. inequality, we have
+
+  $\displaystyle\frac{(\sqrt{k + 1} - \sqrt{k}) + (\sqrt{k + 2} - \sqrt{k + 1}) + \cdots + (\sqrt{n + 1} -
+    \sqrt{n})}{n - k + 1}\leq \sqrt[n - k + 1]{\sqrt{\prod_{i = k}^n(\sqrt{i + 1} - \sqrt{i})}}$
+
+  $\Rightarrow \displaystyle\left(\frac{\sqrt{n + 1} - \sqrt{k}}{n - k + 1}\right)^{n - k + 1} \leq \prod_{i
+    = k}^n(\sqrt{i + 1} + \sqrt{i})$
+
+  We also have, $\displaystyle\frac{n - k + 1}{\sqrt{n + 1} - \sqrt{k}} = \sqrt{n + 1} + \sqrt{k}$
+
+  $\Rightarrow (\sqrt{n + 1} + \sqrt{k})^{n - k + 1}\leq \prod_{i = k}^n(\sqrt{i + 1} + \sqrt{i})$
+
+  Since $n - k + 1\geq 2$,w e have
+
+  $\displaystyle(\sqrt{n + 1} + \sqrt{k})^2\leq \prod_{i = k}^n(\sqrt{i + 1} + \sqrt{i})$
+
+  Now, $(\sqrt{n + 1} + \sqrt{k})^2 = n + 1 + k + 2\sqrt{k(n + 1)}$ and R.H.S.\ $n - k - \sqrt{n} + \sqrt{k}
+  + 2$
+
+  We need to prove that $n + 1 + k + 2\sqrt{k(n + 1)}\geq n - k -\sqrt{n} + \sqrt{k} + 2$
+
+  $\Rightarrow 2k - 1 + \sqrt{n} + 2\sqrt{k(n + 1)}\geq \sqrt{k}$, which is true for given
+  conditions. Hence, the inequality is proven.
+\item Using A.M.-G.M. inequality we have
+
+  $\displaystyle\frac{\frac{a_1}{a_2} + \frac{a_2}{a_3} + \cdots + \frac{a_{n - 1}}{a_n} +
+  \frac{a_n}{a_1}}{n}\geq \sqrt[n]{\frac{a_1}{a_2}.\frac{a_2}{a_3}.\cdots.\frac{a_{n - 1}}{a_n}.
+  \frac{a_n}{a_1}} = 1$
+
+  $\Rightarrow \frac{a_1}{a_2} + \frac{a_2}{a_3} + \cdots + \frac{a_{n - 1}}{a_n} + \frac{a_n}{a_1}\geq n$.
+\item We see that $a_1 + (a_2 - a_1) + \cdots + (a_{n + 1} - a_n) = a_{n + 1}$. Using A.M.-G.M. for these
+  terms and $\frac{1}{a_1(a_2 - a_1)\cdots(a_{n + 1} - a_n)}$
+
+  $\displaystyle\frac{a_1 + (a_2 - a_1) + \cdots + (a_{n + 1} - a_n) + \frac{1}{a_1(a_2 - a_1)\cdots
+      (a_{n + 1} - a_n)}}{n + 2}\geq$
+
+  $\displaystyle\sqrt[n + 2]{a_1(a_2 - a_1)\cdots(a_{n + 1} - a_n).\frac{1}{a_1(a_2 -
+      a_1)\cdots(a_{n + 1} - a_n)}} = 1$
+
+  $\Rightarrow \displaystyle a_{n + 1} + \frac{1}{a_1(a_2 - a_1)\cdots (a_{n + 1} - a_n)}\geq n + 2$.
+\item We have to prove that $1 + \frac{x}{2}\leq \frac{1}{\sqrt{1 - x}}$. Both sides are positive for given
+  conditions.
+
+  $\Rightarrow \left(1 + \frac{x}{2}\right)\sqrt{1 - x}\leq 1$
+
+  Squaring both sides $\left(1 + \frac{x}{2}\right)^2(1 - x)\leq 1$.
+
+  Applying A.M.-G.M. inequality we have
+
+  $\displaystyle\frac{1 + \frac{x}{2} + 1 + \frac{x}{2}+ 1 - x}{3}\geq \sqrt[3]{\left(1 -
+    \frac{x}{2}\right)^2(1 - x)}$
+
+  $\Rightarrow 1\geq \sqrt[3]{\left(1 - \frac{x}{2}\right)^2(1 - x)}$
+
+  Cubing boht sides we have $\left(1 + \frac{x}{2}\right)^2(1 - x)\leq 1$, and hence, the inequlity is
+  proven.
+\item We assume that all of $a, b, c, d, e$ have the same sign. Let $x_1 = \frac{a}{b}, x_2 = \frac{b}{c},
+  x_3 = \frac{c}{d}, x_4 = \frac{d}{e}, x_5 = \frac{e}{a}$.
+
+  So the inequality becomes $\displaystyle\sum_{i=1}^5x_i^4\geq \sum_{i=1}^5x_i$.
+
+  We use the A.M.-G.M. inequality for $\frac{x^4 + 1 + 1 + 1}{4}\geq \sqrt[4]{x^4} = x\Rightarrow x^4 + 3\geq 4x
+  \Rightarrow x^4 - x\geq 3(x - 1)$. Thus,
+
+  $\displaystyle\sum_{i = 1}^5(x_i^4 - x_i)\geq 3\sum_{i = 1}^5(x_i) - 15$
+
+  Again from A.M.-G.M. inequality $\displaystyle\sum_{i = 1}^5x_i\geq 5\sqrt[5]{\prod_{i=1}^5x_i} =
+  5$. Thus, $\displaystyle\sum_{i = 1}^5x_i - 5 = 0$. And therefore,
+
+  $\displaystyle\sum_{i = 1}^5(x_i^4 - x_i)\geq 0$. And hence, the inequality is proven.
+\item We will prove that for any $x > 0$ and a positive integer $n\geq 1$, the inequality $x^n\geq nx - (n -
+  1)$ holds.
+
+  Consider $n$ positive integers $x^n, 1, 1, \ldots, 1(n - 1)$ times. By A.M.-G.M. inequality
+
+  $\frac{x^n + \overbrace{{1 + 1 + \cdots + 1}}^{n - 1\text{ times}}}{n}\geq \sqrt[n]{x^n}$
+
+  $\Rightarrow x^n + (n - 1)\geq nx \Rightarrow x^n \geq nx - (n - 1)$
+
+  Setting $n = 1999$ and for $a, b, c, d > 0$
+
+  $\left(\frac{a}{b}\right)^{1999} + \left(\frac{b}{c}\right)^{1999} + \left(\frac{c}{d}\right)^{1999} +
+  \left(\frac{d}{a}\right)^{1999}\geq 1999\left(\frac{a}{b} + \frac{b}{c} + \frac{c}{d} + \frac{d}{a}\right)
+  - 4.1988$
+
+  Let $\frac{a}{b} + \frac{b}{c} + \frac{c}{d} + \frac{d}{a} = S$ so we want to prove that L.H.S $\geq S$.
+
+  If we can show that $1999S - 7992\geq S\Rightarrow S\geq 4$ then the desired inequality is proven.
+
+  Using A.M.-G.M. ineqeuality again $\frac{\frac{a}{b} + \frac{b}{c} + \frac{c}{d} + \frac{d}{a}}{4}\geq
+  \sqrt[4]{\frac{a}{b} . \frac{b}{c} . \frac{c}{d} . \frac{d}{a}}$
+
+  $\Rightarrow S\geq 4$. And hence, the inequality is proven.
+\item Let L.H.S. be $S$, then using A.M.-G.M. inequality we have
+
+  $\frac{S}{n}\geq \left(\sqrt{\frac{a_1 + a_2}{a_3}}.\sqrt{\frac{a_2 + a_3}{a_4}}\cdots\sqrt{\frac{a_n +
+    a_1}{a_2}}\right)^{\frac{1}{n}}$
+
+  $S\geq \left[\left(\frac{a_1 + a_2}{a_3}.\frac{a_2 + a_3}{a_4}\cdots \frac{a_n +
+    a_1}{a_2}\right)\right]^{\frac{1}{2n}}$
+
+  Using A.M.-G.M again on terms of numerator we have
+
+  $(a_1 + a_2)(a_2 + a_3)\cdots(a_n + a_1)\geq 2^n(a_1a_2\ldots a_n)$
+
+  Putting this back in previour inequality we have the proof.
+\item We will first prove the inequality $\frac{t}{1 + t^2}\leq \frac{3\sqrt{3}}{16}(1 + t^2)$.
+
+  When $t\leq 0$ the inequality is obviously satisfied. For $t > 0$ we rearrange the inequality as $(1 +
+  t^2)^2\geq \frac{16t}{3\sqrt{3}}$.
+
+  Consider four numbers $t^2, \frac{1}{3}, \frac{1}{3}, \frac{1}{3}$. We use A.M.-G.M. inequality on these
+  to get
+
+  $\frac{t^2 + 1}{4}\geq \sqrt[4]{t^2.\frac{1}{27}}$. Squaring both sides we have, $(1 + t^2)^2\geq
+  \frac{16t}{3\sqrt{3}}$.
+
+  Thus, $\frac{t}{1 + t^2}\leq \frac{3\sqrt{3}}{16}(1 + t^2)$ is true for all $t$.
+
+  Putting $t = x, y, z$ and adding proves the desired inequality.
+\item
 \stopitemize
