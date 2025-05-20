@@ -1090,5 +1090,79 @@
   Thus, $\frac{t}{1 + t^2}\leq \frac{3\sqrt{3}}{16}(1 + t^2)$ is true for all $t$.
 
   Putting $t = x, y, z$ and adding proves the desired inequality.
+\item $\displaystyle\because \sum_{i = 1}^na_i = 1$, we have $1 - a_j = \displaystyle\sum_{i\neq j}a_i$
+
+  Using A.M.-G.M. inequality on the $n - 1$ terms of $\displaystyle\sum_{i\neq j}a_i$, we get
+
+  $\displaystyle\sum_{i\neq j}a_i\geq (n - 1)\left(\prod_{i\neq j}a_i\right)^{\frac{1}{n - 1}}$
+
+  $\therefore \frac{1}{a_j} - 1\geq \frac{(n - 1)\left(\prod_{i\neq j}a_i\right)^{\frac{1}{n - 1}}}{a_j}$
+
+  $\Rightarrow \displaystyle\prod_{j = 1}^n\left(\frac{1}{a_j} - 1\right)\geq \prod_{j = 1}^n\frac{(n -
+    1)\left(\prod_{i\neq j}a_i\right)^{\frac{1}{n - 1}}}{a_j}$
+
+  $= (n - 1)^n\displaystyle\frac{\prod_{j = 1}^n\left(\prod_{i]\neq j}a_i\right)^{\frac{1}{n -
+      1}}}{\prod_{j= 1}^na_j}$
+
+  Let $P = \displaystyle\prod_{i = 1}^na_i\Rightarrow \prod_{i\neq j}a_i = \frac{P}{a_j}$ so
+  $\left(\displaystyle\prod_{i\neq j}a_i\right)^{\frac{1}{n - 1}} = \left(\frac{P}{a_j}\right)^{\frac{1}{n -
+      1}}$
+
+  So the numerator becomes $\displaystyle\prod_{j = 1}^n\left(\frac{P}{a_j}\right)^{\frac{1}{n - 1}} =
+  \left(\frac{P^n}{P}\right)^{\frac{1}{n - 1}} = P$
+
+  Thus, $\displaystyle\prod_{j = 1}^n\left(\frac{1}{a_j} - 1\right)\geq (n - 1)^n\frac{P}{P} = (n - 1)^n$
+
+  For the other half of the product we want to show that $\displaystyle\prod_{i = 1}^n\left(\frac{1}{a_i} +
+  1\right)\geq (n + 1)^n$
+
+  Let $f(x) = \log(\frac{1}{x} + 1)$ so $f'(x) = -\frac{1}{x(1 + x)}$ and $f''(x) = \frac{1 + 2x}{x^2(1 +
+    x)^2}$.
+
+  Since $a_i > 0, x > 0$, so $f''(x) > 0$. Thus, $f(x)$ is a convex function.
+
+  Using Jensen's inequality(which is a consequence of A.M.-G.M. inequality)
+
+  $\displaystyle\frac{1}{n}\sum_{i = 1}^nf(a_i)\geq f\left(\frac{1}{n}\sum_{i = 1}^na_i\right)$
+
+  Substituting $f(a_i) = \displaystyle\log\left(\frac{1}{a_i} + 1\right)$ and $\displaystyle\sum_{i =
+    1}^na_i = 1$, we have
+
+  $\displaystyle\frac{1}{n}\sum_{i = 1}^n\log\left(\frac{1}{a_i} + 1\right)\geq \log\left(\frac{1}{\sum_{i =
+      1}^na_i} + 1\right) = \log\left(\frac{1}{1/n} + 1\right) = \log(n + 1)$
+
+  $\Rightarrow \displaystyle\log\Biggl(\Bigl(\prod_{i = 1}^n\left(\frac{1}{a_i} +
+  1\right)\Bigr)\Biggr)\geq \log(n + 1)$
+
+  Since $\log$ is an increasing function we take antilog of both sides to get
+
+  $\displaystyle\prod_{i = 1}^n\left(\frac{1}{a_i} + 1\right)\geq (n + 1)^n$
+
+  Combining the two inequalities obtained we have proven the desireed inequality.
+\item $u = 1 - (v + w)\geq 1 - \left(\frac{7}{16} + \frac{7}{16}\right) = \frac{1}{8}$. So the constraint
+  becomes $\frac{1}{8}\leq u, v, z\leq \frac{7}{16}$
+
+  By A.M.-G.M. inequality $\frac{(1 + u) + (1 + v) + (1 + w)}{3}\geq \sqrt[3]{(1 + u)(1 + v)(1 + w)}$
+
+  $\Rightarrow (1 + u)(1 + v)(1 + w)\leq \frac{64}{27}$, which is the maximum value of the product.
+
+  Let $1 + u = x, 1 + v = y$ and $1 + w = z$. We need to minimize the product $P = xyz$ such that $x + y + z
+  = 4$ and $\frac{9}{8}\leq x, y, z\leq \frac{23}{16}$.
+
+  A.M.-G.M. inequaltiy states that the product is maximized when $x = y = z$. Conversely the product is
+  minimized when they are as far apart as possible.
+
+  Let $k$ variables be $\frac{9}{8}$ and $m$ variables be $\frac{23}{16}$. The sum is $k.\frac{9}{8} +
+  m.\frac{23}{16} = 4 \Rightarrow 18k + 23m = 64$ and $k + m = 3$.
+
+  So for $(k, m)$ we have four possibilities and we see that with the exception of case $k = 1, m = 2$ the
+  sum condition is not satisfied. And the product in this case is $\frac{4761}{2048}$.
+\item Consider A.M.-G.M. inequality of $p, \frac{x}{p}$s and $q, \frac{y}{q}$s.
+
+  $\displaystyle\frac{\underbrace{\frac{x}{p} + \cdots + \frac{x}{p}}_{p\;\rm {times}} + \underbrace{\frac{y}{q} +
+    \cdots + \frac{y}{q}}_{q\;\rm {times}}}{p + q}\geq \sqrt[p + q]{\underbrace{\frac{x}{p} \cdots
+  \frac{x}{p}}_{p\;\rm {times}}\underbrace{\frac{y}{q} \cdots \frac{y}{q}}_{q\;\rm {times}}} \Rightarrow
+  \displaystyle\frac{x + y}{p + q}\geq \sqrt[p + q]{\frac{x^py^q}{p^pq^q}} \Rightarrow
+  x^py^q\leq \frac{p^pq^qa^{p + q}}{(p + q)^{p + q}}$.
 \item
 \stopitemize
