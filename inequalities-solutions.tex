@@ -1362,4 +1362,186 @@
   Multiplying these inequalities we arrive at $A_{k + 1}A_{-1}\geq A_kA_0$ or
   $\displaystyle\left(\sum_{i=1}^na_i^{k + 1}\right)\left(\sum_{i=1}^na_i^{-1}\right)\geq
   n\left(\sum_{i=1}^na_i^k\right)$.
+\item $(a + b + c)(b + c + a) = \bigl(\left(\sqrt{a}\right)^2 + \left(\sqrt{b}\right)^2
+  + \left(\sqrt{c}\right)^2\bigr)\bigl(\left(\sqrt{b}\right)^2 +\left(\sqrt{c}\right)^2
+  + \left(\sqrt{a}\right)^2\bigr)$
+
+  $\geq \bigl(\sqrt{ab} + \sqrt{bc} + \sqrt{ca}\bigr)^2$.
+
+  $\bigl(\sqrt{ab} + \sqrt{bc} + \sqrt{ca}\bigr)^2\bigl(\sqrt{c} + \sqrt{a}
+  + \sqrt{b}\bigr)^2\geq \bigl(\sqrt[4]{abc} + \sqrt[4]{abc} + \sqrt[4]{abc}\bigr)^4$.
+
+  $(a + b + c)(1 + 1 + 1)\geq \left(\sqrt{a} + \sqrt{b} + \sqrt{c}\right)^2$
+
+  Multiplying these inequalities we arrive at $(a + b + c)^3\geq 27abc$ or $\frac{a + b +
+    c}{3}\geq \sqrt[3]{abc}$.
+\item We have $A_kA_{k - 2}\geq A_{k - 1}^2, A_{k - 1}A_{k - 3}\geq A_{k - 2}^2, \ldots, A_2A_0\geq
+  A_1^2$. Multiplying these inequalities we arrive at
+
+  $A_kA_0\geq A_{k - 1}A_1, A_{k - 1}A_0\geq A_{k - 2}A_1, \ldots, A_2A_0\geq A_1.A_1, A_1A_0\geq A_0A_1$.
+
+  Multiplying these inequalities we obtain
+
+  $A_kA_0\geq A_0A_1^k$ or $\frac{a_1^k + \cdots + a_k^n}{n}\geq \left(\frac{a_1 + \cdots +
+    a_n}{n}\right)^k$.
+\item We have $\left[1^2 + \left(\frac{1}{\sqrt{\sin \alpha}}\right)^2\right]\left[1^2
+  + \left(\frac{1}{\sqrt{\cos \alpha}}\right)^2\right]\geq \left(1
+  + \frac{1}{\sqrt{\sin\alpha\cos\alpha}}\right)^2$
+
+  $= \left(1 + \frac{1}{\sqrt{\frac{\sin2\alpha}{2}}}\right)^2\geq \left(1
+  + \frac{1}{\sqrt{\frac{1}{2}}}\right)^2 = (1 + \sqrt{2})^2 > 5$.
+\item We have $(u - v)^2 + \left(\sqrt{2 - u^2} - \frac{9}{v}\right)^2 = 2 - 2\left(uv + \frac{9}{v}\sqrt{2
+  - u^2}\right) + v^2 + \left(\frac{9}{v}\right)^2\geq$
+
+  $2 - 2\sqrt{\left(u^2 + \left(\sqrt{2 - u^2}\right)\right)^2\left[v^2 + \left(\frac{9}{v}\right)^2\right]}
+  + v^2 + \left(\frac{9}{v}\right)^2 = \left(\sqrt{v^2 + \frac{81}{v^2}}
+  - \sqrt{2}\right)^2\geq \left(\sqrt{18} - \sqrt{2}\right)^2 = 8$
+
+  If $u = 1, v = 3$, then $(u - v)^2 + \left(\sqrt{2 - u^2} - \frac{9}{v}\right)^2 = 8$, and hence, the
+  maximum possible value of the given expression is $8$.
+\item We have $a_1^2\geq a_1^2\left(1 - \frac{1}{\sqrt{2}}\right) +
+  a_1^2\left(\frac{1}{\sqrt{2}}- \frac{1}{\sqrt{3}}\right) + \cdots + a_1^2\left(\frac{1}{\sqrt{n}}
+  - \frac{1}{\sqrt{n + 1}}\right)$,
+
+  $a_2^2\geq a_2^2\sqrt{2}\left(\frac{1}{\sqrt{2}} - \frac{1}{\sqrt{3}}\right) +
+  a_2^2\sqrt{2}\left(\frac{1}{\sqrt{3}} - \frac{1}{\sqrt{4}}\right) + \cdots +
+  a_2^2\sqrt{2}\left(\frac{1}{\sqrt{n}} - \frac{1}{\sqrt{n + 1}}\right)$
+
+  $\ldots$
+
+  $a_n^2\geq a_n^2\sqrt{n}\left(\frac{1}{\sqrt{n}} - \frac{1}{\sqrt{n + 1}}\right)$
+
+  Therefore, $a_1^2 + a_2^2 + \cdots + a_n^2\geq a_1^2\left(1 - \frac{1}{\sqrt{2}}\right) + (a_1^2 +
+  a_2^2\sqrt{2})\left(\frac{1}{\sqrt{2}} - \frac{1}{\sqrt{3}}\right) + \cdots + (a_1^2 + a_2^2\sqrt{2}
+  + \cdots + a_n^2\sqrt{n})\left(\frac{1}{\sqrt{n}} - \frac{1}{\sqrt{n  + 1}}\right)$.
+
+  Let us prove that
+  \startplaceformula[eq:20.1]
+    \startformula
+      \frac{\sqrt{k + 1} - \sqrt{k}}{\sqrt{k}\sqrt{k + 1}}(a_1^2 + \cdots +
+      a_k^2\sqrt{k})\geq \frac{1}{4}\left(\frac{a_1 + \cdots + a_k}{k}\right)^2
+    \stopformula
+  \stopplaceformula
+
+  From Cauchy-Schwarz inequality it follows that
+
+  $\left(a_1^2 + \cdots + a_k^2\sqrt{k}\right)\left(1 + \cdots + \frac{1}{\sqrt{k}}\right)\geq (a_1 + \cdots
+  + a_k)^2$
+
+  In order to prove \in{Eq.}[eq:20.1], it is sufficient to prove that $\frac{4(\sqrt{k + 1}
+    - \sqrt{k})}{\sqrt{k}\sqrt{k + 1}}k^2 > 1 + \cdots + \frac{1}{\sqrt{k}}$. We have
+
+  $1 + \frac{1}{\sqrt{2}} + \cdots + \frac{1}{\sqrt{k}}\leq 1 + \frac{2}{\sqrt{2} + 1} + \cdots
+  + \frac{2}{\sqrt{k} + \sqrt{k- 1}} = 1 + 2(\sqrt{2} - 1) + \cdots + 2(\sqrt{k} - \sqrt{k - 1}) = 2\sqrt{k}
+  - 1$
+
+  Let us prove that $2\sqrt{k} - 1 < \frac{4k^2(\sqrt{k + 1} - \sqrt{k})}{\sqrt{k}\sqrt{k  + 1}}
+  = \frac{4k\sqrt{k}}{k + 1 + \sqrt{k^2 + k}}$
+
+  Since $\frac{2k}{\sqrt{k + 1} + \sqrt{k}}< k\leq k + \left(\sqrt{k} - 1\right)^2 < k + \sqrt{k^2 + k} -
+  2\sqrt{k} + 1$, it follows that
+
+  $\frac{2k}{\sqrt{k + 1} + \sqrt{k}} < k + \sqrt{k^2 + k} - 2\sqrt{k} + 1$, or $2k\left(\sqrt{k + 1}
+  - \sqrt{k}\right) < k + \sqrt{k^2 + k} - 2\sqrt{k} + 1$, or
+
+  $2\sqrt{k}\left(k + 1 + \sqrt{k^2 + k}\right) - (k + 1 + \sqrt{k^2 + k}) < 4k\sqrt{k}$.
+
+  Hence we deduce that $2\sqrt{k} - 1 < \frac{4k\sqrt{k}}{k + 1 + \sqrt{k^2 + k}}$.
+
+  Now let us prove that on the R.H.S., it is impossible to choose a multiplier less than $4$.
+
+  Suppose the inequality $x_1^2 + \left(\frac{x_1 + x_2}{2}\right)^2 + \cdots + \left(\frac{x_1 + \cdots +
+    x_n}{n}\right)^2 \leq c(x_1^2 + x_2^2 + \cdots + x_n^2)$ holds for all $x_1, \ldots, x_n$.
+
+  Taking $x_i = \frac{1}{\sqrt{i}}, i = 1, \ldots, n$, we deduce that
+
+  $1 + \left(\frac{1 + \frac{1}{\sqrt{2}}}{2}\right) + \cdots + \left(\frac{1 + \frac{1}{\sqrt{2}} + \cdots
+    + \frac{1}{\sqrt{n}}}{n}\right)^2\leq c\left(1 + \frac{1}{2} + \cdots + \frac{1}{n}\right)$.
+
+  According to inequality from Problem 171, we have
+
+  $\displaystyle\sum_{k = 1}^n\left(\frac{2}{\sqrt{k}} - \frac{2}{k}\right)^2 < c\left(1 + \frac{1}{2}
+  + \cdots + \frac{1}{n}\right)$, whence $4 - 8\frac{\frac{1}{1}\sqrt{1} + \cdots + \frac{1}{n}\sqrt{n}}{1 +
+    \frac{1}{2} + \cdots \frac{1}{n}} < c$
+
+  Taking limit we obtain $4\leq c$.
+\item We have $\frac{1}{a_1} > \frac{1}{a_1}\left(1 - \frac{1}{2^2}\right)
+  + \frac{1}{a_1}\left(\frac{1}{2^2} - \frac{1}{3^2}\right) + \cdots + \frac{1}{a_1}\left(\frac{1}{n^2}
+  - \frac{1}{(n + 1)^2}\right)$,
+
+  $\frac{1}{a_2} > \frac{2^2}{a_2}\left(\frac{1}{2^2} - \frac{1}{3^2}\right)
+  + \frac{2^2}{a_2}\left(\frac{1}{3^2} - \frac{1}{4^2}\right) + \cdots + \frac{2^2}{a_2}\left(\frac{1}{n^2}
+  - \frac{1}{(n + 1)^2}\right)$,
+
+  $\ldots$,
+
+  $\frac{1}{a_n} > \frac{n^2}{a_n}\left(\frac{1}{n^2} - \frac{1}{(n + 1)^2}\right)$.
+
+  Therefore, $2\left(\frac{1}{a_1} + \frac{1}{a_2} + \cdots + \frac{1}{a_n}\right) > \frac{2}{a_1}\left(1
+  - \frac{1}{2^2}\right) + 2\left(\frac{1}{a_1} + \frac{2^2}{a_2}\right)\left(\frac{1}{2^2}
+  - \frac{1}{3^2}\right) + \cdots + 2\left(\frac{1}{a_1} + \cdots
+  + \frac{n^2}{a_n}\right)\left(\frac{1}{n^2} - \frac{1}{(n + 1)^2}\right)$.
+
+  Let us prove that $2\left(\frac{1}{a_1} + \cdots + \frac{k^2}{a_k}\right)\left(\frac{1}{k^2} - \frac{1}{(k
+    + 1)^2}\right) > \frac{k}{a_1 + \cdots + a_k}$
+
+  or equivalently $(a_1 + \cdots + a_k)\left(\frac{1}{a_1} + \cdots + \frac{k^2}{a_k}\right) > \frac{k^3(k +
+    1)^2}{2(2k + 1)}$
+
+  We have $(a_1 + \cdots + a_k)\left(\frac{1}{a_1} + \cdots
+  + \frac{k^2}{a_k}\right)\geq \left(\sqrt{a.\frac{1}{a_1}} + \cdots + \sqrt{\frac{k^2}{a_k}.a_k}\right)
+  = \frac{k^2(k + 1)^2}{4} > \frac{k^3(k + 1)^2}{2(2k + 1)}$
+
+  It follows that $2\left(\frac{1}{a_1} + \cdots + \frac{1}{a_n}\right)> \displaystyle\sum_{k =
+    1}^n2\left(\frac{1}{a_1} + \cdots + \frac{k^2}{a_k}\right)\left(\frac{1}{k^2} - \frac{1}{(k +
+    1)^2}\right) > \frac{k}{a_1 + \cdots + a_k}$
+
+  Now let us prove that it is impossible to choose a multiplier less than $2$ on R.H.S.
+
+  Let $\frac{1}{a_1} + \cdots + \frac{n}{a_1 + \cdots + a_n} \leq c\left(\frac{1}{a_1} + \cdots
+  + \frac{1}{a_n}\right)$.
+
+  Assume that $a_k = k, k = 1, 2, \ldots, n$, and thus $\frac{2x_{n + 1} - 2}{x_n}\leq c$, where $x_n = 1
+  + \frac{1}{2} + \cdots + \frac{1}{n}$. Taking limit $2\lim_{n\to\infty}\left(\frac{x_{n + 1}}{x_n}
+  - \frac{1}{x_n}\right)\leq c$ or $2\leq c$.
+\item Using Cauchy-Schwarz inequality, $\displaystyle\left(\sum_{i = 1}^n\sin\alpha_i.1\right)^2\leq \sum_{i
+  = 1}^n\sin^2\alpha_i\sum_{i = 1}^n.1^2 = n\sum_{i = 1}^n\sin^2\alpha_i$
+
+  Similarly, $\displaystyle\left(\sum_{i = 1}^n\cos\alpha_i\right)^2 \leq n\sum_{i = 1}^n\cos^2\alpha_i$
+
+  Adding the inequalities we have desired inequality.
+\item Using Cauchy-Schwarz inequality, $\displaystyle\left(\sum_{i =
+  1}^n\sqrt{a_i}.1\right)^2\leq \left(\sum_{i = 1}^n\left(\sqrt{a_i}\right)^2\right) \left(\sum_{i =
+  1}^n1^2\right) = n\sum_{i = 1}^na_i$
+
+  From A.M.-G.M. inequality $\displaystyle\sum_{i = 1}^n\sqrt{a_i}\geq n\sqrt[n]{\sqrt{\prod_{i = 1}^na_i}}$
+
+  Combining both the inequalities we have desired inequality.
+\item Using Cauchy-Schwarz inequality, $\displaystyle\left(\sum_{i =
+  1}^n\sqrt{a_ib_i}\right)^2\leq \left(\sum_{i = 1}^na_i\right)\left(\sum_{i = 1}^nb_i\right)$
+
+  Taking square root of both sides we have desired inequality.
+\item Expanding L.H.S. $(x_1 y_2 - x_2 y_1)^2 + (x_2 y_3 - x_3 y_2)^2 + (x_3 y_1 - x_1 y_3)^2
+  = x_1^2 y_2^2 + x_2^2 y_1^2 - 2x_1 x_2 y_1 y_2
+  + x_2^2 y_3^2 + x_3^2 y_2^2 - 2x_2 x_3 y_2 y_3
+  + x_3^2 y_1^2 + x_1^2 y_3^2 - 2x_1 x_3 y_1 y_3
+  =, & x_1^2(y_2^2 + y_3^2) + x_2^2(y_1^2 + y_3^2) + x_3^2(y_1^2 + y_2^2)
+  - 2(x_1 x_2 y_1 y_2 + x_2 x_3 y_2 y_3 + x_1 x_3 y_1 y_3)$
+
+  Now we add and subtract $x_1^2 y_1^2 + x_2^2 y_2^2 + x_3^2 y_3^2$ to get
+
+  $(x_1^2 + x_2^2 + x_3^2)(y_1^2 + y_2^2 + y_3^2) - (x_1 y_1 + x_2 y_2 + x_3 y_3)^2$
+
+  By Cauchy-Schwarz inequality we have $(x_1 y_1 + x_2 y_2 + x_3 y_3)^2 \le (x_1^2 + x_2^2 + x_3^2)(y_1^2 +
+  y_2^2 + y_3^2)$ so the R.H.S. is nonnegative.
+
+  And hence, the inequality is proven.
+\item Let $u_i = \sqrt{a_ix_i}$ and $v_i = \sqrt{\frac{b_i}{x_i}}$, then by Cauchy-Schwarz inequaltiy
+
+  $\displaystyle\left( \sum_{i=1}^n u_i v_i \right)^2 \leq \left( \sum_{i=1}^n u_i^2 \right) \left( \sum_{i=1}^n
+  v_i^2 \right)$
+
+  $\Rightarrow\displaystyle \left( \sum_{i=1}^n \sqrt{a_i b_i} \right)^2 \leq \left( \sum_{i=1}^n a_i
+  x_i \right) \left( \sum_{i=1}^n \frac{b_i}{x_i} \right)$
+\item This problem is similar to previous problem and has been left as an exercise.
 \stopitemize
