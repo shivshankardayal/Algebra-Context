@@ -1544,4 +1544,72 @@
   $\Rightarrow\displaystyle \left( \sum_{i=1}^n \sqrt{a_i b_i} \right)^2 \leq \left( \sum_{i=1}^n a_i
   x_i \right) \left( \sum_{i=1}^n \frac{b_i}{x_i} \right)$
 \item This problem is similar to previous problem and has been left as an exercise.
+\item By weighted A.M.-G.M. inequality, we have $ax + by + cz\geq \frac{(a + b + c)(x + y + z)}{3}$.
+
+  By Cauchy-Schwarz inequality, we have $(a^2 + b^2 + c^2)(x^2 + y^2 + z^2)\geq \frac{(a + b + c)(x + y +
+    z)}{3}$
+
+  Adding both we have desired inequality.
+\item Let $a = p_1q_1 - \displaystyle\sum_{i = 2}^np_iq_i$, then $a^2 = p_1^2q_1^2 -
+  2p_1q_1\displaystyle\sum_{i = 2}^np_iq_i + \left(\sum_{i = 2}^np_iq_i\right)^2$
+
+  Also, $\displaystyle\left(p_1^2 - \sum_{i = 2}^np_i^2\right)\left(q_1^2 - \sum_{i = 2}^nq_i^2\right) =
+  p_1^2q_1^2 - p_1^2\sum q_i^2 - q_1^2\sum p_i^2 + \sum p_i^1\sum q_i^2$
+
+  Subtracting $a^2$ from R.H.S. and by Cauchy-Schwarz $\left(\displaystyle\sum p_iq_i\right)^2\geq \sum
+  p_i^2\sum q_i^2$
+
+  Hence $a^2\geq p_1^2q_1^2 - p_1^2\sum q_i^2 - q_1^2\sum p_i^2 + \sum p_i^1\sum q_i^2$. And thus, the
+  inequality is proven.
+\item Let $a = \sqrt{x^2 + xy + y^2}, b = \sqrt{y^2 + yz + z^2}, c = \sqrt{z^2 + zx + x^2}$, so the
+  inequality becomes $ab + bc + ca\geq (x + y + z)^2$
+
+  By Caucy-Schwarz we have $ab + bc + ca\geq \frac{(a + b + c)^2}{3}$ so it will be sufficient to prove that
+  $a + b + c\geq \sqrt{3}(x + y + z)$
+
+  We use the inequality $x^2 + xy + y^2\geq \frac{3}{4}(x + y)^2\Rightarrow a\geq \frac{\sqrt{3}}{2}(x + y)$
+
+  $\Rightarrow a + b + c\geq \sqrt{3}(x + y + z)$, and thus, the inequality is proven.
+\item Rewriting the expression $\displaystyle\sum_{i = 1}^na_ib_i + \sum_{i = 1}^na_ia_{i + 1} = \sum_{i =
+  1}^na_ib_i + \sum_{i = 1}^na_ia_{i + 1}$
+
+  By Cauchy-Schwarz $\sum a_ib_i\leq \sqrt{\sum a_i^2.\sum b_i^2} = \sqrt{\sum a_i^2}[\because \sum b_i^2 =
+    1]$ and $\sum a_ia_{i + 1}\leq \sum a_i^2$.
+
+  Let $S = \sum a_i^2$ then $\sqrt{S} + S < 1$ for all $S < \frac{3 - \sqrt{5}}{2}$
+
+  But for $n\geq 3$ and $a_i > 0$, we have $S < 1$, in fact $S\leq \sum a_i.\max a_i = \max a_i <
+  1\Rightarrow \sqrt{S} + S < 1$. And thus, the inequality is proven.
+% \item L.H.S. $= \frac{1}{2}\left(\sqrt{4 - x^2 - y^2 - 2xy} + \sqrt{4 - y^2 - z^2 - 2yz} + \sqrt{4 - z^2 -
+%   x^2 - 2zx}\right) = \frac{1}{2}S$(let)
+
+%   From Cauchy-Schwarz $a + b + c\geq \sqrt{3(a^2 + b^2 + c^2)}$
+
+%   Now $S\geq \sqrt{3(4 - x^2 - y^2 - 2xy + 4 - y^2 - z^2 - 2yz + 4 - z^2 - x^2 - 2zx)}$
+
+%   On simplification $12 - 2(x^2 + y^2 + z^2) -2(xy + yz + zx) = 10 - 2(xy + yz + zx)$
+
+%   So it is sufficient to prove that $\sqrt{10 - 2(xy + yz + zx)}\geq 2\sqrt{6}\Rightarrow xy + yz + zx \leq
+%   1$, which is true since $xy + yz + zx\leq x^2 + y^2 + z^2 = 1$.
+% \item Let $x = \sqrt{\frac{a}{b + c}}, y = \sqrt{\frac{b}{c + a}}, z = \sqrt{\frac{c}{a + b}}$
+
+%   $abc = x^2y^2z^2(a + b)(b + c)(c + 1)\Rightarrow \frac{abc}{(a + b)(b + c)(c + a)} = x^2y^2z^2$
+
+%   Squaring the inequality $\left(\sum_{cyc}\sqrt{\frac{a}{b + c}}\right)^2\geq 4\left(1 + \frac{abc}{(a +
+%     b)(b + c)(c + a)}\right) = 4(1 + x^2y^2z^2)$
+
+%   Now we need to prove that $(x + y + z)^2\geq 4(1 + x^2y^2z^2)$
+
+%   Using A.M.-G.M. we have $x + y + z\geq 3\sqrt[3]{xyz}\Rightarrow (x + y + z)^2\geq 9(xyz)^{2/3}$
+
+%   So it is sufficient to prove that $9(xyz)^{2/3}\geq 4(1 + x^2y^2z^2)$
+
+%   Let $t = (xyz)^{2/3}$ then $9t \geq 4(1 + t^3)$, which holds for $t = 1$ and $t > 0$.
+% \item Standard Cauchy-Schwarz is $(x_1 + x_2 + x_3)^2\geq 3(x_1^2 + x_2^2 + x_3^3)$ for $x_i > 0$, so
+
+%   $\left(\sum_{cyc}\sqrt{a + (b - c)^2}\right)^2\geq 3\left(a + b + c + (b - c)^2 + (c - a)^2 + (a -
+%   b)^2\right)$
+
+%   $\geq 3(1  + $ non-negative qunatity $)$, and thus the inequality is proven.
+% \item
 \stopitemize

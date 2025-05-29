@@ -9,16 +9,13 @@
   \placebookmarks[Toc, part, chapter, section, subsection, subsubsection]
   \setupbodyfont[9pt,mf,ss] % The document's main (body) font
   \component cover_page.tex
-  %\setupheadertexts
-  %  [\tfx Preface]
-  %  [\tfx\pagenumber]
   \component preface.tex
   \stopromanpages
   \startbodymatter
   \startpart
      [title=Theory and Problems]
 
-  \setupuserpagenumber[numberconversion=n]
+    \setupuserpagenumber[numberconversion=n]
   %% defining matrix with brackets
   \definemathmatrix[bmatrix]
   	                 [matrix:brackets]

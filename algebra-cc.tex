@@ -13,9 +13,12 @@
     [\tfx\pagenumber]
   %\component preface.lmtx
   % First Part: What is ConTeXt
+  \stopromanpages
+  \startbodymatter
   \startpart
      [title=Theory and Problems]
 
+  \setupuserpagenumber[numberconversion=n]
   %% defining matrix with brackets
   \definemathmatrix[bmatrix]
   	                 [matrix:brackets]
