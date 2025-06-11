@@ -2,17 +2,14 @@
 \environment algebra_env.tex
 
 \startproduct algebra.tex
+  \setupuserpagenumber[numberconversion=romannumerals]
   % Date of the last time modifications were introduced:
   \def\RevisionDate{\date}
-
-  \placebookmarks[part, chapter, section, subsection, subsubsection]
+  \startromanpages
+  \placebookmarks[Toc, part, chapter, section, subsection, subsubsection]
   \setupbodyfont[9pt,mf,ss] % The document's main (body) font
-  \component cover_page.tex
-  \setupheadertexts
-    [\tfx Preface]
-    [\tfx\pagenumber]
-  %\component preface.lmtx
-  % First Part: What is ConTeXt
+  %\component cover_page.tex
+  %\component preface.tex
   \stopromanpages
   \startbodymatter
   \startpart
@@ -110,7 +107,8 @@
        %\component binomial-multinomial-expansions.tex
        %\component determinants.tex
        %\component matrices.tex
-       \component inequalities.tex
+       \component miscellaneous.tex
+
 
   \stoppart
 
@@ -136,7 +134,7 @@
       %\component binomial-multinomial-expansions-solutions.tex
       %\component determinants-solutions.tex
       %\component matrices-solutions.tex
-      \component inequalities-solutions.tex
+      \component miscellaneous-solutions.tex
 
   \stoppart
   %\startpart
@@ -150,6 +148,6 @@
 
       %\component fdl-1.3.tex
   %\stoppart
-
+  \stopbodymatter
 
 \stopproduct
