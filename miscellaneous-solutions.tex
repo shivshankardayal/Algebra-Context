@@ -440,4 +440,175 @@
   Thus, common difference is $7b - 3a = -\frac{2a}{3}$.
 
   So, the $4$th terms of the A.P.\ is $3a + 3.-\frac{2a}{3} = a$.
+\item Let $r$ be the c.r.\ of the G.P., then $a + ar + ar^2 = xar \Rightarrow r^2 + (1 - x)r + 1 = 0$
+
+  Because $x$ is real the discriminant of the above equation must be greater that zero.
+
+  $\Rightarrow (1 - x)^2 - 4\geq 0 \Rightarrow x^2 - 2x - 3 \geq 0 \Rightarrow (x - 3)(x + 1)\geq 0$
+
+  $\Rightarrow x \leq -1$ and $x\geq 3$.
+\item Given, $(\alpha^2 + \beta^2)^2 = (\alpha + \beta)(\alpha^3 + \beta^3)\Rightarrow \alpha^4 + \beta^4 +
+  2\alpha^2\beta^2 = \alpha^4 + \beta^4 + \alpha^3\beta + \alpha\beta^3$
+
+  $\Rightarrow \alpha^2\beta(\alpha - \beta) + \alpha\beta^2(\beta - \alpha) = 0$
+
+  Thus, $\alpha = \beta\Rightarrow \Delta = 0$.
+\item Let $S = (x + y) + (x^2 + xy + y^2) + (x^3 + x^2y + xy^2 + y^2) + \cdots$
+
+  $(x - y)S = (x^2 - y^2) + (x^3 - y^3) + (x^4 - y^4) + \cdots = (x^2 + x^3 + x^4 + \cdots) - (y^2 + y^3 +
+  y^4 + \cdots)$
+
+  $= \frac{x^2}{1 - x} - \frac{y^2}{1 - y}\Rightarrow S = \frac{x + y - xy}{(1 - x)(1 - y)}$.
+\item $S_n = \frac{1 - q^n}{1 - q}$ and $T_n = \frac{1 - \left(\frac{q + 1}{2}\right)^n}{1 - \frac{q +
+    1}{2}} = \frac{1 - (q + 1)^n}{2^{n - 1}.(1 - q)}$.
+
+  L.H.S. $= \frac{1}{1 - q}[C_1^^{101} + C_2^^{101} + \cdots + C_{101}^^{101} - C_1^^{101}q +
+    C_2^^{101}q^2 + \cdots + C_{101}^^{101}q^{101}] = \alpha.T_{100}$
+
+  $\Rightarrow \frac{1}{1 - q}[(2^{101} - 1) - (1 + q)^{101} + 1] = \alpha.T_{100}$
+
+  On simplification we get $\Rightarrow \alpha = 2^{100}$.
+\item $k = 1 + 2.\left(\frac{11}{10}\right) + 3.\left(\frac{11}{10}\right)^2 + \cdots +
+  10.\left(\frac{11}{10}\right)^9$
+
+  $\frac{11}{10}k = 1.\frac{11}{10} + 2.\left(\frac{11}{10}\right)^2 + 3.\left(\frac{11}{10}\right)^3
+  + \cdots + 10.\left(\frac{11}{10}\right)^{10}$
+
+  $\Rightarrow k\left(1 - \frac{11}{10}\right) = 1 + \frac{11}{10} + \left(\frac{11}{10}\right)^2 + \cdots +
+  \left(\frac{11}{10}\right)^9 - \left(\frac{11}{10}\right)^{10}$
+
+  On simplification we get $k = 100$.
+\item Let us prove these one by one.
+  \startitemize[a]
+  \item Roots of the given equation are $\alpha = \frac{-1 + \sqrt{5}}{2}$ and $\beta = \frac{-1
+    - \sqrt{5}}{2}$. $\Rightarrow \alpha + \beta = 1, \alpha\beta = -1$.
+
+    $a_n = \frac{\alpha^n - \beta^n}{\alpha - beta} \Rightarrow a_{n + 1} = \frac{\alpha^{n + 1} - \beta^{n
+      + 1}}{\alpha - \beta}$
+
+    $a_{n + 1} = \alpha^n + \alpha^{n - 1}\beta + \alpha^{n - 2}\beta^2 + \cdots + \alpha\beta^{n - 1}
+    + \beta^n$
+
+    $= \alpha^n + \beta^n - \left(\alpha^{n - 2} + \alpha^{n - 3}\beta + \cdots + \beta^{n -
+      2}\right)[\because \alpha\beta = -1]$
+
+    $\Rightarrow a_{n + 1} + a_{n - 1} = \alpha^n + \beta^n = b_n$.
+  \item $\because \alpha^2 = \alpha + 1$ and $\beta^2 = \beta + 1$
+
+    $\Rightarrow alpha^{n + 2} = \alpha^{n + 1} + \alpha^n$ and $\beta^{n + 2} = \beta^{n + 1} + \beta^n$
+
+    $\alpha^{n + 2}\beta^{n + 2} = (\alpha^{n + 1} + \beta^{n + 1}) + (\alpha^n + \beta^n)$
+
+    $\Rightarrow a_{n + 2} = a_{n + 1} + a_n\Rightarrow a_{n + 1} = a_n + a_{n - 1} \cdots a_3 = a_2 + a_1$
+
+    $\Rightarrow a_{n + 2} = (a_n + a_{n - 1} + \cdots + a_2 + a_1) + a_2[\because a_2 = \frac{\alpha^2
+      - \beta^2}{\alpha - \beta} = 1]$
+
+    $\Rightarrow a_1 + a_2 + \cdots + a_n = a_{n + 2} - 1$.
+  \item $\displaystyle\sum_{n = 1}^\infty\frac{a_n}{10^n} = \sum_{n = 1}^\infty\frac{\alpha^n
+    - \beta^n}{(\alpha -\beta)10^n} = \frac{1}{\alpha - \beta}\sum_{n =
+    1}^\infty\left[\left(\frac{\alpha}{10}\right)^n - \left(\frac{\beta}{10}\right)^n\right]$
+
+    On simplification it gives the value $\frac{10}{89}$.
+  \stopitemize
+\item We have to find an odd $n$ such that $B_n = 1 - A_n > A_n \Rightarrow A_n < \frac{1}{2}$.
+
+  $A_n = \frac{3}{4}\frac{\left[1 - \left(-\frac{3}{4}\right)^n\right]}{1
+  + \frac{3}{4}}\Rightarrow \left(-\frac{3}{4}\right)^n > -\frac{1}{6}$.
+
+  For all even values of $n$ required condition is fulfilled, however, we have to find odd values for it.
+
+  We see that $n = 7, \left(-\frac{3}{4}\right)^7 = -\frac{2187}{12288} < -\frac{}{6}$, which is minimum
+  odd value for $n$ for satisfying the required condition.
+\item Given, $S_k = \frac{\frac{k - 1}{k!}}{1- \frac{1}{k}} = \frac{1}{(k - 1)!}$
+
+  Now, $(k^2 - 3k + 1)S_k = [(k - 2)(k - 1) - 1]\frac{1}{(k - 1)!} = \frac{1}{(k - 3)!} - \frac{1}{(k -
+    1)!}$
+
+  $\Rightarrow \displaystyle\sum_{k = 1}^{100}|(k^2 - 3k + 1)S_k| = 1 + 1 + 2 - \left(\frac{1}{99!}
+  + \frac{1}{98!}\right) = 4 - \frac{100^2}{100!}$.
+
+  Thus, $\frac{100^2}{100!} + \displaystyle\sum_{k = 1}^{100}|(k^2 - 3k + 1)S_k| = 4$.
+\item From given condition $\cos x = \frac{2\cos(x - y)\cos(x + y)}{\cos(x - y) + \cos(x + y)}$
+
+  $\Rightarrow \cos x(2\cos x\cos y) = 2[\cos^2x - \sin^2y]\Rightarrow \cos^2x(1 - \cos y) = \sin^2y$
+
+  $\Rightarrow \cos^2x.2\sin^2\frac{y}{2} = 4\sin^2\frac{y}{2}\cos^2\frac{y}{2}\Rightarrow \cos
+  x\sec\frac{y}{2} = \pm\sqrt{2}$.
+\item $\displaystyle\sum_{n = 1}^{15} = \frac{1^3 + 2^3 + \cdots + n^3}{1 + 2 + \cdots + n} = \sum_{n =
+  1}^{15}\frac{\left(\frac{n(n + 1)}{2}\right)^2}{\frac{n(n + 1)}{2}}$
+
+  $= \frac{1}{2}\displaystyle\sum_{n = 1}^{15}(n^2 + n) = \frac{1}{2}\left[\frac{15\times16\times 31}{6}
+  + \frac{15\times 16}{2}\right] = 680$
+
+  $\frac{1}{2}(1 + 2 + \cdots + 15) = \frac{15\times 16}{4} = 60$.
+
+  $\therefore$ Required sum is $680 - 60 = 620$.
+\item $t_n = \frac{(2n + 1)\left(\frac{n(n + 1)}{2}\right)^2}{\frac{n(n + 1)(2n + 1)}{6}} = \frac{3}{2}n(n +
+  1)$
+
+  $S_{10} = \frac{3}{2}\displaystyle\sum_{n = 1}^^{10}(n^2 + n) = \frac{3}{2}\left[\frac{10\times 11\times
+      21}{6} + \frac{10\times 11}{2}\right] = 660$.
+\item Let $S = \left(\frac{3}{4}\right)^3 + \left(\frac{6}{4}\right)^3 + \left(\frac{9}{4}\right)^3
+  + \left(\frac{12}{4}\right)^3 + \cdots$ upto $15$ terms
+
+  $= \left(\frac{3}{4}\right)^3\left[1^3 + 2^3 + \cdots + 15^3\right]
+  = \left(\frac{3}{4}\right)^3\left(\frac{15\times 16}{2}\right)^2 = 27\times 225$
+
+  Thus, $k = 27$.
+\item $S_k = \frac{k + 1}{2}\Rightarrow S_k^2 = \frac{k^2 + 2k + 1}{4}$
+
+  $\therefore S_1^2 + S_2^2 + \cdots + S_{10}^2 = \displaystyle\sum_{k = 1}^{10}\left(\frac{k^2 + 2k +
+  1}{4}\right)$
+
+  $= \frac{1}{4}\left[\frac{10\times 11\times 21}{6} + 10\times 11 + 10\right] = \frac{505}{4}\Rightarrow A
+  = 303$.
+\item The expression is $\frac{x^my^n}{\left(1 + x^{2m}\right)\left(1 + y^{2n}\right)} = \frac{1}{\left(x^m
+  + x^{-m}\right)\left(y^n + y^{-n}\right)}$
+
+  Since $x, y$ are real numbers and $m, n$ are positive integers so using A.M.-G.M.\ inequality we have
+
+  $x^m + x^{-m}\geq 2$ and $y^n + y^{-n}\geq 2$. So maximum value of given expression is $\frac{1}{4}$.
+\item $t_n = \frac{3n(1^2 + 2^2 + \cdots + n^2)}{2n + 1} = \frac{3n.n(n + 1)(2n + 1)}{6(2n + 1)}
+  = \frac{n^2(n + 1)}{2}$
+
+  $\therefore S_n = \frac{1}{2}\left[\left(\frac{n(n + 1)}{2}\right)^2 + \frac{n(n + 1)(2n + 1)}{6}\right]$
+
+  $\Rightarrow S_{15} = 7820$.
+\item Let $a$ be the first term and $d$ be the c.d.\ of the given A.P. Given $\displaystyle\sum_{k =
+  0}^{12}a_{4k + 1} = 416$ and $a_9 + a_{43} = 66$.
+
+  $\Rightarrow \frac{13}{2}[2a + 48d] = 416 \Rightarrow a + 24d = 32$ and $2a + 50d = 66 \Rightarrow a + 25d
+  = 33$
+
+  Thus, $d = 1, a = 8$ from the two equations.
+
+  Given $a_1^2 + a_2^2 + \cdots + a_{17}^2 = 140m \Rightarrow 8^2 + 9^2 + \cdots + 24^2 = 140m$
+
+  $\Rightarrow (1^2 + 2^2 + \cdots + 24^2) - (1^2 + 2^2 + \cdots + 7^2) = 140m\Rightarrow \frac{24.25.49}{6}
+  - \frac{7.8.15}{6} = 140m\Rightarrow m = 34$.
+\item $A = (1^2 + 2^2 + \cdots + 20^2) + (2^2 + 4^2 + \cdots + 20^2) = \frac{20\times21\times41}{6}
+  + \frac{4\times10\times11\times 21}{6} = \frac{20\times41\times 63}{6}$
+
+  $B = (1^2 + 2^2 + \cdots + 40^2) + (2^2 + 4^2 + \cdots + 40^2) = \frac{40\times\41\times 123}{6}$.
+
+  Solving the equation $B - 2A = 100\lambda$ gives us $\lambda = 248$.
+\item $S_{10} = \left(\frac{8}{5}\right)^2 + \left(\frac{12}{5}\right)^2 + \left(\frac{16}{5}\right)^2
+  + \left(\frac{20}{5}\right)^2 + \cdots$ upto $10$ terms
+
+  $= \frac{4^2}{5^2}[2^2 + 3^2 + \cdots + 10^2] = \frac{4^2}{5^2}\left[\frac{10\times11\times21}{6} -
+    1\right] = \frac{16}{25}\times505 = \frac{16m}{5}\Rightarrow m = 101$.
+\item $t_n = \frac{1^3 + 2^3 + \cdots + n^3}{1 + 3 + \cdots + (2n - 1)} = \left(\frac{n + 1}{2}\right)^2
+  = \frac{n^2 + 2n + 1}{4}$
+
+  $S_n = \frac{1}{4}\left[\frac{n(n + 1)(2n + 1)}{6} + n(n + 1) + n\right] \Rightarrow S_{10} = 96$.
+\item Using A.M.-G.M.\ inequality we have
+
+  $\frac{\sqrt{x^2 + x} + \frac{\tan^2\alpha}{\sqrt{x^2 + x}}}{2}\geq \tan\alpha\Rightarrow \sqrt{x^2 + x}
+  + \frac{\tan^2\alpha}{\sqrt{x^2 + x}}\geq 2\tan\alpha$.
+\item Given $a_1a_2\ldots a_n = c\Rightarrow a_1a_2\ldots a_{2n - 1}(2a_n) = 2c$
+
+  $\therefore \frac{a_1 + a_2 + \cdots + 2a_n}{n}\geq\sqrt[n]{a_1a_2\ldots(2a_n)} = \sqrt[n]{2c}$
+
+  Therefore, minimum value is $n\sqrt[n]{2c}$.
 \stopitemize
