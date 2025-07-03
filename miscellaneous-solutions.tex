@@ -598,10 +598,16 @@
 
   $= \frac{4^2}{5^2}[2^2 + 3^2 + \cdots + 10^2] = \frac{4^2}{5^2}\left[\frac{10\times11\times21}{6} -
     1\right] = \frac{16}{25}\times505 = \frac{16m}{5}\Rightarrow m = 101$.
+\item Given, $m$ is the A.M.\ of $l$ and $n\Rightarrow l + n = 2m$.
+
+  $l, G_1, G_2, G_3, n$ are in G.P. Let $r$ be the c.r.\ of the G.P. $\Rightarrow r =
+  \left(\frac{n}{l}\right)^{\frac{1}{4}}$.
+
+  $\therefore G_1^4 + 2G_2^4 + G_3^4 = 4lm^2n$.
 \item $t_n = \frac{1^3 + 2^3 + \cdots + n^3}{1 + 3 + \cdots + (2n - 1)} = \left(\frac{n + 1}{2}\right)^2
   = \frac{n^2 + 2n + 1}{4}$
 
-  $S_n = \frac{1}{4}\left[\frac{n(n + 1)(2n + 1)}{6} + n(n + 1) + n\right] \Rightarrow S_{10} = 96$.
+  $S_n = \frac{1}{4}\left[\frac{n(n + 1)(2n + 1)}{6} + n(n + 1) + n\right] \Rightarrow S_{9} = 96$.
 \item Using A.M.-G.M.\ inequality we have
 
   $\frac{\sqrt{x^2 + x} + \frac{\tan^2\alpha}{\sqrt{x^2 + x}}}{2}\geq \tan\alpha\Rightarrow \sqrt{x^2 + x}
@@ -611,4 +617,201 @@
   $\therefore \frac{a_1 + a_2 + \cdots + 2a_n}{n}\geq\sqrt[n]{a_1a_2\ldots(2a_n)} = \sqrt[n]{2c}$
 
   Therefore, minimum value is $n\sqrt[n]{2c}$.
+\item Using A.M.-G.M.\ relationshiop, we have $\frac{(a + b) + (c + d)}{2}\geq \sqrt{(a + b)(c + d)}
+  \Rightarrow M\leq 1$. Also, $(a + b + c + d) > 0 \Rightarrow M > 0$.
+\item Let the roots be $\alpha$ and $\beta$, then we have $\alpha + \beta = \frac{4 + \sqrt{5}}{5 +
+  \sqrt{2}}$ and $\alpha\beta = \frac{8 + 2\sqrt{5}}{5 + \sqrt{2}}$.
+
+
+  The harmonic mean is given by $\frac{2\alpha\beta}{\alpha + \beta} = \frac{2\left(8 + 2\sqrt{5}\right)}{4
+    + \sqrt{5}} = 4$.
+\item Using A.M.-G.M.\ between $(a + b - c)$ and $(b + c - a)$, we have
+
+  $\frac{a + b - c + b + c - a}{2}\geq \sqrt{(a + b - c)(b + c - a)}\Rightarrow b\geq \sqrt{(a + b - c)(b +
+  c - a)}$.
+
+  Similarly, $c\geq \sqrt{(b + c - a)(c + a - b)}$ and $a\geq \sqrt{(c + a - b)(a + b - c)}$
+
+  Multiplying the three relationships $abc \geq (a + b - c)(b + c - a)(c + a - b)$, and hence proven.
+\item We have $(1 + a)(1 + b)(1 + c) = 1 + a + b + c + ab + bc + ca + abc$
+
+  Using A.M.-G.M.\ inequality, we have $\frac{1 + a + b + c + ab + bc + ca + abc}{7}\geq
+  \sqrt[7]{a^4b^4c^4}$
+
+  $\Rightarrow 1 + a + b + c + ab + bc + ca + abc\geq 7\sqrt[7]{a^4b^4c^4}$
+
+  $\Rightarrow \left[(1 + a)(1 + b)(1 + c)\right]^7 > 7^7a^4b^4c^4$.
+\item Let $G_m$ be the G.M.\ of $G_1, G_2, \ldots, G_n$.
+
+  $\Rightarrow G_m = \left(G_1G_2\ldots G_n\right)^{1/n} =
+  \left[(a_1).(a_1a_1r)^{1/2}(a_1a_1ra_1r^2)^{1/3}\ldots (a_1a_1r\ldots a_1r^{n - 1})^{1/n}\right]$, where
+  $r$ is the common ratio of the G.P.
+
+  $= \left[a_1^nr^{\frac{1}{2} + 1 + \frac{3}{2} + \cdots + \frac{n - 1}{2}}\right]^{\frac{1}{n}} =
+  a_1r^{\frac{n - 1}{4}}$
+
+  $A_n = \frac{a_1 + a_2 + \cdots + a_n}{n} = \frac{a_1(1 - r^n)}{n(1 - r)}$
+
+  $H_n = \frac{n}{\frac{1}{a_1} + \frac{1}{a_2} + \cdots + \frac{1}{a_n}} = \frac{a_1n(1 - r)^{n - 1}}{1 -
+    r^n}$
+
+  $A_nH_n = a_1^2r^{n - 1}\Rightarrow \displaystyle\prod_{i = 1}^nA_iH_i = \prod_{i = 1}^n(a_1^2r^{n - 1}) =
+  \left[a_1r^{\frac{n - 1}{4}}\right]^{2n} = G_m^{2n}$
+
+  $\Rightarrow G_m = \left[\displaystyle\prod_{i= 1}^nA_iH_i\right]^{1/2n}$.
+\item Since $y_1, y_2, y_3$ are real number so $3^{y_1}, 3^{y_2}, 3^{y_3}$ will be real numbers. Using
+  A.M.-G.M.\ inequality, we have
+
+  $\frac{3^{y_1} + 3^{y_2} + 3^{y_3}}{3}\geq \left(3^{y_1}.3^{y_2}.3^{y_3}\right)^{\frac{1}{3}}\Rightarrow
+  3^{y_1} + 3^{y_2} + 3^{y_3} \geq 3\left(3^{y_1}.3^{y_2}.3^{y_3}\right)^{\frac{1}{3}}$
+
+  Taking $\log$ of both sides with base $3$, we have
+
+  $\log_3\left(3^{y_1} + 3^{y_2} + 3^{y_3}\right)\geq \left[1 + \frac{1}{3}(y_1 + y_2 + y_3)\right] = 4$
+
+  Thus, $m = 4$.
+
+  Using A.M.-G.M.\ inequality for $x_1, x_2, x_3$, we have
+
+  $\frac{x_1 + x_2 + x_3}{3}\geq \left(x_1 + x_2 + x_3\right)^{\frac{1}{3}}$
+
+  Taking $\log$ of both sides with base $3$, we have
+
+  $\log_3\left(\frac{x_1 + x_2 + x_3}{3}\right)\geq \frac{1}{3}\left(\log_3 x_1 + \log_3x_2 +
+  \log_3x_3\right)$
+
+  $\Rightarrow M = 3$.
+
+  Now, $\log_2m^3 + \log_3M^2 = 3\log_24 + 2\log_33 = 8$.
+\item Given equality is $2(a_1 + a_2 + \cdots + a_n) = b_1 + b_2 + \cdots + b_n$
+
+  $\Rightarrow 2.\frac{n}{2}[2c + (n - 1)2] = c\left(2^n- 1\right)$
+
+  $\Rightarrow c\left[2^n - 2n - 1\right] = 2n^2 - 2n$
+
+  $\because c\in\mathbb{N}\Rightarrow 2n^2 - 2n \geq 2^n - 2n - 1\Rightarrow n\leq 6$ and also $c >
+  0\Rightarrow n > 2$
+
+  The possible values of $n$ are $3, 4, 5, 6$.
+
+  Only for $n = 3, c$ has integral value of $12$ and for other $n$ it has fractional value. So $c =12, n =
+  3$.
+\item Given $a, b, c$ are in G.P. Let $r$ be the c.r.\ of this G.P. Given that A.M.\ of $a, b, c$ is $b +
+  2$. Thus,
+
+  $\frac{a + b + c}{3} = b + 2 \Rightarrow a + ar + ar^2 = 3ar + 6 \Rightarrow (r - 1)^2 = \frac{6}{a}$.
+
+  Since $\frac{6}{a}$ must be a perfect square and $a\in\mathbb{N}$, so $a$ can be $6$ only.
+
+  $\Rightarrow r - 1 = \pm 1\Rightarrow r = 2$.
+
+  $\Rightarrow \frac{a^2 + a - 14}{a + 1} = 4$.
+\item Using A.M.-G.M., we have
+
+  $\frac{a^{-5} + a^{-4} + 3a^{-3} + 1 + a^8 + a^{10}}{8}\geq
+  \left(a^{-5}.a^{-4}.(a^{-3})^3.a^8.a^{10}\right)^{\frac{1}{8}}$
+
+  $\Rightarrow a^{-5} + a^{-4} + 3a^{-3} + 1 + a^8 + a^{10}\geq 8.1 = 8$. Hence, minimum value is $8$.
+\item Given, $a_1 = b_1 = 1$. $a_2 = a_1 + 2 = 3, a_3 = a_2 + 2 = 5\Rightarrow a_n = 2n - 1$. $b_2 = a_2 +
+  b_1 = 4, b_3 = a_3 + b_2 = 9\Rightarrow b_n = n^2$
+
+  $\displaystyle\sum_{i = 1}^{15}a_n.b_n = \sum_{i = 1}^{15}\left(2n^3 - n^2\right) = 2.\frac{n^2(n +
+    1)^2}{4} - \frac{n(n + 1)(2n + 1)}{6} = 27560$.
+\item Given, $\frac{1}{2.3^{10}} + \frac{1}{2^2.3^9} + \cdots + \frac{1}{2^{10}.3} =
+  \frac{K}{2^{10}.3^{10}}$
+
+  $\Rightarrow K = 2^9 + 2^8.3 + 2^73^2 + \cdots + 3^9 = \frac{2^9\left(\frac{3^{10}}{2^{10}} -
+    1\right)}{\frac{3}{2} - 1} = 3^{10} - 2^{10} = \left(3^5 - 2^5\right)\left(3^5 + 2^5\right)$
+
+  $= 211\times275 = (35\times6 + 1)(45\times6 + 5) = 6\lambda + 5$
+
+  Hence, the remainder is $5$.
+\item Given sequence can be written as $\left(1 - \frac{2}{3}\right) + \left(1 - \frac{4}{9}\right) +
+  \left(1 - \frac{8}{27}\right) + \left(1 - \frac{16}{81}\right) + \cdots$ for $100$ terms
+
+  $= 100 - \left[\frac{2}{3} + \frac{2^2}{3^2} + \cdots\right] = 100 - \frac{\frac{2}{3}\left(1 -
+    \frac{2^{100}}{3^{100}}\right)}{1 - \frac{2}{3}}$
+
+  $= 98 + 2.\frac{2^{100}}{3^{100}}$, so the greatest integer is $98$.
+\item According to question, $\big(\left(2.2^2.\ldots2^{60}\right)\left(4.4^2\ldots4^n\right))^{\frac{1}{60
+    + n}} = 2^{\frac{225}{8}}$
+
+  $\Rightarrow \big(2^{30\times61}4^{\frac{n(n + 1)}{2}}) = 2^{\frac{225}{8}}\Rightarrow 2^{1830 + n^2 + n}
+  = 2^{\frac{225(60 + n)}{8}}\Rightarrow 8n^2 - 217n + 1140 = 0$
+
+  $\Rightarrow n = 20, \frac{57}{8}$, we discard fractional value as $n$ can only be an integer.
+
+  Now $\displaystyle\sum_{k = 1}^n(nk -k^2) = \frac{n^2(n + 1)}{2} - \frac{n(n + 1)(2n + 1)}{6} = 1330$.
+\item Given, $\displaystyle\sum_{k = 1}^{10}\frac{k}{k^4 + k^2 + 1} = \frac{m}{n}$
+
+  $\Rightarrow \frac{1}{2}\displaystyle\sum_{k = 1}^{10}\frac{1}{k}\left(\frac{k^2 + k + 1 - (k^2 - k + 1)}{(k^2 + k + 1)(k^2
+  - k + 1)}\right) = \frac{1}{2}\displaystyle\sum_{k = 1}^{10}\frac{1}{k}\left(\frac{1}{k^2 + k + 1} - \frac{1}{k^2
+  - k + 1}\right)$
+
+  $\Rightarrow \frac{55}{111} = \frac{m}{n}\Rightarrow m + n = 166$.
+\item We have $d = \frac{l - a}{n - 1}$, where the terms have usual meanings. $d = \frac{99}{n - 1}$.
+
+  The factors of $99$ are $3, 9, 11, 33$. Clearly, $n = 4, 10, 12$ are the ones, which will give integral
+  common difference. These will be $33, 11, 9$ and hence the sum will be $53$.
+\item $A = \frac{1}{2} + \frac{1}{4^2} + \frac{1}{2^3} + \frac{1}{4^4} + \cdots \infty$
+
+  $= \frac{\frac{1}{2}}{1 - \frac{1}{4}} + \frac{\frac{1}{4^2}}{1 - \frac{1}{16}} = \frac{11}{15}$
+
+  $B = -\frac{1}{2} + \frac{1}{4^2} - \frac{1}{2^3} + \frac{1}{4^4} + \cdots \infty$
+
+  $= \frac{-\frac{1}{2}}{1 - \frac{1}{4}} + \frac{\frac{1}{16}}{1 - \frac{1}{16}} = -\frac{9}{15}$
+
+  $\therefore \frac{A}{B} = -\frac{11}{9}$.
+\item Let $r$ be the common ratio of the G.P., then
+
+  $3a_2 + a_3 = 2a_4 \Rightarrow 2r^2 - r + 3 = 0 \Rightarrow r = -1, \frac{3}{2}$
+
+  $a_2 + a_4 = 2a_3 + 1 \Rightarrow a(r + r^3 - 2r^2) = 1\Rightarrow a = \frac{8}{3}$ when $r =
+  \frac{3}{2}$.
+
+  When $r = -1, a = -\frac{1}{4}$, which is discarded as $a_1 > 0$.
+
+  $\Rightarrow a_2 + a_4 + 2a_5 = 40$.
+\item $t_n = \frac{n}{4n^4 + 1} = \frac{n}{(2n^2 + 1)^2 - (2n)^2} = \frac{n}{(2n^2 + 2n + 1)(2n^2 - 2n + 1)}
+  = \frac{1}{4}\left[\frac{1}{2n^2 - 2n + 1} - \frac{1}{2n^2 + 2n + 1}\right]$
+
+  $S_{10} = \frac{1}{4}\left[1 - \frac{1}{221}\right] = \frac{55}{221} = \frac{m}{n}$
+
+  $\therefore m  + n = 276$.
+\item Given, $S = 2 + \frac{6}{7} + \frac{12}{7^2} + \frac{20}{7^3} + \frac{30}{7^4} + \cdots \infty$
+
+  $\frac{S}{7} = \frac{2}{7} + \frac{6}{7^2} + \frac{12}{7^3} + \frac{20}{7^4} + \cdots \infty$
+
+  Subtracting, we have $\frac{6S}{7} = 2 + \frac{4}{7} + \frac{6}{7^2} + \frac{8}{7^3} + \frac{10}{7^4} +
+  \cdots \infty$
+
+  $\frac{6S}{7^2} = \frac{2}{7} + \frac{4}{7^2} + \frac{6}{7^3} + \frac{8}{7^4} + \cdots \infty$
+
+  Subtracting again, we have
+
+  $\frac{6^2S}{7^2} = 2 + \frac{2}{7} + \frac{2}{7^2} + \frac{2}{7^3} + \cdots \infty$
+
+  $= \frac{2}{1 - \frac{1}{7}} = \frac{7}{3}\Rightarrow 4S = \left(\frac{7}{3}\right)^3$.
+\item $a_{n + 2}a_{n + 1} - a_{n + 1}a_n = 2\Rightarrow \frac{a_n + \frac{1}{a_{n + 1}}}{a_{n + 2}} =
+  \frac{a_{n + 2} - \frac{1}{a_{n + 1}}}{a_{n + 2}} = 1 - \frac{1}{a_{n + 1}a_{n + 2}} = 1 - \frac{1}{2(r +
+    1)} = \frac{2r + 1}{2(r + 1)}$
+
+  Product is given by $\displaystyle\prod_{r = 1}^{30}\frac{2r + 1}{2(r + 1)} = \frac{1.3.5\ldots
+    61}{2^{30}(2.3\ldots 31)}$
+
+  $= \frac{61!}{2^{60}31!30!}$, and thus, $\alpha$ is $-60$.
+\item The terms in A.P.\ are $C_2^^4\times\frac{\beta^2}{6}, -6\beta, -C_3^^6\times\frac{\beta^3}{8}$.
+
+  Thus, $\beta^2 - \frac{5}{2}\beta^3 = -12\beta\Rightarrow \beta = \frac{12}{5}, -2\therefore \beta =
+  \frac{12}{5}$ as it is given that $\beta > 0$.
+
+  $\Rightarrow d = -\frac{72}{5} - \frac{144}{25} = -\frac{504}{25}$.
+
+  $\therefore 50 - \frac{2d}{\beta^2} = 57$.
+\item Given, $A_1A_3A_5A_7 = \frac{1}{1296}\Rightarrow A_4^4 = \frac{1}{1296}\Rightarrow A_4 = \frac{1}{6}$
+
+  Also given, $A_2 + A_4 = \frac{7}{36}\Rightarrow A_2 = \frac{1}{36}\Rightarrow A_6 = 1\Rightarrow A_8 = 6
+  \Rightarrow A_{10} = 36$
+
+  $\therefore A_6 + A_8 + A_{10} = 43$.
 \stopitemize
