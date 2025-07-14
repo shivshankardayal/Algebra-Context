@@ -834,4 +834,56 @@
   d\left(\frac{\frac{1}{4}}{1 - \frac{1}{2}}\right) = \frac{a_1}{2} + \frac{d}{2} = 4$
 
   $\Rightarrow a_1 + d = a_2 = 4$.
+\item Given, $\frac{1}{2.3.4} + \frac{1}{3.4.5} + \frac{1}{4.5.6} + \cdots + \frac{1}{100.101.102}
+  = \frac{k}{102}\Rightarrow \frac{4 - 2}{2.3.4} + \frac{5 - 3}{3.4.5} + \cdots + \frac{102 -
+    100}{100.101.102} = \frac{2k}{101}$
+
+  $\Rightarrow \frac{1}{2.3} - \frac{1}{3.4}+ \frac{1}{3.4} - \frac{1}{4.5} + \frac{1}{4.5} + \cdots
+  + \frac{1}{100.101} - \frac{1}{101.102} = \frac{2k}{101}$
+
+  $\Rightarrow \frac{1}{2.3} - \frac{1}{101.102} = \frac{2k}{101}\Rightarrow 34k = 286$.
+\item From given relations, $a_{n + 2} - a_{n + 1} = 2(a_{n + 1} - a_n) + 1$ so we have
+
+  $a_2 - a_1 = 2(a_1 - a_0) + 1; a_3 - a_2 = 2(a_2 - a_1) + 1, \ldots$
+
+  Thus, $(a_{n + 2} - a_1) - 2(a_{n + 1} - a_0) - (n + 1) = 0\Rightarrow a_{n + 2} = 2a_{n + 1} + (n + 1)$
+
+  Setting $n = n - 2, a_n - 2a_{n - 1} = n - 1$.
+
+  Thus, $a_{25}a_{23} - 2a_{25}a_{22} - 2a_{23}a_{24} + 4a_{22}a_{24} = (a_{25} - 2a_{24})(a_{23} - a_{22})
+  = 24\times 22 = 528$.
+\item $a_{n + 2} - a_{n + 1} = a_{n + 1} - a_n + 1$ and thus we have $a_2 - a_1 = a_1 - a_0 + 1; a_3 - a_2 =
+  a_2 - a_1 + 1, \ldots$
+
+  Adding we have $a_{n + 2} - a_{n + 1} = n + 1$ and thus we have $a_2 - a_1 = 1; a_3 - a_2 = 2; \ldots$ and
+  thus we have $a_n = \frac{n(n - 1)}{2}$.
+
+  So $S = \frac{1}{7^2} + \frac{3}{7^3} + \frac{6}{7^4} + \cdots$ and $\frac{S}{7} = \frac{1}{7^3}
+  + \frac{3}{7^4} + \frac{6}{7^5} + \cdots$
+
+  Subtracting we have $\frac{6S}{7} = \frac{1}{7^2} + \frac{2}{7^3} + \frac{3}{7^4} + \cdots$ and
+  $\frac{6S}{7^2} = \frac{1}{7^3} + \frac{2}{7^4} + \frac{3}{7^5} + \cdots$
+
+  $\frac{6^2S}{7^2} = \frac{1}{7^2} + \frac{1}{7^3} + \cdots =\frac{1/7^2}{1 - 1/7} \Rightarrow S
+  = \frac{7}{216}$.
+\item $A_{51} - A_{50} = 1000\Rightarrow l_{51}w_{51} - l_{50}w_{50} = 1000 \Rightarrow (l_1 + 50d_1)(w_1 +
+  50d_2) - (l_1 + 49d_1)(w_1 + 49d_2) = 1000$
+
+  $\Rightarrow l_1d_2 + w_1d_1 = 10$
+
+  Now, $A_{100} - A_{90} = l_{100}w_{100} - l_{90}w_{90} = (l_1 + 99d_1)(w_1 + 99d_2) - (l_1 + 89d_1)(w_1 +
+  89d_2)$
+
+  $= 10(l_1d_2 + w_1d_1) + (99^2 - 89^2)d_1d_2 = 10.10 + (99^2 - 89^2)10 = 18900$.
+\item $a_1 = 7, d = 8. T_{n + 1} - T_n = a_n\forall n\geq 1$.
+
+  \startformula \startalign[n=3]
+    \NC S = \NC T_1 + \NC T_2 + T_3 + \cdots + T_n\NR
+    \NC S = \NC \NC T_1 + T_2 + \cdots + T_{n - 1} + T_n\NR
+  \stopalign\stopformula
+
+  On subtraction we get $T_n = T_1 + a_1 + a_2 + \cdots + a_{n - 1}\Rightarrow T_n = 3 + (n - 1)(4n - 1) =
+  4n^2 - 5n + 4$
+
+  Thus, $\displaystyle\sum_{i = 1}^{20}T_i = 1504$.
 \stopitemize
