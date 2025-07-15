@@ -877,13 +877,198 @@
   $= 10(l_1d_2 + w_1d_1) + (99^2 - 89^2)d_1d_2 = 10.10 + (99^2 - 89^2)10 = 18900$.
 \item $a_1 = 7, d = 8. T_{n + 1} - T_n = a_n\forall n\geq 1$.
 
-  \startformula \startalign[n=3]
+  $\startalign[n=3, location=packed]
     \NC S = \NC T_1 + \NC T_2 + T_3 + \cdots + T_n\NR
     \NC S = \NC \NC T_1 + T_2 + \cdots + T_{n - 1} + T_n\NR
-  \stopalign\stopformula
+  \stopalign$
 
   On subtraction we get $T_n = T_1 + a_1 + a_2 + \cdots + a_{n - 1}\Rightarrow T_n = 3 + (n - 1)(4n - 1) =
   4n^2 - 5n + 4$
 
   Thus, $\displaystyle\sum_{i = 1}^{20}T_i = 1504$.
+\item Using partial fraction, $t_i = \frac{(i^2 + i + 1) - (i^2 - i + 1)}{2(1 + i^2 + i^4)}
+  = \frac{1}{2}\left[\frac{1}{i^2 - i + 1} - \frac{1}{i^2 + i + 1}\right]$
+
+  $t_1 = \frac{1}{2}\left[\frac{1}{1} - \frac{1}{3}\right]; t_2 = \frac{1}{2}\left[\frac{1}{3}
+    - \frac{1}{7}\right]; t_3 = \frac{1}{2}\left[\frac{1}{7} - \frac{1}{13}\right]; \cdots; t_{10}
+  = \frac{1}{2}\left[\frac{1}{91} - \frac{1}{111}\right]$
+
+  Thus, $\displaystyle\sum_{i = 1}^{10} = \frac{1}{2}\left[1 - \frac{1}{111}\right] = \frac{55}{111}$.
+\item $\displaystyle\sum_{n = 1}^\infty\frac{2n^2 + 3n + 4}{2n!} = \frac{1}{2}\sum_{i = 0}^\infty\frac{2n(2n
+  - 1) + 8n + 8}{2n!} = \frac{1}{2}\sum_{i = 1}^\infty\left[\frac{1}{(2n - 2)!} + \frac{2}{(2n - 1)!}
+  + \frac{4}{2n!}\right]$
+
+  We know that $e = 1 + 1 + \frac{1}{2!} + \frac{1}{3!} + \cdots$ and $e^{-1} = 1 - 1 + \frac{1}{2!}
+  - \frac{1}{3!} + \cdots$
+
+  Thus, $e + e^{-1} = 2\left[1 + \frac{1}{2!} + \frac{1}{4!} + \cdots\right]$ and $e - e^{-1} = 2\left[1
+    + \frac{1}{3!} + \frac{1}{5!} + \cdots\right]$
+
+  Thus given sum becomes $\displaystyle\frac{1}{2}\left[\frac{e + \frac{1}{e}}{2}\right] + 2\left[\frac{e
+      - \frac{1}{e}}{2}\right] + 4\left[\frac{e + \frac{1}{e} - 2}{2}\right]$
+
+  $= \frac{13}{4}e + \frac{5}{4e} - 4$.
+\item Let $S = 20^{19} + 2.21.20^{18} + 3.21^2.20^{17} + \cdots + 20(21)^{19} = k.20^{19}$
+
+  $\frac{21S}{20} = 21.20^{18} + 2.(21)^220^{17} + 3.21^3.20^{16} + \cdots + 21^{20}$
+
+  $\Rightarrow S - \frac{21S}{20} = 20^{19} + 21.20^{18} + 21^2.20^{17} + \cdots + 21^{19} - 21^{20}$
+
+  $-\frac{S}{20} = 20^{19}\displaystyle\left[\frac{1 - \left(\frac{21}{20}\right)^{20}}{1
+    - \frac{21}{20}}\right] - 21^{20}$
+
+  $-\frac{S}{20} = 21^{20} - 20^{20} - 21^{20}\Rightarrow S = 20^{21} = k.20^{19}\Rightarrow k = 400$.
+\item \startframed[align=normal,frame=off,location=high]
+  $\startalign[n=3, location=packed]
+  \NC S = \NC 5 + \NC 8 + 14 + 23 + 35 + \cdots\NR
+  \NC S = \NC \NC 5 + 8 + 14 + 23 + 35 + \cdots\NR
+\stopalign$\stopframed
+\\
+
+  On subtraction we have $a_n = 5 + [3 + 6 +  + 9 + \cdots + (3n - 3)] = \frac{3n^2 - 3n + 10}{2}$
+
+  $\Rightarrow a_{40} = 2345$.
+
+  $S_n = \displaystyle\sum_{i = 1}^na_i = \frac{1}{2}\sum_{i = 1}^n(3i^2 - 3i + 10)$
+
+  $\Rightarrow S_{30} = 13635 \Rightarrow S_{30} - a_{40} = 11290$.
+\item We have $a = 3, d = 5, t_n = 373 = a + (n - 1)d \Rightarrow n = 75$.
+
+  $S = \frac{n}{2}[2a + (n - 1)d] = \frac{75}{2}[2.3 + 74.5] = 14100$.
+
+  The numbers divisible by $3$ are $3, 18, 33, \ldots, 363$. $363 = 3 + (k - 1)15\Rightarrow k = 25$.
+
+  $S' = \frac{25}{2}[2.3 + (25 - 1)15] = 4575$.
+
+  Therefore, required sum is $S - S' = 14100 - 4575 = 9525$.
+\item \startframed[align=normal,frame=off,location=high]
+  $\startalign[n=3, location=packed]
+  \NC S = \NC 4 + \NC 11 + 21 + 34 + 50 + \cdots + t_n\NR
+  \NC S = \NC \NC \;\;4 + 11 + 21 + 34 + \cdots + t_{n - 1} + t_n\NR\stopalign$\stopframed
+  \\
+
+  Subtracting, we get $t_n = 4 + 7 + 10 + 13 + \cdots + (3n + 1) = \frac{n}{2}(3n + 5) = \frac{3}{2}n^2
+  + \frac{5}{2}n$
+
+  $S_n = \sum t_n = \frac{3}{2}.\frac{n(n + 1)(2n + 1)}{6} - \frac{5}{2}.\frac{n(n + 1)}{2}$
+
+  $\Rightarrow \frac{1}{60}(S_{29} - S_9) = 223$.
+\item Let $a$ be the first term  of the A.P.\ and $d$ be its c.d. Then the terms would be $\frac{a - 2d}{4},
+  \frac{a - d}{2}, a, 2(a + d), 4(a + 4d)$. Given that $a = 2$.
+
+  From question $\frac{2 - 2d}{4} + \frac{2 - d}{2} + 2 + 2(2 + d) + 4(2 + 2d) = \frac{49}{2}\Rightarrow d =
+  1$
+
+  Thus, $a_4 = 4(a + 2d) = 16$.
+  % 129
+\item Using A.M.-G.M.\ inequality, we have
+
+  $\frac{\frac{a}{5} + \frac{a}{5} + \frac{a}{5} + \frac{a}{5} + \frac{a}{5} + \frac{b}{3} + \frac{b}{3}
+  + \frac{b}{3} + \frac{c}{2} + \frac{c}{2} +
+  d}{11}\geq \left(\frac{a^5b^3c^2d}{5^53^32^2}\right)^{\frac{1}{11}}$
+
+  $\Rightarrow a^5b^3c^2d\leq 5^53^32^2$, and thus, required maximum value is $337500$.
+  %130
+\item Given $10 = 1 + \frac{4}{k} + \frac{8}{k^2} + \frac{13}{k^3} + \frac{19}{k^4} + \cdots$
+
+  $\Rightarrow 9 = \frac{4}{k} + \frac{8}{k^2} + \frac{13}{k^3} + \frac{19}{k^4} + \cdots$
+
+  $\Rightarrow \frac{9}{k} = \frac{4}{k^2} + \frac{8}{k^3} + \frac{13}{k^4} + \frac{19}{k^5} + \cdots$
+
+  On subtraction $S = 9\left(1 - \frac{1}{k}\right) = \frac{4}{k} + \frac{4}{k^2} + \frac{5}{k^3}
+  + \frac{6}{k^4} + \cdots$
+
+  $\frac{S}{k} = \frac{4}{k^2} + \frac{4}{k^3} + \frac{5}{k^4} + \frac{6}{k^5} + \cdots$
+
+  $\Rightarrow \left(1 - \frac{1}{k}\right)S = \frac{4}{k} + \frac{1}{k^3} + \frac{1}{k^4} + \frac{1}{k^5} +
+  \cdots$
+
+  $\Rightarrow 9\left(1 - \frac{1}{k}\right)^2 = \frac{4}{k} + \frac{\frac{1}{k^3}}{1
+    - \frac{1}{k}}\Rightarrow k = 2$.
+  %131
+\item $a_n = S_n - S_{n - 1} = \frac{n^2 + 3n}{(n + 1)(n + 2)} - \frac{(n - 1)(n + 2)}{n(n + 1)}
+  = \frac{4}{n(n + 1)(n + 2)}$
+
+  Thus, $\displaystyle28\sum_{i = 1}^{10}\frac{1}{a_i} = 28\sum_{i = 1}^{10}\frac{i(i + 1)(i + 2)}{4}
+  = \frac{7}{4}\sum_{i = 1}^{10}[i(i + 1)(i + 2)(i + 3) - (i - 1)i(i + 1)(i + 2)] = 2.3.5.7.11.13$.
+
+  So $m = 6$.
+  %132
+\item $S_i$ will have $i$ as first term and $2i - 1$ as c.d. So $S_i = \frac{12}{2}[2i + (12 - 1)(2i - 1)] =
+  144i - 66$
+
+  $\therefore \displaystyle\sum_{i = 1}^{10}S_i = 144.\frac{10.11}{2} - 660 = 7260$.
+  %133
+\item Sum is $(2^2 - 3^2 + 4^2 - 5^2 + \cdots 20$ terms$) + (2^2 + 4^2 + \cdots 10)$ terms
+
+  $= -(2 + 3 + 4 + 5 + \cdots + 11) + 4(1^2 + 2^2 + \cdots + 10^2) = -\left[\frac{21.22}{2} - 1\right] +
+  4.\frac{10.11.21}{6} = 1310$.
+  %134
+\item Let $r$ be the c.r.\ of the given G.P.\ and $a$ be the first term. Given $a_3a_5
+  = \frac{1}{9}\Rightarrow ar^2.ar^4 = \frac{1}{9}\Rightarrow ar^3 = \frac{1}{3}$.
+
+  Also given $a_6 + a_8 = 2 \Rightarrow ar^5 + ar^7 = 2$.
+
+  Solving the two equations we have $a = \frac{1}{6\sqrt{2}}$ and $r = \sqrt{2}$. Thus, $6(a_2 + a_4)(a_4 +
+  a_6) = 3$.
+  %135
+\item Clearly, $A_1 + A_2 = a + b$. Let $r$ be the c.r.\ of the G.P., then $G_1 = \sqrt[4]{a^3b}, G_2
+  = \sqrt[4]{a^2b^2}, G_3 = \sqrt[4]{ab^3}$
+
+  $G_1^4 + G_2^4 + G_3^4 + G_1^2G_3^2 = a^3b + a^2b^2 + ab^3 + a^2b^2 = ab(a + b)^2 = G_1G_3(A_1 + A_2)^2$.
+  %136
+\item Let $P = \left(\frac{1}{2} - \frac{1}{3}\right) + \left(\frac{1}{2^2}
+  - \frac{1}{2.3} + \frac{1}{3^2}\right) + \left(\frac{1}{2^2} - \frac{1}{2^2.3} + \frac{1}{2.3^2}
+  - \frac{1}{3^3}\right) + \left(\frac{1}{2^4} - \frac{1}{2^3.3} + \frac{1}{2^2.3^2} - \frac{1}{2.3^3}
+  + \frac{1}{3^4}\right) + \cdots$
+
+  $P\left(\frac{1}{2} + \frac{1}{3}\right) = \left(\frac{1}{2^2} - \frac{1}{3^2}\right)
+  + \left(\frac{1}{2^3} - \frac{1}{3^3}\right) + \left(\frac{1}{2^4} - \frac{1}{3^4}\right) + \cdots$
+
+  $\frac{5P}{6} = \frac{\frac{1}{4}}{1 - \frac{1}{2}} - \frac{\frac{1}{9}}{1 - \frac{1}{3}} = \frac{5}{12}$
+
+  $\Rightarrow P = \frac{1}{2}\Rightarrow p + 3q = 7$.
+  %137
+\item $1^3 + 2^3 + 3^3 + \cdots + n^3 = \left(\frac{n(n + 1)}{2}\right)^2$
+
+  $1.3 + 2.5 + 3.7 + \cdots + n(2n + 1) = \displaystyle\sum_{i = 1}^ni(2i + 1) = 2.\frac{n(n + 1)(2n +
+  1)}{6} + \frac{n(n + 1)}{2} = \frac{n(n + 1)(4n + 5)}{6}$
+
+  Thus, $\frac{1^3 + 2^3 + 3^3 + \cdots \mathrm{\;upto\;} n \mathrm{\;terms}}{1.3 + 2.5 + 3.7
+    + \cdots \mathrm{\;upto\;} n \mathrm{\;terms}} = \frac{9}{5}$
+
+  $\Rightarrow \frac{5n(n + 1)}{2} = \frac{9(4n + 5)}{3}\Rightarrow n = 5, -\frac{6}{5}$, however, $n$ has
+  to be integral so $n = 5$.
+  %138
+\item Let $x^{pq^2} = y^{qr} = z^{p^2r} = k \Rightarrow pq^2 = \log_xk; qr = \log_yk; p^2r = \log_zk$
+
+  $\Rightarrow \log_yx = \frac{qr}{pq^2} = \frac{r}{pq}; \log_xz = \frac{pq^2}{p^2r}
+  = \frac{q^2}{pr}, \log_zy = \frac{p^2}{q}$
+
+  Thus, $3, \frac{3r}{pq}, \frac{3p^2}{q}, \frac{7q^2}{pr}$ are in A.P. $\Rightarrow \frac{3r}{pq} - 3
+  = \frac{1}{2}\Rightarrow r = \frac{7}{6}pq$
+
+  Given that $r = pq + 1 \Rightarrow pq = 6$ and $r = 7 \Rightarrow \frac{3p^2}{q} = 4 \Rightarrow p = 2, q
+  = 3\Rightarrow r - p - q = 2$.
+  %139
+\item Let $a$ be the first term and $r$ be the c.r.\ which is $\frac{1}{m}$ of this G.P.
+
+  $t_4 = \frac{a}{m^3} = 500$. We know that $S_n - S_{n - 1} = ar^{n - 1} = \frac{a}{m^{n - 1}}$.
+
+  Given $S_6 > S_5 + 1 \Rightarrow S_6 - S_5 > 1 \Rightarrow \frac{a}{m^5} > 1 \Rightarrow \frac{500}{m^2} >
+  1 \Rightarrow m^2 < 500 \Rightarrow m < 23$.
+
+  $S_7 - S_6 < \frac{1}{2}\Rightarrow \frac{a}{m^6} < \frac{1}{2}\Rightarrow m^3 > 10^3 \Rightarrow m > 10$.
+
+  Thus, total possible no.\ of values of $m$ is $12$.
+  %140
+\item Given $\startdeterminant\NC A + 6d\NC 7\NC 1\NR\NC 2(A + 1 + 8d)\NC 17\NC 1\NR\NC A + 2 + 16d\NC
+  17\NC 1\NR\stopdeterminant + 70 = 0$
+
+  Solving this gives us $A = -7$ and $d = 6\therefore c - a - b = 20\Rightarrow S_{20} = 495$.
+  %141
+\item $a, b, \frac{1}{18}$ are in G.P., which gives us $\frac{a}{18} = b^2$. Also, $\frac{1}{a},
+  10, \frac{1}{b}$ are in A.P., which gives us $\frac{1}{a} + \frac{1}{b} = 20$.
+
+  Solving the two equations gives us $a = \frac{1}{8}, b = \frac{1}{12}$. Thus, $16a + 12b = 3$.
 \stopitemize
