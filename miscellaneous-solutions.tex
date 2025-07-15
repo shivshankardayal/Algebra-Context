@@ -1071,4 +1071,102 @@
   10, \frac{1}{b}$ are in A.P., which gives us $\frac{1}{a} + \frac{1}{b} = 20$.
 
   Solving the two equations gives us $a = \frac{1}{8}, b = \frac{1}{12}$. Thus, $16a + 12b = 3$.
+  %142
+\item \startframed[align=normal,frame=off,location=high]
+  $\startalign[n=3, location=packed]
+  \NC S = \NC\frac{b_1}{2} \NC + \frac{b_2}{2^2} + \cdots + \frac{b_9}{2^9} + \frac{b_{10}}{2^{10}}\NR
+  \NC S = \NC \NC\;\;\;\; \frac{b_1}{2^2} + \cdots + \frac{b_8}{2^9} + \frac{b_9}{2^{10}} + \frac{b_{10}}{2^{11}}\NR
+  \stopalign$
+  \stopframed
+  \\
+  \vskip{1cm}
+  Subtracting, we get $S = b_1 - \frac{b_{10}}{2^{10}} + \left(\frac{a_1}{2} + \frac{a_2}{2^2} + \cdots
+  + \frac{a_9}{2^9}\right)$
+
+  $\frac{S}{2} = \frac{b_1}{2} - \frac{b_{10}}{2^{11}} + \left(\frac{a_1}{2^2} + \frac{a_2}{2^3} + \cdots
+  + \frac{a_9}{2^{10}}\right)$
+
+  Subtracting we get
+
+  $\frac{S}{2} = \frac{b_1}{2} - \frac{b_{10}}{2^{11}} + \left(\frac{a_1}{2} - \frac{a_9}{2^{10}}\right)
+  + \left(\frac{1}{2^2} + \frac{2}{2^3} + \cdots + \frac{8}{2^9}\right)$
+
+  $\Rightarrow \frac{S}{2} = \frac{a_1 + b_1}{2} - \frac{b_{10} + 2a_9}{2^{11}} + \frac{T}{4}\Rightarrow 2S
+  = 2(a_1 + b_1) - \frac{b_{10} + 2a_9}{2^9} + T$
+
+  $2^7(2S - T) = 2^8(a_1 + b_1) - \frac{b_{10} + 2a_9}{4}$
+
+  Given $a_n - a_{n - 1} = n - 1\therefore a_2 - a_1 = 1; a_3 - a_2 = 2; \ldots; a_9 - a_8= 8 \Rightarrow
+  a_9 = 37$
+
+  Also, $b_n - b_{n - 1} = a_{n - 1}\therefore b_{10} - b_1 = a_1 + a_2 + \cdots + a_9 \Rightarrow b_{10} =
+  130$
+
+  $\Rightarrow 2^7(2S - T) = 461$.
+  %143
+\item $c_2 = a_2 + b_2 = 5 \Rightarrow r_1 + r_2 = \frac{5}{4}$ and $c_3 = a_3 + b_3
+  = \frac{13}{4}\Rightarrow r_1^2 + r_2^2 = \frac{13}{4}\Rightarrow r_1 = \frac{1}{2}\& r_2 = \frac{3}{4}$.
+
+  $\displaystyle\sum_{k = 1}^\infty c_k - (12a_6 + 8b_4) = \frac{4}{1 - r_1} + \frac{4}{1 - r_2}
+  - \left(\frac{48}{32} + \frac{27}{2}\right) = 9$.
+  %144
+\item $a_1 + a_2 + \cdots + a_{25} = \displaystyle\sum_{n = 1}^{25}a_n = \sum_{n = 1}^{25}\left(\frac{1}{2n
+  - 3} - \frac{1}{2n - 5}\right) = \frac{1}{47} - \frac{1}{-3} = \frac{50}{141}$.
+  %145
+\item $\because a^3, b^3, c^3$ are in A.P. $\Rightarrow a^3 + c^3 = 2b^3$. $\log_ab, \log_ca$ and $\log_bc$
+  are in G.P.
+
+  $\Rightarrow \frac{\log b}{\log a}.\frac{\log c}{\log b} = \left(\frac{\log a}{\log
+    c}\right)^2 \Rightarrow (\log a)^3 = (\log c)^3\Rightarrow a = c\Rightarrow a = b = c$.
+
+  $T_1 = \frac{a + 4b + c}{3} = 2a; d = \frac{a - 8b + c}{10} = -\frac{3}{5}a$
+
+  $S_{20} = \frac{20}{2}\left[4a + 19.\frac{-3a}{5}\right] = -74a = -444 \Rightarrow a = 6 \Rightarrow abc =
+  216$.
+  %146
+\item Let $a$ be the first term and $r$ be the c.r.\ of the G.P. Given $a.ar.ar^2.ar^3 = 1296 \Rightarrow
+  a^4r^6 = 1296\Rightarrow a = \frac{6}{r^{3/2}}$.
+
+  Also given, $a + ar + ar^2 + ar^3 = 126 \Rightarrow \frac{1}{r^{3/2}} + \frac{1}{r^{1/2}} + r^{1/2} +
+  r^{3/2} = 21$
+
+  Let $r^{1/2} + r^{-1/2} = A \Rightarrow r^{-3/2} + r^{3/2} + 3A = A^3 \Rightarrow A^3 - 3A + A =
+  21 \Rightarrow A = 3 \Rightarrow \sqrt{r} + \frac{1}{\sqrt{r}} = 3$
+
+  $\Rightarrow r^2 - 7r + 1 = 0$. Sum of roots is $7$ which is the required answer.
+  %147
+\item $2a_7 = a_5 \Rightarrow 2(a_1 + 6d) = a_1 + 4d \Rightarrow a_1 + 8d = 0$. Also given, $a_{11} =
+  18 \Rightarrow a_1 + 10d = 18$
+
+  Solving the two equations we have $a_1 = -72, d = 9\Rightarrow a_{18} = 81, a_{10} = 9$.
+
+  $12\left(\frac{1}{\sqrt{a_{10}} + \sqrt{a_{11}}} + \frac{1}{\sqrt{a_{11}} + \sqrt{a_{12}}} + \cdots
+  + \frac{1}{\sqrt{a_{17}} + \sqrt{a_{18}}}\right) = 12\left(\frac{\sqrt{a_{11}} - \sqrt{a_{10}}}{d}
+  + \frac{\sqrt{a_{12}} - \sqrt{a_{11}}}{d} + \cdots + \frac{\sqrt{a_{18}} - \sqrt{a_{17}}}{d}\right)$
+
+  $= 12.\frac{\sqrt{a_{18}} - \sqrt{a_{10}}}{d} = 12.\frac{9 - 3}{9} = 8$.
+  %148
+\item $S = (1.1^2 + 3.5^2 + \cdots + 15.29^2) - (2.3^2 + 4.7^2 + \cdots + 14.27^2)$
+
+  $= \displaystyle\sum_{n = 1}^8(2n - 1)(4n - 3)^2 - \sum_{n - 1}^72n.(4n - 1)^2$
+
+  $= 6952$.
+  %149
+\item \startframed[align=normal,frame=off,location=high]
+  $\startalign[n=3, location=packed]
+  \NC S = \NC 77\NC + 757 + 7557 + \cdots + 7\underbrace{55\ldots55}_{98 \;\mathrm{times}}7\NR
+  \NC 10S = \NC \NC 770 + 7570 + \cdots + 7\underbrace{55\ldots55}_{97 \;\mathrm{times}}70 +
+  7\underbrace{55\ldots55}_{98 \;\mathrm{times}}70\NR
+  \stopalign$
+  \stopframed
+  \\
+  \vskip{0.8cm}
+  Subtracting, we have $9S = -77 + \underbrace{13 + 13 + \cdots + 13}_{98 \;\mathrm{times}} +
+  7\underbrace{55\ldots55}_{98 \;\mathrm{times}}70$
+
+  $= -77 + 13.98 + 7\underbrace{55\ldots55}_{99 \;\mathrm{times}}7 + 13$
+
+  $= \frac{7\overbrace{55\ldots55}^{99 \;\mathrm{times}}7 + 1210}{9}\Rightarrow m = 1210, n = 9\Rightarrow m
+  + n = 1219$.
+  %150
 \stopitemize
