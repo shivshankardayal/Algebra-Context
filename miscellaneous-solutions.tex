@@ -1540,9 +1540,21 @@
 \item We know that $|z_1| = 9$ represents a circle having center $C_1(0, 0)$ having radius $9$ and $|z_2 - 3
   - 4i| = 4$ represents a circle having center $C_2(3, 4)$ having radius $4$.
 
-  $C_1C_2 = \sqrt{(3 - 0)^2 + (4 - 0)^2} = 5$ and $|r_1 - r_2| = |9 - 40| = 5$.
+  $C_1C_2 = \sqrt{(3 - 0)^2 + (4 - 0)^2} = 5$ and $|r_1 - r_2| = |9 - 4| = 5$.
 
   Thus, circles touch each other internally. Hence, $|z_1 - z_2|_{\mathrm{min}} = 0$.
+
+  \startplacefigure[location=force]
+    \startMPcode
+      draw fullcircle scaled 1.8cm;
+      draw fullcircle scaled .8cm shifted (.3cm, .4cm);
+      drawdblarrow (-2cm, 0) -- (2cm, 0);
+      drawdblarrow (0, -2cm) -- (0, 2cm);
+      label.llft("$C_1$", origin);
+      drawdot(.3cm, .4cm) withpen pencircle scaled 1pt;
+      label.llft("$C_2$", (.3cm, .4cm));
+    \stopMPcode
+  \stopplacefigure
   %191
 \item Let $z = x + iy$ so the complex number $\frac{z - \alpha}{z + \alpha}$ becomes $\frac{(x - \alpha) +
   iy}{(x + \alpha) + iy}$.
@@ -1625,4 +1637,320 @@
   %198
 \item $\frac{z}{1 - z^2} = \frac{z}{z\overline{z} - z^2} = \frac{1}{z - \overline{z}}$, which is equation of
   imaginary $y$-axis.
+  %199
+\item Given that $\frac{w - \overline{w}z}{1 - z}$ is real so it will be equal to its conjugate.
+
+  $\Rightarrow \frac{w - \overline{w}z}{1 - z} = \frac{\overline{w} - w\overline{z}}{1 -
+  \overline{z}}\Rightarrow w - w\overline{z} - \overline{w}z + \overline{w}z.\overline{z} = \overline{w} -
+  z\overline{w} - w\overline{z} + wz.\overline{z}$
+
+  $\Rightarrow (w - \overline{w})(1 - |z|^2) = 0\Rightarrow |z|^2 = 0(\because w - \overline{w}\neq 0,
+  \because \beta\neq 0)$
+
+  $\Rightarrow |z| = 1$ and $|z|\neq 1$.
+  %200
+\item Since it is given that $|z| = 1$, therefore it is convenient to use $z = \cos\theta + i\sin\theta$.
+
+  $w = \frac{z - 1}{z + 1} = \frac{(\cos\theta - 1 + i\sin\theta)(\cos\theta + 1 - i\sin\theta)}{(\cos\theta
+  + 1 + i\sin\theta)(\cos\theta + 1 - i\sin\theta)}$
+
+  $\Re(w) = \frac{\cos^2\theta - 1 + \sin^2\theta }{(\cos\theta + 1)^2 + \sin^2\theta} = 0$.
+  %201
+\item Given that $|z_1| = |z_2| = |z_3| = 1 \Rightarrow z_1\overline{z_1} = z_2\overline{z_2} =
+  z_3\overline{z_3} = 1$
+
+  Also given that $\left|\frac{1}{z_1} + \frac{1}{z_2} + \frac{1}{z_3}\right| = 1\Rightarrow |\overline{z_1}
+  + \overline{z_2} + \overline{z_3}| = 1 \Rightarrow |\overline{z_1 + z_2 + z_3}| = 1\Rightarrow |z_1 + z_2 +
+  z_2| = 1$.
+  %202
+\item Given expression can be written as $(1 + i)^{n_1} + (1 - i)^{n_1} + (1 + i)^{n_2} + (1 - i)^{n_2}$.
+
+  We see that $1 + i = \overline{1 - i}$.
+
+  We know that $z + \overline{z} = \Re(z)$, and thus, the above expression is a real number.
+  %203
+\item For the given numbers to be a conjugate pair $\overline{\sin x + i\cos2x} = \cos x -i\sin 2x$
+
+  $\Rightarrow \sin x = \cos x$ and $\cos 2x = \sin 2x\Rightarrow \tan x = 1$ and $\tan 2x = 1$
+
+  $\Rightarrow x = \\frac{\pi}{4}$ and $x = \frac{\pi}{8}$; both of which are not possible at the same
+  time. Hence, no solution exists.
+  %204
+\item Given that $|z^2 + z + 1| = 1 \Rightarrow \left|\left(z + \frac{1}{2}\right)^2 + \frac{3}{4}\right| =
+  1$
+
+  We know that $|z_1 - z_2|\geq |z_1| - |z_2|$, therefore $\left|\left(z + \frac{1}{2}\right)^2
+  -\left(-\frac{3}{4}\right)\right|\geq \left|\left|z + \frac{1}{2}\right|^2 -
+  \left|-\frac{3}{4}\right|\right|$
+
+  $\Rightarrow -1\leq \left|z + \frac{1}{2}\right| - \frac{3}{4}\leq 1 \Rightarrow -\frac{1}{4}\leq \left|z
+  + \frac{1}{2}\right|^2\leq \frac{7}{4}$
+
+  $\Rightarrow 0\leq \left|z + \frac{1}{2}\right|\leq \frac{\sqrt{7}}{2}$, using $|z_1 - z_2|\geq ||z_1| -
+  |z_2||$
+
+  $\therefore \left|z + \frac{1}{2}\right|\geq \left||z| - \frac{1}{2}\right|\Rightarrow
+  -\frac{\sqrt{7}}{2}\leq z - \frac{1}{2}\leq \frac{\sqrt{7}}{2}$
+
+  $\Rightarrow |z|\leq \frac{1 + \sqrt{7}}{2}$
+
+  Also, $\left|\left(z + \frac{1}{2}\right)^2 + \frac{3}{4}\right|\leq \left|\left|z + \frac{1}{2}\right|^2
+  + \frac{3}{4}\right|\Rightarrow \left|z + \frac{1}{2}\right|\geq \frac{1}{2}$.
+  %205
+\item Given that $sz + t\overline{z} + r = 0$. Taking conjugate gives us $\overline{s}\overline{z} +
+  \overline{t}z + \overline{r} = 0$
+
+  Solving these two equations we have $z = \frac{\overline{r}t - r\overline{s}}{|s|^2 - |t|^2}$
+
+  For unique solutions the denominator must not be zero, and hence, $|s|\neq |t|$.
+
+  If $L$ represents a set of straight line, then the line and given circle intersect at a maximum of $2$
+  points. If $L$ represents a line, then it has infinte points on its locus.
+  %206
+\item $\frac{z_1 + z_2}{z_1 - z_2} = \frac{(z_1 + z_2)(\overline{z_1} - \overline{z_2})}{\overline{z_1} -
+  \overline{z_2}} = \frac{z_1\overline{z_1} - z_1\overline{z_2} + z_2\overline{z_1} -
+  z_2\overline{z_2}}{|z_1 - z_2|^2}$
+
+  $= \frac{|z_1|^2 - z_1\overline{z_2} + z_2\overline{z_1} - |z_2|^2}{|z_1 - z_2|^2} = \frac{-
+  z_1\overline{z_2} + z_2\overline{z_1}}{|z_1 - z_2|^2}[\because |z_1|^2 = |z_2|^2 = 1]$
+
+  We know that $z - \overline{z} = \Im(z)\therefore z_2\overline{z_1} - z_1\overline{z_2} =
+  2i\Im(z_2\overline{z_1})$
+
+  $\therefore \frac{z_1 + z_2}{z_1 - z_2} = \frac{2i\Im(z_2\overline{z_1})}{|z_1 - z_2|^2}$, which is either
+  zero or purely imaginary.
+  %207
+\item The solutions are given below:
+  \startitemize[i]
+  \item $|w - 2 - i| < 3\Rightarrow |w| - |2 + i| < 3 \Rightarrow -3 + \sqrt{5}< w < 3 + \sqrt{5}\Rightarrow
+    -3 - \sqrt{5} < -|w|< 3 - \sqrt{5}$
+
+    Similarly, $|z - 2 - i| = 3\Rightarrow -3 + \sqrt{5} \leq |z|\leq 3 + \sqrt{5}$
+
+    $\Rightarrow -3< |z| - |w| + 3< 9$
+  \item $|z + 1 - i|^2 + |z + 5 - i|^2 = (x + 1)^2 + (y - 1)^2 + (x + 5)^2 + (y - 1)^2 = 2(x^2 + y^2 - 4x -
+    2y) + 28$, where $z = x  iy$.
+
+    Given that $|z - 2 - i| = 3 \Rightarrow x^2 + y^2 - 4x - 2y = 4$.
+
+    Thus, $|z + 1 - i|^2 + |z + 5 - i|^2 = 2.4 + 28 = 36$.
+  \item Set $A$ represents the region $y\geq 1$. Set $B$ consists of the points lying on the circle having
+    center at $(2, 1)$ and radius $3$. Set $C$ consists of points lying on the line $x + y = \sqrt{2}$.
+
+    \startplacefigure[location=force]
+      \startMPcode
+        draw fullcircle scaled 1.5cm shifted (.5cm, .25cm);
+        drawdblarrow (-2cm, 0cm) -- (2cm, -0cm);
+        drawdblarrow (0, -2cm) -- (0, 2cm);
+        label.urt("$(2, 1)$", (.5cm, .25cm));
+        draw (-2cm, .25cm) -- (2cm, .25cm);
+        label.top("$y = 1$", (2cm, .25cm));
+        draw (-1cm, 1.35cm) -- (1.5cm, -1.15cm);
+        drawdot(.5cm, .25cm) withpen pencircle scaled 2pt;
+        drawdot(0.35cm, 0)  withpen pencircle scaled 2pt;
+        label.llft("$(\sqrt{2}, 0)$", (0.35cm, 0));
+        path c;
+        c = fullcircle scaled 1.5cm shifted (.5cm, .25cm);
+        path l;
+        l = (-1cm, 1.35cm) -- (1.5cm, -1.15cm);
+        label.ulft("$P$", l intersectionpoint c);
+        drawdot(l intersectionpoint c) withpen pencircle scaled 2pt;
+      \stopMPcode
+    \stopplacefigure
+
+    Clearly, there is only one point of intersection for the given conditions.
+  \stopitemize
+\item The solutions are given below:
+  \startitemize[i]
+  \item Minimum of $|1 - 3i - z|$ is perpendicular distance of point $(1, -3)$ from the line $\sqrt{3}x + y
+    = 0$, which is
+
+    $\frac{|\sqrt{3} - 3|}{\sqrt{3 + 1}} = \frac{3 - \sqrt{3}}{2}$.
+  \item $\frac{z - 1 + \sqrt{3}i}{1 - \sqrt{3}i} = \frac{[z - (1 - \sqrt{3}i)](1 + \sqrt{3}i)}{1 + 3}$
+
+    $= \frac{[x + iy - (1 - \sqrt{3}i)](1 + \sqrt{3}i)}{4}$ Imaginary part is given by $\frac{\sqrt{3}xi +
+    y}{4}$, which is given to be greater than $0$
+
+    The area given by $S_1\cap S_2\cap s_3$ is shown below:
+
+    \startplacefigure[location=force]
+      \startMPcode
+        numeric u;
+        u:= 0.4cm;
+
+        % Define points of intersection
+        pair A, B;
+        A := (2u, -2u*sqrt(3));
+        B := (2u, 2u*sqrt(3));
+
+        % Define circular arc from A to B (going CCW on the circle)
+        path arcAB;
+        arcAB := (2u, -2u*sqrt(3))
+        .. (4u, 0)
+        .. (0, 4u)
+        -- (0, 0)
+        -- (2u, -2u*sqrt(3));
+
+        % Define the line segment from B to A (along y = -sqrt(3)x)
+        path chord;
+        chord := B -- A;
+
+        % Fill the region bounded by arc and chord
+        fill arcAB -- chord -- cycle withcolor (0.8, 0.8, 0.8);
+
+        % draw the circle
+        draw fullcircle scaled (8u);
+
+        % draw the boundary lines
+        draw (-3u, 3u*sqrt(3)) -- (3u, -3u*sqrt(3)); % line y = -sqrt(3)
+
+        % Draw labeled axes
+        drawdblarrow (-5u, 0) -- (5u, 0);
+        drawdblarrow (0, -5u) -- (0, 5u);
+        label.llft("$O$", origin);
+        label.lft("$X'$", (-5u, 0));
+        label.rt("$X$", (5u, 0));
+        label.top("$Y$", (0, 5u));
+        label.bot("$Y'$", (0, -5u));
+        label.lrt("$\sqrt{3}x + y = 0$", (3u, -3u*sqrt(3)));
+        draw angle_mark((2u, -2u*sqrt(3)), (0, 0), (0, 2u), 16);
+        label.urt("$150^\circ$", origin + (1u,  1u));
+      \stopMPcode
+    \stopplacefigure
+
+    $S = \frac{1}{2}r^2\theta = \frac{1}{2}.4^2.\frac{5\pi}{6} = \frac{20\pi}{3}$.
+  \stopitemize
+  %209
+\item Let $z = x + it$. Given, $|z - i|z|| = |z + i|z|| \Rightarrow |x + i(y - \sqrt{x^2 + y^2})| = |x +
+  i(y + \sqrt{x^2 + y^2})|$
+
+  $\Rightarrow y\sqrt{x^2 + y^2} = 0$, from which we can conclude that $y = 0 \Rightarrow \Im(z) = 0$ or
+  all real numbers is the set of points.
+  %210
+\item Let $z = x + iy$. Given that $|z + 4| + |z - 4| = 0$.
+
+  The above equation is sum of two positive quantities being equal to zero, which is impossible to
+  satisfy. So there are no such points.
+  %211
+\item Let $w = 2(\cos\theta + i\sin\theta)\Rightarrow z = 2(\cos\theta + i\sin\theta) -
+  \frac{1}{2(\cos\theta + i\sin\theta)} = 2(\cos\theta + i\sin\theta) - \frac{1}{2}(\cos\theta -
+  i\sin\theta)$
+
+  $= \frac{3}{2}\cos\theta - i\frac{5}{2}\sin\theta\Rightarrow x = \frac{3}{2}\cos\theta, y =
+  \frac{5}{2}\sin\theta$
+
+  $\Rightarrow \left(\frac{2x}{3}\right)^2 + \left(\frac{2y}{5}\right)^2 = 1 \Rightarrow \frac{x^2}{9/4} +
+  \frac{y^2}{25/4} = 1$.
+
+  Thus, $z$'s locus is that of an ellipse.
+  %212
+\item $\alpha = p^{1/3}, \beta = p^{1/3}\omega, \gamma = p^{1/3}\omega^2$
+
+  $\Rightarrow \frac{x\alpha + y\beta + z\gamma}{x\beta + y\gamma + z\alpha} = \frac{xp^{1/3} +
+  yp^{1/3}\omega + zp^{1/3}\omega^2}{xp^{1/3}\omega + yp^{1/3}\omega^2 + zp^{1/3}}
+  = \frac{xp^{1/3} + yp^{1/3}\omega + zp^{1/3}\omega^2}{\omega(xp^{1/3} + yp^{1/3}\omega +
+    zp^{1/3}\omega^2)} = \omega^2$.
+  %213
+\item $|az_1 - bz_2|^2 + |bz_1 + az_2|^2 = a^2|z_1|^2 + b^2|z_2|^2 - 2ab\Re(z_1\overline{z_2}) + b^2|z_1|^2
+  + a^2|z_2|^2 + 2ab\Re(z_1\overline{z_2})$
+
+  $= (a^2 + b^2)(|z_1|^2 + |z_2|^2)$.
+  %214
+\item Given that $|z - \alpha|^2 = k^2|z - \beta|^2 \Rightarrow (z - \alpha)(\overline{z} -
+  \overline{\alpha}) = k(z - \beta)(\overline{z} - \overline{\beta})$
+
+  $\Rightarrow |z|^2 - \frac{(\alpha - k^2\beta)}{1 - k^2} - \frac{\overline{\alpha} -
+    \overline{\beta}k^2}{1 - k^2}z + \frac{|\alpha|^2 - k^2|\beta|^2}{1 - k^2} = 0$
+
+  Equation of a circle is given by $|z|^2 + a\overline{z} + \overline{a}z + b = 0$ whose center is given by
+  $-a$ and radius $\sqrt{|a|^2 - b}$.
+
+  Comparing the two equations we have center as $\frac{\alpha - k^2\beta}{1 - k^2}$ and radius
+  $\sqrt{\left(\frac{\alpha - k^2\beta}{1 - k^2}\right)\left(\frac{\overline{\alpha} -
+      k^2\overline{\beta}}{1 - k^2}\right) - \frac{\alpha\overline{\alpha} - k^2\beta\overline{\beta}}{1 -
+      k^2}} = \left|\frac{k(\alpha - \beta)}{1 - k^2}\right|$.
+  %215
+\item Given that $a_1z + a_2z^2 + \cdots + a_nz^n = 1$ and $|z| < \frac{1}{3}$.
+
+  $\therefore |a_1z + a_2z^2 + \cdots + a_nz^n| = 1\Rightarrow |a_1z| + |a_2z^2| + \cdots + |z_nz^n| \geq 1$
+
+  $\Rightarrow 2[|z| + |z|^2 + \cdots + |z|^n] > 1(\because |a_r| < 2)\Rightarrow \frac{2|z|}(1 - |z|^n){1 -
+  |z|} > 1$
+
+  $\Rightarrow 2|z| - 2|z|^{n + 1} > 1 - |z| \Rightarrow 3|z| > 1 + 2|z|^{n + 1}\Rightarrow |z| >
+  \frac{1}{3}$, which contradicts with the given condition. Thus, there exists no such $z$, which satisfies
+  the given condition.
+  %216
+\item Given that $\left|\frac{1 - z_1\overline{z_2}}{z_1 - z_2}\right| < 1 \Rightarrow |1 -
+  z_1\overline{z_2}| < |z_1 - z_2|$
+
+  Squaring both sides and using the fact that $|z|^2 = z\overline{z}$, we have
+
+  $(1 - z_1\overline{z_2})(1 - \overline{z_+1}z_2) < (z_1 - z_2)(\overline{z_1} - \overline{z_2})$
+
+  $\Rightarrow 1 - z_1\overline{z_2} - \overline{z_1}z_2 + |z_1|^2|z_2|^2 < |z_1|^2 - z_1\overline{z_2} -
+  \overline{z_1}z_2 + |z_2|^2 $
+
+  $\Rightarrow (1 - |z_1|^2)(1 - |z_2|^2) < 0$, which is true for given condition of $|z_1| < 1 < |z_2|$.
+  %217
+\item Given that $|z|^2w - |w|^2z = z - w \Rightarrow |z|^2w - |w|^2z - z + w = 0 \Rightarrow (|z|^2 + 1)w =
+  (|w|^2 + 1)z$
+
+  $\Rightarrow \frac{z}{w} = \frac{|z|^2 + 1}{|w|^2 + 1}$, and hence, $\frac{z}{w}$ is purely real.
+
+
+  $\Leftrightarrow \frac{z}{w} = \frac{\overline{z}}{\overline{w}} \Rightarrow z\overline{w} =
+  \overline{z}w$
+
+  Again, $|z|^2w - |w|^2z = z - w \Rightarrow z\overline{z}w - w\overline{w}z - z + w = 0 \Rightarrow (z -
+  w)(z\overline{w} - 1) = 0[\because z\overline{w} = \overline{z}w]$
+
+  $\Rightarrow z = w$ or $z\overline{w} = 1$.
+  %218
+\item We know that $e^{i\theta} = \cos\theta + i\sin\theta$, which leads to $e^{i\pi/2} = i$.
+
+  Thus, $i^i = \left(e^{i\pi/2}\right)^i = e^{-\pi/2}$, which is real.
+  %219
+\item Let $z = x + iy$. We have to prove that $\overline{z} = iz^2 \Rightarrow x - iy = i(x^2 + y^2) -2xy$
+
+  Comparing real and imaginary parts, we get
+
+  $x = -2xy$ and $-y = x^2 - y^2\Rightarrow x(1 + 2y) = 0$ and $x^2 - y^2 + y = 0\Rightarrow x = 0$ or $y =
+  -\frac{1}{2}$
+
+  When $x = 0, x^2 - y^2 + y = 0 \Rightarrow y = 0, 1$
+
+  When $y = -\frac{1}{2}, x^2 - y^2 + y = 0 \Rightarrow x = \pm\frac{\sqrt{3}}{2}$
+
+  Thus, non-zero complex numbers are $i, \pm\frac{\sqrt{3}}{2} - \frac{i}{2}$.
+  %220
+\item Given that $iz^3 + z^2 - z + i = 0 \Rightarrow iz^3 - i^2z^2 - z + i = 0\Rightarrow iz^2(z - i) - (z -
+  i) = 0 \Rightarrow (iz^2 - 1)(z - i) = 0$
+
+  If $z - i = 0 \Rightarrow z = i \Rightarrow |z| = |i| = 1$.
+
+  If $iz^2 - 1 = 0 \Rightarrow iz^2 = 1\Rightarrow |z|^2 = |-i| = 1\Rightarrow |z| = 1$.
+  %221
+\item Here $z_1Rz_2\Leftrightarrow \frac{z_1 - z_2}{z_1 + z_2}$ is real.
+
+  $z_1Rz_1\Leftrightarrow \frac{z_1 - z_1}{z_1 + z_1} = 0$, which is purely real. Hence, the relation is
+  reflexive.
+
+  $z_1Rz_2\Leftrightarrow \frac{z_1 - z_2}{z_1 + z_2}$ is real. $z_2Rz_1\Leftrightarrow \frac{z_2 - z_1}{z_1
+    + z_2}$ is real. Hence, the relation is symmetric.
+
+  $z_1Rz_2\Leftrightarrow \frac{z_1 - z_2}{z_1 + z_2}$ is real.
+
+  $\frac{z_1 - z_2}{z_1 + z_2} = \frac{(x_1 - x_2) + i(y_1 - y_2)}{(x_1 + x_2) + i(y_1 + y_2)} = \frac{[(x_1
+      - x_2) + i(y_1 - y_2)][(x_1 + x_2) - i(y_1 + y_2)]}{[(x_1 + x_2) + i(y_1 + y_2)][(x_1 + x_2) - i(y_1 +
+      y_2)]}$
+
+  $\Rightarrow (y_1 - y_2)(x_1 + x_2) + (x_1 - x_2)(y_1 + y_2) = 0 \Rightarrow 2x_2y_1 - 2x_1y_2 = 0
+  \Rightarrow \frac{x_1}{y_1} = \frac{x_2}{y_2}$
+
+  Similarly, $z_2Rz_3 \Leftrightarrow \frac{x_2}{y_2} = \frac{x_3}{y_3}$
+
+  $\Rightarrow z_1Rz_3 \Leftrightarrow \frac{x_1}{y_1} = \frac{x_3}{y_3}$. Hence, the relation is trnsitive.
+
+  And hence, $R$ is an equivalence relation.
 \stopitemize
