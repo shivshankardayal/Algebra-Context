@@ -1953,4 +1953,72 @@
   $\Rightarrow z_1Rz_3 \Leftrightarrow \frac{x_1}{y_1} = \frac{x_3}{y_3}$. Hence, the relation is trnsitive.
 
   And hence, $R$ is an equivalence relation.
+  %222
+\item Given that $\frac{(1 + i)x - 2i}{3 + i} + \frac{(2 - 3i)y + i}{3 - i} = i$
+
+  $\Rightarrow (1 + i)(3 - i)x - 2i(3 - i) + (2 - 3i)(3 - i)y + i(3 - i) = 10i\Rightarrow 4x + 2ix - 6i - 2
+  + 9y - 7iy + 3i - 1 = 10i$
+
+  Comparing real and imaginary parts yields
+
+  $4x + 9y - 3 = 0$ and $2x - 7y - 3 = 10$. Solving the two equations gives us $x = 3$ and $y = -1$.
+  %223
+\item We have to maaximize $|2z - 6 + 5i|$ or $2\left|z - 3 + \frac{5}{2}i\right|$
+
+  We know that $||z_1| - |z_2||\leq |z_1 + z_2|$ from triangle inequality.
+
+  $\therefore \left|z - 3 + \frac{5}{2}i\right| = \left|(z - 3 + 2i) + \frac{9}{2}i\right|\geq \left|2 -
+  \frac{9}{2}\right|\geq \frac{5}{2}$.
+
+  Hence, the maximum value is $5$.
+  %224
+\item Let the complex numbers be $z_1 = x_1 + iy_1$ and $z_2 = x_2 + iy_2$.
+
+  Given that $\Re(z_1) = |z_1 - 1| \Rightarrow x_1^2 = (x_1 - 1)^2 + y_1^2 \Rightarrow y_1^2 + 1 = 2x_1$
+
+  Also given that $\Re(z_2) = |z_2 - 1|\Rightarrow y_2^2 + 1 = 2x_2$
+
+  and $\arg(z_1 - z_2) = \frac{\pi}{6}\Rightarrow \frac{y_1 - y_2}{x_1 - x_2} = \frac{1}{\sqrt{3}}$
+
+  From these three equations $y_1^2 - y_2^2 = 2(x_1 - x_2) \Rightarrow \frac{1}{\sqrt{3}}(y_1 + y_2) = 2
+  \Rightarrow y_1 + y_2 = 2\sqrt{3}\Rightarrow \Im(z_1 + z_2) = 2\sqrt{3}$.
+  %225
+\item Given that $3|z_1| = 4|z_2|\Rightarrow \frac{|z_1|}{|z_2|} = \frac{4}{3}\Rightarrow \frac{z_1}{z_2} =
+  \frac{4}{2}e^{i\theta}$ and $\frac{z_2}{z_1} = \frac{3}{4}e^{-i\theta}$
+
+  $\Rightarrow z = \frac{5}{2}\cos\theta + \frac{3}{2}i\sin\theta$
+
+  $\Rightarrow |z| = \sqrt{\frac{17}{2}}$.
+  %226
+\item Let $z = e{i\theta}\Rightarrow \overline{z} = e^{-i\theta}$. We see that $|z|^2 = 1 =
+  z\overline{z}\Rightarrow z = \frac{1}{\overline{z}}$
+
+  Now $\arg\left(\frac{1 + z}{1 + \overline{z}}\right) = \arg\left(\frac{1 + z}{1 + \frac{1}{z}}\right) =
+  \arg(z) = \theta$.
+  %227
+\item Since $\arg(z) < 0 \Rightarrow \arg(z) = -\theta\Rightarrow z = r[\cos(-\theta) + i\sin(-\theta)] =
+  r(\cos\theta - i\sin\theta)$
+
+  $\Rightarrow -z = -r[\cos\theta - i\sin\theta] = r[\cos(\pi - \theta) + i\sin(\pi - \theta)]\Rightarrow
+  \arg(-z) = \pi - \theta$
+
+  $\therefore \arg(-z) - \arg(z) = \pi$
+
+  {\bf Alternative Solution:} $\arg(-z) - \arg(z) = \arg\left(\frac{-z}{z}\right) = \arg(-1) = \pi$.
+  %228
+\item Given that $|z + iw| = |z - i\overline{w}| = 2\Rightarrow |z| + |iw| = |z| + |w|\leq 2$
+
+  $|z| + |w| = 2$ holds when $\arg(z) - \arg(iw) = 0$ i.e. $\arg\left(\frac{z}{iw}\right) = 0\Rightarrow
+  \frac{z}{iw}$ is purely real i.e. $\frac{z}{w}$ is purely imaginary.
+
+  Similarly, when $|z - i\overline{w}| = 2$, then $\frac{z}{\overline{w}}$ is purely imaginary.
+
+  Now putting $w = i$, we get $|z + i^2| = 2 \Rightarrow |z - 1| = 2\Rightarrow z = -1$.
+
+  Putting $w = -i$, we get $|z - i^2| = 2\Rightarrow z = 1$. So $z = \pm1$.
+  %229
+\item Given that $|z| = |w|$ and $\arg(z) = \pi - \arg(w)$. Let $w = re^{i\theta}$, then $\overline{w} =
+  re^{-i\theta}$
+
+  $\therefore z = re^{i(\pi - \theta)} = e^{i\pi}.e^{-i\theta} = -\overline{w}$.
 \stopitemize
