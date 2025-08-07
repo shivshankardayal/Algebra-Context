@@ -262,6 +262,12 @@
             rotatedaround (mid, if xpart(B-A) >= 0: angle(B-A) else: angle(A-B) fi);
         drawdblarrow A -- B; unfill bbox mylabel; draw mylabel;
     enddef;
+    vardef angle_mark(expr P, O, Q, r) =
+      fullcircle scaled 2r rotated angle (P - O)
+      shifted O cutafter (O -- Q)
+    enddef;
+\stopMPcalculation
+
   \stopMPcalculation
 
   \definesectionblock[roman][romanpages]
@@ -273,4 +279,6 @@
 \startsectionblockenvironment [bodypart]
   \setcounter [userpage] [1]
 \stopsectionblockenvironment
+
+\setupMPinstance[metafun][textstyle={\switchtobodyfont[mf, 9pt]}]
 \stopenvironment
