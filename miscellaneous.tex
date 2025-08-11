@@ -602,4 +602,78 @@
   %229
 \item Let $z$ and $w$ be two non-zero complex numbers such that $|z| = |w|$ and $\arg(z) + \arg(w) = \pi$,
   then find $z$.
+  %230
+\item If $z_1$ and $z_2$ are two non-zero complex numbers such that $|z_1 + z_2| = |z_1| + |z_2|$, then find
+  $\arg(z_1) - \arg(z_2)$.
+  %231
+\item Let $z_1$ and $z_2$ be two distinct complex numbers and let $z = (1 - t)z_1 + tz_2$ for some real
+  number $t$ with $0 < t < 1$. If $\arg(w)$ denotes the principal argument of a non-zero complex number $w$,
+  then prove that $|z - z_1| + |z - z_2| = |z_1 - z_2|, \arg(z - z_1) = \arg(z_2 - z_1)$ and
+  $\startdeterminant\NC z - z_1\NC \overline{z} - \overline{z_1}\NR\NC z_2 - z_1\NC \overline{z_2}
+  - \overline{z_1}\NR\stopdeterminant = 0$.
+  %232
+\item If $|z|\leq 1, |w|\leq 1$, then show that $|z - w|^2\leq \left(|z| - |w|\right)^2 + [\arg(z)
+  - \arg(w)]^2$.
+  %233
+\item Let $z_1 = 10 + 6i$ and $z_2 = 4 + 6i$. If $z$ is any complex number such that the argument of
+  $\frac{z - z_1}{z - z_2}$ is $\pi/4$, then prove that  $|z - 7 - 9i| = 3\sqrt{2}$.
+  %234
+\item Let $S$ be the set of all complex numbers $z$ satisfying $|z - 2 + i|\geq \sqrt{5}$. If the complex
+  number $z_0$ such that $\frac{1}{|z_0 - 1|}$ is the maximum of the set $\left\{\frac{1}{|z_0 - 1|}: z\in
+  S\right\}$, then find the principal argument of $\frac{4 - z_0 - \overline{z_0}}{z_0 - \overline{z_0} +
+    2i}$.
+  %235
+\item A particle $P$ starts from the point $z_0 = 1 + 2i$. It moves first horizontally away from origin by
+  $5$ units and then vertically away from origin by $3$ units to reach a point $z_1$. From $z_1$ the
+  particle moves $\sqrt{2}$ units in the direction of the vector $\hat{i} + \hat{j}$ and then it moves
+  through an angle $\frac{\pi}{2}$ in anti-clockwise direction on a circle with center at origin $O$ to
+  reach a point $z_2$. Find the coordinates of $z_2$.
+  %236
+\item A man walks a distance of $3$ units from the origin towards the North-East(N $45^\circ$ E)
+  direction. From there, he walks a distance of $4$ units towards North-West(N $45^\circ$ W) direction to
+  reach point $P$. Find the coordinates of point $P$.
+  %237
+\item Prove that the shaded region given by $P = (-1, 0), Q = (-1 + \sqrt{2}, \sqrt{2}), R = (-1 + \sqrt{2},
+  -\sqrt{2}), S = (1, 0)$ is given by $|z + 1| > 2, |\arg(z + 1)| < \frac{\pi}{4}$.
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u = 1cm;
+
+      draw (u*(-1 + sqrt(2)), u*sqrt(2)) .. (u, 0) .. (u*(-1 + sqrt(2)), -u*sqrt(2));
+      draw ((-u, 0) -- (u*(-1 + sqrt(2)), u*sqrt(2))) shortened -1u;
+      draw ((-u, 0) -- (u*(-1 + sqrt(2)), -u*sqrt(2))) shortened -1u;
+      fill (u*(-1 + sqrt(2)), u*sqrt(2)) .. (u, 0) .. (u*(-1 + sqrt(2)), -u*sqrt(2)) -- (2u, -3u) .. (3.4u,
+      0) .. (2u, 3u) -- cycle withcolor 1/2;
+      drawdblarrow (-2u, 0) -- (4u, 0);
+      drawdblarrow (0, 2u) -- (0, -2u);
+      label.llft("$O$", origin);
+      label.lft("$X'$", (-2u, 0));
+      label.rt("$X$", (4u, 0));
+      label.top("$Y$", (0, 2u));
+      label.bot("$Y'$", (0, -2u));
+      label.ulft("$P$", (-u, 0));
+      label.top("$Q$", (u*(-1 + sqrt(2)), u*sqrt(2)));
+      label.bot("$R$", (u*(-1 + sqrt(2)), -u*sqrt(2)));
+      label.ulft("$S$", (u, 0));
+    \stopMPcode
+  \stopplacefigure
+  %238
+\item Let the complex numbers $z_1, z_2$ and $z_3$ satisfy $\frac{z_1 - z_3}{z_2 - z_3} = \frac{1 -
+  i\sqrt{3}}{2}$. Prove that these complex numbers are vertices of an equilateral triangle.
+  %239
+\item Let $a, b\in\mathbb{R}$ and $a^2 + b^2\neq 0$. Suppose $S = \left\{z\in\mathbb{C}: z = \frac{1}{a +
+  ibt}, t\in\mathbb{R}, t\neq 0\right\}$. If $z = x + iy$, then find the locus of $z$.
+  %240
+\item Let $W = \frac{\sqrt{3} + i}{2}$ and $P = \left\{W^n: n = 1, 2, 3, \ldots\right\}$. Further $H_1
+  = \left\{z\in\mathbb{C}: \Re(z) > \frac{1}{2}\right\}$ and $H_2 = \left\{z\in\mathbb{C}: \Re(z) <
+  -\frac{1}{2}\right\}$, where $\mathbb{C}$ is the set of all complex numbers. If $z_1\in P\cap H_1, z_2\in
+  P\cap H_2$ and $O$ represents the origin, then find $\angle z_1Oz_2$.
+  %241
+\item Suppose that $z_1, z_2, z_3$ are the vertices of an equilateral triangle inscribed in a circle given
+  by $|z| = 2$. If $z_1 = 1 + i\sqrt{3}$, then find $z_2$ and $z_3$.
+  %242
+\item If one of the vertices of the square circumscribing the circle $|z - 1| = \sqrt{2}$ is $2 +
+  \sqrt{3}i$. Find the other vertices of the square.
 \stopitemize

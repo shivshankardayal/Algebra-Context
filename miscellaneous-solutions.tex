@@ -2021,4 +2021,303 @@
   re^{-i\theta}$
 
   $\therefore z = re^{i(\pi - \theta)} = e^{i\pi}.e^{-i\theta} = -\overline{w}$.
+  %230
+\item Given that $|z_1 + z_2| = |z_!| + |z_2|$. Squaring both sides we get
+
+  $|z_1|^2 + |z_2|^2 + 2|z_1||z_2|\cos[\arg(z_1) - \arg(z_2)] = |z_1|^2 + |z_2|^2 + 2|z_1||z_2|$
+
+  $\Rightarrow \cos[\arg(z_1) - \arg(z_2)] = 1\Rightarrow \arg(z_1) - \arg(z_2) = 0$.
+  %231
+\item Given that $z = \frac{(1 - t)z_1 + tz_2}{(1 - t) + t}$. Thus, $z$ divides $z_1$ and $z_2$ in the ratio
+  of $t: 1- t$.
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 1cm;
+      draw (0, 0) -- (3u, 0);
+      drawdot(0, 0) withpen pencircle scaled 2pt;
+      drawdot(u, 0) withpen pencircle scaled 2pt;
+      drawdot(3u, 0) withpen pencircle scaled 2pt;
+      label.top("$A$", (0, 0));
+      label.bot("$z_1$", (0, 0));
+      label.top("$P$", (u, 0));
+      label.bot("$z$", (u, 0));
+      label.top("$B$", (3u, 0));
+      label.bot("$z_2$", (3u, 0));
+      label.bot("$t$", (0.5u, 0));
+      label.bot("$1 - t$", (2u, 0));
+    \stopMPcode
+  \stopplacefigure
+
+  $\Rightarrow AP + PB = AB\Rightarrow |z - z_1| + |z - z_2| = |z_1 - z_2|$ and $\arg(z - z_1) = \arg(z_2 -
+  z) = \arg(z_2 - z_1)$
+
+  $\Rightarrow \arg\left(\frac{z - z_1}{z_2 - z_!}\right) = 0\Rightarrow \frac{z - z_1}{z_2 - z_1}$ is
+  purely real.
+
+  $\Rightarrow \frac{z - z_1}{z_2 - z_1} = \frac{\overline{z} - \overline{z_1}}{\overline{z_2}
+    -\overline{z_1}}$
+
+  $\Rightarrow \startdeterminant\NC z - z_1\NC \overline{z} - \overline{z_1}\NR\NC z_2 -
+  z_1\NC \overline{z_2} - \overline{z_1}\NR\stopdeterminant = 0$
+  %232
+\item $|z - w|^2 = |z|^2 + |w|^2 -2|z||w|\cos[\arg(z) - \arg(w)] = |z|^2 + |w|^2 - 2|z||2| + 2|z||w| -
+  2|z||w|\cos[\arg(z) - \arg(w)]$
+
+  $= \left(|z| - |w|\right)^2 + 2|z||w|\sin^2\left[\frac{\arg(z) - \arg(2)}{2}\right]$
+
+  $\Rightarrow |z - w|^2\leq \left(|z| - |w|\right)^2 + 4.1.1\left[\frac{\arg(z)
+      - \arg(w)}{2}\right]^2[\because \sin\theta\leq \theta]$
+
+  $\Rightarrow |z - w|^2\leq \left(|z| - |w|\right)^2 + [\arg(z) - \arg(w)]^2$.
+  %233
+\item Let $z = x + iy$, then $\frac{z - z_1}{z - z_2} = \frac{(x - 10) + i(y - 6)}{(x - 4) + i(y - 6)}$
+
+  Rationalizing gives us, $\frac{[(x - 10) + i(y - 6)][(x - 4) - i(y - 6)]}{(x - 4)^2 + (y - 6)^2}$
+
+  $= \frac{(x - 10)(x - 4) + (y - 6)^2 + i(y - 6)[x - 4 - x + 10]}{(x - 4)^2 + (y - 6)^2}$
+
+  Given that $\arg\left(\frac{z - z_1}{z - z_2}\right) = \theta = \frac{\pi}{4}$ so $\tan\theta = 1$
+  i.e. real and imaginary parts will be equal.
+
+  $\Rightarrow x^2 + y^2 - 14x - 18y = 112 \Rightarrow |z - 7 - 9i| = 3\sqrt{2}$.
+  %234
+\item The diagram is given below:
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 0.6cm;
+      path c;
+      c = fullcircle scaled(2u*sqrt(5)) shifted (2u, -u);
+      draw c;
+      drawdblarrow (-u, 0) -- (5u, 0);
+      drawdblarrow (0, u) -- (0, -4u);
+      path p;
+      p = (-u, 2u) -- (2u, -u);
+      path x;
+      x = (0, 0) -- (5u, 0);
+      drawdot(x intersectionpoint p) withpen pencircle scaled 2pt;
+      drawdot(p intersectionpoint c) withpen pencircle scaled 2pt;
+      drawdot(2u, -u) withpen pencircle scaled 2pt;
+      draw (2u, -u) -- (p intersectionpoint c);
+      label.llft("$O$", origin);
+      label.lft("$X'$", (-u, 0));
+      label.rt("$X$", (5u, 0));
+      label.top("$Y$", (0, u));
+      label.bot("$Y'$", (0, -4u));
+      label.top("$z_0$", (p intersectionpoint c));
+      label.bot("$C(2, -1)$", (2u, -u));
+      label.urt("$(1, 0)$", (u, 0));
+    \stopMPcode
+  \stopplacefigure
+
+  The complex number satisfying $|z - 2 + i|\geq \sqrt{5}$, which represents the reegion outside the
+  circle(including the circumference which is equality) having center $(2, -1)$ and radius $\sqrt{5}$
+  units. Now we have $\frac{1}{|z_0 - 1|}$ to be maximized. This means that $z_0$ is collinear with points
+  $(2, -1)$ and $(1, 0)$ and lies on the circumference of the circle.
+
+  Let $z_0 = x + iy$ and from figure $0 < x < 1$ and $y > 0$.
+
+  $\Rightarrow \frac{4 - z_0 - \overline{z_0}}{z_0 - \overline{z_0} + 2i} = i\frac{2 - x}{y + 1}$, which is
+  a pure imaginary number.
+
+  Thus, $\arg\left(\frac{4 - z_0 - \overline{z_0}}{z_0 - \overline{z_0} + 2i}\right) = \frac{\pi}{2}$.
+  %235
+\item The diagram is given below:
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 0.3cm;
+      drawdot(u, 2u) withpen pencircle scaled 2pt;
+      drawdot(6u, 2u) withpen pencircle scaled 2pt;
+      drawdot(6u, 5u) withpen pencircle scaled 2pt;
+      drawdot(7u, 6u) withpen pencircle scaled 2pt;
+      drawdot(-6u, 7u) withpen pencircle scaled 2pt;
+
+      drawdblarrow (-7u, 0) -- (8u, 0);
+      drawdblarrow (0, 10u) -- (0, -u);
+
+      draw(u, 2u) -- (6u, 2u) -- (6u, 5u) -- (7u, 6u) -- origin -- (-6u, 7u);
+
+      path c;
+      c = fullcircle scaled(2u*sqrt(85)) cutbefore (7u, 6u) cutafter(-6u, 7u);
+      draw c;
+      draw unitsquare scaled 5 rotated angle ((7u, 6u) - origin) shifted origin withcolor 1/2;
+
+      label.llft("$O$", origin);
+      label.lft("$X'$", (-7u, 0));
+      label.rt("$X$", (8u, 0));
+      label.top("$Y$", (0, 10u));
+      label.bot("$Y'$", (0, -u));
+      label.top("$z_0(1, 2)$", (u, 2u));
+      label.rt("$(6, 2)$", (6u, 2u));
+      label.rt("$z_1(6, 5)$", (6u, 5u));
+      label.rt("$(7, 6)$", (7u, 6u));
+      label.ulft("$z_2(-6, 7)$", (-6u, 7u));
+      label.bot("$5$", (3.5u, 2u));
+      label.rt("$3$", (6u, 3.5u));
+      label.ulft("$\sqrt{2}$", (6.5u, 5.5u));
+    \stopMPcode
+
+  \stopplacefigure
+
+  As shown in the diagram $z_2' = \left(6 + \sqrt{2}\cos45^\circ, 5 + \sqrt{2}\sin45^\circ\right) = 7 + 6i$
+
+  Now, we rotate this by $\pi/2$ about origin
+
+  $z_2 = (7 + 6i)e^{i\pi/2} = -6 + 7i$.
+  %236
+\item Let $A$ be the point obtained after moving $3$ units towards North-East. So this would be
+  $3e^{i\pi/4}$.
+
+  The complex number associated with $P(z)$ would be
+
+  $\frac{z - 3e^{i\pi/4}}{0 - 3e^{i\pi/4}} = \frac{4}{3}e^{-i\pi/2} = -\frac{4i}{3}\Rightarrow z = (3 +
+  4i)e^{i\pi/4}$.
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 0.5cm;
+
+      draw (0, 0) -- (u*3/sqrt(2), u*3/sqrt(2)) -- (-u/sqrt(2), 7*u/sqrt(2)) -- cycle;
+      draw unitsquare scaled 5 rotated angle ((-u/sqrt(2), 7*u/sqrt(2)) - (u*3/sqrt(2), u*3/sqrt(2)))
+      shifted (u*3/sqrt(2), u*3/sqrt(2)) withcolor 1/2;
+
+      drawdblarrow (-2u, 0) -- (3u, 0);
+      drawdblarrow (0, -u) -- (0, 5u);
+      label.llft("$O$", origin);
+      label.lft("$X'$", (-2u, 0));
+      label.rt("$X$", (3u, 0));
+      label.top("$Y$", (0, 5u));
+      label.bot("$Y'$", (0, -u));
+      label.rt("$A(3.e^{i\pi/4})$", (u*3/sqrt(2), u*3/sqrt(2)));
+      label.ulft("$P[(3 + 4i)e^{i\pi/4}]$", (-u/sqrt(2), 7*u/sqrt(2)));
+    \stopMPcode
+  \stopplacefigure
+  %237
+\item Since $|PQ| = |PS| = |PR| = 2. \therefore$ Shaded part represents the external part of circle having
+  center $(-1, 0)$ and radius $2$.
+
+  We know that equation of circle having center $z_0$ and radius $r$ is given by $|z - z_0| = r$, so the
+  equation of this circle is $|z + 1|> 2$.
+
+  Also, argument of $z + 1$ w.r.t.\ positive direction of $X$-axis is $\pi/4$.
+
+  $\therefore \arg(z + 1)\leq \frac{\pi}{4}$
+
+  and argument of $z + 1$ in anticlockwise direction is $-\frac{\pi}{4}$.
+
+  $\therefore -\frac{\pi}{4}\leq\arg(z + 1)$
+
+  Thus, $-\frac{\pi}{4}\leq \arg(z + 1)\leq \frac{\pi}{4}\Rightarrow |\arg(z + 1)|\leq \frac{\pi}{4}$.
+  %238
+\item Given that $\frac{z_1 - z_3}{z_2 - z_3} = \frac{1 - i\sqrt{3}}{2} = \frac{2}{1 + i\sqrt{3}}$
+
+  $\Rightarrow \frac{z_2 - z_3}{z_1 - z_3} = \frac{1 + i\sqrt{3}}{2} = \cos\frac{\pi}{3} +
+  i\sin\frac{\pi}{3}$
+
+  $\Rightarrow \left|\frac{z_2 - z_3}{z_1 - z_3}\right| = 1$ and $\arg\left(\frac{z_2 - z_3}{z_1 -
+    z_3}\right) = \frac{\pi}{3}$.
+  %239
+\item Given that $x + iy = \frac{1}{a + ibt}.\frac{a - ibt}{a - ibt} = \frac{a - ibt}{a^2 + b^2t^2}$.
+
+  Let $a, b\neq 0$. $\therefore x = \frac{a}{a^2 + b^2t^2}, y = \frac{-b}{a^2 + b^2t^2}\Rightarrow t
+  = \frac{ay}{bx}$
+
+  Thus, $x^2 + y^2 - \frac{x}{a} = 0 \Rightarrow \left(x - \frac{1}{2a}\right)^2 + y^2 = \frac{1}{4a^2}$,
+  whihc is equation of a circle with center $\left(\frac{1}{2a}, 0\right)$ and radius $\frac{1}{2a}$.
+
+  If $a\neq 0, b = 0$, then $x + iy = \frac{1}{a}\Rightarrow x = \frac{1}{a}, y = 0$, i.e. $z$ lies on
+  $X$-axis.
+
+  If $a = 0, b\neq 0$, then $x + iy = \frac{1}{ibt}\Rightarrow y = \frac{1}{bt}$, i.e. $z$ lies on $Y$-axis.
+  %240
+\item Given that $P = W^n = \left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right)^n = \cos\frac{n\pi}{6} +
+  i\sin\frac{n\pi}{6}$
+
+  $\therefore P\cap H_1$ represents those points for which $\cos\frac{n\pi}{6}$ is $+$ve. Hence, it belongs
+  to either first or fourth quadrant.
+
+  $\Rightarrow z_1 = \frac{\sqrt{3}}{2} + \frac{i}{2}$ or $\frac{\sqrt{3}}{2} - \frac{i}{2}$. So $n$ is
+  either $1$ or $11$.
+
+  Similarly, $P\cap H_2$ represents those points for which $\cos\frac{n\pi}{6}$ is $-$ve. Hence, it belongs
+  to either second or third quadrant. So $n$ is either $5$ or $7$.
+
+  Thus, $z_1Oz_2 = \frac{2\pi}{3}, \frac{5\pi}{6}, \pi$.
+  %241
+\item Let $z_1 = r(\cos\theta + i\sin\theta)$. Now since this point lies on a circle so $|z_1| =
+  2\Rightarrow r = 2, \theta = \frac{\pi}{3}$.
+
+  The triangle is given to be an equilateral triangle  so the sides $z_1z_2$ and $z_1z_3$ will make an angle
+  of $2\pi/3$ at the center.
+
+  $\angle POz_2 = \frac{\pi}{3} + \frac{2\pi}{3} = \pi, \angle POz_3 = \pi + \frac{2\pi}{3}
+  = \frac{5\pi}{3}$
+
+  $z_2 = 2(\cos\pi + i\sin\pi) = -2$ and $z_3 = 1 - i\sqrt{3}$.
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 0.7cm;
+
+      draw fullcircle scaled(4u);
+      drawdot (u, u*sqrt(3)) withpen pencircle scaled 2pt;
+      drawdot (u, -u*sqrt(3)) withpen pencircle scaled 2pt;
+      drawdot (-2u, 0) withpen pencircle scaled 2pt;
+      draw (u, u*sqrt(3)) -- (u, -u*sqrt(3)) -- (-2u, 0) --cycle;
+
+      drawdblarrow (-3u, 0) -- (3u, 0);
+      drawdblarrow (0, 3u) -- (0, -3u);
+
+      label.urt("$z_1(1 + \sqrt{3}i)$", (u, u*sqrt(3)));
+      label.ulft("$z_2(-2, 0)$", (-2u, 0));
+      label.lrt("$z_3(1 - \sqrt{3}i)$", (u, -u*sqrt(3)));
+      label.llft("$O$", (0, 0));
+      label.rt("$X$", (3u, 0));
+      label.lft("$X'$", (-3u, 0));
+      label.top("$Y$", (0, 3u));
+      label.bot("$Y'$", (0, -3u));
+      label.lrt("$P(2, 0)$", (2u, 0));
+    \stopMPcode
+  \stopplacefigure
+  %242
+\item The diagram is given below:
+
+    \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 0.7cm;
+
+      draw fullcircle scaled(2u*sqrt(2)) shifted (u, 0);
+      drawdot(2u, u*sqrt(3)) withpen pencircle scaled 2pt;
+      drawdot(0, -u*sqrt(3)) withpen pencircle scaled 2pt;
+      drawdot(u*(1 - sqrt(3)), u) withpen pencircle scaled 2pt;
+      drawdot(u*(1 + sqrt(3)), -u) withpen pencircle scaled 2pt;
+      drawdot(u, 0) withpen pencircle scaled 2pt;
+
+      drawdblarrow (-3u, 0) -- (3u, 0);
+      drawdblarrow (0, 3u) -- (0, -3u);
+      draw (2u, u*sqrt(3)) -- (u*(1 - sqrt(3)), u) -- (0, -u*sqrt(3)) -- (u*(1 + sqrt(3)), -u) -- cycle;
+
+      label.lrt("$C$", (u, 0));
+      label.llft("$O$", (0, 0));
+      label.rt("$X$", (3u, 0));
+      label.lft("$X'$", (-3u, 0));
+      label.top("$Y$", (0, 3u));
+      label.bot("$Y'$", (0, -3u));
+      label.urt("$z_1$", (2u, u*sqrt(3)));
+      label.ulft("$z_2$", (u*(1 - sqrt(3)), u));
+      label.llft("$z_3$", (0, -u*sqrt(3)));
+      label.lrt("$z_4$", (u*(1 + sqrt(3)), -u));
+    \stopMPcode
+  \stopplacefigure
+
+  Here, center of circle is $z_0(1, 0)$ and point of intersection of diagonals.
+
+  $\therefore \frac{z_1 + z_3}{2} = z_0\Rightarrow z_3 = -\sqrt{3}i$
+
+  and $\frac{z_2 - 1}{z_1 - 1} = e^{\pm i\pi/2}\Rightarrow z_2 = (1 - \sqrt{3}) + i$ and $z_4 = (1 +
+  \sqrt{3}) - i$.
 \stopitemize
