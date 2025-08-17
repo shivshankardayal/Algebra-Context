@@ -2478,4 +2478,207 @@
   {\bf Case II:} $C_1C_2 < \left|\frac{n}{4} - \frac{1}{n}\right|$
 
   $\Rightarrow \sqrt{2} <\left|\frac{n^2 - 4}{4n}\right|$, which gives us infinte solutions.
+  %261
+\item Center of the first circle is $C_1(3\sqrt{2}, 0)$ and center of the second circle is $C_2(0,
+  p\sqrt{2})$. The minimum distance will be distance between centers.
+
+  $\Rightarrow \sqrt{18 + 2p^2} = 5\sqrt{2}\Rightarrow p = 4$.
+  %262
+\item The diagram is given below:
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 0.5cm;
+
+      draw fullcircle scaled (10u);
+      drawdot (3u, 4u) withpen pencircle scaled 2pt;
+      drawdot (4u, 3u) withpen pencircle scaled 2pt;
+      drawdot (0, 5u) withpen pencircle scaled 2pt;
+      draw (4u, 3u) -- (0, 5u);
+      draw (3u, 4u) -- (-u*7/5, -u*24/5);
+      drawdblarrow (-6u, 0) -- (6u, 0);
+      drawdblarrow (0, -6u) -- (0, 6u);
+
+      path p;
+      p = (3u, 4u) -- (-u*7/5, -u*24/5);
+      path q;
+      q = (4u, 3u) -- (0, 5u);
+
+      draw unitsquare scaled 5 rotated angle ((p intersectionpoint q) - (3u, 4u))
+      shifted (p intersectionpoint q) withcolor 1/2;
+
+      label.lft(("$X'$"), (-6u, 0));
+      label.rt(("$X$"), (6u, 0));
+      label.top(("$Y$"), (0, 6u));
+      label.bot(("$Y'$"), (0, -6u));
+      label.rt(("$z_1(3, 4)$"), (3u, 4u));
+      label.rt(("$z_2(4, 3)$"), (4u, 3u));
+      label.urt(("$z_3(0, 5)$"), (0, 5u));
+      label.lft(("$z(-7/5, -24/5)$"), (-u*7/5, -u*24/5));
+    \stopMPcode
+  \stopplacefigure
+
+  Slope of $z_2z_3 = \frac{3 - 5}{4 - 0} = -\frac{1}{2}$. Therefore, slope of $zz_2 = 2$ [because product of
+    slopes of perpendicular lines is $-1$]
+
+  Equation of $zz_2: y - 4 = 2(x - 3)\Rightarrow y = 2(x - 1)$. $z$ lies on the circle $x^2 + y^2 = 25
+  \Rightarrow x^2 + 4(x - 1)^2 = 25 \Rightarrow x = -\frac{7}{5}, y = -\frac{24}{5}$
+
+  $\arg(z) = \tan^{-1}\frac{24}{7} - \pi$.
+  %263
+\item Let $\arg(z_2) = \theta$. Given that $\overline{z_!} = i\overline{z_2}\Rightarrow z_1 = -iz_2$.
+
+  Also given that $\arg\left(\frac{z_1}{\overline{z_2}}\right) = \pi \Rightarrow
+  \arg\left(-i\frac{z_2}{\overline{z_2}}\right) = \pi$
+
+  $\Rightarrow -\pi/2 + \theta + \theta = \pi \Rightarrow \theta = \frac{3\pi}{4}$
+
+  $\Rightarrow \arg(z_1) = \pi/4$.
+  %264
+\item Given that $\left|\frac{z + 1}{z - 1}\right| < 1 \Rightarrow (x + 1)^2 + y^2 < (x - 1)^2 +
+  y^2\Rightarrow x < 0$
+
+  Also given that $\arg\left(\frac{z - 1}{z + 1}\right) = \frac{2\pi}{3}\Rightarrow \tan^{-1}\frac{y}{x - 1}
+  - \tan^{-1}\frac{y}{x + 1} = \frac{2\pi}{3}$
+
+  $\Rightarrow x^2 + y^2 + \frac{2y}{\sqrt{3}} - 1 = 0 \Rightarrow x^2 + \left(y +
+  \frac{1}{\sqrt{3}}\right)^2 = \frac{4}{3}$
+
+  Thus, $z$ has a locus of potion of the above circle in second quadrant only.
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 2cm;
+
+      draw fullcircle scaled (4u/sqrt(3)) shifted(0, -u/sqrt(3));
+      drawdot(-u/sqrt(3), u*(1 - 1/sqrt(3))) withpen pencircle scaled 2pt;
+      drawdot(u, 0) withpen pencircle scaled 2pt;
+      drawdot(-u, 0) withpen pencircle scaled 2pt;
+      draw (-u, 0) -- (-u/sqrt(3), u*(1 - 1/sqrt(3))) -- (u, 0);
+      draw angle_mark((-u, 0), (-u/sqrt(3), u*(1 - 1/sqrt(3))), (u, 0), 10);
+
+      drawdblarrow (-2u, 0) -- (2u, 0);
+      drawdblarrow (0, -2u) -- (0, u);
+      label.lft(("$X'$"), (-2u, 0));
+      label.rt(("$X$"), (2u, 0));
+      label.top(("$Y$"), (0, u));
+      label.bot(("$Y'$"), (0, -2u));
+      label.bot(("$2\pi/3$"), (-u/sqrt(3), u*(1 - 1/sqrt(3))) - (0, .2u));
+      label.top(("$z$"), (-u/sqrt(3), u*(1 - 1/sqrt(3))));
+      label.ulft(("$(-1, 0)$"), (-u, 0));
+      label.urt(("$(1, 0)$"), (u, 0));
+    \stopMPcode
+  \stopplacefigure
+  %265
+\item Given that $z^2 + z + 1 = 0\Rightarrow z = \omega, \omega^2$
+
+  We have to find $\left|\displaystyle\sum_{n = 1}^{15}\left(z^n +
+  (-1)^n\frac{1}{z^n}\right)^2\right| = \left|\displaystyle\sum_{n = 1}^{15}\left(z^{2n} +
+  \frac{1}{z^{2n} + 2(-1)^n}\right)\right|$
+
+  $= \left|\frac{\omega^2(1 - \omega^{20})}{1 - \omega^2} + \frac{\frac{1}{\omega^2}\left(1 -
+    \frac{1}{\omega^{30}}\right)}{1 - \frac{1}{\omega62}} -2\right|= 2$
+  %266
+\item $z_0 = \left(\frac{0 + 3 + 0}{3}, \frac{0 + 0 + 6}{3}\right) = (1, 2)$
+
+  $\nu_0 = |1 + 2i|^2 + |1 + 2i - 3|^2 + |1 + 2i - 6|^2 = 30$
+
+  $|2z_0^2 - \overline{z_0}^3 + 3|^2 + \nu_0^2 = |2(1 + 2i)^2 - (1 - 2i)^3 + 3|^2 + 900 = 1000$.
+  %267
+\item $z^2 + \overline{z} = 0 \Rightarrow x^2 - y^2 + x - i(2xy - y) = 0$
+
+  $\Rightarrow x^2 - y^2 + x = 0$ and $2xy - y = 0 \Rightarrow y = 0, x = \frac{1}{2}$
+
+  If $y = 0; x = 0, -1$ and if $x = \frac{1}{2}; y = \pm\frac{\sqrt{3}}{2}$
+
+  $\therefore \displaystyle\sum_{\mstack z\in S}\Re(z) + \Im(z) = -1 + \frac{1}{2} + \frac{1}{2} +
+  \frac{\sqrt{3}}{2} - \frac{\sqrt{3}}{2} = 0$.
+  %268
+\item $\frac{1 - i\sin\alpha}{1 + 2i\sin\alpha}$ is a purely imaginary number. Now
+
+  $\frac{1 - i\sin\alpha}{1 + 2i\sin\alpha}.\frac{1 - 2i\sin\alpha}{1 - 2i\sin\alpha} \Rightarrow \frac{1 -
+  2\sin^2\alpha}{1 + 4\sin^2\alpha} = 0 \Rightarrow \sin\alpha= \pm\frac{1}{\sqrt{2}}$
+
+  $\Rightarrow \alpha = \left\{\frac{5\pi}{4}, \frac{7\pi}{4}\right\}$
+
+  Also, $\frac{1 + i\cos\beta}{1 - 2i\cos\beta} = \frac{1 + i\cos\beta}{1 - 2i\cos\beta}.\frac{1 +
+    2i\cos\beta}{1 + 2i\cos\beta} \Rightarrow 3\cos\beta = 0$ because it is given as purely real.
+
+  $\Rightarrow \beta = \frac{3\pi}{2}$
+
+  So $z_{\alpha\beta} = \pm 1 - i$ for two combinations of $\alpha$ and $\beta$
+
+  $\therefore \displaystyle\sum_{\mstack (\alpha, \beta)\in S}\left(iz_{\alpha\beta} +
+  \frac{1}{i\overline{z}_{\alpha\beta}}\right) = \left[i(1 - i) + \frac{1}{i(1 + i)}\right] + \left[i(-1 -
+    i) + \frac{1}{i(-1 + i)}\right] = 1$.
+  %269
+\item Given that $\bigl|z_2 - |z_2 + 1|\bigr| = \bigl|z_2 + |z_2 - 1|\bigr|$
+
+  $\Rightarrow (z_2 - |z_2 + 1|)(\overline{z_2} - |z_2 + 1|) = (z_2 + |z_2 - 1|)(\overline{z_2} + |z_2 -
+  1|)$
+
+  $\Rightarrow |z_2|^2 - (z_2 + \overline{z_2})|z_2 + 1| + |z_2 + 1|^2 = |z_2|^2 + (z_2 +
+  \overline{z_2})|z_2 - 1| + |z_2 - 1|^2$
+
+  $\Rightarrow (z_2 + \overline{z_2})(|z_2 + 1| + |z_2 - 1|) = |z_2 + 1|^2 - |z_2 - 1|^2 = 2(z_2 +
+  \overline{z_2})$
+
+  $\Rightarrow (z_2 + \overline{z_2})[|z_2 + 1| + |z_2 - 1| - 2] = 0$
+
+  So $z_2$ is entire imaginary axis or on real axis within range $(1, -1)$.
+
+  $|z_1 - 3| = \frac{1}{2}$ is the circle with center $(3, 0)$ and radius $\frac{1}{2}$.
+
+  The diagram is shown below:
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 1cm;
+
+      draw fullcircle scaled (u) shifted(3u, 0);
+      drawdot(u, 0) withpen pencircle scaled 2pt;
+      drawdot(-u, 0) withpen pencircle scaled 2pt;
+      drawdot(u*5/2, 0) withpen pencircle scaled 2pt;
+      drawdot(u*7/2, 0) withpen pencircle scaled 2pt;
+
+
+      drawdblarrow (-2u, 0) -- (4u, 0);
+      drawdblarrow (0, -u) -- (0, u);
+      label.lft("$X'$", (-2u, 0));
+      label.rt("$X$", (4u, 0));
+      label.top("$Y$", (0, u));
+      label.bot("$Y'$", (0, -u));
+      label.bot("$(-1, 0)$", (-u, 0));
+      label.bot("$(1, 0)$", (u, 0));
+      label.llft("$(5/2, 0)$", (u*5/2, 0));
+      label.lrt("$(7/2, 0)$", (u*7/2, 0));
+    \stopMPcode
+  \stopplacefigure
+
+  Clearly, the minimum distance is $\frac{5}{2} - 1 = \frac{3}{2}$.
+  %270
+\item Given that $z^2 = \overline{z}.2^{1 - |z|} \Rightarrow |z^2| = |\overline{z}|.2^{1 - |z|}$
+
+  $\Rightarrow |x^2 - y^2 + 2xyi| = |x - iy|.2^{1 - |z|}$
+
+  Squaring gives us $(x^2 + y^2)^2 = (x^2 + y^2).2^{2 - 2|z|}\Rightarrow x^2 + y^2 = \frac{4}{2^{2(x^2 +
+      y^2)}}$
+
+  If $x^2 + y^2 < 1$ or $x^2 + y^2 > 1$ then the equality is not satisfied. Thus, $|z| = 1\Rightarrow z^2
+  = \overline{z}\Rightarrow z^3 = 1\Rightarrow z = \omega, \omega^2$
+
+  $\omega^n = (1 + \omega)^2 = (-\omega^2)^n$, which gives $6$ as least possible natural number.
+  %271
+\item Given that $1 < |z - 3 + 2i| < 4 \Rightarrow 1 < (a - 3)^2 + (b + 2)^2 < 16$. There are $40$
+  complex numbers, which satisfy the above inequality.
+  %272
+\item $A = \startbmatrix\NC1 + i\NC 1\NR -i\NC 0\NR\stopbmatrix\Rightarrow A^2 = \startbmatrix\NC i\NC  1 +
+  i\NC -i + 1\NC -i\NR\stopbmatrix$
+
+  $\Rightarrow A^4 = \startbmatrix\NC1\NC 0\NR\NC 0\NC 1\NR\stopbmatrix = I \therefore A^{4n + 1} = A$
+
+  Thus, total no.\  of required elements in the set would be $25$.
 \stopitemize
