@@ -266,6 +266,12 @@
       fullcircle scaled 2r rotated angle (P - O)
       shifted O cutafter (O -- Q)
     enddef;
+    def angletoright(expr P, Q) =
+      begingroup save ang;
+        ang := angle(P-Q);
+        if (ang <=-90) or (ang > 90): ang+180 else: ang fi
+      endgroup
+    enddef;
 \stopMPcalculation
 
   \stopMPcalculation

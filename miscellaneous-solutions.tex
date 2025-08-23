@@ -1,4 +1,4 @@
-% -*- mode: context; -*-
+4% -*- mode: context; -*-
 \chapter{Miscellaneous Problems}
 \startitemize[n, 1*broad]
 \item Let the numbers be $a$ and $b$ and harmonic means are $h_1$ and $h_1$. Let $d$ be the c.d.\ of the
@@ -2676,9 +2676,531 @@
   complex numbers, which satisfy the above inequality.
   %272
 \item $A = \startbmatrix\NC1 + i\NC 1\NR -i\NC 0\NR\stopbmatrix\Rightarrow A^2 = \startbmatrix\NC i\NC  1 +
-  i\NC -i + 1\NC -i\NR\stopbmatrix$
+  i\NR\NC -i + 1\NC -i\NR\stopbmatrix$
 
   $\Rightarrow A^4 = \startbmatrix\NC1\NC 0\NR\NC 0\NC 1\NR\stopbmatrix = I \therefore A^{4n + 1} = A$
 
   Thus, total no.\  of required elements in the set would be $25$.
+  %273
+\item Let $z = x + iy$ and we have been given that $\overline{z} = iz^2 + z^2 - z \Rightarrow z
+  + \overline{z} = iz^2 + z^2\Rightarrow 2x = (i + 1)(x^2 - y^2 + 2xyi)$
+
+  Comparing real and imaginary parts gives us
+
+  $2x = x^2 - y^2 + 2xy$ and $x^2 - y^2 - 2xy = 0$. Thus, $2x = -4xy \Rightarrow x = 0, y = -\frac{1}{2}$
+
+  When $x = 0, y = 0$ and when $y = -\frac{1}{2}, x= \frac{1\pm\sqrt{2}}{2}$
+
+  Now we have $2$ non-zero complex numbers, whose sum of squares of modulii is $\frac{(1 + \sqrt{2})^2 +
+    1}{4} + \frac{(1 - \sqrt{2})^2 + 1}{4} = 2$.
+  %274
+\item Let $|z| = r$. Now given that $\left|z - \frac{1}{z}\right| = 2 \Rightarrow \left||z|
+  - \frac{1}{|z|}\right|\leq \left|z - \frac{1}{z}\right|\leq |z| + \frac{1}{|z|}$
+
+  $\Rightarrow \left|r - \frac{1}{r}\right|\leq 2\leq r + \frac{1}{r}\Rightarrow \left|r
+  - \frac{1}{r}\right|\leq 2$ and $r + \frac{1}{r}\geq 2$
+
+  $\Rightarrow r - \frac{1}{r}\geq -2$ and $r - \frac{1}{r}\leq 2$. Thus, we have $r -
+  1\leq \sqrt{2} \Rightarrow |z|_{\min} = 1 + \sqrt{2}$.
+  %275
+\item $|z - 1 + i| \geq |z| \Rightarrow x - y \leq 1, |z| < 2 \Rightarrow x^2 + y^2 < 4$ and $|z + i| = |z -
+  1| \Rightarrow x + y = 0$
+
+  Combining $\Rightarrow x \leq \frac{1}{2}$.
+
+  Given that $w = 2x + iy\Rightarrow 2x\leq \frac{1}{2}\Rightarrow x\leq \frac{1}{4}$
+
+  and $(2x)^2 + (2x)^2 < 4\Rightarrow x^2 < \frac{1}{2}\Rightarrow
+  x\in\left(-\frac{1}{\sqrt{2}}, \frac{1}{4}\right]$.
+  %276
+\item   Given that $|z - 2|\leq 1$, which is interior of the circle $(x - 1)^2 + y^2 = 1$.
+
+  Also given that $z(1 + i) + \overline{z}(1 - i)\leq 2 \Rightarrow x - y\leq 1$
+
+  $\therefore PA  = \sqrt{17}, PB = \sqrt{13}$. Maximum is $PA$ and minimum is $PD$.
+
+  Let $D = (2 + \cos\theta, \sin\theta) \Rightarrow \tan\theta = -2$
+
+  $\Rightarrow z_1 = 2 - \frac{1}{\sqrt{5}} + \frac{2i}{\sqrt{5}}$ and $z_2 = 1$
+
+  $\Rightarrow 5(|z_1|^2 + |z_2|^2) = 30 - 4\sqrt{5}\Rightarrow \alpha + \beta = 26$.
+
+  The diagram is given below:
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 1cm;
+
+      draw fullcircle scaled (2u) shifted(2u, 0);
+      path c;
+      c = fullcircle scaled(2u) shifted(2u, 0) cutbefore (2u, u) cutafter(u, 0);
+      fill c -- (2u, u) -- cycle withcolor (0.8, 0.8, 0.8);;
+      drawdot(u, 0) withpen pencircle scaled 2pt;
+      drawdot(2u, 0) withpen pencircle scaled 2pt;
+      drawdot(2u, u) withpen pencircle scaled 2pt;
+      draw(0, 4u) -- (2u, u) -- (u, 0) -- cycle;
+      draw(0, 4u) -- (2u, 0);
+
+      drawdblarrow (-2u, 0) -- (4u, 0);
+      drawdblarrow (0, -u) -- (0, 5u);
+      label.lft("$X'$", (-2u, 0));
+      label.rt("$X$", (4u, 0));
+      label.top("$Y$", (0, 5u));
+      label.bot("$Y'$", (0, -2u));
+      label.llft("$A(1, 0)$", (u, 0));
+      label.urt("$B(2, 1)$", (2u, u));
+      label.bot("$C(2, 0)$", (2u, 0));
+      label.urt("$P(0, 4)$", (0, 4u));
+      label.ulft("$D$", (u + u/sqrt(2), u/sqrt(2)) - (.3u, 0));
+    \stopMPcode
+  \stopplacefigure
+  %277
+\item Let $z = x + iy$, then $|z| = 3$ represents the circle with center at $(0, 0)$ and radius $3$.
+
+  $\arg\left(\frac{z - 1}{z + 1}\right) = \frac{\pi}{4} \Rightarrow \arg\left(\frac{z - 1}{z + 1}\right) =
+  1 \Rightarrow \arg\left(\frac{[(x - 1) + iy][(x + 1) - iy]}{(x + 1)^2 + y^2}\right) = 1$
+
+  $\Rightarrow \frac{2y}{x^2 + y^2 - 1} = 1\Rightarrow x^2 + (y - 1)^2 = 2$, which represents a circle with
+  center $(0, 1)$ and radius $\sqrt{2}$.
+
+  The diagram is given below:
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := .6cm;
+
+      draw fullcircle scaled (6u);
+      draw fullcircle scaled (2u*sqrt(2)) shifted(0, u);
+      drawdot(0, u) withpen pencircle scaled 2pt;
+      drawdblarrow (-3u, 0) -- (3u, 0);
+      drawdblarrow (0, -3u) -- (0, 3u);
+      label.lft("$X'$", (-3u, 0));
+      label.rt("$X$", (3u, 0));
+      label.top("$Y$", (0, 3u));
+      label.bot("$Y'$", (0, -3u));
+      label.llft("$O(0, 0)$", (0, 0));
+      label.urt("$C(0, u)$", (0, u));
+    \stopMPcode
+  \stopplacefigure
+
+  From the digram it is clear that no.\ of points of intersection is zero.
+  %278
+\item Let $\alpha = \frac{z + 3z + 4z^2}{2 - 3z + 4z^2} = \frac{z - 3z + 4z^2 + 6z}{2 - 3z + 4z^2} = 1
+  + \frac{6z}{2 - 3z + 4z^2}$
+
+  Given that $\alpha = \overline{\alpha}$ because it is a real number.
+
+  $\Rightarrow \frac{6z}{2 - 3z + 4z^2} = \frac{6\overline{z}}{2 - 3\overline{z} +
+    4\overline{z}^2} \Rightarrow (z - \overline{z})(2 - 4z\overline{z}) = 0$
+
+  Since $z\neq \overline{z}$ because it is not purely real number therefore
+  $z\overline{z}= \frac{1}{2} \Rightarrow |z|^2 = \frac{1}{2}$.
+  %279
+\item Given that $\overline{z} - z^2 = i(\overline{z} + z^2)\Rightarrow (1 - i)\overline{z} = (1 +
+  i)z^2\Rightarrow \frac{1 - i}{1 + i}\overline{z} = z^2$
+
+  $\Rightarrow -\frac{2i}{2}\overline{z} = z^2 \Rightarrow -i(x - iy) = (x^2 - y^2) + 2ixy$, where $z = x +
+  iy$
+
+  Comparing real and imaginary parts gives us
+
+  $x^2 - y^2 + y = 0$ and $(2y + 1)x = 0\Rightarrow x =0$ or $y = -\frac{1}{2}$
+
+  When $x = 0 \Rightarrow y - y^2 = 0\Rightarrow y = 0, 1$
+
+  When $y = -\frac{1}{2}\Rightarrow x^2 - \frac{1}{4} - \frac{1}{2} = 0 \Rightarrow x
+  = \pm\frac{\sqrt{3}}{2}$
+
+  Thus, we have $4$ total solutions.
+  %280
+\item Given that $\frac{1 + ai}{b + i}$ is of unit modulus. $\Rightarrow \left|\frac{1 + ai}{b + i}\right| =
+  1\Rightarrow |1 + ai| = |b + i| \Rightarrow a^2 = b^2 \Rightarrow a = -b$ because it is given that $ab <
+  0$.
+
+  Also given that $a + ib$ lies on $|z - 1| = |2z| \Rightarrow (a - 1)^2 + b^2 = 4(a^2 + b^2)\Rightarrow (a
+  - 1)^2 + a^2 = 8a^2 \Rightarrow 6a^2 + 2a - 1 = 0\Rightarrow a = \frac{\sqrt{7} - 1}{6}, b = \frac{1
+    - \sqrt{7}}{6}$ or $a = \frac{-1 -\sqrt{7}}{6}$
+
+  Now it is trivial to find the answer.
+  %281
+\item We know that $z + \overline{z} = 2x$ and therefore $(az^2 + bz) + (a\overline{z}^2 + b\overline{z}) =
+  2a$ and $(bz^2 + az) + (b\overline{z}^2 + a\overline{z}) = 2b$
+
+  Adding and subtracting the two equations gives us
+
+  $(a + b)(z^2 + z + \overline{z}^2 + \overline{z}) = 2(a + b)$ and $(a - b)(z^2 - z + \overline{z}^2
+  - \overline{z}) = 2(a - b)$
+
+  If $a + b \neq 0$ then from the two obtained equations we have $x^2 - y^2 + x = 1$ and $x^2 - y^2 - x = 1$
+
+  $\Rightarrow 2x = 0\Rightarrow y^2 = -1$, which is not possible.
+
+  If $a + b = 0$, then there are infinite solutions possible.
+  %282
+\item Given that $\frac{z^2 + 8iz - 15}{z^2 - 3iz - 2}\in\mathbb{R}\Rightarrow 1 + \frac{11iz - 13}{z^2 -
+  3iz - 2}\in\mathbb{R}$
+
+  Putting $z = \alpha - \frac{13i}{11}$ makes $11zi - 13$ acquire a value of $11\alpha i$ and therefore $z^2
+  - 3iz -2$ must be imaginary.
+
+  Now we put $z = x + iy$ and we have $z^2 - 3iz - 2 = x^2 - y^2 + 2zyyi - 3ix + 3y - 2$ which should be
+  imaginary.
+
+  Thus, $x^2 - y^2 + 3y - 2 = 0\Rightarrow x^2 = (y - 1)(y - 2)$ but $z = \alpha - \frac{13i}{11}$ so we put
+  $x = \alpha$ and $y = \frac{13}{11}$ to obtain $\alpha^2 = \frac{24\times 35}{121}$.
+  %283
+\item $\omega = z\overline{z} = k_1z + k_2iz + \lambda(1 + i)\Rightarrow \Re(\omega) = x^2 + y^2 + k_1x -
+  k_2y + \lambda = 0$
+
+  Given that the circle has radius $1$ and it touches the line $y = 1$ and $y$-axis, therefore, the center
+  of circle is $(1, 2) \Rightarrow k_1 = -2, k_2 = 4$
+
+  Radius $=1\Rightarrow \lambda = 4$
+
+  $\Im(\omega) = 0 \therefore 2x - y + 2 = 0$. Distance of center of circle from this line is
+  $\frac{2}{\sqrt{5}}$.
+
+  $\therefore \frac{AB^2}{4} = \left(1^2 - \frac{4}{5}\right)\Rightarrow 30AB^2 = 24$.
+  %284
+\item Let $z_1 = \frac{z - \overline{z} + z\overline{z}}{2 - 3z + 5\overline{z}}$, also let $z = 3 +
+  iy$ then $\overline{z} = 3 - iy$
+
+  $\therefore z_1 = \frac{2iy + 9 + y^2}{2 - 3(3 + iy) + 5(3 - iy)} = \frac{9 + y^2 + 2iy}{8(1 - iy)}$
+
+  $\Re(z_1) = \frac{9 + y^2 - 2y^2}{8(1 + y^2)} = \frac{9 - y^2}{8(1 + y^2)} = \frac{1}{8}\left[\frac{10}{1
+      + y^2} - 1\right]$
+
+  $1 + y^2\in[1, \infty]\Rightarrow \frac{1}{1 + y^2}\in(0, 1]\Rightarrow \frac{10}{1 + y^2}\in(0, 10]$
+
+  $\Rightarrow \Re(z_1)\in \left(-\frac{1}{8}, \frac{9}{8}\right]\Rightarrow \alpha =
+  -\frac{1}{8}, \beta = \frac{9}{8}$
+
+  $\Rightarrow \beta  - \alpha = \frac{10}{8}$
+  %285
+\item Let $x + iy$ then $S = (x -  2)^2 + (y - 3)^2 - (x - 3)^2 - (y - 4)^2 = 2$
+
+  $= 2x + 2y -12 = 2\Rightarrow x + y = 7$.
+  %286
+\item $(z - 2i)(\overline{z} + 2i) = 4(z + i)(\overline{z} - i)[\because |z|^2 = z\overline{z}]$
+
+  $\Rightarrow 3z\overline{z} - 6i(z - \overline{z}) = 0 \Rightarrow x^2 + y^2 + 4y = 0$.
+  %287
+\item Let $z = x + iy\Rightarrow \alpha z = (8x + 14y) + i(-14x + 8y)$
+
+  $A: \frac{2i(-14x + 8y)}{i(4xy -112)}= 1\Rightarrow (x - 4)(y + 7) = 0$
+
+  $B: x^2 + (y + 3)^2 = 16$
+
+  When $x = 4, y = -3$ and when $y = -7, x = 0$
+
+  $\Rightarrow \displaystyle\sum_{\mstack z\in A\cap B} \Re(z) - \Im(z) = 4 - (-3) + 0 - (-7) = 14$.
+  %288
+\item Let $z = x = iy$, then $|z - 1| = 1\Rightarrow (x - 1)^2 + y^2 = 1$ and $(\sqrt{2} - 1)(z
+  + \overline{z}) - i(z - \overline{z}) = 2\sqrt{2} \Rightarrow (\sqrt{2} - 1)x + y = \sqrt{2}$
+
+  Solving the two equations we have $x = 1, \frac{1}{2 - \sqrt{2}}$ which gives $y = 1$ and $y = \sqrt{2}
+  - \frac{1}{\sqrt{2}}$ respectively.
+
+  $\Rightarrow |\sqrt{2}z_1 - z_2|^2 = 2$.
+  %289
+\item $|z + 2 - 3i|\leq 1$ represents inner region of a circle centered at $(-2, 3)$ with radius $1$.
+
+  Given that $z(1 + i) + \overline{z}(1 - i)\leq -8\Rightarrow (x + iy)(1 + i) + (x - iy)(1 - i)\leq -8$
+
+  $\Rightarrow x - y + ix + iy + x - y -ix -y \leq -8 \Rightarrow x - y \leq -4$
+
+  $z - 3 + 2i$ is a straight line $x + y - 1 = 0$
+
+  The diagram is shown below:
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := .6cm;
+
+      path c;
+      c = fullcircle scaled(2u) shifted(-2u, 3u) cutbefore (-u, 3u) cutafter(-2u, 2u);
+      fill c -- (-u, 3u) -- cycle withcolor (0.8, 0.8, 0.8);;
+      draw fullcircle scaled (2u) shifted (-2u, 3u);
+      drawdot(3u, -2u) withpen pencircle scaled 2pt;
+      draw (u, 5u) -- (-4u, 0);
+      draw (-4u, 5u) -- (4u, -3u);
+      drawdblarrow (-5u, 0) -- (4u, 0);
+      drawdblarrow (0, -4u) -- (0, 5u);
+
+      drawdot(-2u - u/sqrt(2), 3u + u/sqrt(2)) withpen pencircle scaled 2pt;
+      drawdot (-3u/2, 5u/2) withpen pencircle scaled 2pt;
+
+      label.lft("$X'$", (-5u, 0));
+      label.rt("$X$", (4u, 0));
+      label.top("$Y$", (0, 5u));
+      label.bot("$Y'$", (0, -4u));
+      label.llft("$O(0, 0)$", (0, 0));
+      label.top("$z_1$", (-2u - u/sqrt(2), 3u + u/sqrt(2)));
+      label.bot("$z_2$", (-3u/2, 5u/2) - (0, .3u));
+      label.top ("$x - y = -4$", (-3u, u)) rotated angletoright((-2u, 2u), (-3u, u)) shifted (-.4u, 2.4u);
+      label.top ("$x + y = 1$", (4u, -3u)) rotated angletoright((4u, -3u), (3u, -2u)) shifted (2u, 2u);
+    \stopMPcode
+  \stopplacefigure
+
+  Solving the equation $x - y\leq -4$ with circle gives us $z_1 = \left(-2 -\frac{1}{\sqrt{2}}, 3
+  + \frac{1}{\sqrt{}}\right)$ and solving the two lines we get $z_2
+  = \left(-\frac{3}{2}, \frac{5}{2}\right)$
+
+  Thus, $|z_1|^2 + 2|z_2|^2 = 31 + 5\sqrt{2}\Rightarrow \alpha + \beta = 36$.
+  %290
+\item Shaded area represents the area asked for.
+
+  Shaded area is given by $=$ Area of semi circle - Area of sector
+
+  $= \frac{1}{2}\pi.2^2 - \frac{\pi}{2} = \frac{3\pi}{2}$
+
+  The diagram is given below:
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := .75cm;
+
+      path c;
+      c = fullcircle scaled(4u) shifted(u, 0) cutbefore (u + u*sqrt(2), u*sqrt(2)) cutafter(-u, 0);
+      fill c -- (u, 0) -- (u + u*sqrt(2), u*sqrt(2)) -- cycle withcolor (0.8, 0.8, 0.8);;
+      drawdot(3u, 2u) withpen pencircle scaled 2pt;
+      draw fullcircle scaled (4u) shifted (u, 0);
+      draw (-2u, -3u) -- (3u, 2u);
+      drawdblarrow (-2.2u, 0) -- (3.2u, 0);
+      drawdblarrow (0, -2.2u) -- (0, 2.2u);
+
+      label.lft("$X'$", (-2.2u, 0));
+      label.rt("$X$", (3.2u, 0));
+      label.top("$Y$", (0, 2.2u));
+      label.bot("$Y'$", (0, -2.2u));
+      label.llft("$O(0, 0)$", (0, 0));
+      label.bot("$C(1, 0)$", (u, 0));
+      label.top ("$x - y = 1$", (-2u, -3u)) rotated angletoright((-2u, -3u), (3u, 2u)) shifted (-1.4u, 1u);
+      draw angle_mark((3u, 0), (u, 0), (2u, u), 10);
+      label.urt("$45^\circ$", (u, 0) + (.3u, 0.1u));
+    \stopMPcode
+  \stopplacefigure
+  %291
+\item $S_1: x^2 + y^2\leq 25, S_2: \Im\left(\frac{z + 1 - \sqrt{3}i}{1 - \sqrt{3}i}\right)
+  = \Im\left(\frac{(x + iy)(1 + \sqrt{3}i)}{4}\right)\geq 0\Rightarrow \sqrt{3}x + y\geq 0$
+
+  $S_3: x \geq 0$
+
+  The diagram is given below:
+
+    \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := .4cm;
+
+      path c;
+      c := fullcircle scaled(10u) cutbefore (5u/2, -5u*sqrt(3)/2) cutafter (0, 5u);
+      fill c -- (0, 0) -- (5u/2, -5u*sqrt(3)/2) -- cycle withcolor (0.8, 0.8, 0.8);;
+      c := fullcircle scaled(10u) cutbefore (5u, 0) cutafter (0, 5u);
+      fill c -- (0, 0) -- cycle withcolor (0.8, 0.8, 0.8);;
+      draw fullcircle scaled (10u) shifted (0, 0);
+      drawdblarrow (-6u, 0) -- (6u, 0);
+      drawdblarrow (0, -6u) -- (0, 6u);
+      draw (6u/2, -6u*sqrt(3)/2) -- (-6u/2, 6u*sqrt(3)/2);
+
+      label.lft("$X'$", (-6u, 0));
+      label.rt("$X$", (6u, 0));
+      label.top("$Y$", (0, 6u));
+      label.bot("$Y'$", (0, -6u));
+      label.llft("$O(0, 0)$", (0, 0));
+      label ("$y = \sqrt{3}x$", (-5u/2, 5u*sqrt(3)/2)) rotated angletoright((5u/2, -5u*sqrt(3)/2),
+      (-5u/2, 5u*sqrt(3)/2)) shifted (-2u +u, -2.5u*sqrt(3) - 2u*sqrt(3));
+      draw angle_mark((5u/2, -5u*sqrt(3)/2), (0, 0), (u, 0), 10);
+      label.lrt("$60^\circ$", origin + (.6u, -0.2u));
+    \stopMPcode
+  \stopplacefigure
+  %292
+\item $S = 1 + \frac{x}{2\sqrt{3}} + \frac{x^2}{18} + \frac{x^3}{36\sqrt{3}} + \frac{x^4}{180} + \cdots$ to
+  $\infty$
+
+  Let $\frac{x}{\sqrt{3}} = t$, where $x = \sqrt{3} - \sqrt{2}$, then $S$ becomes
+
+  $S = 1 + \frac{t}{2} + \frac{t^2}{6} + \frac{t^3}{12} + \frac{t^4}{20} + \cdots$
+
+  $= 1 + \left(1 - \frac{1}{2}\right)t + \left(\frac{1}{2} - \frac{1}{3}\right)t^2 + \left(\frac{1}{3}
+  - \frac{1}{4}\right)t^3 + \left(\frac{1}{4} - \frac{1}{5}\right)t^4 + \cdots$
+
+  $= \left(t + \frac{t^2}{2} + \frac{t^3}{3} + \cdots\right) - \frac{1}{t}\left(t + \frac{t^2}{2}
+  + \frac{t^3}{2} + \cdots\right) +2$
+
+  $= 2 + \left(1 - \frac{1}{t}\right)[-\log(1 - t)] = \left(\frac{1}{t} - 1\right)\log(1 - t) + 2$
+
+  $= 2 + \left(\sqrt{\frac{3}{2}} + 1\right)\log_e\frac{2}{3}\Rightarrow a, b = 2, 3$.
+  %293
+\item $4x^4 + 8x^3 - 17x^2 - 12x + 9 = 4(x - x_1)(x - x_2)(x - x_3)(x - x_4) =0$
+
+  Putting $x = \pm 2i$ and multuplying equations
+
+  $(4 + x_1^2)(4 + x_2)^2(4 + x_3^2)(4 + x_4)^2 = \frac{141^2 + 88^2}{16}$
+
+  Thus, $\frac{125m}{16} = \frac{141^2 + 88^2}{16}\Rightarrow m = 221$.
+  %294
+\item Given that $|z + 2| = 1$ and $\Im\left(\frac{z + 1}{z + 2}\right)= \frac{1}{5}$
+
+  Let $z + 2 = \cos\theta + i\sin\theta\Rightarrow \frac{1}{z + 2} = \cos\theta - i\sin\theta$
+
+  $\Rightarrow \frac{z + 1}{z + 2} = 1 - \frac{1}{z + 2} = (1 - \cos\theta) + \i\sin\theta$
+
+  $\Rightarrow \Im\left(\frac{z + 1}{z + 2}\right) = \sin\theta\Rightarrow \sin\theta = \frac{1}{5}$
+
+  $\Rightarrow \cos\theta = \pm\frac{2\sqrt{6}}{5}\Rightarrow |\Re(\overline{z + 2})|
+  = \frac{2\sqrt{6}}{5}$.
+  %295
+\item Given $a + 5b = 42$ and $a, b\in\mathbb{N}$. We see that $b$ can have $8$ values from $1$ through $8$.
+
+  Now $\displaystyle\sum_{n = 1}^n\left(1 - i^{n!}\right) = x + iy$. For $n \geq 4, 1 - i^{n!} = 0$
+
+  So $x + iy = (1- i) + \left(1 - i^2\right) + \left(1 - i^6\right) = 5 - i\Rightarrow x = 5, y = -1$
+
+  $\therefore m + x + y = 12$.
+  %296
+\item $|z - 1|\leq 1\Rightarrow (x - 1)^2 + y^2\leq 1$, which represnts the equation of a circle with center
+  $(1, 0)$ and radius $1$.
+
+  $|z - 5|\leq |z - 5i|\Rightarrow x\geq y$
+
+  Solving the twp equations $x = 0$ or $x = 1$ which gives us $y = 0$ and $y = 1$.
+
+    \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 1cm;
+
+      path c;
+      c := fullcircle scaled(2u) shifted (u, 0) cutbefore (0, 0) cutafter (u, u);
+      fill c .. (u, u) -- cycle withcolor (0.8, 0.8, 0.8);;
+      draw fullcircle scaled (2u) shifted (u, 0);
+      drawdblarrow (-2u, 0) -- (2.5u, 0);
+      drawdblarrow (0, -2u) -- (0, 2u);
+      draw (2u, 2u) -- (-u, -u);
+
+      label.lft("$X'$", (-2u, 0));
+      label.rt("$X$", (2.5u, 0));
+      label.top("$Y$", (0, 2u));
+      label.bot("$Y'$", (0, -2u));
+      label.llft("$O(0, 0)$", (0, 0));
+      label.bot("$C(1, 0)$", (u, 0));
+      label.rt("$y = x$", (2u, 2u));
+    \stopMPcode
+  \stopplacefigure
+
+  Since $a, b\in\mathbb{Z}$ the points are $(0, 0), (1, 0), (2, 0), (1, 1), (1, -1)$
+
+  So sum of squares of modulus comes out to be $9$.
+  %297
+\item Since $\frac{z - 2i}{z + 2i}$ has real part as zero so $\frac{z - 2i}{z + 2i} + \frac{\overline{z} +
+  2i}{\overline{z} - 2i} = 0$
+
+  $\Rightarrow z\overline{z} - 2i\overline{z} - 2iz + 4(-1) = 0\Rightarrow |z| = 2$
+
+  $\therefore |z - (6 + 8i)|_{\max} = |z| + |6 + 8i| = 12$.
+  %298
+\item The given points in the equation represents points $(0, 1), (0, -1)$ and $(1, 0)$ i.e. a
+  triangle. Only circumcenter of this triangle is the point equidistant from the three points. Hence, $n(S)
+  = 1$.
+  %299
+\item $|z - z_0|^2 = 4\Rightarrow \left(\alpha - z_0\right)\left(\overline{\alpha} - \overline{z_0}\right) =
+  4$
+
+  $\Rightarrow |\alpha|^2 - \alpha\overline{z_0} - \overline{\alpha}z_0 = 2$
+
+  Also, $|z - z_0|^2 = 16 \Rightarrow \left(\frac{1}{\overline{\alpha}} - z_0\right)\left(\frac{1}{\alpha}
+  - \overline{z_0}\right) = 16$
+
+  $\Rightarrow 1 - \overline{\alpha}z_0 - \alpha\overline{z_0} = 14|\alpha|^2$
+
+  Combining the two equations obtained $5|\alpha|^2 = 1\Rightarrow 100|\alpha|^2 = 20$.
+  %300
+\item Given that $z^3 + 2z^2 + 2z + 1 = 0 \Rightarrow (z + 1)(z^2 + z + 1) = 0$, which has three roots.
+
+  $z = -1, \omega, \omega^2$ out of which $\omega$ and $\omega^2$ satisfy both the equations.
+  %301
+\item Given that $|1 - i|^x = 2^x \Rightarrow \left(\sqrt{2}\right)^x = 2^x\Rightarrow x =
+  0 \Rightarrow \alpha = 1$
+
+  Also given that $z = \frac{\pi}{4}(1 + i)^4\left(\frac{1 - \sqrt{\pi}i}{\sqrt{\pi} + i} + \frac{\sqrt{\pi}
+    - i}{1 + \sqrt{\pi}i}\right)$
+
+  $= \frac{\pi}{4}(1 + i)^4\left[\frac{\sqrt{\pi} - \pi i - i - \sqrt{\pi}}{\pi + 1} + \frac{\sqrt{\pi} - i
+      - \pi i-\sqrt{\pi}}{\pi + 1}\right]$
+
+  $= \frac{\pi}{4}\left(1 + 4i + 6i^2 + 4i^3 + 1\right) = 2\pi i$
+
+  Thus, $\beta = 4$
+
+  Distance of $(1, 4)$ from $4x - 3y = 7$ is $3$.
+  %302
+\item Given that $z_1 + z_2 = 5$ and $z_1^3 + z_2^3 = 20 + 15i\Rightarrow (z_1 + z_2)^3 = 20 + 15i +
+  3z_1z_2(z_1 + z_2)$
+
+  $\Rightarrow 125 = 20 + 15i - 15z_1z_2 \Rightarrow z_1z_2 = 7 - i$
+
+  $\Rightarrow (z_1 + z_2)^2 = 25\Rightarrow z_1^2 + z_2^2 = (z_1 + z_2)^2 - 2z_1z_2 = 25 - 14 + 2i = 11 +
+  2i$
+
+  $\Rightarrow \left(z_1^2 + z_2^2\right)^2 = 117 + 44i \Rightarrow \left|z_1^4 + z_2^4\right| = 75$.
+  %303
+\item Given that $\frac{2 + k^2z}{k + \overline{z}} = kz\Rightarrow |z|^2k = 2 \Rightarrow k = 2$.
+
+  So the point is $P(2, 4)$. The given circle has center $C(1, 2)$ and radius of $1$.
+
+  So the maximum distance of point $P$ from circle is $OP + r = \sqrt{1 + 4} + 1 = \sqrt{5} + 1$.
+  %304
+\item Given that $\frac{z^2 + 3i}{z - 2 + i} = 2 + 3i\Rightarrow z^2 - z(2 + 3i) + 7 + 7i = 0$
+
+  This is a quadratic equation which has two roots $z_1$ and $z_2$ such that
+
+  $z_1 + z_2 = 2 + 3i$ and $z_1z_2 = 7 + 7i$
+
+  Thus, $z_1^2 + z_2^2 = \left(z__1^2 + z_2^2\right) = \left(z_1 + z_2\right)^2 - 2z_1z_2 = -19 -2i$.
+  %305
+\item We know that for an equilateral triangle $z_1^2 + z^2 + z_3^2 = z_1z_2 + z_2z_3 + z_3z_1$
+
+  Given that $z_1 + z_2 + z_2 = 3z_0 \Rightarrow \left(z_1 + z_2 + z_3\right)^2 = 9z_0^2 \Rightarrow z_1^2 +
+  z_2^2 + z_3^2 = 3z_0^2$
+
+  $\displaystyle\sum_{k = 1}^3\left(z_k - z_0\right)^2 = z_1^2 + z_2^2 + z_3^2 + 3z_0^2 - 2\left(z_1 + z_2 +
+  z_3\right)z_0 = 6z_0^2 - 6z_0^2 = 0$.
+  %306
+\item Let $z = x + iy$. Gven that $A: = |z - 2 - i| = 3\Rightarrow (x - 2)^2 + (y - 1)^2 = 9$
+
+  Also given that $B: \Re(z - iz) = 2 \Rightarrow x + y = 2$
+
+  Solving the two equations we have $x = \frac{3\pm \sqrt{17}}{2}, y = \frac{1\mp\sqrt{17}}{2}$
+
+  $\therefore \displaystyle\sum_{\mstack m\in S} |z|^2 = \frac{1}{4}(2\times 26 + 2\times 16) = 22$.
+  %307
+\item $\omega_1\omega_2 = i\left(65\sin^2\theta + 120\sin\theta\cos\theta + 65\cos^2\theta\right)$
+
+  $\Rightarrow \alpha +i\beta = i(65 + 60\sin2\theta)$
+
+  $\Rightarrow \alpha = 0, \beta_{\max} = 125$ and $\beta_{\min} = 5$
+
+  $\therefore p + q = 130$.
+  %308
+\item $\displaystyle\sum_{k = 1}^n\left(\omega^{2k} + \omega^k + 2\right) = 20$
+
+  $\Rightarrow \left(\omega^2 + \omega^4 + \omega^6 + \cdots + \omega^{2n}\right)  + \left(\omega
+  + \omega^2 + \omega^3 + \cdots + \omega^n\right) + 2n = 20$
+
+  If $n = 3m, m\in\mathbb{I}$ then $0 + 0 + 2n = 20 \Rightarrow n = 10\neq 3m$
+
+  If $n = 3m + 1$ then $\omega^2 + \omega + 2n = 20 \Rightarrow n = \frac{21}{2}$, which is not possible.
+
+  If $n = 3m + 2$ then $2n = 22 \Rightarrow n = 11$, which is possible.
+  %309
+\item $|z| = 1$ and $\frac{z - 1}{z + 1} + \frac{\overline{z} - 1}{\overline{z} + 1} = 0$
+
+  $\Rightarrow |z|^2 + \left(z - \overline{z}\right) - 1 + |z|^2 - \left(z - \overline{z}\right) - 1 = 0$
+
+  $\Rightarrow |z|^2 = 1$. So there are infinite such points.
 \stopitemize
