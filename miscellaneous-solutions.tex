@@ -3856,4 +3856,329 @@
   $\Delta PXQ = -5t^2 + 5t + 30[\because |x - a| = -(x - a)$ if $x < a]$
 
   Thus, maximum area is $\frac{125}{4}$. [Maximum area of expression $ax^2 + bx + c$ is $-D/4a$]
+  %369
+\item The diagrams are given below:
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u; u := 1.5cm;     % scale (points per unit)
+      numeric xmin, xmax, dx;
+      xmin := 0.5; xmax := 3.5; dx := 0.1;
+
+      vardef Y(expr x) = (x**2 - 4*x + 15/4) enddef;
+      vardef Z(expr x) = (-(x**2) + 4*x - 15/4) enddef;
+
+      % Build the parabola path by sampling x
+      path P;
+      P := (u*xmin, u*Y(xmin))
+      for x=xmin+dx step dx until xmax:
+      .. (u*x, u*Y(x))
+      endfor;
+
+      % Axes
+      drawarrow (-u,0)--(4u,0);
+      drawarrow (0,-u)--(0,2u);
+      label.rt("$x$", (4u,0));
+      label.top("$y$", (0,2u));
+      draw(2u, -0.1*u) -- (2u, 0.1*u);
+      draw(3u, -0.1*u) -- (3u, 0.1*u);
+      label.bot("$2$", (2u, -0.1*u));
+      label.bot("$3$", (3u, -0.1*u));
+
+      % Draw the parabola
+      draw P;
+
+      % Optional: vertex point (2, -1/4)
+      pair V;
+      V := (2u, (2**2 - 4*2 + 15/4)*u);
+      drawdot V withpen pencircle scaled 2pt;
+
+      path Q;
+      Q := (u*xmin, u*Z(xmin))
+      for x=xmin+dx step dx until xmax:
+      .. (u*x, u*Z(x))
+      endfor;
+
+      draw Q;
+    \stopMPcode
+  \stopplacefigure
+
+  According to the problem, the graph of $f(x)$ will be either of two ways as shown above. In both cases
+  $f(0).f(2) < 0$ and $f(2)f(3) < 0$.
+
+  First we consider $f(0)f(2) < 0$
+
+  $\Rightarrow (c - 4)[4(c - 5) - 4c + c - 4] < 0 \Rightarrow (c - 4)(c - 24) < 0\Rightarrow c\in(4, 24)$
+
+  Now we consider $f(2)f(3) < 0$ which leads to $c\in\left(\frac{49}{4}, 24\right)$
+
+  Combining both the solutions we have integral values of $c$ from $13$ through $24$ i.e. $11$ possible
+  values.
+  %370
+\item The diagram is given below:
+
+  The following condition must satisfy.
+
+  {\bf Cond. I:} $D > 0 \Rightarrow b^2 - 4ac > 0 \Rightarrow m^2 - 16 > 0\Rightarrow m\in(-\infty,
+  -4)\cup(4, \infty)$
+
+  {\bf Cond. II:} The vertex of the parabola must lie between $1$ and $5$
+
+  $\therefore -\frac{b}{2a}\in(1, 5)\Rightarrow 1 < \frac{m}{2} < 5\Rightarrow m\in(2, 10)$
+
+  {\bf Cond. III:} $f(1) > 0\Rightarrow 1 - m + 4 > 0 \Rightarrow m < 5 \Rightarrow m\in(-\infty, 5)$
+
+  {\bf Cond. IV:} $f(5) > 0 \Rightarrow 25 - 5m + 4 > 0 \Rightarrow m\in\left(-\infty, \frac{29}{5}\right)$
+
+  Combining all the conditions we have $m\in(4, 5)$.
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u; u := 1cm;     % scale (points per unit)
+      numeric xmin, xmax, dx;
+      xmin := 1; xmax := 5; dx := 0.1;
+
+      vardef Y(expr x) = (x**2 - 6*x + 8) enddef;
+
+      % Build the parabola path by sampling x
+      path P;
+      P := (u*xmin, u*Y(xmin))
+      for x=xmin+dx step dx until xmax:
+      .. (u*x, u*Y(x))
+      endfor;
+      % Draw the parabola
+      draw P;
+
+      % Axes
+      drawarrow (-u,0)--(6u,0);
+      drawarrow (0,-u)--(0,4u);
+      label.rt("$x$", (6u,0));
+      label.top("$y$", (0,4u));
+      draw(u, -0.1*u) -- (u, 0.1*u);
+      draw(5u, -0.1*u) -- (5u, 0.1*u);
+      label.bot("$1$", (u, -0.1*u));
+      label.bot("$5$", (5u, -0.1*u));
+    \stopMPcode
+  \stopplacefigure
+  %371
+\item Putting $t = x - [x] = \left\{X\right\}$, which is a fractional part function and lie between
+  $0\leq \left\{X\right\} < 1$.
+
+  $\Rightarrow -3t^2 + 2t + a = 0 \Rightarrow t = \frac{1\pm\sqrt{1 + 3a^1}}{3}$
+
+  $\Rightarrow 0\leq \frac{1\pm\sqrt{1 + 3a^2}}{3} < 1$
+
+  We take positive sign as negative sign will be less than zero.
+
+  $\Rightarrow \sqrt{1 + 3a^2} < 2\Rightarrow 1 + 3a^2 < 4\Rightarrow a^2 - 1 < 0 \Rightarrow a\in(-1,
+  0)\cup (0, 1)$.
+  %372
+\item We know that $ax^2 + bx + c > 0\forall\; x\in\mathbb{R}$ if $a > 0$ and $D < 0$
+
+  $\Rightarrow 4x^2 - 4(10 - 3a) < 0 \Rightarrow a^2 + 3a - 10 < 0$
+
+  $(a + 5)(a - 2) < 0 \Rightarrow \a\in(-5, 2)$, however, $a > 0\Rightarrow a\in(0, 2)$.
+  %373
+\item The diagram is given below.
+
+  From the diagram it is clear that one of the roots of $(x - a)(x - b) - 1 = 0$ lies in the range $(\infty,
+  a)$ and the other root lies in the range $(b, \infty)$.
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u; u := 1cm;     % scale (points per unit)
+      numeric xmin, xmax, dx;
+      xmin := 0.5; xmax := 2.5; dx := 0.05;
+      numeric xmins, xmaxs;
+      xmins := 0.5; xmaxs :=2.5;
+
+      vardef Y(expr x) = (x**2 - 3*x + 2) enddef;
+      vardef Z(expr x) = (x**2 - 3*x + 1) enddef;
+
+      % Build the parabola path by sampling x
+      path P;
+      P := (u*xmin, u*Y(xmin))
+      for x=xmin+dx step dx until xmax:
+      .. (u*x, u*Y(x))
+      endfor;
+      % Draw the parabola
+      draw P;
+      path Q;
+      Q := (u*xmins, u*Z(xmins))
+      for x=xmins+dx step dx until xmaxs:
+      .. (u*x, u*Z(x))
+      endfor;
+      % Draw the parabola
+      draw Q;
+
+      % Axes
+      drawarrow (-u,0)--(3u,0);
+      drawarrow (0,-u)--(0,2u);
+      label.rt("$x$", (3u,0));
+      label.top("$y$", (0,2u));
+      draw(u, -0.1*u) -- (u, 0.1*u);
+      draw(2u, -0.1*u) -- (2u, 0.1*u);
+      label.bot("$a$", (u, -0.1*u));
+      label.bot("$b$", (2u, -0.1*u));
+      label.rt("$(x - a)(x - b) = 0$", (2.5u, 0.75u));
+      label.rt("$(x - a)(x - b) - 1 = 0$", (2.5u, -0.25u));
+    \stopMPcode
+  \stopplacefigure
+  %374
+\item Following conditions must be satisfied.
+
+  {\bf Cond. I:} Since both the roots are less than $3\Rightarrow \alpha < 3, \beta < 3$
+
+  $\Rightarrow \alpha + \beta < 6 \Rightarrow \frac{2a}{2} < 3\Rightarrow a < 3$
+
+  {\bf Cond. II:} Product $\alpha\beta < 9 \Rightarrow a^2 + a - 3 < 9 \Rightarrow a^2 + a - 12 <0$
+
+  $\Rightarrow -4 < a < 3$
+
+  {\bf Cond. III:} $D \geq 0 \Rightarrow 4a^2 - 4(a^2 + a - 3)\geq 0\Rightarrow a\leq 3$
+
+  {\bf Cond. IV:} $f(3) > 0 \Rightarrow a^2 - 5a + 6 > 0 \Rightarrow a\in(-\infty, 2)\cup (3, \infty)$
+
+  Combining all four conditions we have $a\in(-4, 2)$.
+  %375
+\item Let $f(x) = ax^2 + bx + c$. It is given that $f(x) > 0\;\forall\;x\in\mathbb{R}\Rightarrow a > 0$ and
+  $b^2 - 4ac < 0$
+
+  Given that $g(x) = f(x) + f'(x) + f''(x) = ax^2 + bx + c + 2ax + b + 2a$
+
+  Its discriminant $D' = (b + 2a)^2 - 4a(c + b + 4a) = (b^2 - 4ac) - 4a^2 < 0$
+
+  Thus, $g(x) > 0\;\forall\;x\in\mathbb{R}$.
+  %376
+\item $x^2 + (a - b)x + (1 - a - b) = 0$ has real and unequal roots.
+
+  $\Rightarrow D > 0 \Rightarrow (a - b)^2 - 4(1 - a - b) > 0 \Rightarrow a^2 + b^2 - 2ab - 4 + 4a + 4b > 0$
+
+  We have to find all values of $a$ for which the given equation has real and unequal roots for all real
+  values of $b$ i.e. above equation is true for all real values of $b$'
+
+  $\Rightarrow b^2 + b(4 - 2a) + (a^2 + 4a - 4) > 0$ for all real $b$
+
+  $\Rightarrow (4 - 2a)^2 - 4(a^2 + 4a - 4) < 0 \Rightarrow a > 1$.
+  %377
+\item Refer to the diagram given in the chapter of theory of equations where $a > 0$ and $a < 0$. It is
+  clear that if $a > 0$ then $f(-1) < 0$ and $f(1) < 0$, and if $a < 0, f(-1) > 0$ and $f(1) > 0$. In both
+  the cases
+
+  $af(-1) < 0$ and $af(1) < 0\Rightarrow a(a - b + c) < 0$ and $a(a + b + c) < 0$
+
+  Dividing by $a^2$ we have $1 - \frac{b}{a} + \frac{c}{a} < 0$ and $1 + \frac{b}{a} + \frac{c}{a} < 0$
+
+  $\Rightarrow 1 + \frac{c}{a} + \left|\frac{b}{a}\right| < 0$.
+  %378
+\item $D > 0 \Rightarrow 64\left\{k^2 - (k^2 - k + 1)\right\}\Rightarrow k > 1$
+
+  $-\frac{b}{2a} > 4\Rightarrow \frac{8k}{2} > 4\Rightarrow k > 1$
+
+  $f(4)\geq 0 \Rightarrow k^2 -3k + 2 \geq 0 \Rightarrow k\leq 1$ or $k\geq 2$
+
+  From these three conditions we have $k = 2$.
+  %379
+\item Given equation is $5 + \left|2^x - 1\right| = 2^x(2^x - 2)$
+
+  {\bf Case I:} If $2^x - 1\geq 0\Rightarrow x\geq 0$ then $5 + 2^x - 1 = 2^x(2^x - 2)$
+
+  Let $t = 2^x$ then the equation becomes $t + 4 = t^2 - 2t\Rightarrow t^2 - 3t - 4 = 0$
+
+  $\Rightarrow t = 4 \Rightarrow x = 2 > 0\Rightarrow x = 2$ is a solution.
+
+  {\bf Case II:} If $2^x - 1 < 0 \Rightarrow x < 0$ so the given equation becomes
+
+  $5 + 1 - 2^x = 2^x\left(2^x - 2\right)$. We put $2^x = y$ and rewrite to get $y^2 - y - 6 = 0$
+
+  $\Rightarrow y = 3, -2$. However, $y\neq 2$ as $2^x < 1\Rightarrow 2^x = -2 \Rightarrow
+  x\not\in\mathbb{R}$
+
+  Thus, we have one real solution.
+  %380
+\item Given inequality is $2^{\sqrt{\sin^2x - 2\sin x + 5}}.\frac{1}{4\sin^2y}\leq 1$
+
+  $\Rightarrow 2^{\sqrt{\sin^2x - 2\sin x + 5}}\leq 2^2\sin^2y$
+
+  $\Rightarrow \sqrt{(\sin x - 1)^2 + 4}\leq 2\sin^2y$
+
+  Rnage of $\sqrt{(\sin x - 1)^2 + 4}$ is $\left[2, 2\sqrt{2}\right]$ and range of $2\sin^2y$ is $\left[0,
+    2\right]$.
+
+  Thus, we see that inequality is achieved at $2$.
+
+  $\Rightarrow \sqrt{(\sin x - 1)^2 + 4} = 2 = 2\sin^2y \Rightarrow \sin x = 1 = |\sin y|$
+
+  Thus, $x = \frac{\pi}{2}, y = 0, \pi$.
+  %381
+\item Given equation is $\left|\sqrt{x} - 2\right| + \sqrt{x}\left(\sqrt{x} - 4\right) + 2 = 0$
+
+  $\Rightarrow \left|\sqrt{x} - 2\right| + \left(\sqrt{x} - 2\right)^2 = 2$
+
+  Let $\sqrt{x} - 2 = y$ then the equation becomes $y^2 + y - 2 = 0\Rightarrow y = 1, -2$(reject $-2$ as
+  $y \geq 0$)
+
+  $\Rightarrow x = 9, 1$.
+  %382
+\item Differentiating given equation w.r.t.\ $x$ we obtain
+
+  $f'(x) = 6x^2 + 3$, which is a strictly increasing function. $\Rightarrow f(x) = 0$ has only one root.
+  %383
+\item From given conditions $a^2\alpha^2 + b\alpha + c = 0$ and $a^2\beta^2 - b\beta - c = 0$
+
+  Let $f(x) = a^2x^2 + 2bx + 2c$, then $f(\alpha) = a^2\alpha^2 + 2b\alpha + 2c = a^2\alpha^2 - 2a^2\alpha^2
+  = -a^2\alpha^2$
+
+  and $f(\beta) = a^2\beta^2 + 2\beta + 2c = a^2\alpha^2 + 2a^2\beta^2 = 3a^2\beta^2$
+
+  $\Rightarrow f(\alpha)f(\beta) < 0$, which implies that $f(x)$ must have a root lying between $\alpha$ and
+  $\beta$.
+
+  $\Rightarrow \alpha < \gamma <\beta$.
+  %384
+\item Let $f(x) = ax^3 + bx^2 + cx + d = 0\Rightarrow f(0) = d$ and $f(1) = a + b + c + d = d[\because a + b
+  + c = 0]$
+
+  $\therefore f(0) = f(1)$. $f$ is continuous in the interval $[0, 1]$ and $f$ is derivable in the open
+  interval $(0, 1)$.
+
+  By Rolle's theorem $f'(\alpha) = 0$ for $0 < \alpha < 1$
+
+  $\Rightarrow f'(x) = 3ax^2 + 2bx + c\Rightarrow f'(\alpha) = 3a\alpha^2 + 2b\alpha + c = 0$
+
+  Thus, given equation has at least one root in $(0, 1)$.
+  %385
+\item There are three cases:
+
+  {\bf Case I:} When $x\leq 0\Rightarrow x^{12}\geq 0, -x^{9} > 0, x^4 > 0, -x > 0$
+
+  $\therefore x^{12} - x^{9} + x^4 - x + 1 > 0\;\forall\;x\leq 0$.
+
+  {\bf Case II:} When $0 <x \leq 1\Rightarrow x^9 < x^4$ and $x < 1\Rightarrow -x^9 + x^4 > 0$ and $1 - x >
+  0$
+
+  $\therefore x^{12} - x^{9} + x^4 - x + 1 > 0\;\forall\;0< x\leq 1$
+
+  {\bf Case III:} When $x > 1\Rightarrow x^{12} - x^9 > 0$ and $x^4 - x > 0$
+
+  $\therefore x^{12} - x^{9} + x^4 - x + 1 > 0\;\forall\;x > 1$.
+
+  Thus, the given equation holds for all real values of $x$.
+  %386
+\item Given that $x_1$ and $x_2$ are roots of $\alpha x^2 - x + \alpha = 0$
+
+  $x_1 + x_2 = \frac{1}{\alpha}$ and $x_1x_2 = 1$
+
+  Also given that $\left|x_1 - x_2\right| < 1\Rightarrow \left(x_1 - x_2\right)^2 < 1$
+
+  $\Rightarrow \left(x_1 + x_2\right)^2 - 4x_1x_2 < 1\Rightarrow \frac{1}{\alpha^2} < 5$
+
+  $\Rightarrow 5\alpha^2 - 1 > 0\Rightarrow \alpha\in\left(-\infty,
+  -\frac{1}{\sqrt{5}}\right)\cup \left(\frac{1}{\sqrt{5}}, \infty\right)$
+
+  Also, $D > 0\Rightarrow 1 - 4\alpha^2 > 0 \Rightarrow \alpha\in\left(-\frac{1}{2}, \frac{1}{2}\right)$
+
+  Therefore, combining both the set obtained gives us
+
+  $S = \left(-\frac{1}{\sqrt{5}}, -\frac{1}{2}\right)\cup\left(\frac{1}{2}, \frac{1}{\sqrt{5}}\right)$.
 \stopitemize
