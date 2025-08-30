@@ -4454,4 +4454,371 @@
   $(0, 3), (0, -3) \rightarrow (2)$
 
   Thus, a total of $27$ points.
+  %404
+\item Taking $\log$ of both sides with base $5$ and putting $\log_5x = t$ gives us
+
+  $16t^4 - 68t^2 + 16 = 0\Rightarrow 4t^4 - 17t^2 + 4 = 0$
+
+  $\Rightarrow t_1t_2t_3t_4 = 0$, where $t_1, t_2, t_3, t_4$ are the roots of the equation above.
+
+  $\Rightarrow \log_5x_1 + \log_5x_2 + \log_5x_3 + \log_5x_4 = 0 \Rightarrow x_1x_2x_3x_4 = 1$, where $x_1,
+  x_2, x_3, x_4$ are the roots of the given equation.
+  %405
+\item Let $\left(\sqrt{3} + \sqrt{2}\right)^{x^2 - 4} = t \Rightarrow t + \frac{1}{t} = 10\Rightarrow t =
+  5 \pm2\sqrt{6}$
+
+  $\Rightarrow x^2 - 4 = \pm2 \Rightarrow x^2 = 6, 2\Rightarrow x = \pm\sqrt{2}, \pm\sqrt{6}$
+
+  $\Rightarrow n(S) = 4$.
+  %406
+\item Clearly, $f(1)f(2) < 0$ and $f(2)f(3) < 0$
+
+  $\Rightarrow (k - 6)(k - 8) < 0$ and $(k - 8)(k - 6) < 0$
+
+  $\Rightarrow k\in(6, 8)$, so the integral value of $k$ is $7$.
+
+  The diagram is given below:
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u; u := 1cm;     % scale (points per unit)
+      numeric xmin, xmax, dx;
+      xmin := 1; xmax := 3; dx := 0.1;
+
+      vardef Y(expr x) = (2*(x**2) - 8*x + 7) enddef;
+
+      % Build the parabola path by sampling x
+      path P;
+      P := (u*xmin, u*Y(xmin))
+      for x=xmin+dx step dx until xmax:
+      .. (u*x, u*Y(x))
+      endfor;
+      % Draw the parabola
+      draw P;
+
+      % Axes
+      drawarrow (-u,0)--(4u,0);
+      drawarrow (0,-u)--(0,2u);
+      label.rt("$x$", (4u,0));
+      label.top("$y$", (0,2u));
+      draw(u, -0.1*u) -- (u, 0.1*u);
+      draw(2u, -0.1*u) -- (2u, 0.1*u);
+      draw(3u, -0.1*u) -- (3u, 0.1*u);
+      label.bot("$1$", (u, -0.1*u));
+      label.bot("$2$", (2u, -0.1*u));
+      label.bot("$3$", (3u, -0.1*u));
+    \stopMPcode
+  \stopplacefigure
+  %407
+\item The diagram is given below:
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u; u := 1cm;     % scale (points per unit)
+      numeric xmin, xmax, dx;
+      xmin := 2; xmax := 3.0001; dx := 0.1;
+
+      vardef Y(expr x) = abs(x**2 - 8*x + 15) enddef;
+
+      % Build the parabola path by sampling x
+      path P;
+      P := (u*xmin, u*Y(xmin))
+      for x=xmin+dx step dx until xmax:
+      .. (u*x, u*Y(x))
+      endfor;
+      % Draw the parabola
+      draw P;
+
+      numeric xmins, xmaxs;
+      xmins := 3; xmaxs := 5;
+
+      path Q;
+      Q := (u*xmins, u*Y(xmins))
+      for x=xmins+dx step dx until xmaxs:
+      .. (u*x, u*Y(x))
+      endfor;
+      % Draw the parabola
+      draw Q;
+
+      numeric xmine, xmaxe;
+      xmine := 5; xmaxe :=6.8;
+
+      path R;
+      R := (u*xmine, u*Y(xmine))
+      for x=xmine+dx step dx until xmaxe:
+      .. (u*x, u*Y(x))
+      endfor;
+      % Draw the parabola
+      draw R;
+
+      draw(7u, 7u) -- (3u, -u);
+      draw (4u, u) -- (4u, 0) dashed evenly;
+      draw ((5 + sqrt(3))*u, 3u + 2*sqrt(3)*u) -- ((5 + sqrt(3))*u, 0) dashed evenly;
+
+      % Axes
+      drawarrow (-u,0)--(8u,0);
+      drawarrow (0,-u)--(0,4u);
+      label.rt("$x$", (8u,0));
+      label.top("$y$", (0,4u));
+      draw(3u, -0.1*u) -- (3u, 0.1*u);
+      draw(4u, -0.1*u) -- (4u, 0.1*u);
+      draw(5u, -0.1*u) -- (5u, 0.1*u);
+      draw((5 + sqrt(3))*u, -0.1*u) -- ((5 + sqrt(3))*u, 0.1*u);
+      label.bot("$3$", (3u, -0.1*u));
+      label.bot("$4$", (4u, -0.1*u));
+      label.bot("$5$", (5u, -0.1*u));
+      label.bot("$(5 + \sqrt{3})$", ((5 + sqrt(3))*u, 0));
+    \stopMPcode
+  \stopplacefigure
+
+  Given that $|x^2 - 8x + 15| = 2x - 7\Rightarrow x^2 - 8x + 15 = 2x - 7$ or $x^2 - 8x + 15 = 7 - 2x$
+
+  $\Rightarrow x = 5 \pm\sqrt{3}$ or $x = 4, 2$
+
+  We reject $x = 5 - \sqrt{3}$ and $x = 2$ as we can see from diagram that the line $2x - 7 = 0$ does not
+  cut $|x^2 - 8x + 15|$ at those points.
+  %408
+\item Putting $\alpha = -1$ gives $-1 - b + c = 0 \Rightarrow c - b = 1$
+
+  Also, $\alpha\beta\gamma = -c \Rightarrow -1 = -c \Rightarrow c = 1\Rightarrow b = 0$
+
+  So the equation is reduced to $x^3 + 1 = 0$ and other roots are $\omega, \omega^2$.
+
+  Thus, $b^3 + 2c^3 - 3\alpha^3- 6\beta^3 -8\gamma^3 = 19$.
+  %409
+\item Given $x^2 - 12x +[x] + 31 = 0\Rightarrow \{x\} = x^2 - 11x + 31\Rightarrow 0\leq x^2 - 11x + 31\leq
+  1$
+
+  Consider $x^2 - 11x + 31 < 0\Rightarrow x\in(5, 6)$ $[x] = 5\Rightarrow x^2 - 12x + 36 = 0 \Rightarrow x =
+  6$ but $x\in(5, 6)\Rightarrow x = \phi$
+
+  If $x\geq -2$ then $x^2 - 5x - 14 = 0 \Rightarrow x = 7, -2$
+
+  If $x\leq -2$ then $x^2 + 5x + 6 = 0 \Rightarrow x = -3, -2$
+
+  So $m = 0, n = 3\Rightarrow m^2 + mn + n^2 = 9$.
+  %410
+\item $-6 < n^2 - 10n + 19 < 6$. First we consider $n^2 - 10n + 25 > 0 \Rightarrow (n - 5)^2 > 0\Rightarrow
+  n\in\mathbb{Z} - \left\{5\right\}$
+
+  Also, $n^2 - 10n + 13 < 0 \Rightarrow n\in\left(5\pm2\sqrt{3}\right)\Rightarrow n\in\left\{2, 3, 4, 5, 6,
+  7, 8\right\}$
+
+  Thusm $n\in{2, 3, 4, 6, 7, 8}$. So number of elements in the set is $6$.
+  %411
+\item Given that $\log_{\left(x + \frac{7}{2}\right)}\left(\frac{x - 7}{2x - 3}\right)^2\geq 0$
+
+  $\Rightarrow x + \frac{7}{2}\geq 0 \Rightarrow x > -\frac{7}{2}$ and $x + \frac{7}{2}\neq 1 \Rightarrow
+  x\neq -\frac{5}{2}$
+
+  And $\frac{x - 7}{2x - 3}\neq 0$ and $2x - 3\neq 0$
+
+  $\Rightarrow x\neq 7$ and $x\neq \frac{3}{2}$. Thus, $x\in\left(-\frac{7}{2}, \infty\right)
+  - \left\{-\frac{5}{2}, \frac{3}{2}, 7\right\}$
+
+  Now $\log_ab\geq 0$ if $a > 1$ and $b\geq 1$
+
+  {\bf Case I:} $x + \frac{7}{2} > 1$ and $\left(\frac{x - 7}{2x - 3}\right)^2\geq 1$
+
+  $\Rightarrow x > -\frac{5}{2}$ and $(2x - 3)^2 - (x - 7)^2 < 0 \Rightarrow
+  x\in\left[-4, \frac{10}{3}\right]$
+
+  $\Rightarrow x\in\left(-\frac{5}{2}, \frac{10}{3}\right]$
+
+  {\bf Case II:} $0 < x + \frac{7}{2}  < 1; \left(\frac{x - 7}{2x - 3}\right)^2\leq 1$
+
+  $\Rightarrow x\in\left(-\infty, -4\right)\cup \left(\frac{10}{3}, \infty\right)$
+
+  Combining all results we have integral solutions as $\left\{-2, -1, 0, 1, 2, 3\right\}$.
+
+  Thus, we have total six soolutions.
+  %412
+\item Let $e^{2x} = t$ then the equation becomes $t^4 - t^3 -3t^2 - t + 1 = 0$
+
+  $\Rightarrow t^2 - t + 3 - \frac{1}{t} + \frac{1}{t^2} = 0 \Rightarrow \left(t  + \frac{1}{t}\right)^2
+  - \left(t + \frac{1}{t}\right) - 5 = 0$
+
+  $\Rightarrow t + \frac{1}{t} = \frac{1 + \sqrt{21}}{2}$ (we take only positive value because $e^{2x} > 0$)
+
+  $\Rightarrow D > 0$ so we have two values for $t$, where the curve cuts $x-$axis.
+  %413
+\item Given equation is $x^2 + \sqrt{6}x + 3 = 0 \Rightarrow x = \frac{-\sqrt{6}\pm\sqrt{-6}}{2}
+  = \sqrt{3}e^{\pm3\pi i/4}$
+
+  $\Rightarrow \frac{\alpha^{23} + \beta^{23} + \alpha^{14} + \beta^{14}}{\alpha^{15} + \beta^{15}
+    + \alpha^{10} + \beta^{10}} = \frac{\left(\sqrt{3}\right)^{23}\left(2\cos\frac{69\pi}{4}\right)
+    + \left(\sqrt{3}\right)^{15}\left(2\cos\frac{42\pi}{4}\right)}{\left(\sqrt{3}\right)^{15}\left(2\cos\frac{45\pi}{4}\right)
+    + \left(\sqrt{3}\right)^{10}\left(2\cos\frac{30\pi}{4}\right)}$
+
+  $= \left(\sqrt{3}\right)^8 = 81$.
+  %414
+\item Given that $x^2 - \sqrt{2}x + 2 = 0 \Rightarrow x = \alpha, \beta = -\sqrt{2}\omega, -\sqrt{2}\omega^2$
+
+  $\alpha^{14} + \beta^{14} = 2^7\left(\omega^{14} + \omega{28}\right) = -128$.
+  %415
+\item {\bf Case I:} $x\in[-\infty, -2)\Rightarrow -x^2 + 5x + 16 = 0\Rightarrow x = \frac{5 - \sqrt{89}}{2}$
+  we reject $x = \frac{5 + \sqrt{89}}{2}$ as it does not fall in range
+
+  {\bf Case II:} $x\in[-2, -0)\Rightarrow -x^2 - 5x - 4 = 0\Rightarrow x = -1, -4\Rightarrow x = -1$
+
+  {\bf Case III:} $x\in[0, \infty]\Rightarrow x^2 - 5x - 4 = 0\Rightarrow x = \frac{5 + \sqrt{41}}{2}$.
+  %416
+\item Given that $3\left(x^2 + \frac{1}{x^2}\right) - 2\left(x + \frac{1}{x}\right) + 5  = 0$
+
+  $\Rightarrow 3\left[\left(x + \frac{1}{x}\right)^2 - 2\right] - 2\left(x + \frac{1}{x}\right) + 5 = 0$
+
+  Let $x + \frac{1}{x} = t$, then the equation becomes
+
+  $3t^2 - 2t - 1 = 0 \Rightarrow t = 1, -\frac{1}{3}$, which leads to no real solution.
+  %417
+\item Given that $\left(1 - \sqrt{3}i\right)^{200} = 2^{199}(p + iq)\Rightarrow
+  2^{200}\left(\cos\frac{\pi}{3} - i\sin\frac{\pi}{3}\right)^{200} = 2^{199}(p + iq)$
+
+  $\Rightarrow p = -1, q = -\sqrt{3}\Rightarrow p + q + q^2 = 2 - \sqrt{3}$ and $p - q + q^2 = 2 + \sqrt{3}$
+
+  Thus, equation whose roots are $p + q + q^2$ and $p - q + q^2$ is $x^2 - 4x + 1 = 0$.
+  %418
+\item we have $\log_2\left(9^{2\alpha - 4} + 13\right) - \log_2\left(\frac{5}{2}3^{2\alpha - 4} + 1\right) =
+  2$
+
+  $\Rightarrow \frac{9^{2\alpha - 4} + 13}{\frac{5}{2}3^{2\alpha - 4} + 1} = 4$
+
+  Let $3^{2\alpha - 4} = y\Rightarrow \frac{y^2 + 13}{\frac{5}{2}y + 1} = 4 \Rightarrow y^2 + 13 = 10y + 4$
+
+  $\Rightarrow y^2 - 10y + 9 = 0 \Rightarrow y = 1, 9\Rightarrow 2\alpha - 4 = 0, 2\Rightarrow \alpha
+  = 2, 3$
+
+  $\Rightarrow \displaystyle x^2 - 2\left(\sum_{\mstack \alpha\in S}\alpha\right)^2x
+  + \sum_{\mstack \alpha\in S}(\alpha + 1)^2\beta = 0$ becomes
+
+  $\Rightarrow x^2 - 50x + 25\beta = 0 \Rightarrow D \geq 0[\because x\in\mathbb{R}]\Rightarrow \beta\leq
+  25$
+
+  Hence, $\beta_{\max} = 25$.
+  %419
+\item $\alpha + \beta = -\sqrt[4]{60}$ and $\alpha\beta = a$. Given that $\alpha^4 + \beta^4 = -30$
+
+  $\Rightarrow \left[\left(\alpha + \beta\right)^2 - 2\alpha\beta\right]^2 - 2(\alpha\beta)^2 = -30$
+
+  $\Rightarrow 60 + 4a^2- 4a\sqrt{60} - 2a^2 = -30\Rightarrow 2a^2 - 4\sqrt{60}a + 90 = 0$
+
+  Porduct of roots i.e. values of $a$ is $45$.
+  %420
+\item According to question n$\alpha + \beta = \frac{31}{14}, \alpha\beta = \frac{3\lambda}{14}, \alpha
+  + \gamma = \frac{53}{35}, \alpha\gamma = \frac{4\lambda}{35}$
+
+  $\Rightarrow \frac{\beta}{\gamma} = \frac{15}{8}$ and $\beta - \gamma = \frac{7}{10}$
+
+  $\Rightarrow \gamma = \frac{4}{5}, \beta = \frac{3}{2}, \alpha = \frac{5}{7}, \lambda = 5$
+
+  Now it is trivial to find the required equation which is $49x^2 - 245x + 250 = 0$.
+  %421
+\item Given equation is $x\left(x^6 + 3x^4 - 13x^2 - 15\right) = 0$. Clearly, $x = 0$ is a root. Putting
+  $x^2 = t$ transforms the equation to
+
+  $t^3 + 3t^2 - 13t - 15 = 0 \Rightarrow (t - 3)(t^2 + 6t + 5) = 0 \Rightarrow x = \pm\sqrt{3}, \pm
+  i, \pm\sqrt{5}i$
+
+  Clearly, $\alpha_7 = 0, \alpha_1,\alpha_2 = \pm i, \alpha_3,\alpha_4 = \pm\sqrt{3}$ and
+  $\alpha_5, \alpha_6 = \pm\sqrt{5}i$
+
+  Thus, $\alpha_1\alpha_2 - \alpha_3\alpha_4 + \alpha_5\alpha_6 = 1 - (-3) + 5 = 9$.
+  %422
+\item Given equation can be written as $\sqrt{(x - 1)(x - 3)} + \sqrt{(x - 3)(x + 3)} = \sqrt{(x - 3)(4x -
+  2)}$
+
+  Thus, $x = 3$ is a root.
+
+  Now $\sqrt{x - 1} + \sqrt{x + 3} = \sqrt{4x - 2}$, squaring, $2\sqrt{(x - 1)(x + 3)} = 2x - 4$
+
+  $\Rightarrow x^2 + 2x - 3 = x^2 - 4x + 4 \Rightarrow x = \frac{7}{6}$(rejected, it has come due to
+  squaring).
+  %423
+\item Let $e^x = y$, then the equation can be written as
+
+  $y^4 + 8y^3 + 13y^2 - 8y + 1 = 0$. Since $y\neq 0$, we can divide the equation by $y^2$ to obtain
+
+  $y^2 + \frac{1}{y^2} + 8\left(y - \frac{1}{y}\right) + 13 = 0$
+
+  $\Rightarrow \left(y - \frac{1}{y}\right)^2 + 2 + 8\left(y - \frac{1}{y}\right) + 13 = 0$
+
+  Again let $y - \frac{1}{y} = z$, then
+
+  $z^2 + 8z + 15 = 0 \Rightarrow z = -3, -5\Rightarrow y = \frac{\sqrt{13} - 3}{2}, \frac{\sqrt{29} - 5}{2}$
+
+  $x = \log_e\left(\frac{\sqrt{13} - 3}{2}\right), \log_e\left(\frac{\sqrt{29} - 5}{2}\right)$.
+  %424
+\item $|2a - 1| = [a] + 2a$
+
+  {\bf Case I:} $a > \frac{1}{2}\Rightarrow 2a - 1 = [a] + 2a \Rightarrow [a] = -1$(rejected)
+
+  {\bf Case II:} $a < \frac{1}{2}\Rightarrow -2a + 1 = [a] + 2a$
+
+  Let $a = I + f\Rightarrow I= 0, f= \frac{1}{4}\Rightarrow a = \frac{1}{4}$
+
+  $\Rightarrow \displaystyle\sum_{\mstack a\in S}a = \frac{1}{4}$.
+  %425
+\item {\bf Case I:} $x^2 + 2x - 5x - 5 - 1= 0 \Rightarrow x^2 - 3x - 6 = 0$
+
+  $\Rightarrow x = \frac{3\pm\sqrt{33}}{2}$, so we have one positive root from this.
+
+  {\bf Case II:} $-1\leq x < 0\Rightarrow x^2 + 7x + 6 = 0 \Rightarrow x = -1, -6$(rejected)
+
+  {\bf Case III:} $-2\leq x < -1\Rightarrow x^2 - 3x - 4 = 0$, we have no root in range.
+
+  {\bf Case IV:} $x < -2\Rightarrow x^2 + 7x + 4 = 0 \Rightarrow x = \frac{-7 - \sqrt{33}}{2}$, the other
+  root is rejected as it is outside the range.
+
+  Thus, we have a total of $3$ real roots.
+  %426
+\item Let $y = \sqrt{8x - x^2 - 12}\Rightarrow y^2 = -(x - 4)^2 + 16 - 12\Rightarrow (x - 4)^2 + y^2 = 4$
+
+  We see that $x^2 - 8x + 12 = (x - 6)(x - 2)$. The following diagram depicts the problem.
+
+  \startplacefigure[location=force]
+    \startMPcode
+      numeric u;
+      u := 0.6cm;
+
+      path c;
+      c = fullcircle scaled(4u) shifted(4u, 0) cutbefore(6u, 0) cutafter (2u, 0);
+      draw c;
+      draw (7u, 4u) -- (4u, 0);
+      drawdblarrow(-u, 0) -- (7u, 0);
+      drawdblarrow(0, -u) -- (0, 4u);
+
+      label.rt("$x$", (7u, 0));
+      label.top("$y$", (0, 4u));
+      label.bot("$(2, 0)$", (2u, 0));
+      label.bot("$(4, 0)$", (4u, 0));
+      label.bot("$(6, 0)$", (6u, 0));
+      label.top("$(7, 4)$", (7u, 4u));
+
+      drawdot(2u, 0) withpen pencircle scaled 2pt;
+      drawdot(4u, 0) withpen pencircle scaled 2pt;
+      drawdot(6u, 0) withpen pencircle scaled 2pt;
+      drawdot(7u, 6u) withpen pencircle scaled 2pt;
+    \stopMPcode
+  \stopplacefigure
+
+  Thus, $m = \left(\sqrt{(7 - 4)^2 + (4 - 0)^2} - 2\right)^2 = 9, M = (7 - 2)^2 + (4 - 0)^2 = 41$
+
+  $M^2 - m^2 = 1600$.
+  %427
+\item {\bf Case I:} $x\geq -5\Rightarrow x^2 + 7x + 12 = 0\Rightarrow x = 3, -4$
+
+  {\bf Case II:} $-7 < x < -5\Rightarrow x^2 + 3x - 12 = 0\Rightarrow x = \frac{-3 - \sqrt{57}}{2}$(positive
+  root is not in range)
+
+  {\bf Case III:} $x\leq -7\Rightarrow x^2 + 7x + 16 = 0 \Rightarrow D < 0$(roots are not real)
+
+  Thus, we have three solutions.
+  %428
+\item $\frac{U_{10} + \sqrt{12}U_9}{2U_8} = \frac{\alpha^{10} + \beta^{10} + \sqrt{2}\left(\alpha^9
+  + \beta^9\right)}{2\left(\alpha^8 + \beta^8\right)}$
+
+  $= \frac{\alpha^8\left(\alpha^2 + \sqrt{2}\alpha\right) + \beta^8\left(\beta^2
+  + \sqrt{2}\beta\right)}{2\left(\alpha^8 + \beta^8\right)}$
+
+  $= \frac{8\alpha^8 + 8\beta^8}{2\left(\alpha^8 + \beta^8\right)} = 4$.
 \stopitemize
