@@ -1,4 +1,4 @@
-4% -*- mode: context; -*-
+% -*- mode: context; -*-
 \chapter{Miscellaneous Problems}
 \startitemize[n, 1*broad]
 \item Let the numbers be $a$ and $b$ and harmonic means are $h_1$ and $h_1$. Let $d$ be the c.d.\ of the
@@ -5120,4 +5120,133 @@
 
   $\Rightarrow y = \frac{1}{3}, \frac{1}{2}, \frac{2}{3}, 3\Rightarrow x = 9, 4, \frac{9}{4}, \frac{1}{9}$,
   thus we have four solutions.
+  %452
+\item Total no.\  of five letter words made with ten letters without any restriction is $10^5$.
+
+  No.\ of words of five letters out of ten letters without repetition is $C_5^^{10} = 252$.
+
+  Therefore, required no.\ of words is $10^5 - 252 = 99748$.
+  %453
+\item Two women can occupy chairs from $1$ to $4$ in $P_2^^4$ ways. Three men can occupy from remaining $6$
+  chairs in $P_3^^6$ ways.
+
+  Thus, total no.\ of seating arrangements is $P_2^^4\times P_3^^6$.
+  %454
+\item There are four odd digits with two pairs of repeated numbers. Thus, no.\ of ways of filling odd
+  positions is $\frac{4!}{2!2!} = 6$
+
+  There are three even places which are to be filled by $2$ unique digits with one of them being repeated is
+  $\frac{3!}{2!} = 3$
+
+  Thus, total no.\ of numbers formed is $6\times3 = 18$.
+  %455
+\item In the word INDEPENDENCE we have $5$ vowels out of which one is \quote{I} and $4$ are \quote{E}. We
+  can treat these vowels as one letter but they can be arranged in $\frac{5!}{4!} = 5$ ways among
+  themselves.
+
+  For consonants we have $3$ \quote{n}, $2$ \quote{d} and $1$ \quote{p} and \quote{c}. We will also need to
+  include all vowels as one letter. Thus, we have a total of $8$, which can be arranged in $\frac{8!}{3!2!}
+  = 3360$ ways.
+
+  Thus, total no.\  of words that can be formed is $3360\times 5 = 16,800$.
+  %456
+\item Four out of five smaller animals can be arranged in $P_4^^5 = 120$ ways.
+
+  Remaining six cages can be filled in $6! = 720$ ways. Thus, total no.\ of ways is $120\times720 = 86,400$.
+  %457
+\item {\bf Case I:} When two points are on the given straight line. No.\ of ways of constructing a triangle
+  is $C_2^^7\times C_1^^5 = 105$
+
+  {\bf Case II:} When one point is on the given straight line. No.\ of ways of constructing a triangle is
+  $c_1^^7\times C_2^^5 = 70$
+
+  {\bf Case III:} When none of the points from straight line is taken. No.\ of ways of constructing a
+  triangle is $C_3^^{5} = 10$.
+
+  Thus, total no.\ of possible triangles are $185$.
+  %458
+\item Each bulb can be on or off. Thus, total no.\ of permutations is $2^{10} = 1024$. But in one of these
+  all the bulbs are off. So no.\ of ways of illuminating the room is $1023$.
+  %459
+\item {\bf Case I:} If first three digits are $432$, then unit's place can be filled in $4$ ways using one
+  of $2, 3, 4, 5$.
+
+  {\bf Case II:} If first two digits are $43$, then ten's placce can be filled with one of $3, 4, 5$ and
+  unit's place can be filled with any digits. Thus, total no.\ of numbers is $3\times 6 = 18$
+
+  {\bf Case III:} If first digits is $4$. Hundred's place can be filled by one of $4, 5$ and remaining two
+  places can be filled by any digit. Thus, total no.\ of numbers is $2\times6\times6 = 72$
+
+  {\bf Case IV:} If first digit is $5$. Remaining places can be filled by any digits in $6^3 = 216$ ways.
+
+  Thus, total no.\ of numbers is $4 + 18 + 72 + 216 = 310$.
+  %460
+\item Consider the matrix $M = \startbmatrix\NC a_1\NC a_2\NC a_3\NR\NC a_4\NC a_5\NC a_6\NR\NC a_7\NC a_8\NC
+  a_9\NR\stopbmatrix$ then
+
+  $M^T = \startbmatrix\NC a_1\NC a_4\NC a_7\NR\NC a_2\NC a_5\NC a_8\NR\NC a_3\NC a_6\NC a_9\NR\stopbmatrix$
+  then we consider only diagonal entries
+
+  $M^TM = \startbmatrix\NC a_1^2 + a_4^2 + a_7^2\NC \NC\NR\NC\NC
+  a_2^2 + a_5^2 + a_8^2\NC\NR\NC\NC\NC a_3^2 + a_6^2 + a_9^2\NR\stopbmatrix$
+
+  Thus, we see that sum of diagonal entries is $\displaystyle\sum a_i^2$.
+
+  Thus, we have two cases $\left\{2, 1, 0, 0, 0, 0, 0, 0, 0\right\}$ and $\left\{1, 1, 1, 1, 1, 0, 0, 0,
+  0\right\}$.
+
+  Total permutations are $\frac{9!}{7!} + \frac{9!}{4!5!} = 198$.
+  %461
+\item {\bf Case I:} When the number is of four digits. Thousand's place can be filled by $6, 7, 8$ i.e. in
+  $3$ ways. Remaining $3$ digits can be filled by remaining $4$ digits in $P_3^^4 = 24$ ways.
+
+  Thus, total no.\ of integers in this case is $72$.
+
+  {\bf Case II:} When the integer is of five digits. Such numbers can be made in $P_5^^5 = 120$ ways.
+
+  $\therefore $ Total no.\ of integers is $192$.
+  %462
+\item {\bf Case I:} Five ones, one two and one three. Total no.\ of such integers is $\frac{7!}{5!} = 42$
+
+  {\bf Case II:} Four ones and three twos. Total no.\ of such integers is $\frac{7!}{4!3!} = 35$
+
+  $\therefore $ Total no.\ of seven-digit integers is $77$.
+  %463
+\item Consider the no.\ as $OEOEOEOEO$ where $O$ denotes odd positions and $E$ denotes even places. We have
+  four odd digits $33$ and $55$ and also four even positions.
+
+  The odd digits can be placed at even positions in $\frac{4!}{2!2!} = 6$ ways.
+
+  Five remaining digits can be put at odd positions in $\frac{5!}{2!3!} = 10$ ways.
+
+  Thus, total no.\ of required nine-digit integers is $10\times 6 = 60$.
+  %464
+\item Distinct $n$-digit numbers that can be formed using $3$ digits is $3^n\geq 900 \Rightarrow n = 7$.
+  %465
+\item Let there be $n$ newspapaers. Then $60n = 300\times 5 \Rightarrow n = 25$.
+  %466
+\item Since the number has to be divisible by $3$ the sum of digits must be divisible by $3$.
+
+  {\bf Case I:} When the number is made by $0, 1, 2, 4, 5$.
+
+  Total no.\ of such numbers is $4.4! = 96$.
+
+  {\bf Case II:} When the number is made by $1, 2, 3, 4, 5$.
+
+  Total no.\ of such numbers is $5! = 120$.
+
+  Thus, total no.\ of required five-digit numbers is $216$.
+  %467
+\item Four guests who want to be seated on a particular side can be seated in $P_4^^9$ ways and three other
+  can be seated on the other side in $P_3^^9$ ways.
+
+  Remaining $11$ guests can be seated in $11!$ ways.
+
+  Thus, total no.\ of seating arrangements is $P_4^^9\times P_3^^9\times11!$.
+  %468
+\item Questions can be answered by picking $3, 1, 1$ or $2, 2, 1$ questions from each paper. Now each
+  combination can be rotated in $3$ ways.
+
+  Thus, total no.\ of ways is $3\left(C_3^^5\times C_1^^5\times C_1^^5\right) + 3\left(C_2^^5\times
+  C_2^^5\times C_1^^5\right) = 2250$.
 \stopitemize
