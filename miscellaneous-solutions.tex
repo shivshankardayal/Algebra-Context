@@ -5249,4 +5249,358 @@
 
   Thus, total no.\ of ways is $3\left(C_3^^5\times C_1^^5\times C_1^^5\right) + 3\left(C_2^^5\times
   C_2^^5\times C_1^^5\right) = 2250$.
+  %469
+\item We can choose $10$ objects out of $31$ in following way:
+
+  Number of ways for $0$ identical $+ 10$ distinct is $1\times C_{10}^{21}$
+
+  Number of ways for $1$ identical $+ 9$ distinct is $1\times C_{9}^{21}$
+
+  $\ldots$
+
+  Number of ways for $10$ identical $+ 0$ distinct is $1\times C_{0}^{21}$
+
+  Let $\Rightarrow C_0^^{21} + C_1^^{21} + \cdots + C_{10}^^{21} = x$
+
+  We know that $C_r^^n = C_{n - r}^^n \Rightarrow C_{11}^^{21} + C_{12}^^{21} + \cdots + C_{21}^^{21} = x$
+
+  Adding $2x = C_0^^{21} + C_1^^{21} + \cdots + C_{21}^^{21} = 2^{21}\Rightarrow x = 2^{20}$.
+  %470
+\item Total no.\ of beams is total no.\ of diagonals of $20$-side polygon.
+
+  Total no.\ of diagonals is $C_2^^{20} - 20 = 170$, which is the number of beams.
+  %471
+\item Let $n$ be the no.\ of balls on each side of the equilateral triangle. Then according to question
+
+  $\frac{n(n + 1)}{2} + 99 = (n - 2)^2 \Rightarrow n = 19$.
+
+  Thus, total no.\ of balls used to make the equilateral triangle is $\frac{19\times20}{2} = 190$.
+  %472
+\item No.\ of games played by men among themselves is $2\times C_2^^m$
+
+  No.\ of games played between men and women is $2\times C_1^^m\times C_1^^2$
+
+  According to the condition given in the question $2\times C_2^^m = 2\times C_1^^m \times C_1^^2 + 84$
+
+  $\Rightarrow m(m - 1) = 4m + 84 \Rightarrow m^2 - 5m - 84 = 0 \Rightarrow (m - 12)(m + 7) = 0$
+
+  $m = 12$. We reject $m = -7$ as no.\ of men players cannot be negative.
+  %473
+\item Given $\displaystyle\sum_{r = 0}^{25}C_r^^{50}.C_{25 - r}^^{50 - r} = K.C_{25}^^{50}$
+
+  $\Rightarrow \displaystyle\sum_{r = 0}^{25}\left(\frac{50!}{r!(50 - r)!}.\frac{(50 - r)!}{(25 -
+  r)!25!}\right) = K.C_{25}^^{50}$
+
+  $\Rightarrow \displaystyle\sum_{r = 0}^{25}\left(\frac{50!}{25!25!}.\frac{25!}{r!(25 - r!)}\right) =
+  K.C_{25}^^{50}$
+
+  $\Rightarrow C_{25}^^{\50}\displaystyle\sum_{r = 0}^{25}C_{r}^^{25} = K.C_{25}^^{50} \Rightarrow K
+  = \sum_{r = 9}^^{25}C_r^^{25}$
+
+  $K = 2^{25}$.
+  %474
+\item Given $\displaystyle\sum_{i = 1}^{20}\left(\frac{C_{i - 1}^^{20}}{C_i^^{20} + C_{i -
+    1}^^{20}}\right)^3 = \frac{k}{21}\Rightarrow \sum_{i = 1}^{20}\left(\frac{C_{i -
+    1}^^{20}}{C_i^^{21}}\right)^3$
+
+  $\Rightarrow \displaystyle\sum_{i = 1}^{20}\left(\frac{C_{i - 1}^^{20}}{\frac{21}{i}C_{i -
+    1}^^{20}}\right)^3 = \frac{k}{21}$
+
+  $\Rightarrow \frac{1}{21^3}\displaystyle\sum_{i = 1}^{20}i^3 = \frac{k}{21} =
+  \frac{1}{21^3}\left[\frac{n(n + 1)}{2}\right]^2$
+
+  $\Rightarrow k = \frac{21}{21^3}\left(\frac{21\times20}{2}\right)^2 = 100$.
+  %475
+\item Man can invite $0$ men and $3$ ladies or $1$ man and $2$ ladies or $2$ men and $1$ lady or all $3$ as
+  men. Similarly, the wife can invite $0$ men and $3$ ladies or $1$ man and $2$ ladies or $2$ men and $1$
+  lady or all $3$ as men in a complementary manner.
+
+  Thus, total no.\ of ways $= C_3^^3\times C_0^^4\times C_0^^4\times C_3^^3 + C_2^^3\times C_1^^4\times
+  C_1^^4\times C_2^^3 + C_1^^3\times C_2^^4\times C_2^^4\times C_1^^3 + C_0^^3\times C_3^^4\times
+  C_3^^4\times C_0^^3$
+
+  $= 1 + 144 + 324 + 16 = 485$.
+  %476
+\item There are $5$ odd digits in $S$ and $4$ even digits. $N_1$ will have $1$ odd digit and $4$ even
+  digits.
+
+  Thus, no.\ of ways to form $N_1 = C_1^^5\times C_4^^4 = 5$
+
+  Similarly, no.\ of ways to form $N_2 = C_2^^5\times C_3^^4 = 40$
+
+  Similarly, no.\ of ways to form $N_3 = C_3^^5\times C_2^^4 = 60$
+
+  Similarly, no.\ of ways to form $N_4 = C_4^^5\times C_1^^4 = 20$
+
+  Similarly, no.\ of ways to form $N_5 = C_5^^5\times C_0^^4 = 1$
+
+  Thus, total no.\ of ways is $126$.
+  %477
+\item There are two ways to form the team. Either with all $4$ members as girls or $1$ boy and $3$ girls as
+  we can have at most $1$ boy in the team.
+
+  Thus, no.\ of ways of selecting members is $C_4^^6 + C_3^^6\times C_1^^4 = 95$
+
+  The captain can be selected from $4$ team members in $C_1^^4 = 4$ ways.
+
+  Thus, total no.\ of ways of forming the team is $95\times4 = 380$.
+  %478
+\item If there are $n$ vertices of a regular polygon then no.\ of triangles possible would be $T_n = C_3^^n
+  = \frac{n(n - 1)(n - 2)}{6}$
+
+  Given $T_{n + 1} - T_n = 10 \Rightarrow \frac{n(n - 1)}{6}[n + 1 - n + 2] = 10 \Rightarrow n^2 - n - 20 =
+  0\Rightarrow n = 5$ as $n$ cannot be negative.
+  %479
+\item We can pick $(p, q)$ to have factors or $r$ as $\left(1, r^2\right), \left(r, r^2\right), \left(r^2,
+  r^2\right), \left(r^2, r\right), \left(r^2, 1\right)$ i.e. $5$ ways.
+
+  Similarly, we can pick $s$ in $9$ ways and $t$ in $5$ ways.
+
+  Thus, total no.\  of ordered pairs are $5\times9\times 5 = 225$.
+  %480
+\item Since the persons are seated in a circular fashion we can distribute the hats in the combination of
+  $2R + 2B + 1G$ or $2R + 2G + 1B$ or $2B + 2G + 1R$ i.e. three wyas.
+
+  We can pick a person from $5$ in $5$ ways. Once we have picked person we can go either clockwise or
+  counter-clockwise.
+
+  Thus, total no.\ of ways are $3\times5\times 2 = 30$.
+  %481
+\item Adjacent points form the sides of an $n$-sided polygon. Thus, no.\ of blue lines is $n$. Red lines are
+  the diagonals of this polygon, which is given by $C_2^^n - n$.
+
+  According to the qeuestion $C_2^^n - n = n \Rightarrow \frac{n(n - 1)}{2} = 2n \Rightarrow n^2 - 5n = 0
+  \Rightarrow n = 5$.
+  %482
+\item The number of students who gave wrong answer to exactly one question $=$ No.\ of students who gave at
+  least one wrong answer - No.\ of students who gave at least two wrong answers $= a_1 - a_2$
+
+  Similarly, number of students who gave wrong answer to exactly one question $= a_2 - a_3$, and so on.
+
+  Total no.\ of wrong answers is $a_1 - a_2 + 2\left(a_2 - a_3\right) + 3\left(a_3 - a_4\right) + \cdots +
+  (k - 1)(a_{k - 1} - a_k) + k(a_k - 0)$(the last term is $0$ because no students gave more than $k$ wrong
+  answers)
+
+  $= a_1 + a_2 + a_3 + \cdots + a_k$.
+  %483
+\item The sum of given digits is $24$. Let the number be $abcdef$, where $a, b, c, d, e, f$ are one of the
+  given digits. Since the number has to be divisible by $11$ the sum of difference of digits at odd and even
+  places should be either $0$ or multiple of $11$.
+
+  Hence, possible case is $a + c + e = 12 = b + d + f$.
+
+  {\bf Case I:} Set $\left\{a, c, e\right\} = \left\{0, 5, 7\right\}$ and $\left\{b, d, f\right\}
+  = \left\{1, 2, 9\right\}$
+
+  So no.\ of possible six-digit numbers are $2\times2!\times 3! = 24$[$\because 0$ cannot be put at most
+    significant position]
+
+  {\bf Case II:} Set $\left\{a, c, e\right\} = \left\{1, 2, 9\right\}$ and $\left\{b, d, f\right\}
+  = \left\{0, 5, 7\right\}$
+
+  No.\ of possible six-digit numbers are $3!\times 3! = 36$
+
+  Thus, total no.\ of possible six-digit numbers is $60$.
+  %484
+\item We can have $6, 7$ or $8$ males for $m$, which will cause selection of $5, 4$ and $3$ females.
+
+  Thus, $m = C_6^^8\times C_5^^5 + C_7^^8\times C_4^^5  + C_8^^8\times C_3^^5 = 78$
+
+  Similarly, when at least $3$ females are chosen, will have the same no.\ of ways. Essentially $m$ and $n$
+  are same. Therefore, $m = n = 78$.
+  %485
+\item The no.\ of ways of choosing balls such that $n_21 < n_2 < n_3$ is same as selecting $3$ balls out of
+  $10$, which is $C_3^^{10}$.
+  %486
+\item Number of one-digit numbers which can be formed is $4$.
+
+  For two-digit numbers ten's place can be filled in $4$ ways($0$ cannot occupy most significant plance) and
+  unit's place in $5$ ways. Thus, number of two-digit numbers is $4\times5 = 20$.
+
+  For three-digit numbers hundred's place can be filled in $4$ ways and ten's and unit's place can be filled
+  in $5^2$ ways. Thus, number of three-digit numbers is $4\times 5^2 = 100$.
+
+  For four-digit numbers thousands's place can be filled in $2$ ways either with $7$or with $9$ and
+  hundred's, ten's and unit's place can be filled in $5^3$ ways. Thus, number of three-digit numbers is
+  $2\times 5^3 = 250$.
+
+  Thus, total no.\ of required numbers is $374$.
+  %487
+\item Let us call this boys $x$ and $y$. No.\ of ways in which $x$ is selected by $y$ is not is
+  $C_2^^5.C_2^^5 = 100$
+
+  Similarly, no.\ of ways in which $y$ is selected by $x$ is not is $100$
+
+  No.\ of ways in which neither is selected is $C_2^^5.C_2^^5 = 100$
+
+  Thus, total no.\ of ways is $300$.
+  %488
+\item No.\ of days when the engineer does not visit the factory is $11$.
+
+  To ensure no two visits are on consecutive days, the $4$ visited days must be placed in the gaps created
+  by the $11$ unvisited days. If there are $n$ unvisited days, there are $n + 1$ possible gaps where the
+  visited days can be placed. In this case, with $11$ unvisited days, there are $12$ gaps.
+
+  No.\ of ways of choosing $4$ gaps out of $12$ is $C_4^^{12} = 495$.
+  %489
+\item $x = 10!, y = C_1^^{10}\times C_8^^9\times \frac{10!}{2!} = 45\times10!$.
+  %490
+\item We can form the queue as $BGBGBGBGBG$ or $GBGBGBGBGB$. So we have arrangement like $-B-B-B-B-B-$,
+  where $-$ shows the vacant positions to be filled by girls.
+
+  Out of $5$ girls $4$ are together and $1$ is seprate, To select $2$ positions out of $6$ can be done in
+  $C_2^^6$ ways. $4$ girls can be selected out of $5$ in $C_4^^5$ ways.
+
+  $2$ groups of girls can be arranged in $2!$ ways. The group of $4$ girls and $5$ boys can be arranged in
+  $4!\times5!$ ways.
+
+  Thus, $m = C_2^^6\times C_4^^5\times 2\times 4!\times5!$
+
+  $n = 5!\times6!\Rightarrow \frac{m}{n} = 5$.
+  %491
+\item As $n_1\geq 1, n_2\geq 2, n_3\geq 3, n_4\geq 4, n_5\geq 5$, let $n_1 -1 = x_1\geq 0, n_2 - 2 = x_2\geq
+  0, n_3 - 3 = x_3\geq 0, n_4 - 4 = x_4\geq 0, n_5 - 5 = x_5\geq 0$
+
+  The given eqution becomes $x_1 + x_2 + x_3 + x_4 + x_5 = 5$
+
+  \setupTABLE[column][align=middle, width=1cm]
+  \midaligned{
+    \bTABLE[split=yes] % allow splitting over page boundaries
+    \bTR \bTD $x_1$ \eTD \bTD $x_2$\eTD \bTD $x_3$ \eTD \bTD $x_4$\eTD\bTD $x_5$\eTD\eTR
+    \bTR \bTD[width=1cm] $0$ \eTD \bTD $0$\eTD \bTD $0$ \eTD \bTD $0$\eTD\bTD $5$\eTD\eTR
+    \bTR \bTD $0$ \eTD \bTD $0$\eTD \bTD $0$ \eTD \bTD $1$\eTD\bTD $4$\eTD\eTR
+    \bTR \bTD $0$ \eTD \bTD $0$\eTD \bTD $0$ \eTD \bTD $2$\eTD\bTD $3$\eTD\eTR
+    \bTR \bTD $0$ \eTD \bTD $0$\eTD \bTD $1$ \eTD \bTD $1$\eTD\bTD $3$\eTD\eTR
+    \bTR \bTD $0$ \eTD \bTD $0$\eTD \bTD $1$ \eTD \bTD $2$\eTD\bTD $2$\eTD\eTR
+    \bTR \bTD $0$ \eTD \bTD $1$\eTD \bTD $1$ \eTD \bTD $1$\eTD\bTD $2$\eTD\eTR
+    \bTR \bTD $1$ \eTD \bTD $1$\eTD \bTD $1$ \eTD \bTD $1$\eTD\bTD $1$\eTD\eTR
+    \eTABLE
+  }
+
+  Thus, we see that there are $7$ possible arrangements.
+  %492
+\item The no.\ of solutions of $x_1 + x_2 + \cdots = x_k = n = $
+
+  Coefficient of $t^n$ in $\left(t + t^2 + t^3 + \cdots\right)\left(t^2 + t^3 + \cdots\right)\ldots\left(t^k
+  + t^{k + 1} + \cdots\right)$
+
+  $\Rightarrow 1 + 2 + \cdots + k = \frac{k(k + 1)}{2}= p$(let) and $1 + t + t^2 + \cdots = \frac{1}{1 - t}$
+
+  Thus, the number of required solutions $=$ Coefficient of $t^{n - p}$ in $\left(1 - t\right)^{-k}$
+
+  $= C_{n - p}^^{k + n - p - 1}$, where
+
+  $k + n - p - 1 = k + n - 1 - \frac{k(k + 1)}{2} = \frac{1}{2}(2n - k^2 + k - 2)$.
+  %493
+\item Let vertex on $x$-axis be $(a, 0)$ and on $y$-axis be $(0, b)$.
+
+  Now the area would be $\frac{1}{2}ab = 50 \Rightarrow ab = 100$. Given that $(a, b)$ are integers. So we
+  have following combinations $(1, 100), (2, 50), (4, 25), (5, 20), (10, 10), (20, 5), (25, 4), (50, 2),
+  (100, 1)$.
+
+  Now there will be four combinations as these can be negative and we can have hypotenuse in all four
+  quadrants. Thus, total no.\ of elements in set $S$ is $36$.
+  %494
+\item We can select $4$ novels out of $6$ in $C_4^^6 = 15$ ways. Also, number of ways of selecting $1$ from
+  $3$ dictionaries is $C_1^^3 = 3$.
+
+  Total number of arrangements of $4$ novels and $1$ dcitionary such that dictionary is always in the middle
+  is $15\times3\times 4! = 1080$.
+  %495
+\item If we distribute $n^2$ objects in $n$ group such that each group contains $n$ identical objects, then
+  number of arrangements is given by:
+
+  $C_n^^{n^2}.C_n^^{n^2 - n}\ldots C_n^^n = \frac{(n^2)!}{(n!)^n}$, which will always be an integer.
+  %496
+\item $240 = 2^4.3.5$, therefore, total no.\ of divisors is $5.2.2 = 20$.
+
+  Out of these $2, 6, 10$ and $30$ are of the form $4n + 2$.
+  %497
+\item This is a straight forward problem on which direct formula o derangements can be applied.
+
+  No.\ of ways is $4!\left(1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \frac{1}{4!}\right) = 9$.
+  %498
+\item If the word starts with \quote{A}, then we have $\frac{6!}{2!} = 360$ words. Similarly, if the word
+  starts with \quote{D}, \quote{I} and \quote{K} the no.\ of words would be $360$ for each of them.
+
+  No.\ of words starting with \quote{MAD}, \quote{MAI} or \quote{MAK} would be $\frac{4!}{2!} = 12$ each.
+
+  No.\ of words starting with \quote{MAND} or \quote{MANI} would be $3! = 6$ each.
+
+  No.\ of words starting with \quote{MANKD} is $2! = 2$. Finally, we have two more words \quote{MANKIDN} and
+  the last word would be \quote{MANKIND} itself.
+
+  Thus, position of the word would be $360\times 4 + 12\times 3 + 6\times 2 + 2 + 2 = 1492$.
+  %499
+\item Let the number be $100x + 10y + z$. As the number is odd $z$ can be $1, 3, 5, 7, 9$.
+
+  Possible sums of digits is $7, 14, 21$ because maximum sum could be $27$.
+
+  So $x + y$ can assume values of $2, 4, 6, 5, 7, 9, 11, 13, 12, 14, 16, 18$ for the sum to be divisible by
+  $7$.
+
+  If $x + y = 2$ then we have two solutions $(1, 1)$ and $(2, 0)$.
+
+  if $x + y = 4$ then we have four solutions $(1, 3), (3, 1), (2, 2)$ and $(4, 0)$.
+
+  Similarly, we can enumerate solutions for other values to find total as $63$.
+  %500
+\item If $0$ occurs twice then it cannot be at hundred's position, which can be filled in $C_1^^9$ ways,
+  making total no.\ of such number $9$.
+
+  If $0$ appears once then it can occupy either unit's place or ten's place, while the other number can be
+  picked in $C_1^^9 = 9$ ways. Thus, total no.\ of such numbers is $18$.
+
+  If $0$ is not included then we can pick two numbers in $C_1^^9\times C_1^^8$ ways and the digits can be
+  arranged in $\frac{3!}{2!} = 3$ ways. Thus, total no.\ of such numbers is $9\times8\times3 = 216$.
+
+  Thus, required answer is $9 + 18 + 216 = 243$.
+  %501
+\item $36 = 2^2.3^2$, thus we have following possibile combination of digits. $(1,1,1,4,9), (1,1,1,6,6),
+  (1,1,2,2,9), (1,1,3,3,4), (1,2,2,3,3), (1,1,2,3,6)$.
+
+  Thus, total no.\ of such numbers is $\times\frac{5!}{3!} + \frac{5!}{2!3!} + 3\times \frac{5!}{2!2!} +
+  \frac{5!}{2!} = 180$.
+  %502
+\item Since the numbers are between $1000$ and $3000$ we have two cases. First case is when thousand's place
+  is occupied by $1$
+
+  In this case, last two digits can be $24, 32, 36, 52, 56, 64$. Thus, no.\ of numbers is $3\times6 = 18$
+  because remaining $1$ position can be filled by $3$ remaining nummbers.
+
+  In the second case, thousand's place is occupied by $2$. The last two digits in this case can be $16, 36,
+  56, 64$. And hundred's place can be filled in $3$ ways like first case. Thus, no.\ of such numbers is
+  $3\times4 = 12$
+
+  Hence, we have a total of $30$ required numbers.
+  %503
+\item Total no.\ of possible groups is $C_3^^{10}\times C_3^^5 = 1200$
+
+  If we keep the two particular boys in the group toogether, then no.\ of possible groups is $C_1^^8\times
+  C_3^^5 = 80$
+
+  Thus, no.\ of groups when the two particular boys are not in the group together os $1120$.
+  %504
+\item $36 = 2^2.3^3$, so the number should be odd multiple of $2$ and does not have factor of $3$ and $9$.
+
+  Odd multiples of $2$ are $102, 106, 110, \ldots, 998$, which are $225$ in count.
+
+  No.\ of $3$ multiples are $102, 114, 126, \ldots, 990$, which are $75$ in count and also include the
+  multiple of $9$.
+
+  Thus, required answer is $225 - 75 = 150$.
+  %505
+\item If five cubes are places in a row then there are six places where blue cubes can be places. Two are at
+  the end and four are between the red cubes.
+
+  Let $x_1, x_2, x_3, x_4, x_5, x_6$ be the number of blue cubes placed in these positions. Then according
+  to question
+
+  $x_1 + x_2 + x_3 + x_4 + x_5 + x_6 = 11$, where $x_1, x_6\geq 0$ and $x_2, x_3, x_4, x_5\geq 2$.
+
+  Let $x_2 = t_1 + 2, x_3 = t_2 + 2, x_4 = t_3 + 2$ and $x_5 = t_4 + 2$, then the new equation becomes
+
+  $x_1 + t_1 + t_2 + t_3 + t_4 + x_6 = 3$, where each term is greater than equal to zero.
+
+  Thus, possible combinations are $C_3^^{6 + 3 - 1} = C_3^^8 = 56$.
 \stopitemize
