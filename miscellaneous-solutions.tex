@@ -5146,7 +5146,7 @@
 
   For consonants we have $3$ \quote{n}, $2$ \quote{d} and $1$ \quote{p} and \quote{c}. We will also need to
   include all vowels as one letter. Thus, we have a total of $8$, which can be arranged in $\frac{8!}{3!2!}
-  = 3360$ ways.
+>  = 3360$ ways.
 
   Thus, total no.\  of words that can be formed is $3360\times 5 = 16,800$.
   %456
@@ -5603,4 +5603,227 @@
   $x_1 + t_1 + t_2 + t_3 + t_4 + x_6 = 3$, where each term is greater than equal to zero.
 
   Thus, possible combinations are $C_3^^{6 + 3 - 1} = C_3^^8 = 56$.
+  %506
+\item Total no.\ of password is $10^6 + 10^7 + 10^8$ for $6, 7, 8$ characters. No.\ of passwords when they
+  do not have any character from $\left\{1, 2, 3, 4, 5\right\}$ is $5^6 + 5^7 + 5^8$.
+
+  Thus, total no.\ of required passwords is $10^6 - 5^6 + 10^7 - 5^7 + 10^8 - 5^8 = 10^6\times 111 -
+  5^6 \times 31$
+
+  $= 5^6\times 7073$.
+  %507
+\item Required answer is coefficient of $x^{30}$ in $\left(1 + x + x^2 + \cdots + x^{30}\right)^2\left(x^4
+  + x^5 + x^6 + x^7\right)\left(x^2 + x^3 + x^4 + x^5 + x^6\right)$
+
+  $= x^6\left(\frac{1 - x^{31}}{1 - x}\right)^2\left(1 + x + x^2 + x^3\right)\left(1 + x + x^2 + x^3 +
+  x^4\right)$
+
+  $= x^6\left(1 - x^{31}\right)^2\left(1 - x^4\right)\left(1 - x^5\right)(1 - x)^{-4}$
+
+  $= x^6\left(1 - x^4 - x^5 + x^9\right)(1 - x)^{-4} = C_3^^{27} - C_3^^{23} - C_3^^{22} + C_3^^{18} = 430$.
+  %508
+\item $\displaystyle\sum_{k = 1}^{10}k^2\left(C_k^^{10}\right)^2 = \sum_{k =
+  1}^{10}\left(k.C_k^^{10}\right)^2 = \sum_{k= 1}^{10}\left(10.C_{k -1}^^9\right)^2$
+
+  $= 100\displaystyle\sum_{k = 1}^{10}C_{k - 1}^^9.C_{10 - k}^^9 = 100\sum_{k = 1}^{10}C_9^^{18} = 4862000$.
+  %509
+\item We pick a set of $b_1b_2b_3$ as consecutive integers for which we have $98$ sets and then fourth
+  element can be chosen in $97$ ways from remaining integers. Let it be $n(A)$.
+
+  This is also true for $b_2b_3b_4$; we call it $n(B)$. For numbers where we have $b_1b_2b_3b_4$ we have
+  $97$ sets; it would be $n(A\cap B)$.
+
+  Thus, required answer is $n(A\cup B) = n(A) + n(B) - n(A\cap B) = 18915$.
+  %510
+\item Let the number be $abcd$, where $abc$ are to be divisble by $d$.
+
+  If $d = 1$, we can choose $a$ in $9$ ways, and $bc$ in $10$ ways each. Thus, total no.\ of these numbers
+  is $9\times10\times10 = 900$.
+
+  If $d = 2$, we can put $a\in\left\{2, 4, 6, 8\right\}$ i.e. $4$ ways and $bc$ in $5$ ways each. Thus,
+  total no.\ of these numbers is $4\times5\times5 = 100$.
+
+  Similarly, proceeding for all digits we find the final answer to be $1086$.
+  %511
+\item If we fix first three digits to $202$ then unit't place can be filled in $5$ ways using $2, 3, 4, ,6,
+  7$.
+
+  If we fix first two digits to $20$ then remaining two places can be filled using $(3, 4, 6, 7)$ and any of
+  the given digits.
+
+  Similarly if we fix first digit to $2$, hundred's place can be filled using $(2, 3, 4, 6, 7)$ and remainng
+  two places in $6\times 6$ ways.
+
+  If thousand's place is occupied by $3$ we can fill remaining places in $6\times6\times6$ ways.
+
+  If thousand's place is occupied by $4$, we can fill hundred's place using $0, 2, 3, 4$ and remaining
+  places in $6\times6$ ways.
+
+  Thus, total no.\ of such numbers would be $5 + 24 + 180 + 216 + 144 = 569$.
+  %512
+\item {\bf Case I:} When one bad gives four balls. This bag can be selected in $C_1^^4$ ways. Four balls can
+  be chosen in two ways. A combination of $3$ red and $1$ blue ball or $2$ of each i.e. $C_3^^3\times C_1^^2
+  + C_2^^3\times C_2^^2$
+
+  From $3$ bags one ball of each color can be chosne in $\left(C_1^^3 + C_1^^2\right)^3$ ways.
+
+  Thus, total no.\ of ways is $C_1^^4\left(C_3^^3\times C_1^^2 + C_2^^3\times C_2^^2\right)\left(C_1^^3\times
+  C_1^^2\right)^3$
+
+  {\bf Caase II:} We pick $3$ balls from two bags and $2$ from two bags. Ways of choosing $2$ bags out of
+  $4$ is $C_2^^4$.
+
+  We can pick $3$ balls in two ways. A combination of $2$ balls of one color and $1$ one ball of other color
+  or vice-versa. From other two bags we pick $2$ balls like case I.
+
+  Thus, total no.\ of ways in this case is $C_2^^4\left(C_2^^3\times C_1^^2 + C_1^^3\times
+  C_2^^2\right)^2\left(C_1^^3\times C_1^^2\right)^3$
+
+  Final sum would be $21816$.
+  %513
+\item The $3$ digit numbers are from $100$ to $999$ i.e. $900$ in count.
+
+  Divisible by $2$ are $450$. Divisible by $3$ are $300$. Divisible by $7$ are $128$. Divisible by both $2$
+  and $7$ i.e. by $14$ are $64$. Divisible by $3$ and $7$ i.e. $21$ are $43$. Divisible by $2$ and $3$
+  i.e. $6$ are $150$. Divisible by $2, 3$ and $7$ i.e. $42$ are $21$.
+
+  Thus, required no.\ is $450 + 300 - 150 - 64 - 43 + 21 = 514$.
+  %514
+\item Since the numbers has to be divisible by $6$ so the sum of digits should be divisible by $3$ and
+  unit's place is occupied by an even number for which we have only $4$.
+
+  {\bf Case I:} The number is $444444$ which is unique and count is $1$.
+
+  {\bf Case II:} Number is formed using $4, 4, 4, 4, 5, 9$ i.e. $\frac{5!}{3!} = 20$ because unit's place is
+  fixed for $4$.
+
+  {\bf Case III:} Number is formed using $4, 4, 5, 5, 5$ i.e $\frac{5!}{2!3!} = 10$
+
+  {\bf Case IV:} Number is formed using $4, 4, 9, 9, 9$ i.e $\frac{5!}{2!3!} = 10$
+
+  {\bf Case V:} Number is formed using $4, 5, 5, 9, 9$ i.e $\frac{5!}{2!2!} = 30$
+
+  {\bf Case VI:} Number is formed using $5, 9, 9, 9, 9$ i.e $\frac{5!}{4!} = 5$
+
+  {\bf Case VII:} Number is formed using $5, 5, 5, 5, 9$ i.e $\frac{5!}{4!} = 5$
+
+  Thus, required answer is $81$.
+  %515
+\item Required no.\ of ways $=$ Total no.\ of ways $-$ (one child receives no orange $+$ two children
+  receive no orange)
+
+  $= 3^{20} - \left(C_1^^3(2^{20} - 2) + C_2^^3.1^{20}\right) = 3483638676$.
+  %516
+\item No.\ of words beginning with $B, C, I, L$ is $4\times5! = 480$
+
+  No. of words beginning with $PB, PC, PI, PL$ is $4\times 4! = 96$
+
+  No. of words begnning with $PUBC, PUBI$ is $2\times2! = 4$
+
+  Then, we will have $PUBLC$ followed by $PIBLIC$ i.e. $2$
+
+  Thus, rank of the word \quote{PUBLIC} would be $582$.
+  %517
+\item $7$ boys can be seated in $6!$ ways around a round table and there will be $7$ seats between them. We
+  can pick $5$ seats for the girls in $C_5^^7$ ways and arrange the girls in $5!$ ways.
+
+  Thus, total no.\ of possible arrangements are $6!\times C_5^^7\times 5! = 126\times(5!)^2$.
+  %518
+\item {\it Legendre's Formula}: The exponent of prime $p$ in $n!$ is given by the floor of $\frac{n}{p^k}$
+  for all positive integers $k$
+
+  $n = \displaystyle\sum_{k = 1}^{\infty}\left\lfloor\frac{66}{3^k}\right\rfloor$
+
+  $\Rightarrow n = \left\lfloor\frac{66}{3}\right\rfloor + \left\lfloor\frac{66}{3^2}\right\rfloor
+  + \left\lfloor\frac{66}{3^3}\right\rfloor + 0 + 0 + 0 + \cdots \infty$
+
+  $= 22 + 7 + 2 = 31$.
+  %519
+\item Required number $=$ Total $-$ Words in which \quote{C} and \quote{S} come together
+
+  $= \frac{11!}{2!2!21} - \frac{10!}{2!2!2!}2! = 5670.6!$.
+  %520
+\item Number of ways to choose $2$ men from $n$ couples is $C_2^^n$ and number of ways of choosing $2$ women
+  from remaining $n - 2$ couples is $C_2^^{n - 2}$.
+
+  Now with $2$ men and $2$ women we can form two distinct groups of men and women.
+
+  Thus, $C_2^^n\times C_2^^{n - 2}\times 2 = 840\Rightarrow n = 16$.
+  %521
+\item When $1$ is at unit's place number of numbers is $\frac{3!}{2!} = 3$, when $2$ is at unit's place
+  number of numbers is $3! = 6$ and when $3$ is at unit's place number of numbers is $3$ again.
+
+  Thus, sum of digits at unit's place is $24$. The sum will remain same at all places as there is no zero or
+  any restriction on placement.
+
+  Thus, sum of numbers is $24000 + 2400 + 240 + 24 = 26664$.
+  %522
+\item This is a straight-forward problem on derangements and answer is given by
+
+  $5!\left(1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \frac{1}{4!} - \frac{1}{5!}\right) = 44$.
+  %523
+\item When the first alphabet is $A, H, M, S$ no.\ of words is $4!$ thus a total of $4\times4!$.
+
+  If $TA$ is the first two characters then no.\ of words is $3!$. The next word would be $THAMS$. So the
+  position is $96 + 6 + 1 = 103$.
+  %524
+\item The possible arrangements are $5xxx0, 7xxx0, 7xxx5, 9xxx0, 9xxx5$.
+
+  Thus required no.\ is $5\times P_3^^4 = 120$.
+  %525
+\item Let the seven digits be $x_1, x_2, x_3, x_4, x_5, x_6, x_7$ then according to question $x_1 + x_2 +
+  x_3 + x_4 + x_5 + x_6 + x_7 = 12$
+
+  Now all these have minimum value of $1$. Let $x_i = y_i + 1$ so that $y_i \geq 0$, then the equation
+  becomes $\displaystyle\sum_{i = 1}^7 y_i = 5$.
+
+  The generating function for one $y_i$ is $1 + z + z^2 + z^3$ as it can have the value of $0, 1, 2, 3$
+  i.e. $\frac{1 - z^4}{1 - z}$
+
+  Coefficient of $z^5$ in $\left(\frac{1 - z^4}{1 - z}\right)^7 = C_6^^{11} - \frac{7!}{6!} - \frac{7!}{5!}
+  = 413$.
+  %526
+\item Words beginning with $A$ or $D$ are $2\times 5! = 240$
+
+  Words beginning with $MA, MD, MN$ are $3\times 4! = 72$
+
+  Words beginning with $MOA, MOD$ are $2\times 3! = 12$
+
+  Words beginning with $MONA$ are $2!= 2$ and next words is $MONDAY$.
+
+  So position is $240 + 72 + 12 + 2 + 1 = 327$.
+  %527
+\item Being divisible by $6$ means that sum of digits must be divisible by $3$ and the number should be
+  even. This implies that we can have either $2$ or $4$ at unit's place.
+
+  If $2$ is at unit's place we can fill remaining two positions with $(1,3), (3,1), (2,2), (2,5), (5,2),
+  (3,4), (4,3), (5,5)$ i.e. we can form $8$ numbers.
+
+  If $4$ is at unit's place we can fillremaining two positions with $(1,1), (1,4), (4,1), (2,3), (3,2)
+  (4,4), (3,5), (5,3)$ i.e. $8$ numbers.
+
+  Thus, total no.\ of numbers is $16$.
+  %528
+\item Since the numbers have to be divisible by $3$ the sum of digits must be divisible by $3$.
+
+  The possible combinations are $(1,1,1), (3,3,3), (5,5,5), (8,8,8), (5,5,8), (8,8,5), (1,3,5), (1,3,8)$.
+
+  Thus, total no.\ of permutations are $1 + 1 + 1 + 1 + \frac{3!}{2!} + \frac{3!}{2!} + 3! + 3! = 22$.
+  %529
+\item It is given that sum of first two digits is equal to sum of last two digits.
+
+  {\bf Case I:} When the sum is $7$. Let first two digits be $7, 0$ or $0, 7$. Then last two digits can be
+  $(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)$.
+
+  Thus, total possible codes are $2\times 12 = 24$.
+
+  {\bf Case II:} When the sum is $8$. Let the first two digits be $7, 1$ or $1, 7$. Then the last two digits
+  can be $(2, 6), (3, 5), (5, 3), (6, 2)$.
+
+  Thus, total possible codes are $2\times 8 = 16$.
+
+  Proceeding similarly for sum $9$, we have $16$ possible codes, for sum $10$, we have $8$ possible codes,
+  and for sum $11$ we have $8$ possible codes.
+
+  Thus, maximum no.\ of trials for correct code is $72$.
 \stopitemize
