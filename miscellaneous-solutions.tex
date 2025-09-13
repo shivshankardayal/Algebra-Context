@@ -6027,4 +6027,334 @@
   C_1^^6 = 18$
 
   Thus, we have a total of $179$ possible combinations.
+  %552
+\item Let the number be $100a + 10b + c$, then by trials and error we find all different combinations as:
+
+  $(6, 5, 3), (8, 6, 0), (9, 4, 1), (7, 6, 1), (8, 5, 1), (9, 3, 2), (7, 5, 2), (8, 4, 2), (7, 4, 3), (9, 5,
+  0)$. Thus we have $10\times3! = 60 - 4 = 56$ numbers($4$ is subtracted for numbers with leading $0$).
+
+  When $2$ digits are same but one is different then we have following combinations:
+
+  $(3, 8), (4, 6), (5, 4), (6, 2), (7, 0)$. Thus, we have $\frac{3!}{2!}\times 5 - 1 = 14$ numbers($1$ is
+  subtracted for $007$).
+
+  Thus, we have a total of $70$ numbers.
+  %553
+\item $\alpha = \frac{24!}{(4!)^6}$ and $\beta = \frac{120!}{(5!)^{24}}$ so $\alpha$ is when $24$ distinct
+  objects are divided into $6$ groups of $4$ objects in each group.
+
+  And $\beta$ is when $120$ distinct objects are divided into $24$ groups of $5$ objects in each group.
+
+  Clearly, these distributions will be positive integers, and hence, $\alpha, \beta\in\mathbb{N}$.
+  %554
+\item $\alpha = \displaystyle\sum_{k = 0}^n\left(\dfrac{C_k^^n.C_k^^n}{k + 1}\dfrac{n + 1}{n + 1}\right)
+  = \dfrac{1}{n + 1}\sum_{k = 0}^nC_{k + 1}^^{n + 1}C_{n - k}^^n$
+
+  $\Rightarrow \alpha = \frac{1}{n + 1}C_{n + 1}^^{2n + 1}$
+
+  $\beta = \displaystyle\sum_{k = 0}^n\left(\dfrac{C_k^^n.C_{k + 1}^^n}{k + 2}.\dfrac{n + 1}{n + 1}\right) =
+  \frac{1}{n + 1}\sum_{k = 0}^nC_{k + 2}^^{n + 1}C_{n - k}^^n$
+
+  $\Rightarrow \beta = \frac{1}{n + 1}C_{n + 2}^^{2n + 1}$
+
+  $\Rightarrow \frac{\beta}{\alpha} = \frac{n}{n + 2} = \frac{5}{6}\Rightarrow n = 10$.
+  %555
+\item We have We have III, TT, D, S, R, B, U, O, N.
+
+  {\bf Case I:} Selection of $III$ and one different letter. No.\ of words that can be formed is
+  $C_1^^8\times\frac{4!}{3!} = 31$
+
+  {\bf Case II:} Selection of $2$ I's and $2$ T's. No.\ of words in this case is $\frac{4!}{2!2!} = 6$
+
+  {\bf Case III:} Selection of either $2$ I's or $2$ T's along with $2$ different letters. No.\
+  of words in this casse is $C_1^^2\times C_2^^8\times \frac{4!}{2!} = 672$
+
+  {\bf Case IV}: All four letters different. No. of words in this case is $P_4^^9 = 3024$
+
+  Thus, we have a total of $3734$ words.
+  %556
+\item After giving $2$ appled to each child $15$ are left, which can be distributed without restriction.
+
+  Therefore, no.\ of ways of distribution is $C_2^^{15 + 3 - 1} = 136$.
+  %557
+\item No.\ of required ways $= \frac{9!}{2!3!4!} - n(s_1\in X) - n(s_2\in Y) - n(s_1\in
+  X\;\mathrm{and}\;s_2\in Y)$
+
+  $= \frac{9!}{2!3!4!} - \left(\frac{8!}{1!3!4!} + \frac{8!}{2!2!4!} + \frac{7!}{1!2!4!}\right) = 665$.
+  %558
+\item Require no. of ways will be total $-$ no.\ of ways in which a row remains empty i.e. letters are put
+  in two rows only.
+
+  $= P_5^^8 - 5! - 5! - P_5^^6 = 5760$.
+  %559
+\item Since a captain and vice-captain in the form of a batsman and a bowler is always to be included,
+  therefore, we need to select $8$ players such that at least $3$ batsmen and $3$ bowlers are selected.
+
+  We can choose $5$ batsmen with $3$ bwolers or $4$ each or $3$ batsmen and $5$ bowlers from $6$ batsmen and
+  $5$ bowlers.
+
+  This can be done in $C_5^^6\times C_3^^5 + C_4^^6\times C_4^^5 + C_3^^6\times C_5^^5 = 155$.
+  %560
+\item There are $12$ alphabets before \quote{M} and $13$ after it. For it to be in middle $2$ letters must
+  be selected from first $12$ and $2$ from last $13$.
+
+  Thus, total no.\ of ways is $C_2^^{12}\times C_2^^{13} = 5148$.
+  %561
+\item $3$ girls can be arranged in $3!$ ways and $4$ boys can be arranged in $4!$ ways. Boys and girls
+  together can br arranged in $2!$ ways. Thus, total no.\ of ways is $2!3!4! = 288$.
+
+  Let the two boys always be together then boys can be arranged in $3!2!$ ways by treating two boys $B1$ and
+  $B2$ as one. No.\ of ways when the two boys are together is $2!3!3!2! = 144$.
+
+  Reuired no.\ ways is $288 - 144 = 144$.
+  %562
+\item The word has $8$ characters with $3$ vowels. Total no.\ of words that can be made with these letters
+  is $8!$.
+
+  We can treat the vowels as one letter then we will have $6$ letters giving $6!$ permutations but $3$
+  vowels can be arranged in $3!$ ways among themselves. Thus, total no.\ of words in which all vowels come
+  together is $6!3!$.
+
+  Thus, no.\ of words in which all vowels do not come together is $8! - 6!3! = 36000$.
+  %563
+\item Let $A$ be the no.\ of ways in which all the boys sit together. We can treat all boys as one boy then
+  no.\ of permutations is $5!$, but all $5$ boys can be arranged among themselves in $5!$ ways. Thus, total
+  no.\ of arrangements is $5!\times5! = 14400$
+
+  Let $B$ be the no.\ of ways in which no two boys come together. We seat the girls in $4!$ ways creating
+  $5$ positions between them in which boys can be seated in $5!$ ways. Thus, total no.\ of arrangements in
+  this case is $5!4! = 2880$
+
+  Clearly $A\cap B = \phi$
+
+  Therefore, $n(A\cup B) = 17280$.
+  %564
+\item No.\ of $3$-digit numbers is $999 - 99 = 900$. No.\ of numbers divisibly by both $2$ and $3$ i.e. $6$
+  is $\frac{900}{6} = 150$
+
+  The no.\ of numbers divisible by both $4$ and $9$ i.e. $36$ is $\frac{900}{36} = 25$
+
+  Thus, required no.\ is $150 - 25 = 125$.
+  %565
+\item Let $A$ be the number of numbers which contains exactly two $0$'s is $C_2^^6\times 2^5 = 480$(the
+  combination is selection of $2$ places out of $6$ positions because $0$ cannot be at most significant
+  place and rest can be filled in $2$ ways using $1$ and $2$)
+
+  Let $B$ be the number of numbers which contains exactly two $1$'s is $C_1^^6\times 2^5 + C_2^^6\times
+  1\times 2^4 = 432$
+
+  Let $C$ be the number of numbers which contain exactly two zero's and two one's is $\frac{6!}{3!2!} = 150$
+
+  Thus, required answer is $762$.
+  %566
+\item General term is given by $t_{r + 1} = C_r^^{10}x^{\left(\frac{10 - r}{2}\right)}(-k)^rx^{-2r} =
+  C_r^^{10}(-k)^rx^{\left(\frac{10 - 5r}{2}\right)}$
+
+  Since the term is constant i.e. power of $x$ is zero. Thus, $10 - 5r = 0 \Rightarrow r = 2$
+
+  $\Rightarrow C_2^^{10}(-k)^2 = 405 \Rightarrow k^2 = 9 \Rightarrow |k| = 3$.
+  %567
+\item Given expression is $2\left[C_0^^6x^6 + C_2^^6x^4\left(x^2 - 1\right) + C_4^^6x^2\left(x^2 -
+  1\right)^2 + C_6^^6\left(x^2 - 1\right)^3\right]$
+
+  Coefficient of $x^4$ in the above expression is $\alpha = 2\left[-C_2^^6 - C_4^^6C_1^^2 - C_6^^6
+    C_1^^3\right] = -96$
+
+  Coefficient of $x^2$ in the above expression is $\beta = 2\left[C_4^^6C_0^^4 + C_6^^6C_2^^3\right] = 36$.
+  %568
+\item Given expresion is $(1 + x)(1 - x)^{10}\left(1 + x + x^2\right)^9 = \left(1 - x^2\right)\left(1 -
+  x^3\right)^9$
+
+  Coefficient of $x^{18}$ in $\left(1 - x^2\right)\left(1 - x^3\right)^9 =$ Coefficient of $x^{18}$ in
+  $\left(1 - x^3\right)^9 -$ Coefficient of $x^{16}$ in $\left(1 - x^3\right)^9$
+
+  However, $\left(1 - x^3\right)^9$ will have powers of $x$, which are multiple of $3$, so it won't have
+  coefficient of $x^{16}$
+
+  Now coefficient of $x^{18}$ in $\left(1 - x^3\right)^9$ is $C_6^^9 = 84$.
+  %569
+\item Coefficient of $x^2$ in the expansion of $\left(1 + ax + bx^2\right)(1 - 3x)^{15}$ is $C_2^^{15}(-3)^2
+  - a.C_1^^{15}.3 + b.C_0^^{15} = 0$
+
+  $\Rightarrow 45a - b = 945$
+
+  Similarly, coefficient of $x^3$ in the expansion of $\left(1 + ax + bx^2\right)(1 - 3x)^{15}$ is
+  $C_3^^{15}(-3)^3 + a.C_2^^{15}.3^2 - 3b.C_1^^{15} = 0$
+
+  $\Rightarrow 21a - b = 273$
+
+  Solving the two equations we get $a = 28, b = 315$.
+  %570
+\item The general term is given by $t_{r + 1} = C_r^^6\left(2x^2\right)^{6 -
+  r}\left(-\frac{3}{x^2}\right)^r$
+
+  $= C_r^^6(-3)^r2^{6 - r}x^{12 - 4r}$
+
+  Given that the term is independent of $x$, which is coefficient of the term independent of $x$ in
+  $\frac{1}{60}\left(2x^2 - \frac{3}{x^2}\right)^6 +$ the term independent of $x$ in
+  $-\frac{x^8}{81}\left(2x^2 - \frac{3}{x^2}\right)^6$
+
+  $= \frac{1}{60}C_3^^6(-3)^3(2)^{6 - 3}x^{12 - 4.3} - \frac{1}{81}C_5^^6(-3)^52^{6 - 5}x^{12 - 4.5}x^8 =
+  -36$.
+  %571
+\item $t_{r + 1} = C_r^^nx^{2n - 2r}.x^{-3r}$, therefore, for coefficient of $x$ implies that $2n - 5r = 1$
+
+  Since the coefficient of $x$ is $C_{23}^^n$, therefore, $r = 23$ or $n - r = 23$.
+
+  If $r = 23\Rightarrow n = 58$ and if $n - r = 23$ then $n = 38$.
+
+  So the smallest natural number is $38$.
+  %572
+\item Consider three coefficients $C_{r - 1}^^n, C_r^^n, C_{r + 1}^^n$. We have
+
+  $\frac{C_{r - 1}^^n}{C_r^^n} = \frac{2}{15}\Rightarrow 2n - 17r + 2 = 0$
+
+  Similarly, $\frac{C_r^^n}{C_{r + 1}^^n} = \frac{15}{70}\Rightarrow 3n - 17r + 1 = 0$
+
+  $\Rightarrow n = 16, r = 2$.
+
+  Then it is trivial to find the average which is $232$.
+  %573
+\item $4$-th term is given by $C_3^^6\left(\frac{2}{x}\right)^{6 - 3}\left(x^{\log_2x}\right)^3 =
+  20\times8^7$
+
+  $\Rightarrow x^{3(\log_8x) - 3} = 2^{18}\Rightarrow x^{\log_2x - 3} = \left(2^3\right)^6$
+
+  Taking $\log_2$ of both sides gives us
+
+  $\left(\log_2x - 3\right)\log_2x = 18 \Rightarrow \log_2x = -3, 6 \Rightarrow x = \frac{1}{8}, 64$.
+  %574
+\item The fourth term is given by $t_4 = C_3^^6\left(x^{\left(\frac{1}{1
+    + \log_{10}x}\right)}\right)^{\frac{3}{2}}\left(x^{\frac{1}{12}}\right)^3 = 200$
+
+  $\Rightarrow x^{\frac{3}{2(1 + \log_{10}x)} + \frac{1}{4}} = 10$
+
+  Taking $\log_{10}$ of both sides gives us
+
+  $\left[\frac{3}{2(1 + \log_{10}x)} + \frac{1}{4}\right]\log_{10}x = 1 \Rightarrow \log_{10}x = 1, -4$
+
+  Since $x > 1 \Rightarrow x = 10$.
+  %575
+\item Given expression is $2\left[C_0^^6x^6 + C_2^^6x^4\left(x^3 - 1\right) + C_4^^6x^2\left(x^3 - 1\right)^2
+  + C_6^^6\left(x^3 - 1\right)^3\right]$
+
+  The sum of the terms with even power of $x$ is $2\left[C_0^^6x^6 + C_2^^6(-x^4) + C_4^^6x^8 + C_4^^6x^2 +
+    C_6^^6(-4)\right] = 24$
+  %576
+\item The general term in the binomial expansion of $(a + b)^n$ is $t_{r + 1} = C_r^^na^{n - r}b^r$.
+
+  So the general term in the expansion of $\left(7^{1/5} - 3^{1/10}\right)^{60}$ is
+  $C_r^^{60}\left(7^{1/5}\right)^{60 - r}\left(-3^{1/10}\right)^r = (-1)^rC_r^^{60}7^{12 -
+    \frac{r}{5}}3^{\frac{r}{10}}$
+
+  The possible non-negative integral values of $r$ for which $\frac{r}{5}$ and $\frac{r}{10}$ are integers,
+  where $r\leq 60$, are $r = 0, 10, 20, 30, 40, 50, 60$.
+
+  Thus, there are $7$ rational terms in out of $61$ possible terms, and thus, there are $54$ irrational
+  terms.
+  %577
+\item The $5$-th term from the end is $7$-th term from the beginning in the expansion having $11$ terms.
+
+  $\Rightarrow \frac{t_5}{t_7}
+  = \dfrac{C_4^^{10}\left(2^{\frac{1}{3}}\right)^6\left(\frac{1}{2(3)^{1/3}}\right)^4}
+  {C_6^^{10}\left(2^{1/3}\right)^{4}\left(\frac{1}{2(3)^{1/3}}\right)^6} = 4(36)^{1/3}$.
+  %578
+\item Since the expansion has $9$ terms $5$-th term is the middle term.
+
+  $t_5 = C_4^^8\left(\frac{x^3}{3}\right)^4\left(\frac{3}{x}\right)^6 = \frac{8.7.6.5}{1.2.3.4}x^8 = 5670$
+
+  $\Rightarrow x^8 = 3^4 \Rightarrow x = \pm\sqrt{3}$. So sum of real values of $x$ is $0$.
+  %579
+\item $t_{r + 1} = x^2C_r^^{10}\left(\sqrt{x}\right)^{10 - r}\left(\frac{\lambda}{x^2}\right)^r =
+  C_r^^{10}\lambda^rx^{2 + \frac{10 - r}{2} - 2r}$
+
+  For coefficient of $x^2$, we have $2 + \frac{10 - r}{2} - 2r = 2 \Rightarrow r = 2$
+
+  So the term becomes $C_26^{10}\lambda^2 = 720\Rightarrow \lambda = 4(\lambda > 0)$.
+  %580
+\item $t_3 = C_2^^5\left(x^{\log_2x}\right)^2 = 2560\Rightarrow \left(x^{\log_2x}\right)^2 =
+  256 \Rightarrow \left(\log_2x\right)^2 = 4 \Rightarrow x = 4, \frac{1}{4}$.
+  %581
+\item Coefficient of $t^4$ in $\left(\frac{1 - t^6}{1 - t}\right)^3 =$ Coefficient of $t^4$ in $(1 - t)^{-3}
+  = C_4^^{3 + 4 - 1} = 15$.
+  %582
+\item $\left(x + \sqrt{x^3 -  1}\right)^5 + \left(x - \sqrt{x^3 - 1}\right)^5 = 2\left[C_0^^5x^5 +
+  C_2^^5x^3\left(\sqrt{x^3 - 1}\right)^2\right] + C_4^^5x\left(\sqrt{x^3 - 1}\right)^4$
+
+  $= 2\left(x^5 + 10x^6 - 10x^3 + 5x^7- 10x^4 + 5x\right)$
+
+  Thus, sum of coefficient of odd powers of $x$ is $2(1 - 10 + 5 + 5) = 2$.
+  %583
+\item Given expression can be rewritten to $\left(C_1^^{21} + C_2^^{21} + \cdots + C_{10}^^{21}\right)
+  - \left(C_1^^{10} + C_2^^{10} + \cdots + C_{10}^^{10}\right)$
+
+  $= \frac{1}{2}\left(C_1^^{21} + C_2^^{21} + \cdots + C_{20}^^{21}\right) - 2^{10} + 1
+  = \frac{1}{2}\left(C_0^^{20} + C_1^^{21} + C_2^^{21} + \cdots + C_{20}^^{21} + C_{21}^^{21} - 2\right) -
+  2^{10} + 1$
+
+  $= 2^{20} - 2^{10}$.
+  %584
+\item Number of terms in the expansion is $C_2^^{n + 2} = \frac{(n + 2)(n + 1)}{2} = 28 \Rightarrow n = 6$
+
+  Therefore, the sum of coefficients is $(1 - 2 + 4)^6 = 729$.
+  %585
+\item As we have $\sqrt{x}$ in one of the term of binomial expansion only odd terms will have integral
+  powers of $x$.
+
+  $t_{r + 1} = C_r^^{50}2^rx^{r/2}(-1)^r$
+
+  $\therefore $ Sum of coefficients $= \displaystyle\sum_{r = 0}^{25}C_{2r}^^{50}2^{2r}
+  = \frac{1}{2}\left[(1 + 2)^{50} + (1 - 2)^{50}\right] = \frac{1}{2}\left[3^{50} + 1\right]$.
+  %586
+\item The powers of $x$ will be multiple of $2, 3$ and $4$ due to given expression. We find the possible
+  combinations of powers of $x$, which have a possibility of $x^{11}$.
+
+  $x^0x^3x^8; x^2x^9x^0; x^4x^3x^4$ and $x^8x^3x^0$.
+
+  Thus, sum of coefficients is $C_0^^4\times C_1^^6\times C_2^^{12} + C_1^^4\times C_3^^7\times C_0^^{12} +
+  C_2^^4\times C_1^^7\times C_1^^{12} + C_4^^4\times C_1^^7\times C_0^^{12} = 1113$.
+  %587
+\item Given equation can be rewritten as $\left[\left(x^{1/3} + 1\right) - \frac{\left(\sqrt{x} +
+    1\right)}{\sqrt{x}}\right]^{10} = \left(x^{1/3} - x^{1/2}\right)^{10}$
+
+  The general term is $t_{r + 1} = C_r^^{10}(-1)^rx^{\frac{10 - r}{3} - \frac{r}{2}}$
+
+  Since the term has to be independent of $x$, we have $\frac{10 - r}{3} - \frac{r}{2} = 0\Rightarrow r = 4$
+
+  Thus, the term is $C_4^^{10} = 210$.
+  %588
+\item Coefficient of $t^{24}$ in $\left(1 + t^2\right)^{12}\left(1 + t^{12}\right)\left(1 + t^{24}\right) =$
+  Coefficient of $t^{24}$ in $\left(1 + t^2\right)^{12}\left(1 + t^{12} + t^{24} + t^{36}\right)$
+
+  $= C_{12}^^{12} + C_6^^{12} + C_0^^{12} = 2 + C_6^^{12}$.
+  %589
+\item Given that $t_5 + t_6 = 0 \Rightarrow C_4^^na^{n - 4}b^4 - C_5^^na^{n - 5}b^5 =
+  0 \Rightarrow \frac{a}{b} = \frac{C_5^^n}{C_4^^n} = \frac{n - 4}{5}$.
+  %590
+\item $(1 + x)^n(1 - x)^n = \left[1 + mx + \frac{m(m - 1)}{2}x^2 + \cdots\right]\left[1 - nx + \frac{n(n -
+    1)}{2}x^2 + \cdots\right]$
+
+  $= 1 + (m - n)x + \left[\frac{m(m - 1)}{2} + \frac{n(n - 1)}{2} - mn\right]x^2 + \cdots$
+
+  According to question $m - n = 3$ and $\frac{m(m - 1)}{2} + \frac{n(n - 1)}{2} - mn = -6$
+
+  $\Rightarrow m(m - 1) + n(n - 1) - 2mn = -12 \Rightarrow (m - n)^2 - (m + n) = -12$
+
+  $\Rightarrow m + n = 21$
+
+  Solving the two equations $m = 12, n = 9$.
+  %591
+\item We know that $(a + b)^5 + (a - b)^5 = 2\left[C_0^^5a^5 + C_2^^5a^3b^2 + C_4^^5ab^4\right]$
+
+  $\therefore \left[x + \sqrt{x^3 - 1}\right]^5 + \left[x - \sqrt{x^3 - 1}\right]^5 = 2\left[x^5 + 10x^3(x^3
+  - 1) + 5x(x^3 - 1)^2\right]$
+
+  Therefore, the given polynomial has a degree of $7$.
+  %592
+\item The general term is given by $t_{r + 1} = (-1)^rC_r^^{10}\left(\frac{x}{2}\right)^{10 -
+  r}\left(\frac{3}{x^2}\right)^r = (-1)^rC_r^^{10}\frac{3^r}{2^{10 - r}}x^{10 - 3r}$
+
+  For coefficient of $x^4$, $10 - 3r = 4 \Rightarrow r = 2$
+
+  Coefficient is $C_2^^{10}\frac{3^2}{2^8} = \frac{405}{256}$.
 \stopitemize
