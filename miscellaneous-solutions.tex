@@ -1158,7 +1158,7 @@
   \NC 10S = \NC \NC 770 + 7570 + \cdots + 7\underbrace{55\ldots55}_{97 \;\mathrm{times}}70 +
   7\underbrace{55\ldots55}_{98 \;\mathrm{times}}70\NR
   \stopalign$
-  \stopframed
+\stopframed
   \\
   \vskip{0.8cm}
   Subtracting, we have $9S = -77 + \underbrace{13 + 13 + \cdots + 13}_{98 \;\mathrm{times}} +
@@ -6357,4 +6357,239 @@
   For coefficient of $x^4$, $10 - 3r = 4 \Rightarrow r = 2$
 
   Coefficient is $C_2^^{10}\frac{3^2}{2^8} = \frac{405}{256}$.
+  %593
+\item $t_{3r} = C_{3r - 1}^^{2n}x^{3r - 1}$ and $t_{r + 2} = C_{r + 1}^^{2n}x^{r + 1}$
+
+  Given that binomial coefficients of these terms are equal. Thus, $C_{3r - 1}^^{2n} = C_{r + 1}^^{3n}$
+
+  $\Rightarrow 3r - 1 = r + 1 \Rightarrow r = 1(\mathrm{however}\;r  > 1)$ or $2n = (3r - 1) + (r +
+  1)\Rightarrow n = 2r$. Hence proven.
+  %594
+\item Coefficient of $x^3 =$ Coefficient of $x^3$ in $(1 - 2x)^{18} +$ Coefficient of $x^2$ in $a(1 -
+  2x)^{18} + $ Coefficient of $x$ in $b(1 - 2x)^{18}$
+
+  $= C_3^^{18}.2^3 + a.C_2^^{18}2^2 - b.C_1^^{18}.2 = 0 \Rightarrow 17a - b = \frac{34\times 16}{3}$
+
+  Similarly, coefficient of $x^4$ is zero. Thus, $32a - 3b = 240$
+
+  Solving the two obtained equations we have $a = 16, b = \frac{272}{3}$.
+  %595
+\item General term is given by $t_{r + 1} = C_r^^{22}\left(x^m\right)^{22 - r}x^{-2r}$
+
+  The coefficient $C_r^^{22} = 1540\Rightarrow r = 3, 19$ and $22m - mr - 2r = 1$
+
+  if $r - 3, m = \frac{7}{16} \notin \mathbb{N}$ and if $r = 19, m = 13$.
+  %596
+\item Coefficient of $x^2$ in $(1 + x)^2 + (1 + x)^3 + \cdots + (1 + x)^{49} + (1 + mx)^{50}$ is $C_2^^2 +
+  C_2^^3 + \cdots + C-2^^{49} + C_2^^{50}m^2 = (2n + 1)C_3^^{51}$
+
+  $\Rightarrow C_3^^{51} + C_2^^{50}m^2 = (3n + 1)C_3^^{51}\left[\because C_r^^r + C_r^^{r + 1} + \cdots + C_r^^n
+    = C_{r + 1}^^{n + 1}\right]$
+
+  $\Rightarrow m^2 = 51n + 1$
+
+  Minimum valeu of $m^2$ for which $51n + 1$ is integer for $n = 5$. Thus, $m = 16, n = 5$.
+  %597
+\item Terms of $x^9$ is $x^9 + x.x^8 + x^2x^7 + x^3x^6 + x^4x^5 + xx^2x^6 + xx^3x^5 + x^2x^3x^4$
+
+  And thus, coefficient is $8$.
+  %598
+\item Let the three terms are $t_r, t_{r + 1}$ and $t_{r + 2}$ so the coefficients are $C_{r - 1}^^{n + 5},
+  C_r^^{n + 5}, C_{r + 1}^^{n + 5}$.
+
+  $\Rightarrow \frac{C_r^^{n + 5}}{C_{r - 1}^^{n + 5}} = \frac{14}{5}\Rightarrow n - 3r + 6 = 0$ and $\frac{C_{r +
+      1}^^{n + 5}}{C_r^^{n + 5}} = \frac{14}{10}\Rightarrow 5n + 18 = 12r$
+
+  Solving the two equations we get $n = 6$.
+  %599
+\item $(1 + x)^{20} = C_0^^{20} + C_1^^{20}x + C_2^^{20}x^2 + \cdots + C_r^^{20}x^r + \cdots +
+  C_{20}^^{20}x^{20}$
+
+  $(1 + x)^{20}.(1 + x)^{20} = \left[C_0^^{20} + C_1^^{20}x + C_2^^{20}x^2 + \cdots + C_r^^{20}x^r + \cdots
+    + C_{20}^^{20}x^{20}\right]\left[C_0^^{20} + C_1^^{20}x + C_2^^{20}x^2 + \cdots + C_r^^{20}x^r + \cdots
+    + C_{20}^^{20}x^{20}\right]$
+
+  Coefficient of $x^r$ on both sides is
+
+  $C_r^^{40} = C_r^^{20}C_0^^{20} + C_{r - 1}^^{20}C_1^^{20} + C_{r - 2}^^{20}C_2^^{20} + \cdots +
+  C_0^^{20}C_r^^{20}$
+
+  $C_r^^{40}$ will be maximum if $r = 20$.
+  %600
+\item $2^{403} = 8.(16)^{100} = 8\left(1 + 15\right)^{100} = 8\left(C_0^^{100} + C_1^^{100}.15  +
+  C_2^^{100}.15^2 + \cdots\right)$
+
+  Thus, except the first term all others are multiple of $15$. Therefore, $\frac{2^{403}}{15}$ will have
+  $\frac{8}{15}$ as remainder. Thus, $k = 8$.
+  %601
+\item $A_r = C_r^^{10}, B_r = C_r^^{20}$ and $C_r = C_r^^{30}$
+
+  $\displaystyle\sum_{r = 1}^{10}A_r\left(B_{10}B_r - C_{10}A_r\right) = \sum_{r = 1}^{10}A_rB_{10}B_r
+  - \sum_{r = 1}^{10}A_rC_{10}A_r$
+
+  $= \displaystyle\sum_{r = 1}^{10}C_r^^{10}C_{10}^^{20}C_r^^{20} - \sum_{r =
+    1}^^{10}C_r^^{10}C_{10}^^{30}C_r^^{10}$
+
+  $= C_{10}^^{20}\displaystyle\sum_{r = 1}^{10}C_{10 - r}^^{10}C_r^^{20} - C_{10}^^{30}\sum_{r =
+    1}^{10}C_{10 - r}^^{10}C_r^^{10}$
+
+  $= C_{10}^^{20}\left(C_{10}^^{30} - 1\right) - C_{10}^^{30}\left(C_{10}^^{20} - 1\right) = C_{10} -
+  B_{10}$.
+  %602
+\item Given expression is $C_0^^{30}C_{10}^^{30} - C_1^^{30}C_{11}^^{30} + C_2^^{30}C_{12}^^{30} - \cdots +
+  C_{20}^^{30}C_{30}^^{30}$
+
+  $= C_0^^{30}C_{20}^^{30} - C_1^^{30}C_{19}^^{30} + C_2^^{30}C_{18}^^C^{30} - \cdots +
+  C_{20}^^{30}C_0^^{30}$
+
+  $=$ Coefficient of $x^{20}$ in $(1 + x)^{30}(1 - x)^{30} = (1 - x^2)^{30} =
+  (-1)^rC_r^^{30}\left(x^2\right)^r$
+
+  $= C_{10}^^{30}[\because 2r = 20 \Rightarrow r = 10]$.
+  %603
+\item Given that $C_r^^{n - 1} = (k^2 - 3)C_{r + 1}^^n\Rightarrow k^2 -  3 = \frac{r + 1}{n}$
+
+  Now we have $n\geq r\Rightarrow \frac{r + 1}{n}\leq 1$
+
+  $\Rightarrow 0\leq k^2 - 3\leq 1\Rightarrow 3\leq k^2\leq 4$
+
+  $\Rightarrow k\in[-2, -\sqrt{3})\cup (\sqrt{3}, 2]$.
+  %604
+\item $\displaystyle\sum_{i = 0}^mC_i^^{10}C_{m - i}^^{10}$ is the coefficient of $x^m$ in the expansion of
+  $(1 + x)^{10}(x + 1)^{20} = (1 + x)^{30}$ i.e. $C_m^^{30}$
+
+  We know that $C_r^^n$ is maximum when $r = \frac{n}{2}$, when $n$ id even and $r = \frac{n\pm 1}{2}$, when
+  $n$ is odd.
+
+  So $C_m^^{30}$ is maximum when $m = 15$.
+  %605
+\item $C_r^^n + 2C_{r - 1}^^n + C_{r - 2}^^n = \left(C_r^^n + C_{r - 1}^^n\right) + \left(C_{r - 1}^^n +
+  C_{r - 2}^^n\right)$
+
+  $= C_r^^{n + 1} + C_{r - 1}^^{n + 1} = C_r^^{n + 2}$.
+  %606
+\item Let $b = \displaystyle\sum_{r = 0}^n\frac{r}{C_r^^n} = \sum_{r = 0}^n\frac{n - (n - r)}{C_r^^n} =
+  n\sum_{r = 0}^n\frac{1}{C_r^^n} - \sum_{r = 0}^n\frac{n - r}{C_{r}^^n}$
+
+  $= na_n - \displaystyle\sum_{r = 0}^n\frac{n - r}{C_{n - r}^^{n}} = na_n - b\left[\because C_r^^n =
+    C_{n - r}^^n\right]$
+
+  $\Rightarrow b = \frac{1}{2}na_n$.
+  %607
+\item Given determinant is $\startdeterminant\NC \frac{n(n + 1)}{2}\NC n(n + 1)2^{n - 2}\NR\NC n.2^{n -
+  1}\NC 4^n\NR\stopdeterminant = \frac{n(n + 1)}{2}.4^n - n^2(n + 1)2^{2n - 3} = 0\Rightarrow n = 4$
+
+  $\displaystyle\sum_{k = 0}^4\frac{C_k^^4}{k + 1} = \frac{1}{5}\sum_{k = 0}^4C_{k + 1}^^5 = \frac{1}{5}(2^5
+  - 1) = \frac{31}{5}$.
+  %608
+\item $X$ can be rewritten as $\displaystyle\sum_{r = 1}^{10}r\left(C_r^^{10}\right)^2 = \sum_{r =
+  1}^{10}r.\frac{10}{r}C_{r - 1}^^9C_r^^{10}$
+
+  $= 10\displaystyle\sum_{r = 1}^^{10}C_{r - 1}^^9.C_{10 - r}^^{10} = 10.C_9^^{19}\left[\because C_{r -
+    1}^^{n - 1}C_{n - r}^^n = C_{n - 1}^^{2n - 1}\right]$.
+  %609
+\item L.H.S. $= \displaystyle\sum_{r = 0}^k(-1)^r2^{k - r}C_r^^nC_{k - r}^^{n - r}  = \sum_{r =
+  0}^k(-1)^r2^{k - r}\frac{n!}{r!(n - r)!}.\frac{(n - r)!}{(k - r)!(n - k)!}$
+
+  $= \displaystyle\sum_{r = 0}^k(-1)^r2^{k - r}\frac{n!}{(n - k)!k!}.\frac{k!}{r!(k - r)!} = \sum_{r =
+  0}^n2^{k - r}C_k^^nC_r^^k$
+
+  $= 2^kC_k^^n\displaystyle\sum_{r = 0}^k(-1)^r\frac{1}{2^r}C_r^^k = 2^kC_k^^n\left(1 - \frac{1}{2}\right)^k
+  = C_k^^n$.
+  %610
+\item We can write first one as $C_m^^m + C_m^^n + C_m^^{n - 1} + C_m^^{n - 1} + \cdots = \left[C_{m + 1}^^{m + 1}
+  + C_m^^{m + 1}\right] + C_m^^{m + 2} + \cdots + C_m^^n$
+
+  $= C_{m + 1}^^{m + 2} + C_m^^{m + 2} + \cdots + C_m^^n = C_{m + 1}^^{m + 3} + \cdots + C_m^^n = C_{m +
+  1}^^n + C_m^^n = C_{m + 1}^^{n + 1}$.
+
+  The second expression can be written as
+
+  $\startalign[n=5]
+  \NC C_m^^n \NC + C_m^^{n - 1} \NC + C_m^^{n - 2}\NC +\cdots \NC + C_m^^m\NR
+  \NC\NC + C_m^^{n - 1} \NC + C_m^^{n - 2}\NC +\cdots \NC + C_m^^m\NR
+  \NC\NC\NC + C_m^^{n - 2}\NC +\cdots \NC + C_m^^m\NR
+  \NC\NC\NC\NC\NC \cdots\NR
+  \NC\NC\NC\NC\NC + C_m^^m\NR
+  \stopalign$
+
+  Sum of the first row is $C_{m + 1}^^{n + 1}$, of the second row is $C_{m + 1}^^n$, of the third row is
+  $C_{m + 1}^^{n - 1}, \ldots$ and of the last row is $C_m^^m = C_{m + 1}^^{m + 1}$
+
+  So the sum is $C_{m + 1}^^{n + 1} + C_{m + 1}^^n + C_{m + 1}^^{n - 1} + \cdots + C_{m + 1}^^{m + 1} = C_{m
+    + 2}^^{n + 2}$.
+  %611
+\item General term is $t_{r + 1} = C_r^^{15}\left(t^2\sqrt[5]{x}\right)^{15 - r}.\left(\frac{(\sqrt[10]{1 -
+    x})^r}{t^r}\right)$
+
+  Since the term is independent of $t$, therefore $30 - 2r -r = 0\Rightarrow r = 10$
+
+  So the term is $C_{10}^^{15}x(1 - x)$. $x(1 - x)$ is maximum at $x = \frac{1}{2}$
+
+  Thus, the term is $\frac{C_{10}^^{15}}{4}$.
+  %612
+\item $(11)^{1011} + (1011)^{11} = (2 + 9)^{1011}  + (3 + 1008)^{11} = 2^{1011} + 9p + 3^{11} + 1008q$,
+  where $p, q\in\mathbb{P}$
+
+  Now $2^{1011} + 3^{11} = \left(2^3\right)^{337} + 3.\left(3^^2\right)^5 = (9 - 1)^{337} + 3.9^5 = 9.r - 1
+  + 9.s$, where $r, s\in\mathbb{P}$
+
+  Thus, remainder would be $9 - 1 = 8$.
+  %613
+\item $(1 + x)^{10} = C_0 + C_1x + C_2x^2 + \cdots + C_{10}x^{10}$
+
+  Differentiating $10(1 + x)^9 = C_1 + 2C_2x + 3C_3x^2 + \cdots + 10C_{10}x^9$
+
+  Replacing $x$ by $x^2, 10\left(1 + x^2\right)^9 = C_1 + 2C_2x^2 + 3C_3x^4 + \cdots + 10C_{10}x^{18}$
+
+  $10x\left(1 + x^2\right)^9 = C_1x + 2C_2x^3 + 3C_3x^5 + \cdots + 10C_{10}x^{19}$
+
+  Differentiating $10\left[\left(1 + x^2\right)^9 + 9x\left(1 + x^2\right)^2.2x\right] = C_1 + 2.3C_2x^3 +
+  5.3C_3x^5 + \cdots + 10.19C_{10}x^{18}$
+
+  Putting $x = 1$, $100.2^9 = C_1 + 3.2C_2 + 5.3C_3 + \cdots + 19.10C_{10}$
+
+  Again, $(1 + x)^{10} = C_0 + C_1x + C_2x^2 + \cdots + C_{10}x^{10}$
+
+  Integrating within limits $0$ and $1, C_0 + \frac{C_1}{2} + \frac{C_2}{3} + \cdots + \frac{C_{10}}{11}
+  = \frac{2^{11} - 1}{11}$
+
+  $\Rightarrow C_0 + \frac{C_1}{2} + \frac{C_2}{3} + \cdots + \frac{C_9}{11} = \frac{2^{11} - 2}{11}$
+
+  $\Rightarrow 100.2^9 = \frac{\alpha.2^{11}}{2^\beta - 1}\left(\frac{2^{11} - 2}{11}\right)$
+
+  So the equation is of the form $y = k\left(2^x - 1\right)$
+
+  It has infinite solutions even if we take $x, y\in\mathbb{N}$.
+  %614
+\item $\frac{31a_9 - a_{10}}{57a_8} = \frac{31\left(19^9 - 12^9\right) - \left(19^{10} -
+  12^{10}\right)}{47a_8}$
+
+  $= \frac{19^9(31 - 19) - 12^9(31 - 12)}{57a_8} = \frac{19^9.12 - 12^9.19}{57a_8} = \frac{12.19\left(19^8
+  - 12^8\right)}{57a_8} = 4$.
+  %615
+\item Clearly given expression is a G.P.\ with a c.r.\ $\frac{x}{5 + x}$, which is equal to $\frac{(5 +
+  x)^{501} - x^{500}}{5 + x - x}$
+
+  $= \frac{(5 + x)^{501} - x^{501}}{5}$
+
+  Coefficient of $x^{101}$ in the final expression is $\frac{C_{101}^^{501}5^{400}}{5} =
+  C_{101}^^{501}5^{499}$.
+  %616
+\item General term is given by, $t_{r + 1} = C_r^^{10}\left(2x^3\right)^{10 - r}\frac{3^r}{x^r} =
+  C_r^^{10}2^{10 - r}3^rx^{10 - 4r}$
+
+  The power of $x$ will be positive and even for $r = 0, 1, 2, \ldots, 7$.
+
+  Putting these values and comparing with the given equation we get $\beta = 83$.
+  %617
+\item Given that coefficient of $x$ is $-3$, therefore, $C_1^^p - C_1^^q = -3 \Rightarrow p - q = -3$
+
+  Also given that coefficient of $x^2$ is $-5$, therefore, $-C_1^^pC_1^^q + C_2^^p + C_2^^q = -5$
+
+  $-pq + \frac{p(p - 1)}{2} + \frac{q(q - 1)}{2} = -5$
+
+  Solving the two equations we have $p = 8, q = 11$
+
+  Therefore, coefficient of $x^3$ is $C_3^^p - C_2^^pC_1^^q + C_1^^pC_2^^q - C_3^^q = 23$.
 \stopitemize
