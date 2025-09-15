@@ -6592,4 +6592,64 @@
   Solving the two equations we have $p = 8, q = 11$
 
   Therefore, coefficient of $x^3$ is $C_3^^p - C_2^^pC_1^^q + C_1^^pC_2^^q - C_3^^q = 23$.
+  %618
+\item $\displaystyle\sum_{\mstack{{i, j = 0}, i\neq j}}^nC_i^^nC_j^^n = \sum_{i = 0}^nC_i^^n\sum_{j =
+  0}^nC_j^^n - \sum_{i=j=0}^n\left(C_i^^n\right)^2$
+
+  $= 2^{2n} - C_n^^{2n}$.
+  %619
+\item $2021^{2023} = (288.7 + 5)^{2023} = 7\alpha + 5^{2023}$
+
+  Now $5^{2023} = 5\left(5^3)^{674}\right = 5\left(125\right)^{674} = 5\left(17.7 + 6\right)^{674}$
+
+  Now $5.6^{674} = 5.(7 - 1)^{674} = 7\alpha + 5.1^{674}$
+
+  Thus, the remainder would be $5$.
+  %620
+\item $C_0^^{40} + C_1^^{41} + C_2^^{42} + \cdots + C_{20}^^{40} = C_0^^{41} + C_1^^{41} + C_2^^{42}
+  + \cdots + C_{20}^^{60}$
+
+  $= C_1^^{42} + C_2^^{42} + \cdots + C_{20}^^{60} = C_2^^{43} + \cdots + C_{20}^^{60} = C_{20}^^{61}$
+
+  $ = \frac{61}{41}C_{20}^^{60}\Rightarrow m = 61, n = 41\Rightarrow m + n = 102$.
+  %621
+\item General term is given by $t_{r + 1} = C_r^^n3^{n - r}(6x)^r$
+
+  According to the question this term is greatest for $x = \frac{3}{2}$ so $t_{r + 1} = C_r^^n3^{n + r}$
+
+  Given that $t_9$ is greatest so $t_8 < t_9$ and $t_{10} < t_9$
+
+  $\Rightarrow \frac{C_7^^n3^{n + 7}}{C_8^^n3^{n + 8}} < 1\Rightarrow \frac{8}{n - 7} < 3$ and
+  $\frac{C_{9}^^nC^{n + 9}}{C_8^^n3^{n + 8}} < 1\Rightarrow \frac{n- 8}{9} < \frac{1}{3}$
+
+  Combining the two equations $\frac{29}{3} < n < 11 \Rightarrow n_0 = 10$
+
+  Coefficient of $x^6$ implies $r = 6$ and coefficient is $C_6^^{10}3^46^6$ and coefficient of $x^3$ implies
+  $r = 3$ and coefficient is $C_3^^{10}3^76^3$
+
+  $k = \frac{C_6^^{10}3^46^6}{C_3^^{10}3^76^3}= 14$
+
+  $\therefore k + n_0 = 24$.
+  %622
+\item $t_{r + 1} = C_r^^{60}\left(\frac{\sqrt{x}}{5^{\frac{1}{4}}}\right)^{60 -
+  r}\left(\frac{\sqrt{5}}{x^{\frac{1}{3}}}\right)^r = C_r^^{60}5^{\frac{3r - 60}{4}}x^{\frac{180 - 5r}{6}}$
+
+  $\Rightarrow \frac{180 - 5r}{6} = 10\Rightarrow r = 24$
+
+  Coefficinet of $x^{10}$ is $C_{24}^^{60}5^3 = \frac{60!}{24!46!}5^3$
+
+  Powers of $5$ in it is $5^5\Rightarrow k = 5$.
+  %623
+\item Coefficients and their cumulative sums are $x^{7n}\rightarrow C_0^^7 = 1, x^{6n - 5}\rightarrow
+  2.C_1^^7 = 14$. Cumulative sum is $15$
+
+  $x^{5n - 10}\rightarrow 2^2.C_2^^7 = 84$. Cumulative sum is $99$. $x^{4n -15}\rightarrow 2^3.C_3^^7 =
+  280$. Cumulative sum is $379$
+
+  $x^{3n - 20}\rightarrow 2^4.C_4^^7 = 560$. Cumulative sum is $939$. Next term contains $x^{2n - 25}$,
+  which should be negative.
+
+  According to question $3n - 20 > 0 \Rightarrow n = 7$ and $2n - 25 < 0 \Rightarrow n = 12$
+
+  So $7\geq 7\leq 12$. Thus, sum of possible values of $n$ is $7 +8 + \cdots + 12 = 57$.
 \stopitemize
