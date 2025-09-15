@@ -6674,4 +6674,48 @@
   Possible values of $r$ are $1, 2, 3, 4, 6, 9$ and possible values of $k$ are $33, 15, 9, 6, 3, 1$.
 
   Possible  values of $k$ for which we get $2^8$ are $3$ and $6$.
+  %627
+\item General term of $\left(\frac{5}{2}x^3 - \frac{1}{5x^2}\right)^{11}$ is $t_{r + 1} =
+  C-r^^{11}\left(\frac{5}{2}\right)^{11 - r}\left(-\frac{1}{5}\right)^rx^{33 - 5r}$
+
+  Coefficients of the term independent of $x =$ Coefficient of term $x^0$ in $\left(\frac{5}{2}x^3
+  - \frac{1}{5x^2}\right)^{11} -$ Coefficient of $x^{-2}$ in $\left(\frac{5}{2}x^3
+  - \frac{1}{5x^2}\right)^{11} +3\;\times$ Coefficient of $x^{-3}$ in $\left(\frac{5}{2}x^3
+  - \frac{1}{5x^2}\right)^{11}$
+
+  For coefficient of $x^0$ we have $33 - 5r = 0$, which is not possible. For $x^{-2}, 33 - 5r =
+  -2 \Rightarrow r = 7$ and for $x_3, 33 - 5r = -3$, whhch is not possible.
+
+  Thus, coefficient of the term independent of $x$ is
+  $(-1)C_7^^{11}\left(\frac{5}{2}\right)^4\left(-\frac{1}{5}\right)^7 = \frac{33}{200}$.
+  %628
+\item $\frac{t_5}{t_{n - 5}} = \frac{C_4^^n\left(2^{1/4}\right)^{n - 4}\left(3^{-1/4}\right)^4}{C_{n -
+    4}^^n\left(2^{1/4}\right)^4\left(3^{-1/4}\right)^{n - 4}} = \sqrt[4]{6}$
+
+  $\Rightarrow 2^{\frac{n - 8}{4}}.3^{\frac{n - 8}{4}} = 6 \Rightarrow n - 8 = 4 \Rightarrow n = 12$
+
+  $\Rightarrow t_6 = \frac{84}{\sqrt[4]{3}}\Rightarrow \alpha = 84$.
+  %629
+\item General term $t = \frac{10}{r_1!r_2!r_3!}3^{r_1}(-2)^{r_2}5^{r_3}x^{3r_1 + 2r_2 - 5r_3}$
+
+  Clearly, $3r_1 + 2r_2 - 5r_3 = 0$ and $r_1 + r_2 + r_3 = 10$
+
+  $\Rightarrow r_1, r_2, r_2 = 1, 6, 3$
+
+  Thus, constant term is $\frac{10!}{6!3!}3.(-2)^6(5)^3 = 2^9.3^2.5^4.7 \Rightarrow k = 9$
+  %630
+\item $t_{r + 1} = (-1)^rC_r^^{15}2^{15 - r}x^{\frac{15 - 2r}{5}}$
+
+  For $x^{-1}, \frac{15 - 2r}{5} = -1 \Rightarrow r = 10\Rightarrow m = C_{10}^^{15}2^5$
+
+  For $x^{-3}, \frac{15 - 2r}{5} = -3 \Rightarrow r = 15 \Rightarrow n = -1 $
+
+  $\Rightarrow mn^2 = C_5^^{15}2^5$.
+  %631
+\item $19^{200} + 23^{200} = (21 - 2)^{200} + (21 + 2)^{200} = 2\left[C_0^^{200}21^{200} +
+  C_2^^{200}21^{198}2^2 + \cdots + C_{198}^^{200}21^2.2^{198} + 2^{200}\right] = 49P + 2^{201}$
+
+  $2^{201} = 8^{67} = (7 + 1)^{67} = 49Q + C_0^^{67} + C_1^^{67}.7 = 49Q + 470$
+
+  Now $470 = 49\times 9 + 29$. Hence, remainder is $29$.
 \stopitemize
