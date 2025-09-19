@@ -7144,4 +7144,280 @@
 
   Thus, sum $= \frac{6!}{6!0!0!} + \frac{6!}{4!0!2!}3 + \frac{6!}{2!0!4!}3^2 + \frac{6!}{0!0!6!}3^3
   + \frac{6!}{3!3!0!}2 + \frac{6!}{1!3!2!}2.3 + \frac{6!}{0!6!0!}2^2 = 612$.
+  %677
+\item Given that $A$ is a symmetric matrix and $B$ is a skew-symmetric matrix. $\therefore A = A^T$ and $B =
+  -B^{T}$
+
+  $A + B = \startbmatrix\NC 2\NC 3\NR\NC 5 \NC -1\NR\stopbmatrix$
+
+  Taking transpost of both sides gives us
+
+  $(A + B)^T = A^T + B^T = A - B = \startbmatrix\NC 2\NC 5\NR\NC 3\NC -1\NR\stopbmatrix$
+
+  Thus, $A = \startbmatrix\NC 2\NC 4\NR\NC 4\NC -1\NR\stopbmatrix$ and $B = \startbmatrix\NC 0\NC -1\NR\NC
+  1\NC 0\NR\stopbmatrix$
+
+  $\Rightarrow AB = \startbmatrix\NC 4\NC -2\NR\NC -1\NC -4\NR\stopbmatrix$.
+  %678
+\item Given that $A^TA = 3I_3$
+
+  $\Rightarrow \startbmatrix\NC 0\NC 2x\NC 2x\NR\NC 2y\NC y\NC -y\NR\NC 1\NC -1\NC
+  1\NR\stopbmatrix\startbmatrix\NC 0\NC 2y\NC 1\NR\NC 2x\NC y \NC -1\NR\NC 2x\NC -y\NC 1\NR\stopbmatrix
+  = \startbmatrix\NC 3\NC 0\NC 0\NR\NC 0\NC 3\NC 0\NR\NC 0\NC 0\NC 3\NR\stopbmatrix$
+
+  $\Rightarrow \startbmatrix\NC 8x^2\NC 0\NC 0\NR\NC 0\NC 6y^2\NC 0\NR\NC 0\NC 0\NC 3\NR\stopbmatrix
+  = \startbmatrix\NC 0\NC 2y\NC 1\NR\NC 2x\NC y \NC -1\NR\NC 2x\NC -y\NC 1\NR\stopbmatrix$
+
+  Equating cells $8x^2 = 3$ and $6y^2 = 3\Rightarrow x = \pm\sqrt{\frac{3}{8}}, y = \pm\sqrt{\frac{1}{2}}$
+
+  Thus, there are $4$ possible combinations for values of $x$ and $y$. Thus, four possible matrices possible
+  for $A$.
+  %679
+\item Given that $A = \startbmatrix\NC \cos\alpha \NC
+  -\sin\alpha\NR\NC \sin\alpha\NC \cos\alpha\NR\stopbmatrix \Rightarrow A^2
+  = \startbmatrix\NC \cos\alpha \NC
+  -\sin\alpha\NR\NC \sin\alpha\NC \cos\alpha\NR\stopbmatrix\startbmatrix\NC \cos\alpha \NC
+  -\sin\alpha\NR\NC \sin\alpha\NC \cos\alpha\NR\stopbmatrix$
+
+  $= \startbmatrix\NC \cos^2\alpha - \sin^2\alpha\NC -\cos\alpha\sin\alpha
+  - \sin\alpha\cos\alpha\NR\NC \sin\alpha\cos\alpha + \cos\alpha\sin\alpha\NC -\sin^2\alpha
+  + \cos^2\alpha\NR\stopbmatrix = \startbmatrix\NC \cos2\alpha\NC
+  -\sin2\alpha\NR\NC \sin2\alpha\NC \cos2\alpha\NR\stopbmatrix$
+
+  Proceeding similarly we arrive at $A^{32} = \startbmatrix\NC \cos32\alpha\NC
+  -\sin32\alpha\NR\NC \sin32\alpha\NC \cos32\alpha\NR\stopbmatrix = \startbmatrix\NC 0\NC -1\NR\NC 1\NC
+  0\NR\stopbmatrix$
+
+  Thus, $\cos32\alpha = 0$ and $\sin32\alpha = 1\Rightarrow \alpha = \frac{\pi}{64}$.
+  %680
+\item $P = \startbmatrix\NC 1\NC 0\NC 0\NR\NC 3\NC 1\NC 0\NR\NC 9\NC 3\NC 1\NR\stopbmatrix
+  = \startbmatrix\NC 0\NC 0\NC 0\NR\NC 3\NC 0\NC 0\NR\NC 9\NC 3\NC 0\NR\stopbmatrix + I$
+
+  Let $P = X + I\Rightarrow P^5 = (X + I)^5 = I + C_1^^5X + C_2^^5X^2 + C_3^^5X^3 + \cdots$
+
+  We know that $I^n = I$ and $XI = X$, now
+
+  $X^2 = \startbmatrix\NC 0\NC 0\NC 0\NR\NC 3\NC 0\NC 0\NR\NC 9\NC 3\NC 0\NR\stopbmatrix\startbmatrix\NC
+  0\NC 0\NC 0\NR\NC 3\NC 0\NC 0\NR\NC 9\NC 3\NC 0\NR\stopbmatrix = \startbmatrix\NC 0\NC 0\NC 0\NR\NC 0\NC
+  0\NC 0\NR\NC 9\NC 0\NC 0\NR\stopbmatrix$
+
+  $X^3 = X^2X = \startbmatrix\NC 0\NC 0\NC 0\NR\NC 0\NC 0\NC 0\NR\NC 0\NC 0\NC 0\NR\stopbmatrix$
+
+  $\Rightarrow X^4 = X^5 = \startbmatrix\NC 0\NC 0\NC 0\NR\NC 0\NC 0\NC 0\NR\NC 0\NC 0\NC 0\NR\stopbmatrix$
+
+  $\Rightarrow P^5 = I + 5X + 10X^2 = \startbmatrix\NC 1\NC 0\NC 0\NR\NC 15\NC 1\NC 0\NR\NC 135\NC 15\NC
+  1\NR\stopbmatrix$
+
+  $\Rightarrow Q = P^5 + I_3 = \startbmatrix\NC 2\NC 0\NC 0\NR\NC 15\NC 2\NC 0\NR\NC 135\NC 15\NC
+  2\NR\stopbmatrix$
+
+  $\Rightarrow q_{21} = 15, q_{31} = 135$ and $q_{32} = 15\Rightarrow \frac{q_{21} + q_{31}}{q_{32}} = 10$.
+  %681
+\item Given that $AA^T = I_3\Rightarrow \startbmatrix\NC 0\NC 2q\NC r\NR\NC p\NC q\NC -r\NR\NC p\NC -q\NC
+  r\NR\stopbmatrix\startbmatrix\NC 0\NC p\NC p\NR\NC 2q\NC q\NC -q\NR\NC r\NC -r\NC r\NR\stopbmatrix =$
+
+  $\startbmatrix\NC 0 + 4q^2 + r^2 \NC 0 + 2q^2 - r^2\NC 0 - 2q^2 + r^2\NR\NC 0 + 2q^2 - r^2\NC p^2 + q^2 +
+  r^2\NC p^2 - q^2 - r^2\NR\NC 0 - 2q^2 + r^2\NC p^2 - q^2 - r^2\NC p^2 + q^2 + r^2\NR\stopbmatrix
+  = \startbmatrix\stopbmatrix = I_3$
+
+  We know that when two matrices are equal the corresponsing elements are equal. Thus, we have
+
+  $4q^2 + r^2 = 1 = p^2 + q^2 + r^2, 2q^2 = r^2,$ and $p^2 - q^2 - r^2 = 0$
+
+  Eliminating $q^2$ and $r^2$ from these equations we get $p^2 = \frac{1}{2}\Rightarrow |p|
+  = \frac{1}{\sqrt{2}}$.
+  %682
+\item We can proceed like previous to previous problem by splitting $P$ into two different matrices, but
+  here we will use a different technique.
+
+  $P^2 = \startbmatrix\NC 1\NC 0\NC 0\NR\NC 4 + 4\NC 1\NC 0\NR\NC 16 + 32\NC 4 + 4 \NC 1\NR\stopbmatrix
+  = \startbmatrix\NC 1\NC 0\NC 0\NR\NC 4\times 2\NC 1\NC 0\NR\NC 16(1 + 2)\NC 4\times 2 \NC
+  1\NR\stopbmatrix$
+
+  $P^3 = \startbmatrix\NC 1\NC 0\NC 0\NR\NC 4\times 3\NC 1\NC 0\NR\NC 16(1 + 2 + 3)\NC 4\times 3 \NC
+  1\NR\stopbmatrix$
+
+  Proceeding we find $P^{50} = \startbmatrix\NC 1\NC 0\NC 0\NR\NC 4\times 50\NC 1\NC 0\NR\NC 16(1 + 2
+  + \cdots 50)\NC 4\times 50 \NC 1\NR\stopbmatrix$
+
+  Thus, $q_{21} = 20, q_{32} = 200$, and $q_{31} = 20400$, and thus, $\frac{q_{31} + q_{32}}{q_{21}} = 103$.
+  %683
+\item Given $A = \startbmatrix\NC 1\NC 2\NC 2\NR\NC 2\NC 1\NC -2\NR\NC a\NC 2\NC b\NR\stopbmatrix$
+  $\Rightarrow A^T = \startbmatrix\NC 1\NC 2\NC a\NR\NC 2\NC 1\NC 2\NR\NC 2\NC -2\NC b\NR\stopbmatrix$
+
+  $AA^T = \startbmatrix\NC 9\NC 0\NC a + 4 + 2b\NR\NC 0\NC 9\NC 2a + 2 - 2b\NR\NC a + 4 + 2b\NC 2a + 2 -
+  2b\NC a^2 + 4 + b^2\NR\stopbmatrix$
+
+  Comparing the elements with $AA^T$ with $9I_3$ gives us
+
+  $a + 4 + 2b = 0, 2a + 2 - 2b = 0$, and $a^2 + 4 + b^2 = 9$
+
+  Solving any two gives us $a = -2, b = -1$.
+  %684
+\item $P^TP = \startbmatrix\NC \sqrt{3}/2\NC 1/2\NR\NC -1/2\NC \sqrt{3}/2\NR\stopbmatrix\startbmatrix\NC
+  \sqrt{3}/2\NC 1/2\NR\NC -1/2\NC \sqrt{3}/2\NR\stopbmatrix = \startbmatrix\NC 1\NC 0\NR\NC 0\NC
+  1\NR\stopbmatrix$
+
+  $\Rightarrow P^TP = I \Rightarrow P^T = P^{-1}$
+
+  Now $P^TQ^{2005}P = P^T\left[\left(PAP^T\right)\left(PAP^T\right)\ldots 2005\;\mathrm{times}\right]P$
+
+  $= \left(P^TP\right)A(P^TP)A\ldots A(P^TP) = IA^{2005}$
+
+  Now $A = \startbmatrix\NC 1\NC 1\NR\NC 0\NC 1\NR\stopbmatrix, A^2 = \startbmatrix\NC 1\NC 2\NR\NC 0\NC
+  1\NR\stopbmatrix, A^3 = \startbmatrix\NC 1\NC 3\NR\NC 0\NC 1\NR\stopbmatrix$ and so on.
+
+  Thus, $A^{2005} = \startbmatrix\NC 1\NC 2005\NR\NC 0\NC 1\NR\stopbmatrix$
+
+  Thus, $P^TQ^{2005}P = \startbmatrix\NC 1\NC 2005\NR\NC 0\NC 1\NR\stopbmatrix$.
+  %685
+\item $A^2 = \startbmatrix\NC \alpha\NC 0\NR\NC 1\NC 1\NR\stopbmatrix\startbmatrix\NC \alpha\NC 0\NR\NC 1\NC
+  1\NR\stopbmatrix = \startbmatrix\NC \alpha^2\NC 0\NR\NC \alpha + 1\NC 1\NR\stopbmatrix = B$
+
+  Comparing elements $\alpha^2 = 1$ and $\alpha + 1 = 5$
+
+  There is no value of $\alpha$, which satisfies both the equations. Hence, no such value of $\alpha$
+  exists.
+  %686
+\item We observe that $P_1^^ = P_1, P_2^T = P_2, P_3^T = P_3, P_4^T = P_5, P_5^T = P_4$ and $P_6^T = P_6$.
+
+  Let $Q = \startbmatrix\NC 2\NC 1\NC 3\NR\NC 1\NC 0\NC 2\NR\NC 3\NC 2\NC 1\NR\stopbmatrix$, then $Q^T = Q$
+
+  $X = P_1QP_1^T + P_2QP_2^T + P_3QP_3^T + P_4QP_4^T + P_5QP_5^T + P_6QP_6^T$
+
+  $\Rightarrow X^T = X \Rightarrow X$ is a symmetric matrix.
+
+  The sum of diagonal entries of $X = Tr(X) = \displaystyle\sum_{k = 1}^6Tr\left(P_iQP_i^T\right) =\sum_{k =
+    1}^6Tr\left(QP_i^TP_i\right)[\because Tr(ABC) = Tr(BCA)]$
+
+  $= \sum_{k = 1}^6Tr(QI) = 6Tr(Q) = 18$
+
+  Let $R = \startbmatrix\NC 1\NR\NC 1\NR\NC 1\NR\stopbmatrix$ then $XR = \startbmatrix\NC 30\NR\NC 30\NR\NC
+  30\NR\stopbmatrix\Rightarrow \alpha = 30$.
+  %687
+\item Given that $X^T = -X, Y^T = -Y, Z^T = Z$
+
+  Let $P = Y^3Z^4 - Z^4Y^3\Rightarrow P^T = \left(Y^3Z^4\right)^T - \left(Z^4Y^3\right)^T
+  = \left(Z^T\right)^4\left(Y^T\right)^3 - \left(Y^T\right)^3\left(Z^T\right)^4$
+
+  $= -Z^4y^3 + Y^3Z^4 = P$, which is symmetric.
+
+  Again let $P = X^{44} + Y^{44} \Rightarrow P^T = \left(X^T\right)^{44} + \left(Y^T\right)^{44} = X^{44} +
+  Y^{44} = P$, which is symmetric.
+
+  Again let $P = X^4Z^3 - Z^3X^4\Rightarrow P^T = \left(x^4Z^3\right)^T - \left(Z^3X^4\right)^T
+  = \left(Z^T\right)^3\left(X^T\right)^4 - \left(Z^3\right)^T\left(X^4\right)^T$
+
+  $= Z^3X^4 - X^4Z^3 = -P$, which is skew-symmetric.
+
+  Again let $P = X^{23} + Y^{23} = \left(X^T\right)^{23} + \left(Y^T\right)^{23} = -X^{23} - Y^{23} = -P$,
+  which is skew-symmetric.
+  %688
+\item We solve these one by one below:
+  \startitemize[a]
+  \item $\left(N^TMN\right)^T = N^TM^T\left(N^T\right)^T = N^TM^TN$, is symmetric if $M$ is symmetric and
+    skew-symmetric if $M$ is skew-symmetric.
+  \item $\left(MN - NM\right)^T = (MN)^T - (NM)^T = NM - MN = -(MN - NM)$, which is skew-symmetric when $M$
+    and $N$ are symmetric
+  \item $(MN)^T = N^TM^T = NM \neq MN$, therefore, the statement is incorrect.
+  \item (adj $MN$) = (adj $N$).(adj $M$), therefore, the statement is incorrect.
+  \stopitemize
+  %689
+\item When $n = 1, P = \startbmatrix\NC\omega^2\NR\stopbmatrix\Rightarrow P^2
+  = \startbmatrix\NC\omega^4\NR\stopbmatrix\neq 0$
+
+  When $n = 2, P = \startbmatrix\NC \omega^2\NC 1\NR\NC 1\NC \omega\NR\stopbmatrix\Rightarrow P^2
+  = \startbmatrix\NC\omega + 1\NC \omega^2+\omega\NR\NC \omega^2 + \omega\NC 1 + \omega^2\NR\stopbmatrix\neq
+  0$
+
+  When $n = 3, P = \startbmatrix\NC \omega^2\NC 1\NC \omega\NR\NC
+  1\NC\omega \NC \omega^2\NR\NC \omega\NC \omega^2\NC 1\NR\stopbmatrix \Rightarrow P^2= 0$
+
+  Proceeding similarly, we see that when $n$ is not a multiple of $3$ then $P^2\neq 0$.
+  %690
+\item From the given condition we have $a + 8b + 7c = 0, 9a + 2b + 3c = 0, 7a + 7b + 7c = 0$
+
+  Putting the value of $a$ from first to other two equations we have
+
+  $-70b - 60c = 0 \Rightarrow 7b + 6c = 0$ and $-49b -42c = 0 \Rightarrow 7b + 6c = 0$
+
+  Now since $(a, b, c)$ lie on the plane $2x + y + z = 0 \Rightarrow 2a + b + c = 0$
+
+  $\Rightarrow 2a + 6a - 7a = 0 \Rightarrow a = 1, b = 6, c = -7\Rightarrow 7a + b + c = 6$
+  %691
+\item $b = 6 \Rightarrow a = 1$ and $c = -7$ so the quadratic equation is $x^2 + 6x - 7 = 0 \Rightarrow x =
+  1, -7$
+
+  $\Rightarrow \displaystyle\sum_{n = 0}^{\infty}\left(\frac{1}{\alpha} + \frac{1}{\beta}\right)^n = 1
+  + \frac{6}{7} + \left(\frac{6}{7}\right)^2 + \cdots\;\mathrm{up to}\;\infty = 7$
+  %692
+\item If $a = 2\Rightarrow b = 12, c = -14$
+
+  $\Rightarrow \frac{3}{\omega^a} + \frac{1}{\omega^b} + \frac{3}{\omega^c} = \frac{3}{\omega^2}
+  + \frac{1}{\omega^{12}} + \frac{3}{\omega^{-14}} = 3\omega + 1 + 3\omega^2 = -2$.
+  %693
+\item The number of matrices for which $p$ does not divide $Tr(A) = (p - 1)p^2$. Of these $(p - 1)^2$ are
+  such that $p$ divides $|A|$. The number of matrices for which $p$ divides $Tr(A)$ and $p$ does not divide
+  $|A|$ are $(p - 1)^2$.
+
+  $\therefore$ Required number is $= (p - 1)p^2 - (p - 1)^2 + (p - 1)^2 = p^3 - p^2$.
+  %694
+\item Trace of $A = 2a$ will be divisible by $p$, iff $a = 0$. $|A| = a^2 - bc$. There are exactly $p - 1$
+  ordered pairs of $(b, c)$ for any value of $a$.
+
+  $\therefore$ Required number is $(p - 1)^2$.
+  %695
+\item If $A$ is skew-symmetric then $a = 0, b = -c\Rightarrow |A| = -b^22$. Thus, $p$ divides $|A|$ only
+  when $b = 0$.
+
+  If $A$ is symmetric, then $b = c$ and $|A| = a^2 - b^2$. Thus $p$ needs to divide either $a - b$ or $a +
+  b$. $p$ divides $a - b$ only when $a = b$ i.e. we have $p$ choices including $a = b = 0$.
+
+  Thus, total no.\ of choices is $2p - 1$.
+  %696
+\item Given that $A^TA = I\Rightarrow \startbmatrix\NC a^2 + b^2 + c^2\NC ab + bc + ca\NC ab + bc +
+  ca\NR\NC ab + bc + ca\NC a^2 + b^2 + c^2\NC ab + bc + ca\NR\NC ab + bc + ca\NC ab + bc + ca\NC a^2 + b^2
+  + c^2\NR\stopbmatrix = I$
+
+  $\Rightarrow a^2 + b^2 + c^2 = 1$ and $ab + bc + ca = 0$
+
+  $a^3 + b^3 + c^3 - 3abc = (a + b + c)\left(a^2 + b^2 + c^2 - ab - bc - ca\right) = a + b + c \Rightarrow
+  a^3 + b^3 + c^3 = a + b + c + 3$.
+
+  Now $(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) = 1 \Rightarrow a^3 + b^3 + c^3 = 4$.
+  %697
+\item Let $A = \startbmatrix\NC x\NC y\NR\NC z\NC 3 - x\NR\stopbmatrix\Rightarrow A^2 = \startbmatrix\NC
+  x^2 + yz\NC 3y\NR\NC 3z\NC yz + 9 + x^2 - 6x\NR\stopbmatrix$
+
+  $\Rightarrow tr(A) = x^3 + xyz + 3yz + 3yz + 3yz - xyz + 27 - 9x + 3x^2 - x^3 - 18x + 6x^2$
+
+  $\Rightarrow 3x - x^2 - yz = 5$
+
+  $|A| = 3x - x^2 - yz = 5$.
+  %698
+\item $P^2 = \startbmatrix\NC \omega^{2r} + \omega^{4s}\NC \omega^{r + 2s}\left[(-1)^r +
+  1\right]\NR\NC \omega^{r + 2s}\left[(-1)^r + 1\right]\NC \omega^{2r} + \omega^{4s}\NR\stopbmatrix = -I$
+
+  $\Rightarrow \omega^{2r} + \omega^{4s} = -1$ and $\omega^{r + 2s}\left[(-1)^r + 1\right] = 0$
+
+  $(-1)^r + 1$ and $r\in\left{1, 2, 3\right\}\Rightarrow r = 1, 3$
+
+  When $r = 1, \omega^2 + \omega^{4s} = -1 \Rightarrow s = 1$
+
+  When $r = 3$ no value of $s$ is possible. Thus, $(1, 1)$ is the only pair possible.
+  %699
+\item $f(\theta) = 2\startbmatrix\NC -\sin^2\theta\NC -1 - \sin^2\theta\NC 1\NR\NC -\cos^2\theta\NC -1
+  -\cos^2\theta\NC 1\NR\NC 6\NC 5\NC -1\NR\stopbmatrix$
+
+  Using $R_1\rightarrow R_1 + R_3$ and $R_2\rightarrow R_2 + R_3$ gives us
+
+  $f(\theta) = 2\startbmatrix\NC 6 - \sin^2\theta\NC 4 - \sin^2\theta\NC 0\NR\NC 6 - \cos^2\theta\NC 4
+  - \cos^2\theta\NC 0\NR\NC 6\NC 5\NC -1\NR\stopbmatrix = 4\cos2\theta$
+
+  Given that $theta\in\left[\frac{\pi}{4}, \frac{\pi}{2}\right]\Rightarrow
+  2\theta\in\left[\frac{\pi}{2}, \pi\right]$
+
+  $\Rightarrow m = -4$ when $2\theta = \pi$ and $M = 0$ when $2\theta = \frac{\pi}{2}$.
+
+  So the ordered pair is $(-4, 0)$.
 \stopitemize
