@@ -7420,4 +7420,205 @@
   $\Rightarrow m = -4$ when $2\theta = \pi$ and $M = 0$ when $2\theta = \frac{\pi}{2}$.
 
   So the ordered pair is $(-4, 0)$.
+  %700
+\item Using $C_1\rightarrow C_1 + C_2$ gives us
+
+  $\Delta = \startdeterminant\NC 2\NC \sin^2\theta\NC 4\cos6\theta\NR\NC 2\NC 1
+  + \sin^2\theta\NC 4\cos6\theta\NR\NC 1\NC \sin^2\theta\NC 1 + 4\cos6\theta\NR\stopdeterminant$
+
+  Using $R_1\rightarrow R_1 - 2R_3$ and $R_2\rightarrow R_2 - 2R_3$ gives us
+
+  $\Delta = \startdeterminant\NC 0\NC -\sin^2\theta\NC -2 -4\cos6\theta\NR\NC 0\NC 1 - \sin^2\theta\NC -2 -
+  4\cos6\theta\NR\NC 1\NC \sin^2\theta\NC 1 + 4\cos6\theta\NR\stopdeterminant= 0$
+
+  $\Rightarrow \sin^2\theta\left(2 + 4\cos6\theta\right) + (2 + 4\cos6\theta)(1 - \sin^2\theta) =
+  0\Rightarrow \cos6\theta = -\frac{1}{2}\Rightarrow \theta = \frac{\pi}{9}$.
+  %701
+\item Expanding the determinant along $R_1$ we get $x^3 - 7x + 6 = 0$. Given that all the roots are real so
+  sum of roots from Vieta's relations is zero.
+  %702
+\item Expanding the first determinant we have $\Delta_1 = -x^3 + \sin\theta\cos\theta
+  - \sin\theta\cos\theta + x\cos^2\theta - x + x\sin^2\theta = -x^3$
+
+  Similarly $\Delta_2 = -x^3 \Rightarrow \Delta_1 + \Delta_2 = -2x^3$.
+  %703
+\item $\startbmatrix\NC 1\NC 1\NR\NC 0\NC 1\NR\stopbmatrix\startbmatrix\NC 1\NC 2\NR\NC 0\NC
+  1\NR\stopbmatrix = \startbmatrix\NC 1\NC 2 + 1\NR\NC 0\NC 1\NR\stopbmatrix$
+
+  $\startbmatrix\NC 1\NC 2 + 1\NR\NC 0\NC 1\NR\stopbmatrix\startbmatrix\NC 1\NC 3\NR\NC 0\NC
+  1\NR\stopbmatrix = \startbmatrix\NC 1\NC 3 + 2 + 1\NR\NC 0\NC 1\NR\stopbmatrix$
+
+  $\Rightarrow \startbmatrix\NC 1\NC 1\NR\NC 0\NC 1\NR\stopbmatrix\startbmatrix\NC 1\NC 2\NR\NC 0\NC
+  1\NR\stopbmatrix\startbmatrix\NC 1\NC 3\NR\NC 0\NC 1\NR\stopbmatrix\cdots\startbmatrix\NC 1\NC n -
+  1\NR\NC 0\NC 1\NR\stopbmatrix = \startbmatrix\NC 1\NC \frac{n(n - 1)}{2}\NR\NC 0\NC 1\NR\stopbmatrix
+  = \startbmatrix\NC 1\NC 78\NR\NC 0\NC 1\NR\stopbmatrix$
+
+  Comparing elements $\frac{n(n - 1)}{2} = 78 \Rightarrow n = 13$
+
+  Let $A = \startbmatrix\NC 1\NC 13\NR\NC 0\NC 1\NR\stopbmatrix\Rightarrow A^{-1} = \startbmatrix\NC 1\NC
+  -13\NR\NC 0\NC 1\NR\stopbmatrix$.
+  %704
+\item Given that $\alpha$ and $\beta$ are the roots of the equation $x^2 + x + 1 = 0 \Rightarrow \alpha
+  + \beta = -1$ and $\alpha\beta = 1$
+
+  Let $\Delta = \startdeterminant\NC y + 1\NC \alpha\NC \beta\NR\NC \alpha\NC y + \beta\NC
+  1\NR\NC \beta\NC 1\NC y + \alpha\NR\stopdeterminant$
+
+  Using $R_1\rightarrow R_1 + R_2 + R_3$ gives us
+
+  $\Delta = \startdeterminant\NC y + 1 + \alpha + \beta\NC y + 1 + \alpha + \beta\NC y + 1+ \alpha
+  + \beta\NR\NC \alpha\NC y + \beta\NC 1\NR\NC \beta\NC 1\NC y + \alpha\NR\stopdeterminant$
+
+  $\Delta = \startdeterminant\NC y\NC y\NC y \NR\NC \alpha\NC y + \beta\NC 1\NR\NC \beta\NC 1\NC y
+  + \alpha\NR\stopdeterminant[\because \alpha + \beta = -1]$
+
+  Using $C_2\rightarrow C_2 - C_1$ and $C_3 \rightarrow C_3 - C_1$ gives us
+
+  $\Delta = \startdeterminant\NC y\NC 0\NC 0\NR\NC \alpha\NC y + \beta - \alpha\NC 1
+  - \alpha\NR\NC \beta\NC 1 - \beta\NC y + \alpha - \beta\NR\stopdeterminant$
+
+  Expanding along $R_1, \Delta = y[\{y + (\beta - \alpha)\}\{y - (\beta - \alpha)\} - (1 - \alpha)(1
+    - \beta)]$
+
+  $= y[y^2 - (\beta - \alpha)^2 - (1 - \alpha - \beta + \alpha\beta)] = y[y^2 - \beta^2 - \alpha^2+
+    2\alpha\beta - 1 + (\alpha + \beta) - \alpha\beta]$
+
+  $= y[y^2 - (\alpha + \beta)^2 + 4\alpha\beta - 1 + (\alpha + \beta) - \alpha\beta] = y[y^2 -1 + 4 - 1 - 1
+    -1] = y^3$.
+  %705
+\item $\det(A) = \startdeterminant\NC 1\NC 1\NC 1\NR\NC 2\NC b\NC c\NR\NC 4\NC b^2\NC
+  c^2\NR\stopdeterminant$
+
+  Using $C_2\rightarrow C_2 - C_1$ and $C_3\rightarrow C_3 - C_1$ gives us
+
+  $\det(A) = \startdeterminant\NC 1\NC 0\NC 0\NR\NC 2\NC b - 2\NC c - 2\NR\NC 4\NC b^2- 4\NC c^2 -
+  4\NR\stopdeterminant = \startdeterminant\NC b - 2\NC c - 2\NR\NC b^2 - 4\NC c^2 - 4\NR\stopdeterminant$
+
+  $= (b - 2)(c - 2)()c - b)$
+
+  Given that $2, b, c$ are in A.P. If $d$ is the c.d.\ of this A.P.\ then $b = 2 + d, c = 2 + 2d$
+
+  $|A| = 2d^3\in[2, 16]\Rightarrow d\in[1, 2]\Rightarrow c\in[4, 6]$.
+  %706
+\item $|A| = \startdeterminant\NC 1\NC \sin\theta\NC 1\NR\NC -\sin\theta\NC 1\NC \sin\theta\NR\NC -1\NC
+  -\sin\theta \NC 1\NR\stopdeterminant = 2\left(1 + \sin^2\theta\right)$
+
+  Given that
+  $\theta\in\left(\frac{3\pi}{4}, \frac{5\pi}{4}\right)\Rightarrow \sin\theta \in\left(-\frac{1}{\sqrt{2}},
+  \frac{1}{\sqrt{2}}\right)\Rightarrow \sin^2\theta\in\left[0, \frac{1}{2}\right)$
+
+  $\Rightarrow |A|\in[2, 3)$
+  %707
+\item Using $R_1\rightarrow R_1 + R_2 + R_3$ gives us
+
+  $\Delta = \startdeterminant\NC a + b + c\NC a + b + c\NC a + b + c\NR\NC 2b\NC b - c - a\NC 2b\NR\NC
+  2c\NC 2c\NC c - a - b\NR\stopdeterminant = (a + b + c)\startdeterminant\NC 1\NC 1\NC 1\NR\NC 2b\NC b - c -
+  a\NC 2b\NR\NC 2c\NC 2c\NC c - a - b\NR\stopdeterminant$
+
+  Using $C_2\rightarrow C_2 - C_1$ and $C_3\rightarrow C_3 - C_1$ gives us
+
+  $\Delta = (a + b + c)\startdeterminant\NC 1\NC 0\NC 0\NR\NC 2b\NC -(a + b + c)\NC 0\NC 2c\NC 0\NC -(a + b
+  + c)\NR\stopdeterminant$
+
+  Expanding along $R_1, \Delta = (a + b + c)[(a + b + c)^2 - 0] = (a + b + c)^3 = (a + b + c)(x + a + b +
+  c)^2$
+
+  $\Rightarrow x + a + b + c = \pm(a + b + c)\Rightarrow x = -2(a + b + c)[\because x \neq 0]$.
+  %708
+\item Let $a$ be the first term of the G.P.\ and $R$ be the c.r.\ of this G.P. Let $\Delta
+  = \startdeterminant\NC \log_ea_1^ra_2^k\NC \log_ea_2^ra_3^k\NC \log_ea_3^ra_4^k\NR\NC \log_ea_4^ra_5^k\NC
+  \log_ea_5^ra_6^k\NC \log_ea_6^ra_7^k\NR\NC \log_ea_7^ra_8^k\NC \log_ea_8^ra_9^k\NC
+  \log_ea_9^ra_{10}^k\NR\stopdeterminant$
+
+  Using $C_2\rightarrow C_2 - C_1$ and $C_3\rightarrow C_3 - C_1$ gives us
+
+  $\Delta = \startdeterminant\NC \log_ea_1^ra_2^k\NC \log_e\left(\frac{a_2^ra_3^k}{a_1^ra_2^k}\right)\NC
+  \log_e\left(\frac{a_3^ra_4^k}{a_1^ra_2^k}\right)\NR\NC \log_ea_4^ra_5^k\NC
+  \log_e\left(\frac{a_5^ra_6^k}{a_4^ra_5^k}\right)\NC \log_e\left(\frac{a_6^ra_7^k}{a_4^ra_5^k}\right)\NR\NC
+  \log_ea_7^ra_8^k \NC \log_e\left(\frac{a_8^ra_9^k}{a_7^ra_8^k}\right)\NC
+  \log_e\left(\frac{a_9^ra_{10}^k}{a_7^ra_8^k}\right)\NR\stopdeterminant$
+
+  $\Delta = \startdeterminant\NC \log_ea^{r + k}R^^k\NC \log_e\left(\frac{a^{r + k}R^{r + 2k}}{a^{r +
+      k}R^k}\right)\NC \log_e\left(\frac{a^{r + k}R^{2r + 3k}}{a^{r + k}R^k}\right)\NR\NC \log_ea^{r +
+    k}R^{3r + 4k}\NC \log_e\left(\frac{a^{r + k}R^{4r + 5k}}{a^{r + k}R^{3r +
+      4k}}\right)\NC \log_e\left(\frac{a^{r + k}R^{5r + 6k}}{a^{r + k}R^{3r + 4k}}\right)\NR\NC \log_ea^{r +
+  k}R^{6r + 7k}\NC \log_e\left(\frac{a^{r + k}R^{7r + 8k}}{a^{r + k}R^{6r +
+      7k}}\right)\NC \log_e\left(\frac{a^{r + k}R^{8r + 9k}}{a^{r + k}R^{6r +
+      7k}}\right)\NR\stopdeterminant$
+
+  $\Delta = \startdeterminant\NC \log_ea^{r + k}R^k\NC \log_eR^{r + k}\NC 2\log_eR^{r + k}\NR\NC \log_ea^{r
+    + k}R^{3r + 4k}\NC \log_eR^{r + k}\NC 2\log_eR^{r + k}\NR\NC \log_ea^{r + k}R^{6r + 7k}\NC \log_eR^{r +
+    k}\NC 2\log_eR^{r + k}\NR\stopdeterminant = 0$
+
+  The above determinant is zero because $C_2$ and $C_3$ are proportional. Thus, set $S$ has infinite pairs
+  of $(r, k)$ because the determinant is zero for all values.
+  %709
+\item $|A| = 2[2(b^2 + 1) - b^2] - b(2b - b) + 1(b^2 - b^2 - 1) = b^2 + 3$
+
+  $\therefore \frac{|A|}{b} = b + \frac{b}{3}$
+
+  Using A.M.-G.M.\ inequality we have, $\frac{b + \frac{b}{3}}{2}\geq \sqrt{b.\frac{b}{3}}\Rightarrow b
+  + \frac{b}{3}\geq 2\sqrt{3}$
+
+  Thus, rquired value is $\frac{2}{\sqrt{3}}$.
+  %710
+\item Using $R_3\rightarrow R_3 - 2R_2 + R_1$ gives us
+
+  $|A| = \startdeterminant\NC -2\NC 4 + d\NC \sin\theta - 2\NR\NC 1\NC \sin\theta +
+  2\NC d\NR\NC 1\NC 0\NC 0\NR\stopdeterminant$
+
+  $= (d + 2)^2 - \sin^2\theta$
+
+  $|A|$ will be minimum when $\sin\theta$ is maximum $\Rightarrow (d + 2)^2 = 9 \Rightarrow d = 1, -5$.
+  %711
+\item Using $C_1\rightarrow C_1 + C_2 + C_3$ gives us
+
+  $\startdeterminant\NC 5x - 4\NC 2x\NC 2x\NR\NC 5x - 4\NC x - 4\NC 2x\NR\NC 5x - 4\NC 2x\NC x -
+  4\NR\stopdeterminant$
+
+  Now applying $R_2\rightarrow R_2 - R_1$ and $R_3\rightarrow R_3 - R_1$ gives us
+
+  $(5x - 4)\startdeterminant\NC 1\NC 2x\NC 2x\NR\NC 0\NC x - 4\NC 0\NR\NC 0\NC 0\NC -x - 4\NR\stopdeterminant
+  = (5x - 4)(x + 4)^2 = (A + Bx)(x - A)^2$
+
+  Thus, $A = -4, B = 5$.
+  %712
+\item Since $\omega$ is a cube root of unity, therefore, $\omega^3 = 1$ and $1 + \omega + \omega^2 = 0$
+
+  $\Delta = \startdeterminant\NC 1\NC 1\NC 1\NR\NC 1\NC -\omega^2 - 1\NC \omega^2\NR\NC
+  1\NC \omega^2\NC \omega^7\NR\stopdeterminant = \startdeterminant\NC 1\NC 1\NC 1\NR\NC
+  1\NC \omega\NC \omega^2\NR\NC 1\NC \omega^2\NC \omega\NR\stopdeterminant$
+
+  Using $R_1\rightarrow R_1 + R_2 + R_3$ gives is
+
+  $\startdeterminant\NC 3\NC 0\NC 0\NR\NC 1\NC \omega\NC \omega^2\NR\NC
+  1\NC \omega^2\NC \omega\NR\stopdeterminant = 3(\omega^2 - \omega) = 3k$
+
+  $\Rightarrow k = \omega^2 - \omega$.
+  %713
+\item Let $\Delta = \startdeterminant\NC 3\NC 1 + f(1)\NC 1 + f(2)\NR\NC 1 + f(1)\NC 1 + f(2)\NC 1 +
+  f(3)\NR\NC 1 + f(2)\NC 1 + f(3)\NC 1 + f(4)\NR\stopdeterminant$
+
+  $= \startdeterminant\NC1.1 + 1.1 + 1.1\NC 1.1 + 1.\alpha + 1.\beta\NC 1.1 + 1.\alpha^2 + 1.\beta^2\NR\NC
+  1.1 + 1.\alpha + 1.\beta\NC 1.1 + \alpha.\alpha + \beta.\beta\NC 1.1 + \alpha.\alpha^2
+  + \beta.\beta^2\NR\NC 1.1 + 1.\alpha^2 + 1.\beta^2\NC 1.1 + \alpha.\alpha^2 + \beta.\beta^2\NC 1.1
+  + \alpha^2.\alpha^2 + \beta^2.\beta^2\NR\stopdeterminant$
+
+  $= \startdeterminant\NC 1\NC 1\NC 1\NR\NC 1\NC \alpha\NC \beta\NR\NC
+  1\NC \alpha^2\NC \beta^2\NR\stopdeterminant^2$
+
+  $\Delta = (1 - \alpha)^2(1 - \beta)^2(\alpha - \beta)^2 \Rightarrow K = 1$.
+  %714
+\item Let $P = \startdeterminant\NC a_{11}\NC a_{12}\NC a_{13}\NR\NC a_{21}\NC a_{22}\NC a_{23}\NR\NC
+  a_{31}\NC a_{32}\NC a_{33}\NR\stopdeterminant = 2$
+
+  $Q = \startdeterminant\NC 2^2a_{11}\NC 2^3a_{12}\NC 2^4a_{13}\NR\NC 2^3a_{21}\NC 2^4a_{22}\NC
+  2^5a_{23}\NR\NC 2^4a_{31}\NC 2^5a_{32}\NC 2^6a_{33}\NR\stopdeterminant =
+  2^2\times2^3\times2^4\startdeterminant\NC a_{11}\NC a_{12}\NC a_{13}\NR\NC 2a_{21}\NC 2a_{22}\NC
+  2a_{23}\NR\NC 4a_{31}\NC 4a_{32}\NC 4a_{33}\NR\stopdeterminant$
+
+  $= 2^{12}P = 2^{13}$.
+  %715
+\item We know that $|A^n| = |A|^n \Rightarrow |A| = 5 \Rightarrow \alpha^2 - 4 = 5 \Rightarrow \alpha
+  = \pm3$.
 \stopitemize
