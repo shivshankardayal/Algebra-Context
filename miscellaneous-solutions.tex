@@ -7851,4 +7851,105 @@
   Expanding the given matrix $|B| = 5(-2 - 3) - 2\alpha(0 - \alpha) + 1(0 - 2\alpha) = -1$
 
   $\Rightarrow \alpha^2 - \alpha - 12 = 0 \Rightarrow \alpha = -3, 4$.
+  %731
+\item $|A| = e^te^{-t}e^{-t}\startdeterminant\NC 1\NC \cos t\NC \sin t\NR\NC 1\NC -(\cos t+ \sin t)\NC
+  -\sin t + \cos t\NR\NC 1\NC 2\sin t\NC -2\cos t\NR\stopdeterminant$
+
+  Using $R_2\rightarrow R_2 - R_1$ and $R_3\rightarrow R_3 - R_1$ gives us
+
+  $|A| = e^{-t}\startdeterminant\NC 1\NC \cos t\NC \sin t\NR\NC 0\NC -2\cos t - \sin t\NC -2\sin t + \cos
+  t\NR\NC 0\NC 2\sin t - \cos t\NC -2\cos t - \sin t\NR\stopdeterminant$
+
+  $|A| = e^{-t}[(2\cos t + \sin t)^2 + (2\sin t - \cos t)^2] = 5e^{-t}\neq 0$
+
+  Therefore, $A$ is invertible for all $t$.
+  %732
+\item Given that $\det\left(ABA^T\right) = 8\Rightarrow |A||B|\left|A^T\right| = 8 \Rightarrow |A|^2|B| = 8$
+
+  Also, $\left|AB^{-1}\right| = 8 \Rightarrow \frac{|A|}{|B|} = 8$
+
+  Multiplying $|A|^3 = 64 \Rightarrow |A| = 4 \Rightarrow |B| = \frac{1}{2}$
+
+  Now $\left|BA^{-1}B^T\right| = \frac{|B|^2}{|A|} = \frac{1}{16}$.
+  %733
+\item $A = \startbmatrix\NC \cos\theta \NC -\sin\theta\NR\NC \sin\theta\NC \cos\theta\NR\stopbmatrix$
+
+  $\Rightarrow |A| = 1 \Rightarrow A^{-1} =\startbmatrix\NC \cos\theta\NC \sin\theta\NR\NC
+  -\sin\theta \NC \cos\theta\NR\stopbmatrix$
+
+  $A^{-2} = A^{-1}A^{-1} = \startbmatrix\NC \cos2\theta\NC \sin2\theta\NR\NC
+  -\sin2\theta\NC \cos2\theta\NR\stopbmatrix$
+
+  Proceeding similarly, we find that $A^{-50} = \startbmatrix\NC \cos50\theta\NC \sin50\theta\NR\NC
+  -\sin50\theta\NC \cos50\theta\NR\stopbmatrix$
+
+  $50\theta = \frac{25\pi}{6} = 4\pi + \frac{\pi}{6}\Rightarrow \cos50\theta = \cos\frac{\pi}{6}$ and
+  $\sin50\theta = \sin\frac{\pi}{6}$
+
+  $\Rightarrow A^{-50} = \startbmatrix\NC \frac{\sqrt{3}}{2}\NC \frac{1}{2}\NR\NC
+  -\frac{1}{2}\NC \frac{\sqrt{3}}{2}\NR\stopbmatrix$.
+  %734
+\item Given that $A.\adj(A) = A.A^T = |A|I_2 = (10a + 3b)I_2 = \startbmatrix\NC 10a + 3b\NC 0\NR\NC 0\NC
+  10a + 3b\NR\stopbmatrix$
+
+  $AA^T = \startbmatrix\NC 5a\NC -b\NR\NC 3\NC 2\NR\stopbmatrix\startbmatrix\NC 5a\NC 3\NR\NC -b\NC
+  2\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 25a^2 + b^2\NC 15a - 2b\NR\NC 15a - 2b\NC 13\NR\stopbmatrix$
+
+  Comparing we have $15a - 2b = 0\Rightarrow a = \frac{2b}{15}$ and $10a + 3b = 13 \Rightarrow b =
+  3 \Rightarrow 5a = 2$
+
+  $\Rightarrow 5a + b = 5$.
+  %735
+\item $BB^T = \left(A^{-1}A^T\right)\left(A^{-1}A^T\right)^T = A^{-1}A^TA\left(A^{-1}\right)^T[\because
+  (AB)^T = B^TA^T]$
+
+  $= A^{-1}AA^T\left(A^{-1}\right)^T[\because AA^T = A^TA]$
+
+  $= IA^T\left(A^{-1}\right)^T[\because A^{-1}A = I]$
+
+  $= A^T\left(A^{-1}\right)^T = \left(A^{-1}A\right)^T[\because (AB)^T = B^TA^T]$
+
+  $= I^T = I$.
+  %736
+\item $|P| = 1(12 - 12) - \alpha(4 - 6) + 3(4 - 6) = 2\alpha - 6$
+
+  Given $P = \adj(A)\Rightarrow |P| = |\adj(A)| = |A|^2 = 16[\because |\adj(A)| = |A|^{n - 1}]$
+
+  $\therefore 2\alpha - 6 = 16 \Rightarrow \alpha = 11$.
+  %737
+\item Given $P^T = 2P + I \Rightarrow \left(P^T\right)^T = (2P + I)^T \Rightarrow P = 2P^T + I = 2(2P + I) +
+  I$
+
+  $\Rightarrow P = 4P + 3I\Rightarrow 3P = -3I\Rightarrow PX = -XI = -X$.
+  %738
+\item $|A|\neq 0$ as it is non-singular. $\Rightarrow \startdeterminant\NC 1\NC a\NC b\NR\NC \omega\NC 1\NC
+  c\NR\NC \omega^2\NC \omega\NC 1\NR\stopdeterminant\neq 0$
+
+  $\Rightarrow 1(1 - c\omega) - a\left(\omega - c\omega^2\right) + b\left(\omega^2 - \omega^2\right)\neq 0$
+
+  $\Rightarrow (1 - c\omega)(1 - a\omega)\neq 0\Rightarrow a\neq \frac{1}{\omega}, b\neq \frac{1}{\omega}$
+
+  $\Rightarrow a = c = \omega$ and $b = \omega, \omega^2$. Thus, there will be two distinct matrices in set
+  $S$.
+  %739
+\item Given that $M^T = -M, N^T = -N$ and $MN = NM$
+
+  $M^2N^2\left(M^TN\right)^{-1}\left(MN^{-1}\right)^T =
+  M^2N^2N^{-1}\left(M^T\right)^{-1}\left(N^{-1}\right)^TM^T$
+
+  $= M^2NI(-M)^{-1}\left(N^T\right)^{-1}(-M) = M^2NM^{-1}N^{-1}M = -M(MN)M^{-1}N^{-1}M = -M(NM)M^{-1}N^{-1}M
+  = -M^2$.
+  %740
+\item Writing the characteristics equation of a square matrix $|A - \lambda I| = 0$
+
+  $\Rightarrow \startdeterminant\NC 1 - \lambda\NC 0\NC 0\NR\NC 0\NC 1 - \lambda\NC 1\NR\NC 0\NC -2\NC 4
+  - \lambda\NR\stopdeterminant = 0$
+
+  $\Rightarrow \lambda^3 - 6\lambda^2 + 11\lambda - 6 = 0\Rightarrow A^3 - 6A^2 + 11A - 6I = O$
+
+  Given that $6A^{-1} = A^2 + cA + dI\Rightarrow 6I = A^3 + cA^2 + dA$
+
+  Comparing the two equations we have $c = -6$ and $d = 11$.
 \stopitemize
