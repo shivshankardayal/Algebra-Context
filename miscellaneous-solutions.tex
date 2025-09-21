@@ -7414,7 +7414,7 @@
   $f(\theta) = 2\startbmatrix\NC 6 - \sin^2\theta\NC 4 - \sin^2\theta\NC 0\NR\NC 6 - \cos^2\theta\NC 4
   - \cos^2\theta\NC 0\NR\NC 6\NC 5\NC -1\NR\stopbmatrix = 4\cos2\theta$
 
-  Given that $theta\in\left[\frac{\pi}{4}, \frac{\pi}{2}\right]\Rightarrow
+  Given that $\theta\in\left[\frac{\pi}{4}, \frac{\pi}{2}\right]\Rightarrow
   2\theta\in\left[\frac{\pi}{2}, \pi\right]$
 
   $\Rightarrow m = -4$ when $2\theta = \pi$ and $M = 0$ when $2\theta = \frac{\pi}{2}$.
@@ -7621,4 +7621,234 @@
   %715
 \item We know that $|A^n| = |A|^n \Rightarrow |A| = 5 \Rightarrow \alpha^2 - 4 = 5 \Rightarrow \alpha
   = \pm3$.
+  %716
+\item Using $C_1\rightarrow C_1 + C_2 + C_3$ gives us
+
+  $\Delta = (2\cos x + \sin x)\startdeterminant\NC 1\NC \cos x\NC \cos x\NR\NC 1\NC \sin x\NC \cos x\NR\NC
+  1\NC \cos x\NC \sin x\NR\stopdeterminant = 0$
+
+  Using $R_2\rightarrow R_2 - R_1$ and $R_3\rightarrow R_3 - R_1$ gives us
+
+  $\Delta = (2\cos x + \sin x)\startdeterminant\NC 1\NC \cos x\NC \cos x\NR\NC 0\NC \sin x - \cos x\NC
+  0\NR\NC 0\NC 0\NC \sin x - \cos x\NR\stopdeterminant = 0\Rightarrow (2\cos x + \sin x)(\sin x - \cos x)^2
+  = 0$
+
+  $\Rightarrow 2\cos x + \sin x = 0$ or $\sin x = \cos x$. However, $\cot x = -\frac{1}{2}$ has no solution
+  in $-\frac{\pi}{4}\leq x\leq \frac{\pi}{4}$ so $\tan x = 1 \Rightarrow x = \frac{\pi}{4}$.
+  %717
+\item Using $C_3\rightarrow C_3 - (C_1 + C_2)$ gives us
+
+  $f(x) = \startdeterminant\NC 1\NC x\NC 0\NR\NC 2x\NC x(x - 1)\NC 0\NR\NC 3x(x - 1)\NC x(x - 1)(x - 2)\NC
+  0\NR\stopdeterminant = 0$
+
+  Thus, $f(x) = 0\Rightarrow f(100) = 0$.
+  %718
+\item Let $\Delta = \startdeterminant\NC 1\NC a\NC a^2\NR\NC \cos(p - d)x\NC \cos px\NC \cos(p +
+  d)x\NR\NC \sin(p - d)x\NC \sin px\NC \sin(p + d)x\NR\stopdeterminant$
+
+  Using $C_1\rightarrow C_1 + C_3$ gives us
+
+  $\Delta = \startdeterminant\NC 1 + a^2\NC a\NC a^2\NR\NC 2\cos px\cos dx\NC \cos px\NC \cos(p + d)x\NR\NC
+  2\cos px\cos dx\NC \sin px\NC \sin(p + d)x\NR\stopdeterminant$
+
+  Using $C_1\rightarrow C_1 - 2\cos dxC_1$
+
+  $\Delta = \startdeterminant\NC 1 + a^2 - 2a\cos dx\NC a\NC a^2\NR\NC 0\NC \cos px\NC \cos(p + d)x\NR\NC
+  0\NC \sin px\NC \sin(p + d)x\NR\stopdeterminant = (1 + a^2 - 2a\cos dx)[\sin(p + d)x\cos px - \cos(p +
+    d)x\sin px]$
+
+  $= (1 + a^2 - 2a\cos dx)\sin dx$, which is independent of $p$.
+  %719
+\item Let $\Delta = \startdeterminant\NC xp + y\NC x\NC y\NR\NC yp + z\NC y\NC z\NR\NC 0\NC xp + y\NC yp +
+  z\NR\stopdeterminant = 0$
+
+  Using $C_1\rightarrow C_1 - 2pC_2 - C_3$ gives us
+
+  $\startdeterminant\NC 0\NC x\NC y\NR\NC 0\NC y\NC z\NR\NC -\left(xp^2 + yp + yp + z\right)\NC xp + y\NC
+  yp + z\NR\stopdeterminant = -\left(xp^2 + 2yp + z\right)\left(xy - z^2\right) = 0$
+
+  Either $xp^2 + 2yp + z = 0$ or $xy = z^2$, i.e. $x, y, z$ are in G.P.
+  %720
+\item Given determinant can be written as $\startdeterminant\NC 1 + 2\alpha + \alpha^2\NC 1 + 4\alpha +
+  4\alpha^2\NC 1+ 6\alpha + 9\alpha^2\NR\NC 4 + 4\alpha + \alpha^2\NC 4 + 8\alpha + 4\alpha^2\NC 4 +
+  12\alpha + 9\alpha^2\NR\NC 9 + 6\alpha + \alpha^2\NC 9 + 12\alpha + 4\alpha^2\NC 9 + 18\alpha +
+  9\alpha^2\NR\stopdeterminant = -648\alpha$
+
+  $\Rightarrow \startdeterminant\NC 1\NC \alpha\NC \alpha^2\NR\NC 4\NC 2\alpha\NC \alpha^2\NR\NC 9\NC
+  3\alpha\NC \alpha^2\NR\stopdeterminant\startdeterminant\NC 1\NC 1\NC 1\NR\NC 2\NC 4\NC 6\NR\NC 1\NC 4\NC
+  9\NR\stopdeterminant = -648\alpha$
+
+  $\Rightarrow -8\alpha^3 = -648\alpha \Rightarrow \alpha = 0, \pm 9$.
+  %721
+\item Given $M^2 = N^4\Rightarrow M^2 - N^4 = 0\Rightarrow M + N^2 = 0[\because M\neq N^2]$
+
+  $\Rightarrow \det(M + N^2) = 0$
+
+  $\det(M^2 + MN^2) = \det(M)\det(M + N^2) = 0$.
+  %722
+\item Using $C_3\rightarrow C_3 - \alpha C_1 - C_2$ gives us
+
+  $\startdeterminant\NC a\NC b\NC 0\NR\NC b\NC c\NC 0\NR\NC a\alpha + b\NC b\alpha + c\NC
+  0\NR\stopdeterminant = 0$
+
+  $\Rightarrow (a\alpha^2 + 2b\alpha + c)(b^2 - ac) = 0$
+
+  Thus, $x - \alpha$ is a factor of $ax^2 + 2bx + c$ or $a, b, c$ are in G.P.
+  %723
+\item Let $P = \startdeterminant\NC a_1\NC b_1\NC c_1\NR\NC a_2\NC b_2\NC C_2\NR\NC a_3\NC b_3\NC
+  c_3\NR\stopdeterminant$
+
+  $= a_1\left(b_2c_3 - b_3c_2\right) - a_2(b_1c_3 - b_3c_1) + a_3\left(b_1c_2 - b_2c_1\right)$
+
+  Maximum value of $P$ is $6$. If $a_1 = 1, a_2 = -1, a_3 = 1, b_2c_3 = b_1c_3 = b_1c_2 = 1$ and $b_3c_2 =
+  b_3c_1 = b_2c_1 = -1$
+
+  But it is not possible because $b_2c_3b_3c_1b_1c_2 = -1$ and $b_1c_3b_3c_2b_2c_1 = 1$
+  i.e. $b_1b_2b_3c_1c_2c_3 = \pm 1$
+
+  Similar contradiction occurs if $a_1 = a_2 = a_3 = 1, b_2c_1 = b_3c_1 = b_1c_2 = 1, b_3c_2 =
+  b_1c_3 = b_1c_2 = -1$
+
+  Now for value $5$ on of the terms must be zero but that will make two terms zero which means answer cannot
+  be five. Now
+
+  $\startdeterminant\NC 1\NC 1\NC 1\NR\NC -1\NC 1\NC 1\NR\NC 1\NC 1\NC 1\NR\stopdeterminant = 4$.
+  %724
+\item Given that $M^TM = I$ and $|M| = 1\therefore |M - I| = |IM - M^TM|\Rightarrow |M - I| = |(I - M)^TM|$
+
+  $\Rightarrow |M - I| = |I - M||M| = |I - M| = (-1)^3|M - I| = -|M - I|$
+
+  $\Rightarrow 2|M - I| = 0 \Rightarrow |M - I|= 0$.
+  %725
+\item Given that $\startdeterminant\NC ax - by - c\NC bx + ay\NC cx + a\NR\NC bx + ay\NC -ax + by - c\NC cy
+  + b\NR\NC cx + a\NC cy + b\NC -ax - by + c\NR\stopdeterminant = 0$
+
+  $\Rightarrow \frac{1}{a}\startdeterminant\NC a^2x - aby - ac\NC bx + ay\NC cx + a\NR\NC abx + a^2y\NC -ax + by -
+  c\NC cy + b\NR\NC acx + a^2\NC cy + b\NC -ax - by + c\NR\stopdeterminant = 0$
+
+  Using $C_1\rightarrow C_1 + bC_2 + cC_3$
+
+  $\Rightarrow \frac{1}{a}\startdeterminant\NC (a^2 + b^2 + c^2)x\NC ay + bx\NC cx + a\NR\NC (a^2 + b^2 +
+  c^2)y\NC by - c - ax\NC b + cy\NR\NC a^2 + b^2 + c^2\NC b + cy\NC c - ax - by\NR\stopdeterminant = 0$
+
+  $\Rightarrow \frac{1}{a}\startdeterminant\NC x\NC ay + bx\NC cx + a\NR\NC y\NC by - c - ax\NC b + cy\NR\NC
+  1\NC b + cy\NC c - ax - by\NR\stopdeterminant = 0$
+
+  Using $C_2\rightarrow C_2 - bC_1$ and $C_3\rightarrow C_3 - cC_1$
+
+  $\Rightarrow \frac{1}{a}\startdeterminant\NC x\NC ay\NC a\NR\NC y\NC -c -ax\NC b\NR\NC 1\NC cy\NC -ax -
+  by\NR\stopdeterminant = 0$
+
+  $\Rightarrow \frac{1}{ax}\startdeterminant\NC x^2\NC axy\NC ax\NR\NC y\NC -c -ax\NC b\NR\NC 1\NC cy\NC -ax
+  - by\NR\stopdeterminant = 0$
+
+  Using $R_1\rightarrow R_1 + yR_2 + R_3$
+
+  $\frac{1}{ax}\startdeterminant\NC x^2 + y^2 + 1\NC 0\NC 0\NR\NC y\NC -c -ax\NC b\NR\NC 1\NC cy\NC -ax -
+  by\NR\stopdeterminant = 0$
+
+
+  $\Rightarrow \frac{1}{ax}\left[\left(x^2 + y^2 + 1\right)\left\{(-c -ax)(-ax -by) - bcy\right\}\right] =
+  0$
+
+  $\Rightarrow (x^2 + y^2 + 1)(ax + by + c) = 0 \Rightarrow ax + by + c = 0$, which is equation of a
+  straight line.
+  %726
+\item Let $\Delta = \startdeterminant\NC \sin\theta\NC \cos\theta\NC \sin2\theta
+  \NR\NC \sin\left(\theta + \frac{2\pi}{3}\right)\NC \cos\left(\theta
+  + \frac{2\pi}{3}\right)\NC \sin\left(2\theta + \frac{4\pi}{3}\right)\NR\NC \sin\left(\theta
+  - \frac{2\pi}{3}\right)\NC \cos\left(\theta - \frac{2\pi}{3}\right)\NC \sin\left(2\theta
+  - \frac{4\pi}{3}\right)\NR\stopdeterminant$
+
+  Using $R_2\rightarrow R_2 + R_3$
+
+  $\Delta = \startdeterminant\NC \sin\theta\NC \cos\theta\NC \sin2\theta
+  \NR\NC \sin\left(\theta + \frac{2\pi}{3}\right) + \sin\left(\theta
+  - \frac{2\pi}{3}\right)\NC \cos\left(\theta + \frac{2\pi}{3}\right) + \cos\left(\theta
+  - \frac{2\pi}{3}\right)\NC \sin\left(2\theta + \frac{4\pi}{3}\right) + \sin\left(2\theta
+  - \frac{4\pi}{3}\right)\NR\NC \sin\left(\theta
+  - \frac{2\pi}{3}\right)\NC \cos\left(\theta - \frac{2\pi}{3}\right)\NC \sin\left(2\theta
+  - \frac{4\pi}{3}\right)\NR\stopdeterminant = 0$
+
+  Now $\sin\left(\theta + \frac{2\pi}{3}\right) + \sin\left(\theta - \frac{2\pi}{3}\right) =
+  2\sin\theta\cos\frac{2\pi}{3} = -2\sin\theta\cos\frac{\pi}{3} = -\sin\theta$
+
+  Similarly, $\cos\left(\theta + \frac{2\pi}{3}\right) + \cos\left(\theta - \frac{2\pi}{3}\right) =
+  -\cos\theta$
+
+  and $\sin\left(2\theta + \frac{4\pi}{3}\right) + \sin\left(2\theta - \frac{4\pi}{3}\right) = -\sin2\theta$
+
+  Thus, $\Delta = \startdeterminant\NC \sin\theta\NC \cos\theta\NC \sin2\theta
+  \NR\NC -\sin\theta\NC -\cos\theta \NC -\sin2\theta\NR\NC \sin\left(\theta
+  - \frac{2\pi}{3}\right)\NC \cos\left(\theta - \frac{2\pi}{3}\right)\NC \sin\left(2\theta
+  - \frac{4\pi}{3}\right)\NR\stopdeterminant = 0$.
+  %727
+\item Given $f'(x) = \startdeterminant\NC 2ax\NC 2ax - 1\NC 2ax + b + 1\NR|NC b\NC b + 1\NC -1\NR\NC 2(ax +
+  b)\NC 2ax + 2b + 1\NC 2ax + b\NR\stopdeterminant$
+
+  Using $R_3\rightarrow R_3 - R_1 - 2R_2$ gives us
+
+  $f'(x) = \startdeterminant\NC 2ax\NC 2ax - 1\NC 2ax + b + 1\NR\NC b\NC b + 1\NC -1\NR\NC 0\NC 0\NC
+  1\NR\stopdeterminant$
+
+  $=\startdeterminant\NC 2ax\NC 2ax - 1\NR\NC b\NC b + 1\NR\stopdeterminant = \startdeterminant\NC 2ax\NC
+  -1\NR\NC b\NC 1\NR\stopdeterminant[C_2\rightarrow C_2 - C_1]$
+
+  $f(x) = 2ax + b$. Integrating $f(x) = ax^2 + bx + c$, where $c$ is some arbitrary constant.
+
+  Given that $f(x)$ is minimum at $x = \frac{5}{2}\Rightarrow f'(5/2) = 0 \Rightarrow 5a + b = 0$
+
+  Also, $f(0) = 2 \Rightarrow c = 2$ and $f(1) = 1\Rightarrow a + b + c = 1$
+
+  Solving the equations gives us $a = \frac{1}{4}, b = -\frac{5}{4}$
+
+  Thus, $f(x) = \frac{x^2}{4} - \frac{5x}{4} + 2$.
+  %728
+\item Given that $a, b, c$ are $p$-th, $q$-th, $r$-th term of a harmonic progression. So
+  $\frac{1}{a}, \frac{1}{b}, \frac{1}{c}$ will be
+  $p$-th, $q$-th, $r$-th term of corresponding arithmetic progression.
+
+  Let $A$ be the first term and $D$ be the c.d.\ of this A.P., then
+
+  $\frac{1}{a} = A + (p - 1)D, \frac{1}{b}= A + (q - 1)D$ and $\frac{1}{c} = A + (r - 1)D$
+
+  Rewriting given determinant $abc\startdeterminant\NC \frac{1}{a}\NC \frac{1}{b}\NC \frac{1}{c}\NR\NC p\NC
+  q\NC r\NR\NC 1\NC 1\NC 1\NR\stopdeterminant$
+
+  $= abc\startdeterminant\NC A + (p - 1)D\NC A + (q - 1)D\NC A + (r - 1)D\NR\NC p\NC q\NC r\NR\NC 1\NC 1\NC
+  1\NR\stopdeterminant$
+
+  Using $R_1\rightarrow R_1 - (A - D)R_3 - DR_2$ give us
+
+  $=abc\startdeterminant\NC 0\NC 0\NC 0\NR\NC p\NC q\NC r\NR\NC 1\NC 1\NC 1\NR\stopdeterminant = 0$.
+  %729
+\item $|M| = \sin^4\theta\cos^4\theta + 1 + \sin^2\theta + \cos^2\theta + \sin^2\theta\cos^2\theta
+  = \sin^4\theta\cos^4\theta + \sin^2\theta\cos^2\theta + 2$
+
+  $\startbmatrix\NC\sin^4\theta\NC -1-\sin^2\theta\NR\NC 1 + \cos^2\theta\NC \cos^4\theta\NR\stopbmatrix
+  = \startbmatrix\NC \alpha\NC 0\NR\NC 0\alpha\NR\stopbmatrix + \frac{\beta}{|M|}(\adj(M))$
+
+  $= \startbmatrix\NC \alpha\NC 0\NR\NC 0\NC\alpha\NR\stopbmatrix
+  + \frac{\beta}{|M|}\startbmatrix\NC \cos^4\theta\NC 1 + \sin^2\theta\NR\NC -1
+  -\cos^2\theta\NC \sin^4\theta\NR\stopbmatrix$
+
+  $\Rightarrow \beta = -M$ and $\alpha = \sin^4\theta + \cos^4\theta$
+
+  $\Rightarrow \alpha = \alpha(\theta) = 1 - \frac{1}{2}\sin^2(2\theta)$ and $\beta = \beta\theta =
+  -\left[\left(\sin^2\theta\cos^2\theta + \frac{1}{2}\right)^2 + \frac{7}{4}\right]$
+
+  $= \left[\left(\frac{\\sin^22\theta}{4} + \frac{1}{2}\right)^2 + \frac{7}{4}\right]$
+
+  $\alpha$ will be minimum at $\sin^2(2\theta) = 1$ and $\beta$ is minimum for the same.
+
+  $\therefore \alpha^* + \beta^* = \frac{1}{2} - \frac{37}{16} = -\frac{29}{16}$.
+  %730
+\item We know that $AA^{-1} = I$. Given that $B = A^{-1} \Rightarrow AB = I \Rightarrow |A||B| =
+  1\Rightarrow |B| = \frac{1}{|A|}$
+
+  Given that $|A| + 1 = - \Rightarrow |A| = -1 \Rightarrow |B| = -1$
+
+  Expanding the given matrix $|B| = 5(-2 - 3) - 2\alpha(0 - \alpha) + 1(0 - 2\alpha) = -1$
+
+  $\Rightarrow \alpha^2 - \alpha - 12 = 0 \Rightarrow \alpha = -3, 4$.
 \stopitemize
