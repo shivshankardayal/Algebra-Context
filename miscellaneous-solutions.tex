@@ -7961,4 +7961,28 @@
   $\because \det\left(M^2|M|\right) = \det(I) = 1\Rightarrow |M|^3 = 1\Rightarrow |M| = 1$
 
   $\Rightarrow M^2 = I$. Now $\adj M = |M|M^{-1} = M\Rightarrow (\adj M)^2 = M^2 = I$.
+  %742
+\item $|\adj(M)| = |M|^2 = -1(6 - 6) -1(-8 + 10) - 1(24 - 30) = 4 \Rightarrow |M| = \pm 2$
+
+  We know that $A(\adj A) = |A|I\Rightarrow M = |M|(\adj M)^{-1}$
+
+  $(\adj M)^{-1} = \frac{1}{|\adj M|}\startbmatrix\NC 0\NC -2\NC -6\NR\NC -2\NC -4\NC -2\NR\NC -4\NC -6\NC
+  -2\NR\stopbmatrix^T$
+
+  $\Rightarrow \startbmatrix\NC 0\NC 1\NC a\NR\NC 1\NC 2\NC 3\NR\NC 3\NC b\NC 1\NR\stopbmatrix
+  = \frac{|M|}{4}\startbmatrix\NC 0\NC -2\NC -6\NR\NC -2\NC -4\NC -2\NR\NC -4\NC -6\NC
+  -2\NR\stopbmatrix$
+
+  $\Rightarrow |M| = -2, a = 2$ and $b = 1$
+
+  $\Rightarrow M = \startbmatrix\NC 0\NC 1\NC 2\NR\NC 1\NC 2\NC 3\NR\NC 3\NC 1\NC 1\NR\stopbmatrix$
+
+  $M\startbmatrix\NC \alpha\NR\NC \beta\NR\NC \gamma\NR\stopbmatrix = \startbmatrix\NC 1\NR\NC 2\NR\NC
+  3\NR\stopbmatrix$ gives us
+
+  $\beta + 2\gamma = 1, \alpha + 2\beta + 3\gamma = 2$ and $3\alpha + \beta + \gamma = 3$
+
+  $\Rightarrow \alpha = 1, \beta = -1$ and $\gamma = 1\Rightarrow \alpha - \beta + \gamma = 3$
+
+  $(\adj M)^{-1} + \adj M^{-1} = 2\left(\adj M^{-1}\right) = 2.-\frac{M}{2} = -M$.
 \stopitemize
