@@ -7985,4 +7985,154 @@
   $\Rightarrow \alpha = 1, \beta = -1$ and $\gamma = 1\Rightarrow \alpha - \beta + \gamma = 3$
 
   $(\adj M)^{-1} + \adj M^{-1} = 2\left(\adj M^{-1}\right) = 2.-\frac{M}{2} = -M$.
+  %743
+\item $|P| = 3.5\alpha -3\alpha + 20 = 12\alpha + 20$
+
+  $\adj(P) = \startbmatrix\NC 5\alpha\NC 2\alpha\NC -10\NR\NC -10\NC 6\NC 12\NR\NC -\alpha\NC -(3\alpha +
+  4)\NC 2\NR\stopbmatrix^T = \startbmatrix\NC 5\alpha\NC -10\NC -\alpha\NR\NC 2\alpha\NC 6\NC -3\alpha -
+  4\NR\NC -10\NC 12\NC 2\NR\stopbmatrix$
+
+  Given that $PQ = kI\Rightarrow |P||Q| = |kI| \Rightarrow |P|.\frac{k^2}{2} = k^3 \Rightarrow |P| = 2k$
+
+  $Q = kP^{-1}I = k\frac{\adj(P)}{|P|} = \frac{k\adj(P)}{2k} = \frac{1}{2}\startbmatrix\NC 5\alpha\NC -10\NC
+  -\alpha\NR\NC 2\alpha\NC 6\NC -3\alpha - 4\NR\NC -10\NC 12\NC 2\NR\stopbmatrix$
+
+  $q_{23} = \frac{-3\alpha - 4}{2} = -\frac{k}{8} \Rightarrow 12\alpha + 16 = k$
+
+  We have obtained that $|P| = 12\alpha + 20 = 2k$
+
+  From these two equations we have $\alpha = -1$ and $k = 4\Rightarrow 4\alpha - k + 8 = 0$
+
+  $|P\adj(Q)| = |P||\adj(Q)| = 2k\left(\frac{k^2}{2}\right)^2 = 2^9$.
+  %744
+\item The required condition for a matrix to be invertible is $|M|\neq 0$
+
+  Let $M = \startbmatrix\NC a\NC 0\NR\NC 0\NC b\NR\stopbmatrix\Rightarrow |M| = ab\neq 0$
+
+  Also let $M = \startbmatrix\NC a\NC b\NR\NC b\NC b\NR\stopbmatrix\Rightarrow |M| = ac - b^2\neq 0$
+
+  So the product of entries in the main diagonal of $M$ is not the square of an integer.
+  %745
+\item We know that $\adj(P) = |P|^2 = \startbmatrix\NC 1\NC 4\NC 4\NR\NC 2\NC 1\NC 7\NR\NC
+  1\NC 1\NC 3\NR\stopbmatrix = 4\Rightarrow |P| = \pm2$.
+  %746
+\item $|\adj(A)| + |\adj(B)| = (2k + 1)^6 + 0 = 10^6 \Rightarrow 2k + 1 = 10 \Rightarrow [k] = 4$.
+  %747
+\item $\Delta = \startdeterminant\NC [\sin\theta]\NC [-\cos\theta]\NR\NC [\cot\theta]\NC
+  1\NR\stopdeterminant = [\sin\theta] - [-\cos\theta][\cot\theta]$
+
+  When $\theta\in\left(\frac{\pi}{2}, \frac{2\pi}{3}\right)\Rightarrow
+  \sin\theta\in\left(\frac{\sqrt{3}}{2}, 1\right)\Rightarrow [\sin\theta] = 0;
+  -\cos\theta\in \left(0, \frac{1}{2}\right)\Rightarrow [-\cos\theta] = 0$ and
+
+  $\cot\theta\in\left(-\frac{1}{\sqrt{3}}, 0\right)\Rightarrow [\cot\theta] = -1$
+
+  $\Rightarrow \Delta = 0$, so the equations will have infinite solutions.
+
+  If $\theta\in\left(\pi, \frac{7\pi}{6}\right), \sin\theta\in\left(-\frac{1}{2}, 0\right)\Rightarrow
+  [\sin\theta] = -1$
+
+  $-\cos\theta\in\left(\frac{\sqrt{3}}{2}, 1\right)\Rightarrow [\cos\theta] = 0 $ and
+  $\cot\theta\in\left(\sqrt{3}, \infty\right)\Rightarrow [\cot\theta] = n, n\in\mathbb{N}$
+
+  $\Rightarrow \Delta = -1$, thus given system of equations will have a unique solution.
+  %748
+\item The system of solutions will have infinitely many solutions when $\Delta = \startdeterminant\NC 1\NC
+  1\NC 1\NR\NC 4\NC \lambda\NC -\lambda\NR\NC 3\NC 2\NC -4\NR\stopdeterminant = 0$
+
+  $\Rightarrow 1(-4\lambda + 2\lambda) -1(-16 + 3\lambda) + 1(8 - 3\lambda) = 0 \Rightarrow \lambda = 3$.
+  %749
+\item The given system of equations will have infinitely many solutions if the planes represented by the
+  given equation intersect at a single line.
+
+  $\Rightarrow x + y + \lambda z - \mu = p(x + y + z - 5) + q(x + 2y + 2z - 6)$
+
+  Comparing coefficients $p + q = 1, p + 2q = 1, p + 2q = \lambda, 5p + 6q = \mu$
+
+  Solving these gives us $p = 1, q = -2, \lambda = 3$ and $\mu = 7 \Rightarrow \lambda+ \mu = 10$.
+  %750
+\item Since the given system of equations have a non-trivial solution, therefore
+
+  $\Delta = \startdeterminant\NC 2\NC 3\NC -1\NR\NC 1\NC k\NC -2\NR\NC 2\NC -1\NC 1\NR\stopdeterminant =
+  0\Rightarrow 2(k - 2)- 3(1 + 4) - 1(-1 - 2k) = 0$
+
+  $\Rightarrow k = \frac{9}{2}$
+
+  So the system of equation becomes $2x + 3y - z = 0, 2x + 9y - 4z = 0$ and $2x - y + z = 0$
+
+  From first two we have $\frac{y}{z} = \frac{1}{2}$. From first and third we have $\frac{x}{y} =
+  -\frac{1}{2}\Rightarrow \frac{z}{x} = -4$
+
+  Thus, $\frac{x}{y} + \frac{y}{z} + \frac{z}{x} + k = \frac{1}{2}$.
+  %751
+\item Adding first and third equation we have $4x - 3y = 4$, which is the equation of the straight line on
+  which $(x, y)$ lies.
+  %752
+\item For the given system of equations to have a non-trivial solution
+
+  $\Delta = \startdeterminant\NC 1\NC -c\NC -c\NR\NC c\NC -1\NC c\NR\NC c\NC c\NC -1\NR\stopdeterminant =
+  0 \Rightarrow 1\left(1 - c^2\right) + c\left(-c -c^2\right) - c\left(c^2 + c\right) = 0$
+
+  $\Rightarrow (c + 1)^2(2c - 1) = 0 \Rightarrow c= -1, \frac{1}{2}$
+
+  Clearly, greatest value of $c$ is $\frac{1}{2}$.
+  %753
+\item Given system of equations can be rewritten as $(1 - \lambda)x - 2y - 2z = 0, x + (2 - \lambda)y + z =
+  0, x + y + \lambda z = 0$, which will have a non-trivial solution if
+
+  $\Delta = \startdeterminant\NC 1 - \lambda\NC -2\NC -2\NR\NC 1\NC 2 - \lambda\NC 1\NR\NC 1\NC
+  1\NC \lambda\NR\stopdeterminant = 0 \Rightarrow \lambda = 1$.
+  %754
+\item The system of equations will have a unique solution if $\Delta = \startdeterminant\NC 1
+  + \alpha\NC \beta\NC 1\NR\NC \alpha\NC (1 + \beta)\NC 1\NR\NC \alpha\NC \beta\NC 2\NR\stopdeterminant\neq
+  0$
+
+  Using $R_1\rightarrow R_1 - R_3$ and $R_2\rightarrow R_2 - R_3$ gives us
+
+  $\startdeterminant\NC 1\NC 0\NC -1\NR\NC 0\NC 1\NC -1\NR\NC \alpha\NC \beta\NC 2\NR\stopdeterminant\neq
+  0 \Rightarrow \alpha + \beta + 2\neq 0$
+
+  Clearly, $(2, 4)$ is a possible value for $(\alpha, \beta)$.
+  %755
+\item We know that a system of equation has many solutions if $D = D_1 = D_2 = D_3 = 0$
+
+  Thus, $\Delta-1 = \startdeterminant\NC a\NC 2\NC 3\NR\NC b\NC -1\NC 5\NR\NC c\NC -3\NC
+  2\NR\stopdeterminant = 0 \Rightarrow a(-2 + 15) - 2(2b - 5c) + 3(-3b + c) = 0$
+
+  $\Rightarrow 13a - 13b + 13c = 0 \Rightarrow b - c - a = 0$.
+  %756
+\item Given system of equations will have a non-trivial solution if $\Delta = \startdeterminant\NC 1\NC
+  3\NC 7\NR\NC -1\NC 4\NC 7\NR\NC \sin3\theta\NC \cos2\theta\NC 2\NR\stopdeterminant = 0$
+
+  $\Rightarrow 1(8 - 7\cos2\theta) - 3(-2 - 7\sin3\theta) + 7(-\cos2\theta - 4\sin3\theta) = 0\Rightarrow
+  -7\sin3\theta - 14\cos2\theta + 14 = 0$
+
+  $\Rightarrow 3\sin\theta - 4\sin^3\theta + 2 - 4\sin^2\theta - 2 =
+  0\Rightarrow \sin\theta\left(4\sin^2\theta + 4\sin\theta - 3\right) = 0$
+
+  $\Rightarrow \sin\theta(2\sin\theta - 1)(2\sin\theta + 3) = 0\Rightarrow \sin\theta = 0, \frac{1}{2}$
+
+  In the given interval of $\theta\in(0, \pi), \sin\theta = \frac{1}{2}\Rightarrow \theta
+  = \frac{\pi}{6}, \frac{5\pi}{6}$.
+  %757
+\item For the given system of equations to have infinitely many solutions $D = D_1 = D_2 = D_3 = 0$
+
+  $D = 0\Rightarrow \startdeterminant\NC 1\NC 1\NC 1\NR\NC 1\NC 2\NC 3\NR\NC 1\NC 3\NC \alpha\NR\stopdeterminant
+  = 0 \Rightarrow \alpha - 5 = 0 \Rightarrow \alpha = 5$
+
+  and $D_3 = 0 \Rightarrow \startdeterminant\NC 1\NC 1\NC 5\NR\NC 1\NC 2\NC 9\NR\NC 1\NC
+  3\NC \beta\NR\stopdeterminant = 0 \Rightarrow \beta = 13$
+
+  $\Rightarrow \beta - \alpha = 8$.
+  %758
+\item $D = \startdeterminant\NC 1\NC -4\NC 7\NR\NC 0\NC 3\NC -5\NR\NC -2\NC 5\NC -9\NR\stopdeterminant =
+  1(-27 + 25) + 4(0 - 10) + 7(0 + 6) = 0$
+
+  Thus, system of equations have many solutions. Since the system of equations is consistent and have many
+  solutions, therefore, $D_1 = D_2 = D-3 = 0$
+
+  $D_1 = 0 \Rightarrow \startdeterminant\NC g\NC -4\NC 7\NR\NC h\NC 3\NC -5\NR\NC k\NC 5\NC
+  -9\NR\stopdeterminant = g(-27 + 25) + 4(-9h + 5k) + 7(5h - 3k) = 0$
+
+  $\Rightarrow 2g + h+ k = 0$.
 \stopitemize
