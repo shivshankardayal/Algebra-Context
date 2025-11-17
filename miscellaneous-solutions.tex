@@ -7961,4 +7961,233 @@
   $\because \det\left(M^2|M|\right) = \det(I) = 1\Rightarrow |M|^3 = 1\Rightarrow |M| = 1$
 
   $\Rightarrow M^2 = I$. Now $\adj M = |M|M^{-1} = M\Rightarrow (\adj M)^2 = M^2 = I$.
+  %742
+\item For the system of linear equations to have infinitely many solutions $\startbmatrix\NC
+  1\NC \alpha\NC \alpha^2\NR\NC \alpha\NC 1\NC \alpha\NR\NC \alpha^2\NC \alpha\NC 1\NR\stopbmatrix = 0$
+
+  $\Rightarrow \alpha^4 - 2\alpha^2 + 1 = 0 \Rightarrow \alpha = \pm 1$
+
+  However, $\alpha = 1$ does not saatisfy the equation. Therefore, $\alpha = -1\Rightarrow 1 + \alpha
+  + \alpha^2 = 1$.
+  %743
+\item Let $M = \startbmatrix\NC a_1\NC a_2\NC a_3\NR\NC b_1\NC b_2\NC b_3\NR\NC c_1\NC c_2\NC
+  c_3\NR\stopbmatrix$, then from the given equations
+
+  $M\startbmatrix\NC 1\NR\NC -1\NR\NC 0\NR\stopbmatrix = \startbmatrix\NC a_2\NR\NC b_2\NR\NC
+  c_2\NR\stopbmatrix = \startbmatrix\NC -1\NR\NC 2\NR\NC 3\NR\stopbmatrix$
+
+  $\Rightarrow a_2 = -1, b_2 = 2, c_2 = 3$
+
+  $M\startbmatrix\NC 1\NR\NC -1\NR\NC 0\NR\stopbmatrix = \startbmatrix\NC a_1 - a_2\NR\NC b_1 - b_2\NR\NC
+  c_1 - c_2\NR\stopbmatrix = \startbmatrix\NC 1\NR\NC 1\NR\NC -1\NR\stopbmatrix$
+
+  $\Rightarrow a_1 - a_2 = 1, b_1 - b_2 = 1, c_1 - c_2 = -1\Rightarrow a_1 = 0, b_1 = 3, c_1 = 2$
+
+  $M\startbmatrix\NC 1\NR\NC 1\NR\NC 1\NR\stopbmatrix = \startbmatrix\NC a_1 + a_2 + a_3\NR\NC b_2 + b_2 +
+  b_3\NR\NC c_1 + c_2 + c_3\NR\stopbmatrix = \startbmatrix\NC 0\NR\NC 0\NR\NC 12\NR\stopbmatrix$
+
+  $\Rightarrow c_3 = 7$
+
+  Thus, sum of diagonal entries is $a_1 + b_2 + c_3 = 0 + 2 + 7 = 9$.
+  %744
+\item We find that $A^2 = A\Rightarrow A = A^n\;\forall n\in\left\{1, 2, \ldots, 100\right\}$
+
+  and $B^2 = -B\Rightarrow B^3 = -B^2 = B\Rightarrow B^5 = B$. Also, $\omega^{3k} = 1$
+
+  So $n = \left\{1, 3, 5, \ldots, 99\right\}\cap\left\{3, 6, 9, \ldots, 99\right\} = 17$.
+  %745
+\item The given system of equation has no solutions if $\startbmatrix\NC 2\NC -3\NC 5\NR\NC 1\NC 3\NC
+  -1\NR\NC 3\NC -1\NC \lambda^2 - |\lambda|\NR\stopbmatrix = 0$
+
+  $\Rightarrow 9\lambda^2 - 9|\lambda| -43 = 0\Rightarrow |\lambda| = \frac{9 \pm\sqrt{1629}}{18}$
+
+  But $|\lambda| \geq 0 \Rightarrow \lambda = \pm \frac{9 + \sqrt{1629}}{18}$. Thus, $\lambda$ has two
+  possible values.
+  %746
+\item We find that $A^2 = \startbmatrix\NC 1\NC 2a\NC 2a + ab\NR\NC 0\NC 1\NC 2b\NR\NC 0\NC 0\NC
+  1\NR\NC \NR\stopbmatrix, A^3 = \startbmatrix\NC 1\NC 3a\NC 3a + 3ab\NR\NC 0\NC 1\NC 3b\NR\NC 0\NC 0\NC
+  1\NR\stopbmatrix$
+
+  $A^4 = \startbmatrix\NC 1\NC 4a\NC 4a + 6ab\NR\NC 0\NC 1\NC 4b\NR\NC 0\NC 0\NC 1\NR\stopbmatrix$
+
+  We see that coefficient of $ab$ proceeds as $0, 1, 3, 6, 10, \ldots$.
+
+  Thus, $n$th term will have coefficient of $ab$ as $\frac{n(n - 1)}{2}$. $A^n_{12} = na$ and $A^n_{23} =
+  nb$
+
+  Thus, $na = 48, nb = 96, na + \frac{n(n - 1)}{2}ab = 2160$
+
+  Solving we find that $n + a + b = 24$.
+  %747
+\item Let $A = \startbmatrix\NC a_1\NC b_1\NC c_1\NR\NC a_2\NC b_2\NC c_2\NR\NC a_3\NC b_3\NC
+  c_3\NR\stopbmatrix$
+
+  Given that $A\startbmatrix\NC 0\NR\NC 0\NR\NC 1\NR\stopbmatrix = \startbmatrix\NC 1\NR\NC 1\NR\NC
+  2\NR\stopbmatrix\Rightarrow \startbmatrix\NC c_1\NR\NC c_2\NR\NC c_3\NR\stopbmatrix = \startbmatrix\NC
+  1\NR\NC 1\NR\NC 2\NR\stopbmatrix$
+
+  $\Rightarrow c_1 = 1, c_2 = 1, c_3 = 2$
+
+  Now $A\startbmatrix\NC 1\NR\NC 0\NR\NC 1\NR\stopbmatrix = \startbmatrix\NC -1\NR\NC 0\NR\NC
+  1\NR\stopbmatrix\Rightarrow \startbmatrix\NC a_1 + c_1\NR\NC a_2 + c_2\NR\NC a_3 + c_3\NR\stopbmatrix
+  = \startbmatrix\NC -1\NR\NC 0\NR\NC 1\NR\stopbmatrix$
+
+  $\Rightarrow a_1 = -2, a_2 = -1, a_3 = -1$
+
+  Also, $A\startbmatrix\NC 1\NR\NC 1\NR\NC 0\NR\stopbmatrix = \startbmatrix\NC 1\NR\NC 1\NR\NC
+  0\NR\stopbmatrix \Rightarrow \startbmatrix\NC a_1 + b_1\NR\NC a_2 + b_2\NR\NC a_3 + b_3\NR\stopbmatrix
+  = \startbmatrix\NC 1\NR\NC 1\NR\NC 0\NR\stopbmatrix$
+
+  $\Rightarrow b_1 = 3, b_2 = 2, b_3 = 1$
+
+  $\Rightarrow A = \startbmatrix\NC -2\NC 3\NC 1\NR\NC -1\NC 2\NC 1\NR\NC -1\NC 1\NC
+  2\NR\stopbmatrix\Rightarrow A - 2I = \startbmatrix\NC -4\NC 3\NC 1\NR\NC -1\NC 0\NC 1\NR\NC -1\NC 1\NC
+  0\NR\stopbmatrix$
+
+  $|A - 2I| = 0$. Thus, $\startbmatrix\NC -4\NC 3\NC 1\NR\NC -1\NC 0\NC 1\NR\NC -1\NC 1\NC
+  0\NR\stopbmatrix\startbmatrix\NC x_1\NR\NC x_2\NR\NC x_3\NR\stopbmatrix = \startbmatrix\NC 4\NR\NC
+  1\NR\NC 1\NR\stopbmatrix$
+
+  $\Rightarrow -4x_1 + 3x_2 + x_3 = 4; -x_1 + x_3 = 1; -x_1 + x_2 = 1$
+
+  Solving the equations gives us $0 = 0$ which implies we have infinite solutions.
+  %748
+\item Because the given system of equations has infinte solutions, therefore, $\startbmatrix\NC 8\NC 1\NC
+  4\NR\NC 1\NC 1\NC \NR\NC \lambda\NC -3\NC 0\NR\stopbmatrix = 0 \Rightarrow \lambda = 4$
+
+  Also $\Delta_x = \Delta_y = \Delta_z = 0 \Rightarrow \mu = -2$
+
+  Now it is trivial to caalculate the distance which is $\frac{10}{3}$.
+  %749
+\item Let $A = \startbmatrix\NC a\NC b\NR\NC c\NC d\NR\stopbmatrix = -1 \Rightarrow ad - bc = -1$
+
+  $\adj(A) = \startbmatrix\NC d\NC -b\NR\NC -c\NC a\NR\stopbmatrix$
+
+  Thus, $|(A + I)(\adj(A) + I)| = ad - bc + a + d + 1 = \pm 2 \Rightarrow a + d = \pm 2$.
+  %750
+\item $A'BA = \startbmatrix\NC 1\NC 1\NC 1\NR\stopbmatrix \startbmatrix\NC 9^2\NC -10^2\NC
+  11^2\NR\NC 12^2\NC 13^2\NC -14^2\NR\NC -15^2\NC 16^2\NC 17^2\NR\stopbmatrix\startbmatrix\NC 1\NR\NC
+  1\NR\NC 1\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 9^2 + 12^2 - 15^2\NC -10^2 + 13^2 + 16^2\NC 11^2 - 14^2 + 17^2\NR\stopbmatrix\startbmatrix\NC 1\NR\NC
+  1\NR\NC 1\NR\stopbmatrix$
+
+  $= \startbmatrix\NC 9^2 + 12^2 - 15^2 - 10^2 + 13^2 + 16^2 + 11^2 - 14^2 +
+  17^2\NR\stopbmatrix = \startbmatrix\NC 539\NR\stopbmatrix$.
+  %751
+\item $\Delta = \startbmatrix\NC 3\NC -2\NC 1\NR\NC 5\NC -8\NC 9\NR\NC 2\NC 1\NC a\NR\stopbmatrix =
+  0 \Rightarrow a = -3$
+
+  $\Delta_2 = \startbmatrix\NC 3\NC -2\NC b\NR\NC 5\NC -8\NC 3\NR\NC 2\NC 1\NC -1\NR\stopbmatrix =
+  0 \Rightarrow b = -\frac{1}{3}$.
+  %752
+\item For infinitely many solutions $\Delta = \Delta_x = \Delta_y = \Delta_z = 0$
+
+  $\Delta = 0 \Rightarrow \startbmatrix\NC \alpha\NC 1\NC 1\NR\NC 1\NC 2\NC 3\NR\NC 1\NC 3\NC
+  5\NR\stopbmatrix = 0 \Rightarrow \alpha = 1$
+
+  $\Delta_x = \startbmatrix\NC 5\NC 1\NC 1\NR\NC 4\NC 2\NC 3\NR\NC \beta\NC 3\NC 5\NR\stopbmatrix =
+  0 \Rightarrow \beta = 3$.
+  %753
+\item Given that $X = \startbmatrix\NC 0\NC 1\NC 0\NR\NC 0\NC 0\NC 1\NR\NC 0\NC 0\NC
+  0\NR\stopbmatrix \Rightarrow X^2 = \startbmatrix\NC 0\NC 0\NC 1\NR\NC 0\NC\0\NC 0\NR\NC 0\NC 0\NC
+  0\NR\stopbmatrix$
+
+  $\Rightarrow Y = \startbmatrix\NC \alpha\NC \beta\NC \gamma\NR\NC 0\alpha\NC \beta\NR\NC 0\NC
+  0\NC \alpha\NR\stopbmatrix \Rightarrow Z = \startbmatrix\NC \alpha^2\NC -\alpha\beta\NC \beta^2
+  - \alpha\gamma\NR\NC 0\NC \alpha^2\NC -\alpha\beta\NR\NC 0\NC 0\NC \alpha^2\NR\stopbmatrix$
+
+  We observe that $YY^{-1} = 1\Rightarrow \alpha = 5, \beta = -10, \gamma = 15$
+
+  $\Rightarrow (\alpha - \beta + \gamma)^2 = 100$.
+  %754
+\item Characteristic equation of the matrix $A$ is $|A - \lambda I| = 0\Rightarrow  \startbmatrix\NC
+  1- \lambda\NC 2\NR\NC -2\NC -5 - \lambda\NR\stopbmatrix = 0$
+
+  $\Rightarrow \lambda^2 + 4\lambda = 1 \Rightarrow A^2 + 4A = I \Rightarrow 2A^2 + 8A = 2I$
+
+  $\Rightarrow \alpha A^2 + \beta A = 2I \Rightarrow \alpha = 2, \beta = 8 \Rightarrow \alpha + \beta = 10$.
+  %755
+\item $AA^T = \startbmatrix\NC a\NC d\NC g\NR\NC b\NC e\NC h\NR\NC c\NC f\NC
+  i\NR\stopbmatrix\startbmatrix\NC a\NC b\NC c\NR\NC d\NC e\NC f\NR\NC g\NC h\NC i\NR\stopbmatrix$
+
+  $\Rightarrow a^2 + b^2 + c^2 + d^2 + e^2 + f^2 + g^2 + h^2 + i^2 = 6$
+
+  Since the set $S = \left\{-1, 0, 1\right\}$ we can pick three zeroes and six can be picked from $\\pm
+  1$. Thus, total no.\ of such matrices is $C_3^^9\times 2^6 = 5376$.
+  %756
+\item The characteristic equation of $A$ is $|A - \lambda I| = 0$
+
+  $\Rightarrow \startdeterminant\NC 4 - \lambda\NC -2\NR\NC \alpha \NC \beta - \lambda\NR\stopdeterminant =
+  0$
+  $\Rightarrow \lambda^2 - (\beta + 4)\lambda + 4\beta + 2\alpha = O$. Putting $\lambda = A, A^2 - (\beta +
+  4)A + 4\beta + 2\alpha = O$ and comparing
+
+  $-9(\beta + 4) = \gamma$ and $4\beta + 2\alpha = 18$ and $|A| = 4\beta + 2\alpha = 18$.
+  %757
+\item $A  = \startbmatrix\NC \alpha\NC \beta\NC \gamma\NR\NC \alpha^2\NC \beta^2\NC \gamma^2\NR\NC \beta
+  + \gamma\NC \gamma + \alpha\NC \alpha + \beta\NR\stopbmatrix$
+
+  Performing $R_3\rightarrow R_3 + R_1$ gives us $A = (\alpha + \beta
+  + \gamma)\startbmatrix\NC \alpha\NC \beta\NC \gamma\NR\NC \alpha^2\NC \beta^2\NC \gamma^2\NR\NC 1\NC 1\NC
+  1\NR\stopbmatrix$
+
+  $\Rightarrow A = (\alpha + \beta + \gamma)(\alpha - \beta)(\beta - \gamma)(\gamma - \alpha)$
+
+  $\because |\adj A| = |A|^{n - 1}\Rightarrow \det\Biggl(\adj\biggl(\adj\Bigl(\adj(\adj
+  A)\Bigr)\biggr)\Biggr) = |A|^{(n _ 1)^4} = |A|^{16}$
+
+  $\Rightarrow (\alpha + \beta + \gamma)^{16} = 2^{32}.3^{16}\Rightarrow \alpha + \beta + \gamma = 12$
+
+  So number of all tuples is $C_2^^{11} = 55$. One of these will have all equal elements and twelve of these
+  will have two equal.
+
+  Thus, no.\ of distinct tuples is $42$.
+  %758
+\item $A^2 = \startbmatrix\NC 0\NC 0\NC 1\NR\NC 1\NC 0\NC 0\NR\NC 0\NC 1\NC 0\NR\stopbmatrix$
+
+  $R_1\leftrightarrow R_2$ and $R_2\leftrightarrow R_3$ gives us
+
+  $A^2 = \startbmatrix\NC 1\NC 0\NC 1\NR\NC 0\NC 1\NC 0\NR\NC 0\NC 0\NC 1\NR\stopbmatrix = I$
+
+  $\therefore B_0 = A + 2I = \startbmatrix\NC 2\NC 1\NC 0\NR\NC 0\NC 2\NC 1\NR\NC 1\NC 0\NC
+  2\NR\stopbmatrix = 9$. Given that $B_n = \adj(B_n - 1) = |B_0|^{16}$
+
+  $B_4 = \adj(\adj(\adj(\adj B_0))) = 9^{16}$
+  %759
+\item $\Delta = \startbmatrix\NC 1\NC 2\NC 1\NR\NC 2\NC 3\NC -1\NR\NC -2\NC 1\NC 2\NR\stopbmatrix = 0
+  \Rightarrow 7 + 2\alpha = 0\Rightarrow \alpha = -\frac{7}{2}$
+
+  $\Delta_x = \startbmatrix\NC 2\NC 2\NC 1\NR\NC \alpha\NC 3\NC -1\NR\NC -\alpha\NC 1\NC 2\NR\stopbmatrix =
+  14 + 2\alpha = 7\Rightarrow \Delta_x \neq 0$.
+  %760
+\item $|\adj(\adj(A))| = \startdeterminant\NC 14\NC 28\NC -14\NR\NC -14\NC 14\NC 28\NR\NC 28\NC -14\NC
+  14\NR\stopdeterminant = 14^4\Rightarrow |A|^4 = 14^4 \Rightarrow |A| = 14$.
+  %761
+\item $\Delta = \startdeterminant\NC 2\NC 3\NC -1\NR\NC 1\NC 1\NC 1\NR\NC 1\NC -1\NC
+  |\lambda|\NR\stopdeterminant = 0 \Rightarrow \lambda = \pm7$
+
+  Eliminating $y$ from first two equations we have $x + 4z = 14$ and from last two equations $x +
+  \frac{|\lambda| + 1}{2}z = 2\lambda$
+
+  Clearly, $\lambda = -7$, the system is inconsistent.
+  %762
+\item Let $A = \startbmatrix\NC a_{11}\NC a_{12}\NC a_{13}\NR\NC a_{21}\NC a_{22}\NC a_{23}\NR\NC a_{31}\NC
+  a_{32}\NC a_{33}\NR\stopbmatrix$, where $a_{ij} = \left\{0, 1\right\}$, and
+
+  $\sum a_{ij} = 2, 3, 4, 7$
+
+  Thus, total number of such matrices are $C_2^^9 + C_3^^9 + C_5^^9 + C_7^^9 = 282$.
+  %763
+\item $\Delta = p!(p + 1)!(p + 2)!\startdeterminant\NC 1\NC 1\NC 1\NR\NC p + 1\NC p + 2\NC p + 3\NR\NC (p +
+  2)(p + 1)\NC (p + 3)(p + 2)\NC (p + 4)(p + 3)\NR\stopdeterminant = 2p!(p + 1)!(p + 2)!$
+
+  which is divisible by $p^\alpha$ and $(p + 2)^\beta$ and thus $\alpha = 3, \beta = 1 \Rightarrow \alpha +
+  \beta = 4$.
+  %764
+\item $A = \startbmatrix\NC 1\NC 2\NC 2^2\NR\NC \frac{1}{2}\NC 1\NC 2\NR\NC \frac{1}{2^1}\NC \frac{1}{2}\NC 1\NR\stopbmatrix$
+
+  $A^2 = 3A, A^3 = 3^2A, \ldots, A^{10} = 3^9A$
+
+  $\Rightarrow A^2 + A^3 + \cdots + A^{10} = \frac{3^{10} - 3}{2}A$.
 \stopitemize
