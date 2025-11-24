@@ -8216,5 +8216,116 @@
   -\sin30\alpha\NC \cos30\alpha\NR\stopbmatrix = \startbmatrix\NC1\NC 0\NR\NC 0\NC 1\NR\stopbmatrix = I$
 
   $\therefore A^{25} = A\Rightarrow A^{30} + A^{25} - A$.
-  % done till 6th April 2023
+  %768
+\item $Q = PAP^T, P^TQ^{2007}P = P^TQ.Q.Q\ldots QP = P^T{PAP^T}{PAP^T}\ldots{PAP^T}P$
+
+  $P^TP = \startbmatrix\NC \frac{\sqrt{3}}{2}\NC -\frac{1}{2}\NR\NC \frac{1}{2}\NC
+  \frac{\sqrt{3}}{2}\NR\stopbmatrix\startbmatrix\NC \frac{\sqrt{3}}{2}\NC \frac{1}{2}\NR\NC -\frac{1}{2}\NC
+  \frac{\sqrt{3}}{2}\NR\stopbmatrix = \startbmatrix\NC 1\NC 0\NR\NC 0\NC 1\NR\stopbmatrix = I$
+
+  $\Rightarrow P^TQ^{2007}P = A^{2007}\Rightarrow A^2 = \startbmatrix\NC 1\NC 2\NR\NC 0\NC
+  1\NR\stopbmatrix\Rightarrow A^^{2007}
+  = \startbmatrix\NC 1\NC 2007\NR\NC 0\NC 1\NR\stopbmatrix$
+
+  $\Rightarrow a = 1, b = 2007, c = 0, d = 1\Rightarrow 2a + b - 3c - 4d = 2005$.
+  %769
+\item $|A| = \frac{1}{5!6!7!}5!6!7!\startdeterminant\NC 1\NC 6\NC 42\NR\NC 1\NC 7\NC 56\NR\NC 1\NC 8\NC
+  72\NR\stopdeterminant$
+
+  Applying $R_3\rightarrow R_3 - R_2$ and $R_2\rightarrow R_2 - R_1$ we have
+
+  $|A| = \startdeterminant\NC 1\NC 6\NC 42\NR\NC 0\NC 1\NC 14\NR\NC 0\NC 1\NC 16\NR\stopdeterminant = 2$
+
+  $|\adj(\adj(2A))| = |2A|^{(n - 1)^2} = 2^{16}$.
+  %770
+\item $A^3 = \startbmatrix\NC 2ac + 3\NC a + 2 + 3c\NC 2a + 4 + 6c\NR\NC a(a + 3c) + 2a\NC 3 + 2ac\NC 6 + 3a
+  + 9c\NR\NC a + 2 + 3c\NC ac + c(2 + 3c)\NC 2ac + 3\NR\stopbmatrix$
+
+  Thus, $2ac + 3 = 0$ and $a + 2 + 3c = 1$. Solving we have $2a^2 + 2a - 9 = 0$
+
+  $f(1) < 0, f(2) > 0\Rightarrow a\in(1, 2]\Rightarrow n = 2$.
+  %771
+\item Let $B = CAD$ where $C = \startbmatrix\NC 1\NC 1\NR\NC -1\NC -1\NR\stopbmatrix$ and $D
+  = \startbmatrix\NC -1\NC -2\NR\NC 1\NC 1\NR\stopbmatrix$
+
+  $\Rightarrow DC = I$. Now $B^n = (CAD)(CAD) \ldots (CAD) = CA^nD$
+
+  $A^2 = \startbmatrix\NC 1\NC \frac{2}{51}\NR\NC 0\NC 1\NR\stopbmatrix$ and so on.
+
+  $A^n = \startbmatrix\NC 1\NC \frac{n}{51}\NR\NC 0\NC 1\NR\stopbmatrix$ and $B^n
+  = \startbmatrix\NC \frac{n}{51} + 1\NC \frac{n}{51}\NR\NC -\frac{n}{51}\NC 1
+  - \frac{n}{51}\NR\stopbmatrix$
+
+  And thus $\displaystyle\sum_{n = 1}^{50}B^n = \startbmatrix\NC 75\NC 25\NR\NC -25\NC 25\NR\stopbmatrix$.
+  %772
+\item $\displaystyle\sum_{k = 1}^nD_k = \startdeterminant\displaystyle\NC \sum_{k = 1}^n1\NC \displaystyle\sum_{k = 1}^n2k\NC\displaystyle \sum_{k
+  = 1}^n(2k - 1)\NR\NC n\NC n^2 + n + 2\NC n^2\NR\NC n\NC n^2 + n\NC n^2 + n + 2\NR\stopdeterminant$
+
+  $= \startdeterminant\NC n\NC n^2 + n\NC n^2\NR\NC n\NC n^2 + n + 2\NC n^2\NR\NC n\NC n^2 + n\NC n^2 + n +
+  2\NR\stopdeterminant$
+
+  $R_2\rightarrow R_2 - R_1$ and $R_3\rightarrow R_3 - R_1$ gives is
+
+  $\startdeterminant\NC n\NC n^2 + n\NC n^2\NR\NC 0\NC 2\NC 0\NR\NC 0\NC 0\NC n + 2\NR\stopdeterminant =
+  n(2n + 4) = 96 \Rightarrow n = 6$.
+  %773
+\item $\because |A| = 2\therefore |B| = 4$. Upon expansion $B$ gives us
+
+  $-\alpha^2 + 6\alpha - 8 = 0 \Rightarrow \alpha = 2, 4$. We have $\alpha > 2\Rightarrow \alpha = 4$
+
+  Thus, $\startbmatrix\NC \alpha\NC -2\alpha\NC \alpha\NR\stopbmatrix B\startbmatrix\NC \alpha\NR\NC
+  -2\alpha\NR\NC \alpha\NR\stopbmatrix = [-16]$.
+  %774
+\item $\adj(kA) = k^{m - 1}\adj(A)$, where $m$ is the order of the matrix.
+
+  $\adj(2A) = 2^2\adj(A)\Rightarrow \adj(2\adj(2A)) = \adj(8\adj(A)) = 64\adj(\adj(A))$
+
+  $|2\adj(2\adj(2A))| = |2^7\adj(\adj(A))| = 2^{21}|A|^4 = 2^{25} = 2^{5n}\Rightarrow n = 5$
+
+  $|A| = 2 \Rightarrow 5 - 4\alpha + 2 + 3\alpha - 9 = 2\Rightarrow \alpha = -4\Rightarrow 3n + \alpha =
+  11$.
+  %775
+\item $\Delta = 0 \Rightarrow \startdeterminant\NC 2\NC 1\NC -1\NR\NC 2\NC -5\NC \lambda\NR\NC 1\NC 2\NC
+  -5\NR\stopdeterminant = 0 \Rightarrow \lambda = 17$
+
+  $\Delta_x = 0 \Rightarrow \startdeterminant\NC 5\NC 1\NC -1\NR\NC \mu\NC -5\NC 17\NR\NC 7\NC 2\NC
+  -5\NR\stopdeterminant = 0 \Rightarrow \mu = -13$
+
+  $\Rightarrow (\lambda + \mu)^2 + (\lambda - \mu)^2 = 916$.
+  %776
+\item Since $A$ is a symmetric matrix we can take $A$ as $\startdeterminant\NC a\NC b\NR\NC b\NC
+  c\NR\stopbmatrix$
+
+  And thus, we get three equations $ac - b^2 = 2, 2a + b = 1$ and $2b + c = 2$
+
+  Solving these equations gives us $a = \frac{3}{4}, b = -\frac{1}{2}$ and $c = 3$.
+
+  Thus, $\alpha = \frac{3}{2}$ and $\beta = 3$ and $s = \frac{15}{4}$
+
+  Hence, $\frac{\beta s}{\alpha^2} = 5$.
+  %777
+\item Observe that $d = |A| = mq - np. |A - d(\adj(A))| = 0 \Rightarrow \left|\startbmatrix\NC m\NC n\NR\NC
+  p\NC q\NR\stopbmatrix - d\startbmatrix\NC q\NC -n\NR\NC -p\NC m\NR\stopbmatrix\right|$
+
+  $\Rightarrow \startbmatrix\NC m - qd\NC n(1 + d)\NR\NC p(1 + d)\NC q - md\NR\stopbmatrix = 0$
+
+  $\Rightarrow (m - qd)(q - md) - np(1 + d)^2 = 0$
+
+  Expanding and substituting for $mq - np = d$ we get the desired result.
+  %778
+\item We observe that $A^2 = A = A^3 = A^4 = \cdots$
+
+  Now $(A + I)^{11} = C_0^^{11}A^{11} + C_1^^{11}A^{10}I + C_2^^{11}A^9I^2 + \cdots + C_{11}^^{11}I^{11}$
+
+  $= (C_0^^{11} + C_1^^{11} + \cdots + C_{10}^^{11})A + I = 2047A + I$
+
+  $\therefore $ Sum of diagonal elements is $2047(1 + 4 - 3) + 3 = 4097$.
+  %779
+\item $|\adj(2.\adj(2A^{-1}))| = |2\adj(\adj(2A^{-1}))|^{n - 1} = 2^{n(n _ 1)}|\adj\left(2A^{-1}\right)|^{n
+  - 1}$
+
+  $= 2^{n(n - 1)}\left|\left(2A^{-1}\right)\right|^{(n - 1)(n - 1)} = 2^{n(n - 1)}2^{n(n - 1)(n -
+  1)}\left|A^{-1}\right|^{(n - 1)(n - 1)}$
+
+  $= \frac{2^{n(n - 1) + n(n - 1)^2}}{2^{(n - 1)^2}} = 2^{(n - 1)(n^2 n + 1)} = 2^{84}\Rightarrow n = 5$.
 \stopitemize
