@@ -1114,18 +1114,38 @@
   1 + 1 + 2 = 4$ and $-4 = -2 - 1 - 1\leq -(a + c) - 1\leq (-a + c) - a + b - c\leq -2a + b\leq 2ax + b$.
 
   Similarly, it can be proven for $a < 0$.
-\item $|a| = max\{-a, a\}$ implies $\frac{|p(1) + p(-1)|}{2} = \frac{|1 + p + q| + |1 - p  q|}{2} =
+\item $|a| = \max\{-a, a\}$ implies $\frac{|p(1) + p(-1)|}{2} = \frac{|1 + p + q| + |1 - p + q|}{2} =
   \frac{1}{2}\mathrm{max}\{(1 + p + q + 1 - p - q), (1 + p + q - (1 - p + q))\} = \mathrm{max}\{|1 + q|, |p|\}$.
 
   Clearly, minimum value of $\mathrm{max}\{|1 + q|, |p|\}$ will be when $p = 0$ and $q = -\frac{1}{2}$. Thus, our
   polynomial is $x^2 - \frac{1}{2}$.
+
+  {\bf Second method:} If $p$ is optimal, then on $[−1, 1]$ its graph must touch the values $+M$ and $−M$ in
+  an alternating fashion at three points. Otherwise, one could shift the polynomial slightly up or down and
+  reduce the maximum absolute value.
+
+  For a quadratic, the natural three symmetric points to check are $−1, 0, 1$.
+  Thus we try to force: $p(1) = +M, p(0) = -M, p(1) = +M$ or the sign reversed.
+
+  $p(0) = q, p(1) = 1 + p + q, p(-1) = 1 - p + q\Rightarrow q = -M, 1 + p + q = M, 1 - p + q = M$
+
+  Solving these gives us $p = 0, M = \frac{1}{2}\Rightarrow q = -\frac{1}{2}$
+
+  Thus, our polynomial is $p(x) = x^2 - \frac{1}{2}$
 \item Clearly, $|a + b + c|\leq 1, |a - b + c|\leq 1, |c|\leq 1 \Rightarrow |a|\leq 2$. Now, $\frac{8}{3}a^2
-  + 2b^2 = \frac{2}{3}[4a^2 + 3b^2] = \frac{2}{3}[2(a + b)^2 + 2(a - b)^2 - b^2]$, which will be maximum if
-  $b = 0$. Thus, $a = \pm 2, c = \pm 1$.
+  + 2b^2 = \frac{2}{3}[4a^2 + 3b^2] = \frac{2}{3}[2(a + b)^2 + 2(a - b)^2 - b^2] = z$.
+
+  Now $f(1) = a + b + c, f(0) = c$. $\because |f(x)|\leq 1 \Rightarrow |f(1) - f(0)|\leq 2\Rightarrow |a +
+  b|\leq 2$ and $|f(-1) - f(0)|\leq 2\Rightarrow |a - b|\leq 2$
+
+  $z \leq \frac{2}{3}\left[2^2 + 2^2 - b^2\right]$ which will be maximum if $b = 0\Rightarrow |a|\leq 2$.
+
+  Now $|a + b + c|\leq 1 \Rightarrow |2 + c|\leq 1$ or $|-2 + c|\leq 1$ which gives $c = \pm 1$.
 \item Let the roots are $-p, -q, -r$ so that $p, q, r > 0$. From Vieta's relations, we have $p + q + r = a <
   3, b + c = pq + qr + rp + pqr$. By AM-GM inequality, $pqr\leq\left(\frac{p + q + r}{3}\right)^3 <
-  1$. Also, $p^2 + q^2 + r^2\geq pq + qr + rp \Rightarrow (p + q + r)^2\geq 3(pq + qr + rp)\Rightarrow pq +
-  qr = rp \leq 3 \Rightarrow pq + qr + rp + pqr < 3 + 1 = 4$.
+  1$. Also, $p^2 + q^2 + r^2\geq pq + qr + rp \Rightarrow (p + q + r)^2\geq 3(pq + qr + rp)\Rightarrow
+  3^2\geq3(pq+ qr + rp)\Rightarrow pq +
+  qr + rp \leq 3 \Rightarrow pq + qr + rp + pqr < 3 + 1 = 4$.
 \item Set $x = 0, p(0) = 1$. Setting $x = 1, p(1) = 0$. We continue till $x = 29$ to find $p(29) = 0$. Let
   $p(x) = x(x - 1)(x - 2)\cdots(x - 29)Q(x)$, where $Q(x)$ is some polynomial. Then,
 
@@ -1138,11 +1158,15 @@
   $f(a) = b, f(b) = a$. Let $g(x) = f(x) - x$ for all $x$. It follows that $g(a) = b - a > 0$ and $g(b) = a
   - b < 0$. Since $f$ is a quadratic poplynomial, $f$ is continuous. This means that between $a$ and $b$
   there must exist one $x_0$ such that $f(x_0) = 0$ making it a root, which is a contradiction.
-\item We set $x = 0, \pm1, \pm 2$, we have $7|e, 7|a + b + c + d + e, 7|a - b + c - d + e, 7|16a + 8b + 4c +
-  2d + e, 7|16a - 8b + 4c - 2d + e$, which simplifies to $7|a + c, 7|32a + 8c$, which implies the given
-  result.
+\item We set $x = 0, \pm1, \pm 2$, we have $e \equiv 0 (\mod 7), a + b + c + d\equiv 0 (\mod 7), a - b + c
+  - d \equiv 0 (\mod 7), 16a + 8b + 4c + 2d\equiv 0(\mod 7), 16a - 8b + 4c -2d\equiv 0(\mod 7)$
+
+  From first two we have $a + c\equiv 0$ and $b + d \equiv 0$. Similarly from last two we have $32a +
+  8c\equiv 0 \Rightarrow 4a + c\equiv 0$ and $16b + 4d\equiv 0\Rightarrow 4b + d\equiv 0$.
+
+  Thus, $a\equiv 0, b\equiv 0, c\equiv 0, d\equiv 0$.
 \item $(2a + b - 3)^2 + 3(b - 1)^2\geq 0$.
-\item $p(x^5) = x^{20} + x^{15} + x^{10} + x^5 + 1 = x^{20} - x^{15} + 2x^{15} - 2x^{10} + 3x^{10} - 3x^5 +
+\item $p\left(x^5\right) = x^{20} + x^{15} + x^{10} + x^5 + 1 = x^{20} - x^{15} + 2x^{15} - 2x^{10} + 3x^{10} - 3x^5 +
   4x^5 - 4 + 5 = (x^5 - 1)(x^{15} + 2x^{10} + 3x^5 + 4) + 5 = f(x)(x - 1)(x^{15} + 2x^{10} + 3x^5 + 4) +
   5$. Thus, remainder would be $5$.
 \item Roots of $x^2 + 1$ are $\pm i$ and roots of $x^2 + x + 1$ are $\omega, \omega^2$. Let
@@ -1150,7 +1174,7 @@
   $(x^2 + 1)(x^2 + x + 1)$.
 
   Setting $x = i, i = -ai - b + ci + d$. Comparing real and imaginary parts, $b = d$ and $c - a = 1$. Setting
-  $x = \omega, \omega = a + b\omega^2 + c\omega + d = a + b\left(\frac{-1 + i\sqrt{3}}{2}\right) +
+  $x = \omega^2, \omega = a + b\omega^2 + c\omega + d = a + b\left(\frac{-1 + i\sqrt{3}}{2}\right) +
   c\left(\frac{-1 - i\sqrt{3}}{2}\right) + d$. Comparing real and imaginary parts, $2a + 2d - b - c = 2$ and
   $b = c$. Thus, $a = 1, b = 2, c = 2, d = 2$. So the remainder is $x^3 + 2x^2 + 2x + 2$.
 \item We may assume that the leading coefficient in $p(x)$ is positive, so that $p(x)\rightarrow \infty$
@@ -1165,8 +1189,8 @@
   -\sqrt{x}\geq 0$. This is true only if $x = 0 \Rightarrow a = 0$.
 
   Now we consider the first root. $a = z^2 + z + 1 \Rightarrow z = \frac{-1 \pm \sqrt{4a - 3}}{2}$. Since $z
-  > 0$, we discard negative root. $\Rightarrow z = \frac{-1\pm\sqrt{4a - 3}}{2} \Rightarrow 4a - 3\geq 0\cap
-  z\geq 0 \Rightarrow a\geq 1$. Thus, $x = z^2 = \frac{2a - 1 - \sqrt{4a - 3}}{2}$.
+  > 0$, we discard negative root. $\Rightarrow z = \frac{-1+\sqrt{4a - 3}}{2} \Rightarrow 4a - 3\geq
+  1\Rightarrow z\geq 0 \Rightarrow a\geq 1$. Thus, $x = z^2 = 2a - 1 - \sqrt{4a - 3}$.
 \item Given, $x^2 - \sqrt{a - x} = a \Rightarrow a^2 - (2x^2 + 1)a + x^4 + x = 0 \Rightarrow a = x^2 + x,
   x^2 - x + 1\Rightarrow x = \frac{-1 \pm \sqrt{1 + 4a}}{2}, \frac{1\pm\sqrt{4a - 3}}{2}$. Clearly,
   $a\geq\frac{3}{4}$ and we also need to discard negative root in the first one.
@@ -1174,7 +1198,7 @@
   x + 1, x^2 - x \Rightarrow x = \frac{-1 + \sqrt{4a}}{2}, \frac{1\pm\sqrt{1 + 4a}}{2}$. Clearly, if $a\geq
   0$, then $x$ will be real.
 \item Let the three rational roots of the equation are $\frac{\alpha_2}{\alpha_1}, \frac{\beta_2}{\beta_1},
-  \frac{\gamma_2}{\gamma_1}$, then $ax^3 + bx^2 + cx + d = k(\alpha_1x + \alpha_2) + (\beta_1x + \beta_2) +
+  \frac{\gamma_2}{\gamma_1}$, then $ax^3 + bx^2 + cx + d = k(\alpha_1x + \alpha_2)(\beta_1x + \beta_2)
   (\gamma_1x + \gamma_2)\Rightarrow a = \alpha_1\beta_1\gamma_1, b = \alpha_1\beta_1\gamma_2 + \alpha_1\beta_2\gamma_1
   + \alpha_2\beta_1\gamma_1, c = \alpha_1\beta_2\gamma_2 + \alpha_2\beta_1\gamma_2 + \alpha_2\beta_2\gamma_1, d =
   \alpha_2\beta_2\gamma_2$. As $ad$ is odd, all of $\alpha_1, \alpha_2, \beta_1, \beta_2, \gamma_1, \gamma_2$ must be
@@ -1183,7 +1207,7 @@
   + ax + b + \frac{a}{x} + \frac{1}{x^2} = 0 \Rightarrow \left(x + \frac{1}{x}\right)^2 + a\left(x +
   \frac{1}{x}\right) + b - 2 = 0$. Substituting $x + \frac{1}{x} = z\geq 2$, we have
 
-  $z^2 + az + b - 2 = 0 \Rightarrow D = \frac{-a \pm \sqrt{a^2 -4b + 8}}{2}\geq 2 \Rightarrow a^2 - 4b +
+  $z^2 + az + b - 2 = 0 \Rightarrow z = \frac{-a \pm \sqrt{a^2 -4b + 8}}{2}\geq 2 \Rightarrow a^2 - 4b +
   8\geq a^2 + 8a + 16\Rightarrow -b\geq 2a + 2 \Rightarrow a^2 + b^2\geq 5a^2 + 8a + 4$.
 
   We know that for a quadratic equation minimum value is $-\frac{D^2}{4a}$, so minimum value of $a^2 +
@@ -1198,7 +1222,7 @@
 
   Similarly, we find that on first expansion $a_2 = 1 = \frac{4 - 1}{3}$, on second expansion it is $a_2 =
   4 + 4^2 = \frac{4^3 - 4^1}{3}$, and on third expansion $a_2 = 4^2 + 4^3 + 4^4 = \frac{4^{2k
-      - 1} - 4^{k - 1}}{3}$, proceeding we find that $a_k = 4^{k-1} + 4^{k} + \cdots + 4^{2k - 2} =
+      - 1} - 4^{k - 1}}{3}$, proceeding we find that $a_2 = 4^{k-1} + 4^{k} + \cdots + 4^{2k - 2} =
   \frac{4^{2k - 1} - 4^{k - 1}}{3}$.
 
   The coefficient of $a_{2^k} = 1$ becauase it is the coefficient of highest power of $x$, which will remain
@@ -1217,9 +1241,9 @@
 \item We can assume that $a\geq b\geq c\geq d\geq e$, then $3a\leq3e \Rightarrow a = e\Rightarrow 3a =
   (3a)^3 \Rightarrow a = 0, \frac{1}{3}, -\frac{1}{3}$. Similarly, it can be proven if $a\leq b\leq c\leq
   d\leq e$.
-\item Setting $y = xt$, we have $x^3t^2 = 15x^2 + 17x^2t + 15x^2t^2$ and $x^3t^2 = 20x^2 +
-  3x^2t^2$. Multiplying second equation by $t$, and subtracting $3x^2(t - 5)(t^2 + 1) = 0 \Rightarrow x = 0,
-  t = 5\Rightarrow (x, y) = (19, 95)$.
+\item Setting $y = xt$, we have $x^3t^2 = 15x^2 + 17x^2t + 15x^2t^2$ and $x^3t = 20x^2 +
+  3x^2t^2$. Multiplying second equation by $t$, and subtracting $x^2(t - 5)(t^2 + 1) = 0 \Rightarrow x = 0,
+  t = 5\Rightarrow (x, y) = (0, 0)$.
 \item Subtracting we have $y^2 - x^2 = 7 \Rightarrow (y - x)(y + x) = 7$. Now there are four possibilities
   $y - x = 1, y + x = 7\Rightarrow y = 4, x = 3$, $y - x = 7, y + x = 1\Rightarrow y = 3, -4$ which
   does not satisfy the given equations, $y - x = -1, y + x = -7\Rightarrow y = -4, x = -3$, and $y - x =
@@ -1442,7 +1466,7 @@
 
   But since $(ac - bd)^2 \nless 0 \therefore (ad - bc)^2 = 0$ i.e. $D = 0$ (because roots are real). Thus,
   if roots are real they are equal.
-\item Let $A = a(b - c), B = b(c - a)$ and $c = c(a - b)$ Clearly, $A + B + C = 0$. Since roots are equal
+\item Let $A = a(b - c), B = b(c - a)$ and $C = c(a - b)$ Clearly, $A + B + C = 0$. Since roots are equal
   i.e. $D = 0 \therefore B^2 - 4AC = 0$
 
   Substituting for $B, [-(A + C)^2 - 4AC] = (A - C)^2 = 0 \Rightarrow A = C \Rightarrow 2ac = ab + cb
@@ -1469,7 +1493,7 @@
 \item Since roots of equation $ax^2 + 2bx + c = 0$ are equal $\therefore 4b^2 - 4ac \geq 0$. Discriminant of
   the equation $ax^2 + 2mbx + nc = 0$ is $4m^2b^2 - 4anc$.
 
-  Since $m^2 > n > 0$ and $b^2 \geq ac$ $4m^2b^2 - 4anc > 0$. Thus, roots of the second equation are real.
+  Since $m^2 > n > 0$ and $b^2 \geq ac\Rightarrow 4m^2b^2 - 4anc > 0$. Thus, roots of the second equation are real.
 \item Given $ax + by = 1 \Rightarrow y = \frac{1 - ax}{b},$ substituting this in second equation, $cx^2 +
   d\left(\frac{1 - ax}{b}\right)^2 = \frac{b^2cx^2 + d(1 - ax)^2}{b^2} = 1$
 
@@ -1477,7 +1501,7 @@
   equation will also have only one solution which means roots will be equal i.e. $D = 0$
 
   $\Rightarrow 4a^2d^2 - 4(b^2c + a^d)(d - b^2) = 0\Rightarrow b^2(b^2c + a^2d - cd) = 0\because b^2 \ne 0
-  \therefore b^2c + a^2d - cd = 0 \Rightarrow b^2c + a^d = cd$
+  \therefore b^2c + a^2d - cd = 0 \Rightarrow b^2c + a^2d = cd$
 
   Dividing both sides by $cd$ we have
 
@@ -1588,7 +1612,7 @@
 
   Substituting $n = 4$ we have
 
-  $S_5 = -\frac{b}{a}S_4 - \frac{c}{a}S_3 = -\frac{b}{a}(-\frac{b}{a}S_3 - \frac{c}{a}S-2) - \frac{c}{a}S_3
+  $S_5 = -\frac{b}{a}S_4 - \frac{c}{a}S_3 = -\frac{b}{a}(-\frac{b}{a}S_3 - \frac{c}{a}S_2) - \frac{c}{a}S_3
   = \left(\frac{b^2}{a^2} - \frac{c}{a}\right)S_3 + \frac{bc}{a^2}S_2$
 
   Proceeding similarly we have the solution as
@@ -1630,7 +1654,7 @@
   $\frac{\alpha - \beta}{\alpha + \beta} = \frac{\gamma - \delta}{\gamma + \delta}$. Squaring both sides
 
   $\Rightarrow \left(\frac{\alpha - \beta}{\alpha + \beta}\right)^2 = \left(\frac{\gamma - \delta}{\gamma +
-    \delta}\right)^2$ $\Rightarrow \frac{(\alpha + \beta)^2 - 4\alpha\beta}{(\alpha + \beta)}^2 = \frac{(\gamma + \delta)^2 - 4\gamma\delta}{(\gamma +
+    \delta}\right)^2$ $\Rightarrow \frac{(\alpha + \beta)^2 - 4\alpha\beta}{(\alpha + \beta)^2} = \frac{(\gamma + \delta)^2 - 4\gamma\delta}{(\gamma +
       \delta)^2}$
 
   $\Rightarrow \frac{b^2 - 4ac}{b^2} = \frac{b_1^2 - 4a_1c_1}{b_1^2} \Rightarrow -4acb_1^2 = -4a_1c_1b^2 \Rightarrow
@@ -1639,7 +1663,7 @@
 
   $\alpha = \frac{1}{2 + \sqrt{5}}\frac{2 - \sqrt{5}}{2 - \sqrt{5}} = \frac{2 - \sqrt{5}}{4 - 5} = -2 + \sqrt{5}$
 
-  Then second root would be $\beta = -2 + \sqrt{5}$ $\Rightarrow \alpha + \beta = -4$ and $\alpha\beta = -1$
+  Then second root would be $\beta = -2 - \sqrt{5}$ $\Rightarrow \alpha + \beta = -4$ and $\alpha\beta = -1$
 
   Therefore, the equation is $x^2 - (\alpha + \beta)x + \alpha\beta = 0 \Rightarrow x^2 + 4x -1 = 0$.
 \item Since $\alpha$ and $\beta$ are the roots of the equation $\therefore \alpha + \beta = -\frac{b}{a}$ and
@@ -1693,7 +1717,7 @@
   Given, $\frac{a}{a_1}, \frac{b}{b_1}, \frac{c}{c_1}$ are in A. P., let $d$ be the common difference.
 
   $\left(\frac{c}{c_1} - \frac{a}{a_1}\right)^2c_1^2a_1^2 = 4\left(\frac{a}{a_1} -
-  \frac{b}{b_1}\right)a_1b_2\left(\frac{b}{b_1} - \frac{c}{c_1}\right)b_1c_1$
+  \frac{b}{b_1}\right)a_1b_1\left(\frac{b}{b_1} - \frac{c}{c_1}\right)b_1c_1$
 
   $(2d)^2c_1^2a_2^2 = 4(-d)a_1b_1(-d)b_1c_1\Rightarrow 4d^2c_1^2a_1^2 = 4d^2a_1c_1b_1^2 \Rightarrow c_1a_1 =
   b_1^2$.
