@@ -3145,7 +3145,7 @@
 
   $x^2 - 2ax - a^2 = 0 \Rightarrow x = a \pm \sqrt{2}a$
 
-  Since $x > a, x = a + \sqrt{2}a$ is not acceptable.
+  Since $x > a, x = a - \sqrt{2}a$ is not acceptable.
 
   Clearly, $x = a$ does not satisfy the equation.
 \item $x^2 - x - 6 = 0 \Rightarrow x = -2, 3$
@@ -3249,7 +3249,7 @@
 
   So we have following combination of solutions:
 
-  $x - 5 = 1$ and $x + m = 2$ then $x = 6, m = -8$
+  $x - 5 = 1$ and $x + m = -2$ then $x = 6, m = -8$
 
   $x - 5 = 2$ and $x + m = -1$ then $x = 7, m = -8$
 
@@ -3278,7 +3278,8 @@
 
   $4r^2 = 4(2p + 1)^2 - 8(2q + 1) \Rightarrow 2(2q + 1) = (2p + 1 - r)(2p + 1 + r)$.
 
-  Clearly, if $r$ is an even no. then L. H. S. is an even and R. H. S. is even no which is not possible.
+  Clearly, if $r$ is an even no. then L. H. S. is an even and R. H. S. is even no. which is not possible
+  because after division by $2$ L.H.S. will be odd by R.H.S. will remain even.
 
   Let $r$ is an odd no. then R. H. S. is product of 2 even numbers. Let $2p + 1 - r = 2k$ and $2p +
   1 + r = 2l$
@@ -3336,13 +3337,13 @@
   $\alpha + \beta = p$ and $\alpha\beta = q$
 
   $(\alpha^2 - \beta^2)(\alpha^3 - \beta^3) = (\alpha - \beta)^2(\alpha + \beta)[(\alpha^2 + \beta^2) +
-  \alpha\beta] =(p^2 - 4q)p(p^2 + q)$, and
+  \alpha\beta] =(p^2 - 4q)p(p^2 - q)$, and
 
   $\alpha^3\beta^2 + \alpha^2\beta^3 = \alpha^2\beta^2(\alpha + \beta) = pq^2$
 
   Therefore, the equation would be
 
-  $x^2 - p[(p^2 - 4q)(p^2 + q) + q^2]x + p^2q^2(p^2 - 4q)(p^2 + q) = 0$.
+  $x^2 - p[(p^2 - 4q)(p^2 - q) + q^2]x + p^2q^2(p^2 - 4q)(p^2 - q) = 0$.
 \item $\alpha + \beta = b$ and $\alpha\beta = c$. Then proceeding like previous problem,
 
   $(\alpha^2 + \beta^2)(\alpha^3 + beta^3) = [(\alpha + \beta)^2 - 2\alpha\beta][(\alpha + \beta)^3 -
@@ -3457,7 +3458,7 @@
   Now it is trivial to prove that a sign change occurs for the given limits for $f'(x)$ and thus a root lies
   in these limits.
 \item Let $x_1, x_2, \ldots, x_n$ are the $n$ roots of the given polynomial equation. If all the roots are
-  equal then we will have the relationship
+  real then we will have the relationship
 
   $(x_1 - x_2)^2 + (x_1 - x_3)^2 + \cdots + (x_1 - x_n)^2 + (x_2 - x_3)^2 + \cdots + (x_2 - x_n)^2 + \cdots
   + (x_{n - 1} - x_n)^2 > 0$
@@ -3473,10 +3474,10 @@
   x_2x_4 + \cdots + x_2x_n + \cdots + x_{n - 1}x_n) > 0$
 
   Now from polynomial $x_1 + x_2 + \cdots + x_n = -a_1$ and $x_1x_2 + x_1x_3 + \cdots + x_1x_n + x_2x_3 +
-  x_2x_4 + \cdots + x_2x_n + \cdots + x_{n - 1}x_n = a_1$.
+  x_2x_4 + \cdots + x_2x_n + \cdots + x_{n - 1}x_n = a_2$.
 
   $\therefore (n - 1)a_1^2 - 2na_2 > 0$. But it is given that $(n - 1)a_1^2 - 2na_2 < 0$, hence all the
-  roots cannot be equal.
+  roots cannot be real.
 \item Since $\alpha, \beta, \gamma, \delta$ are in A. P. let $\alpha = l - 3m, \beta = l - m, \gamma = l +
   m, \delta = l + 3m$ where $l$ is the first term and $m$ is the common difference of A. P.
 
@@ -3496,7 +3497,7 @@
 \item $\alpha + \beta = -\frac{b}{a}, \alpha\beta = \frac{c}{a}$ and $\alpha^4 + \beta^4 = -\frac{m}{l},
   \alpha^4\beta^4 = \frac{n}{l}$.
 
-  Discriminant of given quadratic equation, $D = 16a^2c^2l^2 - 4a2^l(2c^2l + a^2m) = 8a^2c^2l^2 - 4a^4lm$
+  Discriminant of given quadratic equation, $D = 16a^2c^2l^2 - 4a^2l^2(2c^2l + a^2m) = 8a^2c^2l^2 - 4a^4lm$
 
   $= 4a^4l^2\left(2\frac{c^2}{a^2} - \frac{m}{l}\right)= 4a^4l^2(2\alpha^2\beta^2 + \alpha^4 + \beta^4) =
   2a^4l^2(\alpha^2 + \beta^2)^2$.
@@ -3511,7 +3512,7 @@
   $x^2 - (\alpha\gamma + \beta\delta + \alpha\delta + \beta\gamma)x + (\alpha\gamma +
   \beta\delta)(\alpha\delta + \beta\gamma) = 0$
 
-  $\Rightarrow x^ - (\alpha + \beta)(\gamma + \delta)x + ((\alpha^2 + \beta^2)\gamma\delta + (\gamma^2 +
+  $\Rightarrow x^2 - (\alpha + \beta)(\gamma + \delta)x + ((\alpha^2 + \beta^2)\gamma\delta + (\gamma^2 +
   \delta^2)\alpha\beta) = 0$
 
   $\Rightarrow a^2l^2x^2 - ablmx + (b^2 - 2ac)ln + (m^2 - 2ln)ac = 0$.
@@ -3556,7 +3557,7 @@
 
   $\Rightarrow -\frac{9}{10}x^2 + (a - d)^2x + 2 = 0 \Rightarrow 9x^2 - 10(a - d)^2x - 20 = 0$. Equation
   whose roots will be reciprocal of this equation will be $\frac{9}{x^2} - \frac{10(a - d)^2}{x} - 20 =
-  0\Rightarrow 20x^2 + (a - d)^2x - 9 = 0$, which is what we had to prove.
+  0\Rightarrow 20x^2 + 10(a - d)^2x - 9 = 0$, which is what we had to prove.
 \item Because $\alpha_1, \alpha_2, \ldots, \alpha_n$ are roots of the equation $(\beta_1 - x)(\beta_2 -
   x)\ldots (\beta_n - x) + A = 0$, therefore
 
@@ -3565,7 +3566,7 @@
   Therefore, equation having $\beta_1, \beta_2, \ldots, \beta_n$ as roots is
 
   $(x - \alpha_1)(x - \alpha_2)\ldots(x - \alpha_n) + A = 0$.
-\item Given $\alpha_1, \alpha_2, \ldots, \alpha_n$ are roots of the equation $x^n + ax + b = 0$.
+\item Given $\alpha_1, \alpha_2, \ldots, \alpha_n$ are roots of the equation $x^n + nax + b = 0$.
 
   $\Rightarrow (x - \alpha_1)(x - \alpha_2)\cdots(x - \alpha_n) = x^n + nax - b$
 
@@ -3596,10 +3597,10 @@
     \alpha\gamma) + \alpha + \beta + \gamma}{\alpha\beta\gamma} = \frac{3q - 2p}{q}$
 
   Product of all taken together is $\frac{\alpha\beta\gamma + \alpha\beta + \beta\gamma + \gamma\alpha +
-    \alpha + \beta + \gamma + 1}{\alpha\beta\gamma} = \frac{q - p - 1}{q}$.
+    \alpha + \beta + \gamma + 1}{\alpha\beta\gamma} = \frac{q - p + 1}{q}$.
 
   Thus the cubic equation having these roots is $x^3 - \frac{3q - p}{q}x^2 + \frac{3q - 2p}{q}x - \frac{q -
-    p - 1}{q} = 0 \Rightarrow qx^3 + (p - 3q)x^2 + (3q - 2p)x + 1 + p - q = 0$.
+    p + 1}{q} = 0 \Rightarrow qx^3 + (p - 3q)x^2 + (3q - 2p)x - 1 + p - q = 0$.
 \item Given equations are $ax^2 + bx + c = 0$ and $a_1x^2 + b_1x + c_1 = 0$. Let $\alpha$ be the root which
   satisfies first equation and its reciprocal satisfies the second equation. Then,
 
