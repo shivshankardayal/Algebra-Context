@@ -32,14 +32,14 @@ no advantage in considering partitions with one or more empty sets. The number o
 called the {\it size} of $S$.
 
 \subsection{Addition Principle}
-Suppose that a $S$ is partitioned into pairwise disjoint partys $S_1, S_2, \ldots, S_m$. The number of objects in $S$ can be
+Suppose that a $S$ is partitioned into pairwise disjoint parts $S_1, S_2, \ldots, S_m$. The number of objects in $S$ can be
 determined by finding the number of objects in each of the parts, and adding the numbers so obtained:
 \startformula |S| = |S_1| + |S_2| + \ldots |S_m|.\stopformula
 If the sets $S_1, S_2, \ldots, S_m$ are allowed to overlap, then a more profound principle, the inclusion-exclusion principle can
 be used to count the number of objects in $S$.
 
 We need to be careful when partitioning $S$ into too many parts. For example, if we partition $S$ into parts in such a way that
-each part contains only one element then addition princinple is becomes counting the number of parts, which is basically same as
+each part contains only one element then addition princinple becomes counting the number of parts, which is basically same as
 listing all objects of $S$. Thus the art of applying addition princinple is to partition the set $S$ into not too many parts.
 
 \noindent{\bf Example:} In a university there are four mathematics courses, two economics courses, and three lietrature
@@ -60,7 +60,7 @@ p)$. The size of each $S_i$ is $q$; hence, by the addition principle,
 \startformula |S| = |S_1| + |S_2| + \ldots + |S_p|\stopformula
 \startformula = q + q + \ldots + q(p q'\text{s})\stopformula
 \startformula = p\times q\stopformula
-The multiplication principle can be stated in another way as: If a first task has $p$ outcomes, and no matter what the outcome of of
+The multiplication principle can be stated in another way as: If a first task has $p$ outcomes, and no matter what the outcome of
 the first task, a second task has $q$ outcomes i.e. outcomes for two tasks are mutually exclusive, then the two tasks can be
 performed in $p\times q$ outcomes.
 
@@ -97,7 +97,7 @@ numbers $9$ have a zero in them$(10, 20, 30, \ldots, 90)$, and $9$ have repeated
 required numbers equals $90 - 9 - 9 = 72$.
 
 We can derive two important ideas from the previous example. First is that it is possible to solve a counting problem in many
-ways. The second idea is that to find the number of objects in a set $A$ (in this csae the set of two-digit numbers with nonzero,
+ways. The second idea is that to find the number of objects in a set $A$ (in this case the set of two-digit numbers with nonzero,
 and distinct digits) it may be easier to find the number of objects in a larger set $U$ containing $S$ (the set of all
 two-digit numbers), and then subtract the number of objects of $U$ that do not belong to $A$ (the two-digit numbers containing $0$
 or repeated digit). This leads us to subtraction principle.
@@ -105,7 +105,7 @@ or repeated digit). This leads us to subtraction principle.
 \subsection{Subtraction Principle:}
 Let $A$ be a set, and let $U$ be a larger set containing $A$. Let
 \startformula \overline{A} = U\textbackslash A = \{x\in U: x\notin A\}\stopformula
-be the complement of $A$ in $U$. Then the numebr $|A|$ of object in $A$ is given by the rule
+be the complement of $A$ in $U$. Then the number $|A|$ of object in $A$ is given by the rule
 \startformula |A| = |U| - |\overline{A}|\stopformula
 
 The set $U$ is usually some natural set containing all the objects under discussion (it is called {\it universal set}). Using
@@ -236,8 +236,8 @@ can have following arrangements:
   \stopMPcode
 \stopplacefigure
 As shown four persons are sitting around a round table, and four anticlockwise rotations have lead to four arrangements. But if
-$A,B,C,D$ are sitting in a row, and then are shiftedd such that last occupies the place of first, then the four arrangements will be
-different. Thus, if there are $n$ objects then for each circular arrangement there are nn linear arrangements. But for $n$ different
+$A,B,C,D$ are sitting in a row, and then are shifted such that last occupies the place of first, then the four arrangements will be
+different. Thus, if there are $n$ objects then for each circular arrangement there are $n$ linear arrangements. But for $n$ different
 objects total number of linear arrengements are $n!$ so the total number of circular arrangements are \startformula \frac{n!}{n} = (n - 1)!.\stopformula
 
 Thus, we can say that number of circular $r$-permutations of a set of $n$ elements is given by \startformula \frac{{}^nP_r}{r} = \frac{n!}{r.(n
@@ -287,7 +287,7 @@ infinite the second item can be also chose in $k$ ways. In fact, any item can be
 repetition. Following, multiplication principle, total number of such permutations is $k^r$.
 
 Let $S$ be a multiset with objects of $k$ different types with finite repetition numbers $n_1, n_2, \ldots, n_k$ respectively. Let
-the size of $S$ be $n = n_1 + n_2 + \ldots + n_k.$ Then the number of permutations of $S$ equals \startformula \frac{n!}{n_!!n_2!\ldots
+the size of $S$ be $n = n_1 + n_2 + \ldots + n_k.$ Then the number of permutations of $S$ equals \startformula \frac{n!}{n_1!n_2!\ldots
   n_k!}.\stopformula
 
 We can calculate this by thinking in terms of $n$ places, and we want to put exactly one of the objects of $S$ in each of the
@@ -314,7 +314,7 @@ We can calculate this by direct application of the multiplication principle. So 
 then $n_2$ of the remaining $n - n_1$ objects for the second box and so on. By the multiplication principle, the number of ways is
 \startformula {}^nC_{n_1}.{}^{n - n_1}C_{n_2}.{}^{n - n_1 - n_2}C_{n_3}\ldots{}^{n - n_1 - n_2 - \ldots - n_{k - 1}}C_{n_k}\stopformula
 which is same as the last result, i.e.
-\startformula \frac{n!}{n_1!n_2!\ldots n_k!}\stopformula
+\startformula \frac{n!}{k!n_1!n_2!\ldots n_k!}\stopformula
 
 If boxes are not labeled and $n_1 = n_2 = \ldots = n_k,$ then the result has to be divided by $k!$ because for each way of
 distributing the objects into the $k$ unalbeled boxes there are $k!$ ways in which we can attach the labels to the boxes. Thus,
@@ -323,7 +323,7 @@ using the division principle, we arrive at the result as
 
 \section{Combination of Multisets}
 If $S$ is a multiset, then an $r$-combination of $S$ is an unorndered selection of $r$ of the objects of $S$. Thus, an
-$r$-combination of $S$ is itslef a multiset, a {\it submultiset} of $S$ of size $r$, or, for short, an $r$-submultiset. If $S$
+$r$-combination of $S$ is itself a multiset, a {\it submultiset} of $S$ of size $r$, or, for short, an $r$-submultiset. If $S$
 has $n$ objects, then there is only one $n$-combination of $S$, namely, $S$ itself. If $S$ contains objects of $k$ different types,
 then there are $k 1$-combinations of $S$.
 
@@ -419,17 +419,17 @@ consider combinations of $r$ objects taken out of $n$ objects of which $p$ are o
 
 Let the different things be denoted by the letters $a, b, \ldots$
 
-Consider the product $(1 + ax + a^2x^2 + \ldots + a^px^2)(1 + bx + b^2x^2 + \ldots + b^qx^2)\ldots$. All the terms in the product
+Consider the product $(1 + ax + a^2x^2 + \ldots + a^px^p)(1 + bx + b^2x^2 + \ldots + b^qx^q)\ldots$. All the terms in the product
 is of the same degree in the letters $a, b, \ldots$ as in $x$. The coefficient of $x^r$ in the product is the number of ways of
 taking $r$ of the letters $a, b, \ldots$ with the restriction that maximum number of $a$'s is $p$, maximum number of $b$'s is $q$ and so
 on. Coeff. of $x^r$ will not change if $a = b = \ldots = 1$. Thus required number of combinaitons = Coeff. of $x^r$ in $(1 + x + x^2 +
-\ldots + x^2)(1 + x + x^2 + \ldots + x^2)\ldots$
+\ldots + x^p)(1 + x + x^2 + \ldots + x^q)\ldots$
 
 Similarly, number of combinaitons of $r$ objects out of $n$ objects of which $p$ are of one type, $q$ are of second type and $(n -
 p - q)$ things are all different $=$ Coeff. of $x^r$ in $[(1 + x + x^2 + \ldots + x^p)(1 + x + x^2 + \ldots + x^q)(1 + x)(1 +
   x)\ldots \text{~to~} (n - p - q)\text{factors~}]$
 
-$=$ Coeff. of $x^r$ in $[(1 + x + x^2 + \ldots + x^p)(1 + x + x^2 + \ldots + x^q)(1 + x)(1 + x)^{n - p - q}]$
+$=$ Coeff. of $x^r$ in $[(1 + x + x^2 + \ldots + x^p)(1 + x + x^2 + \ldots + x^q)(1 + x)^{n - p - q}]$
 
 Similarly, number of combinations of $r$ objects out of $n$ objects of which $p$ are of one type, $q$ are of second type and so on,
 when each thing is taken at least once $=$ Coeff. of $x^r$ in $[(x + x^2 + \ldots + x^p)(x + x^2 + \ldots + x^q)\ldots]$
@@ -454,7 +454,7 @@ $n$ persons when each person getting zero or more things $= {}^{n + r - 1}C_r$
 Similarly, number of non-negative integral solutions of equation $x + 2y + 3z + 4w = n$, equals coeff. of $x^n$ in $[(1 - x)^{-1}(1
   - x)^{-2}(1 - x)^{-3}(1 - x)^{-4}]$.
 
-Similarly, number of positive integral solutions of equation $x + 2y + 3z + 4w = n$, equals coeff. of $x^{n -(1 + 2 + 3 + 4})$ in
+Similarly, number of positive integral solutions of equation $x + 2y + 3z + 4w = n$, equals coeff. of $x^{n -(1 + 2 + 3 + 4)}$ in
 $[(1 - x)^{-1}(1 - x)^{-2}(1 - x)^{-3}(1 - x)^{-4}]$.
 
 \section{Geometrical Applications of Combinations}
@@ -476,7 +476,7 @@ Some basic geometrical results involving combinations are given below:
 \stopitemize
 
 \section{Number of Divisors and Sum of Divisors}
-Let $n = p_1^{n_1}.p_2^{n_2}\ldots p_n^{n_k}$ where $p_1, p_2, \ldots, p_k$ are distinct prime numbers and $n_1, n_2, \ldots,
+Let $n = p_1^{n_1}.p_2^{n_2}\ldots p_k^{n_k}$ where $p_1, p_2, \ldots, p_k$ are distinct prime numbers and $n_1, n_2, \ldots,
 n_k\in \mathbb{P}$. Obvously, any divisor of $n$ is of the form $d = p_1^{m_1}.p_2^{m_2}\ldots p_k^{m_k}$ where $m_1, m_2,
 \ldots\in\mathbb{N}$ such that $0\leq m_i\leq n_i, i = 1, 2, \ldots, k$. Therefore, the total no. of divisors for $n$ will be equal
 to the number of ways of selecting at least one from $n_1$ identical prime numbers $p_1, n_2$ primes $p_2$ and so on. The number of
@@ -507,7 +507,7 @@ where $p^s\leq n\leq p^{s+1}$
 
 \section{Inclusion-Exclusion Principle(PIE)}
 We have seen examples of subtraction principle. Inclusion exclusion principle is an extension of subtraction principle. In this
-type of problems, it is easier to make an indect coutnt of object in a set rather than to count the objects directly. Consder
+type of problems, it is easier to make an indirect count of object in a set rather than to count the objects directly. Consider
 following examples:
 
 \noindent{\bf Example:} Count the permutations $i_1i_2\ldots i_n$ of ${1, 2, \ldots, n}$ in which $1$ is not in the first
@@ -533,7 +533,7 @@ property $P1$ and excluding all objects that have property $P_2$, and then notin
 properties twice, readmitting all such objects once. Let $A_1$ be the subset of objects of $S$ that have property $A_1$, and let
 $A_2$ be the subset that have property $P_1$. Then $\bar{A_1}$ consists of those which do not have property $P_1$, and similarly
 $\bar{A_2}$ consists of those which do not have property $P_2$. The objects of set $\bar{A_1}\cap\bar{A_2}$ are those that have
-neither property $P_1$ nor property $P_1$. Thus, we have
+neither property $P_1$ nor property $P_2$. Thus, we have
 
 \startformula |\bar{A_1}\cap\bar{A_2}| = |S| - |A_1| - |A_2| + |A_1\cap A_2|.\stopformula
 
@@ -561,7 +561,7 @@ the inclusion-exclusion principle.
 given by \startformula |A_1\cup A_2\cup \ldots\cup A_m| = \sum|Ai| - \sum|A_i\cap A_j| + \sum|A_i\cap A_j\cap A_k| - \ldots +(-1)^{m +
   1}|A_1\cap A_2\cap \ldots\cap A_m|\stopformula
 
-The set $A_1\cup A_2\cup \ldots\cup A_m$ consiste of all those objects in $S$ which possess at least one of the
+The set $A_1\cup A_2\cup \ldots\cup A_m$ consists of all those objects in $S$ which possess at least one of the
 properties. Also, \startformula |A_1\cup A_2\cup \ldots\cup A_m| = |S| - |\overline{A_1\cup A_2\cup \ldots\cup A_m}|.\stopformula
 
 From Demorgan's law \startformula |\overline{A_1\cup A_2\cup \ldots\cup A_m}| = \bar{A_1}\cap\bar{A_2}\cap\ldots\cap\bar{A_m}\stopformula
@@ -570,7 +570,7 @@ Following result from previous definition, we have the required equality.
 
 \subsection{A Special Case of PIE}
 For any set $A$ having $n\geq 2$ element, $|A_1 + A_2 + \cdots + A_n = \displaystyle\sum_{i=0}^n|A_i| -
-\sum_{i<j}A_iA_j + \sum_{i,j<k}A_iA_jA_k| - \cdots +(-1)^n|A_1A_2\ldots A_n|$
+\sum_{i<j}|A_iA_j| + \sum_{i,j<k}|A_iA_jA_k| - \cdots +(-1)^n|A_1A_2\ldots A_n|$
 
 In some problems we deal with properties $a_1, a_2, \ldots, a_n$ and numerical values associated with
 properties i.e. $n(a_1), n(a_2), \ldots, n(a_n), n(a_1a_2), \ldots, n(a_{n-1}a_n) \ldots$ and so on.
@@ -602,7 +602,7 @@ general problem.
 Given an $n$-element set $S$ in which each element has a specified position. We have to find the number of permutations of $S$ in
 which no element is in its specified position. This can be exemplified by a set $S = \{1, 2, \ldots, n\}$ in which location of each
 integer is that specified by its position in the sequence $1, 2, \ldots, n$. A derangement $\{1, 2, \ldots, n\}$ is a permutation
-of $i_1i_2\ldots i_n$ of $1, 2, \ldots, n$ sucb that $i_\neq 1, i_2\neq 2, \ldots, i_n\neq n$. Derangement of such an $n$-element
+of $i_1i_2\ldots i_n$ of $1, 2, \ldots, n$ such that $i_1\neq 1, i_2\neq 2, \ldots, i_n\neq n$. Derangement of such an $n$-element
 set is denoted by $D_n$
 
 For $n\geq 1$ \startformula D_n = n!\left(1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \ldots + (-1)^n\frac{1}{n!}\right).\stopformula
@@ -648,7 +648,7 @@ $r$ different boxes such that each box gets at least one object, can be found.
 
   As each group can get zero or more, we have $0\leq x_i\leq n~i=1, 2, 3, \ldots, r$.
 
-  We observe that the number of integral solutions ofthe above equation is equal to number of ways of
+  We observe that the number of integral solutions of the above equation is equal to number of ways of
   distributing $n$ identical objects among $r$ groups such that each gets zero or more
 
   $= C_n^^{n + r - 1} = C_{r - 1}^^{n + r - 1}$.
@@ -693,7 +693,7 @@ x_2\leq \cdots \leq x_r$, which is equal to coeff. of $x^n$ in $\frac{x^r}{(1 - 
 
 We see that $P_1(n) = P_n(n) = 1, P_2(n) \left\lfloor \frac{n}{2}\right\rfloor, P_r(n) = 0, r > n$. Now we
 will find $P_r(n), 1< r < n$. We divide all partition in two types. (i) At least one partition of size $1$
-(ii) Nopartition of size $1$.
+(ii) No partition of size $1$.
 
 Number of partitions of in case (i) is $P_{r - 1}(n - 1)$. Number of partitions in case (ii) is $P_r(n -
 r)$. Now we add one ball in each part so that each part will have size of at least $2$.
