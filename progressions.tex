@@ -26,7 +26,7 @@ Let $S_n$ represent the sum of first $n$ terms of an arithmetic progression, the
 
 \startformula S_n = a + (a + d) + (a + 2d) + \cdots + [a + (n - 2)d] + [a + (n - 1)d]\stopformula
 Writing the terms in reverse order we have
-\startformula S_n = [a + (n - 1)s] + [a + (n - 2)d] + \cdots + (a + d) + a\stopformula
+\startformula S_n = [a + (n - 1)d] + [a + (n - 2)d] + \cdots + (a + d) + a\stopformula
 Adding term by term, we get
 \startformula 2S_n = [2a + (n - 1)d] + [2a + (n - 1)d] + \cdots\text{~to~}n\text{~terms~}\stopformula
   \startformula 2S_n = n[2a + (n - 1)d]\stopformula
@@ -97,13 +97,13 @@ last three terms is also $36$ which is represented by $n = -3$.
 
 \subsection{Sum of Squares and Cubes and More}
 We observe that
-\placeformula\startformula i^3 - (i - 1)^3 = 3i^3 - 3i + 1 \Rightarrow \sum_{i = 1}^n[i^3 - (i - 1)^3] = 3\sum_{i = 0}^ni^2 - \frac{3n(n + 1)}{2} + n\stopformula
+\placeformula\startformula i^3 - (i - 1)^3 = 3i^2 - 3i + 1 \Rightarrow \sum_{i = 1}^n[i^3 - (i - 1)^3] = 3\sum_{i = 0}^ni^2 - \frac{3n(n + 1)}{2} + n\stopformula
 \startformula n^3 = 3\sum_{i = 0}^ni^2 - \frac{3n(n + 1)}{2} + n \Rightarrow 3\sum_{i=0}^ni^2 = n^3 + \frac{3n(n + 1)}{2} - n\stopformula
 \placeformula\startformula\sum_{i=0}^ni^2 = \frac{n(n + 1)(2n + 1)}{6}\stopformula
 
 Following in a similar fashion, we can show that
 
-\placeformula\startformula\sum_{i=0}^n = \left\{\frac{n(n + 1)}{2}\right\}^2\stopformula
+\placeformula\startformula\sum_{i=0}^ni^3 = \left\{\frac{n(n + 1)}{2}\right\}^2\stopformula
 
 More powers can be evaluated in a similar fashion.
 
@@ -205,7 +205,7 @@ $n$th G.M. $= ar^{n} = a\left(\frac{b}{a}\right)^{n/(n + 1)}$
 \startitemize[n]
 \item Odd number of terms in a G.P. should be taken as $\cdots\frac{a}{r^2}, \frac{a}{r}, a, ar, ar^2, \cdots$
 \item Even number of terms in a G.P. should be taken as $\cdots, \frac{a}{r^5}, \frac{a}{r^3}, \frac{a}{r}, ar, ar^3, ar^5, \cdots$
-\item If $a_1, a_2, \ldots, a_n$ and $b_1, b-2, \ldots, b_n$ be two G.P. of common ratios $r_1$ and $r_2$ then $a_1b_1, a_2b_2,
+\item If $a_1, a_2, \ldots, a_n$ and $b_1, b_2, \ldots, b_n$ be two G.P. of common ratios $r_1$ and $r_2$ then $a_1b_1, a_2b_2,
   a_3b_3, \ldots$ and $\frac{a_1}{b_1}, \frac{a_2}{b_2}, \frac{a_3}{b_3}, \cdots$ also form G.P., where common ratios will be
   $r_1r_2$ and $\frac{r_1}{r_2}$ respectively.
 \item Let $a_1, a_2, a_3, \ldots$ be a G.P. of positive terms, then $\log a_1, \log a_2, \log a_3, \ldots$ will be an A.P. and
@@ -239,7 +239,7 @@ be the common ratio of the G.P. Also, let $a = a_1$ and $b = b_1$, then
 \startformula S_n = ab + (a + d)br + (a+ 2d)br^2 + \cdots + [a + (n - 1)d]br^{n - 1}\stopformula
 \startformula rS_n = abr + (a + d)br^2 + (a + 2d)br^3 + \cdots + [a + (n - 1)d]br^n\stopformula
 \startformula \Rightarrow (1 - r)S_n = ab + dbr + dbr62 + \cdots + dbr^{n - 1} - [a + (n - 1)d]br^n\stopformula
-\startformula = ab + \frac{dbr(1 - r^{n - 1})}{(1 - r) - [a + (n - 1)d]br^n}\stopformula
+\startformula = ab + \frac{dbr(1 - r^{n - 1})}{(1 - r)} - [a + (n - 1)d]br^n\stopformula
 \startformula S_n = \frac{ab}{1 - r} + \frac{dbr(1 - r^{n - 1})}{(1 - r)^2} - \frac{[a + (n - 1)d]br^n}{1 - r}(r\neq 1)\stopformula
 
 If $|r|< 1$, then $\displaystyle\lim_{n\to \infty}r^n = 0$, therefore , sum of an infinite number of terms of an arithmetico-geometric series is
