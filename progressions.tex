@@ -26,7 +26,7 @@ Let $S_n$ represent the sum of first $n$ terms of an arithmetic progression, the
 
 \startformula S_n = a + (a + d) + (a + 2d) + \cdots + [a + (n - 2)d] + [a + (n - 1)d]\stopformula
 Writing the terms in reverse order we have
-\startformula S_n = [a + (n - 1)s] + [a + (n - 2)d] + \cdots + (a + d) + a\stopformula
+\startformula S_n = [a + (n - 1)d] + [a + (n - 2)d] + \cdots + (a + d) + a\stopformula
 Adding term by term, we get
 \startformula 2S_n = [2a + (n - 1)d] + [2a + (n - 1)d] + \cdots\text{~to~}n\text{~terms~}\stopformula
   \startformula 2S_n = n[2a + (n - 1)d]\stopformula
@@ -97,13 +97,13 @@ last three terms is also $36$ which is represented by $n = -3$.
 
 \subsection{Sum of Squares and Cubes and More}
 We observe that
-\placeformula\startformula i^3 - (i - 1)^3 = 3i^3 - 3i + 1 \Rightarrow \sum_{i = 1}^n[i^3 - (i - 1)^3] = 3\sum_{i = 0}^ni^2 - \frac{3n(n + 1)}{2} + n\stopformula
+\placeformula\startformula i^3 - (i - 1)^3 = 3i^2 - 3i + 1 \Rightarrow \sum_{i = 1}^n[i^3 - (i - 1)^3] = 3\sum_{i = 0}^ni^2 - \frac{3n(n + 1)}{2} + n\stopformula
 \startformula n^3 = 3\sum_{i = 0}^ni^2 - \frac{3n(n + 1)}{2} + n \Rightarrow 3\sum_{i=0}^ni^2 = n^3 + \frac{3n(n + 1)}{2} - n\stopformula
 \placeformula\startformula\sum_{i=0}^ni^2 = \frac{n(n + 1)(2n + 1)}{6}\stopformula
 
 Following in a similar fashion, we can show that
 
-\placeformula\startformula\sum_{i=0}^n = \left\{\frac{n(n + 1)}{2}\right\}^2\stopformula
+\placeformula\startformula\sum_{i=0}^ni^3 = \left\{\frac{n(n + 1)}{2}\right\}^2\stopformula
 
 More powers can be evaluated in a similar fashion.
 
@@ -356,7 +356,7 @@ For equal $a$ and $b$, it can be easily verified that $A = G = H$
 \item If $a^2, b^2, c^2$ are in A.P. then prove that $\frac{1}{b+c}, \frac{1}{c+a}, \frac{1}{a + b}$ are in A.P.
 \item If $a, b, c$ are in A.P., show that $2(a - b) = a - c = 2(b - c)$.
 \item If $a, b , c$ are in A.P., then prove that $(a - c)^2 = 4(b^2 - ac)$.
-\item In an A.P. if $S_n = t_1 + t_2 + \cdots + t_n$ ($n$ odd), $S_2 = t_2 + t_4 + \cdots + t_{n - 1},$ then find the value of
+\item In an A.P. if $S_1 = t_1 + t_2 + \cdots + t_n$ ($n$ odd), $S_2 = t_2 + t_4 + \cdots + t_{n - 1},$ then find the value of
   $S_1/S_2$ in terms of $n$.
 \item Find the degree of the equation $(1 + x)(1 + x^6)(1 + x^{11})\cdots (1+ x^{101})$.
 \item Prove that a sequence is an A.P. if the sum of its terms is of the form $An^2 + Bn,$ where $A, B$ are constants.
