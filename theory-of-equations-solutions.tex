@@ -3836,12 +3836,12 @@
 
   From the graph it is clear that for $f(x) + a = 0$ to have four real roots $0\leq a\leq 3$.
 \item Let $\alpha, \beta$ be two distinct roots of the given equation. Then $\alpha + \beta = -\frac{b}{a},
-  \alpha\beta = \frac{c}{a}$. Using A.M $\geq$ G.M. For $0 < \alpha, 1 - \alpha, \beta, 1 - \beta < 1$
+  \alpha\beta = \frac{c}{a}$. Using A.M $\geq$ G.M. For $0 < \alpha - 1,, \beta - 1 < 1$
 
-  So $\frac{1 - \alpha + \alpha}{2}\geq\sqrt{\alpha(1 - \alpha)} \Rightarrow \alpha(1 - \alpha)\leq
+  So $\frac{1 - \alpha + \alpha}{2}\geq\sqrt{\alpha(\alpha - 1)} \Rightarrow \alpha(\alpha - 1)\leq
   \frac{1}{4}$
 
-  Similarly $\beta(1 - \beta)\leq \frac{1}{4}\Rightarrow \alpha\beta(1 - \alpha)(1 - \beta)< \frac{1}{16}$
+  Similarly $\beta(\beta - 1)\leq \frac{1}{4}\Rightarrow \alpha\beta(\alpha - 1)(\beta - 1)< \frac{1}{16}$
 
   $\Rightarrow \alpha\beta[1 - (\alpha + \beta) + \alpha\beta] < \frac{1}{16}\Rightarrow 16c(a - b + c) <
   a^2$
@@ -3918,7 +3918,7 @@
   Let us assume that $x^4 + 6x^3 - 9x^2 - 162x - 243 = (x^2 + ax + b)(x^2 + cx + d)$. Comparing
   coefficients,
 
-  $a + c = 6, b + d + ad = -9, ad + bc = -162, bd = -243$, which is four equations with four
+  $a + c = 6, b + d + ac = -9, ad + bc = -162, bd = -243$, which is four equations with four
   unknowns. Solving these, we have $a = -3, b = -9, c = 9, d = 27$, and hence, the solution is
 
   $x = \frac{3\pm3\sqrt{5}}{2}, \frac{-9\pm3\sqrt{3}i}{2}$.
@@ -3942,7 +3942,7 @@
   Let $m = \log_{10}\left(\frac{x}{10}\right) = \log_{10}x - 1 = l - 1$ and $n = \log_{100}x + \log_42 =
   \frac{1}{2}\log_{10}x + \frac{1}{2}\log_22 = \frac{l + 1}{2}$.
 
-  $\therefore 9^n = 9^{\frac{l + 1}{1}} = 3^{l + 1} = 3.3^l$.
+  $\therefore 9^n = 9^{\frac{l + 1}{2}} = 3^{l + 1} = 3.3^l$.
 
   According to question $\frac{6}{5}.5^l - \frac{3^l}{3} = 3.3^l\Rightarrow 5^{l - 2} = 3^{l - 2}$, which is
   possible only if $l = 2 \Rightarrow x = 100$.
@@ -3956,7 +3956,7 @@
 
   $\tfrac{2}{3}\left[(\log_2x)^2 + \log_2x - \tfrac{5}{4}\right] = \frac{1}{2}\log_x2$
 
-  $\Rightarrow \frac{2}{3}\left[(\log_2x)^2 + \log_2x - \frac{5}{4} = \frac{1}{2\log_2x}\right]$ (Putting $\log_2x = y$)
+  $\Rightarrow \frac{2}{3}\left[(\log_2x)^2 + \log_2x - \frac{5}{4}\right] = \frac{1}{2\log_2x}$ (Putting $\log_2x = y$)
 
   $\Rightarrow y^2 + y - \frac{5}{4} = \frac{3}{4y} \Rightarrow 4y^3 + 4y^2 - 5y - 3 = 0$.
 
@@ -3990,7 +3990,7 @@
   2}(\log_23 + \log_22) = 0$
 
   $\Rightarrow \frac{x^2 - x}{x + 2} + \frac{2x - 2}{x + 2}\log_26 = 0\Rightarrow \frac{x - 1}{x + 2}(x +
-  \log_26) = 0\Rightarrow x = 1, -2\log_26$.
+  2\log_26) = 0\Rightarrow x = 1, -2\log_26$.
 \item We have $4^x - 3^{x - \tfrac{1}{2}} = 3^{x + \tfrac{1}{2}} - 2^{2x - 1} \Rightarrow 2^{2x} + 2^{2x -
   1} = 3^{x + \frac{1}{2}} + 3^{x - \frac{1}{2}}$
 
@@ -4006,8 +4006,8 @@
 \item Given, $\log_{2x + 3}(6x^2 + 23x + 21) = 4 - \log_{3x + 7}(4x^2 + 12x + 9) \Rightarrow \log_{2x +
   3}(2x + 3)(3x + 7) = 4 - \log_{3x + 7}(2x + 3)^2$
 
-  $\Rightarrow 1 + \log_{2x + 3}(3x + 7) = 4 - 2\log_{3x + 7}(2x + 3)\Rightarrow \log_{2x + 3}(3x + 7) -
-  \log_{3x + 7}(2x + 3) = 3$
+  $\Rightarrow 1 + \log_{2x + 3}(3x + 7) = 4 - 2\log_{3x + 7}(2x + 3)\Rightarrow \log_{2x + 3}(3x + 7) +
+  2\log_{3x + 7}(2x + 3) = 3$
 
   Let $\log_{2x + 3}(3x + 7) = z$ then $\log_{3x + 7}(2x + 3) = \frac{1}{z}$, and given equation becomes
 
@@ -4049,7 +4049,7 @@
 
   Either $x + a = 1$ and $x + 1991 = -1\Rightarrow a = 1993$ or $x + a = -1$ and $x + 1991 = 1\Rightarrow a
   = 1989$.
-\item Given equation is $2^{\sin^2x} + 5(2^{\cos^2x}) = 7 \Rightarrow 2^{\sin^2x} + \frac{10}{\sin^2x} = 7$.
+\item Given equation is $2^{\sin^2x} + 5(2^{\cos^2x}) = 7 \Rightarrow 2^{\sin^2x} + \frac{10}{2^{\sin^2x}} = 7$.
 
   Let $2^{\sin^2x} = y$, then the equation becomes $y + \frac{10}{y} = 7 \Rightarrow y^2 - 7y + 10 = 0
   \Rightarrow y = 2, 5$.
@@ -4232,7 +4232,7 @@
 \item Given $\log_{\tfrac{1}{2}}x^2 \geq \log_{\tfrac{1}{2}}(x + 2)\Rightarrow x^2\leq x + 2 \Rightarrow x^2
   - x - 2\leq 0 \Rightarrow -1 \leq x\leq 2, x\neq 0$. For lagrithm to be defined $x\neq 0$ and $x > -2$.
 
-  Also, $49x^2 - 4m^4 \leq 0 \Rightarrow -\frac{2}{7}m^2\leq \frac{2}{7}m^2$.
+  Also, $49x^2 - 4m^4 \leq 0 \Rightarrow -\frac{2}{7}m^2\leq x \leq\frac{2}{7}m^2$.
 
   According to question, $[-1, 2]\subseteq \left[-\frac{2}{7}m^2, \frac{2}{7}m^2\right]$
 
@@ -4288,11 +4288,11 @@
 \item Let $a - c = \alpha, b - c = \beta, c + x = u$, then for $\sqrt{a - c}$ and $\sqrt{b - c}$ to be real
   $\alpha,\beta\geq 0$. Also, as $x > -c\Rightarrow u > 0$.
 
-  Let xm
+  Let
   $y = \frac{(a + x)(b + x)}{c + x} = \frac{(u + \alpha)(u + \beta)}{u} = \frac{u^2 + (\alpha + \beta)u +
     \alpha\beta}{u} = u + \alpha + \beta + \frac{\alpha\beta}{u}$
 
-  $\Rightarrow u^2 + (\alpha + \beta - y) + \alpha\beta = 0$, and because $u$ is real.
+  $\Rightarrow u^2 + (\alpha + \beta - y)u + \alpha\beta = 0$, and because $u$ is real.
 
   $\therefore (\alpha + \beta - y)^2 - 4\alpha\beta \geq 0 \Rightarrow y^2 - 2(\alpha + \beta)y + (\alpha -
   \beta)^2\geq 0$
@@ -4307,7 +4307,7 @@
 
   Thus, least values of $y$ is $(\sqrt{\alpha} + \sqrt{\beta})^2 = (\sqrt{a - c} + \sqrt{b - c})^2$.
 \item Let $y = 4(a - x)[x - a + \sqrt{a^2 + b^2}] = 4z(-z + k)$, where $z = a - x$ and $k = \sqrt{a^2 +
-  b^2}\Rightarrow 4x^2 - 4kz + y = 0$
+  b^2}\Rightarrow 4z^2 - 4kz + y = 0$
 
   Because $z$ is real, therefore, $D\geq 0 \Rightarrow 18k^2 - 16y\geq 0 \Rightarrow y\leq (a^2 + b^2)$
 
@@ -4369,7 +4369,7 @@
 \item Let $y = \frac{(ax - b)(dx - c)}{(bx - a)(cx - d)} = \frac{adx^2 - (bd + ac)x + bc}{bcx^2 - (ac + bd)x
   + ad}$
 
-  $\Rightarrow (bcy - ad)x^2 + (1 - y)(bd + ac) + ady - bc = 0$.
+  $\Rightarrow (bcy - ad)x^2 + (1 - y)(bd + ac)x + ady - bc = 0$.
 
   Because $x$ is real, therefore, $D\geq 0$
 
