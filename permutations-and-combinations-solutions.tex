@@ -1,4 +1,4 @@
-% -*- mode: context; -*-
+ -*- mode: context; -*-
 \chapter{Combinatorics}
 \startitemize[n, 1*broad]
 \item Given, $P_4^^n = 360 \Rightarrow n(n - 1)(n - 2)(n - 3) = 3\times 4\times 5\times 6\Rightarrow n = 6$.
@@ -51,13 +51,13 @@
 
   $C_{17}^^{20} = \frac{20!}{17!3!} = \frac{20\times19\times18}{3\times2} = 1140$, and
   $C_{20}^^{22} = \frac{22!}{20!2!} = \frac{22\times21}{2} = 231$.
-\item Given, $C_r^^{18} = C_{r + 2}^^18 \Rightarrow \frac{18!}{(18 - r)!r!} = \frac{18!}{(r + 2)!(16 - r)!}
+\item Given, $C_r^^{18} = C_{r + 2}^^{18} \Rightarrow \frac{18!}{(18 - r)!r!} = \frac{18!}{(r + 2)!(16 - r)!}
   \Rightarrow 18 - r = r + 2 \Rightarrow r = 8$ and $r = 16 - r \Rightarrow r = 8$.
 
   $C_6^^r = C_6^^8 = \frac{8!}{6!2!} = 28$.
 \item Given, $C_{n- 4}^^n = 15 \Rightarrow \frac{n!}{(n - 4)!4!} = 15 \Rightarrow n(n - 1)(n - 2)(n - 3) =
   3\times 4\times 5\times 6\Rightarrow n = 6$.
-\item Given, $C_r^^{15}:C_{r - 1}^^15 = 11:5\Rightarrow \frac{15!}{(15 - r)!r!}.\frac{(r - 1)!(16 -
+\item Given, $C_r^^{15}:C_{r - 1}^^{15} = 11:5\Rightarrow \frac{15!}{(15 - r)!r!}.\frac{(r - 1)!(16 -
   r!)}{15!} = \frac{11}{5}\Rightarrow \frac{16 - r}{r} = \frac{11}{5}\Rightarrow r = 5$.
 \item Given, $P_r^^n = 2520 \Rightarrow \frac{n!}{(n - r)!} = 2520$ and $C_r^^n = 21 \Rightarrow
   \frac{n!}{(n - r)!r!} = 21$
@@ -156,7 +156,7 @@
   sum of digits at each place is $3(1 + 2 + 2 + 3) = 24$.
 
   Thus, sum of numbers formed $24(1 + 10 + 100 + 1000) = 26,664$.
-\item Each friennd can be sent invitation by one servant. Since there are three servants each friend can
+\item Each friend can be sent invitation by one servant. Since there are three servants each friend can
   receive an invitaion in three ways. Thus, total no.\ of ways of sending invitations is $3^6 = 729$.
 \item Each prize can be given to any boy. Thus, each prize can be given in $7$ ways, and hence, three
   prizes can be given in $7^3 = 543$ ways.
@@ -207,7 +207,7 @@
   I.A. students sit and * indicated the positions where I.Sc. students can sit. We observe that there are
   $8$ open places where I.Sc. students can sit.
 
-  Now, $7$ I.A. students can be seated in $7!$ ways and $8$ I.Sc. students can be seated in $P_5^^8$ ways.
+  Now, $7$ I.A. students can be seated in $7!$ ways and $5$ I.Sc. students can be seated in $P_5^^8$ ways.
 
   Thus, no.\ of required arrangements is $7!.\frac{8!}{3!}$.
 \item Positioning the boys first, we have $*B*B*B*B*B*B*B*$, where $B$s represents the $7$ boys and $*$s
@@ -278,7 +278,7 @@
   Hence, no.\ of numbers greater than one million is $420 - 60 = 360$.
 \item
   \startitemize[i]
-  \item Total no.\ of persons is $5 + 4 = 9$. With no restirctions they can be seated at a round table in $(9
+  \item Total no.\ of persons is $5 + 4 = 9$. With no restrictions they can be seated at a round table in $(9
     - 1)! = 8!$ ways.
   \item Treating all British as a single person because they have to be together we have $6$ persons which
     can be seated in $5!$ ways. But $4$ Britishers can be arranged among themselves in $4!$ ways making the
@@ -307,7 +307,7 @@
 \item Units place be filled in $5$ ways excluding $0$ and two remaining places can be filled by remaining
   $5$ digits in $P_2^^5 = 20$ ways.
 
-  Thus, total no.\ of required numbers is $5\times10 = 100$.
+  Thus, total no.\ of required numbers is $5\times20 = 100$.
 \item We have $10$ digits. Units place can be filled in $9$ ways excluding $0$. Rest $8$ places can be
   filled using remaining $9$ digits in $P_8^^9 = 9!$ ways.
 
@@ -419,7 +419,7 @@
   Thus, no.\ of numbers greater than $3400$ is $80 + 480 = 560$.
 \item Since positions of $3$ and $5$ are fixed rest two positions can be filled with three remaining digits
   in $P_2^^3 = 6$ ways. Thus, no.\ of such numbers is $6$.
-\item Thousands place can be filled in $5$ ways excluding $0$. Rremaining three places can be filled in
+\item Thousands place can be filled in $5$ ways excluding $0$. Remaining three places can be filled in
   $P_3^^5 = 60$ ways using the five remaining digits. Thus, total no.\ of four digit numbers is $5\times60 =
   300$.
 
@@ -462,7 +462,7 @@
 \item Let us fix $2$ at units place. Then, ten thousands place can be filled in $3$ ways using $4, 6, 8$ and
   remaining two places can be filled in $P_3^^3 = 3!$ ways. Thus, total no.\ of numbers is $3\times6 = 18$.
 
-  Number of numbers when $2$ is at ten throusands place is $P_4^^4 = 24$. Thus, each positive digit will
+  Number of numbers when $2$ is at ten thousands place is $P_4^^4 = 24$. Thus, each positive digit will
   occur at units, tens, hundreds and thousands place $18$ times and at thousands place $24$ times.
 
   Sum of the digits at units, tens, hundreds and thousands place will be each $18(2 + 4 + 6 + 8) = 360$ and
@@ -478,9 +478,9 @@
   remaining two places can be filled in $P_2^^2 = 2$ ways. Thus, total no.\ of numbers is $2\times 2 = 4$.
 
   Number of numbers when $2$ is at thousands place is $P_3^^3 = 6$. Thus, each positive digit will
-  occur at units, tens, hundreds and thousands place $4$ times and at thousands place $6$ times.
+  occur at units, tens and hundreds place $4$ times and at thousands place $6$ times.
 
-  Sum of digits at units, tens and hundreds place will eb each $4(2 + 3 + 5) = 40$ and sum of digits at
+  Sum of digits at units, tens and hundreds place will be each $4(2 + 3 + 5) = 40$ and sum of digits at
   thousands place will be $6(2 + 3 + 5) = 60$.
 
   Thus, sum of all numbers will be $40(1 + 10 + 100) + 60\times1000 = 64,440$.
