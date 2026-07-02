@@ -1195,22 +1195,23 @@ Man has to go from $P$ to $Q$. For this he has to travel $a$ vertically downward
 Eastward. There are $m - 1$ horizontal segments and $n - 1$ vertical segments. Thus, from $P$ to $Q$ there
 are $m + n - 2$ segments total. We have to choose $m - 1$, and $n - 1$ segments from these. This can be done
 in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
-\vskip 1.1cm
+\vskip 1cm
 \item Let the $n$ letters be denoted by $1, 2, 3, \ldots, n$. Let $A_i$ denote the set of distribution of
   letters in envelopes so that only $i$th letter is put in the corresponding envelope. Then $n(A_i) = (n -
   1)!$, because rest $n - 1$ letters can be put in $n - 1$ envelopes in $(n - 1)!$ ways.
 
   Similarly, $n(A_i\cap A_j)$ i.e. putting two letters in correct envelopes is $(n - 2)!$. Required number
   $= n(A_1'\cap A_2' \cap A_3' \cap\ldots\cap A_n') = n(A_1\cup A_2\cup A_3\cup\ldots \cup A_n)' = n! -
-  n(A_1\cup A_2\cup A_3\cup \ldots \cup A_n)'$
+  n(A_1\cup A_2\cup A_3\cup \ldots \cup A_n)$
 
   $= n! - [\sum n(A_i) - \sum n(A_i\cap A_j) + \sum n(A_i\cap A_j\cap A_k) - \cdots + (-1)^nn(A_1\cap
     A_2\cap \ldots \cap A_n)]$
 
   $= n! - \left[C_1^^n (n - 1)! - C_2^^n (n - 2)! \cdots\right] = n!\left[\frac{1}{2!} - \frac{1}{3!} +
     \frac{1}{4!} + \cdots\right]$.
+  {\bf Aliter:} It is a straight case of derangements as well.
 \item Number of non-congruent squares is $8$ as they are of size $1\times 1, 2\times2, 3\times3, \ldots,
-  8\times8$. Number of non-congruent rectanges, which are not squares $= C_2^^8 = 28$.
+  8\times8$. Number of non-congruent rectangles, which are not squares $= C_2^^8 = 28$.
 
   Thus, required number $= 28 + 8 = 36$.
 \item Let the three numbers selected from are $a, b, c$, which have to be in A.P. i.e. $a + c = 2b$. This
@@ -1228,11 +1229,19 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
 \item Since there are two packs of $52$ cards, therefore, number of cards from same suit and denomination is
   $2$ for each card.
 
-  no.\ of ways of selecting $26$ cards out of $52$ cards $= C_{26}^^{52}$, however, each card can be selected
+  No.\ of ways of selecting $26$ cards out of $52$ cards $= C_{26}^^{52}$, however, each card can be selected
   in $2$ ways. $\therefore $ Required numbers $= C_{26}^^{52}.2^{26}$.
 \item For $n$ sides there will be $n$ vertices. Selection of any $3$ vertices will give us a
   triangle. no.\ of ways of selecting $3$ vertices out of $n$ vertices i.e. no.\ of triangles $= C_3^^n =
   \frac{n(n - 1)(n - 2)}{6}$.
+
+  Number of triangles formed having two consecutive sides common with the sides of the polygon = Number of
+  selection of $3$ consecutive vertices of the polygon $= n$.
+
+  Number of triangles formed having exactly one side in common with sides of the polygon = Number of
+  selection of $3$ vertices out of which only two are consecutive $= n \times C_1^^{n - 4} = n(n - 4)$.
+
+  Thus, required number is $C_3^^n - n - n(n - 4) = \frac{n}{6}(n - 4)(n - 5)$.
 \item (a) If the $n$ objects are $o_1, o_2, o_3, \ldots, o_n$, then possible solutions will be $o_1o_2o_3,
   o_2o_3o_4, o_3o_4o_5, \ldots, o_{n - 2}o_{n - 1}o_n$.
 
@@ -1506,7 +1515,7 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
   x^{2n + 2})(1 - x)^{-2}(1 + x)^n =$ coeff.\ of $x^n$ in $(1 - x)^{-2}(1 + x)^n$(leaving powers greater than
   $n$)
 
-  $=$ coeff.\ of $x^n$ in $(1 - x)^{-2}{2 - (1 - x)}^n =$ coeff.\ of $x^n$ in $(1 - x)^{-2}[2^n - C_1^^n2^{n -
+  $=$ coeff.\ of $x^n$ in $(1 - x)^{-2}\{2 - (1 - x)\}^n =$ coeff.\ of $x^n$ in $(1 - x)^{-2}[2^n - C_1^^n2^{n -
   1}(1 - x) + C_2^^n2^{n - 2}(1 - x)^2 - \cdots + (-1)^nC_n^^n(1 - x)^n] =$ coeff.\ of $x^n$ in $[2^n(1 -
     x)^{-2} - C_1^^n2^{n - 1}(1 - x)^{-1}]$(other terms will not contain $x^n$)
 
@@ -1705,7 +1714,7 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
   L.H.S. $= 2^n[1.3.5\ldots (2n - 3)(2n - 1)] = \frac{2^n[1.2.3.4.5\ldots (2n - 3)(2n - 1)2n]}{2.4.6.\ldots
     2n} $
 
-  $= \frac{2^n[1.2.3.4.5\ldots (2n - 3)(2n - 1)2n}{2^n[1.2.3\ldots n]} = \frac{2n!}{n!} = (n + 1)(n +
+  $= \frac{2^n[1.2.3.4.5\ldots (2n - 3)(2n - 1)2n]}{2^n[1.2.3\ldots n]} = \frac{2n!}{n!} = (n + 1)(n +
     2)\ldots (2n - 1)2n =$ R.H.S.
 \item We have to show that $\displaystyle{}^{47}C_4 + \sum_{i=0}^3{}^{50 - i}C_3 + \sum_{j = 1}^5{}^{56 -
   j}C_{53 - j} = {}^{57}C_4$.
@@ -1839,10 +1848,10 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
   (b) Total no.\ of permutations is $10!$. In half of these $A_1$ will be above $A_2$. Thus, required
   numbers is $\frac{10!}{2!}$.
 \item Since no man can sit between two women, therefore all men have to sit together. Treating all men as
-  one man, no. of ways to seat them together is $(n + 1)!$. However, $m$ men can be arranged in $m!$ ways
+  one man, no. of ways to seat them together is $(m + 1)!$. However, $n$ men can be arranged in $n!$ ways
   among themselves.
 
-  Thus, total no.\  of ways of seating them together is $(n + 1)!m!$.
+  Thus, total no.\  of ways of seating them together is $(m + 1)!n!$.
 \item There are two I\symbol[rightquote]s, two T\symbol[rightquote]s, three E\symbol[rightquote]s, and rest
   of the characters come once each. Because vowels cannot come between two consonants, the vowels have to
   come together. Treating all the vowels as one character, total no.\ of characters is $7$.
@@ -1869,7 +1878,7 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
   of arrangements when $p$ things are together is $(n - p + 1)!$. $p$ things can be arranged among
   themselves in $p!$ ways.
 
-  $\therefore$ No.\ of ways in which $p$ things are together $= n! - (n - p + 1)!p!$.
+  $\therefore$ No.\ of ways in which $p$ things are never together $= n! - (n - p + 1)!p!$.
 \item Consider -+-+-+-+-+-+-+-, where \quote{+} denotes the positions of $+$, and \quote{-} denotes the
   positions of $-$. There are $7$ positions for $-$, which have to be filled by $4$.
 
@@ -2110,7 +2119,7 @@ in $\frac{(m + n - 2)!}{(m - 1)!(n - 1)!}$ ways.
 \item Given, $x, y, z\geq 1$, and $x + y + z = n$. Let $a = x - 1, b = y - 1, c = z -1$, then $a + b + c = n
   - 3$, where $a, b, c\geq 0$.
 
-  No.\ of solutions of the equation $a + b + c = n - 3$ is $C_n^^{n + 3 - 1} = C_n^^{n + 2} = C_2^^{n + 2}$.
+  No.\ of solutions of the equation $a + b + c = n - 3$ is $C_{n - 3}^^{3 + n - 3 - 1} = C_2^^{n - 1}$.
 \item $x + y + z = 0\;\forall x, y, z\geq -5$ can be rewritten as $a + b + c = 15\;\forall a, b, c\geq
   0$. Thus, no.\ of solutions of the above equation $C_2^^{15 + 3 - 1} = 136$.
 \item Required answer is coeff.\ of $x^{3n}$ in $\left(1 + x + x^2 + \cdots + x^n\right)^3\left(1 + x + x^2 + \cdots +
@@ -2620,11 +2629,11 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 
   Given, \m{C_m^^n} = \m{k.C_{m - 1}^^{n - 1}\Rightarrow \frac{n!}{m!(n - m)!} = k.\frac{(n - 1)!}{(n - 1)!(m
       - n)!} \Rightarrow n = mk}.
-\item Let no.\ of subsets is \m{C_0^^{2n + 1} + C-1^^{2n + 1} + C_2^^{2n + 2} + \cdots + C_n^^{2n + 1}
+\item Let no.\ of subsets is \m{C_0^^{2n + 1} + C_1^^{2n + 1} + C_2^^{2n + 2} + \cdots + C_n^^{2n + 1}
   = N}.
 
-  From binomial theorem we know that \m{C_0^^{2n + 1} + C-1^^{2n + 1} + C_2^^{2n + 2} + \cdots + C_{2n +
-    }^^{2n + 1} = 2^{2n + 1}}. We also know that \m{C_r^^n = C_{n - r}^^n}.
+  From binomial theorem we know that \m{C_0^^{2n + 1} + C_1^^{2n + 1} + C_2^^{2n + 2} + \cdots + C_{2n +
+    1}^^{2n + 1} = 2^{2n + 1}}. We also know that \m{C_r^^n = C_{n - r}^^n}.
 
   \m{\therefore 2N = 2^{2n + 1} \Rightarrow N = 2^{2n}}.
 \item Total no.\ of subsets is \m{2^n}. Half of these will contain even no.\ of elements i.e. \m{2^{n - 1}}.
@@ -2638,7 +2647,7 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 \item If \m{y = n} then \m{x} can take \m{n - 1} values from \m{1} to \m{n - 1} and \m{z} can take \m{n + 1}
   values from \m{0} to \m{n + 1}. \m{y} can vary between \m{2} to \m{9}.
 
-  Hence, required answer is \m{\displaystyle\sum_2^9(n - )(n + 1) = 276}.
+  Hence, required answer is \m{\displaystyle\sum_2^9(n - 1)(n + 1) = 276}.
 \item \m{x_1 < x_2 \leq x_3 < x_4 < x_5 \leq x_6} can be broken into four cases. These are \m{x_1 < x_2 <
   x_3 < x_4 < x_5 < x_6, x_1 < x_2 = x_3 < x_4 < x_5 < x_6, x_1 < x_2 < x_3 < x_4 < x_5 = x_6,} and \m{x_1 <
   x_2 = x_3 < x_4 < x_5 = x_6}.
@@ -2670,7 +2679,7 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 
   The two players played \m{3} games each, therefore, \m{C_2^^{n - 2} + 6 = 84\Rightarrow \frac{(n - 2)(n -
       3)}{2} = 78\Rightarrow n^2 - 5n - 150 = 0\Rightarrow n = 15}
-\item For \m{1} digit no.\ we have \m{C-1^^9} numbers. For \m{2} digits, we have \m{C_2^^9} and so on. So
+\item For \m{1} digit no.\ we have \m{C_1^^9} numbers. For \m{2} digits, we have \m{C_2^^9} and so on. So
   the total no.\ of numbers is \m{2^9 - 1}.
 \item There is a total of \m{8!} ways possible. For each legal way we can reorder within each column in
   \m{3!, 2!} and \m{3!} ways to obtain any of the \m{8!} orderings (legal or illegal). Thus, the number of
@@ -2678,7 +2687,7 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 \item Consider a vertex \m{A}. Suppose \m{A} is not a vertex of hexagon. Arrange nine balls in the form of a
   circle of which one is \m{A}. We choose six out of nine gaps in which to place a green ball(a vertex of
   hexagon) to ensure that no two green balls are adjacent(this ensures that no side of hexagon coincides
-  with quindecagon). Now we label the vertics in alphabetical order as we go clockwise around the circle.
+  with quindecagon). Now we label the vertices in alphabetical order as we go clockwise around the circle.
   There are \m{C_6^^9} ways to do this.
 
   Now suppose \m{A} is a vertex of hexagon. We color it green. We arrange nine blue balls around \m{A} for
@@ -2877,7 +2886,7 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
   If $z = 11, x + y = 0$, then no.\ of solutions is $C_{2 - 1}^^{2 - 1} = C_1^^{1} = 1$.
 
   Thus, total no.\ of solutions is $1 + 4 + 7 + \cdots + 28 + 31 + 34 = 210$.
-\item Let $a = x - 1, b = y - 1, c = z - 1$, then $3a + b + c = 22 \Rightarrow b + z = 22 - 3a$.
+\item Let $a = x - 1, b = y - 1, c = z - 1$, then $3a + b + c = 22 \Rightarrow b + c = 22 - 3a$.
 
   If $a = 0, b + c = 22$, then no.\ of solutions is $C_{2 - 1}^^{22 + 2 - 1} = C_1^^{23}$.
 
@@ -2905,7 +2914,7 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 
   Therefore, \m{a + b + c = 50}. No.\ of solutions of this equation is \m{C_2^^{52}}.
 \item Proceeding like previous to previous problem, no.\ of solutions of this equation is
-  \m{\displaystyle\sum_{i=0}^23C_{3}^^{i+2} = C_4^^{27}}.
+  \m{\displaystyle\sum_{i=0}^{23}C_{3}^^{i+2} = C_4^^{27}}.
 \item We have \m{15 < a + b + c \leq 20}, where \m{a, b, c > 0}. Let \m{x = a - 1, y = b - 1, z = c - 1},
   therefore, \m{18 < x + y + z \leq 23}, where \m{x, y, z \geq 0}.
 
@@ -2940,7 +2949,7 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 
   \m{= C_2^^{12} - C_3^^5 - C_2^^4 - C_1^^3 = 47}.
 
-  Similarly, coeff.\ of \m{x^15} will give us \m{C_2^^8} as the answer.
+  Similarly, coeff.\ of \m{x^{15}} will give us \m{C_2^^8} as the answer.
 \item Total marks is \m{250}. The student must score \m{60\%} i.e. \m{150} marks.
 
   Thus, required answers \m{=} coeff.\ of \m{x^{150}} in \m{(1 + x + \cdots + x^{50})^3(1 + x + \cdots +
@@ -2955,9 +2964,9 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 \item Clearly, \m{210\leq x + y + z\leq 300}, where \m{x, y, z} are marks scored in Physics, Chemistry, and
   Mathematics.
 
-  If \m{x + y + z = 210}, then no.\ of solutions is \m{C_2^^{211}} and so on.
+  If \m{x + y + z = 210}, then no.\ of solutions is \m{C_2^^{212}} and so on.
 
-  So the answer is \m{\displaystyle\sum_{i=211}^{302}C_2^^i}.
+  So the answer is \m{\displaystyle\sum_{i=212}^{302}C_2^^i}.
 \item Given, \m{a + b + c + d = 6}, where \m{a, b, c, d} are the values of the up face of the four dices.
 
   Clearly, \m{1\leq a, b, c, d\leq 6}. Let \m{x = a - 1, y = b - 1, z = c - 1, t = d - 1}, then
@@ -2976,7 +2985,7 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 
   Let \m{x = a - 1, y = b - 1, z = c - 1}, then \m{x + y + z = 11}.
 
-  Thus, required answer is coeff.\ of \m{x^11} in \m{(1 + x + x^2 + \cdots + x^5)^3 = (1 - x^6)^3(1 -
+  Thus, required answer is coeff.\ of \m{x^{11}} in \m{(1 + x + x^2 + \cdots + x^5)^3 = (1 - x^6)^3(1 -
     x)^{-3}}
 
   \m{= C_2^^{13} - 3.C_2^^7 = 15}.
@@ -3116,7 +3125,7 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 
   $n(A) =$ when two Americans are together $= 5!2! = 240, n(B) =$ when two Britishers are together $= 240$.
 
-  $\Rightarrow n(A\cap B) = n(A) + n(B) - n(A\cap B) = 384$
+  $\Rightarrow n(A\cup B) = n(A) + n(B) - n(A\cap B) = 384$
 
   Hence $n(\bar{A}\cap \bar{B}) = $ Total $- n(A\cup B) = 336$.
 \item Let $C$ denote the selection of cards in which clubs are absent; $D$ denote the selection of cards
@@ -3306,9 +3315,9 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 \item $10^{40} = 2^{40}.5^{40}$. Thus, it has $41\times41 - 1 = 1680$ factors. Factors of $20^{30} =
   2^{60}.5^{30}$ not dividing $10^{40}$ have the form $2^m5^n$ with $41\leq m\leq 60$, and $0\leq n\leq 30$
   i.e. no.\ of such numbers is $20.31 = 620$.
-\item Total no.\ of permutations is $7! = 5040$. Let $A$ be the set of words in which $\quote{beg}$
-  appear. Treating it as one letter we have $n(A) = 5! = 120$, and we have same for $\quote{cad}$ i.e. $n(B)
-  = 120$, where $B$ is the set of words where $\quote{cad}$ appears.
+\item Total no.\ of permutations is $7! = 5040$. Let $A$ be the set of words in which \quote{beg}
+  appear. Treating it as one letter we have $n(A) = 5! = 120$, and we have same for \quote{cad} i.e. $n(B)
+  = 120$, where $B$ is the set of words where \quote{cad} appears.
 
   However, both can also come together, which is $n(A\cap B) = 3! = 6$ by treating both of them as one
   letter.
@@ -3316,10 +3325,10 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
   Thus, $n(A\cup B) = 120 + 120  - 6 = 234$, and hence, $n(\overline{A\cup B}) = 5040 - 234 = 4806$.
 \item Total no.\ of permutations is $\frac{9!}{2!} = 181,440$.
 
-  Let $A$ represent the set of words in which $\quote{HIN}$ comes together. Treating $\quote{HIN}$ as one
-  letter, we have $n(A) = 7!$ permutations. Similarly, if we $\quote{DUS}$ treat as one, and $B$ is the set
+  Let $A$ represent the set of words in which \quote{HIN} comes together. Treating \quote{HIN} as one
+  letter, we have $n(A) = 7!$ permutations. Similarly, if we \quote{DUS} treat as one, and $B$ is the set
   in which it comes together,we have $n(B) = \frac{7!}{2!}$ permutations as $N$ comes twice. If $C$ is the
-  corresponding set for $\quote{TAN}$ then $n(C) = 7!$.
+  corresponding set for \quote{TAN} then $n(C) = 7!$.
 
   $\therefore n(A\cap B) = n(A\cap C) = n(B\cap C) = 5! = 120, n(A\cap B\cap C) = 3!= 6$.
 
@@ -3355,7 +3364,7 @@ have to combine four squares into \m{1}. No.\ of such squares is \m{9}.
 
   $\Rightarrow |\overline{d_1\cup d_2\cup d_3}| = 136 - 126 = 10$.
 \item No.\ of years divisible by $4$ between $1000$ and $3000$(both inclusive) is $501$. No.\ of years
-  divisible by $100$ between $100$ between given range is $21$, and no.\ of years divisible by $400$ is $5$.
+  divisible by $100$ between given range is $21$, and no.\ of years divisible by $400$ is $5$.
 
   Thus applying PIE, we have $501 - 21 + 5 = 485$ as the answer.
 \item Let $S$ denote all the onto functions. Total no.\ of ways of mapping elements is $|S| = 3^6$. For $i =

@@ -812,7 +812,7 @@
   \left(\frac{1}{x^2} + \frac{1}{x^4} + \frac{1}{x^6} + \cdots\right)$ to $n$ terms $+ 2 + 5 + 8 + \cdots$
   to $n$ terms. Let the sum be $S$.
 
-  $S = x^2\frac{(x^2)^n - 1}{x^2 - 1} + \frac{1}{x^2}.\frac{\frac{1}{(x^2)^n - 1}}{\frac{1}{x^2} - 1}
+  $S = x^2\frac{(x^2)^n - 1}{x^2 - 1} + \frac{1}{x^2}.\frac{\frac{1}{(x^2)^n} - 1}{\frac{1}{x^2} - 1}
   + \frac{n}{2}[3n + 1]$.
 \item Let $n$ be the no. of terms required to make the sum of given G.P. with $a = 1, r = 2$ equal to $511$.
 
@@ -962,7 +962,7 @@
   This can be alternatively computed with G.M. formula i.e. $t_{\tfrac{m + n}{2}} = \sqrt{t_mt_n} =
   \frac{1}{mn}$.
 \item Given condition is $c > 4b - 3a \Rightarrow c - 4b + 3a > 0 \Rightarrow r^2 - 4r + 3 < 0\;[\because a
-  < 0] \Rightarrow r> 3$ or $r < 1$.
+  < 0] \Rightarrow 1 < r < 3$.
 \item Given, $(1 - k)(1 + 2x + 4x^2 + 8x^3 + 16x^4 + 32x^5) = 1 - k^6 \Rightarrow (1 - k)\frac{64x^6 - 1}{x
   - 1} = 1 - k^6 \Rightarrow k = 2x \Rightarrow \frac{k}{x} = 2$.
 \item Given, $(a^2 + b^2 + c^2)(b^2 + c^2 + d^2)\leq(ab + bc + cd)^2 \Rightarrow (b^2 - ac)^2 + (c^2 - ad)^2
@@ -1195,7 +1195,7 @@
   $\Rightarrow xy + 2y^2 + yz = xy + y^2 + zx + yz \Rightarrow y^2 = zx \Rightarrow a, b, c$ are in G.P.
 \item $\because x, y, z$ are in G.P. $\therefore y^2 = zx$. Also, $x + a, y + a, z + a$ are in
   H.P. $\Rightarrow y + a = \frac{2(x + a)(z + a)}{x + a + z + a} \Rightarrow xy + yz + 2ay + ax + az + 2a^2
-  = 2(zx + az + ax + a^2)\Rightarrow (y - a)(x + z - 2y)$
+  = 2(zx + az + ax + a^2)\Rightarrow (y - a)(x + z - 2y) = 0$
 
   But $x + z - 2y \neq 0$ else $x + z = 2y$ i.e. $x, y, z$ are in A.P. $\Rightarrow x = y = z \therefore y =
   a$.
@@ -1242,10 +1242,11 @@
   Terms after subtraction will be $a - \frac{b}{2}, \frac{b}{2}, c - \frac{b}{2}$. The condition for these
   to be in G.P. is $b^2 = (2a - b)(2c - b) = 4ac - 2b(a + c) + b^2 \Rightarrow b = \frac{2ac}{a + c}$ which
   is a given.
-\item $\because y - x, 2(y - a), y - z$ are in H.P. $\therefore \frac{1}{2(y - z)} - \frac{1}{y - x} =
-  \frac{1}{y - z} - \frac{1}{2(y - a)} = \frac{2a - y - z}{(y - x)} = \frac{y + z - 2a}{y - z}$
+\item $\because y - x, 2(y - a), y - z$ are in H.P. $\therefore \frac{1}{2(y - a)} - \frac{1}{y - x} =
+  \frac{1}{y - z} - \frac{1}{2(y - a)} \Rightarrow  \frac{2a - y - x}{(y - x)} = \frac{y + z - 2a}{y - z}$
 
-  $= \frac{(x - a) + (y - a)}{(x - a) - (y - a)} = \frac{(y - a) + (z - a)}{(y - a) - (z - a)} = \frac{x -
+  $\Rightarrow  \frac{(x - a) + (y - a)}{(x - a) - (y - a)} = \frac{(y - a) + (z - a)}{(y - a) - (z -
+    a)} \Rightarrow  \frac{x -
     a}{y - a} = \frac{y - a}{z - a}$
   Hence, $x - a, y - a, z - a$ are in G.P.
 \item From given conditions we have $2b = a + c, q = \frac{2pr}{p + r}$ and $b^2q^2 = acpr$. Substituting
@@ -1726,7 +1727,7 @@
 \item Given $\log 2, \log(2^x - 1), \log(2^x + 3)$ are in G.P. Therefore, $2\log(2^x - 1) = \log 2 +
   \log(2^x + 3)$
 
-  $\Rightarrow (2^x - 1)^2 = 2.2^2 + 6 \Rightarrow 2^{2x} - 4.2^x - 5 = 0 \Rightarrow 2^x = 5, -1$ however,
+  $\Rightarrow (2^x - 1)^2 = 2.2^x + 6 \Rightarrow 2^{2x} - 4.2^x - 5 = 0 \Rightarrow 2^x = 5, -1$ however,
   $2^x \neq -1$ so $2^x = 5 \Rightarrow x = \log_25$.
 \item Let $d$ be the c.d. of the A.P. $\therefore \log_yx = 1 + d \Rightarrow x = y^{1 + d}, \log_zy = 1 +
   2d \Rightarrow y = z^{1 + 2d}, -15\log_xz = 1 + 3d \Rightarrow z = x^{-\tfrac{1 + 3d}{15}}$
@@ -1791,11 +1792,11 @@
 \item $\because \alpha, \beta, \gamma$ are in A.P. $\therefore 2\beta = \gamma + \alpha$
 
   $2\sin(\alpha + \gamma) = \sin(\beta + \gamma) + \sin(\alpha + \beta) \Rightarrow 2\sin2\beta =
-  2\sin\left(\frac{\alpha + \beta + 2\beta}{2}\right).\cos\frac{\gamma - \alpha}{2}$
+  2\sin\left(\frac{\alpha + \gamma + 2\beta}{2}\right).\cos\frac{\gamma - \alpha}{2}$
 
   $\Rightarrow \cos\frac{\gamma - \alpha}{2} = 1 = \cos 0 \Rightarrow \gamma = \alpha = \beta$
   and hence $\tan\alpha = \tan\beta = \tan\gamma$.
-\item Let $d$ be the c.d then we have $2b = a + c$ and $abc = 4 \Rightarrow ac(a + c) = 4$. We know that A.M. $\geq$ G.M
+\item We have $2b = a + c$ and $abc = 4 \Rightarrow ac(a + c) = 4$. We know that A.M. $\geq$ G.M
   $\Rightarrow \frac{a + c}{2}\geq \sqrt{ac} \Rightarrow \frac{(a + c)^2}{4}(a + c) \geq 4 \Rightarrow b^3
   \geq 4$ and hence proved.
 \item Let $S = \log a + \log\frac{a^3}{b} + \log \frac{a^5}{b^2} + \log \frac{a^7}{b^3} + \cdots$
@@ -2281,7 +2282,7 @@ Total area of innser squares = $\frac{\tfrac{a^2}{2}}{1 - \frac{1}{2}} = a^2 =$ 
 \item Given $a + md, a + nd, a + rd$ are in G.P., where $a$ is the first term and $d$ is the c.d. of A.P.
 
   $\Rightarrow (a + nd)^2 = (a + md)(a + rd)\Rightarrow d(n^2d + 2an) = d(am + ar + mrd)\Rightarrow (n^2 -
-  mr)d = a(m + r - rn)$
+  mr)d = a(m + r - 2n)$
 
   $\frac{d}{a} = \frac{m + r - 2n}{n^2 - mr}$
 
@@ -2314,9 +2315,9 @@ Total area of innser squares = $\frac{\tfrac{a^2}{2}}{1 - \frac{1}{2}} = a^2 =$ 
 
   $\Rightarrow n = \frac{2S_3S_1 - S_1S_2 - S_2S_3}{S_1 - 2S_2 + S_3}$.
 \item Let the digits at hundreds, tens and units places be $a, ar$ and $ar^2$ and the required number be $x,$ then
-  $x = 100a + 10a + ar^2$
+  $x = 100a + 10ar + ar^2$
 
-  Let $y = x - 400 \Rightarrow y = 100(a - 4) + 1 - ar + ar^2$ In the number $y,$ the digit at hundreds place is $a - 4.$ Clearly
+  Let $y = x - 400 \Rightarrow y = 100(a - 4) + 10ar + ar^2$ In the number $y,$ the digit at hundreds place is $a - 4.$ Clearly
 
   $1\leq a - 4\leq 5\;[\because\;1\leq a \leq 9 \;\text{and}\;a - 4\geq 1] \Rightarrow 5\leq a\leq 9$
 
